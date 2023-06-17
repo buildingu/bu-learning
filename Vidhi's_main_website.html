@@ -1,0 +1,93 @@
+<!Doctype html>
+
+  <head>
+    <h1> Exercise 1: HTML </h1>
+
+    <h3>6/1/23 </h3> 
+  </head>
+
+  <body>
+    <main>
+
+      <table>
+
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Movie Image</th>
+            <th>Favorite Music Audio Sample</th>
+            <th>Favorite Video Sample</th>
+          </tr>
+
+          <tr>
+          <td>
+            Vidhi
+          </td>
+
+          <td>
+            Patra
+          </td>
+
+          <td>
+            <img src="mario_movie_image.webp" 
+            width="180" 
+            height="100"      
+            alt="The Mario Movie">
+          </td>
+
+          <td>
+            <audio controls>
+              <source src="New Recording 5.m4a" type="audio/mpeg ">
+            </audio>
+          </td>
+
+          <td>
+            <video controls>
+              <source src="IMG_2091.MOV" type=video/MOV>
+            </video>
+          </td>
+
+          </tr>
+
+      </table>
+
+      <form>
+        <p>Enter your details below: </p>
+        <label> First Name: </label>
+        <input type = "text" placeholder="Vidhi"><br><br>
+
+        <label> Last Name: </label>
+        <input type = "text" placeholder="Patra"><br><br>
+
+        <label> Please enter your password: </label>
+        <input type = "password" placeholder="********"><br><br>
+
+        <p>Avaliable Meeting Days: </p>
+        <input type = "checkbox">Monday<br>
+        <input type = "checkbox">Tuesday<br>
+        <input type = "checkbox">Wednesday<br>
+        <input type = "checkbox">Thrusday<br>
+        <input type = "checkbox">Friday<br>
+        <input type = "checkbox">Saturday<br>
+        <input type = "checkbox">Sunday<br><br>
+
+        <p>Avaliable Times: </p>
+        <select name="Avaliable Time">
+          <option value="morning">Morning</option>
+          <option value="afternoon">Afternoon</option>
+          <option value="evening">Evening</option>
+          <option value="night">Night</option>
+        </select> <br><br>
+
+        <p>Currently working on new website: </p>
+        <input type = "radio">Yes<br>
+        <input type = "radio">No<br><br>
+        
+        <textarea cols="30" rows="5" placeholder="Enter you comments here: "></textarea><br><br>
+        <input type="reset">
+        <input type="submit">
+      </form>
+
+    </main>
+  </body>
+</html>
