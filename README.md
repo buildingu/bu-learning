@@ -34,20 +34,26 @@ To get started with the Building-U Learning Session project, follow these steps:
 
 ## Submission Structure Example
 
-doeJ / (<-- This is your git repository branch root)
-  Exercise 1/ (<-- These are your assignment folders)
-    index.html
-    css/
-      style.css
-    js/
-      script.js
-  Exercise 2/
-    index.html
-    css/
-      style2.css
-    js/
-      script2.js
-  Exercise 3/
+### doeJ / (Git Repository Branch Root)
+
+#### Exercise 1 
+
+- `index.html`: HTML file for Exercise 1.
+- `css/`
+  - `style.css`: CSS file for Exercise 1.
+- `js/`
+  - `script.js`: JavaScript file for Exercise 1.
+
+#### Exercise 2
+
+- `index.html`: HTML file for Exercise 2.
+- `css/`
+  - `style2.css`: CSS file for Exercise 2.
+- `js/`
+  - `script2.js`: JavaScript file for Exercise 2.
+
+#### Exercise 3
+
 
 Please note that while the folder names and structure within each exercise or challenge may vary, it is recommended to maintain a similar root structure for consistency across submissions. This will help ensure easy navigation and organization within the repository.
 
