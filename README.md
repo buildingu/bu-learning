@@ -32,7 +32,7 @@ To get started with the Building-U Learning Session project, follow these steps:
 
 3. Begin working on the assigned tasks or projects.
 
-## Submission Structure Example
+## Branch Structure Example
 
   - j_doe / (Your Git Branch Root)
     - Exercise 1 
