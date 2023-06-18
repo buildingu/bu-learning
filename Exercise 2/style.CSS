@@ -1,0 +1,16 @@
+caption {
+    color: red; 
+    font-size: 50px;
+  }
+  tr {
+    color: blue; 
+  }
+  h1{
+    color: orange;
+  }
+  table {
+    margin: 20px;
+    border: 2px solid red;
+    padding: 10px;
+      
+  }
