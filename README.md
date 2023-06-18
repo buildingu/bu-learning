@@ -32,6 +32,25 @@ To get started with the Building-U Learning Session project, follow these steps:
 
 3. Begin working on the assigned tasks or projects.
 
+## Submission Structure Example
+
+doeJ / (<-- This is your git repository branch root)
+  Exercise 1/ (<-- These are your assignment folders)
+    index.html
+    css/
+      style.css
+    js/
+      script.js
+  Exercise 2/
+    index.html
+    css/
+      style2.css
+    js/
+      script2.js
+  Exercise 3/
+
+Please note that while the folder names and structure within each exercise or challenge may vary, it is recommended to maintain a similar root structure for consistency across submissions. This will help ensure easy navigation and organization within the repository.
+
 ## Support
 
 If you encounter any issues, have questions, or need clarification regarding the project or your assigned tasks, reach out to your mentor or the designated contact person for assistance.
