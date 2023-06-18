@@ -36,13 +36,12 @@ To get started with the Building-U Learning Session project, follow these steps:
 
 ### doeJ / (Your Git Branch Root)
 
-#### Exercise 1 
-
-- `index.html`: HTML file for Exercise 1.
-- `css/`
-  - `style.css`: CSS file for Exercise 1.
-- `js/`
-  - `script.js`: JavaScript file for Exercise 1.
+  - Exercise 1 
+    - `index.html`: HTML file for Exercise 1.
+    - `css/`
+      - `style.css`: CSS file for Exercise 1.
+    - `js/`
+      - `script.js`: JavaScript file for Exercise 1.
 
 #### Exercise 2
 
