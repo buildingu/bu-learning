@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Exercise - 6/17/23</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+    
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">HTML Exercise - 6/17/23</h1>
+
+  <hr>
+
+  <h2 style="text-align: center;">Table</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Favorite Movie Image</th>
+        <th>Favorite Music Audio Sample</th>
+        <th>Favorite Video Sample</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Arveen</td>
+        <td>Aziz</td>
+        <td><a href="https://en.wikipedia.org/wiki/Harry_Potter_(film_series)"><img src="harry_potter.jpg" alt="Harry Potter"></a></td>
+        <td><audio controls><source src="cornelia_street.mp3" type="audio/mpeg"></audio></td>
+        <td><video controls><source src="orchestra_playing.mp4" type="video/mp4"></video></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+
+
+  <h2 style="text-align: center;">Form</h2>
+  <div style="text-align: center;">
+    <form>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" placeholder="Enter your full name" required><br><br>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email address" required><br><br>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter your password" required><br><br>
+  
+      <label for="days">Available Days:</label><br>
+      <input type="checkbox" id="monday" name="days" value="Monday">
+      <label for="monday">Monday</label><br>
+      <input type="checkbox" id="tuesday" name="days" value="Tuesday">
+      <label for="tuesday">Tuesday</label><br>
+      <input type="checkbox" id="wednesday" name="days" value="Wednesday">
+      <label for="wednesday">Wednesday</label><br>
+      <!-- Add checkboxes for other days -->
+  
+      <br>
+  
+      <label for="time">Available Time:</label>
+      <select id="time">
+        <option value="morning">Morning</option>
+        <option value="afternoon">Afternoon</option>
+        <option value="evening">Evening</option>
+      </select>
+  
+      <br><br>
+  
+      <label for="website">Working on a New Website?</label><br>
+      <input type="radio" id="yes" name="website" value="yes" checked>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="website" value="no">
+      <label for="no">No</label><br>
+  
+      <br>
+  
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" placeholder="Add your comments here"></textarea>
+  
+      <br><br>
+  
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+
+  
+</body>
+</html>
