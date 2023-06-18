@@ -34,7 +34,7 @@ To get started with the Building-U Learning Session project, follow these steps:
 
 ## Submission Structure Example
 
-### doeJ / (Git Repository Branch Root)
+### doeJ / (Your Git Branch Root)
 
 #### Exercise 1 
 
@@ -52,10 +52,7 @@ To get started with the Building-U Learning Session project, follow these steps:
 - `js/`
   - `script2.js`: JavaScript file for Exercise 2.
 
-#### Exercise 3
-
-
-Please note that while the folder names and structure within each exercise or challenge may vary, it is recommended to maintain a similar root structure for consistency across submissions. This will help ensure easy navigation and organization within the repository.
+Please note that while the folder names and structure within each exercise or challenge may vary, it is recommended to maintain a similar root structure for consistency across submissions. This will help ensure easy navigation and organization within the repository. 
 
 ## Support
 
