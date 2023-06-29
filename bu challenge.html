@@ -14,7 +14,7 @@
     <hr>
 
     <h3>Fun fact about me:</h3>
-    <table>
+    <table border="1"align="center" >
       <tr>
         <th>First name</th>
         <th>Last name</th>
@@ -37,15 +37,15 @@
 
     <form>
           <label>Full name:<br>
-          <input type="text" name="fname"><br><br>
+          <input type="text" name="fname" placeholder="full name"><br><br>
           </label>
 
           <label>Email:<br>
-          <input type="text" name="lname"><br><br>
+          <input type="email" name="lname" placeholder="email@email.com"><br><br>
           </label>
 
           <label>Password:<br>
-          <input type="password" name="lname"><br><br>
+          <input type="password" name="lname" placeholder="password"><br><br>
           </label>
         
           <label>Available days:<br>
@@ -77,11 +77,13 @@
           </label> 
 
            <label>Working on new website?
-              <input type="radio" checked>
+              <input type="radio" name="hmm" checked>
               <label>Yes</label>
-              <input type="radio">
+              <input type="radio" name="hmm">
               <label>No</label><br>  
-           </label>
+           </label><br>
+
+           <input type="text" placeholder="other things?"><br><br>
 
           <input type="button" value="Submit">
           <input type="reset">
