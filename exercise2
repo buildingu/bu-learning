@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <div style="text-align: center">
+            <h1 class="header">Graduation Party</h1>
+            <h2 class="header">PLEASE JOIN US FOR</h2>
+            <h3 class="header">Our Special Celebration</h3>
+            <label class="lines">-------------------------------------------</label><br>
+            <label class="lines">_____________________________________________________</label>
+            <h1 class="header"><u><i>Class Of 2023</i></u></h1>
+            <label class="lines">_____________________________________________________</label><br><br>
+            <label class="lines">-------------------------------------------</label><br><br>
+        </div>
+        <link rel="stylesheet" href="CSS Files/Exercise2.css">
+    </head>
+    <body>
+        <table border="1" align="center">
+            <tr>
+                <th>
+                    When
+                </th>
+                <th>
+                    Where
+                </th>
+                <th>
+                    Who
+                </th>
+                <th>
+                    Dress Code
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    8 PM - 2 AM
+                </td>
+                <td>
+                    <a href="https://www.google.com/maps/dir/33.1317277,-96.7601066/centennial+high+school/@33.1342132,-96.7726968,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x864c3d9680b1fbd9:0x74c389985da94117!2m2!1d-96.7695583!2d33.1365728?entry=ttu">Centennial High School</a>
+                </td>
+                <td>
+                    Graduates ONLY
+                </td>
+                <td>
+                    Formal or Formal-Casual
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <div style="text-align: center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZfifNVsrTKc" frameborder="0" allowfullscreen></iframe>
+            <form>
+                <label class="header"><b><u>RSVP</u></b></label><br><br>
+                <label>Name:</label>
+                <input type="text" placeholder="John Doe"><br><br>
+                <label class="header">Will You Be Attending?</label>
+                <input class="header" type="radio" name="option">Yes
+                <input class="header" type="radio" name="option">No
+                <br><br>
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </div>
+    </body>
+
+</html>
