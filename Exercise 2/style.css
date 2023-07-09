@@ -1,0 +1,51 @@
+html { 
+    font-family: verdana, sans-serif;
+    background-color: antiquewhite;
+}
+
+.header1 {
+    text-align: center;
+    font-size: 80px;
+    color: red;
+    margin-bottom: 0px;
+}
+
+.header2 {
+    text-align: center;
+    font-size: 90px;
+    color: red;
+    margin-top: 0px;
+}
+
+table {
+    font-size: 35px;
+    display: inline-table;
+    float: right;
+    width: 70%;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+.dunk {
+    height: 400px;
+    float: left;
+}
+
+form {
+    font-size: 20px;
+    padding: 30px;
+    float: left;
+    border: 5px dotted blue;
+    background-color: whitesmoke;
+}
+
+.basketball {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
