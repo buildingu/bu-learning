@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Title -->
+    <title>Dorsa R: Exercise 1</title>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="HTML5"/>
+    <meta name="description" content="Exercise 1"/>
+    <meta name="author" content="Dorsa Rohani"/>
+    <meta http-equiv="refresh" content="30"/>
 </head>
+
 <body>
-    <!-- Exercise 1 -->
+    <h1>Exercise 1 by Dorsa Rohani</h1>
+    <h2> Date submitted: Thursday, June 12, 2023</h2>
+
+    <fieldset>
+        <table>
+            <h3> Facts about me:</h3>
+            <!-- First Row -->
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Favourite Movie</th>
+                <th>Favourite Song</th>
+                <th>Favourite Video</th>
+            </tr>
+
+            <!-- Second Row -->
+            <tr>
+                <td>Dorsa</td>
+                <td>Rohani</td>
+                <td><img src="https://s3.amazonaws.com/nightjarprod/content/uploads/sites/130/2021/08/19085635/gEU2QniE6E77NI6lCU6MxlNBvIx-scaled.jpg" alt="Wall-E" width="100" height="150"></td>
+                <td>
+                    <audio controls>
+                        <iframe width="560" height="315" src="Exercise 1\assets\OFFICIAL Somewhere over the Rainbow - Israel _IZ_ Kamakawiwoʻole (320 kbps).mp3"></iframe>
+                    </audio>
+                </td>
+                <td>
+                    <video width="160" height="120" controls>
+                        <source src="https://www.youtube.com/watch?v=rNSnfXl1ZjU" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <main>
+        <form>
+            <!-- User text input -->
+            <h3> Enter your details below: </h3>
+
+            <!-- Full Name -->
+            <label><i> Full Name: </i> </label>
+            <input type="text" placeholder="Enter your full name">
+            
+            <br></br>
+            <!-- Email Address -->
+            <label><i> Email Address: </i> </label>
+            <input type="email" placeholder="Enter your email address">
+        
+            <!-- Password -->
+            <br></br>
+            <label><i> Password: </i> </label>
+            <input type="password" placeholder="Enter your password">
+
+        <!-- User multiple select -->
+        <p> <i> Available Meeting Days: </i> </p>
+            <input type="checkbox"> Monday
+            <input type="checkbox"> Tuesday 
+            <input type="checkbox"> Wednesday
+            <input type="checkbox"> Thursday
+            <input type="checkbox"> Friday
+            <input type="checkbox"> Saturday
+            <input type="checkbox"> Sunday
+            <br></br>
+
+            <label><i>Available Time:</i></label>
+            <select multiple>
+                <option value="item1">Monday (8am to 12pm)</option>
+                <option value="item2">Afternoon (12am to 4pm)</option>
+                <option value="item3">Evening (4pm to 8pm)</option>
+            </select>
+
+            <br></br>
+            <label><i>Currently working on a new website?</i></label>
+            <input type="radio"> Yes
+            <input type="radio"> No
+
+            <br></br>
+            <textarea cols="30" rows="10"> Enter your comments here... </textarea>
+
+            <br></br>
+            <!-- Submit button -->
+            <input type="submit">
+        </form>
+    </main>
 </body>
 </html>
