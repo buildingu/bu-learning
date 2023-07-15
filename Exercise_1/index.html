@@ -12,10 +12,10 @@
     <body>
         <main>
             <h1 align="center">Arjun Jayakrishna: Exercise 1</h1>
-            <h4 align="center">Submission Date: July 14, 2023</h4>
+            <h4 align="center">Submission Date: July 15, 2023</h4>
 
             <fieldset>
-                <p align="center">Fun Facts About Me:</p>
+                <h4 align="center">Fun Facts About Me:</h4>
 
                 <table align="center" border="1">
                     <!-- First Row -->
@@ -46,6 +46,69 @@
                     </tr>
                 </table>
             </fieldset>
+
+            <!-- User Form -->
+            <h4 align="center">Enter Your Info Below:</h4>
+
+            <form align="center">
+
+                <!-- Full Name Text Input -->
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" placeholder="John Doe"><br><br>
+
+                <!-- Email Text Input -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="jdoe@fakemail.com"><br><br>
+
+                <!-- Password Text Input -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"><br>
+
+                <!-- Meeting Day Checkbox Input -->
+                <p><i>Available Meeting Days</p>
+
+                <input type="checkbox" id="monday" name="day_one" value="monday">
+                <label for="monday">Monday</label>
+                <input type="checkbox" id="tuesday" name="day_two" value="tuesday">
+                <label for="tuesday">Tuesday</label>
+                <input type="checkbox" id="wednesday" name="day_three" value="wednesday">
+                <label for="wednesday">Wednesday</label>
+                <input type="checkbox" id="thursday" name="day_four" value="thursday">
+                <label for="thursday">Thursday</label>
+                <input type="checkbox" id="friday" name="day_five" value="friday">
+                <label for="friday">Friday</label>
+                <input type="checkbox" id="saturday" name="day_six" value="saturday">
+                <label for="saturday">Saturday</label>
+                <input type="checkbox" id="sunday" name="day_seven" value="sunday">
+                <label for="sunday">Sunday</label><br><br>
+
+                <!-- Meeting Time Dropdown Menu -->
+                <label for="times"><i>Available Time: </i></label>
+
+                <select id="times" name="times">
+                    <option value="morning">Morning (8AM–12PM)</option>
+                    <option value="afternoon">Afternoon (12PM–4PM)</option>
+                    <option value="evening">Evening (4PM–8PM)</option>
+                    <option value="night">Night (8PM–12AM)</option>
+                </select><br><br>
+
+                <!-- Website Work Radio Button Input -->
+                <label><i>Working on a new website?</i></label>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="web-work" value="yes" checked>
+                <label for="no">No</label>
+                <input type="radio" id="no" name="web-work" value="no"><br><br>
+
+                <!-- Text Input For Additional Comments -->
+                <textarea placeholder="Enter any additional comments here" id="comments" name="comments"rows="5" cols="25"></textarea><br><br>
+
+                <!-- Non-Functional Submit Button -->
+                <input type="button" value="Submit">
+
+                <!-- Non-Functional Reset Button -->
+                <input type="button" value="Reset">
+
+            </form>
         </main>
     </body>
 </html>
