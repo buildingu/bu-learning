@@ -1,0 +1,31 @@
+
+body{
+    margin: 10%;
+    background-color: rgb(255, 247, 255);
+}
+h1{
+    font-family:'Verdana', serif;
+    font-size:8vw;
+}
+
+h2{
+    font-family:'Verdana', serif;
+    color: rgb(30, 30, 30);
+    padding: 20px;
+    border-style: solid;
+    border-color: rgb(61, 123, 45);
+    border-width: 2px;
+    font-size: 2vw;
+    font-weight: 200;
+}
+
+h3{
+    font-family: 'Verdana', serif;
+    font-size: 2vw;
+    margin-top: 40px;
+}
+ul{
+    font-family: 'Verdana', serif;
+    font-size: 2vw;
+    font-weight: 200;
+}
