@@ -1,0 +1,163 @@
+/* RESET, IMPORTS & HTML ROOT CONTENT */
+
+@font-face {
+  font-family: GamingFont;
+  src: url("../assets/PixelEmulator-xq08.ttf");
+}
+
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+}
+
+ul li{
+  list-style: none;
+}
+
+:root{
+
+  --CUSTFONT: GamingFont;
+
+}
+
+/* RESET, IMPORTS & HTML ROOT CONTENT (END) */
+
+/* HEADER & NAVBAR STYLES */
+
+.main-header{
+  background-color: lawngreen;
+}
+
+.main-navbar{
+  padding: 25px
+}
+
+.main-nav__items{
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav__item{
+  padding: 10px 45px;
+}
+
+.main-nav__item > a{
+  color: black;
+  text-decoration: none;
+  font-family: var(--CUSTFONT);
+}
+
+.main-header > div{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.cta{
+  background-color: yellow;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+.main-nav__item > a:hover{
+  border-bottom: 1px solid white;
+}
+
+.main-content{
+  display: flex;
+  justify-content: space-around;
+  margin: 100px;
+}
+
+.main-content > section{
+  border: 1px solid lawngreen;
+  padding: 30px;
+  font-family: var(--CUSTFONT);
+  text-align: center;
+}
+
+.main-content section div:nth-child(1){
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ok8FwXFKyrQ-SJni8nERGfV4qrCK2hPp8A");
+}
+
+.main-content > section h1{
+  padding: 25px;
+  border: 1px solid green;
+  margin: 20px;
+}
+
+.main-content .section-icon{
+  height: 150px;
+  width: 150px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+
+
+p {
+  max-width: 400px; /* Adjust the value as needed */
+  text-align: center;
+}
+
+.sign-up-btn{
+  padding: 15px;
+  background-color: yellow;
+  margin-top: 25px;
+  font-family: var(--CUSTFONT);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.sign-up-btn:hover{
+  background-color: lawngreen;
+}
+
+
+button{
+  outline: none;
+  border: none;
+
+}
+
+
+
+
+.main-footer{
+  background-color: lawngreen;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: var(--CUSTFONT);
+  padding: 25px
+}
+
+.main-footer span{
+  background-color: yellow;
+  padding: 10px;
+}
+
+.team-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-information input{
+  padding: 15px;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.team-information input{
+  width: 85%;
+}
