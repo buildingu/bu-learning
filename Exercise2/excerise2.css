@@ -1,0 +1,32 @@
+
+
+.header{
+    color:goldenrod;
+   
+}
+.lines{
+    color: goldenrod;
+}
+a{
+    color: goldenrod;
+}
+
+th{
+    color: white;
+    padding: 10px;
+    margin: 10%;
+}
+td{
+    color: goldenrod;
+    padding: 10px;
+    margin: 10%;
+    
+}
+html{
+    background-image: url("Media/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    color: goldenrod
+}
