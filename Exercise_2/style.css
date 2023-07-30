@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  color: #ffffff;
+  background-color: rgb(236, 126, 126);
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  color: #000;
+  background-color: #D6E9FE;
+  padding: 25px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#subtitle {
+  color: #000;
+  font-size: 20px;
+  background-color: #feffb4;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  height: 510px;
+  justify-content: space-around;
+
+}
+
+.grid-container {
+  display: flex;
+  flex: 1;
+  background-color: rgb(255, 191, 108);
+}
+
+.grid {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 250px;
+  height: 215px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+.item p {
+  margin-top: 50px;
+}
+
+.sign-up {
+  flex: 1;
+  border-left: 1px solid black;
+  padding-left: 10px;
+  background-color: rgb(253, 191, 225);
+}
+
+.what {
+  background-color: rgb(186, 219, 196);
+}
+
+.who {
+  background-color: rgb(203, 176, 221);
+}
+
+.where {
+  background-color: rgb(227, 228, 207);
+}
+
+.when {
+  background-color: rgb(15, 229, 236);
+}
+
+form h3 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+}
