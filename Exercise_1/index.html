@@ -14,101 +14,105 @@
             <h1 align="center">Arjun Jayakrishna: Exercise 1</h1>
             <h4 align="center">Submission Date: July 15, 2023</h4>
 
-            <fieldset>
-                <h4 align="center">Fun Facts About Me:</h4>
+            <hr>
+            
+            <h4 align="center">Fun Facts About Me:</h4>
 
-                <table align="center" border="1">
-                    <!-- First Row -->
-                    <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Favourite Movie</th>
-                        <th>Favourite Song</th>
-                        <th>Favourite Video</th>
-                    </tr>
-                    <!-- Second Row -->
-                    <tr>
-                        <td align="center">Arjun</td>
-                        <td>Jayakrishna</td>
-                        <td><a href="https://en.wikipedia.org/wiki/Memento_(film)" target="_blank"><img src="assets/memento-poster.jpeg" alt="Memento"></a></td>
-                        <td>
-                            <audio controls>
-                                <source src="assets/the-way-i-am.mp3" type="audio/mpeg">
-                                Unfortunately, your browswer does not support the audio tag.
-                            </audio>
-                        </td>
-                        <td>
-                            <video width="300" height="300" controls>
-                                <source src="assets/stock.mp4" type="video/mp4">
-                                Unfortunately, your browswer does not support the video tag.
-                            </video>
-                        </td>
-                    </tr>
-                </table>
-            </fieldset>
+            <table align="center" border="3">
+                <!-- First Row -->
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Favourite Movie</th>
+                    <th>Favourite Song</th>
+                    <th>Favourite Video</th>
+                </tr>
+                <!-- Second Row -->
+                <tr>
+                    <td align="center">Arjun</td>
+                    <td>Jayakrishna</td>
+                    <td><a href="https://en.wikipedia.org/wiki/Memento_(film)" target="_blank"><img src="assets/memento-poster.jpeg" alt="Memento"></a></td>
+                    <td>
+                        <audio controls>
+                            <source src="assets/the-way-i-am.mp3" type="audio/mpeg">
+                            Unfortunately, your browser does not support the audio tag.
+                        </audio>
+                    </td>
+                    <td>
+                        <video width="300" height="300" controls>
+                            <source src="assets/stock.mp4" type="video/mp4">
+                            Unfortunately, your browser does not support the video tag.
+                        </video>
+                    </td>
+                </tr>
+            </table>
+
+            <br><br>
 
             <!-- User Form -->
-            <h4 align="center">Enter Your Info Below:</h4>
+            <fieldset>
+                <h4 align="center">Enter Your Info Below:</h4>
 
-            <form align="center">
+                <form align="center">
 
-                <!-- Full Name Text Input -->
-                <label for="full_name">Full Name:</label>
-                <input type="text" id="full_name" name="full_name" placeholder="John Doe"><br><br>
+                    <!-- Full Name Text Input -->
+                    <label for="full_name">Full Name:</label>
+                    <input type="text" id="full_name" name="full_name" placeholder="John Doe"><br><br>
 
-                <!-- Email Text Input -->
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="jdoe@fakemail.com"><br><br>
+                    <!-- Email Text Input -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="jdoe@fakemail.com"><br><br>
 
-                <!-- Password Text Input -->
-                <label for="password">Password:</label>
-                <input type="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"><br>
+                    <!-- Password Text Input -->
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"><br>
 
-                <!-- Meeting Day Checkbox Input -->
-                <p><i>Available Meeting Days</p>
+                    <!-- Meeting Day Checkbox Input -->
+                    <p><i>Available Meeting Days</p>
 
-                <input type="checkbox" id="monday" name="day_one" value="monday">
-                <label for="monday">Monday</label>
-                <input type="checkbox" id="tuesday" name="day_two" value="tuesday">
-                <label for="tuesday">Tuesday</label>
-                <input type="checkbox" id="wednesday" name="day_three" value="wednesday">
-                <label for="wednesday">Wednesday</label>
-                <input type="checkbox" id="thursday" name="day_four" value="thursday">
-                <label for="thursday">Thursday</label>
-                <input type="checkbox" id="friday" name="day_five" value="friday">
-                <label for="friday">Friday</label>
-                <input type="checkbox" id="saturday" name="day_six" value="saturday">
-                <label for="saturday">Saturday</label>
-                <input type="checkbox" id="sunday" name="day_seven" value="sunday">
-                <label for="sunday">Sunday</label><br><br>
+                    <input type="checkbox" id="monday" name="day_one" value="monday">
+                    <label for="monday">Monday</label>
+                    <input type="checkbox" id="tuesday" name="day_two" value="tuesday">
+                    <label for="tuesday">Tuesday</label>
+                    <input type="checkbox" id="wednesday" name="day_three" value="wednesday">
+                    <label for="wednesday">Wednesday</label>
+                    <input type="checkbox" id="thursday" name="day_four" value="thursday">
+                    <label for="thursday">Thursday</label>
+                    <input type="checkbox" id="friday" name="day_five" value="friday">
+                    <label for="friday">Friday</label>
+                    <input type="checkbox" id="saturday" name="day_six" value="saturday">
+                    <label for="saturday">Saturday</label>
+                    <input type="checkbox" id="sunday" name="day_seven" value="sunday">
+                    <label for="sunday">Sunday</label><br><br>
 
-                <!-- Meeting Time Dropdown Menu -->
-                <label for="times"><i>Available Time: </i></label>
+                    <!-- Meeting Time Dropdown Menu -->
+                    <label for="times"><i>Available Time: </i></label>
 
-                <select id="times" name="times">
-                    <option value="morning">Morning (8AM–12PM)</option>
-                    <option value="afternoon">Afternoon (12PM–4PM)</option>
-                    <option value="evening">Evening (4PM–8PM)</option>
-                    <option value="night">Night (8PM–12AM)</option>
-                </select><br><br>
+                    <select id="times" name="times">
+                        <option value="morning">Morning (8AM–12PM)</option>
+                        <option value="afternoon">Afternoon (12PM–4PM)</option>
+                        <option value="evening">Evening (4PM–8PM)</option>
+                        <option value="night">Night (8PM–12AM)</option>
+                    </select><br><br>
 
-                <!-- Website Work Radio Button Input -->
-                <label><i>Working on a new website?</i></label>
-                <label for="yes">Yes</label>
-                <input type="radio" id="yes" name="web-work" value="yes" checked>
-                <label for="no">No</label>
-                <input type="radio" id="no" name="web-work" value="no"><br><br>
+                    <!-- Website Work Radio Button Input -->
+                    <label><i>Working on a new website?</i></label>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="web-work" value="yes" checked>
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="web-work" value="no"><br><br>
 
-                <!-- Text Input For Additional Comments -->
-                <textarea placeholder="Enter any additional comments here" id="comments" name="comments"rows="5" cols="25"></textarea><br><br>
+                    <!-- Text Input For Additional Comments -->
+                    <textarea placeholder="Enter any additional comments here" id="comments" name="comments"rows="5" cols="25"></textarea><br><br>
 
-                <!-- Non-Functional Submit Button -->
-                <input type="button" value="Submit">
+                    <!-- Non-Functional Submit Button -->
+                    <input type="button" value="Submit">
 
-                <!-- Non-Functional Reset Button -->
-                <input type="button" value="Reset">
+                    <!-- Non-Functional Reset Button -->
+                    <input type="button" value="Reset">
 
-            </form>
+                </form>
+            </fieldset>
         </main>
     </body>
 </html>
