@@ -1,0 +1,25 @@
+h1{
+    color:darkmagenta;
+    background-color:lemonchiffon;
+    border-style:dotted;
+    padding-top: 5px;
+}
+table{
+    color:lemonchiffon;
+    background-color:darkmagenta;
+}
+form{
+    padding-top: 10px;
+    float:inline-end;
+    background-color: lemonchiffon;
+    border-top:solid;
+    border-bottom:solid;
+}
+h4{
+    margin-bottom:2px;
+    font-size:20px;
+}
+html{
+    background-color:blanchedalmond;
+    font-family:fantasy;
+}
