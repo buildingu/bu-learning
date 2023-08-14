@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Exercise 3</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Building U">
+        <meta name="description" content="Lesson 1">
+        <meta name="author" content="Seojin Kim">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body style="text-align:center">
+      
+            <h1 style="color: white">Exercise 3 by Seojin Kim</h1>
+            <h3 style="color: white">Date submitted: 8/6/23</h3>
+            <div class="desktop">
+            <table style="border:3px solid black; margin:auto">
+              <tbody>
+              <tr>
+                <th style="border:1px solid black">First Name</th>
+                <th style="border:1px solid black">Last Name</th>
+                <th style="border:1px solid black">Favorite Movie Image</th>
+                <th style="border:1px solid black">Favorite Music Audio Sample</th>
+                <th style="border:1px solid black">Favorite Video Sample</th>
+              </tr>
+              <tr>
+                <td style="border:1px solid black">Seojin</td>
+                <td style="border:1px solid black">Kim</td>
+                <td style="border:1px solid black"><img src="download.jpg"></td>
+                <td style="border:1px solid black"><audio controls><source src="rick_roll.mp3" type="audio/mp3"></audio></td>
+                <td style="border:1px solid black"><video width="300" height="200" controls><source src="marvel_studios.mp4"></video></td>
+              </tr>
+            </tbody>
+            </table>
+          </div>
+
+          <div class="mobile">
+            <table style="border:3px solid black; margin:auto">
+              <tr>
+                <th style="border:1px solid black; width: 50%">First Name</th>
+                <th style="border:1px solid black; width: 50%">Last Name</th>
+              </tr>
+              <tr>
+                <td style="border:1px solid black; width: 50%">Seojin</td>
+                <td style="border:1px solid black; width: 50%">Kim</td>
+              </tr>
+              <tr>
+                <th colspan="2" style="border:1px solid black">Favorite Movie Image</th>
+              </tr>
+              <tr>
+                <td colspan="2" style="border:1px solid black"><img src="download.jpg"></td>
+              </tr>
+              <tr>
+                <th colspan="2" style="border:1px solid black">Favorite Music Audio Sample</th>
+              </tr>
+              <tr>
+                <td colspan="2" style="border:1px solid black"><audio controls><source src="rick_roll.mp3" type="audio/mp3"></audio></td>
+              </tr>
+              <tr>
+                <th colspan="2" style="border:1px solid black">Favorite Video Sample</th>
+              </tr>
+              <tr>
+                <td colspan="2" style="border:1px solid black"><video width="300" height="200" controls><source src="marvel_studios.mp4"></video></td>
+              </tr>
+            </tbody>
+            </table>
+          </div>
+
+          <div class="form">
+            <form>
+              <label for="name">Full Name:</label><br>
+              <input type="text" name="name" placeholder="John Doe"><br>
+              <label for="email">Email:</label><br>
+              <input type="email" name="email" placeholder="JohnDoe@example.com"><br>
+              <label for="password">Password:</label><br>
+              <input type="password" name="password" placeholder="example"><br>
+              <p>Available Meeting Days:</p>
+              <input type="checkbox" name="day1" value="Monday">
+              <label for="day1">Monday</label>
+              <input type="checkbox" name="day2" value="Tuesday">
+              <label for="day2">Tuesday</label>
+              <input type="checkbox" name="day3" value="Wednesday">
+              <label for="day3">Wednesday</label>
+              <input type="checkbox" name="day4" value="Thursday">
+              <label for="day4">Thursday</label>
+              <input type="checkbox" name="day5" value="Friday">
+              <label for="day5">Friday</label>
+              <input type="checkbox" name="day6" value="Saturday">
+              <label for="day6">Saturday</label>
+              <input type="checkbox" name="day7" value="Sunday">
+              <label for="day7">Sunday</label><br><br>
+              <label for="time">Available time: </label>
+              <select name="time">
+              <option value="Morning">Morning (8am to 12pm)</option>
+              <option value="afternoon">Afternoon(12pm to 5pm)</option>
+              <option value="evening">Evening (5pm to 9pm)</option>
+              </select>
+              <p>Currently Working on New Website?</p>
+              <input type="radio" name="website" checked>
+              <label>Yes</label>
+              <input type="radio" name="website">
+              <label>No</label><br>
+              <label>Comments:</label><br><br>
+              <textarea placeholder="Enter your comments here"></textarea><br><br>
+              <input type="submit" value="submit">
+              <input type="reset" value="reset">
+            </form>
+          </div>
+    </body>
+</html>
