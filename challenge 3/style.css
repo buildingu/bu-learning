@@ -1,0 +1,68 @@
+
+
+table, th, td {
+    background-color: white;
+}
+
+input[type=submit] {
+    background-color: rgb(2, 193, 2);
+    border: none;
+    color: white;
+}
+
+input[type=reset] {
+    background-color: red;
+    border: none;
+    color: white;
+}
+
+input[type=submit]:hover {
+    background-color: green;
+}
+
+input[type=reset]:hover {
+    background-color: rgb(164, 0, 0);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url('background-desktop.jpg');
+    }
+    .mobile {
+        display: none;
+    }
+form {
+    border: 5px solid gray;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+}
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background-image: url('background-mobile.jpg');
+    }
+    .desktop {
+        display: none;
+    }
+    th {
+        font-weight: bold;
+        background-color: rgb(143, 41, 0);
+    }
+    td {
+        background-color: rgb(84, 0, 0);
+    }
+    form {
+        border: 5px solid gray;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lightgray;
+    }
+}
+
+div :not(form) {
+    width: 70%;
+}
