@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Title -->
+    <title>Exercise 1</title>
+    <!-- Metadata -->
+    <!-- Character Set -->
     <meta charset="UTF-8">
+    <!-- Keywords -->
+    <meta name="keywords" content="HTML5"/>
+    <!-- Description -->
+    <meta name="description" content="Exercise1"/>
+    <!-- Author -->
+    <meta name="author" content="Om"/>
+    <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice 1</title>
+    <!-- Refresh Document -->
+    <meta http-equiv="refresh" content="100"/>
 </head>
 <body>
-    <h1>Exercise 1</h1>
-    <p>Hello</p>
+    <h1 style="text-align:center;">Exercise 1 by Om Gautam</h1>
+    <h4 style="text-align:center;">Date submitted: 8/14/2023</h4>
+
+    <hr>
+
+    <h4 style="text-align:center;">Fun Facts About Me:</h4>
+
+    <table style="background-color: aqua; border: 8px solid grey; margin-left:auto; margin-right:auto; border-spacing: 10px;">
+        <thead>
+            <th style="border: 2px solid black; background-color: white;">First Name</th>
+            <th style="border: 2px solid black; background-color: white;">Last Name</th>
+            <th style="border: 2px solid black; background-color: white;">Favorite Movie</th>
+            <th style="border: 2px solid black; background-color: white;">Favorite Song</th>
+            <th style="border: 2px solid black; background-color: white;">Favorite Video</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="height:200px; width:150px; margin:0; text-align:center;
+                    border: 2px solid black; background-color: white;">Om</td>
+                <td style="height:200px; width:150px; margin:0; text-align:center;
+                    border: 2px solid black; background-color: white;">Gautam</td>
+                <td style="height:200px; width:250px; margin:0; text-align:center;
+                    border: 2px solid black; background-color: white;"><a href="https://www.starwars.com/" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_.jpg" width="200" height="150"></a></td>
+                <td style="height:200px; width:350px; margin:0; text-align:center;
+                    border: 2px solid black; background-color: white;">
+                    <label>Click Play Button to Play Music:</label>
+                    <br>
+                    <audio controls>
+                        <source src="./assets/music.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </td>
+                <td style="height:200px; width:350px; margin:0; text-align:center;
+                    border: 2px solid black; background-color: white;"><iframe width="300" height="150" src="https://www.youtube.com/embed/fC5MKJDW6sc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><hr>
+
+    <h4 style="text-align:center;">Enter Details Below:</h4>
+
+    <form style="text-align:center;">
+        <em>Full Name</em>
+        <input type="text" placeholder="John Doe">
+
+        <br><br>
+
+        <em>Email Address</em>
+        <input type="email" placeholder="jdoe@gmail.com">
+
+        <br><br>
+
+        <em>Password</em>
+        <input type="password" placeholder="password">
+
+        <br><br>
+
+        <em>Available Meeting Days</em>
+        <br><br>
+        <input type="checkbox"> Monday
+        <input type="checkbox"> Tuesday
+        <input type="checkbox"> Wednesday
+        <input type="checkbox"> Thursday
+        <input type="checkbox"> Friday
+        <input type="checkbox"> Saturday
+        <input type="checkbox"> Sunday
+
+        <br><br>
+
+        <em>Available Time</em>
+        <select>
+            <option>Morning (8am to 12pm)</option>
+            <option>Afternoon (12pm to 5pm)</option>
+            <option>Evening (5pm to 11pm)</option>
+        </select>
+
+        <br><br>
+
+        <em>Currently Working On New Website</em>
+        <input type="radio"> Yes
+        <input type="radio"> No
+
+        <br><br>
+
+        <textarea cols="20" rows="2" placeholder="Enter Comments Here"></textarea>
+
+        <br><br>
+
+        <input type="submit">
+        <input type="reset">
+
+    </form>
+
+
 </body>
 </html>
