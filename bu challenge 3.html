@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html Lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>bu challenge</title>
+
+  <style>
+    body{
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c3/NGC_4414_%28NASA-med%29.jpg);
+    }
+
+    .title{
+        color:#fff;
+    }
+
+    table,th,td{
+        border: 5px solid white;
+        border-collapse: collapse;
+    }
+
+    #table-top{
+        background-color: aquamarine;
+    }
+
+    #table-bottom{
+        background-color: aqua;
+    }
+
+    form{
+        background-color: #aaa;
+        border: 5px solid #333;
+        width:40vw;
+        margin-left: 30vw;
+
+    }
+
+    @media screen and (max-width: 767px) {
+        table{
+            width:80vw;
+        }
+
+        form{
+        background-color: #aaa;
+        border: 5px solid #333;
+        width:80vw;
+        margin-left: 10vw;
+
+    }}
+
+  </style>
+</head>
+
+
+
+<body align="center">
+    <h1 class="title">Exercise 1 by me</h1>
+    <h3 class="title">Date submitted: 8/17/2023</h3>
+
+    <hr>
+
+    <h3>Fun fact about me:</h3>
+    <table align="center">
+      <tr id="table-top">
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Favorite Movie</th>
+        <th>Favorite song</th>
+        <th>Favorite video</th>
+      </tr>
+      <tr id ='table-bottom'>
+        <td>Chi Chun</td>
+        <td>L.</td>
+        <td><img width='400' src = "https://th.bing.com/th/id/OIP.GGbuZmY6x9nQHiOJD3DzLwHaFN?pid=ImgDet&rs=1" alt="idk movie"></td>
+        <td><audio controls="controls"><source src = "audio.m4a"></audio></td>
+        <td><iframe width="420" height="315" src="https://www.youtube.com/embed/DBcVPsTmG5I"></iframe></td>
+      </tr>
+    </table>
+
+    <hr>
+
+    <h3>Enter your details below:</h3>
+
+    <form>
+          <label>Full name:<br>
+          <input type="text" name="fname" placeholder="full name"><br><br>
+          </label>
+
+          <label>Email:<br>
+          <input type="email" name="lname" placeholder="email@email.com"><br><br>
+          </label>
+
+          <label>Password:<br>
+          <input type="password" name="lname" placeholder="password"><br><br>
+          </label>
+        
+          <label>Available days:<br>
+          <input type="checkbox">
+          <label>Mom</label><br>
+          <input type="checkbox">
+          <label>Tue</label><br>
+          <input type="checkbox">
+          <label>Wed</label><br>
+          <input type="checkbox">
+          <label>Thu</label><br>
+          <input type="checkbox">
+          <label>Fri</label><br>
+          <input type="checkbox">
+          <label>Sat</label><br>
+          <input type="checkbox">
+          <label>Sun</label><br>
+          </label>
+
+
+
+          <label>Available time:
+          <select> 
+                    <option>morning</option> 
+                    <option>afternoon</option> 
+                    <option>night</option> 
+                    <option>midnight</option> 
+           </select><br>
+          </label> 
+
+           <label>Working on new website?
+              <input type="radio" name="hmm" checked>
+              <label>Yes</label>
+              <input type="radio" name="hmm">
+              <label>No</label><br>  
+           </label><br>
+
+           <input type="text" placeholder="other things?"><br><br>
+
+          <input type="button" value="Submit">
+          <input type="reset">
+    </form> 
+    
+</body>
+
+</html>
