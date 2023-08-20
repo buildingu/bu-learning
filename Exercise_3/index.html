@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--TITLE-->
+    <title>Exercise 3 Submission</title>
+    <!--METADATA-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Exercise 3 Advanced CSS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--CSS File Link-->
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+
+  <body>
+    <h1>Exercise 3 by Arjun Jayakrishna</h1>
+    <h5>Date submitted: 20/08/2023</h5>
+
+    <hr>
+    <h4 id="facts">Fun facts about me:</h4>
+
+    <table class="desktop">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Favourite Movie</th>
+          <th>Favourite Song</th>
+          <th>Favourite Video</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Arjun</td>
+          <td>Jayakrishna</td>
+          <td><img src="CSS/assets/avatar.jpg" alt="Promotional poster for Avatar."></td>
+          <td>
+            Click the play button to start the song:<br>
+            <audio controls>
+              <source src="CSS/assets/rick_roll.mp3" type="audio/mpeg">
+              Unfortunately, your browser does not support the audio tag.
+            </audio>
+          </td>
+          <td>
+            <video width="300px" height="300px" controls>
+              <source src="CSS/assets/marvel_studios.mp4" type="video/mp4">
+              Unfortunately, your browser does not support the video tag.
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table><br>
+
+    <table class="mobile">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+      </tr>
+      <tr>
+        <td>Arjun</td>
+        <td>Jayakrishna</td>
+      </tr>
+      <tr>
+        <th colspan="2">Favourite Movie</th>
+      </tr>
+      <tr>
+        <td colspan="2"><img src="CSS/assets/avatar.jpg" alt="Promotional poster for Avatar."></td>
+      </tr>
+      <tr>
+        <th colspan="2">Favourite Song</th>
+      </tr>
+      <tr>
+        <td id="audio" colspan="2">
+          Click the play button to start the song:<br>
+          <audio controls>
+            <source src="CSS/assets/rick_roll.mp3" type="audio/mpeg">
+            Unfortunately, your browser does not support the audio tag.
+          </audio>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">Favourite Video</th>
+      </tr>
+      <tr>
+        <td id="video" colspan="2">
+          <video width="250px" height="250px" controls>
+            <source src="CSS/assets/marvel_studios.mp4" type="video/mp4">
+            Unfortunately, your browser does not support the video tag.
+          </video>
+        </td>
+      </tr>
+    </table>
+
+    <hr>
+    <h4 id="details">Enter your details below:</h4>
+    <form>
+      <label for="full_name">Full Name</label><br>
+      <input type="text" id="full_name" placeholder="John Doe"><br><br>
+
+      <label for="email">Email Address</label><br>
+      <input type="email" id="email" placeholder="jdoe@fakemail.com"><br><br>
+
+      <label for="password">Password</label><br>
+      <input type="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;">
+
+      <p>Available Meeting Days:</p>
+      <div class="days">
+        <input type="checkbox" id="monday">
+        <label for="monday">Monday</label>
+        <input type="checkbox" id="tuesday">
+        <label for="tuesday">Tuesday</label>
+        <input type="checkbox" id="wednesday">
+        <label for="wednesday">Wednesday</label>
+        <input type="checkbox" id="thursday">
+        <label for="thursday">Thursday</label>
+        <input type="checkbox" id="friday">
+        <label for="friday">Friday</label>
+        <input type="checkbox" id="saturday">
+        <label for="saturday">Saturday</label>
+        <input type="checkbox" id="sunday">
+        <label for="sunday">Sunday</label><br>
+      </div>
+
+      <label for="times">Available Time:</label><br>
+      <select id="times">
+        <option value="morning">Morning (8AM–12PM)</option>
+        <option value="afternoon">Afternoon (12PM–4PM)</option>
+        <option value="evening">Evening (4PM–8PM)</option>
+        <option value="night">Night (8PM–12AM)</option>
+      </select><br>
+
+      <p>Currently working on a new website?</p>
+
+      <input type="radio" id="yes" name="working" checked>
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="working">
+      <label for="no">No</label>
+
+      <p>If yes, please enter which page(s) you are working on</p>
+      <textarea placeholder="Enter your comments here" rows="3"></textarea><br>
+
+      <input class="button" type="submit" value="Submit">
+
+      <input class="button" type="reset" value="Reset">
+
+    </form>
+      
+    <footer>
+      <p id="version">Version Identifier</p>
+    </footer>
+
+  </body>
+</html>

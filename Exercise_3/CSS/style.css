@@ -1,0 +1,324 @@
+body {
+  text-align: center;
+  color: #fff;
+}
+
+label:nth-child(1) {
+  margin-top: 15px;
+}
+
+label, label ~ p {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#full_name, #email, #password, #times {
+  width: 390px;
+  height: 25px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.days {
+  margin-top: -5px;
+}
+
+ .days label {
+  display: inline-block;
+  font-style: initial;
+  font-size: 14px;
+}
+
+input[type="radio"] {
+  appearance: none;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+input[type="radio"]:checked {
+  background-color: #000;
+}
+
+textarea {
+  margin-top: -5px;
+}
+
+textarea::placeholder {
+  font-size: 12px;
+  text-align: center;
+  transform: translateY(8px);
+}
+
+.button {
+  color: #fff;
+  border-radius: 2px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  border: 1px solid #4caf50;
+}
+
+input[type="reset"] {
+  background-color: #c53939;
+  border: 1px solid #c53939;
+}
+
+input[type="submit"]:hover {
+  background-color: #417e0d;
+}
+
+input[type="reset"]:hover {
+  background-color: #ac1200;
+}
+
+#version {
+  visibility: hidden;
+}
+
+#version::after {
+  visibility: visible;
+  display: block;
+  padding: 15px 9px;
+  width: 100%;
+  margin-top: -3px;
+  margin-bottom: -15px;   
+  margin-left: -10px;
+  font-size: 20px;
+}
+
+/*Mobile Styles*/
+@media screen and (max-width: 767px) {
+
+  body {
+    background-image: url("assets/background-mobile.jpg");
+    font-family: 'Comic Sans MS', sans-serif;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  h5 {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  #facts {
+    margin: 10px 0px 5px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  table {
+    width: 80%;
+    margin: -20px auto 25px;
+  }
+
+  table, th, td {
+    border: 10px solid #808080;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  th {
+    background-color: #aa3c10;
+  }
+
+  td {
+    background-color: #793e3e;
+  }
+
+  #audio {
+    padding: 35px;
+  }
+
+  #video {
+    padding-bottom: 20px;
+  }
+
+  #details {
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+
+  form {
+    width: 70%;
+    border: 10px solid #808080;
+    background-color: lightgray;
+    margin: 0px auto;
+    padding: 20px 12px;
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #full_name, #email, #password, #times {
+    width: 80%;
+    height: 30px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+  }
+
+  .days {
+    margin-bottom: -5px;
+  }
+
+  label[for="sunday"] {
+    margin-bottom: 20px;
+  }
+
+  #times {
+    height: 35px;
+  }
+
+  label[for="times"] {
+    margin-top: 0px;
+  }
+
+  textarea {
+    width: 80%;
+  }
+
+  .button {
+    display: block;
+    margin: 20px auto 0px;
+    width: 90%;
+    padding: 7px 12px;
+  }
+
+  input[type="submit"] {
+    margin-bottom: -5px;
+  }
+
+  #version::after {
+    content: "Mobile Version®";
+    background-color: #1a4577;
+  }
+}
+
+/*Desktop Styles*/
+@media screen and (min-width: 768px) {
+
+  body {
+    background-image: url("assets/background-desktop.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  h5 {
+    font-size: 14px;
+    margin: 0px;
+  }
+
+  h4 {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 15px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  table {
+    width: 90%;
+    background-color: #263a42;
+  }
+
+  table, thead, tbody, th, td {
+    border: 10px solid #808080;
+    border-collapse: collapse;
+    margin: auto;
+  }
+
+  th, td {
+    padding: 20px;
+  }
+
+  th {
+    font-size: 15px;
+  }
+
+  #details {
+    margin-top: 30px;
+  }
+
+  form {
+    width: 460px;
+    border: 10px solid #808080;
+    background-color: lightgray;
+    margin: 0px auto;
+    padding: 20px 12px;
+    color: black;
+    font-size: 15px;
+  }
+
+  #full_name, #email, #password, #times {
+    width: 390px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  #times {
+    height: 30px;
+  }
+
+  .days label {
+    margin-left: 2px;
+  }
+
+  label[for="saturday"], label[for="sunday"] {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  label[for="times"] {
+    margin-top: 100px;
+  }
+
+  textarea {
+    width: 390px;
+    height: 40px;
+  }
+
+  .button {
+    margin-top: 10px;
+    padding: 5px 15px;
+    margin-bottom: -10px;
+  }
+
+  input[type="submit"] {
+    margin-right: 5px;
+  }
+
+  #version::after {
+    background-color: #8a0073;
+    content: "Desktop Version®";
+  }
+}
