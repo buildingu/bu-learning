@@ -3,8 +3,17 @@ body {
   color: #fff;
 }
 
+h5 {
+  font-size: 14px;
+}
+
 label:nth-child(1) {
   margin-top: 15px;
+}
+
+table, th, td {
+  border: 10px solid #808080;
+  border-collapse: collapse;
 }
 
 label, label ~ p {
@@ -109,7 +118,6 @@ input[type="reset"]:hover {
   }
 
   h5 {
-    font-size: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -131,11 +139,6 @@ input[type="reset"]:hover {
     margin: -20px auto 25px;
   }
 
-  table, th, td {
-    border: 10px solid #808080;
-    border-collapse: collapse;
-  }
-
   th, td {
     padding: 10px;
   }
@@ -148,11 +151,11 @@ input[type="reset"]:hover {
     background-color: #793e3e;
   }
 
-  #audio {
+  .audio {
     padding: 35px;
   }
 
-  #video {
+  .video {
     padding-bottom: 20px;
   }
 
@@ -250,9 +253,7 @@ input[type="reset"]:hover {
     background-color: #263a42;
   }
 
-  table, thead, tbody, th, td {
-    border: 10px solid #808080;
-    border-collapse: collapse;
+  table, th, td {
     margin: auto;
   }
 
@@ -262,6 +263,10 @@ input[type="reset"]:hover {
 
   th {
     font-size: 15px;
+  }
+
+  .video {
+    padding-bottom: 30px;
   }
 
   #details {
