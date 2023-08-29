@@ -7,12 +7,30 @@
   <title>bu challenge</title>
 
   <style>
-    body{
-        background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c3/NGC_4414_%28NASA-med%29.jpg);
-    }
+    html, body {
+  height: 100%;
+  width: 100%;
+  margin:0px;
+}
 
     .title{
         color:#fff;
+    }
+
+    h3{
+        color:#fff;
+    }
+    @media screen and (min-width: 767px) {
+      body{
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c3/NGC_4414_%28NASA-med%29.jpg);
+    }
+
+    #mobile{
+      display: none;
+    }
+
+    #mobile-footer{
+      display:none;
     }
 
     table,th,td{
@@ -28,7 +46,7 @@
         background-color: aqua;
     }
 
-    form{
+    #formd{
         background-color: #aaa;
         border: 5px solid #333;
         width:40vw;
@@ -36,18 +54,95 @@
 
     }
 
+    footer{
+      background-color: pink;
+    }
+
+    #desktop-footer{
+      align-items: center;
+      width: 100vw;
+      height: 8vh;
+      bottom:0;
+    }
+
+    
+
+  }
+
     @media screen and (max-width: 767px) {
+      body{
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c3/NGC_4414_%28NASA-med%29.jpg);
+        display: block;
+    }
+
+    #mobile{
+      display:block;
+    }
+
+    #desktop{
+      display:none;
+    }
+
+    #desktop-footer{
+      display:none;
+    }
+  
+
+    table,td{
+        border: 5px solid white;
+        border-collapse: collapse;
+    }
+
         table{
             width:80vw;
+            margin-left: 10vw;
         }
 
-        form{
+        .top{
+          background-color: aquamarine;
+        }
+
+        .bottom{
+          background-color: aqua;
+        }
+
+        #formm{
         background-color: #aaa;
         border: 5px solid #333;
         width:80vw;
         margin-left: 10vw;
+    }
+        #submit{
+          width:20vw;
+          height:5vh;
+          background-color: greenyellow;
+          border-radius: 10px;
+          border:0;
+        }
 
-    }}
+        #reset{
+          width:20vw;
+          height:5vh;
+          background-color: red;
+          border-radius: 10px;
+          border:0;
+        }
+
+        footer{
+          background-color: yellow;
+        }
+
+        #mobile-footer{
+      align-items: center;
+      width: 100vw;
+      height: 8vh;
+      bottom:0;
+    }
+
+
+   
+  
+  }
 
   </style>
 </head>
@@ -61,6 +156,8 @@
     <hr>
 
     <h3>Fun fact about me:</h3>
+
+    <div id="desktop">
     <table align="center">
       <tr id="table-top">
         <th>First name</th>
@@ -82,7 +179,7 @@
 
     <h3>Enter your details below:</h3>
 
-    <form>
+    <form id="formd">
           <label>Full name:<br>
           <input type="text" name="fname" placeholder="full name"><br><br>
           </label>
@@ -135,6 +232,127 @@
           <input type="button" value="Submit">
           <input type="reset">
     </form> 
+  </div>
+
+
+
+
+
+
+
+    <div id="mobile">
+  
+
+    <table border="1">
+      <tr>
+        <td class="top">
+          Favorite movie
+        </td>
+      </tr>
+
+      <tr>
+        <td class="bottom">
+          <img width='400' src = "https://th.bing.com/th/id/OIP.GGbuZmY6x9nQHiOJD3DzLwHaFN?pid=ImgDet&rs=1" alt="idk movie">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="top">
+          Favorite song
+        </td>
+      </tr>
+
+      <tr>
+        <td class="bottom">
+          <audio controls="controls"><source src = "audio.m4a">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="top">
+          Favorite video
+        </td>
+      </tr>
+
+      <tr>
+        <td class="bottom">
+          <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+          </video>
+        </td>
+      </tr>
+  
+  
+  
+  </table>
+
+  <hr>
+
+  <h3>Enter your details below:</h3>
+
+  <div id='formm'>
+        <label>Full name:<br>
+        <input type="text" name="fname-m" placeholder="full name"><br><br>
+        </label>
+
+        <label>Email:<br>
+        <input type="email" name="lname-m" placeholder="email@email.com"><br><br>
+        </label>
+
+        <label>Password:<br>
+        <input type="password" name="lname-m" placeholder="password"><br><br>
+        </label>
+      
+        <label>Available days:<br>
+        <input type="checkbox">
+        <label>Mom</label><br>
+        <input type="checkbox">
+        <label>Tue</label><br>
+        <input type="checkbox">
+        <label>Wed</label><br>
+        <input type="checkbox">
+        <label>Thu</label><br>
+        <input type="checkbox">
+        <label>Fri</label><br>
+        <input type="checkbox">
+        <label>Sat</label><br>
+        <input type="checkbox">
+        <label>Sun</label><br>
+        </label>
+
+
+
+        <label>Available time:
+        <select> 
+                  <option>morning</option> 
+                  <option>afternoon</option> 
+                  <option>night</option> 
+                  <option>midnight</option> 
+         </select><br>
+        </label> 
+
+         <label>Working on new website?
+            <input type="radio" name="hmm-m" checked>
+            <label>Yes</label>
+            <input type="radio" name="hmm-m">
+            <label>No</label><br>  
+         </label><br>
+
+         <input type="text" placeholder="other things?"><br><br>
+
+        <input type="button" value="Submit" id="submit">
+        <input type="reset" id="reset">
+        </div> 
+
+
+</div>
+
+<footer>
+        <p id="mobile-footer">Mobile version</p>
+        <p id="desktop-footer">Desktop version</p>
+</footer>
+
+    
     
 </body>
 
