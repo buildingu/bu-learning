@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="stylesheet" type="text/css" href="excersize2.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 2 CSS</title>
+</head>
+
+<body>
+
+ <header>
+        <h1>School Football Game Announcement</h1>
+    </header>
+
+    <section id="game-details">
+        <h2>Game Details</h2>
+        <p>
+            <strong>Teams:</strong> Independence High School vs. Panther Creek Panthers<br>
+            <strong>Date:</strong> 9/9/23 this Saturday.<br>
+            <strong>Time:</strong> Kickoff is at 4:30<br>
+            <strong>Location:</strong> 10555 Independence Pkwy <br>
+        </p>
+        <img src="footballteam.jpg" alt="Football Team">
+    </section>
+
+    <section id="special-events">
+        <h2>Special Events</h2>
+        <p>
+            Join us for an exciting football game with special events:
+        </p>
+        <table>
+            <tr>
+                <td>Live Band Rehearsal</td>
+                <td><a href="https://schools.friscoisd.org/campus/high-school/independence/home">More Info</a></td>
+            </tr>
+            <tr>
+                <td>Cheerleader Performance</td>
+                <td><a href="https://schools.friscoisd.org/campus/high-school/independence/home">More Info</a></td>
+            </tr>
+            <tr>
+                <td>Halftime Show</td>
+                <td><a href="https://schools.friscoisd.org/campus/high-school/independence/home">More Info</a></td>
+            </tr>
+            <tr>
+                <td>Food Truck Festival</td>
+                <td><a href="https://schools.friscoisd.org/campus/high-school/independence/home">More Info</a></td>
+            </tr>
+            <tr>
+                <td>Face Painting Booth</td>
+                <td><a href="https://schools.friscoisd.org/campus/high-school/independence/home">More Info</a></td>
+            </tr>
+            <tr>
+                <td>Raffle Prizes</td>
+                <td><a href="https://schools.friscoisd.org/campus/high-school/independence/home">More Info</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="band-rehearsal">
+        <h3>Band Rehearsal Example</h3>
+        <audio controls>
+            <source src="bandpreformance.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section id="drill-performance">
+        <h3>Drill Performance Example</h3>
+        <video controls>
+            <source src="20211015 IHS Royals.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <section id="concessions">
+        <h2>Concessions Stand</h2>
+        <p>
+            Our concessions stand will be open throughout the game, offering a variety of snacks and drinks. Your support helps our school!
+        </p>
+    </section>
+
+    <section id="volunteer-opportunities">
+    <h2>Volunteer Opportunities</h2>
+    <p>
+        Students, if you'd like to get involved and help run the concessions stand, please fill out the form below:
+    </p>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email"><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number"><br>
+
+        <label for="availability">Availability:</label>
+        <textarea id="availability" name="availability" rows="4" required placeholder="Enter your availability (e.g any time between 4:30-7:30)"></textarea><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    </section>
+
+    <footer>
+        <p>For more information, contact the email given on the school website.</p>
+    </footer>
+
+</body>
+
+</html>
