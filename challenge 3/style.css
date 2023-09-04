@@ -4,6 +4,50 @@ table, th, td {
     background-color: white;
 }
 
+.day {
+    font-size: 10px;
+}
+
+.italic {
+    font-size: 10px;
+    font-style: italic;
+}
+
+::placeholder {
+    all: unset;
+}
+
+select {
+    text-align: center;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 10px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: green;
+}
+
+textarea {
+    width: 80%;
+    text-align: center;
+    font-size: 10px;
+}
+
+input {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 input[type=submit] {
     background-color: rgb(2, 193, 2);
     border: none;
@@ -26,25 +70,32 @@ input[type=reset]:hover {
 
 @media screen and (min-width: 768px) {
     body {
-        background-image: url('background-desktop.jpg');
+        background-image: url('assets/background-desktop.jpg');
+    }
+    .mobileFooter {
+        display: none;
     }
     .mobile {
         display: none;
     }
-form {
+    form {
     border: 5px solid gray;
     width: 300px;
     margin-left: auto;
     margin-right: auto;
     background-color: lightgray;
-}
+    }
+
 }
 
 @media screen and (max-width: 767px) {
     body {
-        background-image: url('background-mobile.jpg');
+        background-image: url('assets/background-mobile.jpg');
     }
     .desktop {
+        display: none;
+    }
+    .desktopFooter {
         display: none;
     }
     th {
@@ -64,5 +115,5 @@ form {
 }
 
 div :not(form) {
-    width: 70%;
+    color: hotpink;
 }
