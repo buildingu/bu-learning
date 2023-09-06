@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
+<!--MetaData-->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial scale=1.0">
 <title>Document</title>
 </head>
 
 <body>
-
+<!--Title-->
 <h1><center>Exercise 1 by Dennis Calu</center></h1>
 <h4><center>Date Submitted: 08/21/23</center></h4>
 <hr>
@@ -16,7 +17,7 @@
 
 <center>
 <table border="10" bgcolor="#89CFF0" cellspacing="5" cellpadding="10">
-
+<!--Table-->
 <tr>
 
     <th> First Name </th>
@@ -31,9 +32,9 @@
 
 <td><center>Dennis</center></td>
 <td><center>Calu</center></td>
-<td><center><a href="https://www.imdb.com/title/tt15398776/" target ="_blank"><img src="https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_.jpg" width="100" height="150"></a></center></td>
-<td><center><audio controls> <source src="assets/sample-12s.mp3" type="audio/mp3" alt = "Click play button to play music"></audio></center></td>
-<td><center><video widt="320" height="240" controls><source src="assets/sample-5s.mp4" type ="video/mp4"> </video></center></td>
+<td><center><a href="https://www.imdb.com/title/tt15398776/" target ="_blank"><img src="https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_.jpg" width="100" height="150" alt="Oppenheimer Movie Poster"></a></center></td>
+<td><center><p>Click on the play button to play the sound:</p><audio controls> <source src="/Exercise 1/Assets/sample-12s.mp3" type="audio/mp3"></audio></center></td>
+<td><center><video width="320" height="240" controls><source src="/Exercise 1/Assets/sample-5s.mp4" type ="video/mp4"> </video></center></td>
 
 </tr>
 
@@ -43,14 +44,16 @@
 <br><hr>
 
 <center>
+<!--Form Section-->
 <form>
+  <!--User Details-->
     <h4>Enter your details below:</h4>
 
     <label><i>Full Name:</i></label>
     <input type="text" placeholder="John Doe">
     <br><br>
     <label><i>Email Address:</i></label>
-    <input type="text" placeholder="john_doe123@gmail.com" size = "22">
+    <input type="email" placeholder="john_doe123@gmail.com" size = "22">
     <br><br>
     <label><i>Password:</i></label>
     <input type="password">
@@ -58,7 +61,7 @@
     <label><i>Available Meeting Days:</i></label>
 
     <br><br>
-
+<!--Available time and dates-->
     <input type="checkbox">Monday
     <input type="checkbox">Tuesday
     <input type="checkbox">Wednesday
@@ -69,7 +72,7 @@
 
     <br><br>
 
-    <label><i>Available Time</i>
+    <label><i>Available Time</i></label>
   <select>
     <option>Morning(8am to 12pm)</option>
     <option>Afternoon(1pm to 5pm)</option>
@@ -77,10 +80,10 @@
   </select>
 
   <br><br>
-
+<!--Project Work Selection-->
   <label><i>Currently working on new website?</i></label>
-  <input type="radio">Yes
-  <input type="radio">No
+  <input type="radio" name = "Project Identifier" value = "Yes">Yes
+  <input type="radio" name = "Project Identifier" value = "No">No
 
   <br><br>
 
