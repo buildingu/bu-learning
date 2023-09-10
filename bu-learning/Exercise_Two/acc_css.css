@@ -1,0 +1,34 @@
+
+
+h3{
+    text-align: center;
+    
+}
+
+h3 {
+    border: 2px solid rgb(94, 17, 95);
+    border-radius: 5px;
+  }
+
+table, th, td {
+    border: 1px solid;
+  }
+
+h2{
+    text-align: left;
+    vertical-align: top;
+
+}
+
+
+
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  body {
+    background-color: rgb(236, 221, 239);
+  }
+
