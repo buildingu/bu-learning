@@ -1,7 +1,9 @@
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
-    width: 100%}
+    width: 100%;
+    text-align:center;
+  }
 
 @media screen and (max-width: 600px){
   body{
@@ -13,9 +15,26 @@ body{
   video{
     width: 500px;
   }
+  div{
+    text-align:center;
+  }
+}
+img{
+  width:100px;
 }
 
+h1{
+  color:white;
+  font-size:50px;
+}
 
+h2{
+  color:white;
+  font-size:30px;
+}
+table{
+  text-align:center;
+}
 table, th, td {
     border: 10px solid;
     }
@@ -26,7 +45,7 @@ table, th, td {
         text-align: center;
       }
       th, td {
-        padding: 50px;
+        padding: 20px;
         text-align: center;
       }
       th {
@@ -34,6 +53,8 @@ table, th, td {
       }
 table{
     width: 50%;
+    margin-left:auto;
+    margin-right:auto;
 }
 tr
 {
@@ -64,27 +85,19 @@ select {
     background-color: #f1f1f1;
 }
 #demobox {
-    width: 40%;
-    background-color:gainsboro;
+    background-color:red;
     padding: 10px;
     margin: auto;
     border-radius: 10px;
-    border-color: black;
+    border-color: black
 }
-form{
-  color:black;}
-
   .wrapper{
     width: 100%;
   }
   .table{
     padding: 30px 30px 20px;
-
     width: 100%;
   }
-.img{
-  padding: 30px 30px 30px;
-}
     .grid {
         display: flex;
         flex-wrap: wrap;
@@ -113,7 +126,7 @@ form{
   display: none;
 }
 
-@media (max-width: 400px)  {
+@media (max-width: 500px) {
 #desk-table {
       display: none;
   }
