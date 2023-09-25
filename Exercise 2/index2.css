@@ -1,0 +1,147 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #1d57a8; 
+    color: #efd422;
+    font-size: 20px;
+    
+}
+p {
+font-size: 15px;;
+}
+.middle{
+    height:100%;
+    width:50vw;
+    margin:auto;
+}
+
+.inner_middle{
+    color: #efd422;
+    display:flex;
+    flex-direction:column;
+    justify-content: stretch;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    position: relative; 
+}
+
+h1 {
+    font-size: 32px;
+    color: #efd422; 
+    margin-bottom: 20px; 
+}
+
+table {
+    border-collapse: collapse;
+    border: 5px solid rgb(255, 255, 255);
+    background-color: #3C638E;
+}
+
+td {
+    border: 5px solid rgb(255, 255, 255);
+    padding: 15px;
+}
+th {
+    border: none;
+}
+audio {
+    border-color: #efd422;
+}
+
+.labels {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+label{
+font-size: 22px;
+}
+input[type=text] {
+
+    font-size: 18px;
+    width: 100%;
+    border-radius: 6px;
+    line-height: 1.5;
+    padding: 5px 10px;
+    border: 2px solid #dee1e2;
+    color:#1d57a8;
+    background: #efd422;
+    display: block;
+    height: 36px;
+    margin-top: 10px;
+}
+
+input[type=email] {
+
+    font-size: 18px;
+    width: 100%;
+    border-radius: 6px;
+    line-height: 1.5;
+    padding: 5px 10px;
+    border: 2px solid #dee1e2;
+    color: #1d57a8;
+    background: #efd422;
+    display: block;
+    height: 36px;
+    margin-top: 10px;
+}
+
+input[type=password] {
+
+    font-size: 18px;
+    width: 100%;
+    border-radius: 6px;
+    line-height: 1.5;
+    padding: 5px 10px;
+    border: 2px solid #dee1e2;
+    color: #1d57a8;
+    background: #efd422;
+    display: block;
+    height: 36px;
+    margin-top: 10px;
+}
+
+input[type=submit] {
+
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 12px 24px;
+    background-color: #efd422;
+    color:#1d57a8
+}
+
+input[type=radio] {
+ width: 15px;
+ height: 15px;
+ padding: 0;
+ margin: 0;
+ vertical-align: bottom;
+ position: relative;
+ cursor: pointer;
+}
+select {
+    height: auto ;
+    width: auto;
+    margin: 10px;
+    font-size: 20px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px; 
+}
+
+.ages{
+    display:block;
+    text-align:center;
+}
+
+.ages input{
+    float:left;
+}
