@@ -12,6 +12,12 @@
     .desktop-only{
         display:table;
     }
+    .mobile-only2{
+        display:none;
+    }
+    .desktop-only2{
+        display:footer;
+    }
     table{
         background-color:#435b6e;
         width:80%;
@@ -35,10 +41,21 @@
         background-color:red;
         color:white;
     }
+    #desktop-footer{
+        background-color: rgb(150, 3, 150);
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: large;
+        margin-bottom:-10px;
+        padding-top:1px;
+        padding-bottom:1px
+    }
+    body :not(p) {
+        font-weight: bold;
+      }
 }
 
 /* Mobile Styles */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px){
     body{
         background-image:url('../assets/background-mobile.jpg');
         color:white;
@@ -50,6 +67,12 @@
     }
     .mobile-only{
         display:block;
+    }
+    .mobile-only2{
+        display:footer;
+    }
+    .desktop-only2{
+        display:none;
     }
     table, th, td{
         margin:auto;
@@ -91,5 +114,14 @@
     .button2{
         background-color:red;
         color:white;
+    }
+    #mobile-footer{
+        background-color: rgb(59, 59, 113);
+        width: 100%;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: large;
+    }
+    :nth-child(even) {
+        margin:5px;
     }
 }
