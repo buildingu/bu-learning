@@ -1,0 +1,58 @@
+/*for desktops*/
+h1,h2{
+    text-align: center;
+    color:white;
+}
+
+body{
+    background-image: url("assets/background-desktop.jpg");
+}
+
+table{
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100%
+}
+th,td {
+    border-collapse: seperate;
+    border: 5px solid rgb(77, 76, 76)
+}
+
+th{
+    background-color: rgb(34, 42, 58);
+    height: 25px;
+}
+
+td{
+    background-color: rgb(27, 61, 62);
+}
+
+#phone-table {
+    display: none;
+}
+
+
+
+/* for mobile use */
+@media screen and (max-width: 600px){
+    body{
+        background-image: url("assets/background-mobile.jpg");
+    }
+    h1, h2, h4{
+        font-family: cursive;
+    }
+    #desk-table {
+        display: none;
+        
+    }
+    #phone-table {
+        display: block;
+        width: 100%;
+    }
+    
+
+    
+    
+} 
