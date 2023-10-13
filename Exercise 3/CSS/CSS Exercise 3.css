@@ -1,13 +1,20 @@
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
+    width: 100%}
+
+@media screen and (max-width: 600px){
+  body{
+    background-color: peru;
+  }
+  img{
+    width: 500px;
+  }
+  video{
+    width: 500px;
+  }
 }
-@media screen{
- and (min-width: 768px) (1280px)}
-body { background-color: whitesmoke;
-    font-weight: 500; 
-    font-size: 14px; 
-    color: whitesmoke;} 
+
 
 table, th, td {
     border: 10px solid;
@@ -66,3 +73,51 @@ select {
 }
 form{
   color:black;}
+
+  .wrapper{
+    width: 100%;
+  }
+  .table{
+    padding: 30px 30px 20px;
+
+    width: 100%;
+  }
+.img{
+  padding: 30px 30px 30px;
+}
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column {
+        flex: 0 0 8.33%; 
+        background-color: red;
+        color: white;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    .column:nth-child(2n) {
+        background-color: blue;
+    }
+    
+    @media (max-width: 600px) {
+        .column {
+            flex: 0 0 50%; 
+        }
+    }
+
+#desk-table {
+  display: block;
+}
+#phone-table {
+  display: none;
+}
+
+@media (max-width: 400px)  {
+#desk-table {
+      display: none;
+  }
+  #phone-table {
+      display: block;
+  }
+}

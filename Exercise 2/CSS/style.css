@@ -1,0 +1,44 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    background: greenyellow
+}
+body{
+    margin: 1px;
+}
+box1{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background: greenyellow;
+    /*
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin: 50px;
+    */
+    margin-right: auto;
+    margin-left: auto;
+}
+main{
+    border: 0.5 px solid black;
+    padding: 20px;
+    margin-trim: block-end;
+}
+.box{
+    width: 55%;
+    height:0;
+    padding-bottom: calc(55%)
+}
+h1 {
+    color:darkgreen
+}
+h2 {
+    color:darkgreen;
+}
+h5{
+    color:darkolivegreen
+}
+h4 {color:darkolivegreen}
