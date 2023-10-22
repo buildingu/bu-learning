@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/CSS Exercise 3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <center><title>Exercise 3</title></center>
+        <body background="assets/background-desktop.jpg"> 
+    </head>
+    <body>
+        <center><h1>Exercise 3 by Ginny Feng</h1></center>
+        <center><h2>Date submitted: 8/25/23</h2></center>
+        <hr>
+        <center><h3><b>Fun Facts About Me:</b></h3></center>
+        <center><table>
+            <table width="50%">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Favorite Movie</th>
+                <th>Favorite Song</th>
+                <th>Favorite Video</th>
+            </tr>
+            <tr>
+                <td>Ginny</td>
+                <td>Feng</td>
+                <td>
+                    <img src="assets/luca.jpg" width="300 px" alt="Luca movie poster"/>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="assets/rick_roll.mp3" type="audio/mpeg" alt="Rickroll audio">
+                    </audio>
+                </td>
+                <td>
+                    <section class="wrapper-main">
+                        <video autoplay controls>
+                            <source src="assets/marvel_studios.mp4" width=100px alt="Marvel Studios video">
+                        </video>
+                        <br>
+                    </section>
+                </td>
+            </tr>
+        </table></center>
+        <div id="demobox">
+        <form>
+        <center><hp3><b>Enter your details below:</b></hp3></center>
+        <center><form action="action_page.php" method="GET"></center>
+            <div>
+                <center><label for="fname"><i>Full Name</i></label></center>
+                <center><input type="text" id="fname" name="fname" placeholder="Enter your full name"></center> 
+            </div>
+
+            <br>
+
+            <div>
+                <center><label for="email"><i>Email Address</i></label></center>
+                <center><input type="text" id="email" name="email" placeholder="Enter your email address"></center>
+            </div>
+
+            <br>
+
+            <div>
+                <center><label for="password"><i>Password</i></label></center>
+                <center><input type="password" id="password" name="passowrd" maxlength="12" placeholder="Enter your password" required></center>
+            </div>
+
+            <br>
+
+            <center><hp3><i>Available Meeting Days:</i></hp3></center>
+            <center><div>
+                <input type="checkbox" name="Monday" id="Monday"> 
+                <label for="Monday">Monday</label>
+                <input type="checkbox" name="Tuesday" id="Tuesday">
+                <label for="Tuesday">Tuesday</label>
+                <input type="checkbox" name="Wednesday" id="Wednesday">
+                <label for="Wednesday">Wednesday</label>
+                <input type="checkbox" name="Thursday" id="Thursday">
+                <label for="Thursday">Thursday</label>
+                <input type="checkbox" name="Friday" id="Friday">
+                <label for="Friday">Friday</label>
+                <input type="checkbox" name="Saturday" id="Saturday">
+                <label for="Saturday">Saturday</label>
+                <input type="checkbox" name="Sunday" id="Sunday">
+                <label for="Sunday">Sunday</label>
+            </div></center>
+            <br>
+
+            <div>
+                <center><label for="time"><i>Available time:</i></label></center>
+                <center><select id="time" name="time">
+                    <option value="Morning">Morning 7am-10am</option>
+                    <option value="Afternoon">Afternoon 12pm-3pm</option>
+                    <option value="Evening">Evening 5pm-8pm</option>
+                </select></center>
+            </div>
+                   
+            <br>
+
+            <center><hp3><i>Currently working on a new website?</i></hp3></center>
+            <center><div>
+                <label selected>Yes</label>
+                <input type="radio" name="title">
+                <label>No</label>
+                <input type="radio" name="title">                    
+            </div></center>
+
+            <br>
+
+            <div>
+                <center><label for="Comments">If yes, please enter which page(s) you are working on.</label></center>
+                <center><textarea 
+                    id="comments" name="comments">Enter pages here.
+                </textarea></center>
+            </div>
+
+            <br>
+
+                <center>
+                    <button class="col-xs-*">Submit</button>
+                    <button class="col-xs-*">Reset</button>
+                </center>
+        </form>
+        </div>
+    </body>
+</html>

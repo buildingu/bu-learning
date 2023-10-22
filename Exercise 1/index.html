@@ -11,7 +11,7 @@
         <center><h2>Date submitted: 8/10/23</h2></center>
         <hr>
         <center><h3><b>Ginny Facts:</b></h3></center>
-        <table>
+        <center><table border="10" bgcolor="#89CFF0" cellspacing="5" cellpadding="10">
             <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
@@ -40,26 +40,26 @@
                 </td>
             </tr>
         <hr>
-        </table>
+        </table></center>
         <center><hp3><b>Input information below:</b></hp3></center>
         <center><form action="action_page.php" method="GET"></center>
             <div>
                 <center><label for="fname">Full Name:</label></center>
-                <center><input type="text" id="fname" name="fname" placeholder=""></center> 
+                <center><input type="text" id="fname" name="fname" placeholder="Enter name"></center> 
             </div>
 
             <br>
 
             <div>
                 <center><label for="email">Email Address</label></center>
-                <center><input type="text" id="email" name="email" placeholder=""></center>
+                <center><input type="text" id="email" name="email" placeholder="Enter email"></center>
             </div>
 
             <br>
 
             <div>
                 <center><label for="password">Password</label></center>
-                <center><input type="password" id="password" name="passowrd" maxlength="12" required></center>
+                <center><input type="password" id="password" name="passowrd" maxlength="12" placeholder="Enter password" required></center>
             </div>
 
             <br>
@@ -86,15 +86,15 @@
             <div>
                 <center><label for="time"><i>Available time:</i></label></center>
                 <center><select id="time" name="time">
-                    <option value="Morning">Morning</option>
-                    <option value="Afternoon">Afternoon</option>
-                    <option value="Evening">Evening</option>
+                    <option value="Morning">Morning: 7am-12am</option>
+                    <option value="Afternoon">Afternoon: 12am-3pm</option>
+                    <option value="Evening">Evening: 6pm-9pm</option>
                 </select></center>
             </div>
                    
             <br>
 
-            <center><hp3><i>Currently working on a new website?</i></hp3></center>
+            <center><h3><i>Currently working on a new website?</i></h3></center>
             <center><div>
                 <label selected>Yes</label>
                 <input type="radio" name="title">
@@ -113,15 +113,8 @@
 
             <br>
 
-            <div>
-                <center><input type="submit"></center>
-            </div>
-            
-            <br>
-            
-            <div>
-                <center><input type="reset"></center>
-            </div>
+                <center><button>Submit</button> 
+                    <button>Reset</button></center>
         </form>
     </body>
 </html>

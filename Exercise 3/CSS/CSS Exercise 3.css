@@ -1,0 +1,68 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+@media screen{
+ and (min-width: 768px) (1280px)}
+body { background-color: whitesmoke;
+    font-weight: 500; 
+    font-size: 14px; 
+    color: whitesmoke;} 
+
+table, th, td {
+    border: 10px solid;
+    }
+    table {
+        border-collapse: collapse;
+      }
+      td {
+        text-align: center;
+      }
+      th, td {
+        padding: 50px;
+        text-align: center;
+      }
+      th {
+        background-color: slategray;
+      }
+table{
+    width: 50%;
+}
+tr
+{
+  background-color:darkolivegreen;
+  color:white;
+}
+input [type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+textarea{
+    height: 35px;
+    width: 30%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+select {
+    width: 25%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+#demobox {
+    width: 40%;
+    background-color:gainsboro;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    border-color: black;
+}
+form{
+  color:black;}
