@@ -9,10 +9,10 @@
     </head>
     <body>
         <center><h1>Exercise 3 by Ginny Feng</h1></center>
-        <center><h2>Date submitted: 8/25/23</h2></center>
+        <center><h2>Date submitted: 10/26/23</h2></center>
         <hr>
         <center><h3><b>Fun Facts About Me:</b></h3></center>
-        <center><table>
+        <center><table id="desk-table">
             <table width="50%">
             <tr>
                 <th>First Name</th>
@@ -34,14 +34,43 @@
                 </td>
                 <td>
                     <section class="wrapper-main">
-                        <video autoplay controls>
-                            <source src="assets/marvel_studios.mp4" width=100px alt="Marvel Studios video">
+                        <video width="320" height="240" controls>
+                            <source src="assets/marvel_studios.mp4" width=50% alt="Marvel Studios video">
                         </video>
                         <br>
                     </section>
                 </td>
             </tr>
-        </table></center>
+
+            <center><table id="phone-table">
+                <tr>
+                    <td>First Name</td>
+                    <td>Ginny</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>Feng</td>
+                </tr>
+                <tr>
+                    <td>Favorite Movie</td>
+                    <td><img src="assets/luca.jpg" width="150 px" alt="Luca movie poster"/></td>
+                </tr>
+                    <tr>
+                    <td>Favorite Song</td>
+                    <td>
+                        <audio controls>
+                        <source src="assets/rick_roll.mp3" type="audio/mpeg" alt="Rickroll">
+                    </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Favorite Video</td>
+                    <td><video width="320" height="300" controls>
+                        <source src="assets/marvel_studios.mp4" alt="Marvel Studios video">
+                    </video></td>
+                </tr>
+                </table></center>>
+                    
         <div id="demobox">
         <form>
         <center><hp3><b>Enter your details below:</b></hp3></center>
@@ -62,7 +91,7 @@
 
             <div>
                 <center><label for="password"><i>Password</i></label></center>
-                <center><input type="password" id="password" name="passowrd" maxlength="12" placeholder="Enter your password" required></center>
+                <center><input type="password" id="password" name="password" maxlength="12" placeholder="Enter your password" required></center>
             </div>
 
             <br>
@@ -88,7 +117,7 @@
 
             <div>
                 <center><label for="time"><i>Available time:</i></label></center>
-                <center><select id="time" name="time">
+                <center><select id="time" name="time" class="box">
                     <option value="Morning">Morning 7am-10am</option>
                     <option value="Afternoon">Afternoon 12pm-3pm</option>
                     <option value="Evening">Evening 5pm-8pm</option>
@@ -109,8 +138,8 @@
 
             <div>
                 <center><label for="Comments">If yes, please enter which page(s) you are working on.</label></center>
-                <center><textarea 
-                    id="comments" name="comments">Enter pages here.
+                <center><textarea class="box"
+                    id="comments" name="comments" placeholder="Enter pages here.">
                 </textarea></center>
             </div>
 

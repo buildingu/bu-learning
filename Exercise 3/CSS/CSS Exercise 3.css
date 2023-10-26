@@ -7,7 +7,7 @@ body{
 body { background-color: whitesmoke;
     font-weight: 500; 
     font-size: 14px; 
-    color: whitesmoke;} 
+    color: black;} 
 
 table, th, td {
     border: 10px solid;
@@ -57,7 +57,7 @@ select {
     background-color: #f1f1f1;
 }
 #demobox {
-    width: 40%;
+    width: 80%;
     background-color:gainsboro;
     padding: 10px;
     margin: auto;
@@ -66,3 +66,29 @@ select {
 }
 form{
   color:black;}
+
+.box{
+  width:160px;
+}
+
+h1,h2,h3{
+color:white;
+  }
+  
+@media only screen and (max-width:100px) {
+  #desk-table{
+    display:block;
+  }
+  #phone-table{
+    display:none;
+  }
+}
+
+@media only screen and (min-width:499px) {
+  #desk-table{
+    display:none;
+  }
+  #phone-table{
+    display:block;
+  }
+}

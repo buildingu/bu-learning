@@ -12,13 +12,6 @@ box1{
     height: 250px;
     font-size: 22px;
     background: greenyellow;
-    /*
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    margin-right: 50px;
-    margin: 50px;
-    */
     margin-right: auto;
     margin-left: auto;
 }
