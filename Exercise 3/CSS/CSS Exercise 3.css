@@ -11,7 +11,7 @@ body { background-color: whitesmoke;
     font-size: 14px; 
     color: black;} 
 
-table, th, td {
+center#desk-table, th, td {
     border: 5px solid;
     }
     table {
@@ -58,8 +58,10 @@ select {
 #demobox {
     width: 80%;
     background-color:gainsboro;
-    padding: 5px;
+    padding: 10px;
     margin: auto;
+    margin-bottom:20px;
+    margin-top:20px;
     border-radius: 5px;
     border-color: black;
 }
@@ -70,7 +72,10 @@ form{
   width:160px;
 }
 center#desk-table{
-  width:700px;
+  width:50%;
+  text-align:center;
+  margin-left:117px;
+  margin-right:15px;
 }
 
 h1,h2,h3{
