@@ -1,16 +1,18 @@
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
+    margin-right:0;
+    margin-left:0;
+    margin-top:0;
+    margin-bottom:2px;
 }
-@media screen{
- and (min-width: 768px) (1280px)}
+
 body { background-color: whitesmoke;
     font-weight: 500; 
     font-size: 14px; 
     color: black;} 
 
 table, th, td {
-    border: 10px solid;
+    border: 5px solid;
     }
     table {
         border-collapse: collapse;
@@ -19,15 +21,12 @@ table, th, td {
         text-align: center;
       }
       th, td {
-        padding: 50px;
+        padding: 8px;
         text-align: center;
       }
       th {
         background-color: slategray;
       }
-table{
-    width: 50%;
-}
 tr
 {
   background-color:darkolivegreen;
@@ -59,9 +58,9 @@ select {
 #demobox {
     width: 80%;
     background-color:gainsboro;
-    padding: 10px;
+    padding: 5px;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 5px;
     border-color: black;
 }
 form{
@@ -70,25 +69,28 @@ form{
 .box{
   width:160px;
 }
+center#desk-table{
+  width:700px;
+}
 
 h1,h2,h3{
 color:white;
   }
-  
-@media only screen and (max-width:100px) {
-  #desk-table{
-    display:block;
-  }
-  #phone-table{
-    display:none;
-  }
-}
 
-@media only screen and (min-width:499px) {
-  #desk-table{
+  center#phone-table{
     display:none;
   }
-  #phone-table{
-    display:block;
+
+  @media only screen and (max-width: 768px) {
+    center#phone-table{
+      display:block;
+    }
+    center#desk-table{
+      display:none;
+    }
   }
-}
+
+  center#phone-table{
+    margin:0;
+    border:1px;
+  }
