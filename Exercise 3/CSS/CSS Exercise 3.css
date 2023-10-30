@@ -4,20 +4,15 @@ body{
     margin-left:0;
     margin-top:0;
     margin-bottom:2px;
-}
-
-body { background-color: whitesmoke;
+    background-color: whitesmoke;
     font-weight: 500; 
     font-size: 14px; 
     color: black;} 
 
-center#desk-table, th, td {
+th, td {
     border: 5px solid;
     text-align:center;
     }
-    table {
-        border-collapse: collapse;
-      }
       td {
         text-align: center;
       }
@@ -58,6 +53,7 @@ select {
 }
 #demobox {
     width: 80%;
+    padding-bottom:80%;
     background-color:gainsboro;
     padding: 10px;
     margin: auto;
@@ -95,10 +91,9 @@ color:white;
     border:1px;
   }
   .button{
-    width: 50px;
     margin: 1em auto;
     height: 2em;
     font-size: 1.1rem;
     border-color: white;
-    min-width: 300px;
+    min-width: 70px;
   }
