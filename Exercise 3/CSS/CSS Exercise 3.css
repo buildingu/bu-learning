@@ -13,6 +13,7 @@ body { background-color: whitesmoke;
 
 center#desk-table, th, td {
     border: 5px solid;
+    text-align:center;
     }
     table {
         border-collapse: collapse;
@@ -71,12 +72,6 @@ form{
 .box{
   width:160px;
 }
-center#desk-table{
-  width:50%;
-  text-align:center;
-  margin-left:117px;
-  margin-right:15px;
-}
 
 h1,h2,h3{
 color:white;
@@ -98,4 +93,12 @@ color:white;
   center#phone-table{
     margin:0;
     border:1px;
+  }
+  .button{
+    width: 50px;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    border-color: white;
+    min-width: 300px;
   }
