@@ -8,3 +8,40 @@ body{
     font-weight: 500; 
     font-size: 14px; 
     color: black;} 
+
+    @media only screen and (max-width: 768px) {
+        .navbar-desk{
+          display:block;
+        }
+        .navbar-mobile{
+          display:none;
+        }
+      }
+
+      .navbar-desk {
+        font-size:24px;
+        font-weight:10px;
+        word-spacing:50px;
+        width: 100%;
+        padding-bottom:80%;
+        background-color:gainsboro;
+        padding: 10px;
+        margin: auto;
+        margin-bottom:20px;
+        margin-top:0px;
+        border-color: black;
+    }
+  .button{
+    margin: 0.5em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color:cornflowerblue;
+    color:white;
+    border-color: white;
+    min-width: 70px;
+  }
+  h1,h3{
+    color:white;
+    margin:5px;
+    margin-bottom:10px
+  }
