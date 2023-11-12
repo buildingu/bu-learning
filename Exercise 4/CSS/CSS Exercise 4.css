@@ -56,6 +56,7 @@ body{
         margin: 0 auto 0 auto;
     }
 
+    
   .button{
     margin: 0.5em auto;
     height: 2em;
@@ -116,4 +117,18 @@ th, td {
   width:50%;
   height:75px;
   text-align:left;
+}
+
+#navbox{
+  width: 100%;
+  background-color:gainsboro;
+    padding: 10px;
+    margin: auto;
+}
+
+#desk-table{
+  width: 100%;
+  background-color:gainsboro;
+    padding: 0px;
+    color:black;
 }
