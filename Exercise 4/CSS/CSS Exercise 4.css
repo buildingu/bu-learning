@@ -11,15 +11,16 @@ body{
       overflow-x: hidden;
       overflow-y: scroll;
     } 
-
     @media only screen and (max-width: 768px) {
-        .navbar-desk{
-          display:block;
-        }
         .navbar-mobile{
+          display:block;
+          margin-top:10px;
+        }
+        .navbar-desktop{
           display:none;
         }
       }
+
 
       .navbar-desk{    
         border: 2px;
@@ -70,7 +71,6 @@ body{
     min-width: 70px;
   }
   h2,h3{
-    color:white;
     margin:5px;
     font-size:1rem;
     margin-bottom:10px;
@@ -81,20 +81,19 @@ body{
   h1{
     margin-left:20px;
     margin-top:100px;
-    color:white;
   }
   p{
     line-height: 24px;
     text-align:left;
     margin-left:20px;
     max-width:500px;
-    color:white;
   }
 
   .container {
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  color:white;
 }
 
 img {
@@ -127,6 +126,10 @@ th, td {
   background-color:gainsboro;
     padding: 10px;
     margin: auto;
+    color:white;
+}
+.text-two{
+  text-align:left;
 }
 
 #desk-table{
@@ -141,4 +144,8 @@ th, td {
   color:white;
   padding: 20px;
   margin-bottom:20px;
+}
+
+.middlebox{
+  color:white;
 }

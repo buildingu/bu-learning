@@ -9,29 +9,44 @@
         <body background="assets/TF2me.jpg"> 
     </head>
     <body>
-        <nav class="navbar navbar-default">
+        <nav class="navbar-desktop">
   <div class="container-fluid">
     <div class="navbar-header" id="navbox">
       <img src="assets/building u logo.png" width="50px" alt="Building-U Logo">
         <a href="default.asp">Home</a></li>
-        <a href="news.asp">News</a></li>
-        <a href="contact.asp">Contact</a></li>
-        <a href="about.asp">About</a></li>
+        <a href="news.asp">About</a></li>
+        <a href="contact.asp">Portfolio</a></li>
+        <a href="about.asp">Contact</a></li>
     </div>
     </div>
 </nav>
-
         <nav class="navbar-mobile">
-            <img src="assets/hamburger icon.png" width="50px" alt="Hamburger Menu Icon">
+            <input type="checkbox" id="hamburger-input" class="burger-shower" />
+            <label id="hamburger-menu" for="hamburger-menu">
+            <button id=hamburger-menu><img src="assets/hamburger icon.png" width="50px" alt="Hamburger Menu Icon"></button>
+            <nav id="sidebar-menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><img src="assets/building u logo.png" width="50px" alt="Building-U Logo"></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="overlay"></div>
+            </nav>
+            </label>
         </nav>
         <!--Fix this^ It still shows up on desktop version-->
 
+<div class="topbox">
         <center><h2>Welcome to my Building-U Page:]</h2></center>
         <center><h3>Find my work on Github.</h3></center>
         <center><button id="view-work" class="button">View my work!</button></center>
-        <h1>About Me</h1>
+</div>
 
         <div class="container">
+            <h2 class="text-two">About Me</h2>
             <div class="image">
                 <img class="img" src="assets/flowerpawPFP.png" width="300 px" alt="Tabby cat with aroace flag PFP"/>
             </div>
@@ -42,6 +57,7 @@
                 I hope to work on some websites in the future with my community.</p>
             </div>
           </div>
+          
             <div id="desk-table">
             <table>
             <h1>My Portfolio</h1>
@@ -70,8 +86,8 @@
             </table>
         </div>
             
-        <h1>Contact Me</h1>
         <div id="demobox">
+            <h1>Contact Me</h1>
             <form>
                     <div>
                         <center><label for="fname"><i>Name</i></label></center>
