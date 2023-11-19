@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(66, 104, 124);
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 50px;
+    color: skyblue;
+    font-weight: 100;
+    margin-top: 25px;
+    
+}
+
+.titlesub {
+    font-family: 'Cedarville Cursive', cursive;
+    text-align: center;
+    font-size: 40px;
+    color: skyblue;
+    margin-top: -35px;
+}
+
+.details, tr {
+    margin-left: 580px;
+    height: 40px;
+    width: 400px;
+    /* border-collapse: separate;
+    border: 3px solid skyblue; */
+    margin-top: -20px;
+    
+}
+
+.table1text {
+    columns: skyblue;
+}
+
+td {
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+.picture {
+    margin-top: 50px;
+    margin-left: 40px;
+    float: left;
+    margin-bottom: 40px;
+}
+
+#pictext {
+    margin-top: 10px;
+    margin-left: 25px; 
+    font-family: 'Cedarville Cursive', cursive;
+    color: skyblue;
+}
+
+div p {
+    font-size: 32px;
+}
+
+#main {
+    clear: both;
+    /* border: solid 2px black; */
+    width: 1530px;
+    height: 300px;
+}
+
+.nestdivbox {
+    height: 300px;
+    width: 761px;
+    /* border: solid 2px black; */
+    float: left;
+}
+
+#guestlistscroll {
+    overflow: auto;
+}
+
+.guestlist {
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: skyblue;
+    border-radius: 5%;
+}
+
+.deetstext {
+    font-size: 40px;
+    color: skyblue;
+    margin-left: 10px;
+}
+
+#deetstext1 {
+    color: black;
+    
+}
+
+#register {
+    color: skyblue;
+    margin-top: 40px;
+
+}
+
+.reg {
+    display: block; /* Add this line */
+    margin-left: 220px;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+#reg1 {
+    margin-left: 300px;
+}
+
+button {
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 180px;
+    height: 50px;
+    color: rgb(66, 104, 124);
+    background-color: skyblue;
+    border-radius: 50%;
+    border: none;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.ball2 {
+    margin-left: 880px;
+    margin-top: -390px;
+    width: 500px;
+    height: 400px;
+}
+
+.contact {
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    /* margin-top: -210px;
+    margin-right: 150px; */
+}
+
+.contacttext {
+    text-align: center;
+    font-family: 'Cedarville Cursive', cursive;
+    color: skyblue;
+}
