@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <link rel="stylesheet" href="css3/style3.css">
+</head>
+<body>
+    <h1>Exercise 3 by Om Gautam</h1>
+    <h4>Date submitted: 11/20/2023</h4>
+
+    <hr>
+
+    <h4>Fun Facts About Me:</h4>
+
+    <table>
+        <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Movie</th>
+            <th>Favorite Song</th>
+            <th>Favorite Video</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Om</td>
+                <td>Gautam</td>
+                <td><a href="https://www.starwars.com/" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_.jpg" width="200" height="150"></a></td>
+                <td>
+                    <label>Click Play Button to Play Music:</label>
+                    <br>
+                    <audio controls>
+                        <source src="../Exercise1/assets/music.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </td>
+                <td><iframe width="300" height="150" src="https://www.youtube.com/embed/fC5MKJDW6sc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><hr>
+
+    <h4>Enter Details Below:</h4>
+    <div class="form-styles">
+        <form>
+            <em>Full Name</em>
+            <br>
+            <input type="text" placeholder="John Doe">
+
+            <br><br>
+
+            <em>Email Address</em>
+            <br>
+            <input type="email" placeholder="jdoe@gmail.com">
+
+            <br><br>
+
+            <em>Password</em>
+            <br>
+            <input type="password" placeholder="password">
+
+            <br><br>
+
+            <em>Available Meeting Days</em>
+            <br><br>
+            <input type="checkbox"> Monday
+            <input type="checkbox"> Tuesday
+            <input type="checkbox"> Wednesday
+            <input type="checkbox"> Thursday
+            <input type="checkbox"> Friday
+            <input type="checkbox"> Saturday
+            <input type="checkbox"> Sunday
+
+            <br><br>
+
+            <em>Available Time</em>
+            <br>
+            <select>
+                <option>Morning (8am to 12pm)</option>
+                <option>Afternoon (12pm to 5pm)</option>
+                <option>Evening (5pm to 11pm)</option>
+            </select>
+
+            <br><br>
+
+            <em>Currently Working On New Website</em>
+            <br>
+            <input type="radio" name="answer"> Yes
+            <input type="radio" name="answer"> No
+
+            <br><br>
+
+            <textarea cols="20" rows="2" placeholder="Enter Comments Here"></textarea>
+
+            <br><br>
+
+            <input type="submit">
+            <input type="reset">
+
+        </form>
+    </div>
+
+
+</body>
+</html>
