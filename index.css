@@ -1,0 +1,129 @@
+html{
+    background-image: url("Media/background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header{
+    color:white;
+   
+}
+.lines{
+    color: white;
+}
+a{
+    color: white;
+}
+
+th{
+    color: white;
+    padding: 10px;
+    margin: 10%;
+}
+td{
+    color: white;
+    padding: 10px;
+    margin: 10%;
+    
+}
+
+.blah{
+    color: white;
+}
+
+.titles{
+    background-color: rgb(65, 60, 101);
+}
+
+.body{
+    background-color: rgb(72, 72, 123);
+}
+
+form{
+    width:400px;
+    display:inline-block;
+    border:10px solid rgb(90, 90, 90);
+    background-color:lightgray;
+    color: black;
+}
+
+.button1{
+    background-color: green;
+    color: white;
+}
+
+.button2{
+    background-color: red;
+    color: white;
+}
+
+@media only screen and (max-width: 600px){
+    
+    html{
+        background-image: url("Media/background-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .header{
+        color:white;
+       
+    }
+    .lines{
+        color: white;
+    }
+    a{
+        color: white;
+    }
+    
+    th{
+        color: white;
+        padding: 10px;
+        margin: 10%;
+    }
+    td{
+        color: white;
+        padding: 10px;
+        margin: 10%;
+        
+    }
+    
+    .blah{
+        color: white;
+    }
+    
+    .titles{
+        background-color: rgb(65, 60, 101);
+    }
+    
+    .body{
+        background-color: rgb(72, 72, 123);
+    }
+    
+    form{
+        width:400px;
+        display:inline-block;
+        border:10px solid rgb(90, 90, 90);
+        background-color:lightgray;
+        color: black;
+    }
+    
+    .button1{
+        background-color: green;
+        color: white;
+    }
+    
+    .button2{
+        background-color: red;
+        color: white;
+    }
+}
+@media only screen and (max-width: 425px){
+    .testing{
+        background-color: red;
+        background-image: unset;
+    }
+    html{
+        background-image: unset;
+    }
+}
