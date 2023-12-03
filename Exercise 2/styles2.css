@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: rgb(66, 104, 124);
     margin: 0;
 }
@@ -25,8 +25,6 @@ body {
     margin-left: 580px;
     height: 40px;
     width: 400px;
-    /* border-collapse: separate;
-    border: 3px solid skyblue; */
     margin-top: -20px;
     
 }
@@ -60,7 +58,6 @@ div p {
 
 #main {
     clear: both;
-    /* border: solid 2px black; */
     width: 1530px;
     height: 300px;
 }
@@ -68,7 +65,6 @@ div p {
 .nestdivbox {
     height: 300px;
     width: 761px;
-    /* border: solid 2px black; */
     float: left;
 }
 
@@ -102,7 +98,7 @@ div p {
 }
 
 .reg {
-    display: block; /* Add this line */
+    display: block; 
     margin-left: 220px;
     font-family: 'Cedarville Cursive', cursive;
 }
@@ -134,12 +130,10 @@ button {
     width: 500px;
     height: 200px;
     margin: auto;
-    /* margin-top: -210px;
-    margin-right: 150px; */
 }
 
 .contacttext {
     text-align: center;
     font-family: 'Cedarville Cursive', cursive;
     color: skyblue;
-}
+} */

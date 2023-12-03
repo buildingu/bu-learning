@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Code!!</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="intro">
+    <h1 >Exercise 1</h1>
+    <h3>Date: November 20, 2023</h3>
+    </div>
+    <br>
+    <p class="table-subh">About Me!</p>
+    <table class="table"> 
+        <tr>
+            <th class="th1">First Name</th>
+            <th class="th2">Last Name</th>
+            <th class="th3">Favourite Movie</th>
+            <th class="th4">Favourite Music</th>
+            <th class="th5">Favourite Video</th>
+        </tr>
+        <tr>
+            <td class="t1">Mihir</td>
+            <td class="t2">Maringanti</td>
+            <td class="t3"> 
+                <a href="https://www.youtube.com/watch?v=shW9i6k8cB0" target="_blank"> 
+                    <img src="./assets/spiderman.jpg" alt="Spider-Man: _Across_the_Spider-Verse" width="100">
+                </a> 
+            </td>
+            <td class="t4"> 
+                <audio controls> 
+                    <source src="./assets/rick_roll.mp3" type="audio/mpeg"> 
+                </audio>
+            </td>
+            <td class="t5">
+                <video controls src="./assets/marvel_studios.mp4" width="400"></video>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table class="table2">
+
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <tr>
+            <td>Mihir</td>
+            <td>Maringanti</td>
+        </tr>
+        <tr>
+            <th colspan="2">Favourite Movie</th>
+        </tr>
+        <tr id="moviepic">
+            <td colspan="2"><a href="https://www.youtube.com/watch?v=shW9i6k8cB0" target="_blank"> 
+                <img src="./assets/spiderman.jpg" alt="Spider-Man: _Across_the_Spider-Verse" width="100"></td>
+        </tr>
+        <tr>
+            <th colspan="2">Favourite Song</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <audio controls> 
+                    <source src="./assets/rick_roll.mp3" type="audio/mpeg"> 
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Favourite Video</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <video controls src="./assets/marvel_studios.mp4" width="400"></video>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+
+
+
+
+
+
+
+    <p  id="formname">Please Enter Details Below</p>
+    <div class="form">
+    <form>
+        <label class="l1" for="name">Full Name</label>
+        <input type="text" placeholder="Harry Potter">
+        <br>
+        <label class="l1" for="email">Email</label>
+        <input type="email" placeholder="potterharry26@gmail.com">
+        <br>
+        <label class="l1" for="password">Password</label>
+        <input type="password" placeholder="Password">
+        <br>
+        <label class="question1" for="availability">Which Days Are You Available?</label>
+        <br>
+        <div class="dayopts">
+        <input type="radio">Monday
+        <input type="radio">Tuesday
+        <input type="radio">Wednesday
+        <input type="radio">Thursday
+        <input type="radio">Friday
+        <input type="radio">Saturday
+        <input type="radio">Sunday
+        </div>
+        <br>
+        <label class="Times" for="time">Times Available?</label>
+        <select>
+            <option value="time">8 AM</option>
+            <option value="time">9 AM</option>
+            <option value="time">10 AM</option>
+            <option value="time">11 AM</option>
+            <option value="time">12 PM</option>
+            <option value="time">1 PM</option>
+            <option value="time">2 PM</option>
+            <option value="time">3 PM</option>
+            <option value="time">4 PM</option>
+            <option value="time">5 PM</option>
+            <option value="time">6 PM</option>
+            <option value="time">7 PM</option>
+            <option value="time">8 PM</option>
+        </select>
+        <br>
+        <div class="finalq">
+            <label for="question">Currently Working on the New Website?</label>
+            <div>
+                <input type="radio" id="yes" name="newWebsite"> <label for="yes">Yes</label>
+                <input type="radio" id="no" name="newWebsite"> <label for="no">No</label>
+            </div>
+        </div>
+    </form>
+    <textarea name="extra" id="extra" cols="60" rows="10" placeholder="Any additional information that you would like us to know?"></textarea>
+    <div class="button">
+        <button>Reset</button> 
+        <button>Submit</button>
+    </div>
+    </div>
+</body>
+</html>
