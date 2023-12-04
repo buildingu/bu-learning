@@ -7,6 +7,7 @@
  <title>Exercise 4</title>
  </head>
     <body>
+        <div class="overflow-hidden">
         <nav class="navbar-desktop">
   <div class=".container">
     <div class="navbar-header" id="navbox">
@@ -42,78 +43,57 @@
             <div class="row row-cols-1">
               <div class="col"><h1><b>Welcome to my Building-U Page:]</b></h1></div>
               <div class="col"><h1>Find my work on GitHub!</h1></div>
-              <div class="col"><center><button type="button" class="btn btn-outline-dark">View my work</button></center></div>
+              <div class="col"><center><button type="button" class="btn btn-outline-dark btn-large">View my work</button></center></div>
             </div>
           </div>
 
-        <div class="container">
-            <h2 class="text-two">About Me</h2>
-            <div class="image">
-                <img class="img" src="assets/flowerpawPFP.png" width="300 px" alt="Tabby cat with aroace flag PFP"/>
-            </div>
-            <div class="text">
-              <p>Hello there! I'm Ginny Feng, a junior on the Building-U Coding Team. 
+          <div class="container-fluid text-center">
+            <div class="row row-cols-2 no-gutters">
+              <div class="col"><h2>About Me</h2></div>
+              <div class="col col-lg-5"> <p>Hello there! I'm Ginny Feng, a junior on the Building-U Coding Team. 
                 As I dip my toes deeper into HTML, CSS, and--just now--JS, 
                 I'm finding coding really fun and interesting. 
-                I hope to work on some websites in the future with my community.</p>
+                I hope to work on some websites in the future with my community.</p></div>
+              <div class="col"><img class="img" src="assets/flowerpawPFP.png" width="150 px" alt="Tabby cat with aroace flag PFP"/></div>
             </div>
           </div>
           
             <div id="desk-table">
             <table>
             <h1>My Portfolio</h1>
-            <tr>
-                <th><img src="assets/HTML-logo.png" width="100 px" alt="HTML-logo"/></th>
-                <th><img src="assets/css-logo.png" width="75 px" alt="CSS-logo"/></th>
-                <th><img src="assets/JS-logo.png" width="100 px" alt="JS-logo"/></th>
-            </tr>
-            <tr>
-                <td>
-                    <h3>Project 1: HTML</h3>
-                    <p>I started learning HTML with this project. It showcases a basic table and form with several types of questions. Click learn more for more information!</p>
-                    <center><button id="HTML-learn-more" class="button">Learn more</button></center>
-                </td>
-                <td>
-                    <h3>Project 2: CSS</h3>
-                    <p>Similar to Project 1, Project 2 jumpstarted me on CSS. I created a poster for my school's volunteer event Spruce Up Sparta, and spiced up the previous format from Project 1 with CSS. Click learn more for more information!</p>
-                    <center><button id="CSS-learn-more" class="button">Learn more</button></center>
-                </td>
-                <td>
-                    <h3>Project 3: Advanced CSS</h3>
-                    <p>Project 3 shows how I mastered responsive website design. Again borrowing the format from Project 1, I created a website that shrinks the table and form when in mobile view. Click learn more for more information!</p>
-                    <center><button id="JS-learn-more" class="button">Learn more</button></center>
-                </td>
-            </tr>
-            </table>
-        </div>
-            
+            <div class="row row-cols-3">
+                <div class="col"><img src="assets/HTML-logo.png" width="100 px" alt="HTML-logo"/></div>
+                <div class="col"><img src="assets/css-logo.png" width="75 px" alt="CSS-logo"/></div>
+                <div class="col"><img src="assets/JS-logo.png" width="100 px" alt="JS-logo"/></div>
+                <div class="col"><h3>Project 1: HTML</h3></div>  
+                <div class="col"><h3>Project 2: CSS</h3></div>
+                <div class="col"><h3>Project 3: Advanced CSS</h3></div>
+                <div class="col"><p>I started learning HTML with this project. It showcases a basic table and form with several types of questions. Click learn more for more information!</p></div>  
+                <div class="col"><p>Similar to Project 1, Project 2 jumpstarted me on CSS. I created a poster for my school's volunteer event Spruce Up Sparta, and spiced up the previous format from Project 1 with CSS. Click learn more for more information!</p></div>
+                <div class="col"><p>Project 3 shows how I mastered responsive website design. Again borrowing the format from Project 1, I created a website that shrinks the table and form when in mobile view. Click learn more for more information!</p></div>
+                    <div class="col"><h3><center><button type="button" class="btn btn-outline-dark btn-large">Learn more</button></center></h3></div>
+                    <div class="col"><h3><center><button type="button" class="btn btn-outline-dark btn-large">Learn more</button></center></h3></div>
+                    <div class="col"><h3><center><button type="button" class="btn btn-outline-dark btn-large">Learn more</button></center></h3></div>
+                </div>
+
         <div id="demobox">
             <h1>Contact Me</h1>
             <form>
-                    <div>
-                        <center><label for="fname"><i>Name</i></label></center>
-                        <center><input type="text" id="fname" name="fname" placeholder="Enter your name"></center> 
-                    </div>
-        
-                    <br>
-        
-                    <div>
-                        <center><label for="email"><i>Email</i></label></center>
-                        <center><input type="text" id="email" name="email" placeholder="sillybilly@gmail.com"></center>
-                    </div>
-
-                    <br>
-
-                    <div>
-                        <center><label for="message"><i>Message</i></label></center>
-                        <center><input type="text" id="message" name="message" placeholder="Woah! The famous Flowerpaw!"></center>
-                    </div>
-                        <div>
-                        <center>
-                            <button id="send-button" class="button">Send</button>
-                        </center>
-                    </div>
-                </form>
-        </div>     
+                <div class="mb-3">
+                  <label for="full name" class="form-label">Name</label>
+                  <input type="name" class="form-control" id="full name">
+                </div>
+                <div class="mb-3">
+                  <label for="email address" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email address">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <input type="message" class="form-control" id="message">
+                  </div>
+                <center><button type="submit" class="btn btn-outline-dark btn-large">Submit</button></center>
+              </form>
+        </div>    
+    </div> 
     </body>
     
