@@ -3,6 +3,7 @@
  <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="CSS/CSS Exercise 4.css">
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
  <title>Exercise 4</title>
  </head>
@@ -23,6 +24,7 @@
                 </div>
             </div>
         </nav>
+      </div>
 
           <div
 class="bg-image p-5 text-center shadow-1-strong mb-5 text-white"
@@ -98,15 +100,18 @@ style="background-image: url('https://external-content.duckduckgo.com/iu/?u=http
             <form>
                 <div class="mb-3">
                   <label for="full name" class="form-label">Name</label>
-                  <input type="name" class="form-control" id="full name">
+                  <input type="name" class="form-control" id="validation-fullname" required>
+                  <div class="valid-feedback"> Looks good! </div>
                 </div>
                 <div class="mb-3">
                   <label for="email address" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email address">
+                  <input type="email" class="form-control" id="validation-emailaddress" required>
+                  <div class="valid-feedback"> Looks good! </div>
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
-                    <input type="message" class="form-control" id="message">
+                    <input type="message" class="form-control" id="validation-message" required>
+                  <div class="valid-feedback"> Looks good! </div>
                   </div>
                 <center><button type="submit" class="btn btn-outline-light btn-large">Submit</button></center>
               </form>
