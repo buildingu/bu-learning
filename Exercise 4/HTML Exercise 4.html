@@ -8,74 +8,91 @@
  </head>
     <body>
         <div class="overflow-hidden">
-        <nav class="navbar-desktop">
-  <div class=".container">
-    <div class="navbar-header" id="navbox">
-      <img src="assets/building u logo.png" width="50px" alt="Building-U Logo">
-        <a href="default.asp">Home</a></li>
-        <a href="news.asp">About</a></li>
-        <a href="contact.asp">Portfolio</a></li>
-        <a href="about.asp">Contact</a></li>
-    </div>
-    </div>
-
-</nav>
-        <nav class="navbar-mobile">
-            <input type="checkbox" id="hamburger-input" class="burger-shower" />
-            <label id="hamburger-menu" for="hamburger-menu">
-            <button id=hamburger-menu><img src="assets/hamburger icon.png" width="50px" alt="Hamburger Menu Icon"></button>
-            <nav id="sidebar-menu">
-                <h3>Menu</h3>
-                <ul>
-                    <li><img src="assets/building u logo.png" width="50px" alt="Building-U Logo"></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <div class="overlay"></div>
-            </nav>
-            </label>
+          <nav class='navbar navbar-expand-sm'>
+            <div class='container-fluid'>
+              <img src="assets/building u logo.png" width="50px" alt="Building-U Logo">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" class="navbar-toggler"><span class='navbar-toggler-icon'></span></button>
+                <div class='collapse navbar-collapse' id='navbar-menu'>
+                    <ul class='navbar-nav'>
+                        <li><a href='#' class='nav-link'>Home</a></li>
+                        <li><a href='#' class='nav-link'>About</a></li>
+                        <li><a href='#' class='nav-link'>Portfolio</a></li>
+                        <li><a href='#' class='nav-link'>Contact</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
-        <!--Fix this^ It still shows up on desktop version-->
 
+          <div
+class="bg-image p-5 text-center shadow-1-strong mb-5 text-white"
+style="background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FpLexJWv.jpg&f=1&nofb=1&ipt=000cecd8a1375c0d887f31576eda408793a96d766e1be2207a24cabdba452253&ipo=images');">
         <div class="container text-center">
             <div class="row row-cols-1">
               <div class="col"><h1><b>Welcome to my Building-U Page:]</b></h1></div>
               <div class="col"><h1>Find my work on GitHub!</h1></div>
-              <div class="col"><center><button type="button" class="btn btn-outline-dark btn-large">View my work</button></center></div>
+              <div class="col"><center><button type="button" class="btn btn-outline-light btn-large">View my work</button></center></div>
             </div>
           </div>
+          <br>
+          <br>
 
-          <div class="container-fluid text-center">
-            <div class="row row-cols-2 no-gutters">
-              <div class="col"><h2>About Me</h2></div>
-              <div class="col col-lg-5"> <p>Hello there! I'm Ginny Feng, a junior on the Building-U Coding Team. 
-                As I dip my toes deeper into HTML, CSS, and--just now--JS, 
-                I'm finding coding really fun and interesting. 
-                I hope to work on some websites in the future with my community.</p></div>
-              <div class="col"><img class="img" src="assets/flowerpawPFP.png" width="150 px" alt="Tabby cat with aroace flag PFP"/></div>
-            </div>
+<section class="py-3 py-md-5 py-xl-8">
+  <div class="container">
+    <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+      <div class="col-12 col-lg-6 col-xl-5">
+        <img class="img" src="assets/flowerpawPFP.png" width="300px" alt="Tabby cat with aroace flag PFP"/>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-7">
+        <div class="row justify-content-xl-center">
+          <div class="col-12 col-xl-11">
+            <h2><b>About Me</b></h2>
+            <br>
+            <p class="mb-5">Hello there! I'm Ginny Feng, a junior on the Building-U Coding Team. 
+              As I dip my toes deeper into HTML, CSS, and--just now--JS, 
+              I'm finding coding really fun and interesting. 
+              I hope to work on some websites in the future with my community.</p>
           </div>
-          
-            <div id="desk-table">
-            <table>
-            <h1>My Portfolio</h1>
-            <div class="row row-cols-3">
-                <div class="col"><img src="assets/HTML-logo.png" width="100 px" alt="HTML-logo"/></div>
-                <div class="col"><img src="assets/css-logo.png" width="75 px" alt="CSS-logo"/></div>
-                <div class="col"><img src="assets/JS-logo.png" width="100 px" alt="JS-logo"/></div>
-                <div class="col"><h3>Project 1: HTML</h3></div>  
-                <div class="col"><h3>Project 2: CSS</h3></div>
-                <div class="col"><h3>Project 3: Advanced CSS</h3></div>
-                <div class="col"><p>I started learning HTML with this project. It showcases a basic table and form with several types of questions. Click learn more for more information!</p></div>  
-                <div class="col"><p>Similar to Project 1, Project 2 jumpstarted me on CSS. I created a poster for my school's volunteer event Spruce Up Sparta, and spiced up the previous format from Project 1 with CSS. Click learn more for more information!</p></div>
-                <div class="col"><p>Project 3 shows how I mastered responsive website design. Again borrowing the format from Project 1, I created a website that shrinks the table and form when in mobile view. Click learn more for more information!</p></div>
-                    <div class="col"><h3><center><button type="button" class="btn btn-outline-dark btn-large">Learn more</button></center></h3></div>
-                    <div class="col"><h3><center><button type="button" class="btn btn-outline-dark btn-large">Learn more</button></center></h3></div>
-                    <div class="col"><h3><center><button type="button" class="btn btn-outline-dark btn-large">Learn more</button></center></h3></div>
-                </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
 
+<div class="row">
+  <h1>My Portfolio</h1>
+  <div class="col-md">
+    <h3>Project 1: HTML</h3>
+    <img src="assets/HTML-logo.png" width="100 px" alt="HTML-logo"/>
+    <p>
+      I started learning HTML with this project. It showcases a basic table and form with several types of questions. Click learn more for more information!
+    </p>
+    <div class="col"><h3><center><button type="button" class="btn btn-outline-dark btn-large">Learn more</button></center></h3></div>
+  </div>
+
+  <div class="col-md">
+    <h3>Project 2: CSS</h3>
+    <img src="assets/css-logo.png" width="75 px" alt="CSS-logo"/>
+    <p>
+      Similar to Project 1, Project 2 jumpstarted me on CSS. I created a poster for my school's volunteer event Spruce Up Sparta, and spiced up the previous format from Project 1 with CSS. Click learn more for more information!
+    </p>
+    <div class="col"><h3><center><button type="button" class="btn btn-outline-dark btn-large">Learn more</button></center></h3></div>
+  </div>
+
+  <div class="col-md">
+    <h3>Project 3: Advanced CSS</h3>
+    <img src="assets/JS-logo.png" width="100 px" alt="JS-logo"/>
+    <p>
+      Project 3 shows how I mastered responsive website design. Again borrowing the format from Project 1, I created a website that shrinks the table and form when in mobile view. Click learn more for more information!
+    </p>
+    <div class="col"><h3><center><button type="button" class="btn btn-outline-dark btn-large">Learn more</button></center></h3></div>
+</div>
+
+<div
+class="bg-image p-5 text-center shadow-1-strong mb-5 text-white"
+style="background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FpLexJWv.jpg&f=1&nofb=1&ipt=000cecd8a1375c0d887f31576eda408793a96d766e1be2207a24cabdba452253&ipo=images');">
+        <div class="container text-center">
         <div id="demobox">
             <h1>Contact Me</h1>
             <form>
@@ -91,9 +108,10 @@
                     <label for="message" class="form-label">Message</label>
                     <input type="message" class="form-control" id="message">
                   </div>
-                <center><button type="submit" class="btn btn-outline-dark btn-large">Submit</button></center>
+                <center><button type="submit" class="btn btn-outline-light btn-large">Submit</button></center>
               </form>
         </div>    
     </div> 
+    </div>
     </body>
     
