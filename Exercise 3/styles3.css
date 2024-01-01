@@ -1,6 +1,6 @@
 body {
     /* background-color: #855E42; */
-    background-image: url(/assets/background-desktop.jpg);
+    background-image: url("./assets/background-desktop.jpg");
 }
 
 .table2 {
@@ -108,6 +108,27 @@ p, h1, h3, form {
     border-radius: 10%;
 }
 
+@media only screen and (min-width: 770px) {
+    .form {
+        width: 500px; 
+    }
+    .buttons {
+        border-radius: 8%;        
+        width: 200px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    #reset {
+        background-color: red;
+        border-color: red;
+    }
+    #submit {
+        background-color: greenyellow;
+        border-color: greenyellow;
+    }
+
+}
+
 @media only screen and (max-width: 768px) {
     table {
         display: none;
@@ -142,7 +163,7 @@ p, h1, h3, form {
     }
 
     body {
-        background-image: url(assets/background-mobile\(1\).jpg);
+        background-image: url(".assets/background-mobile\(1\).jpg");
     }
     
     #formname {
@@ -187,6 +208,76 @@ p, h1, h3, form {
         background-color: red;
         border-color: red;
         color: white;
+    }
+    .buttons {
+        padding: 10px;
+        width: 370px;
+        border-radius: 8%;
+    }
+    .form {
+        width: 400px; 
+    }
+}
+
+@media only screen and (max-width: 577px) {
+    .form {
+        width: 80%; 
+        margin: auto; 
+    }
+
+    .form label, .form input, .form select, .form textarea {
+        width: 100%;
+        margin-bottom: 8px; 
+        padding: 4px; 
+        font-size: 12px; 
+    }
+
+    .form label {
+        text-align: center;
+    }
+
+    .dayopts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 5px; 
+    }
+
+    .question1 {
+        margin-left: 60px;
+    }
+
+    label {
+        text-align: center; 
+        padding-left: 0; 
+    }
+
+    .l1, .Times {
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 130px;
+        margin-left: 90px;
+    }
+
+    .form select {
+        width: 50px;
+        color: black;
+    }
+
+    .buttons {
+        border-radius: 8%;        
+        width: 200px;
+        padding: 10px;
+    }
+    .form {
+        width: 250px; 
     }
 }
 
