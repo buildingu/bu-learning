@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Exercise 1 </title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Exercise 1" />
+        <meta name="keywords" content="HTML5" />
+        <meta name="author" content="Owen" />
+    </head>
+    <body>
+        <style>
+            table, th, td {
+  border: 10px solid dodgerblue;
+  border-collapse:collapse;
+}
+    .center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    }
+        </style>
+        <h1 class="center"> Exercise 1 by Owen Feng</h1>
+        <h2 class="center"> Submitted 1/28/24 </h2>
+        <hr>
+        <h3 class="center"> Fun facts about me </h3>
+        <table class="center">
+            <tr>
+              <th class="center">First Name</th>
+              <th class="center">Last Name</th>
+              <th class="center">Favorite Song</th>
+              <th class="center">Favorite Movie</th>
+              <th class="center">Favorite Video</th>
+            </tr>
+            <tr class="center">
+              <td class="center">Owen</td>
+              <td class="center">Feng</td>
+              <td class="center">Click the play button to play music <br> 
+                <audio controls >
+                    <source src="assets/onlymp3.to -  The Duce Puts on His Uniform Greek War Song Βάζει ο Ντούτσε τη στολή του -hPqQP_iHCEs-192k-1706467179.mp3"
+                    type="audio/mp3">
+                </audio></td>
+              <td class="center"><img  src="assets/my neighbor totoro.jpeg" alt="My Neighbor Totoro"> </td>
+              <td class="center">
+                <video  width="240" height="160" controls>
+                    <source src="assets/BOING.mp4" type="video/mp4">
+                </video>
+                    <p> Credit to meffols for the video<p>
+                </video>
+              </td>
+            </tr>
+          </table>
+          <br>
+          <hr>
+        <h3 class="center"> Enter your details below: </h2>
+        <form id="formid" class="center"> 
+            <label for="fullname"><i>Full Name</i></label>
+            <input type = "text" id="fullname" name="fullname" placeholder="Type name here"><br>
+            <br>
+            <label for="emailaddress"><i>Email address</i></label>
+            <input type = "text" id="emailaddress" name="emailaddress" placeholder="example@gmail.com"><br>
+            <br>
+            <label for="password"><i>Password</i></label>
+            <input type = "text" id="password" name="password" placeholder="••••••••••"><br>
+            <br>
+        <p class="center"> <i>Available meeting days</i> </p>
+        <p class="center">
+<input type="checkbox" id="Monday" name="Monday" value="day">
+<label for="day"> Monday</label>
+<input type="checkbox" id="Tuesday" name="Tuesday" value="day">
+<label for="day"> Tuesday</label>
+<input type="checkbox" id="Wednesday" name="Wesnesday" value="day">
+<label for="day"> Wednesday</label>
+<input type="checkbox" id="Thursday" name="Thursday" value="day">
+<label for="day"> Thursday</label>
+<input type="checkbox" id="Friday" name="Friday" value="day">
+<label for="day"> Friday</label>
+<input type="checkbox" id="Saturday" name="Saturday" value="day">
+<label for="day"> Saturday</label>
+<input type="checkbox" id="Sunday" name="Sunday" value="day">
+<label for="day"> Sunday</label>
+    </p>
+    <p class="center"> <i>Available meeting time</i> 
+        <input list="times">
+
+<datalist id="times">
+  <option value="Morning (8:00am-12:00pm)">
+  <option value="Afternoon (12:00pm-4:00pm)">
+  <option value="Evening (4:00pm-9:00pm)">
+</datalist>
+<br> <br>
+<i>Currently working on new website?</i>
+<input type="radio" id="working" name="working" value="working">
+<label for="working">Yes</label>
+<input type="radio" id="working" name="working" value="working">
+<label for="working"> No</label> <br><br>
+<textarea form="formid" placeholder="Enter your comments here"></textarea> <br><br>
+<input type="submit" value="Submit">
+<input form="formid" type="reset" value="Reset">
+</p>
+</form>
+    </body>
+</html>
