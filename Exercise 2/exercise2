@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title> Exercise 2 </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Exercise 2">
+    <meta name="author" content="Owen">
+    <meta name="keywords" content="HTML-5">
+
+    <style>
+        .h1 {
+            font-family: "Helvetica Neue", 'Arial Narrow', Arial, Helvetica, sans-serif;
+
+        }
+        h1 {text-align:center;}
+        h2 {text-align:center;}
+        p {text-align:left;}
+        .center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+        }
+        .container {
+  text-align: center;
+  left: 0;
+  right: 0;
+ }
+
+        table, th, td {
+            border: 1px solid darkblue;
+        }
+        .box1 {
+    border: 5px solid;
+    width: 250px;
+    height: 80px;
+    text-align:center;
+    font-size: 18px;
+    
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin: 50px;
+ 
+    margin-right: auto;
+    margin-left: auto;
+    } 
+    </style>
+</head>
+<body style="background-color: aquamarine;">
+    <div class="container">
+        <div class="main">
+    <h1 style="color:darkslateblue; font-size: 50px;"> 
+        Knowledge Bowl Tournament
+    </h1>
+    <hr>
+    <h2> 
+        Collierville High School, 2/24/2024
+    </h2>
+    <p> 
+        Come join us for a fun-filled Knowledge Bowl experience at the UMAIT Knowledge Bowl tournament!
+    </p>
+   <table class="center">
+    <tr class="center">
+        <th>Location</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Registering process</th>
+        <th>Eligibility</th>
+    </tr>
+    <tr class="center">
+        <th>Collierville High School <br> 11605 E Shelby Dr, Collierville, TN 38017 </th>
+        <th>2/24/2024</th>
+        <th>9:00am-2:00pm</th>
+        <th>Each high school can register up to 2 teams of 4-5 members. Go to <a href="url">https://www.naqt.com/registration/field.jsp?tournament_id=14740</a> or register with the form below
+        </th>
+        <th style="width:300px;">ANY registered high school team can attend.</th>
+    </tr>
+   </table> 
+   <br>
+   
+   <img src="./assets/naqt.jpg" alt="Students during a Knowledge Bowl competition">
+   <p position="center" class="box1">New to Knowledge Bowl? Read an official guide on rules and procedures here:
+    <a href="url">https://www.naqt.com/rules/</a>
+   </p>
+   <hr>
+   <h1>Register here!</h1>
+   <form>
+   <p class="center">How many teams?</p> 
+   <input type="radio" id="teamnum">1</input> <input type="radio" id="teamnum">2</input><br><br>
+   School name: <input type="text" id="schoolname"><br><br>
+   How many players total? <input type="text" id="totalplayers"><br>
+   <br><input type="submit" value="Submit">
+   </form>
+   <hr>
+   <h2 class="center" style="color:darkblue; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+Contact Information</h2>
+Event organizer: <nobr style="text-decoration: underline; color:blue">owenfengmouse@gmail.com</nobr>
+<br>Phone: <nobr style="text-decoration: underline;">901-208-7573</nobr>
+</body>
+</html>
