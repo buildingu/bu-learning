@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-9">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <center><title>CSS Challenge 2</title></center>
+    </head>
+    <body>
+        <style>
+            p{
+                border:4px solid lightblue;
+                width: 500px;
+                margin-left:400px;
+                margin-right:400px;
+                padding:20px;
+            }
+        </style>
+        <body bgcolor=white>
+        <center><h1><b>Help The Kids!</b></h1></center>
+        <center><h2><i>Countywide Volunteer Oppurtunity</i></h2></center>
+        <br>
+        <img src="assets/beyond-blindness.png" width="400 px" alt="Beyond Blindness Picture" />
+        <img src="assets/kids.avif" width="450 px" alt="Little Kids Picture"/>
+        <img src="assets/taco-truck.jpg" width="400 px" alt="Taco Truck Picture"/>
+        <br>
+        <center><h5>Students helping out at a daycare</h5></center>
+        <center><img src="assets/daycare.jpeg" width="100 px" alt="" /></center>
+        <center><p>
+            <b>Help our younger students grow so much next weekend, There will be a Taco Truck!
+                Sat-Sun 2/24 to 2/25, Beyond Blindness Daycare</b>
+        </p></center>
+        <center><h4><i> If you are interested contact Steve Smith, 823-388-1101, steves43@gmail.com. Website: 
+            <a>
+                <a href="https://www.beyondblindness.org/">Beyond Blindness site</a></i></h4></center>
+                <br>
+            <center><h3> Fill out the form below for the hours you would like to volunteer</h3></center>
+            <table>
+                <tr>
+                    <th>Info</th>
+                    <th> </th>
+                    <th> </th>
+                    <th>Full or Part-Time</th>
+                    <th>Available Days</th>
+                    <th>Available Spots</th>
+                </tr>
+                <tr>
+                    <td>
+                <center><label for="fname">Name:</label></center>
+                <center><input type="text" id="fname" name="fname" placeholder=""></center> 
+            </div>
+            </td>
+
+            <br>
+
+            <td>
+            <div>
+                <center><label for="email">Email</label></center>
+                <center><input type="text" id="email" name="email" placeholder=""></center>
+            </div>
+            </td>
+
+            <br>
+            
+            <td>
+            <div>
+                <center><label for="grade">Grade:</label></center>
+                <center><input type="text" id="grade" name="grade" placeholder=""></center> 
+            </div>
+            </td>
+
+            <br>
+
+            <td>
+            <center><hp3><i>Full time?</i></hp3></center>
+            <center><div>
+                <label selected>Yes</label>
+                <input type="radio" name="title">
+                <label>No</label>
+                <input type="radio" name="title">                    
+            </div></center>
+            </td>
+
+            <br>
+
+            <td>
+            <center><hp3><i>Which Day?:</i></hp3></center>
+            <center><div>
+                <input type="checkbox" name="Friday" id="Friday">
+                <label for="Friday">Friday</label>
+                <input type="checkbox" name="Saturday" id="Saturday">
+                <label for="Saturday">Saturday</label>
+                <input type="checkbox" name="Sunday" id="Sunday">
+                <label for="Sunday">Sunday</label>
+            </div></center>
+            </td>
+
+            <br>
+
+            <td>
+            <div>
+                <center><label for="section"><i>Section of Daycare:</i></label></center>
+                <center><select id="section" name="section">
+                    <option value="Preschool">Courtyard</option>
+                    <option value="Kindergarten">Front of School</option>
+                    <option value="Elementry">Parking Lot</option>
+                </select></center>
+            </div>
+            </td>
+
+            <br>
+
+            <td>
+            <div>
+                <center><label for="Comments">Anything else?</label></center>
+                <center><textarea 
+                    id="comments" name="comments">Enter additional information.
+                </textarea></center>
+            </div>
+            </td>
+            </tr>
+        </table>
+        <br>
+                   
+        <div>
+            <center><input type="submit"></center>
+        </div>
+        
+        <br>
+        
+        <div>
+            <center><input type="reset"></center>
+        </div>
+        </form>
+    </body>
