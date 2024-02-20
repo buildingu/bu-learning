@@ -6,11 +6,13 @@
     <title>Document</title>
 </head>
 <body>
+    <center>
     <div>
         <h1>Exercise 1</h1>
         <h3>Date Submitted: 2/20/24</h3>
     </div>
 
+    <h4>Fun facts about me: </h4>
     <fieldset>
     <div>
         <table>
@@ -21,16 +23,68 @@
                 <th>Favorite Song</th>
                 <th>Favorite Video</th>
             </tr>
-
+            
             <tr>
                 <td>Shivika</td>
                 <td>Varshney</td>
-                <td>Avengers: Endgame</td>
-                <td>Greedy by Tate McRae</td>
-                <td>Cat video</td>
+                <td>Avengers: Endgame<br><img src="endgame.jpg" width="100" height="150"></td>
+                <td>Greedy by Tate McRae<br><audio controls><source src="greedy.mp3" type="audio/mpeg"></audio></td>
+                <td>Cats<br><video width="150" height="200" controls><source src="cats.mp4" type="video/mp4"></video></td>
             </tr>
         </table>
     </div>
     </fieldset>
+
+    <div>
+        <main>
+            <h4>Enter details below:</h4>
+            <form>
+                <label>Full name: </label>
+                <input type="text" placeholder="Shivika Varshney"><br><br>
+                <label>Enter email: </label>
+                <input type="email" placeholder="shivikav07@gmail.com"><br>
+                <label>Please enter your password: </label>
+                <input type="password" placeholder="1234"><br><br>
+
+                <label>Please select your availability: </label><br>
+                <input type="checkbox">
+                <label>Monday</label>
+                <input type="checkbox">
+                <label>Tuesday</label>
+                <input type="checkbox">
+                <label>Wednesday</label>
+                <input type="checkbox">
+                <label>Thursday</label>
+                <input type="checkbox">
+                <label>Friday</label>
+                <input type="checkbox">
+                <label>Saturday</label>
+                <input type="checkbox">
+                <label>Sunday</label><br>
+
+                <label>Available Time</label>
+                <select>
+                    <option>Morning: 8am-12pm</option>
+                    <option>Afternoon: 1pm-4pm</option>
+                    <option>Evening: 4pm-7pm</option>
+                </select><br>
+
+                <label>Working on a new website?</label>
+                <input type="radio" checked="checked">
+                <label>Yes</label>
+                <input type="radio">
+                <label>No</label><br>
+
+                <label>Comments?</label>
+                <input type="text" placeholder="Add comments"><br>
+
+                <input type="submit">
+                <input type="reset"><br>
+
+
+            </form>
+        </main>
+    </div>
+    </center>
 </body>
 </html>
