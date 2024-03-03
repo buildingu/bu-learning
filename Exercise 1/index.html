@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> </head>
+  <body><center>
+  
+    <h1>Exercise 1 by Siddhanth Subramanian</h1>
+    <h3>Date submitted : 2/3/2024</h3>
+    <br>
+    <hr>
+    <h3> Fun Facts about me: </h3>
+    <table>
+        <tbody><tr>
+            <th>First name</th>
+            <th>Last Name</th>
+            <th>Favourite Movie</th>
+            <th>Favourite Song</th>
+            <th>Favourite Video</th>
+        </tr>
+        <tr>
+            <td>Siddhanth</td>
+            <td>Subramanian</td>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/John_Wick_(film)" target="_blank">
+                    <img src="./index_files/images.jpg">
+                </a>
+            </td>
+            <td>
+                <center>Click button to play music:</center>
+                <br>
+                <audio controls="">
+                    <source src="clouds-29191.mp3">
+                </audio>
+            </td>
+            <td>
+                <video width="320" height="240" controls="">
+                    <source src="circle_-_17445 (540p).mp4">
+                </video>
+        </td></tr>
+    </tbody></table>
+    <br>
+    <hr>
+    <h3>Enter your details below:</h3>
+    <form>
+        <i>
+        <label>Full Name &nbsp; &nbsp; &nbsp;</label>
+        <input type="text" placeholder="John Doe">
+        <br><br>
+        <label>Email address</label>
+        <input type="email" placeholder="john.doe@gmail.com">
+        <br><br>
+        <label>Password &nbsp; &nbsp; &nbsp; &nbsp;</label>
+        <input type="password" placeholder="●●●●●●●●">
+        <br><br>
+        <label> Available Meeting Days: </label><br><br>
+    </i>
+        <input type="checkbox">
+        <label>Monday</label>
+        <input type="checkbox">
+        <label>Tuesday</label>
+        <input type="checkbox">
+        <label>Wednesday</label>
+        <input type="checkbox">
+        <label>Thursday</label>
+        <input type="checkbox">
+        <label>Friday</label>
+        <input type="checkbox">
+        <label>Saturday</label>
+        <input type="checkbox">
+        <label>Sunday</label>
+        <br><br>
+    <i>
+        <label>Available Time:</label>
+        <select>
+            <option>Morning (8am-12pm)</option>
+            <option>Afternoon (12pm-4pm)</option>
+            <option>Evening (4pm-8pm)</option>
+            <option>Night (8pm-12am)</option>
+        </select>
+        <br><br>
+        <label>Currently working on new website?</label>
+        <input type="radio" checked="checked">
+        <label>Yes</label>
+        <input type="radio">
+        <label>No</label>
+        <br><br>
+        <textarea rows:"5"="" cols:"50"="" placeholder="Enter your comments here"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </i>
+
+        
+    </form>
+  </center>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
