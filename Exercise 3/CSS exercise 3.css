@@ -1,0 +1,98 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+}
+
+@media screen
+  and (min-width: 601px) {
+ body { background-color: peru;
+     font-weight: 500; 
+     font-size: 15px; 
+     color: blanchedalmond;} 
+     .background{
+       background-image: url("./Exercise 3/assets/background-desktop.jpg")
+     }
+    }
+ 
+ @media only screen and (max-width: 600px) {
+   .background {
+     background-image: url("./Exercise 3/assets/background-mobile.jpg")
+   }
+  }
+
+ center#phone-table{
+  display:none;
+}
+
+@media only screen and (max-width: 768px) {
+  center#phone-table{
+    display:block;
+  }
+  center#desk-table{
+    display:none;
+  }
+}
+
+center#phone-table{
+  margin:0;
+  border:1px;
+}
+
+table, th, td {
+    border: 12px solid;
+    }
+    table {
+        border-collapse: collapse;
+      }
+      td {
+        text-align: center;
+      }
+      th, td {
+        padding: 50px;
+        text-align: center;
+      }
+      th {
+        background-color: goldenrod;
+      }
+table{
+    width: 50%;
+}
+tr
+{
+  background-color:blueviolet;
+  color:white;
+}
+input [type=text] {
+    width: 30%;
+    padding: 15px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+textarea{
+    height: 35px;
+    width: 30%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+select {
+    width: 25%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+#demobox {
+    width: 40%;
+    background-color:gainsboro;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    border-color: black;
+}
+form{
+  color:black;}
+
