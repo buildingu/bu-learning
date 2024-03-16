@@ -1,11 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas Whitaker</title>
+    <!-- Title -->
+    <title>Exercise 1 by Lucas Whitaker</title>
+    <h1 style="text-align: center;">Exercise 1 by Lucas Whitaker</h1>
+    <h2 style="text-align: center;">Date Submitted: 3/15/2024</h2>
 </head>
 <body>
-    <h1>WELCOME LUCAS</h1>
+    <table border="1">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Movie</th>
+            <th>Favorite Song</th>
+            <th>Favorite Video</th>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>Whitaker</td>
+            <td><img src="interstellarpic.jpg" witdh="350" height="175"></td>
+            <td>
+                <audio controls>
+                    <source src="SZASnooze.mp4" type="audio/mp4">
+                </audio>
+            </td>
+            <td>
+                <video controls width="350" height="150">
+                    <source src="doghiccups.mp4" type="video/mp4">
+                </video>
+            </td>
+        </tr>
+    </table>
+    <h2>Enter your details in the fields below:</h2>
+    <form action="/submit form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="BuildingU"><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="text" id="email" name="email" placeholder="BuildingU@gmail.com"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password" placeholder="****"><br><br>
+
+        <label for="days">Days You're Available:</label>
+
+        <input type="checkbox" id="Sunday" name="Sunday" value="Sunday">
+        <label for="Sunday">Sunday</label>
+
+        <input type="checkbox" id="Monday" name="Monday" value="Monday">
+        <label for="Monday">Monday</label>
+
+        <input type="checkbox" id="Tuesday" name="Tuesday" value="Tuesday">
+        <label for="Tuesday">Tuesday</label>
+
+        <input type="checkbox" id="Wednesday" name="Wednesday" value="Wednesday">
+        <label for="Wednesday">Wednesday</label>
+
+        <input type="checkbox" id="Thursday" name="Thursday" value="Thursday">
+        <label for="Thursday">Thursday</label>
+
+        <input type="checkbox" id="Friday" name="Friday" value="Friday">
+        <label for="Friday">Friday</label>
+
+        <input type="checkbox" id="Saturday" name="Saturday" value="Saturday">
+        <label for="Saturday">Saturday</label><br><br>
+
+        <label for="time">Available Time:</label>
+        <select id="dropdown" name="time">
+            <option value="Morning">Mornings (8am-11am)</option>
+            <option value="Afternoon">Afternoons (12pm-4pm)</option>
+            <option value="Evening">Evenings (5pm-8pm)</option>
+        </select><br><br>
+
+        <label for="website">Currently working on a website?</label>
+
+        <input type="radio" id="yes" name="yes" value="yes" checked>
+        <label for="yes">Yes</label>
+
+        <input type="radio" id="no" name="no" value="no">
+        <label for="no">No</label><br><br>
+
+        <textarea id="comments" name="comments" rows="5" cols="50" placeholder="Any comments?"></textarea><br><br>
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
 </body>
 </html>
