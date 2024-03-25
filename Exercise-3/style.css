@@ -1,0 +1,35 @@
+body {
+  background-image: url("assets/background-mobile.jpg");
+  background-size: contains;
+
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: white
+}
+@media only screen and (min-width: 767px) {
+  body {
+    background-image: url("assets/background-desktop.jpg");
+    background-size: contains;
+  }
+}
+table th:nth-child(3) {
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  border: 2px solid red;
+  background-color: green;
+}
+input[type="reset"] {
+  border: 2px solid red;
+  background-color: green;
+}
+table th:nth-child(1) {
+  color: red;
+}
