@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <h1>Exercise 3 by John Doe</h1>
+    <h4>Date submitted : 20/07/2023</h4>
+    <hr>    
+    <h4> Fun Facts about me: </h4>
+    <br>
+    <table id="table_desktop">
+        <tbody><tr>
+            <th>First name</th>
+            <th>Last Name</th>
+            <th>Favourite Movie</th>
+            <th>Favourite Song</th>
+            <th>Favourite Video</th>
+        </tr>
+        <tr>
+            <td id="d1" class="tabledata1">John</td>
+            <td id="d2" class="tabledata1">Doe</td>
+            <td id="d3" class="tabledata1">
+                    <img src="/assets/Favourite-movie.jpg">
+            </td>
+            <td id="d4" class="tabledata2">
+                Click button to play music:
+                <br>
+                <audio controls="">
+                    <source src="/assets/rick_roll.mp3">
+                </audio>
+            </td>
+            <td id="d5" class="tabledata2">
+                <video width="320" height="240" controls="">
+                    <source src="/assets/marvel_studios.mp4">
+                </video>
+        </td></tr>
+    </tbody></table>
+    <table id="table_mobile">
+        <tbody><tr>
+            <th class="tabledata3">First Name</th>
+            <th class="tabledata3">Last Name</th>
+        </tr>
+        <tr>
+            <td class="tabledata4">John</td>
+            <td class="tabledata4">Doe</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="tabledata3">Favourite Movie</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="tabledata4"><img src="/assets/Favourite-movie.jpg" id="m1"></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="tabledata3">Favourite Song</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="tabledata4">
+                Click button to play music:
+                <br>
+                <audio controls="">
+                    <source src="/assets/rick_roll.mp3">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="tabledata3">Favourite Video</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="tabledata4">
+                <video width="320" height="240" controls="">
+                    <source src="/assets/marvel_studios.mp4">
+                </video>
+            </td>
+        </tr></tbody>
+    </table>
+    <br>
+    <hr>
+    <h4>Enter your details below:</h4>
+    <br>
+    <div id="div1">
+    <form>
+        <label>Full Name</label>
+        <br>
+        <input type="text" placeholder="John Doe">
+        <br><br>
+        <label>Email address</label>
+        <br>
+        <input type="email" placeholder="john.doe@gmail.com">
+        <br><br>
+        <label>Password</label>
+        <br>
+        <input type="password" placeholder="●●●●●●●●">
+        <br><br>
+        <label> Available Meeting Days: </label>
+        <br><br>
+        <input type="checkbox">
+        <label>Monday</label>
+        <input type="checkbox">
+        <label>Tuesday</label>
+        <input type="checkbox">
+        <label>Wednesday</label>
+        <input type="checkbox">
+        <label>Thursday</label>
+        <input type="checkbox">
+        <label>Friday</label>
+        <input type="checkbox">
+        <label>Saturday</label>
+        <input type="checkbox">
+        <label>Sunday</label>
+        <br><br>
+        <label>Available Time:</label><br>
+        <select>
+            <option>Morning (8am-12pm)</option>
+            <option>Afternoon (12pm-4pm)</option>
+            <option>Evening (4pm-8pm)</option>
+            <option>Night (8pm-12am)</option>
+        </select>
+        <br><br>
+        <label>Currently working on new website?</label>
+        <br>
+        <input type="radio" checked="checked">
+        <label>Yes</label>
+        <input type="radio">
+        <label>No</label>
+        <br><br>
+        <label>If Yes, please enter which page(s) you are working on</label>
+        <textarea rows="3" cols="30" placeholder="Enter Here"></textarea>
+        <br><br>
+        <button id="button1" type="submit">Submit</button>
+        <br class="mobilebr">
+        <br class="mobilebr">
+        <button id="button2" type="reset">Reset</button>
+    </div>
+        
+    </form>
+    <br><br>
+    <div id = "div2">
+         Version®
+    </div>
+
+  </body>
+</html>
