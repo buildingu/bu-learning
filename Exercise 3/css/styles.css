@@ -1,0 +1,184 @@
+@media only screen and (min-width: 600px) {
+  * {
+    margin: auto;
+    text-align: center;
+    color: white;
+  }
+  body {
+    background-image: url(/assets/background-desktop.jpg);
+  }
+  body > h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  hr {
+    height: 2px;
+    background-color: white;
+    margin: 10px;
+  }
+  body > h4 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  #table_mobile {
+    display: none;
+  }
+  #table_desktop {
+    border-collapse: collapse;
+    margin: auto;
+  }
+  #table_desktop td {
+    background-color: rgb(38, 60, 62);
+    border: 7px solid slategray;
+  }
+  #table_desktop th {
+    background-color: rgb(19, 49, 66);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 7px solid slategray;
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  tr > .tabledata1 {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: small;
+  }
+  table .tabledata2 {
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  body #div1 {
+    width: 380px;
+    background-color: lightgrey;
+    border: 7px solid rgb(103, 101, 101);
+    padding: 7px;
+  }
+  form label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    font-size: small;
+  }
+  #button1 {
+    background-color: rgb(15, 181, 15);
+    border: none;
+    width: 70px;
+    height: 35px;
+    border-radius: 5px;
+  }
+  #button1 ~ #button2 {
+    background-color: rgb(226, 12, 12);
+    border: none;
+    width: 70px;
+    height: 35px;
+    border-radius: 5px;
+  }
+  .mobilebr {
+    display: none;
+  }
+  #div2 {
+    background-color: purple;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  #div2::before {
+    content: "Desktop";
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    margin: auto;
+    text-align: center;
+    color: white;
+  }
+  body {
+    background-image: url(/assets/background-mobile.jpg);
+  }
+  body > h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  hr {
+    height: 2px;
+    background-color: white;
+    margin: 10px;
+  }
+  body > h4 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  #table_desktop {
+    display: none;
+  }
+  #table_mobile {
+    border-collapse: collapse;
+    margin: auto;
+    max-width: 300px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  table .tabledata3 {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: center;
+    font-size: small;
+    background-color: rgb(168, 71, 27);
+    border: 7px solid slategray;
+  }
+  table .tabledata4 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: center;
+    font-size: small;
+    background-color: rgb(116, 46, 9);
+    border: 7px solid slategray;
+  }
+
+  body #div1 {
+    width: 380px;
+    background-color: lightgrey;
+    border: 7px solid rgb(103, 101, 101);
+    padding: 7px;
+    max-width: 250px;
+  }
+  form label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    font-size: small;
+  }
+  #button1 {
+    background-color: rgb(15, 181, 15);
+    border: none;
+    width: 240px;
+    height: 35px;
+    border-radius: 5px;
+  }
+  #button1 ~ #button2 {
+    background-color: rgb(226, 12, 12);
+    border: none;
+    width: 240px;
+    height: 35px;
+    border-radius: 5px;
+  }
+  #div2 {
+    background-color: rgb(33, 60, 109);
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  #div2::before {
+    content: "Mobile";
+    color: white;
+  }
+}
