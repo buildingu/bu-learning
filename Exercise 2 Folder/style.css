@@ -1,0 +1,37 @@
+body{
+    font-family:'Times New Roman', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    background: gray
+}
+body{
+    margin: 1px;
+}
+box1{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background: greenyellow;
+    margin-right: auto;
+    margin-left: auto;
+}
+main{
+    border: 0.5 px solid black;
+    padding: 20px;
+    margin-trim: block-end;
+}
+.box{
+    width: 55%;
+    height:0;
+    padding-bottom: calc(55%)
+}
+h1 {
+    color:lightgray
+}
+h2 {
+    color:lightblue;
+}
+h5{
+    color:lightgray
+}
+h4 {color:lightgray}
