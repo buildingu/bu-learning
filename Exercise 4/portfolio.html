@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<style>
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#demobox{
+    padding:10px;
+    max-width:300px;
+}
+</style>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta mame="author" content="Owen Feng">
+        <meta name="description" content="portfolio">
+        <link rel="stylesheet" href="CSS/CSS exercise 4.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <title>Exercise 4</title>
+    </head>
+    <body>
+        <div class="overflow-hidden">
+            <nav class='navbar navbar-expand-sm'>
+              <div class='container-fluid'>
+                <img src="assets/building u logo.png" width="50px" alt="Building-U Logo">
+                  <button type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" class="navbar-toggler"><span class='navbar-toggler-icon'></span></button>
+                  <div class='collapse navbar-collapse' id='navbar-menu'>
+                      <ul class='navbar-nav'>
+                          <li><a href='#' class='nav-link'>Home</a></li>
+                          <li><a href='#' class='nav-link'>About</a></li>
+                          <li><a href='#' class='nav-link'>Portfolio</a></li>
+                          <li><a href='#' class='nav-link'>Contact</a></li>
+                      </ul>
+                      </div>
+                  </div>
+              </div>
+          </nav>
+        </div>
+        <div
+        class="bg-image p-5 text-center shadow-1-strong mb-5 text-white"
+        style="background-image: url('./assets/tree.png');">
+                <div class="container text-center">
+                    <div class="row row-cols-1">
+                      <div class="col"><h1><b>Welcome to my portfolio!</b></h1></div>
+                      <div class="col"><h1>View my work on Github!</h1></div>
+                      <div class="col"><center><button type="button" class="btn btn-outline-light btn-large">My work</button></center></div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+        
+        <section class="py-3 py-md-5 py-xl-8">
+          <div class="container">
+            <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+              <div class="col-12 col-lg-6 col-xl-5">
+                <img class="img" src="./assets/eevee.jpg" width="300px" alt="Tabby cat with aroace flag PFP"/>
+              </div>
+              <div class="col-12 col-lg-6 col-xl-7">
+                <div class="row justify-content-xl-center">
+                  <div class="col-12 col-xl-11">
+                    <h2><b>About Me</b></h2>
+                    <br>
+                    <p class="mb-5">Hello! I'm Owen Feng, junior at Collierville High School and member of the Building-U coding team.
+                      I started coding with Building-U,  
+                      and so far I have learned a lot in HTML, JS, and CSS. 
+                      Working with Building-U has been fun and I hope to use my skills to work on the website in the future.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        </div>
+
+        <div class="row">
+          <h1>My Portfolio</h1><hr>
+          <div class="col-md">
+            <h3>Project 1: HTML</h3>
+            <img src="assets/HTML-logo.png" width="100 px" class="center" alt="HTML-logo"/>
+            <p>
+              My first HTML project! In this project I explored the fundamentals of HTML and created a website about me!
+            </p>
+            <div class="col"><h3><center><button type="button" class="btn btn-outline-dark btn-large">Learn more</button></center></h3></div>
+          </div>
+        <hr>
+          <div class="col-md">
+            <h3>Project 2: CSS</h3>
+            <img src="assets/css-logo.png" width="75 px" class="center" alt="CSS-logo"/>
+            <p>
+              Project 2 allowed me to master the fundamentals of HTML. I created a poster for a Knowledge Bowl tournament being held at my school!
+            </p>
+            <div class="col"><h3><center><button type="button" class="btn btn-outline-dark btn-large">Learn more</button></center></h3></div>
+          </div>
+        <hr>
+          <div class="col-md">
+            <h3>Project 3: Advanced CSS</h3>
+            <img src="assets/JS-logo.png" width="100 px" class="center" alt="JS-logo"/>
+            <p>
+              Project 3 combined the skills used in the first two projects with new concepts, like how to differentiate and accomodate for mobile and PC users. In it, I created a website that conforms to the size of the user's device!
+            </p>
+            <div class="col"><h3><center><button type="button" class="btn btn-outline-dark btn-large">Learn more</button></center></h3></div>
+        </div>
+        
+        <div
+        class="bg-image p-5 text-center shadow-1-strong mb-5 text-white"
+        style="background-image: url('./assets/tree.png');">
+                <div class="container text-center">
+                <div id="demobox">
+                    <h1>Contact Me</h1>
+                    <form>
+                        <div class="mb-3">
+                          <label for="full name" class="form-label">Name</label>
+                          <input type="name" class="form-control" id="validation-fullname" required>
+                          <div class="valid-feedback"> Looks good! </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="email address" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="validation-emailaddress" required>
+                          <div class="valid-feedback"> Looks good! </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <input type="message" class="form-control" id="validation-message" required>
+                          <div class="valid-feedback"> Looks good! </div>
+                          </div>
+                        <center><button type="submit" class="btn btn-outline-light btn-large">Submit</button></center>
+                      </form>
+                </div>    
+            </div> 
+            </div>
+    </body>
+</html>
