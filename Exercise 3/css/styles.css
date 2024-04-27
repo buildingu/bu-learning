@@ -1,8 +1,10 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   * {
     margin: auto;
     text-align: center;
-    color: white;
+  }
+  :not(img) {
+    color: #ffffff;
   }
   body {
     background-image: url(/assets/background-desktop.jpg);
@@ -24,6 +26,7 @@
   #table_desktop {
     border-collapse: collapse;
     margin: auto;
+    max-width: fit-content;
   }
   #table_desktop td {
     background-color: rgb(38, 60, 62);
@@ -39,16 +42,16 @@
       sans-serif;
   }
   tr > .tabledata1 {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
-    font-size: small;
+    font-size: medium;
   }
   table .tabledata2 {
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 30px;
+    padding-left: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -57,6 +60,9 @@
     background-color: lightgrey;
     border: 7px solid rgb(103, 101, 101);
     padding: 7px;
+  }
+  audio {
+    width: 180px;
   }
   form label {
     font-family: Arial, Helvetica, sans-serif;
@@ -94,7 +100,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   * {
     margin: auto;
     text-align: center;
