@@ -1,0 +1,99 @@
+body{
+    font-family:'Open Sans', Verdana, Times New Roman, Courier, sans-serif;
+    margin-right:0;
+    margin-left:0;
+    margin-top:0;
+    margin-bottom:2px;
+    background-color: Cornsilk;
+    font-weight: 500; 
+    font-size: 15px; 
+    color: darkblue;} 
+
+th, td {
+    border: 5px solid;
+    text-align:center;
+    }
+      td {
+        text-align: center;
+      }
+      th, td {
+        padding: 8px;
+        text-align: center;
+      }
+      th {
+        background-color: DarkGray;
+      }
+tr
+{
+  background-color:babyblue;
+  color:white;
+}
+input [type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+textarea{
+    height: 35px;
+    width: 30%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff8dc;
+    resize: none;
+}
+select {
+    width: 25%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #a9a9a9;
+}
+#demobox {
+    width: 80%;
+    padding-bottom:80%;
+    background-color:gainsboro;
+    padding: 10px;
+    margin: auto;
+    margin-bottom:20px;
+    margin-top:20px;
+    border-radius: 5px;
+    border-color: black;
+}
+form{
+  color:black;}
+
+.box{
+  width:160px;
+}
+
+h1,h2,h3{
+color:white;
+  }
+
+  center#phone-table{
+    display:none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    center#phone-table{
+      display:block;
+    }
+    center#desk-table{
+      display:none;
+    }
+  }
+
+  center#phone-table{
+    margin:0;
+    border:1px;
+  }
+  .button{
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    border-color: white;
+    min-width: 70px;
+  }
