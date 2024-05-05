@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS Exercise 3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <center><title>Exercise 3</title></center>
+        <body background="assets/photo-1585241645927-c7a8e5840c42.avif.jpg"> 
+    </head>
+    <body>
+        <center><h1>Exercise 3 by Kavin Patel</h1></center>
+        <center><h2>Date submitted: 5/5/24</h2></center>
+        <hr>
+        <center><h3><b>Fun Facts About Me:</b></h3></center>
+        <center id="desk-table"><table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Favorite Movie</th>
+                <th>Favorite Song</th>
+                <th>Favorite Video</th>
+            </tr>
+            <tr>
+                <td>Kavin</td>
+                <td>Patel</td>
+                <td>
+                    <img src="assets/oceans.jpg" width="300 px" alt="Oceans Movie Poster"/>
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="assets/i-guess-you-wonder-where-ive-been.mp3" type="audio/mpeg" >
+                    </audio>
+                </td>
+                <td>
+                    <section class="wrapper-main">
+                        <video width="320" height="240" controls>
+                            <source src="assets/Markus Gjengaar-abstract-space-591133-filmsupply.mov" width=50% alt="Earth video">
+                        </video>
+                        <br>
+                    </section>
+                </td>
+            </tr>
+            </table></center>
+
+            <center id="phone-table"><table>
+                <tr>
+                    <td>First Name</td>
+                    <td>Kavin</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>Patel</td>
+                </tr>
+                <tr>
+                    <td>Favorite Movie</td>
+                    <td><img src="assets/oceans.jpg" width="150 px" alt="Oceans poster"/></td>
+                </tr>
+                    <tr>
+                    <td>Favorite Song</td>
+                    <td>
+                        <audio controls>
+                        <source src="assets/i-guess-you-wonder-where-ive-been.mp3" type="audio/mpeg" >
+                    </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Favorite Video</td>
+                    <td><video width="200" height="100" controls>
+                        <source src="assets/Markus Gjengaar-abstract-space-591133-filmsupply.mov" alt="Earth video">
+                    </video></td>
+                </tr>
+                </table></center>
+                <hr>
+        <div id="demobox">
+        <form>
+        <center><hp3><b>Enter your details below:</b></hp3></center>
+        <center><form action="action_page.php" method="GET"></center>
+            <div>
+                <center><label for="fname"><i>Full Name</i></label></center>
+                <center><input type="text" id="fname" name="fname" placeholder="Enter full name"></center> 
+            </div>
+
+            <br>
+
+            <div>
+                <center><label for="email"><i>Email Address</i></label></center>
+                <center><input type="text" id="email" name="email" placeholder="Enter email address"></center>
+            </div>
+
+            <br>
+
+            <div>
+                <center><label for="password"><i>Password</i></label></center>
+                <center><input type="password" id="password" name="password" maxlength="12" placeholder="Enter your password" required></center>
+            </div>
+
+            <br>
+
+            <center><hp3><i>Available Meeting Days:</i></hp3></center>
+            <center><div>
+                <input type="checkbox" name="Monday" id="Monday"> 
+                <label for="Monday">Monday</label>
+                <input type="checkbox" name="Tuesday" id="Tuesday">
+                <label for="Tuesday">Tuesday</label>
+                <input type="checkbox" name="Thursday" id="Thursday">
+                <label for="Thursday">Thursday</label>
+                <input type="checkbox" name="Friday" id="Friday">
+                <label for="Friday">Friday</label>
+                <input type="checkbox" name="Saturday" id="Saturday">
+                <label for="Saturday">Saturday</label>
+                <input type="checkbox" name="Sunday" id="Sunday">
+                <label for="Sunday">Sunday</label>
+            </div></center>
+            <br>
+
+            <div>
+                <center><label for="time"><i>Available time:</i></label></center>
+                <center><select id="time" name="time" class="box">
+                    <option value="Morning">Morning 9am-11am</option>
+                    <option value="Afternoon">Afternoon 1pm-4pm</option>
+                    <option value="Evening">Evening 6pm-8pm</option>
+                </select></center>
+            </div>
+                   
+            <br>
+
+            <center><hp3><i>Currently working on a new website?</i></hp3></center>
+            <center><div>
+                <label selected>Yes</label>
+                <input type="radio" name="title">
+                <label>No</label>
+                <input type="radio" name="title">                    
+            </div></center>
+
+            <br>
+
+            <div>
+                <center><label for="Comments">Please enter which page or pages you are working on if yes.</label></center>
+                <center><textarea class="box"
+                    id="comments" name="comments" placeholder="Enter pages">
+                </textarea></center>
+            </div>
+
+            <br>
+                <div>
+                <center>
+                    <button id="submit-button" class="button">Submit</button>
+                    <button id="reset-button" class="button">Reset</button>
+                </center>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>
