@@ -1,0 +1,31 @@
+let firstName = prompt("Enter your first name: ");
+let lastName = prompt("Enter your last name: ");
+let age = prompt("Enter your age: ");
+let phoneNumber = prompt("Enter your phone number ");
+
+function formValidator(firstName, lastName, age, phoneNumber) {
+  if (typeof firstName !== "string") {
+    return "The first name should be a string";
+  } else if (typeof lastName !== "string") {
+    return "The last name should be a string";
+  } else if (isNaN(age)) {
+    return "The age should be a number";
+  } else if (isNaN(phoneNumber)) {
+    return "The phone number should be a number";
+  }
+  
+  if (firstName.length <= 0) {
+    return "The first name is missing.";
+  }
+  if (lastName.length <= 0) {
+    return "The last name is missing.";
+  }
+  if (age.length <= 0) {
+    return "The age is missing.";
+  }
+  if (phoneNumber.length <= 0) {
+    return "The phone number is missing.";
+  }
+}
+
+console.log(formValidator(firstName, lastName, age, phoneNumber));
