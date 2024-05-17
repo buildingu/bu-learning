@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"></meta>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @media only screen and (min-width: 768px) {
+            #mobile-version{
+                display: none;
+            }
+
+        }
+        @media only screen and (max-width: 768px) {
+            #desktop-version{
+                display: none;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div id="desktop-version">
+        <nav class="navbar navbar-expand-sm bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">BuildingU</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                      </li>
+                    </ul>
+            </div>
+        </nav>
+        <div class="text-white">
+            <div class="container-fluid" style="background-image: url(assets/BGimgDesktop.jpg); background-repeat: no-repeat; background-size: cover;">
+                <div class="row">
+                     <div class="col">
+                        <div class="display-5">
+                          <p class="text-center">Welcome to my BuildingU Projects Page</p>
+                     </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h5 class="text-white">Discover My Work on GitHub</h5>
+                    <br>
+                    <button type="button" class="btn btn-primary">View My Work</button>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-5">
+                        <h5 class="text-start">About Me</h5>
+                        <br>
+                        <p class="text-start">
+                            Hey, I'm John Doe, and I'm passionate about web development and coding.<br>I volunteer my skills to build amazing websites and  efficient code that<br> brings ideas to life.
+                            <br><br>
+                            With several years of experience in the field, I've had the privelege of<br> working on a wide range of projects, from creating responsive and user-<br> friendly websites to developing custom web appplications that solve complex<br> problems.
+                            <br><br>
+                            My journey in web development has allowed me to explore various <br> technologies and frameworks, and Bootstrap is one of my favourites. It's a <br> fantastic tool for creating sleek and responsive web designs, which is why<br> I'm excited to share my knowledge with you through this exercise.
+                            <br><br>
+                         </p>
+    
+                    </div>
+                    <div class="col-4">
+                        <img src="assets/UserIcon.png" class="position-relative top-50 start-0 translate-middle-y">
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="text-black">
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col-3">
+                    <h2 class="text-start"> My Portfolio</h2>
+                    <div class="card">
+                        <img src="assets/HTML5logo.jpg" height="250px" class="card-img-top">
+                        <div class="card-body">      
+                          <h5 class="card-title">Project 1: HTML</h5>
+                          <p class="card-text">Project 1 showcases my HTML skills. It's a webpage involving HTML with table and static form components. Click learn more to see the project</p>
+                          <button class="btn btn-danger">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <br><br>
+                    <div class="card">
+                        <img src="assets/CSS3logo.jpg" height="250px" class="card-img-top">
+                        <div class="card-body">      
+                          <h5 class="card-title">Project 2: CSS</h5>
+                          <p class="card-text">Project 1 showcases my CSS skills. It's a stylised webpage for an event done using HTML and CSS with custom components. Click learn more to see the project</p>
+                          <button class="btn btn-info">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <br><br>
+                    <div class="card">
+                        <img src="assets/JS5logo.jpg" height="250px" class="card-img-top">
+                        <div class="card-body">      
+                          <h5 class="card-title">Project 3: Advanced CSS</h5>
+                          <p class="card-text">Project 1 showcases my advanced CSS skills. It's a responsive webpage (Desktop and Mobile) from Project 1. Click learn more to see the project</p>
+                          <button class="btn btn-warning">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="text-white">
+            <div class="container-fluid" style="background-image: url(assets/BGimgDesktop.jpg); background-repeat: no-repeat; background-size: cover;">
+                <br><br>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-4">
+                        <p class="display-5">Contact Me</p>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" placeholder="John Doe">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email address</label>
+                                <input type="email" class="form-control" placeholder="johndoe@fakemail.com">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" rows="3" placeholder="Enter your comment here."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success">Send Message</button>
+                        </form>
+                        <br><br>
+                    </div>
+                    <div class="col-5"></div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+        <div class="text-black">
+            <div class="container-fluid">
+                <br>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-2">
+                        <h6 class="text-start">© 2024 John Doe</h4>
+                    </div>
+                    <div class="col-5"></div>
+                    <div class="col-2">
+                        <h6 class="text-end">Desktop Version ®</h4>
+                    </div>
+                    <div class="col"></div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div id="mobile-version">
+        <nav class="navbar navbar-expand-xxl bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">BuildingU</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <div class="container-fluid" style="background-image: url(assets/BGimgMobile.jpg); background-repeat: no-repeat; background-size: cover;">
+            <div class="text-white">
+                <div class="row">
+                    <div class="col">
+                       <div class="display-5">
+                         <p class="text-center">Welcome to my BuildingU Projects Page</p>
+                    </div>
+                   </div>
+               </div>
+               <div class="text-center">
+                   <h5 class="text-white">Discover My Work on GitHub</h5>
+                   <br>
+                   <button type="button" class="btn btn-primary">View My Work</button>
+               </div>
+               <br>
+               <div class="row">
+                   <div class="col">
+                   <h5 class="text-start">About Me</h5>
+                       <br>
+                       <p class="text-start">
+                           Hey, I'm John Doe, and I'm passionate about web development and coding.<br>I volunteer my skills to build amazing websites and  efficient code that<br> brings ideas to life.
+                           <br><br>
+                           With several years of experience in the field, I've had the privelege of<br> working on a wide range of projects, from creating responsive and user-<br> friendly websites to developing custom web appplications that solve complex<br> problems.
+                           <br><br>
+                           My journey in web development has allowed me to explore various <br> technologies and frameworks, and Bootstrap is one of my favourites. It's a <br> fantastic tool for creating sleek and responsive web designs, which is why<br> I'm excited to share my knowledge with you through this exercise.
+                           <br><br>
+                        </p>
+                   </div>
+                </div>
+                <div class="row">
+                   <div class="col">
+                       <img src="assets/UserIcon.png" class="position-relative top-50 start-0 translate-middle-y">
+                   </div>
+               </div>
+           </div>
+       </div>
+       <br><br>
+       <div class="container-fluid">
+        <div class="text-black">
+        <div class="row">
+            <div class="col">
+                <h2 class="text-start"> My Portfolio</h2>
+                <div class="card">
+                    <img src="assets/HTML5logo.jpg" height="25%" width="25%" class="card-img-top">
+                    <div class="card-body">      
+                      <h5 class="card-title">Project 1: HTML</h5>
+                      <p class="card-text">Project 1 showcases my HTML skills. It's a webpage involving HTML with table and static form components. Click learn more to see the project</p>
+                      <button class="btn btn-danger">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">   
+            <div class="col">
+                <br><br>
+                <div class="card">
+                    <img src="assets/CSS3logo.jpg" height="25%" width="25%" class="card-img-top">
+                    <div class="card-body">      
+                      <h5 class="card-title">Project 2: CSS</h5>
+                      <p class="card-text">Project 1 showcases my CSS skills. It's a stylised webpage for an event done using HTML and CSS with custom components. Click learn more to see the project</p>
+                      <button class="btn btn-info">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <br><br>
+                <div class="card">
+                    <img src="assets/JS5logo.jpg" height="25%" width="25%" class="card-img-top">
+                    <div class="card-body">      
+                      <h5 class="card-title">Project 3: Advanced CSS</h5>
+                      <p class="card-text">Project 1 showcases my advanced CSS skills. It's a responsive webpage (Desktop and Mobile) from Project 1. Click learn more to see the project</p>
+                      <button class="btn btn-warning">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container-fluid" style="background-image: url(assets/BGimgMobile.jpg); background-repeat: no-repeat; background-size: cover;">
+            <div class="text-white">
+                <br><br>
+                <div class="row">
+                    <div class="col">
+                        <p class="display-5">Contact Me</p>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" placeholder="John Doe">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email address</label>
+                                <input type="email" class="form-control" placeholder="johndoe@fakemail.com">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" rows="3" placeholder="Enter your comment here."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success">Send Message</button>
+                        </form>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-black">
+            <div class="container-fluid">
+                <br>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-4">
+                        <h6 class="text-start">© 2024 John Doe</h4>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-4">
+                        <h6 class="text-end">Mobile Version ®</h4>
+                    </div>
+                    <div class="col"></div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+  
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
