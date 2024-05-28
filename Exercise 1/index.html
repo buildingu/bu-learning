@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title -->
+        <title>Exercise 1 by Aneesh</title>
+        <!--Metadada-->
+        <meta charset="UTF-8" />
+        <!-- Keywords -->
+        <meta name = "keywords" content="HTML5" />
+        <!-- Description -->
+        <meta name="description" content="my html web" />
+        <!-- Author -->
+        <meta name="author" content="Aneesh" />
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Refresh Document -->
+        <meta http-equiv="refesh" content="30" />
+        <style>
+            .center {
+              text-align: center;
+            }
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+                font-size: 20px;
+                }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+            .centerImg {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .form {
+                text-align: center;
+            }
+        </style>
+            
+    </head>
+    <body>
+
+            <!-- The title-->
+            <h1 class = "center">Exercise 1 by Aneesh Ghosal</h1>
+            <h4 class = "center">Date complete: 5/19/24</h4>
+
+            <!-- Make the table -->
+            <fieldset>
+                <h4 class = "center">Fun facts about me:</h4>
+                <table>
+                    <tr>
+                        <th class = "center">First Name</th>
+                        <th class = "center">Last Name</th>
+                        <th class = "center">Favorite Movie</th>
+                        <th class = "center">Favorite Song</th>
+                        <th class = "center">Favorite Video</th>
+                    </tr>
+
+                    <tr>
+                        <td class = "center">Aneesh</td>
+                        <td class = "center">Ghosal</td>
+                        <td>
+                            <a href = "https://en.wikipedia.org/wiki/Star_Wars:_Episode_I_%E2%80%93_The_Phantom_Menace" target = "_blank">
+                                <img src="assets/StarWars.jpg" alt="Star Wars ep1 Photo" width="200" length = "300" class = "centerImg"/>
+                            </a>
+                        </td>
+                        <td>
+                            <audio controls class="centerImg">
+                                <source src="assets/Drake.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                            </audio>
+                        </td>
+                        <td>
+                            <video width="320" height="240" controls class="centerImg">
+                                <source src="assets/Drakevid.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <!-- Make the user input portion -->
+            <h4 class = "center">Enter your information</h4>
+            <div class = "form">
+                <from>
+                    <label> First Name: </label>
+                    <input type="" placeholder="John"><br><br>
+                    <label> Last Name: </label>
+                    <input type="" placeholder="Doe"><br><br>
+                    <label> Email: </label>
+                    <input type="email" placeholder="john.doe@gmail.com"><br><br>
+                    <label>Password</label>
+                    <input type="password" placeholder="****">
+
+                    <p> <b>Check the day(s) you're available: </b></p>
+                    <input type="checkbox">
+                    <label>Monday</label>
+                    <input type="checkbox">
+                    <label>Tuesday</label>
+                    <input type="checkbox">
+                    <label>Wednesday</label>
+                    <input type="checkbox">
+                    <label>Thursday</label>
+                    <input type="checkbox">
+                    <label>Friday</label><br><br>
+
+                    <label>Choose a time:</label>
+                    <select>
+                        <option>Morning(9-12)</option>
+                        <option>Early Afternoon(12-2:30)</option>
+                        <option>Late Afternoon(2:30-5)</option>
+                    </select>
+
+                    <p><b>Are you currently working on the new website?</b></p>
+                    <input type="radio">Yes
+                    <input type="radio"> No
+
+                    <p><b>Any comments? Put them below.</b></p>
+                    <textarea cols="20" rows="5" placeholder="Comments"></textarea><br>
+
+                    <input type="submit">
+                    <input type="reset">
+                </from>
+            </div>
+    </body>
+</html>
