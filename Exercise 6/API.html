@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API</title>
+    <link rel="stylesheet" href="styles/APIStyles.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <nav>
+        <ul id="nav_list">
+          <li class="list_item">
+            <a href="formValidator.html">Form Validator UI</a>
+          </li>
+          <li class="list_item"><a href="crudApp.html">CRUD App</a></li>
+          <li class="list_item"><a href="index.html">Homepage</a></li>
+        </ul>
+      </nav>
+    </div>
+    <br />
+    <div id="Intro_text">Is your number even?</div><br>
+    <h6>(This was initially a prime number tester but that API didn't accept fetch requests(I found out painfully late) so I salvaged the code to give this)</h6>
+    <br><br>
+    <div id="num_input">
+        <input type="text" id="input_field" placeholder="Enter Number Here"></input><br><br>
+        <button type="button" id="submit">Check your number</button>
+    </div><br>
+    <div id="APIresponse"></div>
+    <script src="scripts/API.js"></script>
+  </body>
+</html>

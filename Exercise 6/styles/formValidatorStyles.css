@@ -1,0 +1,46 @@
+.navbar {
+  background-color: yellow;
+  display: flex;
+}
+#nav_list {
+  margin: auto;
+  list-style: none;
+  display: flex;
+}
+.list_item {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+a {
+  color: black;
+  font-style: normal;
+}
+#form_holder {
+  margin: auto;
+  display: block;
+  background-color: white;
+  border: 2px solid black;
+  width: fit-content;
+  height: fit-content;
+}
+#form {
+  padding: 25px;
+}
+input {
+  margin: 10px;
+}
+button {
+  margin: 10px;
+}
+#alerter {
+  height: 50px;
+  width: auto;
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  margin: auto;
+  text-align: center;
+  color: red;
+}

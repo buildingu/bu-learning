@@ -1,0 +1,53 @@
+.navbar {
+  background-color: yellow;
+  display: flex;
+}
+#nav_list {
+  margin: auto;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  width: fit-content;
+}
+.list_item {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+a {
+  color: black;
+  font-style: normal;
+}
+#Intro_text {
+  font-family: "Times New Roman", Times, serif;
+  margin: auto;
+  width: fit-content;
+  font-size: xx-large;
+}
+h6 {
+  margin: auto;
+  width: fit-content;
+  text-align: center;
+}
+#input_field {
+  margin: auto;
+  width: fit-content;
+  text-align: center;
+}
+#submit {
+  margin: auto;
+  width: fit-content;
+}
+#APIresponse {
+  margin: auto;
+  width: fit-content;
+  text-align: center;
+}
+#num_input {
+  margin: auto;
+  width: fit-content;
+  text-align: center;
+}

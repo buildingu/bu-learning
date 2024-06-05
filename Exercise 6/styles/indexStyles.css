@@ -1,0 +1,25 @@
+.navbar {
+  background-color: yellow;
+  display: flex;
+}
+#nav_list {
+  margin: auto;
+  list-style: none;
+  display: flex;
+}
+.list_item {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+a {
+  color: black;
+  font-style: normal;
+}
+#text_container {
+  margin: auto;
+  align-items: center;
+  width: fit-content;
+}

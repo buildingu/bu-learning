@@ -1,0 +1,95 @@
+.navbar {
+  background-color: yellow;
+  display: flex;
+}
+#nav_list {
+  margin: auto;
+  list-style: none;
+  display: flex;
+}
+.list_item {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+a {
+  color: black;
+  font-style: normal;
+}
+#new_entry_holder {
+  margin: auto;
+  display: block;
+  background-color: white;
+  border: 2px solid black;
+  width: fit-content;
+  height: fit-content;
+}
+#new_entry {
+  padding: 25px;
+  align-items: center;
+  display: block;
+}
+input {
+  margin-top: 10px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+#addButton {
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+  background-color: yellow;
+  border: solid 1px black;
+  border-radius: 5%;
+  padding: 10px;
+}
+.entryholder {
+  margin: auto;
+  display: block;
+  background-color: white;
+  border: 1px solid black;
+  width: 200px;
+  height: fit-content;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  border: solid 1px lightgray;
+  background-color: lightgray;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 25px;
+  margin-left: 15px;
+}
+.initial {
+  font-size: large;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  align-self: center;
+  margin-left: 50%;
+}
+.info {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 15px;
+  display: block;
+}
+.buttons {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  width: fit-content;
+  display: block;
+}
+.profile {
+  display: flex;
+}
+#employeeInfo {
+  display: flex;
+  flex-wrap: wrap;
+}
