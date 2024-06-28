@@ -1,0 +1,33 @@
+table {
+    font-family: Verdana;
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 250px;
+    margin: auto;
+  }
+  
+  td, th {
+    padding: 10px;
+    text-align: left;
+    margin: 0;
+  }
+  
+  tbody tr:nth-child(2n){
+    background-color: #eee;
+  }
+  
+  th {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+  }
+
+body{
+    background-color: bisque;
+}
+
+img{
+    width: 100px;
+    text-align: right;
+}
