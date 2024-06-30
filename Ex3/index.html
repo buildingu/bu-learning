@@ -1,1 +1,363 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        h2 {
+            text-align: center;
+            margin: 10px 0;
+        }
+        #top {
+            border-bottom: solid white;
+            padding: 10px;
+            text-align: center;
+        }
+        #facts {
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #263A42;
+            margin: 20px 0;
+            display: table; 
+        }
+        th, td {
+            border: 2px solid grey;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #2A3441;
+        }
+        td {
+            background-color: #263A42;
+        }
+        tr:first-child th, 
+        tr:first-child td {
+            border-bottom: 2px solid white;
+        }
+        tr:not(:first-child) td {
+            border-top: 2px solid white;
+        }
+        audio, iframe, img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%; 
+        }
+        .form-container {
+            background-color: #d3d3d3;
+            padding: 20px;
+            width: 90%;
+            max-width: 500px;
+            margin: 20px auto;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input[type="checkbox"], .form-group input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .form-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .form-actions button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .form-actions .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .form-actions .reset-btn {
+            background-color: #f44336;
+            color: white;
+        }
+        .days-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+        }
+        .days-grid .day {
+            display: flex;
+            align-items: center;
+        }
+        .days-grid .day label {
+            margin-left: 5px;
+        }
+        .form-group .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .form-group .radio-group label {
+            margin-left: 5px;
+        }
+
+        @media (max-width: 600px) {
+            table {
+                display: none; 
+            }
+            .table-wrapper {
+                display: block;
+            }
+            .table-row {
+                display: block;
+                margin-bottom: 10px;
+            }
+            .table-row div {
+                display: block;
+                padding: 10px;
+                border: 2px solid grey;
+                border-bottom: none;
+                background-color: #263A42;
+            }
+            .table-row div:nth-child(1) {
+                font-weight: bold;
+                background-color: #2A3441;
+                border-top: 2px solid white;
+            }
+            .table-row div:last-child {
+                border-bottom: 2px solid white;
+            }
+        }
+
+        @media (min-width: 601px) {
+            .table-wrapper {
+                display: none; 
+            }
+        }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #263A42;
+    margin: 20px 0;
+    display: table; 
+}
+
+table th:nth-child(1),
+table td:nth-child(1) {
+    width: 75px;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+    width: 75px;
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+    width: 150px;
+}
+
+table th:nth-child(4),
+table td:nth-child(4) {
+    width: 150px;
+}
+
+table th:nth-child(5),
+table td:nth-child(5) {
+    width: 150px;
+}
+
+@media (max-width: 600px) {
+    table {
+        display: none; 
+    }
+    .table-wrapper {
+        display: block;
+    }
+    .table-row {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .table-row div {
+        display: block;
+        padding: 10px;
+        border: 2px solid grey;
+        border-bottom: none;
+        background-color: #263A42;
+    }
+    .table-row div:nth-child(1) {
+        font-weight: bold;
+        background-color: #2A3441;
+        border-top: 2px solid white;
+    }
+    .table-row div:last-child {
+        border-bottom: 2px solid white;
+    }
+}
+     @media (min-width: 601px) {
+            body {
+                background-image: Assets/background-desktop.jpg;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background-image: Assets/background-mobile.jpg;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Exercise 3 by Luksh Mahajan</h2>
+    <div id="top">
+        <p id="sub">Submission Date of June 30, 2024</p>
+    </div>
+
+    <p id="facts">Fun Facts:</p>
+
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Movie</th>
+            <th>Favorite Audio</th>
+            <th>Favorite Video</th>
+        </tr>
+        <tr>
+            <td>Luksh</td>
+            <td>Mahajan</td>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Back_to_the_Future">
+                    <img src="https://cdn.theasc.com/Back-to-the-Future-Featured-Image.jpg" alt="Back to the Future" width="100">
+                </a>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="rick_roll.mp3" type="audio/mpeg">
+                </audio>
+            </td>
+            <td>
+                <iframe width="200" height="113" src="marvel_studios.mp4" allow="autoplay; picture-in-picture"></iframe>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Mobile Layout -->
+    <div class="table-wrapper">
+        <div class="table-row">
+            <div>First Name</div>
+            <div>Luksh</div>
+        </div>
+        <div class="table-row">
+            <div>Last Name</div>
+            <div>Mahajan</div>
+        </div>
+        <div class="table-row">
+            <div>Favorite Movie</div>
+            <div>
+                <a href="https://en.wikipedia.org/wiki/Back_to_the_Future">
+                    <img src="https://cdn.theasc.com/Back-to-the-Future-Featured-Image.jpg" alt="Back to the Future" width="100">
+                </a>
+            </div>
+        </div>
+        <div class="table-row">
+            <div>Favorite Audio</div>
+            <div>
+                <audio controls>
+                    <source src="rick_roll.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="table-row">
+            <div>Favorite Video</div>
+            <div>
+                <iframe width="200" height="113" src="marvel_studios.mp4" allow="autoplay; picture-in-picture"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <h2>Enter Your Details Below:</h2>
+    
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="jdoe@fakemail.com">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="******">
+            </div>
+            <div class="form-group">
+                <label>Available Meeting Days:</label>
+                <div class="days-grid">
+                    <div class="day"><input type="checkbox" id="monday" name="day" value="monday"><label for="monday">Monday</label></div>
+                    <div class="day"><input type="checkbox" id="tuesday" name="day" value="tuesday"><label for="tuesday">Tuesday</label></div>
+                    <div class="day"><input type="checkbox" id="wednesday" name="day" value="wednesday"><label for="wednesday">Wednesday</label></div>
+                    <div class="day"><input type="checkbox" id="thursday" name="day" value="thursday"><label for="thursday">Thursday</label></div>
+                    <div class="day"><input type="checkbox" id="friday" name="day" value="friday"><label for="friday">Friday</label></div>
+                    <div class="day"><input type="checkbox" id="saturday" name="day" value="saturday"><label for="saturday">Saturday</label></div>
+                    <div class="day"><input type="checkbox" id="sunday" name="day" value="sunday"><label for="sunday">Sunday</label></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="time">Available Time:</label>
+                <select id="time" name="time">
+                    <option value="morning">Morning (8am to 12pm)</option>
+                    <option value="afternoon">Afternoon (12pm to 4pm)</option>
+                    <option value="evening">Evening (4pm to 8pm)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Currently working on a new website?</label>
+                <div class="radio-group">
+                    <input type="radio" id="yes" name="working" value="yes"><label for="yes">Yes</label>
+                    <input type="radio" id="no" name="working" value="no"><label for="no">No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comments">If yes, please enter which page(s) you are working on:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here"></textarea>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
+
