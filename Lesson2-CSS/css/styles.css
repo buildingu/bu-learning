@@ -1,0 +1,64 @@
+#title {
+    color: #001e4d;
+    font-family: sans-serif;
+    font-weight: 1000;
+    text-align: center;
+    border: 10px solid black;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+body {
+    background-color: #5dadec;
+}
+
+#badminton-image {
+    padding-left: 400px;
+    padding-top: 15px;
+    width: 750px;
+    height: auto;
+}
+
+table {
+    background-color: black;
+    font-family: sans-serif;
+    font-weight: 800;
+    margin-left: 55px;
+
+}
+
+tr {
+    background-color: #13f9f9;
+}
+
+#gym-image {
+    width: 300px;
+    height: auto;
+    border: 10px solid black;
+}
+
+td {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#signup-text {
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 900;
+}
+
+button {
+    font-size: 20px;
+    font-weight: 900;
+    margin-left: 75px;
+}
+
+form {
+    font-family: sans-serif;
+    margin-left: 625px;
+}
