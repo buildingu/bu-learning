@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=devide-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Exercise 1</title>
     </head>
     <body>
@@ -12,7 +12,7 @@
             <hr>
             <h2>Facts about me:</h2>
 
-            <table>
+            <table cellpadding="15px" cellspacing="3px">
                 <tr>
                     <th>First Name</th>
                     <th>Last Name</th>
@@ -26,7 +26,7 @@
                     <td>Byreddy</td>
                     <td>
                         <a href="https://en.wikipedia.org/wiki/The_Map_of_Tiny_Perfect_Things">
-                            <img src="favMovie.jpg" alt="The Map of Tiny Perfect Things Movie Image" style="width:200px;height:120px;">
+                            <img src="assets/favMovie.jpg" alt="The Map of Tiny Perfect Things Movie Image" style="width:200px;height:120px;">
                         </a>
                     </td>
                     <td>
@@ -35,12 +35,12 @@
                         </center>
                         <br>
                         <audio controls>
-                            <source src="audio sample.mp3" type="audio/mpeg" alt="sample of It Is What It Is by Jenna Raine">
+                            <source src="assets/audio sample.mp3" type="audio/mpeg" alt="sample of It Is What It Is by Jenna Raine">
                         </audio>
                     </td>
                     <td>
                         <video width="200px" controls>
-                            <source src="video.mp4" type="video/mp4" alt="sample of a video">
+                            <source src="assets/video.mp4" type="video/mp4" alt="sample of a video">
                         </video>
                     </td>
                 </tr>
@@ -51,11 +51,14 @@
                 <label>Full Name</label>
                     <input type="text" placeholder="John Doe"> 
                 <br>
+                <br>
                 <label>Email Address</label>
                     <input type="email" placeholder="johndoe@gmail.com"> 
                 <br>
+                <br>
                 <label>Password</label>
                     <input type="password" placeholder="********"> 
+                <br>
                 <br>
                 <label>Available Days</label> 
                 <br>
@@ -67,6 +70,7 @@
                     <input type="checkbox"> Saturday
                     <input type="checkbox"> Sunday
                 <br>
+                <br>
                 <label>Available Time</label> 
                     <select>
                         <option>Morning - 7AM to 12PM</option>
@@ -75,14 +79,17 @@
                         <option>Night - 9PM to 12AM</option>
                     </select>
                 <br>
+                <br>
                 <label>Are you currenly working on a New Website?</label>
                     <input checked type="radio"> Yes
                     <input type="radio"> No 
                 <br>
-                <input type="text" size="90" placeholder="please enter any additional information or comments">
                 <br>
-                <input type="submit">
-                <input type="reset">
+                <input textarea size="90" placeholder="Please enter any additional information or comments">
+                <br>
+                <br>
+                <input type="button" value="Submit">
+                <input type="button" value="Reset">
             </form>
         </center>
     </body>
