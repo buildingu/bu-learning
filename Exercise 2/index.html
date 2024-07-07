@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>East High School Debate Tournament</title>
+    <link rel="stylesheet" href="CSS\styles.css">
+</head>
+<body>
+    <header>
+        <h1 style = "color:white">East High School Debate Tournament</h1>
+        <p>Join us for a day of debate and fun. Free admission and food!</p>
+    </header>
+
+    <section id="event-info">
+        <h2>Event Information</h2>
+        <p><strong>Date:</strong> 6/1</p>
+        <p><strong>Time:</strong> 8AM - 5PM</p>
+        <p><strong>Location:</strong> East High School</p>
+        <p><strong>Who's Invited:</strong> High school students</p>
+        <p><strong>Circuits:</strong> Public Forum, Lincoln Douglas, and Parliamentary</p>
+    </section>
+
+    <section id="schedule">
+        <h2>Schedule</h2>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Event</th>
+            </tr>
+            <tr>
+                <td>8:00 AM</td>
+                <td>Welcome Ceremony</td>
+            </tr>
+            <tr>
+                <td>9:00 AM</td>
+                <td>Public Forum</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>Lincoln Douglas</td>
+            </tr>
+            <tr>
+                <td>1:00 PM</td>
+                <td>Parliamentary</td>
+            </tr>
+            <tr>
+                <td>4:00 PM</td>
+                <td>Closing Awards Ceremony</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="resources">
+        <h2>Resources</h2>
+        <p>Check out these tutorials to prepare for the tournament:</p>
+        <ul>
+            <li><a href="https://www.debatedrills.com/public-forum">Public Forum Tutorial</a></li>
+            <li><a href="https://www.debatedrills.com/lincoln-douglas">Lincoln Douglas Tutorial</a></li>
+            <li><a href="http://www.chssa.org/wp-content/uploads/2016/01/Parliamentary_Debate_Intro.9104950.pdf">Parliamentary Tutorial</a></li>
+        </ul>
+        <img src="debatetournament.jpg" alt="Debate Tournament Preview">
+    </section>
+
+    <section id="sign-up">
+        <h2>Sign Up</h2>
+        <form action="submit-form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="school">School:</label>
+            <input type="text" id="school" name="school" required><br>
+            <label for="event">Event:</label>
+            <select name="events" required>
+                <option value="PF">Public Forum</option>
+                <option value="LD">Lincoln Douglas</option>
+                <option value="PARLI">Parliamentary</option>
+            </select><br>
+            <input type="submit" value="Sign Up">
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>Contact us: <a href="mailto:debatedirector@forensics.com">debatedirector@forensics.com</a></p>
+    </footer>
+</body>
+</html>
