@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Title-->
+        <title>HTML exercise 1</title>
+
+        <!--Metadata-->
+            <!--Charset-->
+            <meta charset="UTF-8"/>
+            <!--Viewport-->
+            <meta name="viewport" content="width=device.width, initial.scale=1"/>
+    </head>
+    <body>
+        <!--Headings-->
+        <h1 style="text-align: center;">Exercise 1 by Leynard Casanding <br> 
+        Submitted: <i>July _, 2024</i></h1>
+        
+
+
+        <!--Table-->
+        <table  border="1" cellspacing="0" cellpadding="2" width="1000" align="center" >
+
+            <!-- Title -->
+            <caption align="top"><strong>Things About Me</strong></caption>
+
+            <!-- First row -->
+            <tr>
+                <th><b>First Name</b></th>
+                <th><b>Last Name</b></th>
+                <th><b>Favourite Movie</b></th>
+                <th><b>Favourite Song</b></th>
+                <th><b>Favourite Video</b></th>
+            </tr>
+
+            <!-- Second row -->
+            <tr>
+                <!--First name-->
+                <td>Leynard</td>
+
+                <!--Last name-->
+                <td>Casanding</td>
+
+                <!--Favourite movie-->
+                <td >
+                    <a href="https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_Vol._3" target="_blank">
+                        <img src="Assets/GotG V3.jpg" alt="Guardians of the Galaxy Vol. 3">
+                    </a>
+                </td>
+
+                <!--Favourite song-->
+                <td style="text-align: center;">
+                    <a href="https://www.youtube.com/watch?v=mp7YVaiwNIc" target="_blank">
+                        Must Die: </a><br>
+                    <audio controls>
+                        <source src="Assets/Must Die sample.mp3" type="audio/mp3" alt="Must Die 1:59-2:22">
+                    </audio>
+                </td>
+
+                <!--Favourite video-->
+                <td style="text-align: center;">
+                    <a href="https://www.youtube.com/watch?v=_d7Iw6GQcxE" target="_blank">
+                        - Vampire - Rachel Alucard Combo Movie: <br>
+                    </a>
+                    <video width="520" height="340" controls>
+                        <source src="Assets/BBCPEX - Vampire - Rachel Alucard Combo Movie.mp4" type="video/mp4" alt="BBCPEX - Vampire - Rachel Alucard Combo Movie 1:22-1:50">
+                    </video>
+                </td>
+            </tr>
+
+        </table><br>
+
+        <h2 style="text-align: center;"><strong><b>Enter your details here:</b></strong></h2><br>
+
+        <form style="text-align: center;">
+            <!--Name-->
+            <label>Full Name:</label>
+                <input type="text" placeholder="Put name here!"><br>
+
+            <!--Email Adress-->
+            <label>Email Address:</label>
+             <input type="email" placeholder="Put Email here!"><br>
+
+             <!-- Password -->
+            <label>Password:</label> 
+                <input type="password" placeholder="Put password here!"><br>
+
+            <!-- Days Available -->
+            <label>Days Available:</label><br>
+                <input type="checkbox">Monday
+                <input type="checkbox">Tuesday
+                <input type="checkbox">Wednesday
+                <input type="checkbox">Thursday
+                <input type="checkbox">Friday
+                <input type="checkbox">Saturday
+                <input type="checkbox">Sunday<br>
+
+                <!-- Time Available -->
+            <label>Time Available: </label>
+                <select>
+                    <option>select option...</option>
+                    <option>Morning (8am to 12pm) </option>
+                    <option>Midday (1pm to 5pm)</option>
+                    <option>Evening (6pm to 8pm)</option>
+                </select><br>
+            
+            <!-- Are they working on a new website y/n -->
+            <label>Working on a new website?</label>
+                <input type="radio" name="Yes/No" >Yes
+                <input type="radio" name="Yes/No" >No
+                <br>
+
+            <!-- Comments -->
+            <label>Comments:</label><br>
+            <Textarea style="width:200px; height:125px;" placeholder="Put comments here!"></Textarea><br>
+
+            <!-- Submit and Reset (does nothing) -->
+            <button type="button">Submit</button> <button type="button">Reset</button>
+        </form>
+
+
+
+
+
+    </body>
+</html>
