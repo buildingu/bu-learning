@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Exercise</title>
+</head>
+<body>
+
+    <!-- Heading -->
+    <h1>Exercise 1</h1>
+    <p>Date: July 10, 2024</p>
+
+    <!-- Table Subheading -->
+    <h2>Favorite Things Table</h2>
+
+    <!-- Table -->
+    <table border="1">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Movie</th>
+            <th>Favorite Song</th>
+            <th>Favorite Video</th>
+        </tr>
+        <tr>
+            <td>Malika</td>
+            <td>Niyazova</td>
+            <td>
+                <a href="https://www.pinterest.com/" >
+                    <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Raiders_of_the_Lost_Ark.jpg" alt="Indiana Jones" width="100">
+                </a>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="sample-audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+            <td>
+                <video width="160" height="120" controls>
+                    <source src="sample-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Form Subheading -->
+    <h2>User Information Form</h2>
+
+    <!-- Form -->
+    <form>
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+
+        <label>Available Days:</label><br>
+        <input type="checkbox" id="monday" name="days" value="monday">
+        <label for="monday">Monday</label><br>
+        <input type="checkbox" id="tuesday" name="days" value="tuesday">
+        <label for="tuesday">Tuesday</label><br>
+        <input type="checkbox" id="wednesday" name="days" value="wednesday">
+        <label for="wednesday">Wednesday</label><br>
+        <input type="checkbox" id="thursday" name="days" value="thursday">
+        <label for="thursday">Thursday</label><br>
+        <input type="checkbox" id="friday" name="days" value="friday">
+        <label for="friday">Friday</label><br><br>
+
+        <label for="time">Available Time:</label><br>
+        <select id="time" name="time">
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+        </select><br><br>
+
+        <label>Working on a New Website?:</label><br>
+        <input type="radio" id="yes" name="website" value="yes" checked>
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="website" value="no">
+        <label for="no">No</label><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>
