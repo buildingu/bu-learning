@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(215, 215, 215);
+    text-align: center;
+    font-family: Georgia;
+    border: 30px;
+    padding: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+h1 {
+    color: navy;
+    font-style: italic;
+    font-size: 50px;
+}
+h2 {
+    color: navy;
+}
+h4 {
+    color: rgb(36, 16, 90);
+    font-family: 'Times New Roman';
+    font-size: 18px;
+}
+
+#logo {
+        width:100px;
+        position: absolute;
+}
+
+hr {
+    font-weight: 20px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
