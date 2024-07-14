@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>David Sun - Exercise 2: CSS</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Exercise 2: CSS">
+        <meta name="author" content="David Sun">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="heading-box">
+            <h1 style="top: 5%; font-size: 40px; text-align: center">You're Invited!</h1>
+        </div>
+        
+        <div class="content-box">
+            <a href="https://www.google.com/"> <!--would hypothetically redirect to a page w/ more info--> 
+                <img src="assets/grad.jpg" alt="Graduation Picture" id="grad">
+            </a>
+            
+            <p>Join us as we celebrate the graduation of our high school's class of 2024!</p>
+            <p>Who: Family and friends of the class of 2024</p>
+            <p>When: July 13, 2024 @ 5 PM</p>
+            <p>Where: 123 Sunflower St. New York, NY 12345</p>
+
+            <h3 style="font-size: 24px;">Unable to make it? Watch the livestream:</h3>
+            <iframe style="border: 1px solid black;" width="450" height="350" src="https://www.youtube.com/embed/wN-mZtbX2Pg"></iframe>
+
+        </div>
+
+        <div class="form-box">
+            <h2 style="font-size: 26px;">RSVP Form</h2>
+            <p>Will you be able to attend the graduation?</p>
+            <input class="radio" type="radio"> Yes
+            <input class="radio" type="radio"> No
+            <br>
+            <button type="button" id="submitbtn">Submit</button>
+        </div>
+
+    </body>
+</html>

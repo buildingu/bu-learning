@@ -1,0 +1,67 @@
+body {
+    background-color: burlywood;
+    background-image: url(assets/wood.jpg);
+}
+
+p {
+    font-size: 20px;
+    font-family: 'EB Garamond';
+}
+
+.radio {
+    font-size: 20px;
+    font-family: 'EB Garamond';
+}
+
+.heading-box {
+    background-color: bisque;
+    width: 1050px;
+    margin: auto;
+    border: 2px solid black;
+
+}
+
+.content-box {
+    margin-top: 25px;
+    background-color: lightblue;
+    width: 1050px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    border: 1px solid black;
+    padding-bottom: 15px;
+}
+
+#grad {
+    margin-top: 15px;
+    border: 1px solid black;
+}
+
+.form-box {
+    text-align: center;
+    margin-top: 25px;
+    background-color: bisque;
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    padding-bottom: 15px;
+}
+
+#submitbtn {
+    margin-top: 15px;
+    font-family: 'EB Garamond';
+    background-color: forestgreen;
+    color: white;
+    font-size: 20px;
+    width: 100px;
+    padding: 5px;
+}
+
+#submitbtn:hover {
+    cursor: pointer;
+    color: forestgreen;
+    background-color: white;
+}
+
