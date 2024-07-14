@@ -53,7 +53,61 @@
         <hr>
 
         <div class="form-portion">
+            <p>Enter your details below:</p>
+            <form>
+                <label id="italicized">Full Name</label> 
+                <br>
+                <input id="shortAnswerInput" type="text" placeholder="John Doe" required>
+                <br>
+                <br>
 
+                <label id="italicized">Email</label>
+                <br>
+                <input id="shortAnswerInput" type="email" placeholder="abc@xyz.com" required>
+                <br>
+                <br>
+
+                <label id="italicized">Password:</label>
+                <br>
+                <input id="shortAnswerInput" type="password" placeholder="*****" required>
+                <br>
+                <br>
+
+                <label id="italicized">Available Meeting Days:</label> <br>
+                <input type="checkbox" id="sunday">
+                <label for="sunday">Sunday</label>
+                <input type="checkbox" id="monday">
+                <label for="monday">Monday</label>
+                <input type="checkbox" id="tuesday">
+                <label for="tuesday">Tuesday</label>
+                <input type="checkbox" id="wednesday">
+                <label for="wednesday">Wednesday</label>
+                <input type="checkbox" id="thursday">
+                <label for="thursday">Thursday</label>
+                <input type="checkbox" id="friday">
+                <label for="friday">Friday</label>
+                <input type="checkbox" id="saturday">
+                <label for="saturday">Saturday</label> <br> <br>
+
+                <label id="italicized">Available Time</label> <br>
+                <select name="time" id="shortAnswerInput">
+                    <option value="morning">Morning (8am to 12pm)</option>
+                    <option value="afternoon">Afternoon (1pm to 6pm)</option>
+                    <option value="evening">Evening (7pm to 12am)</option>
+                </select>
+                <br> <br>
+                
+                <label id="italicized">Currently working on the new website?</label> <br>
+                <input type="radio" checked> Yes
+                <input type="radio"> No
+                <br>
+
+                <br>
+                <textarea cols="36" rows="2" placeholder="Enter your comments here" style="text-align: center;"></textarea>
+                <br>
+                <button id="submitbtn">Submit</button>
+                <button id="resetbtn">Reset</button>
+            </form>
         </div>
 
 

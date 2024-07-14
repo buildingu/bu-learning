@@ -23,6 +23,7 @@ th {
     font-weight: 600;
     background-color: #283440;
     border: 6px solid #818288;
+    padding: 25px;
 }
 
 td {
@@ -32,10 +33,72 @@ td {
     font-weight: 500;
     background-color: #243A40;
     border: 6px solid #818288;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 table {
     margin-left: auto;
     margin-right: auto;
-    border: 6px solid #818288;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+form {
+    text-align: center;
+    background-color: #CFCBCA;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 8px solid #808080;
+}
+
+label, option {
+    font-family: 'Comic Neue';
+    font-weight: 700;
+    font-size: 13px;
+}
+
+#submitbtn {
+    background-color: #46AF4C;
+    color: white;
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+#submitbtn:hover {
+    color: #46AF4C;
+    background-color: white;
+    cursor: pointer;
+}
+
+#resetbtn {
+    background-color: #C9373A;
+    color: white;
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+#resetbtn:hover {
+    color: #C9373A;
+    background-color: white;
+    cursor: pointer;
+}
+
+#shortAnswerInput {
+    text-align: center;
+    width: 70%;
+    font-family: 'Comic Neue';
+    font-size: 12px;
+    height: 24px;
+}
+
+#italicized {
+    font-style: italic;
 }
