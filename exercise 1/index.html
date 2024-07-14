@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 1</title>
-    <h1>Exercise 1 by Madinah Dampha</h1>
-    <h2>Date submitted: 4/06/24 </h2>
   </head>
 
   <body>
-   <h2>Facts About Me:</h2>
+    <center>
+    <h1>Exercise 1 by Madinah Dampha</h1>
+    <h2>Date submitted: 4/06/24 </h2
+
+    <h3>Facts About Me:</h3>
    <table bgcolor="black">
     <tr bgcolor="lightgrey">
       <th>First Name</th>
@@ -22,7 +24,7 @@
     <tr bgcolor="blue">
      <td>Madinah</td>
      <td>Dampha</td>
-     <td> <img src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" alt="The Godfather Movie Poster" width="200" height="200"></td>
+     <td> <a href= "https://en.wikipedia.org/wiki/The_Godfather"><img src="movie.jpeg" width="200" height="200"></a></td>
      <td> <audio controls> 
           <source src="song.mp3" type="audio/mpeg">
           </audio> </td>
@@ -39,17 +41,15 @@
     <label for="name">Full Name:</label>
     <input type="text" id="name" name="name" placeholder="Madinah Dampha">
     
-    </br><label for="email">Email Ad:</label>
+    <br /><label for="email">Email Ad:</label>
     <input type="text" id="email" name="email" placeholder="something@gmail.com">
    
-    </br><label for="p">Password:</label>
+    <br /><label for="p">Password:</label>
     <input type="text" id="p" name="p" placeholder="*********">
-   </br><input type="submit" value="submit">
-   </form>
+   
 
-
-    </br><h2>Avalible Meeting Days</h2>
-   <form>
+    <br /><h2>Avalible Meeting Days</h2>
+  
      <input type="checkbox">
      <label for="m">Monday</label>
      
@@ -72,23 +72,24 @@
      <label for="sun">Sunday</label>
    </form>
 
-  </br><label for="time">Choose a suitable time slot:</label>
+  <br /><label for="time">Choose a suitable time slot:</label>
     <select name="time" id="time">
       <option value="m">Morning (7am to 12pm)</option>
       <option value="a">Afternoon (1pm to 5pm)</option>
       <option value="e">Evening (6pm to 9pm)</option>
-      <input type="submit" value="submit">
     </select>
 
-  </br><label for="question">Are you working on a new website?</label>
-        <input type="radio" id = "y" name="yes">
+  <br /><label for="question">Are you working on a new website?</label>
+        <input type="radio" id = "y" name="yes" value="y" checked>
         <label for = "y"> yes </label>
         <input type="radio" id = "n" name = "no">
         <label for = "n"> no </label>
-      </br><input type="submit" value="submit">
-      <input type="reset" value="reset">
-      </br><input type="text" placeholder="additional comments">
+        <br /><textarea> additional comments</textarea>
+      <br /><button class="submit" type="button">submit</button>
+            <button class="reset" type="button">reset</button>
+     
+      
 
-
+    </center>
   </body>
 </html>
