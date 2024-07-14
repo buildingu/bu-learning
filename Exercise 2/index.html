@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title -->
+        <title>ACL RoboLoco EOY Event</title>
+        <!--Metadada-->
+        <meta charset="UTF-8" />
+        <!-- Keywords -->
+        <meta name = "keywords" content="HTML5" />
+        <!-- Description -->
+        <meta name="description" content="RBLC EOY" />
+        <!-- Author -->
+        <meta name="author" content="Aneesh" />
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Refresh Document -->
+        <meta http-equiv="refesh" content="30" />
+
+        <link rel="stylesheet" href="cssTest.css" />
+
+
+        <style>
+            #logo {
+                float:left;
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                
+            }
+            .header{
+                text-align: center;
+                color: blue;
+            }
+
+            .center{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 75%;
+                background-color: lightblue;
+          }
+          .form{
+            text-align: center;
+            border: 5px solid black;
+            padding-bottom: 20px;
+          }
+          table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 50px;
+            }
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+                font-size: 20px;
+                }
+
+            tr{
+                background-color: lightblue;
+            }
+            
+
+
+
+        </style>
+    </head>
+
+    <body style = "background-color: #2BE2FF;">
+        <!--Top heading and logo-->
+            <div class = "header">
+                <h1 style="display: inline-block; font-size: 60px; margin-bottom: 0px; margin-top:10px;"><img id = "logo" style = "margin-top: 0px;"src="assets/rblc.jpg" alt="RoboLoco Logo" />ACL RoboLoco End of Year Event</h1>
+            </div>
+            <hr>
+            <!--Big robot picture-->
+            <a href="https://www.lcps.org/RoboLoCo" target = "_blank">
+                <img src = "assets/robotrblc.webp" alt = "Robot" class = "center">
+            </a>
+            <!--info paragraph-->
+            <p style="text-align: center; background-color: blue; border: 5px solid green; color:antiquewhite; margin-left: 50px; margin-right: 50px; font-size: 40px;">Come to the RoboLoCo End of Year Event!! This event is to celebrate the accomplishments we made throughout the FRC 23-24 competition season! We will provide drinks, and will have a potluck. If you are interested in being a part of the potluck, fill out the form below.</p>
+
+            <!--table of info-->
+                <table>
+                    <tr>
+                        <th style = "text-align: center;">Where?</th>
+                        <th style = "text-align: center;">When?</th>
+                        <th style = "text-align: center;">Who?</th>
+                    </tr>
+
+                    <tr>
+                        <td style = "text-align: center;">Academies of Loudoun Cafe</th>
+                        <td style = "text-align: center;">Friday 6-9pm</th>
+                        <td style = "text-align: center;">Everyone is invited!</th>
+                    </tr>
+                </table>
+            <!--The form-->
+            <div class = "form">
+                <h4 style="font-size: 30px; color:blue;">Attendance form</h4>
+                <from>
+                    <p><b>Would you like to attend this event?</b></p>
+                    <input type="radio">Yes
+                    <input type="radio"> No <br><br>
+
+                    <label> First Name: </label>
+                    <input type="" placeholder="John"><br><br>
+                    <label> Last Name: </label>
+                    <input type="" placeholder="Doe"><br><br>
+                    <label> Email: </label>
+                    <input type="email" placeholder="john.doe@gmail.com"><br><br>
+
+                    <p> <b>Check the type of food you want to bring: </b></p>
+                    <input type="checkbox">
+                    <label>Appetizers</label>
+                    <input type="checkbox">
+                    <label>Entrees</label>
+                    <input type="checkbox">
+                    <label>Desserts</label><br><br>
+
+                    <label>Choose the drink you would like:</label>
+                    <select>
+                        <option>Coke</option>
+                        <option>Fanta</option>
+                        <option>Sprite</option>
+                    </select>
+
+
+                    <p><b>Any allergies? Put them below.</b></p>
+                    <textarea cols="20" rows="5" placeholder="Comments"></textarea><br>
+
+                    <input type="submit">
+                    <input type="reset">
+                </from>
+            </div>
+
+    </body>
