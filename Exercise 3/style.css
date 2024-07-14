@@ -1,0 +1,30 @@
+/* Desktop Styles */
+@media screen and (min-width: 768px) {
+    /* Add your desktop-specific CSS here */
+    body  {
+        background-image: url("background-desktop.jpg");
+        background-color: #cccccc;
+    }
+    table{
+        border-color: white;        
+    }
+
+    ul li:nth-last-child(-n+3) {
+        /* Add styles for the last 3 list items */
+        background-color: #f0f0f0;
+        font-weight: bold;
+    }
+
+    /* Add styles for every 2nd element among the first 5 children */
+    ul li:nth-child(-n+5):nth-child(2n) {
+        color: red;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    /* Add your mobile-specific CSS here */
+    body{
+        background-image: url("background-mobile.jpg");
+    }
+}

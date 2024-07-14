@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/Exercise 6/styles/movie.css" />
+    <style>
+      #getLocationBtn {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+    </style>
+    <title>Location</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/Exercise 6/pages/homepage.html">Home</a></li>
+        <li><a href="/Exercise 6/pages/validatorapp.html">Validator</a></li>
+        <li><a href="/Exercise 6/pages/crudapp.html">CRUD</a></li>
+        <li><a href="/Exercise 6/pages/position.html">Location</a></li>
+      </ul>
+    </nav>
+    <br /><br /><br />
+    
+    
+    <div style="text-align: center">
+      <button
+        style="margin: auto; text-align: center"
+        id="getLocationBtn"
+        onclick="getLocation()"
+      >
+        Get My Location
+      </button>
+    
+    <p id="demo"></p>
+    <script>
+      const x = document.getElementById("demo");
+      const getLocationBtn = document.getElementById("getLocationBtn");
+
+      function getLocation() {
+        try {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } catch (error) {
+          x.innerHTML = "Error: " + error.message;
+        }
+      }
+
+      function showPosition(position) {
+        x.innerHTML =
+          "Latitude: " +
+          position.coords.latitude +
+          "<br>Longitude: " +
+          position.coords.longitude;
+      }
+    </script>
+    </div>
+  </body>
+</html>

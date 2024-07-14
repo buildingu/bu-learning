@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildingU Portfolio</title>
+    
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Custom CSS for desktop and mobile versions -->
+    <style>
+        /* Desktop Styles */
+        @media (min-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+            }
+            .navbar {
+                background-color: #333;
+            }
+            /* Add more desktop styles here */
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 767px) {
+            body {
+                background-color: #f8f8f8;
+            }
+            .navbar {
+                background-color: #555;
+            }
+            /* Add more mobile styles here */
+        }
+    </style>
+</head>
+<body style="background-image: url(assets/background.jpg);">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html" style="color: white;">BuildingU</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="projects.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 style="color: white;">Welcome to BuildingU</h1>
+                <p style="color: white;">Discover my work on GitHub.</p>
+                <a href="https://github.com/kandharia" target="_blank" class="btn btn-primary">View My Work</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="assets/pfp.png" class="img-fluid" alt="Profile Image">
+            </div>
+            <div class="col-md-8"> 
+                <h2 style="color: white;">About Me</h2>
+                <p style="color: white;">My name is Kavish Andharia. I have been coding for about 3 years, and have numerous experiences with different coding languages.</p>
+                <p style="color: white;">Key Skills: HTML, CSS, JavaScript, Python, Java.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Showcase Projects Section -->
+ <br><br><br>
+<section class="projects">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/html_logo.jpg" class="card-img-top" alt="Project 1" width="100px" height="325px">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1: HTML</h5>
+                        <p class="card-text">Project 1 showcases my HTML skills. It's a webpage involving HTML with table and static form components. Click learn more to see the project.</p>
+                        <a href="http://127.0.0.1:5500/Exercise%201/index.html" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more project cards here -->
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/css_logo.png" class="card-img-top" alt="Project 1" width="100px" height="325px">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2: CSS</h5>
+                        <p class="card-text">Project 2 showcases my CSS skills. It's a stylized webpage for an event done using HTML and CSS with custom components. Click learn more to the project.</p>
+                        <a href="http://127.0.0.1:5500/Exercise%202/index.html" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/js1_0.png" class="card-img-top" alt="Project 1" width="100px" height="325px">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3: Advanced CSS</h5>
+                        <p class="card-text">Project 3 showcases my advanced CSS skills. It's a responsive website (Desktop & Mobile) from Project 1. Click learn more to see the project.</p>
+                        <a href="http://127.0.0.1:5500/Exercise%203/index.html" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Include Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

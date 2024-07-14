@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Exercise 6/styles/crud.css" />
+    <link rel="icon" type="image/x-icon" href="/Exercise 6/assets/CRUD_icon.png">
+    <title>CRUD</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/Exercise 6/pages/homepage.html">Home</a></li>
+        <li><a href="/Exercise 6/pages/validatorapp.html">Validator</a></li>
+        <li><a href="/Exercise 6/pages/crudapp.html">CRUD</a></li>
+        <li><a href="/Exercise 6/pages/position.html">Location</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <form id="validationForm">
+        <fieldset>
+          <div id="message"></div>
+          <input type="text" id="fname" placeholder="Bob" />
+          <br /><br />
+          <input type="text" id="lname" placeholder="Smith" />
+          <br /><br />
+          <input type="text" id="age" placeholder="23" />
+          <br /><br />
+          <input type="text" id="phone" placeholder="123456789" />
+          <br /><br /><br />
+          <button type="submit">Validate</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <div id="userData"></div>
+    <script src="/Exercise 6/logic/validatorapp.js"></script>
+  </body>
+</html>

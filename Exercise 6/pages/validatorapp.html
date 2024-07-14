@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validator App</title>
+    <link rel="stylesheet" href="/Exercise 6/styles/validator.css" />
+    <link rel="icon" type="image/x-icon" href="/Exercise 6/assets/checkmark_icon.webp">
+
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/Exercise 6/pages/homepage.html">Home</a></li>
+        <li><a href="/Exercise 6/pages/validatorapp.html">Validator</a></li>
+        <li><a href="/Exercise 6/pages/crudapp.html">CRUD</a></li>
+        <li><a href="/Exercise 6/pages/position.html">Location</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Form Validator App</h1>
+      <form id="form" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required/>
+        <div class="error-message" id="nameError"></div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required/>
+        <div class="error-message" id="emailError"></div>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age" required/>
+        <div class="error-message" id="ageError"></div>
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password" required
+        />
+        <div class="error-message" id="passwordError"></div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="/Exercise 6/logic/validatorapp.js"></script>
+  </body>
+</html>

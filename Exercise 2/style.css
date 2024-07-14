@@ -6,7 +6,18 @@ table {
   margin: auto;
 }
 
-td, th {
+form {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+td,
+th {
   padding: 12px 15px;
   text-align: left;
   margin: 0;
@@ -35,6 +46,23 @@ img {
   text-align: right;
 }
 
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  width: auto;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   body {
     font-size: 14px;
@@ -46,4 +74,3 @@ img {
     width: 80px;
   }
 }
-

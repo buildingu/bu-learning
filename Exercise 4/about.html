@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BuildingU Portfolio</title>
+
+    <!-- Include Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Custom CSS for desktop and mobile versions -->
+    <style>
+      /* Desktop Styles */
+      @media (min-width: 768px) {
+        body {
+          background-color: #f0f0f0;
+        }
+        .navbar {
+          background-color: #333;
+        }
+        /* Add more desktop styles here */
+      }
+
+      /* Mobile Styles */
+      @media (max-width: 767px) {
+        body {
+          background-color: #f8f8f8;
+        }
+        .navbar {
+          background-color: #555;
+        }
+        /* Add more mobile styles here */
+      }
+    </style>
+  </head>
+  <body style="background-image: url(assets/background.jpg)">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html" style="color: white"
+        >BuildingU</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1 style="text-align: center">About Me</h1>
+    <hr style="color: black; border-width: 3px; border-color: white"/><br><br>
+
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="assets/pfp.png" class="img-fluid" alt="Profile Image" />
+          </div>
+          <div class="col-md-8">
+            <h2 style="color: white">About Me</h2>
+            <p style="color: white">
+              My name is Kavish Andharia. I have been coding for about 3 years,
+              and have numerous experiences with different coding languages.
+            </p>
+            <p style="color: white">
+              Key Skills: HTML, CSS, JavaScript, Python, Java.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
