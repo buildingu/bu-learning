@@ -1,0 +1,41 @@
+body {
+    background-image: url(assets/background-desktop.jpg);
+}
+
+h2 {
+    color: white;
+    font-family: 'Comic Neue';
+    font-weight: 900;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-family: 'Comic Neue';
+    font-weight: 600;
+    text-align: center;
+}
+
+th {
+    color: white;
+    text-align: center;
+    font-family: 'Comic Neue';
+    font-weight: 600;
+    background-color: #283440;
+    border: 6px solid #818288;
+}
+
+td {
+    color: white;
+    text-align: center;
+    font-family: 'Comic Neue';
+    font-weight: 500;
+    background-color: #243A40;
+    border: 6px solid #818288;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 6px solid #818288;
+}
