@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+    <title>Chess Tournament</title>
+
+    <link rel="stylesheet" href="exercise2cssfolder/exercise2.css">
+
+    <style>
+        td {
+            text-align: center;
+        }
+        form {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            font-family: "Lucida Console", "Courier New", monospace;
+            background-color: rgb(255, 255, 255);
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <h1>Loudoun Chess Tournament</h1>
+    <table style="width:100%">
+        <tr>
+            <th class="left">Tournament Rules</th>
+            <th class="right">Capturing and Piece Movement SoundFx</th>
+        </tr>
+        <tr>
+            <td> 
+                <video width="720" height="360" controls>
+                    <source src="exercise2cssfolder/ChessRules.mp4" type="video/mp4">
+                </video>
+            </td>
+            <td>
+                    <br>
+                    <audio controls autoplay>
+                        <source src="exercise2cssfolder/piecemovement.mp3" type="audio/mpeg">
+                    </audio>
+                    <br>
+                    <audio controls autoplay>
+                        <source src="exercise2cssfolder/piececapture.mp3" type="audio/mpeg">
+                    </audio>
+            </td>
+        </tr>
+    </table>
+    <h2> Tournament Sign Ups </h2>
+    <form>
+        <label> First name: </label><br>
+        <input type="text" placeholder="John"><br>
+        <label> Last name: </label><br>
+        <input type="text" placeholder="Doe"><br>
+        <label> Email Address: </label><br>
+        <input type="email" placeholder="johndoe@fakeemail.com"><br>
+        <label> Tournament Section </label><br>
+        <input type="radio"><label> U1100 </label>
+        <input type="radio"><label> U1500 </label>
+        <input type="radio"><label> U1700 </label>
+        <input type="radio"><label> U2000 </label>
+        <input type="radio"><label> Open </label><br>
+        <label> <i> Do you want to participate in Mixed Doubles? </i> </label><br>
+        <input type="radio"> yes
+        <input type="radio"> no <br>
+        <label> Current Rating </label><br>
+        <input type="text"><br>
+        <input type="submit">
+        <input type="reset">
+      </form><br>
+
+      <h2> Free Practice Puzzles </h2>
+      <p><a href="https://lichess.org/training" target="_blank">Click to visit Lichess Puzzles</a></p><br>
+      
+      <center>
+        <img src="https://media.istockphoto.com/id/1976923516/vector/loudoun-county-virginia-map-with-paper-cut-effect-on-blank-background.jpg?s=612x612&w=0&k=20&c=--Q8-5mj9q9OGams58vAmdPUMRmSjSQD9knrHeow0eg=">
+      </center>
+   
+</body>
+
+</html>

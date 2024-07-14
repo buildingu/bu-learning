@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+    <title>Lesson 2: CSS</title>
+
+    <!--External CSS Reference-->
+    <link rel="stylesheet" href="css/mystyle.css">
+
+    <!--Internal CSS-->
+    <!--Internal CSS takes precedence over External CSS-->
+    <style>
+        .my-paragraph {
+            color: blue;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <!--Inline CSS-->
+    <!--Inline CSS takes precedent over internal and external CSS-->
+    <h1 style="color: red; font-style: italic;">Welcome to CSS!</h1>
+
+    <hr>
+
+    <div>
+        <p class="my-paragraph">Paragraph Text Here</p>
+    </div>
+
+    <p class="my-paragraph">Second Paragraph</p>
+    <p>Third Paragraph</p>
+
+</body>
+
+</html>

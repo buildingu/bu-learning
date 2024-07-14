@@ -1,0 +1,66 @@
+body {
+    background-image: url("chessboard.jpg");
+}
+
+h1 {
+    font-family: "Brush Script MT", Brush Script Std, cursive;
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    width: 70%;
+    margin: auto;
+}
+
+h2 {
+    font-family: "Brush Script MT", Brush Script Std, cursive;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+    margin: auto;
+}
+
+form {
+    label {
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+    input {
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    margin: auto;
+}
+
+th.left {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size:50px;
+    /* margin-top: 20px;
+    margin-left: 125px;
+    padding-top: 50px;
+    padding-left: 200px; */
+}
+
+th.right {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size:50px;
+}
+
+video {
+    border-color: black;
+    border-style: solid;
+    border-width: 10px;
+    /*Padding Used to Make the Video Completely Cover Up Some Squares So it Looks Better*/
+    padding-top: 5px;
+    padding-left: 2px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
