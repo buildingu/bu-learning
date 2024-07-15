@@ -27,20 +27,29 @@
                     <th>Favorite Movie</th>
                 </tr>
                 <tr>
+                    <!--Name-->
                     <td>David</td>
                     <td>Sun</td>
+
+                    <!--Image-->
                     <td>
                         <a href="https://en.wikipedia.org/wiki/Finding_Nemo">
                             <img style="height: 100px; width: 100px;" src="assets/nemo.jpeg" alt="Picture from Nemo from Finding Nemo">
                         </a>
                     </td>
+
+                    <!--Audio-->
                     <td>
-                        Click play button to play music.
+                        <div>
+                            Click play button to play music.
+                        </div>
                         <br>
                         <audio controls>
                             <source src="assets/rick_roll.mp3" type="audio/mp3">
                         </audio>
                     </td>
+
+                    <!--Video-->
                     <td>
                         <video width="240" height="196" controls>
                             <source src="assets/marvel_studios.mp4" type="video/mp4">
@@ -55,59 +64,75 @@
         <div class="form-portion">
             <p>Enter your details below:</p>
             <form>
-                <label id="italicized">Full Name</label> 
-                <br>
-                <input id="shortAnswerInput" type="text" placeholder="John Doe" required>
-                <br>
-                <br>
-
-                <label id="italicized">Email</label>
-                <br>
-                <input id="shortAnswerInput" type="email" placeholder="abc@xyz.com" required>
-                <br>
+                <!--Enter Full Name-->
+                <label class="italicized newLineFormat" style="margin-top: 15px;">Full Name</label> 
+                <input class="shortAnswerInput newLineFormat" type="text" placeholder="John Doe" required>
                 <br>
 
-                <label id="italicized">Password:</label>
-                <br>
-                <input id="shortAnswerInput" type="password" placeholder="*****" required>
-                <br>
+                <!--Enter Email-->
+                <label class="italicized newLineFormat">Email</label>
+                <input class="shortAnswerInput newLineFormat" type="email" placeholder="abc@xyz.com" required>
                 <br>
 
-                <label id="italicized">Available Meeting Days:</label> <br>
-                <input type="checkbox" id="sunday">
-                <label for="sunday">Sunday</label>
-                <input type="checkbox" id="monday">
-                <label for="monday">Monday</label>
-                <input type="checkbox" id="tuesday">
-                <label for="tuesday">Tuesday</label>
-                <input type="checkbox" id="wednesday">
-                <label for="wednesday">Wednesday</label>
-                <input type="checkbox" id="thursday">
-                <label for="thursday">Thursday</label>
-                <input type="checkbox" id="friday">
-                <label for="friday">Friday</label>
-                <input type="checkbox" id="saturday">
-                <label for="saturday">Saturday</label> <br> <br>
+                <!--Enter Password-->
+                <label class="italicized newLineFormat">Password:</label>
+                <input class="shortAnswerInput newLineFormat" type="password" placeholder="*****" required>
+                <br>
 
-                <label id="italicized">Available Time</label> <br>
-                <select name="time" id="shortAnswerInput">
+                <!--Enter Available Meeting Days-->
+                <label class="italicized newLineFormat">Available Meeting Days:</label>
+                <div class="inputFormat">
+                    <input type="checkbox" id="sunday">
+                    <label for="sunday">Sunday</label>
+                    <input type="checkbox" id="monday">
+                    <label for="monday">Monday</label>
+                    <input type="checkbox" id="tuesday">
+                    <label for="tuesday">Tuesday</label>
+                    <input type="checkbox" id="wednesday">
+                    <label for="wednesday">Wednesday</label>
+                    <input type="checkbox" id="thursday">
+                    <label for="thursday">Thursday</label>
+                    <input type="checkbox" id="friday">
+                    <label for="friday">Friday</label>
+                    <input type="checkbox" id="saturday">
+                    <label for="saturday">Saturday</label>
+                </div>
+                <br>
+
+                <!--Enter Available Time-->
+                <label class="italicized newLineFormat">Available Time</label>
+                <select name="time" class="shortAnswerInput newLineFormat">
                     <option value="morning">Morning (8am to 12pm)</option>
                     <option value="afternoon">Afternoon (1pm to 6pm)</option>
                     <option value="evening">Evening (7pm to 12am)</option>
                 </select>
-                <br> <br>
+                <br>
                 
-                <label id="italicized">Currently working on the new website?</label> <br>
-                <input type="radio" checked> Yes
-                <input type="radio"> No
+                <!--Enter Status-->
+                <label class="italicized newLineFormat">Currently working on the new website?</label>
+                <div class="inputFormat">
+                    <input type="radio" checked> Yes
+                    <input type="radio"> No
+                </div>
                 <br>
 
+                <!--Enter Response-->
+                <label class="italicized newLineFormat">If yes, please enter which page(s) you are working on:</label>
+                <textarea id="textAreaStyle" placeholder="Enter your response here"></textarea>
                 <br>
-                <textarea cols="36" rows="2" placeholder="Enter your comments here" style="text-align: center;"></textarea>
-                <br>
-                <button id="submitbtn">Submit</button>
-                <button id="resetbtn">Reset</button>
+                
+                <!--Buttons-->
+                <div class="formBtns">
+                    <button id="submitbtn">Submit</button>
+                    <button id="resetbtn">Reset</button>
+                </div>
+                
             </form>
+        </div>
+
+        <div class="footer-portion">
+            <p class="desktop-text">Desktop Version®</p>
+            <p class="mobile-text">Mobile Version®</p>
         </div>
 
 
