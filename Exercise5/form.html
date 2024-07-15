@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Exercise#5</title>
+  <meta charset="utf-8">
+  <!-- Including the JS File -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src ="formvalidator.js"></script>
+</head>
+<body>
+    <h2>Form</h2> 
+    <form name = "myform" onsubmit = "return formValidator()" >
+        <label for = "first_name">First Name:</label>
+        <input type = "text" id = "first_name" name = "first_name" placeholder = "Enter your first name"><br><br>
+        <label for = "last_name">Last Name:</label>
+        <input type = "text" id = "last_name" name = "last_name" placeholder = "Enter your last name"><br><br>
+        <label for = "age">Age:</label>
+        <input type = "text" id = "age" name = "age" placeholder = "Enter your age"><br><br>
+        <label for = "phone">Phone:</label>
+        <input type = "text" id = "phone" name = "phone" placeholder = "Enter your phone number"><br><br>
+        <input type = "submit" value = "register">
+    </form>
+</body> 
+</html>
