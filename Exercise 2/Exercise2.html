@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Debate Tournament 2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        main {
+            padding: 20px;
+        }
+        .event-info {
+            margin-bottom: 20px;
+        }
+        .event-info h2 {
+            color: #4CAF50;
+        }
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .media {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>School Debate Tournament 2024</h1>
+    </header>
+    <main>
+        <section class="event-info">
+            <h2>Event Information</h2>
+            <p>Join us for the annual School Debate Tournament! This event will showcase the debating skills of our talented students as they tackle various topics and compete for the championship title.</p>
+            <table>
+                <tr>
+                    <th>Event</th>
+                    <td>School Debate Tournament 2024</td>
+                </tr>
+                <tr>
+                    <th>Date</th>
+                    <td>August 15, 2024</td>
+                </tr>
+                <tr>
+                    <th>Time</th>
+                    <td>10:00 AM - 4:00 PM</td>
+                </tr>
+                <tr>
+                    <th>Location</th>
+                    <td>School Auditorium</td>
+                </tr>
+                <tr>
+                    <th>Invited</th>
+                    <td>Students, Parents, Faculty</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="media">
+            <h2>Event Highlights</h2>
+            <video width="320" height="240" controls>
+                <source src="Exercise 2/Assets/Uhr4.mp4" type="video\mp4">
+                Your browser does not support the video tag.
+            </video>
+            <audio controls>
+                <source src="Exercise 2/Assets/20-seconds-game-countdown-142456.mp3" type="audio\mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <h2>Event Photos</h2>
+            <img src="Exercise 2/Assets/Debate-Graphic-c-1-1024x576.jpg" alt="Debate Tournament" width="300">
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
