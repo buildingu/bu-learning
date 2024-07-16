@@ -9,28 +9,18 @@
   <style>
     .hero, #about, #contact {
             background-image: url('/Bootstrap/assets/backgroundimage.jpg');
-            background-repeat: no-repeat;
             background-size: cover;
             color: white;
         }
 
         .hero {
-            padding: 100px;
+            padding: 10px;
         }
 
         .project-card img {
             height: 200px;
             object-fit: contain;
-        }
-
-        .navbar .navbar-nav {
-            margin-left: 0;
-        }
-
-        .profile-img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            padding: 20px;
         }
 
         .bg-white {
@@ -77,11 +67,11 @@
   <section class="hero">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <center><div class="col-lg-6">
           <h1>Welcome to My BuildingU Projects Page</h1>
           <p>Discover my work on Github.</p>
           <a href="#portfolio" class="btn btn-primary">View My Work</a>
-        </div>
+        </div></center>
       </div>
     </div>
   </section>
@@ -90,15 +80,12 @@
   <section id="about" class="py-5">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4">
-          <img src="/Bootstrap/assets/building-U Profile.jpg" alt="Profile Image" class="img-fluid rounded-circle">
-        </div>
         <div class="col-lg-8">
           <h2>About Me</h2>
           <p>
             Hello, my name is Hanan Mashal and I am a driven and creative problem solver with an interest for computer science.
-            Described as responsible, delivberative, and persevering, I always look forward to applying my skills to
-            build various websites and express innovative ideas through efficient code.
+            Described as responsible, delivberative, and persevering, I look forward to applying my skills to
+            build various websites and express innovative ideas through programming.
             
             In this journey with building-U, as I gain experience in the technological field,
             I've worked on several projects, regarding web development, which required a diverse range of advanced skills.
@@ -106,13 +93,16 @@
             I am able to explore various technologies and programming languages. I am excited to present to you what I have worked on so far as an intern!
           </p>
         </div>
+        <div class="col-lg-4">
+          <img src="/Bootstrap/assets/profile.jpg" alt="Profile Image" class="img-fluid rounded-circle">
+        </div>
       </div>
     </div>
   </section>
 
   <section id="portfolio" class="py-5">
     <div class="container">
-      <h2>My Projects</h2>
+      <h2>My Portfolio</h2><br>
       <div class="row">
         <div class="col-lg-4">
           <div class="card project-card"> <img src="/Bootstrap/assets/htmllogo.png" class="card-img-top" alt="Project 1">
@@ -120,7 +110,7 @@
               <h5 class="card-title">Project 1: HTML</h5>
               <p class="card-text">
                 Project 1 showcases my HTML skills. It's a webpage involving HTML with table and static form components. Click learn more to see the project.</p> <a href="#" class="btn btn-primary"
-                data-bs-toggle="modal" data-bs-target="#project1Modal">View Details</a>
+                data-bs-toggle="modal" data-bs-target="#project1Modal">Learn More</a>
             </div>
           </div>
         </div>
@@ -129,7 +119,7 @@
             <div class="card-body">
               <h5 class="card-title">Project 2: CSS</h5>
               <p class="card-text"> Project 2 showcases my CSS skills. It's a stylized webpage for an event done using HTML and CSS with custom components. Click learn more to see the project.</p> <a href="#" class="btn btn-primary"
-                data-bs-toggle="modal" data-bs-target="#project2Modal">View Details</a>
+                data-bs-toggle="modal" data-bs-target="#project2Modal">Learn More</a>
             </div>
           </div>
         </div>
@@ -137,7 +127,7 @@
           <div class="card project-card"> <img src="/Bootstrap/assets/jslogo.png" class="card-img-top" alt="Project 3">
             <div class="card-body">
               <h5 class="card-title">Project 3: Advanced CSS</h5>
-              <p class="card-text">Project 3 showcases my advanced CSS skills. It's a responsive webpage (Desktop & Mobile) from Project 1. Click learn more to see the project.</p> <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">View Details</a>
+              <p class="card-text">Project 3 showcases my advanced CSS skills. It's a responsive webpage (Desktop & Mobile) from Project 1. Click learn more to see the project.</p> <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">Learn More</a>
             </div>
           </div>
         </div>
@@ -151,11 +141,11 @@
       <form>
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" required>
+          <input type="text" class="form-control" id="name" placeholder="Hanan Mashal" required>
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" required>
+          <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required>
         </div>
         <div class="mb-3">
           <label for="message" class="form-label">Message</label>
@@ -174,7 +164,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p> Copy this link: </p>
+          <p> Copy this link: https://github.com/buildingu/bu-learning/tree/h_mashal/HTML </p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -190,7 +180,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p> Copy this link: </p>
+          <p> Copy this link: https://github.com/buildingu/bu-learning/tree/h_mashal/CSS </p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -207,7 +197,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-        <p>Copy this link: </p>
+        <p>Copy this link: https://github.com/buildingu/bu-learning/tree/h_mashal/Advanced%20CSS </p>
           
         </div>
         <div class="modal-footer">
@@ -220,5 +210,4 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
