@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+    <link rel="icon" type="image" href="https://cdn-icons-png.flaticon.com/512/1144/1144760.png">
+</head>
+<body>
+    <!-- Heading -->
+    <h1>Exercise 1 by Ranbir Shanker</h1>
+    <h2>Date Submitted: 16 July, 2024</h2>
+    <hr>
+    <!-- Table Section -->
+    <h2>Fun Facts About Me:</h2>
+    <table border="10">
+        <tr>
+            <th>First Name</th>
+            <th>Surname</th>
+            <th>Favorite Film</th>
+            <th>Favorite Song</th>
+            <th>Favorite Video</th>
+        </tr>
+        <tr>
+            <td>Ranbir</td>
+            <td>Shanker</td>
+            <td><a href="https://en.wikipedia.org/wiki/Looper_(film)"><img src="https://upload.wikimedia.org/wikipedia/en/0/0a/Looper_poster.jpg" alt="Looper" width="200"></a></td>
+            <td>
+                <p>Click play to play the music:</p>
+                <audio controls>
+                <source src="assets/download.mp3">
+                Your browser does not support the audio element.
+            </audio></td>
+            <td><iframe width="420" height="315"
+                src="https://www.youtube.com/embed/HXliZ2HgaOk">
+                </iframe>                
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Form Section -->
+    <h2>Enter your details below</h2>
+    <form>
+        <label for="fullname"><i>Full Name:</i>
+        </label><input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+        
+        <label for="email"><i>Email:</i></label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+        
+        <label for="password"><i>Password:</i></label>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+        
+        <label><i>Available Meeting Days:</i></label><br>
+        <input type="checkbox" id="monday" name="available_days" value="Monday">
+        <label for="monday">Monday</label>
+        <input type="checkbox" id="tuesday" name="available_days" value="Tuesday">
+        <label for="tuesday">Tuesday</label>
+        <input type="checkbox" id="wednesday" name="available_days" value="Wednesday">
+        <label for="wednesday">Wednesday</label>
+        <input type="checkbox" id="thursday" name="available_days" value="Thursday">
+        <label for="thursday">Thursday</label>
+        <input type="checkbox" id="friday" name="available_days" value="Friday">
+        <label for="friday">Friday</label>
+        <input type="checkbox" id="saturday" name="available_days" value="Saturday">
+        <label for="saturday">Saturday</label>
+        <input type="checkbox" id="sunday" name="available_days" value="Sunday">
+        <label for="sunday">Sunday</label><br><br>
+        
+        <label for="available_time"><i>Available Time:</i></label>
+        <select id="available_time" name="available_time">
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+        </select><br><br>
+        
+        <label><i>Currently working on new website?</i></label>
+        <input type="radio" id="yes" name="working_on_new_website" value="yes" checked>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="working_on_new_website" value="no">
+        <label for="no">No</label><br><br>
+        
+        <label for="comments"><i>Comments:</i></label><br>
+        <textarea id="comments" name="comments" placeholder="Enter your comments here" rows="4" cols="50"></textarea><br><br>
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
