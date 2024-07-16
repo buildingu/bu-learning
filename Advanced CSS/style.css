@@ -1,0 +1,172 @@
+@media only screen and (max-width: 768px) {
+    * {
+        margin: auto;
+        text-align: center;
+      }
+    body {
+        background-image: url('/Advanced CSS/assets/background-mobile.jpg');
+        color: white;
+        font-size: 13px
+    }
+    hr {
+        height: 2px;
+        background-color: white;
+        margin: 10px;
+      }
+    table {
+        width: 90%
+        font-size: 12px;
+        font-weight: bold;
+    }
+    #table_desktop {
+        display: none;
+      }
+      #table_mobile {
+        border-collapse: collapse;
+        margin: auto;
+        max-width: 100px;
+      }
+      table .tabledata3 {
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        background-color: rgb(168, 71, 27);
+        border: 7px solid slategray;
+      }
+      table .tabledata4 {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        background-color: rgb(116, 46, 9);
+        border: 7px solid slategray;
+      }
+    
+      body #form-container {
+        width: 40%;
+        background-color: lightgrey;
+        border: 7px solid rgb(103, 101, 101);
+        padding: 7px;
+        max-width: 250px;
+        font-size: 12px;
+        color: black;
+        font-weight: bold;
+      }
+      
+      #button1 {
+        background-color: rgb(15, 181, 15);
+        border: none;
+        width: 98%;
+        height: 30px;
+        border-radius: 5px;
+        color: white;
+      }
+      #button1 ~ #button2 {
+        background-color: rgb(226, 12, 12);
+        border: none;
+        width: 98%;
+        height: 30px;
+        border-radius: 5px;
+        color: white;
+      }
+      #version {
+        background-color: rgb(33, 60, 109);
+        margin: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
+      #version::before {
+        content: "Mobile";
+        color: white;
+      }
+    }
+
+@media only screen and (min-width: 768px) {
+    * {
+      margin: auto;
+      text-align: center;
+    }
+    body {
+      background-image: url('/Advanced CSS/assets/background-desktop.jpg');
+      color: white;
+      font-size: 13px;
+    }
+    hr {
+      height: 2px;
+      background-color: white;
+      margin: 10px;
+    }
+    #table_mobile {
+      display: none;
+    }
+    #table_desktop {
+      border-collapse: collapse;
+      margin: auto;
+      max-width: fit-content;
+      padding: 
+    }
+    #table_desktop td {
+      background-color: rgb(38, 60, 62);
+      border: 7px solid slategray;
+      padding: 8px;
+    }
+    #table_desktop th {
+      background-color: rgb(53, 59, 59);
+      padding: 8px;
+      border: 7px solid slategray;
+    }
+    tr > .tabledata1 {
+      padding-right: 10px;
+      padding-left: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    table .tabledata2 {
+      padding-right: 30px;
+      padding-left: 30px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    body #form-container {
+      width: 40%;
+      background-color: lightgrey;
+      border: 7px solid rgb(103, 101, 101);
+      padding: 7px;
+      color: black;
+      font-weight: bold;
+    }
+    audio {
+      width: 300px;
+    }
+    #button1 {
+      background-color: rgb(15, 181, 15);
+      border: none;
+      width: 70px;
+      height: 35px;
+      border-radius: 5px;
+      color: white;
+    }
+    #button1 ~ #button2 {
+      background-color: rgb(226, 12, 12);
+      border: none;
+      width: 70px;
+      height: 35px;
+      border-radius: 5px;
+      color: white;
+    }
+    .mobilebr {
+      display: none;
+    }
+    #version {
+      background-color: purple;
+      margin: 0;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-size: 16px;
+    }
+    #version::before {
+      content: "Desktop";
+      color: white;
+    }
+  }

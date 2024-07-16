@@ -1,14 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>I'm making a new change</h2>
-    <h1>Hello</h1>
-    
-    <h1>Hi Mashal</h1>
-</body>
-</html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercise 1: HTML</title>
+        <meta name="keywords" content="HTML" />
+        <meta name="description" content="HTML Exercise"/>
+        <meta name="author" content="Hanan" />
+    </head>
+    <body>
+        <style>
+            table, th, td {
+            border: 8px solid;
+            border-collapse:collapse;
+            }
+        </style>
+        <center><h1> Exercise 1 by Hanan Mashal </h1></center>
+        <center><h3> Date submitted: 6/13/2024 </h3></center>
+        <hr>
+        <center><h3> Fun facts about me: </h3></center>
+        <center><table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Movie</th>
+            <th>Favorite Song</th>
+            <th>Favorite Video</th>
+        </tr>
+         <tr>
+            <td><center>Hanan</center></td>
+            <td><center>Mashal</center></td>
+            <center><td>
+                <a href="https://www.imdb.com/title/tt1840309/" target="_blank">
+                    <img width="190" height="290" src="/HTML/assets/Divergent Movie.jpg" alt="Divergent">
+                </a>
+            </td></center>
+            <td><center> Click play button to play music:
+                <center><audio controls>
+                    <source src="/HTML/assets/Humood AlKhudher - Kun Anta (Vocals Only Version) حمود الخضر - فيديوكليب كن أنت نسخة المؤثرات.mp3" type="audio/mp3">
+                </audio></center>     
+            </td></center> <br>
+            <td>
+                <video width="200" height="190" controls>
+                    <source src="/HTML/assets/Pastry Chef Attempts To Make Gourmet Oreos _ Gourmet Makes _ Bon Appétit.mp4" type="video/mp4">
+                </video>
+            </td>
+        </tr>
+        </table></center>
+        <br>
+        <hr>
+        <h3><center> Enter your details below: </center></h3>
+        <center><form>
+            <label for="fullname"><i>Full Name: </i></label>
+            <input type="text" id="fullname" name="fullname" placeholder="Type first & last name here"><br>
+            <br>
+            <label for="emailaddress"><i>Email Address: </i></label>
+            <input type="email" id="emailaddress" name="emailaddress" placeholder="example@gmail.com"><br>
+            <br>
+            <label for="password"><i>Password: </i></label>
+            <input type="password" id="password" name="password" placeholder="•••••••••"><br>
+            <br>
+            <p class="center"><i>Available Days: </i></p>
+            <p class="center">
+                <input type="checkbox" id="Monday" name="Monday" value="day">
+                <label for="day"> Monday </label>
+                <input type="checkbox" id="Tuesday" name="Tuesday" value="day">
+                <label for="day"> Tuesday </label>
+                <input type="checkbox" id="Wednesday" name="Wednesday" value="day">
+                <label for="day"> Wednesday </label>
+                <input type="checkbox" id="Thursday" name="Thursday" value="day">
+                <label for="day"> Thursday </label>
+                <input type="checkbox" id="Friday" name="Friday" value="day">
+                <label for="day"> Friday </label>
+                <input type="checkbox" id="Saturday" name="Saturday" value="day">
+                <label for="day"> Saturday </label>
+                <input type="checkbox" id="Sunday" name="Sunday" value="day">
+                <label for="day"> Sunday </label>
+            </p>
+            <center><p><i>Avaiable Time: </i>
+                <input list="times">
+                <datalist id="times">
+                    <option value="Morning (8:00am-12:00pm)">
+                    <option value="Afternoon (12:00pm-4:00pm)">
+                    <option value="Evening (4:00pm-9:00pm)">
+                </datalist>
+                <br> <br>
+                <i> Working on a new website? </i>
+                    <input checked type="radio" id="working" name="working" value="working">
+                    <label for="working">Yes</label>
+                    <input type="radio" id="working" name="working" value="working">
+                    <label for="working">No</label> <br><br>
+                    <textarea form="formid" placeholder="Type comments here"></textarea> <br><br>
+                    <input type="submit" value="Submit">
+                    <input form="formid" type="reset" value="Reset">
+            </p></center>
+        </form></center>
+    </body>
+</html>      

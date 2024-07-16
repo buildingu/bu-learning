@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercise 3: Advanced CSS</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="keywords" content="Advanced CSS" />
+        <meta name="description" content="Advanced CSS Exercise"/>
+        <meta name="author" content="Hanan" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1> Exercise 3 by Hanan Mashal </h1><br>
+        <h4> Date submitted: 07/04/2024 </h4>
+        <hr>
+        <h2> Fun facts about me: </h2>
+        <table id="table_desktop">
+            <tbody><tr>
+                <th>First name</th>
+                <th>Last Name</th>
+                <th>Favorite Movie</th>
+                <th>Favorite Song</th>
+                <th>Favorite Video</th>
+            </tr>
+            <tr>
+                <td id="d1" class="tabledata1">Hanan</td>
+                <td id="d2" class="tabledata1">Mashal</td>
+                <td id="d3" class="tabledata1">
+                    <a href="https://soundvapors.com/20-20-movie-review-radiers-of-the-lost-ark-1981/">
+                        <img width="190" height="220" src="/Advanced CSS/assets/raidersmovie.jpg" alt="Raiders">
+                    </a>
+                </td>
+                <td id="d4" class="tabledata2">
+                    Click button to play music:
+                    <br>
+                    <audio controls>
+                        <source src="/Advanced CSS/assets/rick_roll.mp3" type="audio/mp3">
+                    </audio>
+                </td>
+                <td id="d5" class="tabledata2">
+                    <video width="200" height="190" controls>
+                        <source src="/Advanced CSS/assets/marvel_studios.mp4" type="video/mp4">
+                    </video>
+            </td></tr>
+        </tbody></table>
+        <table id="table_mobile">
+            <tbody><tr>
+                <th class="tabledata3">First Name</th>
+                <th class="tabledata3">Last Name</th>
+            </tr>
+            <tr>
+                <td class="tabledata4">Hanan</td>
+                <td class="tabledata4">Mashal</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tabledata3">Favorite Movie</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tabledata4">
+                    <a href="https://soundvapors.com/20-20-movie-review-radiers-of-the-lost-ark-1981/">
+                        <img width="90" height="120" src="/Advanced CSS/assets/raidersmovie.jpg" id="m1">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tabledata3">Favorite Song</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tabledata4">
+                    Click play button to play music:
+                    <br>
+                    <audio controls>
+                        <source src="/Advanced CSS/assets/rick_roll.mp3" type="audio/mp3">
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tabledata3">Favorite Video</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tabledata4">
+                    <video width="100" height="90" controls>
+                        <source src="/Advanced CSS/assets/marvel_studios.mp4" type="video/mp4">
+                    </video>
+                </td>
+            </tr></tbody>
+        </table>
+        <br>
+        <hr>
+            <h2> Enter your details below: </h2>
+        <div id="form-container">
+            <form>
+                <label for="fullname"><i>Full Name</i></label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Hanan Mashal"><br>
+                <br>
+                <label for="emailaddress"><i>Email Address</i></label><br>
+                <input type="email" id="emailaddress" name="emailaddress" placeholder="example@gmail.com"><br>
+                <br>
+                <label for="password"><i>Password</i></label><br>
+                <input type="password" id="password" name="password" placeholder="•••••••••"><br>
+                <br>
+                <p class="center"><i>Available Meeting Days:</i></p>
+                <p class="center">
+                    <input type="checkbox" id="Monday" name="Monday" value="day">
+                    <label for="day"> Monday </label>
+                    <input type="checkbox" id="Tuesday" name="Tuesday" value="day">
+                    <label for="day"> Tuesday </label>
+                    <input type="checkbox" id="Wednesday" name="Wednesday" value="day">
+                    <label for="day"> Wednesday </label>
+                    <input type="checkbox" id="Thursday" name="Thursday" value="day">
+                    <label for="day"> Thursday </label>
+                    <input type="checkbox" id="Friday" name="Friday" value="day">
+                    <label for="day"> Friday </label>
+                    <input type="checkbox" id="Saturday" name="Saturday" value="day">
+                    <label for="day"> Saturday </label>
+                    <input type="checkbox" id="Sunday" name="Sunday" value="day">
+                    <label for="day"> Sunday </label>
+                </p>
+                <br>
+                <p><i>Available Time: </i><br>
+                    <input list="times">
+                    <datalist id="times">
+                        <option value="Morning (8:00am-12:00pm)">
+                        <option value="Afternoon (12:00pm-4:00pm)">
+                        <option value="Evening (4:00pm-9:00pm)">
+                    </datalist>
+                    <br> <br>
+                    <i> Working on a new website? </i><br>
+                        <input checked type="radio" id="working" name="working" value="working">
+                        <label for="working">Yes</label>
+                        <input type="radio" id="working" name="working" value="working">
+                        <label for="working">No</label> <br><br>
+                    <i> If yes, please enter which page(s) you are working on </i><br>
+                        <textarea form="formid" placeholder="Enter your comments here"></textarea> <br><br>
+                        <button id="button1" type="submit">Submit</button>
+                        <br class="mobilebr">
+                        <br class="mobilebr">
+                        <button id="button2" type="reset">Reset</button>
+                </p>
+            </form>
+        </div>
+        <br><br>
+        <div id = "version">
+            Version®
+       </div>
+    </body>
+</html> 

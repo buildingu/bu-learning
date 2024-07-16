@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/APPS/Styles/crud.css">
+    <title>Employee Entry App</title>
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+          <ul id="nav_list">
+            <li class="list_item">
+              <a href="/APPS/Pages/homepage.html">Home Page</a>
+            </li>
+            <li class="list_item"><a href="/APPS/Pages/foodapp.html">Food App</a></li>
+            <li class="list_item"><a href="/APPS/Pages/validatorapp.html">Form Validator App</a></li>
+          </ul>
+        </nav>
+      </div>
+    <h1>Employee Entry</h1>
+    <form id="employeeForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="sex">Sex:</label>
+        <input type="text" id="sex" name="sex" reqiured>
+
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position" required>
+
+        <button type="submit">Add Entry</button>
+    </form>
+    <div id="employeeList"></div>
+
+    <script src="/APPS/Logic/crud.js"></script>
+</body>
+</html>

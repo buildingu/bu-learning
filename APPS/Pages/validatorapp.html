@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validator App</title>
+    <link rel="stylesheet" href="/APPS/Styles/validator.css" />
+  </head>
+  <body>
+    <div>
+      <nav class="navbar">
+        <ul id="nav_list">
+          <li class="list_item">
+            <a href="/APPS/Pages/homepage.html">Home Page</a>
+          </li>
+          <li class="list_item"><a href="/APPS/Pages/crudapp.html">Employee Entry App</a></li>
+          <li class="list_item"><a href="/APPS/Pages/foodapp.html">Food App</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1>Form Validator</h1> 
+
+    <div id="form_holder">
+        <div id="alerter"></div><br>
+        <div id="form">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required>
+
+            <button type="button" id="submitButton">Validate</button>
+        </div>
+    </div>
+    <script src="/APPS/Logic/validator.js"></script>
+  </body>
+</html>
