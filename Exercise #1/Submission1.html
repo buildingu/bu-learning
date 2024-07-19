@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building-U Lesson 1 Submission</title>
+</head>
+<body>
+    <!-- Header -->
+    <center><h1>Exercise 1 By Shreyas Hegde</h1></center>
+    <center><h4>Date of Submission: 2024-07-11</h4></center> 
+
+    <!-- Table -->
+    <div>
+        <center><h3>Fun Facts About Me!</h3></center>
+        <table border="1" align="center">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Favourite Movie</th>
+                <th>Favourite Song</th>
+                <th>Favourite Video</th>
+            </tr>
+            <tr>
+                <td>Shreyas</td>
+                <td>Hegde</td>
+                <td><img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7825626_p_v8_ae.jpg" alt="Inception" width="100" height="150"></td>
+                <td>
+                    <audio controls>
+                        <source src="download.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <center><p>Skeletons by Travis Scott</p></center>
+                </td>
+                <td>
+                    <video width="320" height="240" controls>
+                        <source src="mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Form -->
+    <div style="text-align: center;">
+        <h4>Enter your details below:</h4> 
+        <form style="display: inline-block; text-align: left;">
+
+            <!--Name Textfield-->
+            <div style="text-align: center;">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name">
+            </div><br>
+
+            <!-- Email Address Textfield -->
+            <div style="text-align: center;">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+            </div><br>
+
+            <!-- Password Textfield -->
+            <div style="text-align: center;">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div><br>
+
+            <!-- Available Meeting Times Checkbox  -->
+            <div style="text-align: center;">
+                <label>Available Meeting Times:</label><br>
+                <div style="display: inline-block;">
+                    <input type="checkbox" id="monday" name="available-days" value="Monday">
+                    <label for="monday">Monday</label>
+                    <input type="checkbox" id="tuesday" name="available-days" value="Tuesday">
+                    <label for="tuesday">Tuesday</label>
+                    <input type="checkbox" id="wednesday" name="available-days" value="Wednesday">
+                    <label for="wednesday">Wednesday</label>
+                    <input type="checkbox" id="thursday" name="available-days" value="Thursday">
+                    <label for="thursday">Thursday</label>
+                    <input type="checkbox" id="friday" name="available-days" value="Friday">
+                    <label for="friday">Friday</label>
+                    <input type="checkbox" id="saturday" name="available-days" value="Saturday">
+                    <label for="saturday">Saturday</label>
+                    <input type="checkbox" id="sunday" name="available-days" value="Sunday">
+                    <label for="sunday">Sunday</label>
+                </div>
+            </div><br>
+
+            <!-- Available Time Drop Down List -->
+            <div style = "text-align: center;">
+                <label for="available-time">Available Time:</label>
+                <select id="available-time" name="available-time">
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                    <option value="night">Night</option>
+                </select>                
+            </div><br>
+
+            <!-- New Website Radiobutton -->
+            <div style="text-align: center;">
+                <label>Working on a New Website?:</label>
+                <input type="radio" id="yes" name="new-website" value="yes" checked>
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="new-website" value="no">
+                <label for="no">No</label>
+            </div><br> 
+
+            <!-- Additional Comments Textbox -->
+            <div style="text-align: center;">
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter any comments or additional information"></textarea>
+            </div><br> 
+
+            <!-- Nonfunctional Submit & Reset Buttons -->
+            <div style="text-align: center;">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

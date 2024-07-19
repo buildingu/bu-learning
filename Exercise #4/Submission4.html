@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Exercise # 4</title>
+  <meta charset="utf-8">
+  <!-- Including Bootstrap CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Building a Bootstrap Navbar -->
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="Submission4.html">Building-U</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="Submission4.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+    <!-- Buidling a Bootstrap Hero Section -->
+    <section class = "hero-section"> 
+        <div class = "container-fluid"> 
+            <div class = "row">
+                <div class = "col-md-12">
+                    <h1 class = "hero-heading">Welcome to My Portfolio</h1>
+                    <p class="hero-intro">Discover my work, projects, and passion for web development.</p>
+                    <a href="#" class="btn btn-primary hero-button">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+            <h2 class="about-heading">About Me</h2>
+            <p class="about-bio">Hi, I'm a Machine Learning and Web Development enthusiast with a passion for creating innovative solutions.
+                With a background in computer science and hands-on experience in building webpages and machine learning models, I strive to combine the best of both worlds to deliver impactful projects.
+            </p>
+            <h3 class="skills-heading">Key Skills & Achievements:</h3>
+            <ul class="skills-list">
+                <li>Developed a machine learning model for predicting rainful in Australia with 85% accuracy.</li>
+                <li>Created a webpage called EcoMate using Flask,HTML,Bootstrap, & Javascript.</li>
+                <li>Developed a machine learning model for predicting insurance costs.</li>
+                <li>Experienced in PyTorch for deep learning projects.</li>
+            </ul>
+            </div> 
+            <div class="col-md-4 text-center">
+                <img src="one beer_left_1.jpg" alt="Profile Image" class="img-circle profile-image">
+            </div>
+        </div>
+        </div>
+    </section> 
+
+    <!-- Projects Section-->
+    <section id = "projects" class = "projects-section"> 
+        <div class = "container-fluid"> 
+            <div class = "row">
+                <div class = "col-md-12 text-center">
+                    <h2 class = "projects-heading">My Building-U Projects</h2>
+                </div>
+            </div> 
+            <!-- Project No.1--> 
+            <div class = "row">
+                <div class = "col-md-6">
+                    <div class = "card">
+                        <img src = "HTML5_logo_and_wordmark.svg.png" alt = "HTML 5 Logo" class = "card-img-top"> 
+                        <div class = "card-body">
+                            <h4 class = "card-title">Project No.1: HTML</h4> 
+                            <p class = "card-text">A static webpage that was coded using only basic HTML. Click the button to learn more about the project.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project1Modal">Learn More</button>
+                        </div>
+                    </div>
+                </div> 
+                
+                <!--Project No.2--> 
+                <div class = "col-md-6">
+                    <div class = "card">
+                        <img src = "bootstrapphoto.png" alt = "HTML 5 Logo" class = "card-img-top"> 
+                        <div class = "card-body">
+                            <h4 class = "card-title">Project No.2: HTML + Bootstrap</h4> 
+                            <p class = "card-text">A portfolio webpage that was created using HTML & Bootstrap CSS. Click the button to learn more about the project.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project2Modal">Learn More</button>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Project No.1 --> 
+     <div id = "project1Modal" class = "modal fade" role = "dialog">
+        <div class = "modal-dialog">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <h4 class = "modal-title text-center">Project No.1</h4> 
+                </div> 
+                <div class = "modal-body">
+                    <p>The webpage contained a table with the following columns: first name, last name, favourite movie image, favourite song, & favourite video. It also contained a form with the following fields: full name, email, password, available days, & available time.</p>
+                </div> 
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+         </div> 
+    </div>
+
+    <!--Modal for Project No.2-->
+    <div id = "project2Modal" class = "modal fade" role = "dialog">
+        <div class = "modal-dialog">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <h4 class = "modal-title text-center">Project No.2</h4> 
+                </div> 
+                <div class = "modal-body">
+                    <p>The webpage was created using Bootstrap's grid system. There were 4 grids in total: Hero Section, About Me Section, Portfolio Section, Contact Section. It also contains a Bootstrap navbar & a Bootstrap Form.</p>
+                </div> 
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div> 
+    </div> 
+
+    <!--Contact Section--> 
+    <section id = "contact" class = "contact-section">
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "col-md-8">
+                    <h2 class = "contact-heading">Contact Me</h2>
+                </div>
+            </div>
+        </div> 
+        <form>
+            <div class = "form-group">
+                <label for = "name">Name</label> 
+                <input type = "text" class = "form-control" id = "name" placeholder="Enter your full name" required>
+            </div> 
+            <div class = "form-group">
+                <label for = "email">Email</label> 
+                <input type = "text" class = "form-control" id = "email" placeholder="Enter your email address" required>
+            </div> 
+            <div class = "form-group">
+                <label for = "message">Message</label> 
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder = "Enter your comment here" required></textarea>
+            </div> 
+            <button type="submit" class="btn btn-primary btn-block" data-toggle="modal" data-target="#formsubmissionModal">Submit</button>
+        </form>
+
+    </section> 
+
+    <!--Contact Form Modal-->
+    <div id = "formsubmissionModal" class = "modal fade" role = "dialog">
+        <div class = "modal-dialog">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <h4 class = "modal-title text-center">Success!</h4> 
+                </div> 
+                <div class = "modal-body">
+                    <p>Your message has been successfully sent!</p>
+                </div> 
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div> 
+    </div> 
+
+</body>
+</html>
