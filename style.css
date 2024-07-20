@@ -1,0 +1,112 @@
+
+*{
+    padding: 0%;
+    margin: 0;
+
+}
+.darkblue{
+    position: absolute;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    top: 5%;
+    left: 23%;
+    font-family:  Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;; color: white;
+}
+
+.lightblue{
+    position: relative;
+    text-align: center; font-weight: bold;
+    top: 30%;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family:  Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;; color: white;
+}
+.lighterblue{
+    font-weight: bolder;
+    font-family:  Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;;
+    font-size: 29px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 3px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 0px #00c9bf, 4px 4px 0px #009999, 6px 6px 0px #007777, 8px 8px 0px #005555, 10px 10px 0px #003333, 12px 12px 0px #001111;
+}
+.sec1{
+    width: 100%;
+    height: 500px;
+    background: #009eb9;
+    position: relative;
+}
+.sec2{
+    width: 100%;
+    height: 900px;
+    background: #00434e;
+    position: relative;
+}
+.sec2:before{
+    content: "";
+    height: 100px;
+    width: 50%;
+    position: absolute;
+    top: -48px;
+    left: 0;
+    background-color: #00434e;
+    transform: skewY(5deg);
+}
+.sec2:after{
+    content: "";
+    height: 100px;
+    width: 50%;
+    position: absolute;
+    top: -48px;
+    right: 0;
+    background-color: #00434e;
+    transform: skewY(-5deg);
+}
+.arm-image{
+    position: absolute;
+    border-radius: 62% 38% 24% 76% / 57% 30% 70% 43% ;
+}
+.sec2-txt{
+    color: white;
+    font-family:  Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+.arrow{
+    position: absolute;
+    filter: invert(100);
+    left: 40%;
+    top: 10%;
+    height: 25%;
+    width: auto;
+    rotate: 45deg;
+    transform: scaleX(-1);
+}
+.event-details{
+    color: white;
+    font-family:  Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;;
+    text-align: center;
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+.interest{
+    font-family: Futura,Trebuchet MS, Arial, sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: relative;
+    top: 55%;
+    text-align: center;
+}
