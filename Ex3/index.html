@@ -30,7 +30,7 @@
             border-collapse: collapse;
             background-color: #263A42;
             margin: 20px 0;
-            display: table; 
+            display: table;
         }
         th, td {
             border: 2px solid grey;
@@ -43,7 +43,7 @@
         td {
             background-color: #263A42;
         }
-        tr:first-child th, 
+        tr:first-child th,
         tr:first-child td {
             border-bottom: 2px solid white;
         }
@@ -53,7 +53,7 @@
         audio, iframe, img {
             display: block;
             margin: 0 auto;
-            max-width: 100%; 
+            max-width: 100%;
         }
         .form-container {
             background-color: #d3d3d3;
@@ -126,38 +126,44 @@
 
         @media (max-width: 600px) {
             table {
-                display: none; 
+                display: none;
             }
             .table-wrapper {
                 display: block;
             }
-            .table-row {
-                display: block;
-                margin-bottom: 10px;
+            .mobile-table {
+                width: 100%;
+                border-collapse: collapse;
+                background-color: #263A42;
+                margin: 20px 0;
+                display: table;
             }
-            .table-row div {
-                display: block;
-                padding: 10px;
+            .mobile-table th, .mobile-table td {
                 border: 2px solid grey;
-                border-bottom: none;
+                padding: 10px;
+                text-align: center;
+            }
+            .mobile-table th {
+                background-color: #2A3441;
+            }
+            .mobile-table td {
                 background-color: #263A42;
             }
-            .table-row div:nth-child(1) {
-                font-weight: bold;
-                background-color: #2A3441;
-                border-top: 2px solid white;
-            }
-            .table-row div:last-child {
+            .mobile-table tr:first-child th,
+            .mobile-table tr:first-child td {
                 border-bottom: 2px solid white;
+            }
+            .mobile-table tr:not(:first-child) td {
+                border-top: 2px solid white;
             }
         }
 
         @media (min-width: 601px) {
             .table-wrapper {
-                display: none; 
+                display: none;
             }
         }
-        
+
         @media (min-width: 601px) {
             body {
                 background-image: url("assets/background-desktop.jpg");
@@ -209,38 +215,39 @@
         </tr>
     </table>
 
-    <!-- Mobile Layout -->
     <div class="table-wrapper">
-        <div class="table-row">
-            <div>First Name</div>
-            <div>Luksh</div>
-        </div>
-        <div class="table-row">
-            <div>Last Name</div>
-            <div>Mahajan</div>
-        </div>
-        <div class="table-row">
-            <div>Favorite Movie</div>
-            <div>
-                <a href="https://en.wikipedia.org/wiki/Back_to_the_Future">
-                    <img src="https://cdn.theasc.com/Back-to-the-Future-Featured-Image.jpg" alt="Back to the Future" width="100">
-                </a>
-            </div>
-        </div>
-        <div class="table-row">
-            <div>Favorite Audio</div>
-            <div>
-                <audio controls>
-                    <source src="rick_roll.mp3" type="audio/mpeg">
-                </audio>
-            </div>
-        </div>
-        <div class="table-row">
-            <div>Favorite Video</div>
-            <div>
-                <iframe width="200" height="113" src="marvel_studios.mp4" allow="autoplay; picture-in-picture"></iframe>
-            </div>
-        </div>
+        <table class="mobile-table">
+            <tr>
+                <th colspan="2">First Name</th>
+                <td colspan="3">Luksh</td>
+            </tr>
+            <tr>
+                <th colspan="2">Last Name</th>
+                <td colspan="3">Mahajan</td>
+            </tr>
+            <tr>
+                <th colspan="2">Favorite Movie</th>
+                <td colspan="3">
+                    <a href="https://en.wikipedia.org/wiki/Back_to_the_Future">
+                        <img src="https://cdn.theasc.com/Back-to-the-Future-Featured-Image.jpg" alt="Back to the Future" width="100">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">Favorite Audio</th>
+                <td colspan="3">
+                    <audio controls>
+                        <source src="rick_roll.mp3" type="audio/mpeg">
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">Favorite Video</th>
+                <td colspan="3">
+                    <iframe width="200" height="113" src="marvel_studios.mp4" allow="autoplay; picture-in-picture"></iframe>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <h2>Enter Your Details Below:</h2>
