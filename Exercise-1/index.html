@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+</head>
+<style>
+  table, th, td {
+    border: 2px solid blue;
+  }
+</style>
+<body>
+  <center><h1>Exercise 1 by Navaneeeth Sujith</h1></center>
+  <center><h3>Date Submitted:  01/01/2024</h3></center>
+  <hr></hr>
+  <center><h4>Fun facts about me</h4></center>
+
+  <center><table>
+    <tr>
+      <th>First Name </th>
+      <th>Last Name</th>
+      <th>Favorite Movie</th>
+      <th>Favorite Music</th>
+      <th>Favorite Video</th>
+    </tr>
+    <tr>
+      <td><center>Navaneeth</center></td>
+      <td><center>Sujith</center></td>
+      <td> <img src="assets/poster.jpeg" alt=" Avengers Infinity War" width="150" height="200"></td>
+      <td><audio controls>  <source src="assets/song.mp3" type="audio/mpeg"></audio controls></td>
+      <td><video width="400" height = "200" controls>
+        <source src="assets/chess.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video></td>
+    </tr>
+  
+  </table></center>
+  <hr></hr>
+  <h4><center>Contact Me! Enter your details below</center></h4>
+  <hr></hr>
+
+  <form><center>
+    <label for="name">Full Name: </label>
+    <input type="text" id="name" name="name"  placeholder="John Doe"><br>
+    <label for="email">Email: </label>
+    <input type="text" id="email" name="email"  placeholder="johnDoe@fakemail.com"> <br>
+    <label for="password">Password: </label>
+    <input type="password" id="password" name="password" placeholder="john"> <br><br>
+    <i><label for=" meetingTimes">Meeting Times </label></i> <br>
+    <input type="checkbox" id="day1" name="day1" value="sunday">
+    <label for="day1"> Sunday</label>
+    <input type="checkbox" id="day2" name="day2" value="monday">
+    <label for="day2"> Monday</label>
+    <input type="checkbox" id="day3" name="day3" value="tuesday">
+    <label for="day3"> Tuesday</label>
+    <input type="checkbox" id="day4" name="day4" value="wednesday">
+    <label for="day4"> Wednesday</label>
+    <input type="checkbox" id="day5" name="day5" value="thursday">
+    <label for="day5"> Thursday</label>
+    <input type="checkbox" id="day6" name="day6" value="friday">
+    <label for="day6"> Friday</label>
+    <input type="checkbox" id="day7" name="day7" value="saturday">
+    <label for="day7"> Saturday</label><br><br>
+
+    <label for="times"><i>Available Times: </i></label> 
+    <select name="times" id="times"> 
+        <option value="morning"> Morning ( 8:00AM to 12:00 PM) </option> 
+        <option value="afternoon"> Afternoon (12:00PM to 4:00PM) </option> 
+        <option value="evening"> Evening (4:00PM to 7:00 PM))</option> 
+        <option value="night">Night (7:00 PM to 12:00 AM)</option> 
+    </select> <br><br>
+    <label for="times"><i>Currently working on a website:  </i></label> 
+    <form>
+      <input type="radio" id="yes" name="no" value="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="no" value="no">
+      <label for="no">No</label><br><br>
+      
+      <textarea id ="userComment" rows="4" cols="50" name="comment" > Comments? </textarea>
+      <br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+  </center></form>
+
+</body>
+</html>
