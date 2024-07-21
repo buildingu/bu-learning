@@ -156,11 +156,31 @@ img {
     .mobile-table tr:not(:first-child) td {
         border-top: 2px solid white;
     }
+    .footer-desktop {
+        display: none;
+    }
+    .footer-mobile {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        background-color: #2A3441;
+        color: white;
+    }
 }
 
 @media (min-width: 601px) {
     .table-wrapper {
         display: none;
+    }
+    .footer-mobile {
+        display: none;
+    }
+    .footer-desktop {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        background-color: #2A3441;
+        color: white;
     }
 }
 
