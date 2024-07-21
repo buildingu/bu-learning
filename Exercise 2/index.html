@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HHS Debate Tournament</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Hillsborough High School Debate Tournament 2024</h1>
+        <p>Date: August 10, 2024</p>
+    </header>
+    <div class="content">
+        <!-- Event Details -->
+        <section class="event-details">
+            <h2>Event Details</h2>
+            <p>Join us for an exciting debate tournament at HHS! Test your skills and compete with peers in a friendly and competitive environment.</p>
+            <img src="https://cmsv2-assets.apptegy.net/uploads/23088/logo/25901/Hillsborough_High_School.png" alt="Debate Tournament">
+        </section>
+
+        <!-- Timings and Location -->
+        <section>
+            <h3>Timings and Location</h3>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+                <tr>
+                    <td>9:00 AM</td>
+                    <td>Opening Ceremony</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Round 1 Debates</td>
+                </tr>
+                <tr>
+                    <td>1:00 PM</td>
+                    <td>Lunch Break</td>
+                </tr>
+                <tr>
+                    <td>2:00 PM</td>
+                    <td>Semi-Finals</td>
+                </tr>
+                <tr>
+                    <td>4:00 PM</td>
+                    <td>Final Round</td>
+                </tr>
+                <tr>
+                    <td>6:00 PM</td>
+                    <td>Closing Ceremony and Awards</td>
+                </tr>
+            </table>
+            <p>Location: HHS Auditorium</p>
+        </section>
+
+        <!-- Media Section -->
+        <section class="media">
+            <h3>Media</h3>
+            <p>Check out this video about our school:</p>
+            <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/NTECA6ct55w">
+            </iframe>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="contact-info">
+            <h3>Contact Information</h3>
+            <p>If you have any questions, feel free to reach out:</p>
+            <p>Email: <a href="mailto:hhs@gmail.com">hhs@gmail.com</a></p>
+            <p>Phone: (153) 644-4293</p>
+        </section>
+
+        <!-- Registration Form -->
+        <section class="form-section">
+            <h3>Register for the Event</h3>
+            <form>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                
+                <label>Available Days:</label>
+                <label for="monday">Monday</label>
+                <input type="checkbox" id="monday" name="available_days" value="Monday">
+                <label for="tuesday">Tuesday</label>
+                <input type="checkbox" id="tuesday" name="available_days" value="Tuesday">
+                <label for="wednesday">Wednesday</label>
+                <input type="checkbox" id="wednesday" name="available_days" value="Wednesday">
+                <label for="thursday">Thursday</label>
+                <input type="checkbox" id="thursday" name="available_days" value="Thursday">
+                <label for="friday">Friday</label>
+                <input type="checkbox" id="friday" name="available_days" value="Friday">
+                <br>
+                <label for="available_time">Available Time:</label>
+                <select id="available_time" name="available_time">
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                </select>
+                
+                
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" placeholder="Enter any comments or additional information" rows="4" cols="50"></textarea>
+                
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
