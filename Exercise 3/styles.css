@@ -1,0 +1,130 @@
+* {
+    color: white;
+    font-family: Abel;
+}
+
+body {
+    background-image: url('assets/background-mobile.jpg');
+}
+
+.bottom-container {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.desktop-label {
+    background-color: purple;
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.divTable {
+	display: table;
+	width: 70%;
+    margin: auto;
+}
+
+.divTableRow {
+	display: table-row;
+}
+
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+
+.divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+}
+
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+.grid-cell {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.mobile-label {
+    background-color: darkblue;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.mobile-table {
+    width: 80%;
+    margin: auto;
+}
+
+.tct {
+    background-color: silver;
+    border: 10px solid gray;
+    color: black;
+    display: inline-block;
+    padding: 20px;
+}
+
+.top-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+[value] {
+    color:black;
+}
+
+[value]:hover {
+    background-color: red;
+}
+
+@media screen and (max-width: 767px) { /* Mobile */
+    .divTable {
+        display: none;
+    }
+    .desktop-label {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) { /* Desktop */
+    body {
+        background-image: url('assets/background-desktop.jpg');
+    }
+    .mobile-label {
+        display: none;
+    }
+    .mobile-table {
+        display: none;
+    }
+}
