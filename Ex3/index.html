@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -158,78 +157,18 @@
                 display: none; 
             }
         }
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #263A42;
-    margin: 20px 0;
-    display: table; 
-}
-
-table th:nth-child(1),
-table td:nth-child(1) {
-    width: 75px;
-}
-
-table th:nth-child(2),
-table td:nth-child(2) {
-    width: 75px;
-}
-
-table th:nth-child(3),
-table td:nth-child(3) {
-    width: 150px;
-}
-
-table th:nth-child(4),
-table td:nth-child(4) {
-    width: 150px;
-}
-
-table th:nth-child(5),
-table td:nth-child(5) {
-    width: 150px;
-}
-
-@media (max-width: 600px) {
-    table {
-        display: none; 
-    }
-    .table-wrapper {
-        display: block;
-    }
-    .table-row {
-        display: block;
-        margin-bottom: 10px;
-    }
-    .table-row div {
-        display: block;
-        padding: 10px;
-        border: 2px solid grey;
-        border-bottom: none;
-        background-color: #263A42;
-    }
-    .table-row div:nth-child(1) {
-        font-weight: bold;
-        background-color: #2A3441;
-        border-top: 2px solid white;
-    }
-    .table-row div:last-child {
-        border-bottom: 2px solid white;
-    }
-}
-     @media (min-width: 601px) {
+        
+        @media (min-width: 601px) {
             body {
-                background-image: Assets/background-desktop.jpg;
+                background-image: url("assets/background-desktop.jpg");
             }
         }
 
         @media (max-width: 600px) {
             body {
-                background-image: Assets/background-mobile.jpg;
+                background-image: url("assets/background-mobile.jpg");
             }
         }
-
 
     </style>
 </head>
@@ -352,12 +291,11 @@ table td:nth-child(5) {
                 <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here"></textarea>
             </div>
             <div class="form-actions">
-                <button type="submit" class="submit-btn">Submit</button>
-                <button type="reset" class="reset-btn">Reset</button>
+                <button type="button" class="submit-btn">Submit</button>
+                <button type="button" class="reset-btn">Reset</button>
             </div>
         </form>
     </div>
 
 </body>
 </html>
-
