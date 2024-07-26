@@ -1,0 +1,116 @@
+/* Desktop Styles */ 
+@media screen and (min-width: 768px) {
+
+    body {
+        background-image: url(/assets/background-desktop.jpg);
+    }
+
+    h1 {
+        font-family: sans-serif;
+        color: white;
+    }
+
+    h3 {
+        font-family: sans-serif;
+        color: white;
+    }
+
+    table {
+        border: solid blue 10px;
+        margin-left: 200px;
+        font-family: sans-serif;
+    }
+
+    button {
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: red;
+    }
+
+    button:hover {
+        background-color: lightblue;
+    }
+
+    form {
+        font-family: sans-serif;
+        color: black;
+        border:10px solid darkcyan;
+        margin-left: 525px;
+        margin-right: 525px;
+        background-color: pink;
+    }
+
+    input[type=text] {
+        width: 35%;
+    }
+
+    input[type=text]:focus {
+        background-color: lightblue;
+    }
+
+    input[type=password] {
+        width: 35%;
+    }
+
+    input[type=password]:focus {
+        background-color: lightblue;
+    }
+
+    input[type=checkbox] {
+        margin-top: 15px;
+        accent-color: red;
+    }
+
+    #dropdown {
+        width: 75%;
+        margin-top: 10px;
+        border: 7px solid #5dadec;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    option {
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    em {
+        font-weight: bold;
+    }
+
+    input[type=radio] {
+        accent-color: red;
+    }
+
+    textarea {
+        border: 5px black solid;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+
+    body {
+        background-image: url(/assets/background-mobile.jpg);
+        font-family: sans-serif;
+    }
+
+    table {
+        border: solid blue 10px;
+        font-family: sans-serif;
+    }
+
+    .table-container table thead {
+        display: block;
+    }
+
+    .table-container table tr {
+        display: block;
+    }
+
+    .table-container table td {
+        display: block;
+    }
+
+}
