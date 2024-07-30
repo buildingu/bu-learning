@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/background.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    color: white;
+    padding: 5px;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+    color: #fff;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.info-section {
+    margin-bottom: 30px;
+}
+
+.info-section h2 {
+    margin-bottom: -15px;
+    color: white;
+    text-align: center;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #263A42;
+}
+
+th, td {
+    border: 10px solid #808080;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #263A42;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    color: white;
+}
+
+td img {
+    max-width: 100px;
+    border-radius: 8px;
+}
+
+/* Form styles */
+.form-section {
+    background-color: #CECACA;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    border: 10px solid #808080;
+    padding: 15px;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+    color: black;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"], form textarea {
+    width: calc(100% - 22px); 
+}
+
+form .checkbox-group {
+    display: flex;
+    justify-content: center;   
+    flex-wrap: wrap; 
+}
+
+form .option {
+    display: flex;
+    justify-content: center;   
+    flex-wrap: wrap; 
+}
+
+form .checkbox-group label {
+    margin-right: 10px;
+}
+
+form .checkbox-group input {
+    margin-right: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+form button[type="reset"] {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+/* Responsive Design */
+/* Desktop Styles */
+@media screen and (min-width: 768px) {
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    table, .form-section form {
+        font-size: 14px;
+    }
+
+    form .checkbox-group {
+        flex-direction: column;
+    }
+
+    form label, form input, form select, form textarea {
+        font-size: 14px;
+    }
+}
+
+/* Advanced Selectors */
+table tbody tr:nth-child(even) {
+    background-color: #263A42;
+}
+
+form input:not([type="radio"]):not([type="checkbox"]) {
+    width: calc(100% - 22px); /* Adjust for padding and border */
+}
