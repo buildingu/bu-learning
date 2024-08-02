@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1 by Sandesh Iyer</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        hr {
+            margin: 20px 0;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .checkbox-group input {
+            margin-right: 5px;
+        }
+        .checkbox-group label {
+            margin-right: 15px;
+        }
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Exercise 1 by Sandesh Iyer</h1>
+    <h3 style="text-align: center;">Date Submitted: 8/2/2024</h3>
+    <hr>
+
+    <h4 style="text-align: center;">Fun facts about me:</h4>
+    <table style="margin: auto;">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Movie</th>
+            <th>Favorite Song</th>
+            <th>Favorite Video</th>
+        </tr>
+        <tr>
+            <td>Sandesh</td>
+            <td>Iyer</td>
+            <td><img src="c:\Users\sande_6qx0ngn\.vscode\download.jpg" alt="Favorite Movie" /></td>
+            <td>
+                Click Button to play audio
+                <audio controls>
+                    <source src="c:\Users\sande_6qx0ngn\Downloads\Travis_Scott_ft._Swae_Lee_Chief_Keef_-_Nightcrawler_Instrumental_(Hydr0.org).mp3" type="audio/mpeg">
+                </audio>
+            </td>
+            <td>
+                <video width="320" height="160" controls>
+                    <source src="c:\Users\sande_6qx0ngn\Downloads\3695613-uhd_2160_3840_30fps.mp4" type="video/mp4">
+                </video>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <h4>Enter your details below:</h4>
+    <form>
+        <div class="form-group">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" placeholder="John Doe" />
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" placeholder="johndoe@fakemail.com" />
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Example: ******" />
+        </div>
+        <div class="form-group checkbox-group">
+            <label>Available Meeting Days:</label>
+            <input type="checkbox" id="monday" />
+            <label for="monday">Monday</label>
+            <input type="checkbox" id="tuesday" />
+            <label for="tuesday">Tuesday</label>
+            <input type="checkbox" id="wednesday" />
+            <label for="wednesday">Wednesday</label>
+            <input type="checkbox" id="thursday" />
+            <label for="thursday">Thursday</label>
+            <input type="checkbox" id="friday" />
+            <label for="friday">Friday</label>
+            <input type="checkbox" id="saturday" />
+            <label for="saturday">Saturday</label>
+            <input type="checkbox" id="sunday" />
+            <label for="sunday">Sunday</label>
+        </div>
+        <div class="form-group">
+            <label for="time">Available Time:</label>
+            <select id="time">
+                <option>Morning 8am to 12pm</option>
+                <option>Afternoon 1pm to 5pm</option>
+                <option>Evening 6pm to 10pm</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Currently working on new website?</label>
+            <input type="radio" id="yes" name="website" />
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="website" />
+            <label for="no">No</label>
+        </div>
+        <div class="form-group">
+            <label for="comments">Enter comments here:</label>
+            <textarea id="comments" cols="30" rows="5" placeholder="Enter comments here:"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+        </div>
+    </form>
+</body>
+</html
