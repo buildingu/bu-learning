@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Exercise_2_CSS.css">
+    <title>School Tournament</title>
+</head>
+
+<body>
+    <div class="HeaderContainer">
+        <h1><img src="GuitarImage1.png" alt="Guitar" class="guitarImage">Guitar tournament</h1>
+            
+    </div>    
+    <div id="EventDiv">
+        <div id="InfoOnEvent">
+            <div class="wherewhen">
+                <div class="where">
+                    <h3>Where:</h3>
+                        <p>It will be located in the auditorium of the Mesa High School campus!</p></div>
+                <div class="when">
+                    <h3>When:</h3>
+                    <p>It will be happening from 3:30pm to 6:30 pm Thursday, August 8th!</p></div>
+            </div>
+            <h3>Anyone is invited to come!</h3>
+            <p>Any student participating must register a day prior and meet inside the auditorium before it starts. Family members and friends must enter the auditorium, where teachers will direct you to the seats. </p>
+            <h3>Schedule Table:</h3>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Event</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3:30 PM</td>
+                        <td>Opening Ceremony</td>
+                    </tr>
+                    <tr>
+                        <td>4:00 PM</td>
+                        <td>First Round Performances</td>
+                    </tr>
+                    <tr>
+                        <td>4:30 PM</td>
+                        <td>First Round Performances</td>
+                    </tr>
+                    <tr>
+                        <td>5:00 PM</td>
+                        <td>Break</td>
+                    </tr>
+                    <tr>
+                        <td>5:30 PM</td>
+                        <td>Second Round Performances</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 PM</td>
+                        <td>Final Performances</td>
+                    </tr>
+                    <tr>
+                        <td>6:30 PM</td>
+                        <td>Closing Ceremony</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DxkMQvmKZaM?si=TqI8tCl1CXEN_bLH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1pXtMvJP-bY?si=u7eeIbLfXhcSeBoi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+        <div id="FormDiv">
+            <h3>If you are participating, fill out the form:</h3>
+            <form action="/submit_form" method="post">
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+
+                <label for="Student ID">Student ID:</label><br>
+                <input type="Student ID" id="Student ID" name="Stidemt ID" placeholder="Enter your student ID"><br><br>
+
+                <label for="song">Your song:</label><br>
+                <input type="song" id="song" name="song" placeholder="Enter your song"><br><br>
+
+                <label>Type of Guitar:</label><br>
+                <input type="checkbox" id="Acoustic" name="Guitars" value="Acoustic">
+                <label for="Acoustic"> Acoustic</label><br>
+                <input type="checkbox" id="Electric" name="Guitars" value="Electric">
+                <label for="Electric"> Electric</label><br>
+                <input type="checkbox" id="Classical" name="Guitars" value="Classical">
+                <label for="Classical"> Classical</label><br>
+                <input type="checkbox" id="Other" name="Guitars" value="Other">
+                <label for="Other"> Other</label><br>
+                <br>
+
+                <label for="PTime">Select your performance time</label><br>
+                <select id="PTime" name="PTime">
+                    <option value="4pm">4pm First Round</option>
+                    <option value="4:30pm">4:30pm Second Round</option>
+                    </select><br><br>
+
+                <label>Will you need assistance setting up?</label><br>
+                <input type="radio" id="yes" name="assistance" value="yes" checked>
+                <label for="yes"> Yes</label><br>
+                <input type="radio" id="no" name="assistance" value="no">
+                <label for="no"> No</label><br><br>
+
+                <label for="Questions">If you have any questions, place them here:</label><br>
+                <textarea id="Questions" name="Questions" rows="4" cols="50" placeholder="Enter your questions here"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+    </div>
+    <h3 class="CInfo">Contact information:</h3>
+    <div class="contactInfo">
+        <div class="GmailInfo"><h3>MesaHighschool@mpsaz.org</h3></div> 
+        <div class="PhoneNumber"><h3>(555)-555-5555</h3></div>
+        <div class="adress"><h3>6999 W lincoln rd 9505</h3></div>  
+    </div>    
+    <table>
+        
+    </table>
+
+</body>
+</html>
