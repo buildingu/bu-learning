@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    margin-left: 35%;
+    background-image: url(ama-logo-2.png);
+    background-size: auto;
+}
+
+
+
+
+h2{
+    color: red;
+}
+
+h3{
+    color: blue;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.Heading1{
+    background: rgb(235, 75, 75);
+    border: 5px solid red;
+    width: 570px;
+}
+
+.InfoBox{
+    background: rgb(87, 154, 255);
+    border: 5px solid rgb(47, 59, 173);
+    width: 570px;
+}
