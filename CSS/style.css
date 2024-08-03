@@ -1,56 +1,54 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: white
+    background-color: white;
     margin: 0;
     padding: 0;
 }
 header {
-    background-color: green
+    background-color: green;
     text-align: center;
-    padding: 10 px 0;
+    padding: 2px;
 }
 main {
     margin: 20px;
     padding: 20px;
-    background-color: white
+    background-color: white;
     border: 1px solid #ccc;
     border-radius: 10px;
 }
-h1, h2 {
-    color: green
+h1 {
+    color: white;
+}
+h2 {
+    color: green;
 }
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
-table, th, td {
-    border: 3px solid green;
-}
 th, td {
+    border: 3px solid green;
     padding: 10px;
     text-align: left;
 }
 .contact-info {
     margin-top: 20px;
 }
-.contact-info p {
+p {
     margin: 5px 0;
+    font-weight: bold;
 }
 .media {
     margin-top: 20px;
 }
-.media {
-    margin-top: 20px;
-}
-.media img {
-    display: block
-    max-width: 20px;
+img {
+    display: block;
     height: auto;
     border: 1px solid #ccc;
     margin: 10px 0;
 }
-.media video {
+video {
     display: block;
     margin: 10px 0;
 }

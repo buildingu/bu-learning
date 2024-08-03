@@ -8,6 +8,15 @@ document.getElementById('employeeForm').addEventListener('submit', function(even
 
     const employeeEntry = document.createElement('div');
     employeeEntry.classList.add('employee-entry');
+    updateEmployeeEntry(employeeEntry, name, age, sex, position);
+
+    employeeList.appendChild(employeeEntry);
+
+    document.getElementById('employeeForm').reset();
+
+});
+
+function updateEmployeeEntry(employeeEntry, name, age, sex, position) {
     employeeEntry.innerHTML = `
         <p>Name: ${name}</p>
         <p>Age: ${age}</p>
@@ -16,8 +25,6 @@ document.getElementById('employeeForm').addEventListener('submit', function(even
         <button class="edit">Edit</button>
         <button class="delete">Delete</button>
     `;
-
-    employeeList.appendChild(employeeEntry);
 
     const editButton = employeeEntry.querySelector('.edit');
     const deleteButton = employeeEntry.querySelector('.delete');
@@ -28,19 +35,10 @@ document.getElementById('employeeForm').addEventListener('submit', function(even
         const newSex = prompt('Enter new sex:', sex);
         const newPosition = prompt('Enter new position:', position);
 
-        employeeEntry.innerHTML = `
-            <p>Name: ${newName}</p>
-            <p>Age: ${newAge}</p>
-            <p>Sex: ${newSex}</p>
-            <p>Position: ${newPosition}</p>
-            <button class="edit">Edit</button>
-            <button class="delete">Delete</button>
-        `;
+        updateEmployeeEntry(employeeEntry, newName, newAge, newSex, newPosition);
     });
 
     deleteButton.addEventListener('click', () => {
         employeeList.removeChild(employeeEntry);
     });
-
-    document.getElementById('employeeForm').reset();
-});
+}

@@ -6,7 +6,7 @@
     body {
         background-image: url('/Advanced CSS/assets/background-mobile.jpg');
         color: white;
-        font-size: 13px
+        font-size: 13px;
     }
     hr {
         height: 2px;
@@ -14,7 +14,7 @@
         margin: 10px;
       }
     table {
-        width: 90%
+        width: 90%;
         font-size: 12px;
         font-weight: bold;
     }
@@ -104,7 +104,6 @@
       border-collapse: collapse;
       margin: auto;
       max-width: fit-content;
-      padding: 
     }
     #table_desktop td {
       background-color: rgb(38, 60, 62);

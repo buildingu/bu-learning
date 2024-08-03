@@ -8,9 +8,7 @@ const missingAlertUI = function (param) {
 
 const incorrectTypeUI = function (parameter) {
     alerter.style.color = "red";
-    if (parameter === "age") {
-        alerter.textContent = "The age input must be a number.";
-    } else if (parameter === "phone number") {
+    if (parameter === "phone number") {
         alerter.textContent = "The phone number must contain only digits.";
     } else {
         alerter.textContent = `The ${parameter} input must be a string!`;
