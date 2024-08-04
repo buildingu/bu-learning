@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+<style>
+    table, th, td {
+      border: 5px solid #96D4D4;
+      border-collapse: collapse;
+      border-style: inset;
+    
+    }
+  </style>
+<body>
+    <center><h1>Exercise 1 by Jayden Phu</h1></center>
+    <center><h3>Date Submitted: 8/3/2024</h3></center>
+    <hr></hr>
+    <center><h4>Fun facts about me:</h4></center>
+
+    <center><table>
+        <tr>
+          <th>First Name </th>
+          <th>Last Name</th>
+          <th>Favorite Movie</th>
+          <th>Favorite Music</th>
+          <th>Favorite Video</th>
+        </tr>
+        <tr>
+          <td><center>Jayden</center></td>
+          <td><center>Phu</center></td>
+          <td><a href="https://en.wikipedia.org/wiki/American_Psycho_(film)">
+            <img src="https://play-lh.googleusercontent.com/4Q4-sV3lNjEqzD7mpwMBdLljiBy5ZU24UhrK0QGdFhO7tgBbpddQBvXgSuliBAVh54Th19V0-ytKnlizwndO" alt=" Asteroid City" width="150" height="200">
+          </a></td>
+          <td><audio controls>  <source src="assets/song.mp3" type="audio/mpeg"></audio controls></td>
+          <td><video width="400" height = "200" controls>
+            <source src="assets/video.mp4" type="video/mp4">
+          </video></td>
+        </tr>
+      
+      </table></center>
+
+<hr></hr>
+<h4><center>Contact Me:</center></h4>
+
+<form><center>
+  <label for="name">Full Name: </label>
+  <input type="text" id="name" name="name" placeholder="John Doe">
+  <br><br>
+  <label for="email">Email: </label>
+  <input type="text" id="email" name="email" placeholder="jdoe@fakemail.com">
+  <br><br>
+  <label for="password">Password: </label>
+  <input type="password" id="password" name="password" placeholder="john">
+  <br><br>
+  <i><label for="meetingTimes">Available Meeting Days: </label></i>
+
+  <br><br>
+
+  <input type="checkbox" id="day1" name="day1" value="sunday">
+  <label for="day1"> Sunday</label>
+  <input type="checkbox" id="day2" name="day2" value="monday">
+  <label for="day2"> Monday</label>
+  <input type="checkbox" id="day3" name="day3" value="tuesday">
+  <label for="day3"> Tuesday</label>
+  <input type="checkbox" id="day4" name="day4" value="wednesday">
+  <label for="day4"> Wednesday</label>
+  <input type="checkbox" id="day5" name="day5" value="thursday">
+  <label for="day5"> Thursday</label>
+  <input type="checkbox" id="day6" name="day6" value="friday">
+  <label for="day6"> Friday</label>
+  <input type="checkbox" id="day7" name="day7" value="saturday">
+  <label for="day7"> Saturday</label>
+  
+  <br><br>
+
+  <label for="times"><i>Available Time: </i></label> 
+    <select name="times" id="times"> 
+        <option value="morning"> Morning (8am to 12pm) </option> 
+        <option value="afternoon"> Afternoon (12pm to 4pm) </option> 
+        <option value="evening"> Evening (4pm to 7pm)</option> 
+        <option value="night">Night (7pm to 12am)</option> 
+    </select>
+    
+  <br><br>
+
+  <label for="times"><i>Currently working on website?</i></label>
+  <input type="radio" id="yes" name="no" value="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="no" value="no">
+      <label for="no">No</label>
+      
+  <br><br>
+
+  <textarea id ="userComment" rows="2" cols="20" name="comment" >Enter your comments here</textarea>
+      <br><br>
+    
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</center></form>
+
+</body>
+</html>
