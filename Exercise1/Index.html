@@ -27,10 +27,10 @@
             display: block;
             margin-bottom: 5px;
         }
-        .checkbox-group input {
+        .checkbox-group input, .radio-group input {
             margin-right: 5px;
         }
-        .checkbox-group label {
+        .checkbox-group label, .radio-group label {
             margin-right: 15px;
         }
         textarea {
@@ -56,7 +56,11 @@
         <tr>
             <td>Sandesh</td>
             <td>Iyer</td>
-            <td><img src="c:\Users\sande_6qx0ngn\.vscode\download.jpg" alt="Favorite Movie" /></td>
+            <td>
+                <img src="c:\Users\sande_6qx0ngn\.vscode\download.jpg" alt="Favorite Movie" />
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Home_Alone" target="_blank">Learn more about this movie</a>
+            </td>
             <td>
                 Click Button to play audio
                 <audio controls>
@@ -86,21 +90,21 @@
             <label for="password">Password:</label>
             <input type="password" id="password" placeholder="Example: ******" />
         </div>
-        <div class="form-group checkbox-group">
+        <div class="form-group radio-group">
             <label>Available Meeting Days:</label>
-            <input type="checkbox" id="monday" />
+            <input type="radio" id="monday" name="meeting-day" value="Monday" />
             <label for="monday">Monday</label>
-            <input type="checkbox" id="tuesday" />
+            <input type="radio" id="tuesday" name="meeting-day" value="Tuesday" />
             <label for="tuesday">Tuesday</label>
-            <input type="checkbox" id="wednesday" />
+            <input type="radio" id="wednesday" name="meeting-day" value="Wednesday" />
             <label for="wednesday">Wednesday</label>
-            <input type="checkbox" id="thursday" />
+            <input type="radio" id="thursday" name="meeting-day" value="Thursday" />
             <label for="thursday">Thursday</label>
-            <input type="checkbox" id="friday" />
+            <input type="radio" id="friday" name="meeting-day" value="Friday" />
             <label for="friday">Friday</label>
-            <input type="checkbox" id="saturday" />
+            <input type="radio" id="saturday" name="meeting-day" value="Saturday" />
             <label for="saturday">Saturday</label>
-            <input type="checkbox" id="sunday" />
+            <input type="radio" id="sunday" name="meeting-day" value="Sunday" />
             <label for="sunday">Sunday</label>
         </div>
         <div class="form-group">
@@ -113,9 +117,9 @@
         </div>
         <div class="form-group">
             <label>Currently working on new website?</label>
-            <input type="radio" id="yes" name="website" />
+            <input type="radio" id="yes" name="website" value="Yes" checked />
             <label for="yes">Yes</label>
-            <input type="radio" id="no" name="website" />
+            <input type="radio" id="no" name="website" value="No" />
             <label for="no">No</label>
         </div>
         <div class="form-group">
@@ -128,4 +132,4 @@
         </div>
     </form>
 </body>
-</html
+</html>
