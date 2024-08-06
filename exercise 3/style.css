@@ -1,0 +1,56 @@
+/* FOR DESKTOP*/
+@media screen and (min-width: 600px)
+{
+body{
+    background-image: url(assets/background-desktop.jpg);
+    text-align: center;
+    color: black;
+}
+p{
+    color: azure;
+}
+h1{
+    color: rgb(235, 150, 235);
+}
+h4{
+    color: rgb(143, 25, 119);
+}
+.table1{
+    background-color: blue;
+}
+.table2{
+    display: none;
+}
+}
+
+
+/* FOR MOBILE DEVICES */
+@media  screen and ( max-width: 600px )
+{  
+    body{
+        text-align: center;
+        background-image: url(assets/background-mobile.jpg);
+        color: black;
+    }
+    p{
+        color: azure;
+    }
+    h1{
+        color: rgb(65, 5, 65);
+    }
+    h4{
+        color: rgb(67, 24, 58);
+    }
+    .table2  {
+     background-color: orangered;
+     width: 75%;
+     border-width: 5;
+    }
+    .table1{
+        display: none;
+    }
+    form {
+        border: 30px solid rgb(24, 3, 24);
+        background-color: purple;
+    }
+}
