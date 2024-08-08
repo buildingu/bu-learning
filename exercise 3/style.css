@@ -1,0 +1,104 @@
+* {
+  
+}
+
+body {
+    text-align: center;
+    background-image: url('background-desktop.jpg');
+    color: white;
+}
+
+
+.allform {
+    text-align: center;
+    color: black;
+    border: 15px solid;
+    border-color: grey;
+    vertical-align: center;
+    background-color: lightgrey;
+    margin: auto;
+    height: 13cm;
+    width: 11cm;
+    
+
+}
+
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px; 
+}
+
+textarea {
+    width: 250px;
+}
+
+form {
+    margin: 5px;
+}
+
+#time, #y , #n, #name, #email, #p {
+    margin: 5px;
+}
+
+
+
+
+.button1 { 
+    background-color: green;
+    color: rgb(255, 255, 255);
+}
+.button2 {
+    background-color: red;
+    color: rgb(255, 255, 255);}
+
+
+
+/* phones */
+@media (max-width:600px) {
+    body {
+    background-image: url('background-mobile.jpg');
+    max-width: 100%;
+    max-height: 100%;
+    }
+    
+   table { 
+    
+
+   }
+    
+    table td {
+        height: 5cm;
+        
+
+      }
+      table th {
+        height: 3cm;
+        
+      }
+
+
+    .allform {
+       font-size: 20px;
+        height: 20cm;
+        width: 8cm;
+
+    }
+
+    form {
+        margin: 10px;
+    }
+
+    #time, #y , #n, #name, #email, #p {
+        margin: 10px;
+    }
+
+    .button1 , 
+    .button2 {
+        width: 7cm;
+        height: 40px;
+       
+       margin: 10px;
+    }
+ }
