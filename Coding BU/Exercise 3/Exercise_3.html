@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Exercise_3.css"
+    <title>Exercise 1: HTML Building-U</title>
+</head>
+<body align="center">
+    <!-- Heading -->
+    <h1 style="color: darkolivegreen; background-color:white">Exercise 3: Designing a Website According to the Mockup</h1>
+    <h2 style="color: darkolivegreen; font-size: 30px">Date of Submission: August 9th, 2024</h2>
+    <div class="ThisIsAContainer">
+        <!-- Table heading -->
+        <h3 style="color: darkolivegreen; font-size: 20px">Favorite Things Table</h3>
+
+        <!-- Table -->
+        <table style="border-color: goldenrod; Border-radius: 4px" border="3" align="center">
+            <tr>
+                <th style="color: darkolivegreen; background-color:white; font-size:20px; font-family: 'Times New Roman', Times, serif">First Name</th>
+                <th style="color: darkolivegreen; background-color:white; font-size:20px; font-family: 'Times New Roman', Times, serif">Last Name</th>
+                <th style="color: darkolivegreen; background-color:white; font-size:20px; font-family: 'Times New Roman', Times, serif">Favorite Movie Image</th>
+                <th style="color: darkolivegreen; background-color:white; font-size:20px; font-family: 'Times New Roman', Times, serif">Favorite Audio Sample</th>
+                <th style="color: darkolivegreen; background-color:white; font-size:20px; font-family: 'Times New Roman', Times, serif">Favorite Video Sample</th>
+            </tr>
+            <tr>
+                <td style="background-color: darkolivegreen; color: goldenrod;font-size: 30px">Julio</td>
+                <td style="background-color: darkolivegreen; color: goldenrod;font-size: 30px": darkolivegreen; font-size: 20px">Ruiz</td>
+                <td style="background-color: darkolivegreen">
+                    <!-- Source from Files -->
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.deviantart.com%2Fsmashupmashups%2Fart%2FPuss-in-Boots-The-Last-Wish-wallpaper-980928353&psig=AOvVaw3I2qgmCtPdk-qDl9Gmm_Hq&ust=1721195940469000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCMjOkdfwqocDFQAAAAAdAAAAABAJ">
+                    <img src="../Exercise 1/Files/Puss in Boots The Last Wish.jpg" alt="Fav_Movie" width="300"></a></td>
+                <td style="background-color: darkolivegreen">
+                    <!-- Source from Files -->
+                    <audio controls>
+                        <source src="../Exercise 1/Files/with great power comes great responsibility.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </td>
+                <td style="background-color: darkolivegreen">
+                    <!-- Source from youtube -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cqGjhVJWtEg?si=q3Rjjyieabg6o7sX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- Form heading -->
+    <h3 style="color: darkolivegreen; font-size: 20px; background-color:white">Personal Information Form</h3>
+
+    <!-- Form -->
+    <form action="/submit_form" method="post">
+        <label style="color: darkolivegreen; font-size: 20px" for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+
+        <label style="color: darkolivegreen; font-size: 20px" for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <label style="color: darkolivegreen; font-size: 20px" for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+
+        <label style="color: darkolivegreen; font-size: 20px">Available Days:</label><br>
+        <input type="checkbox" id="monday" name="days" value="Monday">
+        <label for="monday"> Monday</label><br>
+        <input type="checkbox" id="tuesday" name="days" value="Tuesday">
+        <label for="tuesday"> Tuesday</label><br>
+        <input type="checkbox" id="wednesday" name="days" value="Wednesday">
+        <label for="wednesday"> Wednesday</label><br><br>
+
+        <label style="color: darkolivegreen; font-size: 20px" for="time">Available Time:</label><br>
+        <select id="time" name="time">
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+        </select><br><br>
+
+        <label style="color: darkolivegreen; font-size: 20px">Working on a New Website?</label><br>
+        <input type="radio" id="yes" name="website" value="yes" checked>
+        <label for="yes"> Yes</label><br>
+        <input type="radio" id="no" name="website" value="no">
+        <label for="no"> No</label><br><br>
+
+        <label style="color: darkolivegreen; font-size: 20px" for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
