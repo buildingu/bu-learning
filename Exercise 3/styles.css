@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/background-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info, .form-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 500%;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-header, .table-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.table-header > div, .table-content > div {
+    padding: 10px;
+    background-color: #444;
+    text-align: center;
+}
+
+img {
+    max-width: 100px;
+}
+
+audio, video {
+    max-width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.checkbox-group, .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button[type="submit"], button[type="reset"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Advanced CSS Selectors */
+form input:focus, form textarea:focus {
+    border: 2px solid #4CAF50;
+}
+
+.table-content > div:nth-child(odd) {
+    background-color: #555;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    body {
+        background: url('images/background-mobile.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .table{
+        width: 90%;
+    }
+
+    .table-header, .table-content {
+        grid-template-columns: 1fr; /* Stacks each item in a single column */
+        gap: 20px;
+    }
+
+    .table-header > div, .table-content > div {
+        background-color: #444;
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    audio, video {
+        max-width: 100%;
+    }
+
+    .table-header > div, .table-content > div {
+        width: 100%;
+    }
+}

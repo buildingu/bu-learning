@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exercise 3 by Andy Wang</h1>
+        <p>Date submitted: 8/10/2024</p>
+
+        <div class="info">
+            <div class="table">
+                <div class="table-row">
+                    <div class="table-header">
+                        <div>First Name</div>
+                    </div>
+                    <div class="table-content">
+                        <div>Andy</div>
+                    </div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-header">
+                        <div>Last Name</div>
+                    </div>
+                    <div class="table-content">
+                        <div>Wang</div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="table-header">
+                        <div>Favorite Movie</div>
+                    </div>
+                    <div class="table-content">
+                        <div><img src="images/raiders.jpg" alt="Favorite Movie"></div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="table-header">
+                        <div>Favorite Song</div>
+                    </div>
+                    <div class="table-content">
+                        <div>
+                            <audio controls>
+                                <source src="rick_roll.mp3" type="audio/mp3">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="table-header">
+                        <div>Favorite Video</div>
+                    </div>
+                    <div class="table-content">
+                        <div>
+                            <video controls width="250">
+                                <source src="marvel_studios.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h2>Enter your details below:</h2>
+            <form>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" value="John Doe">
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" value="jdoe@fakemail.com">
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" value="******">
+                
+                <label>Available Meeting Days:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="monday" name="meeting-days" value="Monday">
+                    <label for="monday">Monday</label>
+                    
+                    <input type="checkbox" id="tuesday" name="meeting-days" value="Tuesday">
+                    <label for="tuesday">Tuesday</label>
+                    
+                    <input type="checkbox" id="wednesday" name="meeting-days" value="Wednesday">
+                    <label for="wednesday">Wednesday</label>
+                    
+                    <input type="checkbox" id="thursday" name="meeting-days" value="Thursday">
+                    <label for="thursday">Thursday</label>
+                    
+                    <input type="checkbox" id="friday" name="meeting-days" value="Friday">
+                    <label for="friday">Friday</label>
+                    
+                    <input type="checkbox" id="saturday" name="meeting-days" value="Saturday">
+                    <label for="saturday">Saturday</label>
+                    
+                    <input type="checkbox" id="sunday" name="meeting-days" value="Sunday">
+                    <label for="sunday">Sunday</label>
+                </div>
+
+                <label for="time">Available Time:</label>
+                <select id="time" name="time">
+                    <option value="morning">Morning (8am to 12pm)</option>
+                    <option value="afternoon">Afternoon (12pm to 4pm)</option>
+                    <option value="evening">Evening (4pm to 8pm)</option>
+                </select>
+                
+                <label>Currently working on a new website?</label>
+                <div class="radio-group">
+                    <input type="radio" id="yes" name="working" value="yes">
+                    <label for="yes">Yes</label>
+                    
+                    <input type="radio" id="no" name="working" value="no">
+                    <label for="no">No</label>
+                </div>
+
+                <label for="comments">If yes, please enter which page(s) you are working on:</label>
+                <textarea id="comments" name="comments"></textarea>
+                
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
