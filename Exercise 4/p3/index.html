@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Exercise 3 by Ethan Ali
+        </title>
+        <meta charset="UTF8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+        </style>
+    </head>
+    <body style="text-align:center;margin:auto;">
+        <h1>Exercise 3 by Ethan Ali</h1>
+        <h4>Date submitted: 07/20/24</h4>
+        <hr>
+        <h4>Fun facts about me:</h4>
+        <div class="divTable">
+            <div class="divTableBody">
+                <div class="divTableRow">
+                    <div class="divTableHead">First Name</div>
+                    <div class="divTableHead">Last Name</div>
+                    <div class="divTableHead">Favourite Movie</div>
+                    <div class="divTableHead">Favourite Song</div>
+                    <div class="divTableHead">Video</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell" style="vertical-align:middle;">Ethan</div>
+                    <div class="divTableCell" style="vertical-align:middle;">Ali</div>
+                    <div class="divTableCell"><a href="https://en.wikipedia.org/wiki/Dune_(2021_film)"><img src="assets/dune.jpg" width="120" height="184"></a></div>
+                    <div class="divTableCell"><audio controls="controls"><source src="assets/rick_roll.mp3" type="audio/mp3"/></audio></div>
+                    <div class="divTableCell">
+                        <video controls="controls" width="500" height="150">
+                            <source src="assets/marvel_studios.mp4" type="video/mp4"/>
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-table">
+            <div class="top-container">
+                <div class="grid-cell" style="font-weight: 700;">
+                    First Name
+                </div>
+                <div class="grid-cell" style="font-weight: 700;">
+                    Last Name
+                </div>
+                <div class="grid-cell">
+                    Ethan
+                </div>
+                <div class="grid-cell">
+                    Ali
+                </div>
+            </div>
+            <div class="bottom-container">
+                <div class="grid-cell" style="font-weight: 700;">
+                    Favourite Movie
+                </div>
+                <div class="grid-cell">
+                    <a href="https://en.wikipedia.org/wiki/Dune_(2021_film)"><img src="assets/dune.jpg" width="120" height="184"></a>
+                </div>
+                <div class="grid-cell" style="font-weight: 700;">
+                    Favourite Song
+                </div>
+                <div class="grid-cell">
+                    <audio controls="controls"><source src="assets/rick_roll.mp3" type="audio/mp3"/></audio>
+                </div>
+                <div class="grid-cell" style="font-weight: 700;">
+                    Video
+                </div>
+                <div class="grid-cell">
+                    <video controls="controls" width="200" height="150">
+                        <source src="assets/marvel_studios.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h4>Enter your details below:</h4>
+        <form class="tct" method="post" style="text-align:center;">
+            <label for="name"><em>Full Name</em></label>
+            <input type="text" id="name" placeholder="John Doe"><br><br>
+            <label for="email"><em>Email Address</em></label>
+            <input type="text" id="email" placeholder="john.doe@gmail.com"><br><br>
+            <label for="pwd"><em>Password</em></label>
+            <input type="password" id="pwd" placeholder="&#x2022&#x2022&#x2022&#x2022&#x2022&#x2022&#x2022&#x2022"><br>
+            <p><em>Available Meeting Days:</em></p>
+            <input type="checkbox" id="mon" name="mon">
+            <label for="mon">Monday</label>
+            <input type="checkbox" id="tue" name="tue">
+            <label for="tue">Tuesday</label>
+            <input type="checkbox" id="wed" name="wed">
+            <label for="wed">Wednesday</label>
+            <input type="checkbox" id="thu" name="thu">
+            <label for="thu">Thursday</label>
+            <input type="checkbox" id="fri" name="fri">
+            <label for="fri">Friday</label>
+            <input type="checkbox" id="sat" name="sat">
+            <label for="sat">Saturday</label>
+            <input type="checkbox" id="sun" name="sun">
+            <label for="sun">Sunday</label><br><br>
+            <label for="time"><em>Available Time:</em></label>
+            <select id="time" name="time">
+                <option value="morning">Morning (08:00-12:00)</option>
+                <option value="afternoon">Afternoon (12:00-16:00)</option>
+                <option value="evening">Evening (16:00-20:00)</option>
+                <option value="night">Night (20:00-24:00)</option>
+            </select><br><br>
+            <em>Currently working on new website?</em>
+            <input type="radio" id="y">
+            <label for="y">Yes</label>
+            <input type="radio" id="n">
+            <label for="n">No</label><br><br>
+            <textarea name="comments" placeholder="Enter your comments here..."></textarea><br><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+        <footer class="desktop-label">
+            Desktop Version ®
+        </footer>
+        <footer class="mobile-label">
+            Mobile Version ®
+        </footer>
+    </body>
+</html>
+
+<!--Created by Ethan Ali-->
