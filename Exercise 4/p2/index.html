@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <link rel="stylesheet" href="styles.css">
+        <title>A Day in the Woods: Info</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+        </style>
+    </head>
+    <body class="page centered">
+        <p class="bigheading">A Day in the Woods</p>
+        <hr>
+        <p class="desc">You're invited to A Day in The Woods, where incoming Grade 8 students get a complete tour of The Woodlands. You get to experience three high school classes, as well as watch a production of the musical Beauty and The Beast by the Woodlands Drama Club. Register now!</p>
+        <img src="lecture_hall.png" class="img_1"><br>
+        <img src="beauty_and_the_beast.png" class="img_2">
+        <hr>
+        <p class="subheading bold">Info</p>
+        <div class="table-container">
+            <table>
+                <tr class="infotext bold">
+                    <th>Location</th>
+                    <th>Date & Time</th>
+                    <th>Who's invited?</th>
+                </tr>
+                <tr class="infotext">
+                    <td class="column">Woodlands SS - 3225 Erindale Station Road, Mississauga, ON</td>
+                    <td class="column">December 4th, 2024 from 9:00 AM to 3:00 PM</td>
+                    <td class="column">Any Grade 8 students considering attending The Woodlands next year!</td>
+                </tr>
+            </table>
+        </div>
+        <p class="subheading bold">Register</p>
+        <form>
+            <p class="formheading">Personal Info</p>
+            <label for="fname">First Name:</label>
+            <input class="regfont" type="text" id="fname" name="fname" placeholder="John" required><br><br>
+            <label for="lname">Last Name:</label>
+            <input class="regfont" type="text" id="lname" name="lname" placeholder="Doe" required><br><br>
+            <label for="sn">Student Number:</label>
+            <input class="regfont" type="number" id="sn" name="sn" minlength="6" required><br><br>
+            
+            <p class="formheading">Preferred Classes</p>
+            <p class="formdesc">You will attend three classes during the event. Please choose five in case we may have to place you in a backup.</p>
+            <input type="checkbox" id="c1" name="c1" value="Automotive Technology">
+            <label for="c1">Automotive Technology</label><br>
+            <input type="checkbox" id="c2" name="c2" value="Manufacturing Technology">
+            <label for="c2">Manufacturing Technology</label><br>
+            <input type="checkbox" id="c3" name="c3" value="Technology">
+            <label for="c3">Technology</label><br>
+            <input type="checkbox" id="c4" name="c4" value="Business">
+            <label for="c4">Business</label><br>
+            <input type="checkbox" id="c5" name="c5" value="Mathematics">
+            <label for="c5">Mathematics</label><br>
+            <input type="checkbox" id="c6" name="c6" value="Computer Science">
+            <label for="c6">Computer Science</label><br>
+            <input type="checkbox" id="c7" name="c7" value="Biology">
+            <label for="c7">Biology</label><br>
+            <input type="checkbox" id="c8" name="c8" value="Physics">
+            <label for="c8">Physics</label><br>
+            <input type="checkbox" id="c9" name="c9" value="Chemistry">
+            <label for="c9">Chemistry</label><br>
+            <input type="checkbox" id="c10" name="c10" value="Geography">
+            <label for="c10">Geography</label><br>
+            <input type="checkbox" id="c11" name="c11" value="Visual Art">
+            <label for="c11">Visual Art</label><br>
+            <input type="checkbox" id="c12" name="c12" value="Family Studies">
+            <label for="c12">Family Studies</label><br>
+            <input type="checkbox" id="c13" name="c13" value="Personal Fitness">
+            <label for="c13">Personal Fitness</label><br>
+
+            <div class="buttonarea">
+                <input class="submission" type="submit">
+            </div>
+        </form>
+        <p class="subheading bold">Contact us</p>
+        <p class="infotext">
+            Email: <a href="mailto:woodlands.ss@peelsb.com">woodlands.ss@peelsb.com</a><br><br>
+            Phone: (905) - 279 - 0575<br><br>
+            Instagram: <a href="https://www.instagram.com/guidewoodlands/">Woods Student Services</a>
+        </p>
+    </body>
+</html>
