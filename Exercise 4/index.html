@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script>
+            function scrollToSection(sectionId, offset) {
+                const element = document.getElementById(sectionId);
+                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = elementPosition - offset;
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+        </script>
+        <style>
+            @media screen and (max-width: 767px) { /* Mobile */
+                #mobile-footer {
+                    display: block;
+                }
+                
+                #desktop-footer {
+                    display: none;
+                }
+            }
+
+            @media screen and (min-width: 768px) { /* Desktop */
+                #mobile-footer {
+                    display: none;
+                }
+
+                #desktop-footer {
+                    display: block;
+                }
+            }
+        </style>
+        <title>Exercise 4 by Ethan Ali</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#top"><img src="assets/building-u-logo.jpg" alt="Building-U logo" width="69px" height="69px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsible">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#top">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="scrollToSection('about', 125)">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="scrollToSection('projects', 125)">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="scrollToSection('contact', 125)">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="bg-image" style="background-image: url('assets/pxfuel.jpg');">
+            <div class="px-4 py-5 my-5 text-center text-white">
+                <h1 class="display-5 fw-bold" style="padding: 30px;">My Building-U Projects Page</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">
+                        Welcome to my webpage detailing some of the projects I made in Building-U. You can discover more of my work on GitHub by clicking the button below.
+                    </p>
+                    <a href="https://github.com/EthanA887"><button class="btn btn-primary btn-lg">See more</button></a>
+                </div>
+            </div>
+            <div style="padding-bottom: 50px;" class="container text-center" id="about">
+                <div class="row">
+                    <div class="col-sm">
+                        <h2 class="text-white text-start">About Me</h2>
+                        <p class="mb-4 text-white text-start">
+                            Hello! My name is Ethan, and I am currently an intern at Building-U. Coding is one of my passions, and I have experience in Python, HTML, CSS, and C.<br><br>
+                            I am eager to work on new projects and develop my skills. My main area of interest is machine learning. Through this exercise, I will demonstrate some basic Bootstrap features. 
+                        </p>
+                    </div>
+                    <div class="col-sm">
+                        <img style="border-radius: 50%;" src="assets/p2.png" alt="Atlas and P-body">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white" id="projects">
+                <h2 class="p-5 text-center">My Building-U Portfolio</h2>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="assets/HTML5_logo_and_wordmark.svg.png" alt="HTML Logo" width="180px">
+                            <h5 class="mt-4 text-start fw-bold">Project 1: HTML</h5>
+                            <p class="text-start lead">Project 1 showcases my HTML skills. It's a webpage involving HTML with table and static form components. Click the button below to see the project.</p>
+                            <a href="p1/index.html"><button class="btn btn-primary bg-danger border border-0 mb-5">Learn more</button></a>
+                        </div>
+                        <div class="col-sm">
+                            <img src="assets/CSS-Logo.png" alt="CSS Logo" width="180px">
+                            <h5 class="mt-4 text-start fw-bold">Project 2: CSS</h5>
+                            <p class="text-start lead">Project 2 showcases my CSS skills. It's a stylized webpage for an event done using HTML and CSS with custom components. Click the button below to see the project.</p>
+                            <a href="p2/index.html"><button class="btn btn-primary bg-primary border border-0 mb-5">Learn more</button></a>
+                        </div>
+                        <div class="col-sm">
+                            <img src="assets/JavaScript-Logo.png" alt="JavaScript Logo" width="180px">
+                            <h5 class="mt-4 text-start fw-bold">Project 3: Advanced CSS</h5>
+                            <p class="text-start lead">Project 3 showcases my advanced CSS skills. It's a responsive webpage (Desktop & Mobile) from Project 1. Click the button below to see the project.</p>
+                            <a href="p3/index.html"><button class="btn btn-primary bg-warning border border-0 mb-5">Learn more</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
+                <h2 style="padding-left: 15vw; padding-top: 50px;" class="text-start text-white">Contact Me</h2>
+                <form style="padding-left: 15vw; padding-right: 40vw;" class="text-white">
+                    <div class="form-group pb-3">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="John Doe">
+                    </div>
+                    <div class="form-group pb-3">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email" placeholder="j_doe@fakemail.com">
+                    </div>
+                    <div class="form-group pb-3">
+                        <label for="message">Message</label>
+                        <textarea type="text" rows="4" class="form-control" id="message" placeholder="Enter your comments here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary bg-success border border-0 mb-5">Submit</button>
+                </form>
+            </div>
+        </div>
+        <footer class="bg-white" id="mobile-footer">
+            <div class="p-5" style="display: flex; justify-content: space-between;">
+                <div style="padding-left: 5vw; text-align: left;"><p>&copy; 2024 Ethan Ali</p></div>
+                <div style="padding-right: 5vw; text-align: right;"><p>Mobile Version&reg;</p></div>
+            </div>
+        </footer>
+        <footer class="bg-white" id="desktop-footer">
+            <div class="p-5" style="display: flex; justify-content: space-between;">
+                <div style="padding-left: 5vw; text-align: left;"><p>&copy; 2024 Ethan Ali</p></div>
+                <div style="padding-right: 5vw; text-align: right;"><p>Desktop Version&reg;</p></div>
+            </div>
+        </footer>
+    </body>
+</html>
