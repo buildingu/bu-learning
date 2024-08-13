@@ -1,6 +1,7 @@
 /* Background of the desktop version */
 body {
-    background-image: url(StuffNeeded/background-desktop.jpg)
+    background-image: url(StuffNeeded/background-desktop.jpg);
+    text-align: center; 
 }
 .ThisIsAContainer {
     margin-left: 0px;
@@ -11,7 +12,84 @@ body {
     border-right: none;
     width: 100%;
     padding: 20px;
+    padding-top: 0px;
     padding-bottom: 50px;
     box-sizing: border-box;
 
+}
+h1 {
+    color:white;
+}
+h2 {
+    color: white; 
+    font-size: 30px;
+}
+h3 {
+    color: white;
+    font-size: 20px;
+}
+table {
+    border-color: goldenrod; 
+    border-radius: 4px;
+    background-color: #3f5661;
+    text-align: center;
+    margin: 0 auto;
+}
+th {
+    font-size:20px; 
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center; 
+    color: white; 
+    background-color:#093145;
+    font-size:20px; 
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px solid lightgray;
+}
+td {
+    background-color: #3f5661; 
+    color: goldenrod;
+    font-size: 30px;
+    border: 5px solid lightgray;
+}
+form {
+    background-color: gainsboro;
+    border: 5px solid grey;
+    width: 40%;
+    margin: 0 auto;
+}
+label {
+    color: black; 
+    font-size: 20px;
+}
+/* Mobile version */
+@media only screen and (max-width: 600px) {
+    form {
+        width: 60%; /* Wider form on mobile */
+    }
+    body {
+        background-image: url(StuffNeeded/background-mobile.jpg);
+        font-size: 8px; 
+
+    }
+    .ThisIsAContainer {
+        padding: 10px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        width: 40%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+    table {
+        float: left;
+    }
+    table, th, td {
+        font-size: 16px;
+        /* display: block; */
+    }
+    .F_LName {
+        float: left;
+        flex-direction: column; /* Stack fields vertically on small screens */
+    }
 }
