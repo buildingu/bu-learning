@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 by Sandesh Iyer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Exercise 3 by Sandesh Iyer</h1>
+        <h4>Date submitted: 08/14/2024</h4>
+    </header>
+
+    <hr>
+
+    <section class="fun-facts">
+        <h4>Fun Facts About Me:</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Favorite Movie</th>
+                    <th>Favorite Song</th>
+                    <th>Favorite Video</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sandesh</td>
+                    <td>Iyer</td>
+                    <td><a href="https://www.youtube.com/watch?v=JMiFsFQcFLE" target="_blank">
+                        <img src="c:\Users\sande_6qx0ngn\.vscode\download.jpeg" alt="Rush Hour" width="200" height="150">
+                    </a></td>
+                    <td>
+                        <label>Click Play Button to Play Music:</label>
+                        <br>
+                        <audio controls>
+                            <source src="c:\Users\sande_6qx0ngn\Downloads\Travis_Scott_ft._Swae_Lee_Chief_Keef_-_Nightcrawler_Instrumental_(Hydr0.org).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <iframe width="300" height="150" src="https://www.youtube.com/watch?v=jfNUWOpPVr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <section class="form-section">
+        <h4>Enter Your Details Below:</h4>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+
+            <label>Available Meeting Days</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="monday"><label for="monday">Monday</label>
+                <input type="checkbox" id="tuesday"><label for="tuesday">Tuesday</label>
+                <input type="checkbox" id="wednesday"><label for="wednesday">Wednesday</label>
+                <input type="checkbox" id="thursday"><label for="thursday">Thursday</label>
+                <input type="checkbox" id="friday"><label for="friday">Friday</label>
+                <input type="checkbox" id="saturday"><label for="saturday">Saturday</label>
+                <input type="checkbox" id="sunday"><label for="sunday">Sunday</label>
+            </div>
+
+            <label for="time">Available Time</label>
+            <select id="time">
+                <option>Morning (8am to 12pm)</option>
+                <option>Afternoon (12pm to 5pm)</option>
+                <option>Evening (5pm to 11pm)</option>
+            </select>
+
+            <label>Currently Working On New Website?</label>
+            <div class="radio-group">
+                <input type="radio" id="yes" name="newWebsite"><label for="yes">Yes</label>
+                <input type="radio" id="no" name="newWebsite"><label for="no">No</label>
+            </div>
+
+            <label for="comments">Additional Comments</label>
+            <textarea id="comments" cols="30" rows="4" placeholder="Enter any additional information here"></textarea>
+
+            <div class="form-buttons">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-bottom: 2px solid #ccc;
+}
+
+h1 {
+    margin: 0;
+}
+
+h4 {
+    margin: 5px 0;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.fun-facts, .form-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+thead th {
+    background-color: #f2f2f2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkbox-group input[type="checkbox"], .radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.checkbox-group label, .radio-group label {
+    margin-right: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    table, th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding: 10px;
+        font-weight: bold;
+        background-color: #f9f9f9;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+}
