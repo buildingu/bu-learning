@@ -1,8 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 1 by Abhi Kaakarla</title><br/>
-    <t3>Date Submitted:8/16<t3>
+    <title>Exercise 1</title>
+</head>
+<body>
+    <center>
+        <h1>Exercise 1 by Abhi Kaakarla</h1>
+        <h3>Date Submitted: 08/16/2024</h3>
+        
+        <table border="4" style="background-color:rgba(30, 120, 255, 0.882);">
+            <thead style="background-color:rgba(30, 120, 255, 0.882);">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Favorite Movie Image</th>
+                    <th>Favorite Song</th>
+                    <th>Favorite Video</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><center><b>Abhi</b></center></td>
+                    <td><center><b>Kaakarla</b></center></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg"></td>
+                    <td><audio controls><source src="https://cdn3.justnaija.me/uploads/music/2024/06/Don-Toliver-GLOCK-(JustNaija.com).mp3" type="audio/mpeg"></audio></td>
+                    <td><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Mxv5h-RZWVs?si=och__UWLOxJ5Mn5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>Enter your details below:</h4>
+        <form>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" placeholder="Enter your full name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email address"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password"><br>
+
+            <h4>Available Meeting Days:</h4>
+            <input type="checkbox" value="Monday">
+            <label for="monday">Monday</label>
+            <input type="checkbox" value="Tuesday">
+            <label for="monday">Tuesday</label>
+            <input type="checkbox" value="Wednesday">
+            <label for="monday">Wednesday</label>
+            <input type="checkbox" value="Thursday">
+            <label for="monday">Thursday</label>
+            <input type="checkbox" value="Friday">
+            <label for="monday">Friday</label>
+            <input type="checkbox" value="Saturday">
+            <label for="monday">Saturday</label>
+            <input type="checkbox" value="Sunday">
+            <label for="monday">Sunday</label><br><br>
+
+            <label for="available-time">Available Time:</label>
+            <select id="available-time">
+            <option value="morning">Morning(8 am to 12 pm)</option>
+            <option value="afternoon">Afternoon(12 pm to 4 pm)</option>
+            <option value="evening">Evening(4 pm to 8 pm)</option>
+            </select><br><br>
+
+            <label>Working on a New Website?</label>
+            <input type="radio" id="yes" name="website" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="website" value="no">
+            <label for="no">No</label><br><br>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" placeholder="Add any comments or additional information"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </center>
+</body>
+</html>
+
     
