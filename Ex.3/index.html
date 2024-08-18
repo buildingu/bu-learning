@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--I used internal CSS because there is some issue on my computer with live server --> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <body style="text-align:center;margin:auto;">
+
+    <!-- Title -->
+    <title>Exercise 3</title>
+</head>
+
+
+<!-- CSS Style -->
+<style>
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(assets/background-desktop.jpg);
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+form{
+    background-color: #555555;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input[type="text"], input[type="email"], input[type="password"], select, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+/* Mobile Version */
+
+@media (max-width: 500px) {}
+body {
+    background-image: url(assets/background-mobile.jpg);
+    background-size: cover;
+}
+table{
+        width: 100%;
+    }
+table {
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+}
+    audio, video {
+        max-width: 100%;
+    }
+
+</style>
+<!-- CSS Style ends here -->
+
+
+<!-- Heading Starts Here -->
+<body>
+    <h1> Exercise 3 by Nusrat Alam </h1><br>
+    <h3> Date submitted: 8/17/2024 </h3>
+    <hr></hr>
+    <h2> Fun facts about me: </h2>
+<!-- Heading Ends Here -->
+
+
+<!-- Table Starts Here -->
+    <table border="10" cellspacing="10" cellpadding="5" width="1450" align="center" class="table1">
+        <tr >
+         <th >First Name</th>
+         <th >Last Name</th>
+         <th >Favorite Movie</th>
+         <th >Favorite Song</th>
+         <th >Favorite Video</th>
+        </tr>
+        <tr >
+                <div class="table-header">
+                </div>
+            <td > <strong>Nusrat</strong> </td>
+            <td > <strong>Alam</strong> </td>
+            <td > <a
+            <td><img src="assets/interstellar-poster1-aef2b365e9ed4f0bba04052b9ec7a7b2.jpg" width="220" height="260" </td>
+            <td> <audio controls> 
+                <source src="assets/rick_roll.mp3" type="audio/mp3"/>
+                </audio> </td>
+            <td > <video width="320" height="240" controls> 
+                <source src="assets/marvel_studios.mp4" type="video/mp4"/>
+            </video>
+        </td>
+        </tr>
+       </table>
+<!-- Table Ends Here -->
+
+<!-- Form Starts Here -->
+    <center>
+    <h2>Enter your details below:</h2>
+    <form>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe">
+        
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="jdoe@fakemail.com">
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="•••••••">
+        <label>Password</label>
+            <span class="password-toggle-icon"><i class="fas fa-eye"></i></span>
+        
+        <label>Available Meeting Days:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="monday" name="meeting-days" value="Monday">
+            <label for="monday">Monday</label>
+            
+            <input type="checkbox" id="tuesday" name="meeting-days" value="Tuesday">
+            <label for="tuesday">Tuesday</label>
+            
+            <input type="checkbox" id="wednesday" name="meeting-days" value="Wednesday">
+            <label for="wednesday">Wednesday</label>
+            
+            <input type="checkbox" id="thursday" name="meeting-days" value="Thursday">
+            <label for="thursday">Thursday</label>
+            
+            <input type="checkbox" id="friday" name="meeting-days" value="Friday">
+            <label for="friday">Friday</label>
+            
+            <input type="checkbox" id="saturday" name="meeting-days" value="Saturday">
+            <label for="saturday">Saturday</label>
+            
+            <input type="checkbox" id="sunday" name="meeting-days" value="Sunday">
+            <label for="sunday">Sunday</label>
+        </div>
+
+        <label for="time">Available Time:</label>
+        <select id="time" name="time">
+            <option value="morning">Morning (8am to 12pm)</option>
+            <option value="afternoon">Afternoon (12pm to 5pm)</option>
+            <option value="evening">Evening (5pm to 8pm)</option>
+        </select>
+        
+        <label>Currently working on a new website?</label>
+        <div class="radio-group">
+            <input type="radio" id="yes" name="working" value="yes">
+            <label for="yes">Yes</label>
+            
+            <input type="radio" id="no" name="working" value="no">
+            <label for="no">No</label>
+        </div>
+
+        <label for="comments">If yes, please enter which page(s) you are working on:</label>
+        <textarea id="comments" name="comments"></textarea>
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </center>
+    </form>
+    <!-- Form Ends Here -->
+
+
+</body>
+</html>
