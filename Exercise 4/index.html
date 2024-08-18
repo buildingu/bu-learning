@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildingU Learning Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">BuildingU</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Welcome to My BuildingU Projects Page</h1>
+                    <p class="lead">Discover my work on GitHub.</p>
+                    <a href="https://github.com/r-shanker07" class="btn btn-primary" target="_blank">View My Work</a>    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About Me</h2>
+                    <p>Hey, I'm Ranbir Shanker, and I'm passionate about web development and coding. I volunteer my skills to build amazing websites and write efficient code that brings ideas to life.</p>
+                    <p>With several years of experience in the field, I've had the privilege of working on a wide range of projects, from creating responsive and user- friendly websites to developing custom web applications that solve complex problems.</p>
+                    <p>My journey in web development has allowed me to explore various technologies and frameworks, and Bootstrap is one of my favorites. It's a fantastic tool for creating sleek and responsive web designs, which is why I'm excited to share my knowledge with you through this exercise.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDWPfVYXZt6jGVfEY4uwDNimF4-hEE8LLjlUUolIgi247Q2bZy" alt="Profile Image" class="mx-auto d-block rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="port portfolio-section py-5">
+        <div class="container">
+            <h2 style="color: black;">My Portfolio</h2>
+            <div class="row">
+                <!-- Project Card -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://cdn-icons-png.flaticon.com/256/919/919827.png" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1: HTML</h5>
+                            <p class="card-text">Project 1 showcases my HTML skills. It's a webpage involving HTML with table and static form components. Click learn more to see more information.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projectModal1">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proj 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2: CSS</h5>
+                            <p class="card-text">Project 2 showcases my CSS skills. It's a stylized webpage for an event done using HTML and CSS with custom components. Click learn more to see more information.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projectModal2">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proj 3-->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-javascript-logo-icon-download-in-svg-png-gif-file-formats--html-programming-language-coding-logos-icons-1720087.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3: Advanced CSS</h5>
+                            <p class="card-text">Project 3 showcases my advanced CSS skills. It's a responsive webpage (Desktop & Mobile) from Project 1. Click learn more to see more information.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projectModal3">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel1">Project 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Project 1 showcases my HTML skills. It's a webpage involving HTML with table and static form components.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel1">Project 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Project 2 showcases my CSS skills. It's a stylized webpage for an event done using HTML and CSS with custom components.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel1">Project 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Project 3 showcases my advanced CSS skills. It's a responsive webpage (Desktop & Mobile) from Project 1.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

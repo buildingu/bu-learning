@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    background: url('https://cdn.pixabay.com/photo/2016/06/02/02/25/background-1430099_1280.png') center center/cover;
+    color: white;
+    padding: 100px 0;
+}
+
+.about-section, .portfolio-section, .contact-section {
+    padding: 50px 0;
+    background-color: whitesmoke;
+}
+
+h1, h2 {
+    color: white;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.modal-title {
+    font-size: 1.5em;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.port{
+    color: black;
+}
+
+.contact-section{
+    background: url('https://cdn.pixabay.com/photo/2016/06/02/02/25/background-1430099_1280.png') no-repeat center center/cover;
+}
+
+.form-group{
+    color: white;
+}
