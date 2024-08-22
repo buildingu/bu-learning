@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    <style>
+        body {
+            background: rgb(50,93,209);
+            background: radial-gradient(circle, rgba(50,93,209,1) 23%, rgba(48,50,54,1) 92%);
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 20px;
+            height: 100vh;
+        }
+        .flyer {
+            border: 20px solid black;
+            padding: 20px 200px;
+            margin: 20px;
+            width: 300px;
+            height: 750px;
+            background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/10/American-football-ball-cool-wallpapers.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative; /* Add this line */
+        }
+        h1 {
+            display: inline-block;
+            vertical-align: center;
+            font-size: 42px;
+            background: linear-gradient(to top, rgb(0, 100, 255), rgb(43, 43, 37), white);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        p {
+            color: white;
+            background: linear-gradient(to top, rgb(0, 100, 255), rgb(43, 43, 37), white);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .team-names {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .event-details {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logos {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+        }
+        .logos img {
+            width: 175px;
+            height: 175px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flyer">
+        <h1>CB South Season Opener</h1>
+        <p class="team-names">CB South vs. CB West</p>
+        <p class="event-details">Date: September 15, 2024</p>
+        <p class="event-details">Time: 7:00 PM</p>
+        <p class="event-details" style="color:rgba(17, 17, 17, 0.645)">Location: CB South High School, 1100 Folly Rd, Warrington, PA 18976</p>
+        <p style="color: rgb(255, 255, 255); font-size: 20px; font-weight: bold;">Join us for an exciting match between CB South and CB West!</p>
+        <div class="logos">
+            <img src="https://smithprints.com/wp-content/uploads/2017/03/CB-South.png">
+            <img style="width: 125px; height: 125px;;" src="https://www.freepnglogos.com/uploads/vs-png/vs-gaming-league-masters-season-logo-transparent-16.png">
+            <img src="http://schoolassets.s3.amazonaws.com/logos/1749/1749.png">
