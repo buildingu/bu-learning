@@ -54,7 +54,17 @@ td {
 form {
     background-color: gainsboro;
     border: 5px solid grey;
-    width: 40%;
+    width: 500px;
+    margin: 0 auto;
+}
+.DaysOption {
+    text-align: center;
+}
+#comments {
+    width: 300px
+}
+label, input {
+    width: 60%;
     margin: 0 auto;
 }
 label {
@@ -64,7 +74,7 @@ label {
 /* Mobile version */
 @media only screen and (max-width: 600px) {
     form {
-        width: 60%; /* Wider form on mobile */
+        width: 70%; /* Wider form on mobile */
     }
     body {
         background-image: url(StuffNeeded/background-mobile.jpg);
@@ -76,6 +86,9 @@ label {
         border-top: 1px solid white;
         border-bottom: 1px solid white;
         width: 40%;
+    }
+    #comments {
+        width: 70%
     }
 
     h2 {
