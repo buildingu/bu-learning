@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <link rel="stylesheet" href="exercise3.css">
+</head>
+<body>
+        <h1>Exercise 3 by John Doe</h1>
+        <p>Date: 8/3/2024</p>
+        <hr>
+        <h4>Fun Facts about me:</h4>
+
+        <table id="desktop-table" cellpadding="10px" cellspacing="10px">
+            <tr id="first-row">
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Favorite Movie</th>
+                <th>Favorite Song</th>
+                <th>Favorite Video</th>
+            </tr>
+
+            <tr id="second-row">
+                <td>John</td>
+                <td>Doe</td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/The_Map_of_Tiny_Perfect_Things">
+                        <img src="assets/raiders-movie.jpg" alt="Raiders Movie Poster">
+                    </a>
+                </td>
+                <td>
+                    <p> Click play button to play a sample: </p>
+                    <audio controls>
+                        <source src="assets/rick_roll.mp3" type="audio/mpeg" alt="sample of It Is What It Is by Jenna Raine">
+                    </audio>
+                </td>
+                <td>
+                    <video controls>
+                        <source src="assets/marvel_studios.mp4" type="video/mp4" alt="sample of a video">
+                    </video>
+                </td>
+            </tr>
+        </table>
+
+        <table id="mobile-table" cellpadding="10px" cellspacing="10px">
+            <tr class="heading-mobile">
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+
+            <tr class="content-mobile">
+                <td class="content-mobile" >John</td>
+                
+                <td class="content-mobile" >Doe</td>
+                
+            </tr>
+
+
+            <tr class="heading-mobile">
+                <th colspan="2">Favorite Movie</th>
+            </tr>
+
+            <tr class="content-mobile">
+                <td colspan="2">
+                    <a href="https://en.wikipedia.org/wiki/The_Map_of_Tiny_Perfect_Things">
+                        <img src="assets/raiders-movie.jpg" alt="Raiders Movie Poster">
+                    </a>
+                </td>
+            </tr>
+
+            <tr class="heading-mobile" colspan="2">
+                <th colspan="2">Favorite Song</th>
+            </tr>
+
+            <tr class="content-mobile">
+                <td colspan="2">
+                    <p> Click play button to play a sample: </p>
+                    <audio controls>
+                        <source src="assets/rick_roll.mp3" type="audio/mpeg" alt="sample of It Is What It Is by Jenna Raine">
+                    </audio>
+                </td>
+            </tr>
+
+            <tr class="heading-mobile">
+                <th colspan="2">Favorite Video</th>
+            </tr>
+
+            <tr class="content-mobile">
+                <td colspan="2">
+                    <video controls>
+                        <source src="assets/marvel_studios.mp4" type="video/mp4" alt="sample of a video">
+                    </video>
+                </td>
+            </tr>
+
+        </table>
+
+
+        <hr>
+        <h4 id="form-title">Enter your details below:</h4>
+        <form>
+            <div id="first-three-q">
+            <label>Full Name</label>
+            <br>
+                <input type="text" placeholder="John Doe"> 
+            <br>
+            <br>
+            <label>Email Address</label>
+            <br>
+                <input type="email" placeholder="johndoe@gmail.com"> 
+            <br>
+            <br>
+            <label>Password</label>
+            <br>
+                <input type="password" placeholder="********"> 
+
+            </div>
+            <br>
+            <br>
+            <label>Available Meeting Days</label> 
+            <br>
+            <div>
+                <input type="checkbox"> Monday
+                <input type="checkbox"> Tuesday
+                <input type="checkbox"> Wednesday
+                <input type="checkbox"> Thursday
+                <input type="checkbox"> Friday
+                <input type="checkbox"> Saturday
+                <input type="checkbox"> Sunday
+            </div>
+            <br>
+            <label>Available Time</label> 
+            <br>
+                <select id="time-select">
+                    <option>Morning - 7AM to 12PM</option>
+                    <option>Afternoon - 12PM to 5PM</option>
+                    <option>Evening - 5PM to 9PM</option>
+                    <option>Night - 9PM to 12AM</option>
+                </select>
+            <br>
+            <br>
+            <label>Currenly working on a new website?</label>
+            <br>
+            <div>
+                <input checked type="radio"> Yes
+                <input type="radio"> No 
+            </div>
+            <label>If so please enter what you are currenly working on.</label>
+            <br>
+            <input id="additional-info" placeholder="Enter your comments here">
+            <br>
+            <br>
+            <input type="button" value="Submit" id="submit">
+            <input type="button" value="Reset" id="reset">
+        </form>
+</body>
+
+</html>

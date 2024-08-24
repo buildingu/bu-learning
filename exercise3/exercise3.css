@@ -1,0 +1,180 @@
+body {
+    text-align: center;
+    align-items: center;
+    background-image: url(assets/background-desktop.jpg);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#desktop-table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color:slategray;
+    width: 90%;
+    table-layout: auto;
+}
+
+#mobile-table{
+    visibility: collapse;
+}
+
+th {
+    text-align: center;
+}
+
+#first-row {
+    background-color: rgb(63, 60, 79);
+    font-size: 12px;
+}
+
+#second-row {
+    background-color: darkslategray;
+}
+
+form {
+    color: black;
+    background-color:lightgray;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-style: italic;
+    font-weight: bold;
+    font-size: small;
+    outline-style: solid;
+    outline-color: darkgray;
+    outline-width: 5px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+video {
+    width: 400px;
+}
+
+audio {
+    height: 50px;
+}
+
+div {
+    width: 300px;
+    font-style: normal;
+}
+
+#submit {
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    border-color: green;
+}
+
+#reset {
+    color: white;
+    background-color: red;    
+    border-radius: 5px;
+    border-color: red;
+}
+
+@media screen and (max-width: 600px){
+
+    body {
+        text-align: center;
+        align-items: center;
+        background-image: url(assets/background-mobile.jpg);
+        color: white;
+        font-family: cursive;
+    }
+
+    h4 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+
+    audio {
+        width: 170px;
+    }
+
+    video {
+        width: 200px;
+        height: 150px;
+    }
+
+    form{
+        width: 240px;
+        outline-color: rgb(122, 122, 122);
+        outline-width: 10px;
+        margin-top: 0px;
+    }
+
+    div {
+        width: 220px;
+        font-style: normal;
+    }
+
+    #additional-info {
+        width: 170px;
+        height: 50px;
+        text-align: center;
+    }
+    
+    #submit {
+        color: white;
+        background-color: rgb(79, 173, 79);
+        border-radius: 5px;
+        border-color: rgb(79, 173, 79);
+        width: 180px;
+        margin-bottom: 10px;
+        height: 30px;
+    }
+    
+    #reset {
+        color: white;
+        background-color: lightred;    
+        border-radius: 5px;
+        border-color: lightred;
+        width: 180px;
+        height: 30px;
+    }
+
+    #time-select{
+        height: 30px;
+        font-size: 10px;
+        text-align: center;
+        width: 170px;
+    }
+
+    #first-three-q input{
+        text-align: center;
+    }
+
+    #desktop-table {
+        visibility: collapse;
+    }
+    
+    #mobile-table{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-color:slategray;
+        width: 60%;
+        table-layout: fixed;
+        visibility: visible;
+    }
+
+    .heading-mobile {
+        background-color:rgb(165, 73, 34);
+        font-size: 12px;
+    }
+    
+    .content-mobile  {
+        background-color: rgba(118, 33, 20, 0.767);
+    }
+}
+
