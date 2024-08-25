@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Exercise</title>
+</head>
+
+<body>
+    <center>
+        <!-- 1. Heading -->
+        <h1>Exercise 1</h1>
+        <h2>Date of Submission: August 24, 2024</h2>
+
+        <!-- 2. Table -->
+        <h3>Favorite Things Table</h3>
+        <table border="4" cellpadding="10" align="center">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Favorite Movie Image</th>
+                <th>Favorite Music Audio Sample</th>
+                <th>Favorite Video Sample</th>
+            </tr>
+            <tr>
+                <td><b>Chahek</b></td>
+                <td><b>Gupta</b></td>
+                <td><img src="https://m.media-amazon.com/images/I/81uF359uZyL.jpg" width="100" alt="Image"></td>
+                <td>
+                    <audio controls>
+                        <source
+                            src="c:\Users\sande_6qx0ngn\Downloads\Travis_Scott_ft._Swae_Lee_Chief_Keef_-_Nightcrawler_Instrumental_(Hydr0.org).mp3"
+                            type="audio/mpeg">
+                    </audio>
+                </td>
+                <td>
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/VWAhbaQFzRw"
+                        title="Weekend Update: Marcello Hernández on Depression in Men - SNL" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </td>
+            </tr>
+        </table>
+
+        <!-- 3. Form -->
+        <h2>Personal Information Form</h2>
+        <form align="center">
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email address"><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+
+            <label>Available Days:</label><br>
+            <input type="checkbox" id="monday" name="days" value="Monday">
+            <label for="monday">Monday</label><br>
+            <input type="checkbox" id="tuesday" name="days" value="Tuesday">
+            <label for="tuesday">Tuesday</label><br>
+            <input type="checkbox" id="wednesday" name="days" value="Wednesday">
+            <label for="wednesday">Wednesday</label><br><br>
+            <input type="checkbox" id="thursday" name="days" value="Thursday">
+            <label for="thursday">Thursday</label><br><br>
+            <input type="checkbox" id="friday" name="days" value="Friday">
+            <label for="friday">Friday</label><br><br>
+            <input type="checkbox" id="saturday" name="days" value="Saturday">
+            <label for="saturday">Saturday</label><br><br>
+            <input type="checkbox" id="sunday" name="days" value="Sunday">
+            <label for="sunday">Sunday</label><br><br>
+
+            <label for="time">Available Time:</label><br>
+            <select id="time" name="time">
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+            </select><br><br>
+
+            <label>Working on a New Website?</label>
+            <input type="radio" id="yes" name="website" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="website" value="no">
+            <label for="no">No</label><br><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"
+                placeholder="Enter any additional comments"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </center>
+</body>
+
+</html>
