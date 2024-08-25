@@ -1,0 +1,179 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(Assets/background-desktop.jpg);
+    background-size: cover; 
+    background-position: center;
+}
+
+header {
+    margin: 20px 0;
+}
+
+h1, h5 {
+    margin: 10px 0;
+    color: white;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: grey;
+}
+
+th, td {
+    padding: 10px;
+    border: 2px solid rgb(13, 13, 13);
+    text-align: center;
+}
+
+
+.form-section {
+    margin-top: 20px;
+    background-color: rgb(196, 195, 193);
+    padding: 20px; 
+    box-sizing: border-box;
+    max-width: 500px; 
+    margin: 20px auto; 
+    border: 10px solid #ddd;
+}
+
+label, input, select, textarea {
+    display: block;
+    margin: 10px auto; 
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 80%; 
+    max-width: 400px; 
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.checkbox-group, .select-group, .radio-group {
+    margin-bottom: 20px;
+}
+
+.checkbox-group label, .radio-group label {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.checkbox-group input[type="checkbox"], .radio-group input[type="radio"] {
+    width: 16px;
+    height: 16px;
+}
+
+.select-group {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.select-group select {
+    display: inline-block;
+    font-size: 14px;
+    padding: 4px 8px;
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; 
+}
+
+input[type="reset"] {
+    background-color: #f44336; 
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    body {
+        background-image: url(Assets/background-mobile.jpg);
+    }
+
+    .form-section {
+        max-width: 390px; 
+        border: 10px solid #5c5a5a;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        
+    }
+    
+
+    .button-group {
+        display: block;
+        margin-top: 20px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        width: 100%;
+    }
+
+
+
+
+
+    thead {
+        display:none;
+    }
+
+    tbody, tr {
+        display: block;
+        width: 80%;
+        margin-bottom: 10px;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+    td, th {
+        display: block;
+        text-align: center;
+        border: 20px solid grey; /* Grey border */
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 0;
+        width: 100%; /* Full width for block display */
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        background-color: #580202;
+        margin-top: 0px;
+        border: 2px grey;
+    }
+
+    td{
+        background-color: #b73d3d;
+    }
+}

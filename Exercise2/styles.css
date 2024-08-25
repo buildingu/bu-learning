@@ -29,7 +29,7 @@ table {
     margin-top: 10px;
 }
 
-th, td {
+td {
     border: 3px solid #ddd;
     padding: 8px;
     text-align: left;
@@ -58,10 +58,3 @@ label, input, textarea, button {
     margin-bottom: 10px;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}

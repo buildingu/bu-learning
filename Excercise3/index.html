@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercise 1 by Deepti Rao</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Exercise 3 by Deepti Rao</h1>
+        <h5>Date submitted: 8/18/2024</h5>
+    </header>
+    
+    <hr>
+    
+    <section class="facts">
+        <h5><b>Fun facts about me:</b></h5>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Favorite Movie</th>
+                    <th>Favorite Song</th>
+                    <th>Favorite Video</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="First Name">Deepti</td>
+                    <td data-label="Last Name">Rao</td>
+                    <td data-label="Favorite Movie">
+                        <img src="Assets/insideout.jpg" alt="Inside Out Movie" width="100" height="100">
+                    </td>
+                    <td data-label="Favorite Song">
+                        <audio controls>
+                            <source src="Assets/rick_roll.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td data-label="Favorite Video">
+                        <video width="220" height="140" controls>
+                            <source src="Assets/marvel_studios.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <hr>
+    
+    <h5>Enter your details below:</h5>
+    <section class="form-section">
+        <form>
+            <label for="fullname"><i>Full Name:</i></label>
+            <input type="text" id="fullname" placeholder="John Doe">
+            
+            <label for="email"><i>Email Address:</i></label>
+            <input type="email" id="email" placeholder="jdoe@fakemail.com">
+            
+            <label for="password"><i>Password:</i></label>
+            <input type="password" id="password" placeholder="●●●●●">
+
+            <div class="checkbox-group">
+                <p><i>Available Meeting Days:</i></p>
+                <label><input type="checkbox" id="monday"> Monday</label>
+                <label><input type="checkbox" id="tuesday"> Tuesday</label>
+                <label><input type="checkbox" id="wednesday"> Wednesday</label>
+                <label><input type="checkbox" id="thursday"> Thursday</label>
+                <label><input type="checkbox" id="friday"> Friday</label>
+                <label><input type="checkbox" id="saturday"> Saturday</label>
+                <label><input type="checkbox" id="sunday"> Sunday</label>
+            </div>
+
+            <div class="select-group">
+                <p><i>Available Time:</i></p>
+                <select id="times" name="times">
+                    <option value="Morning (8am to 12pm)">Morning (8am to 12pm)</option>
+                    <option value="Afternoon (12pm to 5pm)">Afternoon (12pm to 5pm)</option>
+                    <option value="Evening (5pm to 12am)">Evening (5pm to 12am)</option>
+                </select>
+            </div>
+
+            <div class="checkbox-group">
+                <p><i>Currently working on a new website?</i></p>
+                <label><input type="checkbox" id="yes" name="website" value="yes" checked> Yes</label>
+                <label><input type="checkbox" id="no" name="website" value="no"> No</label>
+            </div>
+            
+            <label for="comments"><i>Comments:</i></label>
+            <textarea id="comments" name="comments" rows="2" cols="20" placeholder="Enter your comments here"></textarea>
+            
+            <div class="button-group">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
