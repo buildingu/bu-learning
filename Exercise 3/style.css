@@ -38,10 +38,23 @@
 
     td {
         background-color: #243A40;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        padding-left: 60px;
-        padding-right: 60px;
+        height: 250px;
+        padding-left: 40px;
+        padding-right: 40px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        vertical-align: middle;
+        display: flex;
+    }
+    tbody {
+        display: flex;
+        flex-direction: row;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -82,12 +95,14 @@
         background-color: #A83E0F;
         display: block;
         width: 100%;
+        padding: 10px;
     }
 
     td {
         background-color: #773E3D;
         display: block;
         width: 100%;
+        padding: 10px;
     }
     tr {
         display: flex;
@@ -103,6 +118,7 @@ th {
     font-family: 'Comic Neue';
     font-weight: 600;
     border: 6px solid #818288;
+    border-collapse: collapse;
     
 }
 
@@ -112,6 +128,7 @@ td {
     font-family: 'Comic Neue';
     font-weight: 500;
     border: 6px solid #818288;
+    border-collapse: collapse;
 }
 
 table {
