@@ -29,27 +29,32 @@ h3 {
     font-size: 20px;
 }
 table {
+    width: 375px;
+    height: 576px;
     border-color: goldenrod; 
     border-radius: 4px;
     background-color: #3f5661;
     text-align: center;
     margin: 0 auto;
+    table-layout: fixed;
+}
+th, td{
+    width: calc(100% / 2);
+    height: auto; 
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+    border: 5px solid lightgray;
 }
 th {
-    font-size:20px; 
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center; 
-    color: white; 
-    background-color:#093145;
-    font-size:20px; 
-    font-family: 'Times New Roman', Times, serif;
-    border: 5px solid lightgray;
+    width: 600px;
+    height: 50px;
+    background-color: #093145;
 }
 td {
-    background-color: #3f5661; 
+    background-color: #3f5661;
     color: goldenrod;
-    font-size: 30px;
-    border: 5px solid lightgray;
 }
 form {
     background-color: gainsboro;
@@ -71,18 +76,32 @@ label {
     color: black; 
     font-size: 20px;
 }
+.wholeTable {
+    display: flex;
+    gap: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+
+}
+#table2 {
+    padding-bottom: 0px;
+}
+
 /* Mobile version */
 @media only screen and (max-width: 600px) {
     form {
-        width: 70%; /* Wider form on mobile */
+        width: 100%; /* Wider form on mobile */
     }
     body {
         background-image: url(StuffNeeded/background-mobile.jpg);
-        font-size: 8px; 
 
     }
+    .wholetable {
+        display: block;
+    }
     .ThisIsAContainer {
-        padding: 10px;
+        padding: 0px;
         border-top: 1px solid white;
         border-bottom: 1px solid white;
         width: 40%;
@@ -95,14 +114,14 @@ label {
         font-size: 24px;
     }
     table {
-        float: left;
+        width: 50%;
+        margin-bottom: 0px;
+        height:auto;
+        /* float: left; */
     }
-    table, th, td {
+    th, td {
         font-size: 16px;
         /* display: block; */
     }
-    .F_LName {
-        float: left;
-        flex-direction: column; /* Stack fields vertically on small screens */
-    }
+    
 }

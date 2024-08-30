@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Exercise_3.css"
+    <link rel="stylesheet" href="Exercise_3.css">
     <title>Exercise 1: HTML Building-U</title>
 </head>
 <body>
@@ -15,44 +15,64 @@
         <h3>Favorite Things Table</h3>
 
         <!-- Table -->
+<div class="wholeTable">
+    <div id="table1">
         <table>
             <tr>
-                <div class="F_LName">
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                </div>
-                <th>Favorite Movie Image</th>
-                <th>Favorite Audio Sample</th>
-                <th>Favorite Video Sample</th>
-            </tr> <br>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr><br>
             <tr>
-                <div class="F_LName">
-                    <td>Julio</td>
-                    <td>Ruiz</td>
-                </div>
+                <td>Julio</td>
+                <td>Ruiz</td>
+            </tr><br>
+        </table></div>
+    <div id="table2">
+        <table>
+            <tr>
+                <th>Favorite Movie Image</th>
+            </tr><br>
+            <tr> 
                 <td>
                     <!-- Source from Files -->
                     <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.deviantart.com%2Fsmashupmashups%2Fart%2FPuss-in-Boots-The-Last-Wish-wallpaper-980928353&psig=AOvVaw3I2qgmCtPdk-qDl9Gmm_Hq&ust=1721195940469000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCMjOkdfwqocDFQAAAAAdAAAAABAJ">
                     <img src="../Exercise 1/Files/Puss in Boots The Last Wish.jpg" alt="Fav_Movie" width="300"></a></td>
+            <tr></tr>
+        </table></div>    
+    <div id="table3">
+        <table>
+            <tr>
+                <th>Favorite Audio Sample</th> 
+            </tr><br>
+            <tr>
                 <td>
-                    <!-- Source from Files -->
+                <!-- Source from Files -->
                     <audio controls>
                         <source src="../Exercise 1/Files/with great power comes great responsibility.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
                 </td>
+            </tr><br>
+        </table></div> 
+    <div id="table4">
+        <table>
+            <tr>
+                <th>Favorite Video Sample</th>
+            </tr><br>
+            <tr>
                 <td>
                     <!-- Source from youtube -->
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/cqGjhVJWtEg?si=q3Rjjyieabg6o7sX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </td>
-            </tr>
-        </table>
-    </div>
+            </tr><br>
+        </table></div>
+</div>
+
     <!-- Form heading -->
     <h3>Personal Information Form</h3>
 
     <!-- Form -->
-    <form action="/submit_form" method="post">
+    <form action="/submit_form" method="post" id="THEFORM" onsubmit="return congrats()">
         <label for="fullname">Full Name:</label><br>
         <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
 
@@ -87,7 +107,15 @@
         <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea><br><br>
 
         <input style="background-color: green" type="submit" value="Submit">
-        <input style="background-color: red" type="reset" value="Reset">
+        <input style="background-color: red" type="reset" value="Reset" onclick="refreshForm()">
+        <script>
+            function refreshForm() {
+                getElementById("THEFORM").reset()
+            }
+            function congrats() {
+                alert("You have successfully completed the form!")
+            }
+        </script>
     </form>
 </body>
 </html>
