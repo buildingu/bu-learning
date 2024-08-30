@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Exercise 3 Building-U.css">
+    <title>Exercise 3</title>
+</head>
+<body>
+    <center>
+    <h3 style="color:white">Date Submitted: 8/30/2024</h3>
+    <h3 style="color:white">Fun facts about me:</h3>
+    <div class="container">
+        
+        <table class="info-table">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Favorite Movie</th>
+                <th>Favorite Song</th>
+                <th>Favorite Video</th>
+            </tr>
+            <tr>
+                <td>Abhi</td>
+                <td>Kaakarla</td>
+                <td>
+                    <img width="175" height="250" src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg" alt="Favorite Movie">
+                </td>
+                <td>
+                    <audio controls>
+                        <source src="https://cdn3.justnaija.me/uploads/music/2024/06/Don-Toliver-GLOCK-(JustNaija.com).mp3" type="audio/mpeg">
+                    </audio>
+                </td>
+                <td>
+                    <iframe width="500" height="250" src="https://www.youtube-nocookie.com/embed/Mxv5h-RZWVs?si=och__UWLOxJ5Mn5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
+            </tr>
+        </table>
+
+        <br><h3 style="color:white">Enter your details below:</h3>
+        <div class="form-container">
+            <form>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Abhi Kaakarla"><br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="abhiramkaakarla@gmail.com"><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="********"><br><br>
+
+                <p>Available Meeting Days:</p>
+                <input type="checkbox" id="monday" name="monday" value="Monday">
+                <label for="monday">Monday</label>
+                <input type="checkbox" id="tuesday" name="tuesday" value="Tuesday">
+                <label for="tuesday">Tuesday</label>
+                <input type="checkbox" id="wednesday" name="wednesday" value="Wednesday">
+                <label for="wednesday">Wednesday</label>
+                <input type="checkbox" id="thursday" name="thursday" value="Thursday">
+                <label for="thursday">Thursday</label>
+                <input type="checkbox" id="friday" name="friday" value="Friday">
+                <label for="friday">Friday</label>
+                <input type="checkbox" id="saturday" name="saturday" value="Saturday">
+                <label for="saturday">Saturday</label>
+                <input type="checkbox" id="sunday" name="sunday" value="Sunday">
+                <label for="sunday">Sunday</label><br><br><br>
+
+                <label for="available-time">Available Time:</label><br><br>
+                <select id="available-time">
+                <option value="morning">Morning(8 am to 12 pm)</option>
+                <option value="afternoon">Afternoon(12 pm to 4 pm)</option>
+                <option value="evening">Evening(4 pm to 8 pm)</option>
+                </select><br><br>
+
+                <p>Currently working on another website?</p>
+                <input type="checkbox" id="yes" name="working" value="Yes">
+                <label for="yes">Yes</label>
+                <input type="checkbox" id="no" name="working" value="No">
+                <label for="no">No</label><br><br><br>
+
+                <label for="comments">If yes, please enter which page(s) you are working on</label><br><br>
+                <textarea id="comments" placeholder="Enter your comments here"></textarea><br><br>
+
+                <button type="submit" class="submit-button">Submit</button>
+                <button type="reset" class="reset-button">Reset</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="desktop-version">Desktop Version ®</div>
+        <div class="mobile-version">Mobile Version ®</div>
+    </footer>
+</body>
+</html>
