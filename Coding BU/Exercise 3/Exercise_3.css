@@ -84,9 +84,6 @@ label {
     flex-wrap: wrap
 
 }
-#table2 {
-    padding-bottom: 0px;
-}
 
 /* Mobile version */
 @media only screen and (max-width: 600px) {
@@ -95,7 +92,8 @@ label {
     }
     body {
         background-image: url(StuffNeeded/background-mobile.jpg);
-
+        text-align: center;
+        padding-left: 225px;
     }
     .wholetable {
         display: block;
@@ -114,14 +112,35 @@ label {
         font-size: 24px;
     }
     table {
-        width: 50%;
-        margin-bottom: 0px;
-        height:auto;
-        /* float: left; */
+        width: 200px;
+        height: 500px;
+        border-color: goldenrod; 
+        border-radius: 4px;
+        background-color: #3f5661;
+        text-align: center;
+        margin: 0 auto;
+        table-layout: fixed;
+
     }
-    th, td {
-        font-size: 16px;
-        /* display: block; */
+    th, td{
+        width: calc(100% / 3);
+        height: auto; 
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        color: white;
+        border: 5px solid lightgray;
     }
-    
+    th {
+        width: 600px;
+        height: 50px;
+        background-color: #093145;
+    }
+    td {
+        background-color: #3f5661;
+        color: goldenrod;
+    }
+    .specificCell {
+        width: 295px
+    }
 }
