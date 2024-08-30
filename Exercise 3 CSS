@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("Images/background-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.info-table {
+    width: 100%;
+    max-width: 500px;
+    outline: 2.5px solid white;
+    outline-offset: 35px;
+    border-collapse: collapse;
+    margin: 25px;
+    margin-bottom: 50px;
+    background-color: #1e4c63;
+    color: #ffffff;
+}
+
+.info-table th,
+.info-table td {
+    border: 5px solid #e4e1e1d1;
+    padding: 10px;
+    text-align: center;
+}
+
+.info-table th {
+    background-color: #394f5d;
+}
+
+.form-container {
+    width: 25%;
+    background-color: gray;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 7.5px solid #1e4c63;
+    color: black;
+    text-align: center; /* Center text inside form container */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#available-time {
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid black;
+    border-radius: 5px;
+    resize: both;
+    box-sizing: border-box;
+}
+
+.submit-button,
+.reset-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button {
+    background-color: green;
+    color: white;
+}
+
+.reset-button {
+    background-color: rgb(195, 25, 10);
+    color: white;
+}
+
+.submit-button:hover,
+.reset-button:hover {
+    background-color: gray;
+}
+
+.desktop-version {
+    text-align: center;
+    padding: 10px;
+    background-color: #a92799;
+    color: #ffffff;
+    font-size: 16px;
+    width: 100%;
+}
+
+.mobile-version {
+    display: none; /* Hide mobile version by default on desktop */
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url("Images/background-mobile.jpg");
+    }
+
+    .info-table {
+        width: 90%;
+        margin: 10px auto;
+        border-collapse: separate;
+        border-spacing: 0;
+        background-color: #4484CE;
+        outline-offset: 25px
+    }
+
+    .info-table tr, .info-table td {
+        display: block;
+        flex-direction: column;
+    }
+
+    .form-container {
+        width: 90%; /* Adjust width for mobile */
+        max-width: 400px; /* Ensure form container is not too wide */
+        text-align: center; /* Center text inside form container */
+        margin: 15px auto; /* Center form container horizontally */
+    }
+
+    .desktop-version {
+        display: none; /* Hide desktop version on mobile */
+    }
+
+    .mobile-version {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        background-color: #007bff;
+        color: #ffffff;
+        font-size: 16px;
+        width: 100%;
+    }
+}
