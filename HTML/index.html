@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Title -->
+    <title>Exercise 1 by Arnav Sinha</title>
+    <!-- Metadata -->
+      <!-- Character set -->
+    <meta charset="UTF - 8" />
+     <!-- Keywords -->
+    <meta name = "Keywords" content = "HTML5" />
+     <!-- Description -->
+    <meta name = "Description" content = "HTML5 Tutorial" />
+     <!-- Author -->
+    <meta name = "Author" content = "Arnav Sinha" />
+     <!-- Viewport -->
+    <meta name = "Viewport" content = "width-device-width, intial-scale=1" />
+</head>
+
+<body>
+    <!-- Header-->
+     <h1>Exercise 1 by Arnav Sinha</h1>
+     <h4>Date Submitted: 8/31/2024</h4>
+
+    <div>
+    </div>
+     <h3>Fun facts about me:</h3>
+     <!-- Tables -->
+      <table border="1">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Movie</th>
+            <th>Favorite Song</th>
+            <th>Favorite Video</th>
+        </tr>
+        
+        <tr>
+            <td><h3>Arnav</h3></td>
+            <td><h3>Sinha</h3></td>
+            <td><img src = "assets/Interstellar.png" alt = "Picture of Intersteller" /></td>
+            <td>
+                <h3>The London by Young Thung (ft. J.Cole, Travis Scott) </h3>
+                <audio controls>
+                    <source src="assets/The London.mp3" type="audio/mpeg">
+                </audio>
+            </td>
+            <td>
+                <h3>Diego Maradona Highlights</h3>
+                <video width="320" height="240" controls>
+                    <source src="assets/Maradona.mp4" type="video/mp4">
+            </td>
+        </tr>
+        <style>
+            table, th, td {
+                border: 2px solid rgb(10, 10, 10);
+                border-collapse:collapse;
+            }
+
+            th, td{
+                padding: 10px;
+                background-color: #96D4D4;
+            }
+        </style>
+      </table>
+    <div>
+    </div>
+
+    <h3>Enter your details below:</h3>
+
+      <form>
+        <label>Full Name: </label>
+        <input type = "text" placeholder="Arnav Sinha"><br><br>
+        <label>Email Address: </label>
+        <input type = "email" placeholder="arnav05sinha@gmail.com"><br><br>
+        <label>Password: </label>
+        <input type = "password" placeholder="••••••"><br><br>
+      </form>
+    <form>
+        <p>Available Days: </p>
+        <input type = "radio"> Sunday
+        <input type = "radio"> Monday
+        <input type = "radio"> Tueday
+        <input type = "radio"> Wednesday
+        <input type = "radio"> Thursday
+        <input type = "radio"> Friday
+        <input type = "radio"> Saturday
+        <br><br>
+        <label for="available-time">Available Time:</label>
+        <select id="available-time" name="available-time">
+            <option value="08:00">08:00 AM</option>
+            <option value="09:00">09:00 AM</option>
+            <option value="10:00">10:00 AM</option>
+            <option value="11:00">11:00 AM</option>
+            <option value="12:00">12:00 PM</option>
+            <option value="13:00">01:00 PM</option>
+            <option value="14:00">02:00 PM</option>
+            <option value="15:00">03:00 PM</option>
+            <option value="16:00">04:00 PM</option>
+            <option value="17:00">05:00 PM</option>
+        </select>
+    </form>
+    </form>
+    <form>
+        <br><legend>Are you working on a new website?</legend>
+          <div>
+            <input type="radio" id="yes" name="working" value="yes" checked>
+            <label for="yes">Yes</label>
+          </div>
+          <div>
+            <input type="radio" id="no" name="working" value="no">
+            <label for="no">No</label>
+          </div>
+      </form>
+    <form>
+        <br><textarea cols = "30" rows = "10" placeholder="Enter your comments here "></textarea><br><br>
+        <input type ="submit"> <input type = "reset">
+    </form>
+    
+
+
+
+
+</body>
+
+</html>
