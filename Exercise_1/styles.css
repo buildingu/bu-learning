@@ -1,0 +1,102 @@
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+/* Import Comic Neue font */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.comic-neue-bold {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background-image: url("background-desktop.jpg");
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.center {
+    margin: auto;
+}
+
+table, th, td {
+    border: 8px #808080 solid;
+}
+
+table {
+    border-collapse: collapse; /* collapse the borders into single border */
+}
+
+/* Change the background color of the table's header and add spaces */
+th {
+    background-color: #2a3441;
+    padding: 10px;
+}
+
+/* Change the background color of the table's data and add spaces */
+td {
+    background-color: #263a42;
+    padding: 35px;
+}
+
+/* Resize the movie poster */
+.movie-poster {
+    width: 150px;
+}
+
+form {
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    background-color: #cecaca;
+    border: 8px #808080 solid;
+    color: black;
+    padding: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 300px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+textarea {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: 75px;
+    height: 30px;
+    color: white;
+    border: 0px;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+}
+
+input[type="reset"] {
+    background-color: #c53939;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #8a0073;
+}
