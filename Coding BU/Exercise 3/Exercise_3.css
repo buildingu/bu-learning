@@ -93,7 +93,7 @@ label {
     body {
         background-image: url(StuffNeeded/background-mobile.jpg);
         text-align: center;
-        padding-left: 225px;
+        padding-left: 10px;
     }
     .wholetable {
         display: block;
@@ -112,8 +112,8 @@ label {
         font-size: 24px;
     }
     table {
-        width: 200px;
-        height: 500px;
+        width: 100px;
+        height: 200px;
         border-color: goldenrod; 
         border-radius: 4px;
         background-color: #3f5661;
@@ -123,8 +123,7 @@ label {
 
     }
     th, td{
-        width: calc(100% / 3);
-        height: auto; 
+        width: calc(100% / 3); 
         font-size: 20px;
         font-family: 'Times New Roman', Times, serif;
         text-align: center;
@@ -141,6 +140,6 @@ label {
         color: goldenrod;
     }
     .specificCell {
-        width: 295px
+        width: 200px
     }
 }
