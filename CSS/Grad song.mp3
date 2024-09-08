@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>YouTube To MP3 Converter and Downloader - MP3YouTube</title>
+<meta name="robots" content="index,follow" />
+<meta name="applicable-device" content="pc,mobile" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="x-ua-compatible" content="IE=edge" />
+<link rel="canonical" href="https://v4.mp3youtube.cc/enAGO">
+<link rel="alternate" href="https://v4.mp3youtube.cc/deAGO" hreflang="de" />
+<link rel="alternate" href="https://v4.mp3youtube.cc/ptAGO" hreflang="pt" />
+<link rel="alternate" href="https://v4.mp3youtube.cc/esAGO" hreflang="es" />
+<link rel="alternate" href="https://v4.mp3youtube.cc/idAGO" hreflang="id" />
+<link rel="alternate" href="https://v4.mp3youtube.cc/frAGO" hreflang="fr" />
+<meta name="yandex-verification" content="8138d432c058f7d7" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="YouTube To MP3 Converter and Downloader - MP3YouTube">
+<meta property="og:description" content="The best YouTube to MP3 converter to download YouTube videos. Convert and download YouTube videos to MP3 easily and quickly with MP3YouTube.">
+<meta property="og:image" content="https://v4.mp3youtube.cc/res/og.png">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="YouTube To MP3 Converter and Downloader - MP3YouTube">
+<meta property="twitter:description" content="The best YouTube to MP3 converter to download YouTube videos. Convert and download YouTube videos to MP3 easily and quickly with MP3YouTube.">
+<meta property="twitter:image" content="https://v4.mp3youtube.cc/res/og.png">
+<meta name="description" content="The best YouTube to MP3 converter to download YouTube videos. Convert and download YouTube videos to MP3 easily and quickly with MP3YouTube." />
+<link rel="icon" type="image/x-icon" href="/res/favicon.ico">
+<link rel="icon" type="image/png" href="/res/android-chrome-192x192.png" sizes="192x192" />
+<link rel="icon" type="image/png" href="/res/android-chrome-512x512.png" sizes="512x512" />
+<link rel="icon" type="image/png" href="/assets/icons/icon-48x48.png" sizes="48x48" />
+<link rel="icon" type="image/png" href="/res/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/res/favicon-16x16.png" sizes="16x16" />
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#f8f9fa">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/css/main.css?1713635761" />
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous" type="4050b16fc38e67ae1e671397-text/javascript"></script>
+<script src="/js/app.js?1725548472" type="4050b16fc38e67ae1e671397-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-autocomplete/1.0.7/jquery.auto-complete.min.js" integrity="sha512-TToQDr91fBeG4RE5RjMl/tqNAo35hSRR4cbIFasiV2AAMQ6yKXXYhdSdEpUcRE6bqsTiB+FPLPls4ZAFMoK5WA==" crossorigin="anonymous" referrerpolicy="no-referrer" rel="preconncet" defer type="4050b16fc38e67ae1e671397-text/javascript"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4JNDZSFCLQ" defer="defer" type="4050b16fc38e67ae1e671397-text/javascript"></script>
+<meta name="a.validate.02" content="ltTm4HeLJxmFCeh8YZpjbO93aDYO4BsmQhJx" />
+<script type="4050b16fc38e67ae1e671397-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+</head>
+<body class="font-default selection:bg-red-400 selection:text-white bg-bgwhite antialiased leading-7">
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" rel="preconnect" defer="defer" type="4050b16fc38e67ae1e671397-text/javascript"></script>
+<div class="w-full text-greish font-inter bg-white navShadow">
+<div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between lg:flex-row md:py-3 lg:py-0 md:px-6 lg:px-8">
+<div class="p-4 flex flex-row items-center justify-between">
+<img src="/res/logo.png" alt="Logo" class="h-8 mr-4 inline" height="32px" width="32px">
+<a href="/enAGO" class="text-lg tracking-widest font-bold uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">MP3YouTube</a>
+<button class="md:hidden rounded-md focus:outline-none focus:shadow-outline" @click="open = !open" aria-label="Menu">
+<svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+<path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+<path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+<a class="px-4 py-2 mt-2 text-sm font-medium text-red-400 rounded-md md:mt-0 hover:text-red-400 focus:text-red-400 hover:bg-red-50 focus:bg-red-50 focus:outline-none focus:shadow-outline" href="https://mp3y.to/en">YouTube Downloader</a>
+<a class="px-4 py-2 mt-2 text-sm font-medium bg-transparent rounded-md 0 md:mt-0 md:ml-4 hover:text-gray-800 focus:text-gray-800 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:shadow-outline" href="https://x.com/mp3youtubecc" target="_blank">Follow us (X/Twitter)</a>
+<div @click.away="open = false" class="relative" x-data="{ open: false }">
+<button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-md dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-800 focus:text-gray-800 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:shadow-outline">
+<span>Language</span>
+<svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+</button>
+<div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-sm navShadow md:w-48">
+<div class="px-2 py-2 bg-white  ">
+<a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-md 0 md:mt-0 hover:text-gray-800 focus:text-gray-800 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:shadow-outline" href="/enAGO">English</a><a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-md 0 md:mt-0 hover:text-gray-800 focus:text-gray-800 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:shadow-outline" href="/deAGO">Deutsch</a><a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-md 0 md:mt-0 hover:text-gray-800 focus:text-gray-800 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:shadow-outline" href="/ptAGO">Português</a><a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-md 0 md:mt-0 hover:text-gray-800 focus:text-gray-800 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:shadow-outline" href="/esAGO">Español</a><a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-md 0 md:mt-0 hover:text-gray-800 focus:text-gray-800 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:shadow-outline" href="/idAGO">Indonesian</a><a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-md 0 md:mt-0 hover:text-gray-800 focus:text-gray-800 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:shadow-outline" href="/frAGO">Fraçais</a> </div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+<div class="grid grid-cols-1 justify-items-center my-10 px-4 ">
+<h1 class="font-black text-greish text-3xl sm:text-5xl text-center uppercase lang" key="heading">
+YouTube TO MP3 CONVERTER </h1>
+<h2 class="mt-5 text-center font-normal text-fontSub ">Convert and download YouTube videos to MP3 and MP4 </h2>
+</div>
+<div class="max-w-screen-lg mx-auto grid grid-cols-1 grid-rows-2 gap-2 md:grid-cols-6 md:grid-rows-1 px-4 ">
+<div class="md:col-span-5 relative">
+<input autocomplete="off" class="rounded-xl font-normal h-full text-sm py-4 search bg-white appearance-none border-[3px] border-gray-300 w-full px-4 text-fontSub outline-none focus:bg-white focus:border-red-500 transition-all duration-150" name="link" id="link" placeholder="Search or paste the YouTube video here!" />
+<span class="absolute top-4 right-3 hidden cursor-pointer" id="clearBtn">X</span>
+</div>
+<div class="md:col-span-1">
+<button id="submit" class="rounded-xl bg-red-500  hover:bg-red-600 font-bold text-white py-4 px-4 inline-flex items-center justify-center w-full transition-all duration-150 md:hover:scale-105 active:scale-95"> <span>Search</span> </button>
+</div>
+</div>
+<div class="max-w-screen-lg mx-auto px-4 pt-1">
+<p class="font-normal text-textLight text-sm">By using our service you accept our <a target="_blank" href="/tos"><span class="italic text-red-400 underline">Terms of Service</span></a> & <a target="_blank" href="/privacy"><span class="italic text-red-400 underline">Privacy Policy</span></a></p>
+</div>
+<div class="hidden process grid grid-cols-1 justify-items-center mt-10 text-center px-4 md:px-0"> <img src="/res/loader.svg" alt="Loading">
+<p id="processingText" class="text-md font-normal text-fontSub hidden"></p>
+</div>
+<div class="hidden error grid grid-cols-1 justify-items-center my-8 text-center px-4 md:px-0">
+<h2 id="errorTitle" class="text-xl text-greish font-black"></h2>
+<p id="errorMsg" class="text-sm font-normal text-fontSub"></p>
+<img class="h-32 w-32" src="/res/error.svg" alt="Error Image" loading="lazy">
+</div>
+<div class="converted mt-1 max-w-screen-md  mx-auto px-4 w-full hidden">
+<div class="bg-white/80 rounded-xl py-0 grid grid-row-2 md:grid-cols-2 grid-cols-1 mx-auto my-11 w-fit gap-5 glass-shadow">
+<div class="relative">
+<img class="mx-auto aspect-[16/9] max-h-[220px] object-cover rounded-2xl drop-shadow-lg relative" id="vidImg" src alt="Thumbnail" />
+<span id="duration" class="absolute bottom-2 right-2 text-white font-inter font-light bg-[rgba(0,0,0,.8)] rounded-md px-2 text-sm"></span>
+</div>
+<div class="flex flex-col justify-center md:mr-5 mx-5 md:mx-0">
+<p id="vidTitle" class="sm:truncate font-bold text-greish"></p>
+<p id="channelTitle" class="text-textLight text-sm font-medium my-[3px]"></p>
+<p class="text-textLight text-sm font-medium my-[3px]"><span>Audio Quality</span> <b><span id="audioQuality"></span>kbps</b> </p>
+<p class="text-textLight text-sm font-medium my-[3px]"><span>Video Quality</span> <b><span id="videoQuality"></span></b></p>
+<div class="grid grid-cols-2 gap-2 my-2 mb-4 md:mb-0">
+<a id="mp3dlLink" onclick="if (!window.__cfRLUnblockHandlers) return false; return false;" rel="nofollow" data-cf-modified-4050b16fc38e67ae1e671397->
+<button class="rounded-xl w-full bg-red-500 text-white  py-2 hover:bg-red-600 mp3Dl transition-all duration-150 md:hover:scale-105 active:scale-95">
+<svg role="status" class="btnLoader hidden inline mb-[4px]  w-4 h-4 text-white animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="#E5E7EB" />
+<path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentColor" />
+</svg>
+<span id="dlBtn" class="text-sm font-bold">Download MP3</span>
+</button>
+</a>
+<a id="mp4dlLink" onclick="if (!window.__cfRLUnblockHandlers) return false; return false;" rel="nofollow" data-cf-modified-4050b16fc38e67ae1e671397->
+<button class="rounded-xl w-full bg-red-500 text-white  py-2 hover:bg-red-600 mp4DL transition-all duration-150 md:hover:scale-105 active:scale-95">
+<svg role="status" class="btnLoadermp4 hidden inline mb-[4px]  w-4 h-4 text-white animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="#E5E7EB" />
+<path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentColor" />
+</svg>
+<span id="dlBtnmp4" class="text-sm font-bold">Download MP4</span>
+</button>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="banner-ad" class="flex justify-center mt-1"></div>
+<div class="search_section mt-1 max-w-screen-lg mx-auto px-4 pt-12 hidden">
+<ul id="searchList" class="grid grid-cols-1 grid-rows-6 sm:grid-cols-3 sm:grid-rows-2 gap-5">
+<li>
+<div class="searchBtn cursor-pointer mx-auto aspect-[16/9] max-h-[220px]" data-id>
+<div class="relative ">
+<img class="mx-auto aspect-[16/9] max-h-[220px] object-cover rounded-lg" id="vidImg" src alt="Thumbnail" width="100px" height="220px" />
+<span class="absolute bottom-2 right-2 text-white font-light bg-[rgba(0,0,0,.8)] rounded-md px-2 text-sm"></span>
+</div>
+<div class="my-3 text-sm font-normal text-fontSub px-3 mr-3 truncate hover:text-red-600">
+<p></p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="searchphdiv mt-1 max-w-screen-lg mx-auto px-4 pt-12 hidden">
+<ul class="searchph animate-pulse grid grid-cols-1 grid-rows-6 sm:grid-cols-3 sm:grid-rows-2 gap-5">
+<li>
+<div class="mx-auto aspect-[16/9] max-h-[220px]">
+<div class="bg-slate-300 mx-auto aspect-[16/9] max-h-[220px] rounded-lg"></div>
+<div class="w-full my-3 ">
+<div class="bg-slate-300 rounded-full h-3"></div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="max-w-screen-lg mx-auto my-8 px-4 ">
+<div>
+<div class="grid grid-cols-1 justify-items-center pb-5">
+<h2 class="text-xl sm:text-2xl font-black text-greish text-center uppercase">Best YouTube To MP3 Converter</h2>
+</div>
+<small>Last updated: <time datetime="08 Sep 2024 02:38:19"></time>08 Sep 2024 02:38:19</small>
+<p class="font-normal text-fontSub">MP3YouTube is the best YouTube to MP3 converter and downloader. It's one of the fastest tool for converting YouTube videos to music. It's really easy to use with its super user-friendly interface and is very convenient. The high-quality mp3 music files are accessible by the user within the matter of seconds thanks to the fast conversion speed. You don't even need to download any software or need any account to use our service. Enjoy unlimited conversion of music from YouTube in the best available quality. We will be adding many more formats in the future so stay tuned for that. Try us once and we guarantee you'll be delighted with the quality of our service. MP3YouTube is free now and will always be. </p>
+</div>
+</div>
+<div class="my-12 max-w-screen-lg mx-auto px-4">
+<div class="grid grid-cols-1 justify-items-center">
+<div class="ml-36  w-10 h-7 bg-red-400 absolute -z-20 skew-x-2 hidden"></div>
+<h2 class="font-black text-xl sm:text-2xl sm:text-2xl text-greish text-center uppercase">How to use YouTube to MP3 converter?</h2> </div>
+<div class="grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-6 items-center my-12">
+<div class="grid grid-cols-4 grid-rows-1 gap-6 items-center">
+<div class="w-20 h-20 lg:w-20 lg:h-20 md:w-14 md:h-14 col-span-1 bg-red-200 rounded-full text-center pt-4 lg:pt-4 md:pt-1"> <span class="text-red-400 text-5xl font-black font-inter">1</span> </div>
+<div class="col-span-3">
+<p class="font-black text-md text-greish">Start</p> <span class=" font-normal text-fontSub text-sm">Paste YouTube url or enter keywords into the search box.</span> </div>
+</div>
+<div class="grid grid-cols-4 grid-rows-1 gap-6 items-center">
+<div class="w-20 h-20 lg:w-20 lg:h-20 md:w-14 md:h-14 col-span-1 bg-green-200 rounded-full text-center pt-4 lg:pt-4 md:pt-1"> <span class="text-green-400 text-5xl font-black font-inter">2</span> </div>
+<div class="col-span-3">
+<p class="font-black text-md text-greish">Convert</p> <span class=" font-normal text-fontSub text-sm">Click on the Convert button to start the proccess.</span> </div>
+</div>
+<div class="grid grid-cols-4 grid-rows-1 gap-6 items-center">
+<div class="w-20 h-20 lg:w-20 lg:h-20 md:w-14 md:h-14 col-span-1 bg-red-200 rounded-full text-center pt-4 lg:pt-4 md:pt-1"> <span class="text-red-400 text-5xl font-black font-inter">3</span> </div>
+<div class="col-span-3">
+<p class="font-black text-md text-greish">Download</p> <span class=" font-normal text-fontSub text-sm">Wait a moment for the link to be proccesed, and then download.</span> </div>
+</div>
+</div>
+</div>
+<div class="max-w-screen-lg mx-auto mt-8 px-4">
+<div class="grid grid-cols-1 justify-items-center py-5">
+<div class="w-52 h-7 bg-violet-100 absolute -z-20 skew-x-6 hidden"></div>
+<h2 class="font-black text-xl sm:text-2xl text-greish text-center uppercase hidden">Why to choose us?</h2> </div>
+<div class="grid grid-cols-1 grid-rows-6 sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-10 ">
+<div class="grid justify-items-center">
+<div class="p-8 bg-white rounded-2xl shadow-bg">
+<h2 class="text-md font-black pb-1 text-greish uppercase text-center">Fast Free and easy to use</h2>
+<p class="font-normal text-fontSub text-sm text-center">Using our YouTube downloader is the fast and easy way to download and save any YouTube video to MP3 or MP4. Simply copy YouTube URL, paste it on the search box and click on Convert button. No register accounts needed.</p>
+</div>
+</div>
+<div class="grid justify-items-center ">
+<div class="p-8 bg-white rounded-2xl shadow-bg">
+<h2 class="text-md font-black pb-1 text-greish uppercase text-center">All platforms supported</h2>
+<p class="font-normal text-fontSub text-sm text-center">We support all device platforms. Easy to convert YouTube videos to MP3 files regardless of whether you are using Windows, Mac or Linux, Android, iPhone.</p>
+</div>
+</div>
+<div class="grid justify-items-center ">
+<div class="p-8 bg-white rounded-2xl shadow-bg">
+<h2 class="text-md font-black pb-1 text-greish uppercase text-center">Many Formats coming soon</h2>
+<p class="font-normal text-fontSub text-sm text-center">We support YouTube to MP3 format till now, but don't worry because we will have many more formats in the future. So stay tuned!</p>
+</div>
+</div>
+<div class="grid justify-items-center ">
+<div class="p-8 bg-white rounded-2xl shadow-bg">
+<h2 class="text-md font-black pb-1 text-greish uppercase text-center">Without limitation</h2>
+<p class="font-normal text-fontSub text-sm text-center">Download and convert YouTube videos as much as you want without limitation and always free.</div>
+</div>
+<div class="grid 2 justify-items-center ">
+<div class="p-8 bg-white rounded-2xl shadow-bg">
+<h2 class="text-md font-black pb-1 text-greish uppercase text-center">100% Safe and Clean</h2>
+<p class="font-normal text-fontSub text-sm text-center">With the rising awareness of device security, people attach great importance to personal data. The service is totally clean with no virus under intense supervision based on security database. </p>
+</div>
+</div>
+<div class="grid justify-items-center ">
+<div class="p-8 bg-white rounded-2xl shadow-bg">
+<h2 class="text-md font-black pb-1 text-greish uppercase text-center">Always Up to date</h2>
+<p class="font-normal text-fontSub text-sm text-center">We are working around the clock to make sure that we are up to date with all the changes YouTube brings on monthly basis.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-screen-lg mx-auto mt-20 px-4 ">
+<h2 class="font-black text-xl sm:text-2xl text-greish text-center uppercase my-11">
+Frequently Asked Questions </h2>
+<p class="text-md font-black pb-1 text-gray-800  font-inter">Q: Is there any limit on the amount of files downloaded by per user?</p>
+<p class="font-normal text-fontSub text-sm mb-6 ">A: No. Our website allows users to convert and download unlimited files with no limits.</p>
+<p class="text-md font-black pb-1 text-gray-800  font-inter">Q:Is there any hidden charges of MP3 YouTube?</p>
+<p class="font-normal text-fontSub text-sm mb-6 ">A:No. Our website is absolutely free. You can convert videos from YouTube to MP3.</p>
+<p class="text-md font-black pb-1 text-gray-800  font-inter">Q:What are the compatible devices for the conversion?</p>
+<p class="font-normal text-fontSub text-sm mb-6 ">A:We offer the service that is compatible with all PC devices, smart phones and tablets.</p>
+<p class="text-md font-black pb-1 text-gray-800  font-inter">Q:How to download YouTube video to Android mobile phone?</p>
+<p class="font-normal text-fontSub text-sm mb-6 ">A:
+<br>1. Access YouTube from your browser or open YouTube app on your Android device; after that, coppy the video URL you wish to download.
+<br> 2. Paste the URL into the search box. You also can enter keyword to look for the video you wish.
+<br> 3. Select the format you wish to download then tap "Download". After a few seconds, you can download the file. </p>
+<p class="text-md font-black pb-1 text-gray-800  font-inter">Q:Where do the downloaded files get saved?</p>
+<p class="font-normal text-fontSub text-sm mb-6 ">A:Files you've downloaded are automatically saved in the Downloads folder or the "download history" section on your device. </p>
+</div>
+<footer class="w-full bottom-0 mb-0 h-40 bg-white flex flex-col justify-center items-center">
+<p class="font-medium text-sm text-fontSub py-3">© MP3YouTube - 2024 (v10.00)</p>
+<ul class="font-normal flex flex-wrap items-center mb-6 text-sm text-fontSub sm:mb-0 py-2">
+<li class="hover:scale-105 transition-all duration-300">
+<a href="/about-us" class="mr-4 hover:underline md:mr-6">About</a>
+</li>
+<li class="hover:scale-105 transition-all duration-300">
+<a href="/privacy" class="mr-4 hover:underline md:mr-6 transition-all duration-300">Privacy Policy</a>
+</li>
+<li class="hover:scale-105 transition-all duration-300">
+<a href="/tos" class="mr-4 hover:underline md:mr-6 ">Tos</a>
+</li>
+<li class="hover:scale-105 transition-all duration-300">
+<a href="/copyright" class="mr-4 hover:underline md:mr-6 ">Copyright</a>
+</li>
+<li class="hover:scale-105 transition-all duration-300">
+<a href="/contact-us" class="hover:underline transition-all duration-300">Contact</a>
+</li>
+</ul>
+</footer>
+<script type="4050b16fc38e67ae1e671397-text/javascript">
+	if('serviceWorker' in navigator){
+		navigator.serviceWorker.register('sw.js?v2');
+	}
+</script>
+<script type="application/ld+json">
+         {
+        "@context": "http://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "name": "MP3YouTube.cc",
+                "alternateName": [
+                    "MP3YouTube.cc - YouTube Converter",
+                    "Mp3YouTubecc",
+                    "Mp3YouTubeConverter"
+                ],
+                "url": "https://v4.mp3youtube.cc/"
+            },
+            {
+                "@type": "WebPage",
+                "name": "MP3YouTube.cc",
+                "url": "https://v4.mp3youtube.cc/"
+            },
+            {
+                "@type": "Organization",
+                "name": "MP3YouTube.cc",
+                "alternateName": [
+                    "MP3YouTube.cc - YouTube Converter",
+                    "Mp3YouTube",
+                    "Mp3YouTubeConverter"
+                ],
+                "url": "https://v4.mp3youtube.cc/",
+                "email": "support@mp3youtube.cc",
+                "logo": "https://v4.mp3youtube.cc/res/logo.png"
+            },
+            {
+                "@type": "WebApplication",
+                "name": "MP3YouTube.cc",
+                "alternateName": "Mp3 YouTube : Youtube Downloader",
+                "url": "https://v4.mp3youtube.cc/",
+                "image": "https://v4.mp3youtube.cc/res/logo.png",
+                "operatingSystem": "Windows, Linux, iOS, Android, OSX, macOS",
+				"description": "Mp3Youtube is free YouTube to mp3 converter. It helps you convert and download youtube videos to mp3 or mp4 files for free. YTMP3 is the best Youtube mp3 downloader.",
+                "applicationCategory": "UtilitiesApplication",
+                "featureList": [
+                    "youtube mp3",
+                    "mp3 youtube",
+                    "YouTube to mp3",
+                    "YouTube mp3 downloader",
+                    "YouTube mp4 downloader",
+                    "Video Downloader",
+                    "Online Youtube Downloader",
+                    "y2mate",
+                    "ytmp3"
+                ],
+                "aggregateRating": {
+        			"@type": "AggregateRating",
+        			"ratingValue": "4.89",
+        			"ratingCount": "20056",
+        			"reviewCount": "9778",
+        			"bestRating": "5",
+        			"worstRating": "1"
+        		},
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                }
+            }
+        ]
+    }
+      </script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="4050b16fc38e67ae1e671397-|49" defer></script></body>
+</html>

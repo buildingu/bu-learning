@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Title -->
+    <title>CSS Exercise - Graduation Party by Arnav Sinha</title>
+    <!-- Metadata -->
+      <!-- Character set -->
+    <meta charset="UTF - 8" />
+     <!-- Author -->
+    <meta name = "Author" content = "Arnav Sinha" />
+     <!-- Viewport -->
+    <meta name = "Viewport" content = "width-device-width, intial-scale=1" />
+
+
+    <style>
+
+
+      h1{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+      h2{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+      h3{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+
+      p{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+      }
+      label{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+      }
+      legend{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+      }
+      body{
+        background-color: rgb(235, 178, 34);
+        padding: 20px;
+        border: 20px solid rgb(255, 81, 0);
+        margin: auto;
+      }
+
+    </style>
+</head>
+
+<body>
+    <!-- Header-->
+     <h1 style="color: crimson; font-style: italic;">Welcome to Arnav's Graduation Party!</h1>
+     <h2 style="color: brown; font-style: italic;">Date: Saturday, September 7th at 6:00 PM <br> </br> Address: 1234 Alphabet Dr.</h2>
+
+    <div>
+    </div>
+     <h3 style="color: darkgreen; font-style: italic;">The Party:</h3>
+     <!-- Tables -->
+      <table border="1">
+        <tr>
+            <th>Description</th>
+            <th>Invitation</th>
+            <th>Theme</th>
+            <th>Graduation Music</th>
+            <th>Graduation Video</th>
+        </tr>
+        
+        <tr>
+            <td><h3>Join us in celebrating Arnav's incredible journey as he graduates and embarks on the next exciting chapter of his life! Let's make lasting memories with food, fun, and friends at this special gathering in his honor</h3></td>
+            <td><h3>Friends and family are invited to celebrate Arnav's graduation and achievements!</h3></td>
+            <td><img src = "C:\Personal\bu-learning\CSS\Theme.png" alt = "Theme" /></td>
+            <td>
+                <h3>Graduation Song </h3>
+                <audio controls>
+                    <source src="C:\Personal\bu-learning\CSS\Grad song.mp3" type="audio/mpeg">
+                </audio>
+            </td>
+            <td>
+                <h3>Graduation Video</h3>
+                <video width="320" height="240" controls>
+                    <source src="C:\Personal\bu-learning\CSS\Grad video.mp4" type="video/mp4">
+            </td>
+        </tr>
+        <style>
+            table, th, td {
+                border: 2px solid rgb(10, 10, 10);
+                border-collapse:collapse;
+            }
+
+            th, td{
+                padding: 10px;
+                background-color: #96D4D4;
+            }
+        </style>
+      </table>
+    <div style="padding: 20px;">
+    </div>
+
+    <h3 style="color: darkred;">RSVP HERE: </h3>
+
+      <form>
+        <label>Full Name: </label>
+        <input type = "text" placeholder="First Last"><br><br>
+        <label>Email Address: </label>
+        <input type = "email" placeholder="johndoe@gmail.com"><br><br>
+      </form>
+    <form>
+        <p>How many people are you bringing?</p>
+        <input type = "radio"> 0
+        <input type = "radio"> 1
+        <input type = "radio"> 2
+        <input type = "radio"> 3
+        <input type = "radio"> 4
+        <input type = "radio"> 5
+        <input type = "radio"> 6+
+        <br><br>
+    </form>
+    </form>
+    <form>
+        <br><legend>Would you like to bring food? - If yes, enter food in comments</legend>
+          <div style="padding: 20px;">
+            <input type="radio" id="yes" name="working" value="yes">
+            <label for="yes">Yes</label>
+          </div>
+          <div style="padding: 20px;">
+            <input type="radio" id="no" name="working" value="no">
+            <label for="no">No</label>
+          </div>
+      </form>
+    <form>
+        <br><textarea cols = "30" rows = "10" placeholder="Enter any comments here "></textarea><br><br>
+        <input type ="submit"> <input type = "reset">
+    </form>
+    
+
+
+
+
+</body>
+
+</html>
