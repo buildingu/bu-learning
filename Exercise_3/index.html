@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="desktop-font mobile-font">Exercise 3 by Sonya Zheng</h1>
+    <p class="desktop-font mobile-font">Date submitted: 9/3/2024</p>
+    <hr>
+    <!-- Table -->
+    <table class="center desktop-font mobile-font">
+        <!-- Header -->
+         <thead>
+            <tr>
+                <!-- First row -->
+                <p class="comic-neue-bold">Fun Facts about me:</p>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Favorite Movie</th>
+                <th>Favorite Song</th>
+                <th>Favorite Video</th>
+            </tr>
+         </thead>
+        <!-- Second row -->
+         <tbody>
+            <tr>
+                <!-- Data -->
+                 <td>Sonya</td>
+                 <td>Zheng</td>
+                 <td><img class="movie-poster" src="lost-in-the-stars.jpg" alt="Movie poster of Lost in the Stars"></td>
+                 <td>
+                    <p>Click play button to play music:</p>
+                    <audio controls>
+                        <source src="rick_roll.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                 </td>
+                 <td>
+                    <video width="300" height="200" controls>
+                        <source src="marvel_studios.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                 </td>
+             </tr>
+
+         </tbody>
+
+    </table>
+    <hr>
+    <br>
+
+    <p class="comic-neue-bold">Enter your details below:</p>
+    <!-- Form -->
+    <form class="roboto-bold">
+        <label><em>Full name</em></label>
+        <br>
+        <input type="text" placeholder="John Doe">
+        <br>
+        <br>
+
+        <label><em>Email Address</em></label>
+        <br>
+        <input type="email" placeholder="jdoe@fakemail.com">
+        <br>
+        <br>
+
+        <label><em>Password</em></label>
+        <br>
+        <input type="password" placeholder="*****">
+        <br>
+        <br>
+
+        <label for="meeting-day"><em>Available Meeting Days</em></label>
+        <br>
+        <label class="meeting-day"><input type="checkbox" value="monday">Monday</label>
+        <label class="meeting-day"><input type="checkbox" value="tuesday">Tuesday</label>
+        <label class="meeting-day"><input type="checkbox" value="wednesday">Wednesday</label>
+        <label class="meeting-day"><input type="checkbox" value="thursday">Thursday</label>
+        <label class="meeting-day"><input type="checkbox" value="friday">Friday</label>
+        <label class="meeting-day"><input type="checkbox" value="saturday">Saturday</label>
+        <label class="meeting-day"><input type="checkbox" value="sunday">Sunday</label>
+        <br>
+        <br>
+
+        <label for="time"><em>Available Time:</em></label>
+        <br>
+        <select>
+            <option value="morning">Morning (5am to 12pm)</option>
+            <option value="aftermoon">Afternoon (12pm to 5pm)</option>
+            <option value="evening">Evening (5pm to 9pm)</option>
+            <option value="night">Night (9pm to 4am)</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="new-website"><em>Currently working on a new website?</em></label>
+        <br>
+        <label class="new-website"><input type="radio" value="yes" name="work">Yes</label>
+        <label class="new-website"><input type="radio" value="no" name="work">No</label>
+        <br>
+        <br>
+        <label for="page"><em>If yes, please enter which page(s) you are working on</em></label>
+        <br>
+        <textarea class="page" placeholder="Enter your comments here" rows="3" cols="45"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <br>
+    <br>
+
+    <footer class="roboto-regular desktop-footer">Desktop Version®</footer>
+    <footer class="comic-neue-bold mobile-footer">Mobile Version®</footer>
+    
+</body>
+</html>
