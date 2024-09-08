@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(203, 206, 216);
+    margin: 5rem 10rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+h1 {
+    font-size: 75px;
+    margin: 30px;
+    color: rgb(27, 40, 83);
+}
+h3 {
+    font-size: 60px;
+    color: rgb(72, 89, 146);
+}
+#pic1 {
+    width: 25cm;
+    border-radius: 10px;
+    border: 3px solid rgb(17, 25, 92);
+}
+#p1 {
+    font-size: 35px;
+    text-align: justify;
+    margin: 3rem 0;
+}
+#p2{
+    width: 55%;
+    font-size: 35px;
+    text-align: justify;
+    float: left;
+}
+.pic {
+    position: absolute;
+    top: 40.5cm;
+    left: 20cm;
+    border-radius: 10px;
+    border: 3px solid rgb(58, 31, 109);
+}
+h2 {
+    padding-top: 12cm;
+    font-size: 50px;
+    font-style: italic;
+    color: rgb(65, 77, 114);
+}
+fieldset {
+    background-color: rgb(220, 219, 230);
+    border-radius: 100px;
+    padding: 2cm;
+    align-self: center;
+    text-align: left;
+}
+input {
+    width: 20cm;
+    height: 2em;
+}
+.label {
+    font-family: 'Courier New', Courier, monospace;
+}
+select {
+    margin-top: 20px;
+    text-align: left;
+    border-radius: 10px;
+    height: 30px;
+    width: 5cm;
+    font-style: oblique;
+}
+textarea {
+    height: 200px;
+    width: 300px;
+}
