@@ -1,0 +1,65 @@
+
+/*Desktop Styles*/
+@media screen and (min-width: 768px) {
+    body{
+            color: white;
+            background-image: url(Resources-Assets/background-desktop.jpg);
+            background-size: auto;
+        }
+
+        table, th, td{
+            border-width: 10px;
+            margin: auto;
+        }
+
+        th{
+            background-color: rgb(51, 57, 129);
+        }
+
+        td{
+            background-color: rgb(51, 85, 129);
+        }
+
+        .Survey{
+            border: 10px solid;
+            border-color: gray;
+            width: 300px;
+            margin-left: 40%;
+            text-align: center;
+            color: black;
+            background-color: whitesmoke;
+        }
+    }
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+    body{
+        color: rgb(214, 8, 8);
+        background-image: url(Resources-Assets\background-mobile.jpg);
+        background-size: auto;
+    }
+
+    table, th, td{
+        max-width: 200px;
+        margin: auto;
+    }
+
+    th{
+        background-color: rgb(51, 57, 129);
+    }
+
+    td{
+        background-color: rgb(51, 85, 129);
+    }
+
+    .Survey{
+        border: 10px solid;
+        border-color: gray;
+        width: 300px;
+        margin-left: 40%;
+        text-align: center;
+        color: black;
+        background-color: whitesmoke;
+    }
+
+}    
