@@ -22,7 +22,6 @@
 }
 
 body {
-    background-image: url("background-desktop.jpg");
     color: white;
     text-align: center;
     margin: 0;
@@ -40,35 +39,7 @@ table {
     border-collapse: collapse; /* collapse the borders into single border */
 }
 
-/* Change the background color of the table's header and add spaces */
-th {
-    background-color: #2a3441;
-    padding: 10px;
-}
-
-/* Change the background color of the table's data and add spaces */
-td {
-    background-color: #263a42;
-    padding: 35px;
-}
-
-/* Resize the movie poster */
-.movie-poster {
-    width: 150px;
-}
-
-form {
-    margin: auto;
-    width: 400px;
-    height: 500px;
-    background-color: #cecaca;
-    border: 8px #808080 solid;
-    color: black;
-    padding: 10px;
-}
-
 input[type="text"], input[type="email"], input[type="password"], select {
-    width: 300px;
     text-align: center;
     font-family: "Roboto", sans-serif;
 }
@@ -79,8 +50,6 @@ textarea {
 }
 
 input[type="submit"], input[type="reset"] {
-    width: 75px;
-    height: 30px;
     color: white;
     border: 0px;
     border-radius: 3px;
@@ -94,9 +63,176 @@ input[type="reset"] {
     background-color: #c53939;
 }
 
+form {
+    margin: auto;
+    background-color: #cecaca;
+    border: 8px #808080 solid;
+    color: black;
+    padding: 10px;
+}
+
 footer {
     display: block;
     text-align: center;
     padding: 10px;
     background-color: #8a0073;
+}
+
+
+/* Desktop Styles */
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url("background-desktop.jpg");
+    }
+
+    .desktop-font {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /* Change the background color of the table's header and add spaces */
+    th {
+        background-color: #2a3441;
+        padding: 10px;
+    }
+
+    /* Change the background color of the table's data and add spaces */
+    td {
+        background-color: #263a42;
+        padding: 35px;
+    }
+
+    /* Resize the movie poster */
+    .movie-poster {
+        width: 150px;
+    }
+
+    form {
+        width: 400px;
+        height: 500px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], select {
+        width: 300px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        width: 75px;
+        height: 30px;
+    }
+
+    .desktop-footer {
+        background-color: #8a0073;
+    }
+
+    .mobile-footer {
+        display: none;
+    }
+
+}
+
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    body {
+        background-image: url("background-mobile.jpg");
+    }
+
+    .mobile-font {
+        font-family: "Comic Neue", cursive;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    hr {
+        border: 2px solid white;
+    }
+
+    .movie-poster {
+        width: 100px;
+    }
+
+    /* Hide the headers */
+    th {
+        display: none;
+    }
+
+    /* Make the data in a row (stack on top of each other) */
+    td {
+        background-color: #793e3e;
+        display: table-row;
+    }
+
+    /* Individually add new headers */
+    td:nth-of-type(1)::before {
+        content: "First name";
+        display: block;
+        /* Create block content */
+        width: 100%;
+        height: 20px;
+        background-color: #aa3c10;
+        border-bottom: 8px #808080 solid;
+    }
+
+    td:nth-of-type(2)::before {
+        content: "Last name";
+        display: block;
+        width: 100%;
+        height: 20px;
+        background-color: #aa3c10;
+        border-bottom: 8px #808080 solid;
+    }
+
+    td:nth-of-type(3)::before {
+        content: "Favorite Movie";
+        display: block;
+        width: 100%;
+        height: 20px;
+        background-color: #aa3c10;
+        border-bottom: 8px #808080 solid;
+    }
+
+    td:nth-of-type(4)::before {
+        content: "Favorite Song";
+        display: block;
+        width: 100%;
+        height: 20px;
+        background-color: #aa3c10;
+        border-bottom: 8px #808080 solid;
+    }
+
+    td:nth-of-type(5)::before {
+        content: "Favorite Video";
+        display: block;
+        width: 100%;
+        height: 20px;
+        background-color: #aa3c10;
+        border-bottom: 8px #808080 solid;
+    }
+
+    form {
+        font-size: 14px;
+        width: 200px;
+        height: 520px;
+    }
+
+    textarea {
+        width: 175px;
+        height: 40px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        width: 180px;
+        margin-top: 5px;
+    }
+
+    .mobile-footer {
+        background-color: #1a4577;
+    }
+
+    .desktop-footer {
+        display: none;
+    }
+
 }
