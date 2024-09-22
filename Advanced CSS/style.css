@@ -1,0 +1,217 @@
+/*FOR DESKTOPS*/
+.mobile-table-wrapper {
+    display: none;
+}
+
+body{
+    text-align: center;
+    background-image: url('website_background.jpg');
+}
+
+img{
+    width: 500 px;
+}
+
+
+p{
+    color: rgb(255, 255, 255);
+}
+
+h1{
+    color: rgb(255, 255, 255);
+}
+
+h2{
+    color: rgb(255, 255, 255);
+}
+
+h3{
+    color: rgb(255, 255, 255);
+}
+
+h4{
+    color: rgb(255, 255, 255);
+}
+
+label{
+    color: rgb(255, 255, 255);
+}
+th{
+    color: rgb(255, 255, 255);
+}
+legend{
+    color: rgb(255, 255, 255);
+}
+input{
+    color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: #0d0d0d;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1, h3, h4 {
+    text-align: center;
+}
+
+table, th, td {
+    border: 2px solid rgb(10, 10, 10);
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #30c26d;
+    padding: 10px;
+}
+
+th, td {
+    text-align: center;
+}
+
+img {
+    width: 150px;
+}
+
+form {
+    display: block;
+    width: 400px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="submit"], 
+input[type="reset"] {
+    width: 45%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="submit"] {
+    background-color: #28a745; 
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #dc3545; 
+    color: white;
+}
+
+input[type="submit"]:hover, 
+input[type="reset"]:hover {
+    opacity: 0.9;
+}
+
+.desktop-footer {
+    display: block;
+}
+
+.mobile-footer {
+    display: none; 
+}
+
+/* FOR MOBILE DEVICES */
+@media screen and (max-width: 760px) {
+
+    .desktop-table {
+        display: none; 
+    }
+
+    .mobile-table {
+        display: none;
+    }
+
+    .mobile-table-wrapper {
+        display: block;
+        width: 100%;
+    }
+
+    .mobile-table-wrapper div {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #000000;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #30c26d;
+    }
+
+    .mobile-table-wrapper div h3 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .mobile-table-wrapper div img {
+        width: 50%;
+        height: 50%;
+        align-self: center;
+    }
+
+    .mobile-table-wrapper div audio,
+    .mobile-table-wrapper div video {
+        width: 100%;
+        height: auto;
+    }
+  
+    form {
+        width: 90%;
+        margin: 10px auto;
+        background-color: #acacac; 
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    input[type="text"], 
+    input[type="email"], 
+    input[type="password"], 
+    textarea, 
+    select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"], 
+    input[type="reset"] {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .desktop-footer {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: block; 
+    }
+}
+

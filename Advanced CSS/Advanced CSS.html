@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Title -->
+    <title>Exercise 3 by Arnav Sinha</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styling the table and form */
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Header-->
+    <h1>Exercise 3 by Arnav Sinha</h1>
+    <h4>Date Submitted: 9/21/2024</h4>
+
+    <!-- Fun facts table -->
+    <h3>Fun facts about me:</h3>
+    <div class="desktop-table">
+    <table border="1">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Movie</th>
+            <th>Favorite Song</th>
+            <th>Favorite Video</th>
+        </tr>
+        <tr>
+            <td><h3>Arnav</h3></td>
+            <td><h3>Sinha</h3></td>
+            <td><img src="assets/Interstellar.png" alt="Picture of Interstellar" /></td>
+            <td>
+                <h3>The London by Young Thug (ft. J.Cole, Travis Scott)</h3>
+                <audio controls>
+                    <source src="assets/The London.mp3" type="audio/mpeg">
+                </audio>
+            </td>
+            <td>
+                <h3>Diego Maradona Highlights</h3>
+                <video width="320" height="240" controls>
+                    <source src="assets/Maradona.mp4" type="video/mp4">
+                </video>
+            </td>
+        </tr>
+    </table>
+</div>
+        <!-- Mobile -->
+        <div class="mobile-table-wrapper">
+            <div>
+                <h3>First Name</h3>
+                <p>Arnav</p>
+            </div>
+            <div>
+                <h3>Last Name</h3>
+                <p>Sinha</p>
+            </div>
+            <div>
+                <h3>Favorite Movie</h3>
+                <img src="assets/Interstellar.png" alt="Picture of Interstellar">
+            </div>
+            <div>
+                <h3>Favorite Song</h3>
+                <p>The London by Young Thug (ft. J.Cole, Travis Scott)</p>
+                <audio controls>
+                    <source src="assets/The London.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div>
+                <h3>Favorite Video</h3>
+                <video width="320" height="240" controls>
+                    <source src="assets/Maradona.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+    <!-- Form section -->
+    <h3>Enter your details below:</h3>
+    <form>
+        <label>Full Name:</label>
+        <input type="text" placeholder="Arnav Sinha" required>
+
+        <label>Email Address:</label>
+        <input type="email" placeholder="arnav05sinha@gmail.com" required>
+
+        <label>Password:</label>
+        <input type="password" placeholder="••••••" required>
+
+        <p>Available Meeting Days:</p>
+        <input type="radio" name="day" value="Sunday"> Sunday
+        <input type="radio" name="day" value="Monday"> Monday
+        <input type="radio" name="day" value="Tuesday"> Tuesday
+        <input type="radio" name="day" value="Wednesday"> Wednesday
+        <input type="radio" name="day" value="Thursday"> Thursday
+        <input type="radio" name="day" value="Friday"> Friday
+        <input type="radio" name="day" value="Saturday"> Saturday
+
+        <br><br>
+        <label for="available-time">Available Time:</label>
+        <select id="available-time" name="available-time">
+            <option value="08:00">08:00 AM</option>
+            <option value="09:00">09:00 AM</option>
+            <option value="10:00">10:00 AM</option>
+            <option value="11:00">11:00 AM</option>
+            <option value="12:00">12:00 PM</option>
+            <option value="13:00">01:00 PM</option>
+            <option value="14:00">02:00 PM</option>
+            <option value="15:00">03:00 PM</option>
+            <option value="16:00">04:00 PM</option>
+            <option value="17:00">05:00 PM</option>
+        </select>
+
+        <br><br>
+        <label>Are you working on a new website?</label>
+        <input type="radio" id="yes" name="working" value="yes" checked> Yes
+        <input type="radio" id="no" name="working" value="no"> No
+
+        <br><br>
+        <label>Comments:</label>
+        <textarea cols="30" rows="5" placeholder="Enter your comments here"></textarea>
+
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <div>
+        <h3 class="desktop-footer">Desktop Version</h3>
+        <h3 class="mobile-footer">Mobile Version</h3>
+    </div>
+</body>
+
+</html>
