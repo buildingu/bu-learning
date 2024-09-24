@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduation Party Poster</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Spring Graduation Party</h1>
+    </header>
+    <main class="container">
+        <section class="event-info">
+            <img src="https://media.istockphoto.com/id/1465981922/vector/art-illustration.jpg?s=612x612&w=0&k=20&c=dESKPeZk9hCpTxFAc3veJh2njJVVmDneS4-sO1vE2QQ=" alt="Graduation Party" class="event-image">
+            <h2>Event Details</h2>
+            <p>Celebrate the achievements of our graduates with a night full of joy, laughter, and memories!</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Detail</th>
+                        <th>Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Date</td>
+                        <td>June 15, 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Time</td>
+                        <td>6:00 PM - 10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Location</td>
+                        <td>School Gymnasium</td>
+                    </tr>
+                    <tr>
+                        <td>Who's Invited</td>
+                        <td>Graduates, Families, and Friends</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, please reach out to us:</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>For more information, visit our <a href="https://rhs.redmondschools.org/">school website</a>.</p>
+    </footer>
+</body>
+</html>
