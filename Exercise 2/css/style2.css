@@ -1,0 +1,63 @@
+h1 {
+    color: black;
+    text-align: center;
+    border: 20px;
+}
+
+#table {
+    border-style: solid;
+    text-align: center;
+}
+
+#toptitle {
+    background-color: white;
+    width: 100%;
+}
+
+body {
+    background-color: lightblue;
+    color: #333333;
+}
+
+table {
+    display: auto;
+    margin: auto auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+#meet {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+#seperator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    display: block;
+    margin: auto auto;
+    margin-top: 10px;
+    width: 10%;
+    height: 10%;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#toptitle {
+    text-align: center;
+    border: solid;
+}
+
+h2 {
+    text-align: center;
+}
