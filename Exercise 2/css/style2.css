@@ -28,6 +28,7 @@ table {
 
 #meet {
     text-align: center;
+    text-transform: uppercase;
 }
 
 form {
@@ -60,4 +61,17 @@ main {
 
 h2 {
     text-align: center;
+    text-decoration: underline;
+    text-decoration-color: antiquewhite;
+}
+#signup{text-decoration: underline;
+    text-decoration-color: antiquewhite;
+
+}
+#webtitle{
+    justify-content: center;
+    text-align: center;
+}
+img:hover{
+ transform:scale(0.9);
 }
