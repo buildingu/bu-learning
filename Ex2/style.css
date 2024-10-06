@@ -1,0 +1,81 @@
+html {
+    background-color: #dfe3e6;
+    text-align: center;
+}
+main{
+    text-align: center;
+}
+img{
+    width: 435px; 
+    height: 250px; 
+}
+a{
+    font-family: "VT323";
+    font-size:30px;
+}
+h1{
+    color: #598392;
+    font-size: 35px;
+    font-family: "Press Start 2P";
+    padding-top: 1em;
+}
+h2{
+    color: #6a8491;
+    font-weight: normal;
+    font-family: "VT323";
+    letter-spacing: 2.5px;
+}
+h3{
+    font-family: "Press Start 2P";
+    color: #6d8c9b;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+table{
+    border: 10px solid #124559;
+    text-align: center;
+    margin: 20px auto; 
+}
+td, th {
+    border: 5px solid #124559; /* Adjust the width, style, and color as needed */
+    padding: 15px; /* Optional: adds space inside the cells */
+    text-align: left;
+    font-family: "VT323";
+    color:#598392;
+    font-size: 25px;
+}
+table{
+    width: 60%;
+}
+form{
+    text-align: center;
+    font-family: "VT323";
+    color:#093849;
+    font-size: 25px;
+}
+input[type="submit"]{
+    background-color: #5578a0;
+    border: none;
+    font-size: 30px;
+    font-family: "VT323";
+    color: beige;
+}
+input[type="reset"] {
+    background-color: #143a66;
+    border: none;
+    font-size: 20px;
+    font-family: "VT323";
+    color: beige;
+}
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+.vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
