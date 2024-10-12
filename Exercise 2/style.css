@@ -1,0 +1,55 @@
+h3{
+    color:goldenrod;
+     text-align:center;
+     height:30px;
+     font-size: 30px;
+     font-family:'Times New Roman', Times, serif
+}
+h1{
+    color:goldenrod;
+    text-align:center;
+    font-size: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+  height:5px;
+}
+h2{
+    color:goldenrod;
+    text-align:center;
+    font-size: 35px; 
+}
+div{
+    border-width: 5px;
+    border-style:solid;
+    border-color: burlywood;
+    padding:50px;
+    background-color:azure;
+}
+body {
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+
+table {
+    width: 80%; /
+    border-collapse: collapse; 
+    margin: auto; 
+}
+
+th, td {
+    text-align: center; 
+    padding: 10px; 
+    border: 1px solid black; 
+}
+
+thead {
+    background-color:whitesmoke; 
+
+th {
+    font-weight: bold; 
+}
+td {
+    width: 50px; 
+}
