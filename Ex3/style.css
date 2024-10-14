@@ -1,0 +1,176 @@
+/* Desktop Styles */
+*{
+    font-family: Arial, Helvetica, sans-serif; 
+    color: white;
+}
+p{
+    font-size: 15px;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+h3{
+    margin-bottom: 0;
+}
+hr{
+    border: 2px solid white;
+}
+label, option, select, textarea{
+    color: black;
+}
+.FEP, #times{
+    text-align: center; /* centers input */
+    width: 80%; /* adjust the width of input boxes */
+    color: grey;
+    margin-bottom: 18px;
+    margin-top: 7px;
+    padding: 5px;
+}
+.formText{
+    margin-top: 5px; /* Adds vertical space below the label */
+    margin-bottom: 5px;
+    display: block;      /* Makes the label a block element for proper spacing */
+}
+
+@media screen and (min-width: 768px) {
+    /* Add your desktop-specific CSS here */
+    html{
+        text-align: center;
+        background-image: url('assets/background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    body, main{
+        text-align: center;
+        outline: none;
+    }
+    .mobile-table{
+        display: none;
+    }
+    .desktop-table{
+        margin: 15px auto; 
+        border-collapse: collapse;
+        border: 5px solid grey;
+        font-size: 12px;
+        background-color: rgb(43, 60, 73);
+        
+    }
+    td{
+        border: 8px solid grey;
+        text-align: center;
+        padding: 15px 50px;
+    }
+    th{
+        padding: 8px 30px;
+        border: 8px solid grey;
+        text-align: center;
+        font-size: 12px;
+    }
+    tr{
+        width: 80%;
+        height: 10px;
+    }
+    form{
+        border: 8px solid grey;
+        padding:20px;          /* padding for smaller form */
+        margin: 50px auto;      /*  centering */
+        margin-top: 0;
+        width: 30%;              /* Width of the form */
+        background-color: lightgray;
+        color: black;
+        font-style: italic;
+        font-weight: bolder;
+        font-size: small;
+    }
+    #submit, #reset{
+        font-size: 15px;
+        padding: 8px 18px;
+        background-color: rgb(85, 151, 85);
+        border: none;
+        border-radius: 3px;
+        margin: 10px 3px;
+    }
+    #reset{
+        background-color: rgb(194, 76, 76);
+    }
+    input[type="checkbox"] {
+        margin-bottom: 20px; /*space below checkboxes*/
+    }
+    
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    /* Add your mobile-specific CSS here */
+    html{
+        text-align: center;
+        background-image: url('assets/background-mobile.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    body {
+        font-size: 14px;
+    }
+    .mobile-table{
+        margin: 15px auto; 
+        border-collapse: collapse;
+        font-size: 12px;
+    }
+    tr{
+        border: 15px solid grey;
+        text-align: center;
+        padding: 15px 50px;
+    }
+    th{
+        padding: 8px 30px;
+        border: 15px solid grey;
+        text-align: center;
+        font-size: 12px;
+    }
+    td{
+        border: 15px solid grey;
+        text-align: center;
+        padding: 15px 5px;
+        background-color: rgb(97, 67, 67);
+    }
+    .title{
+        background-color: brown;
+    }
+    .desktop-table{
+        display: none;
+    }
+    h3{
+        font-size: 25px;
+    }
+    #facts{
+        font-size: 23px;
+        font-weight: bold;
+    }
+    form {
+        width: 70%;
+        padding: 10px;
+        margin: 20px auto;
+        margin: 15px auto; 
+        color:black;
+        font-weight: bolder;
+        border-collapse: collapse;
+        border: 8px solid grey;
+        background-color: lightgray;
+    }
+    #mobile-input{
+        width: 200px;  
+        height: 40px;
+    }
+    input[type="submit"], input[type="reset"] {
+        text-align: center;
+        font-size: 15px;
+        padding: 10px 110px;
+        background-color: rgb(85, 151, 85);
+        border: none;
+        border-radius: 3px;
+        margin: 10px 3px;
+    }
+    input[type="reset"]{
+        background-color: rgb(194, 76, 76);
+    }
+}
+

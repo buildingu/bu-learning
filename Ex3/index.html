@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   <!--for responsive design/check  mobile screen-->
+        <h3>Exercise 3 by John Doe</h3>
+        <p>Date submitted: 20/07/2023<p>
+    <hr>
+    </head>
+    <body>
+        <p id="facts">Fun facts about me:</p>
+        <table class="desktop-table">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Favorite Movie</th>
+                <th>Favorite Song</th>
+                <th>Favorite Video</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>
+                    <img src="assets/raiders.jpg" width="150" height="150" alt="Raiders movie cover">
+                </td>
+                <td>
+                    <p>Click play button to play music:</p>
+                    <audio controls>
+                        <source src="assets/rick_roll.mp3" type="audio/mpeg">
+                      </audio>
+                </td>
+                <td>
+                    <video width="200" height="100" controls>
+                        <source src="assets/marvel_studios.mp4" type="video/mp4">
+                    </video>
+                </td>
+            </tr>
+        </table>
+        
+        <table class="mobile-table">
+            <tr>
+                <th class="title">First Name</th>
+                <th class="title">Last Name</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="title">Favorite Movie</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img src="assets/raiders.jpg" width="180" height="180" alt="Raiders movie cover">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="title">Favorite Song</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p>Click play button to play music:</p>
+                    <audio controls>
+                        <source src="assets/rick_roll.mp3" type="audio/mpeg">
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="title">Favorite Video</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <video width="200" height="200" controls>
+                        <source src="assets/marvel_studios.mp4" type="video/mp4">
+                    </video>
+                </td>
+            </tr>
+        </table>
+
+
+    </body>
+    <hr>
+    <main>
+        <h3>Enter your details below:</h3>
+            <form>
+                <label>Full name</label> <br>
+                <input type ="text" class="FEP"> <br>
+                <label>Enter Email adress</label> <br>
+                <input type ="email" class="FEP"><br>
+                <label>Password</label><br>
+                <input type ="password" class="FEP"><br>
+
+                <label class="formText">Available meeting days:</label><br>
+                <input type = "checkbox"> Monday 
+                <input type = "checkbox"> Tuesday 
+                <input type = "checkbox"> Wednesday 
+                <input type = "checkbox"> Thursday <br>
+                <input type = "checkbox"> Friday 
+                <input type = "checkbox"> Saturday 
+                <input type = "checkbox"> Sunday 
+                <br>
+
+                <label class="formText">Available time:</label><br>
+                <select id="times"><br>
+                    <option>9:00 AM</option>
+                    <option>10:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>12:00 PM</option>
+                    <option>1:00 PM</option>
+                    <option>2:00 PM</option>
+                    <option>3:00 PM</option>
+                </select><br>
+
+                <label class="formText">Currently working on the new site?</label><br>
+                <input type= "checkbox">Yes
+                <input type= "checkbox">No
+                <br>
+
+                <label class="formText">If yes, please enter which page(s) you are working on</label>
+                <textarea  cols="42" rows ="2" placeholder="Enter your comments here..." id="mobile-input"></textarea>
+                <br>
+                <input type ="submit" id ="submit">
+                <input type ="reset" id ="reset">
+            </form>
+    </main>
+</html>
