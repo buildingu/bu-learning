@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="style.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">   <!--for responsive design/check  mobile screen-->
         <h3>Exercise 3 by John Doe</h3>
         <p>Date submitted: 20/07/2023<p>
@@ -22,7 +22,7 @@
                 <td>John</td>
                 <td>Doe</td>
                 <td>
-                    <img src="assets/raiders.jpg" width="150" height="150" alt="Raiders movie cover">
+                    <img src="assets/raiders.jpg" alt="Raiders movie cover">
                 </td>
                 <td>
                     <p>Click play button to play music:</p>
@@ -78,7 +78,6 @@
             </tr>
         </table>
 
-
     </body>
     <hr>
     <main>
@@ -102,7 +101,7 @@
                 <br>
 
                 <label class="formText">Available time:</label><br>
-                <select id="times"><br>
+                <select id="times">
                     <option>9:00 AM</option>
                     <option>10:00 AM</option>
                     <option>11:00 AM</option>
@@ -118,10 +117,15 @@
                 <br>
 
                 <label class="formText">If yes, please enter which page(s) you are working on</label>
-                <textarea  cols="42" rows ="2" placeholder="Enter your comments here..." id="mobile-input"></textarea>
+                <textarea  id="textArea" placeholder="Enter your comments here..." id="mobile-input"></textarea>
                 <br>
-                <input type ="submit" id ="submit">
-                <input type ="reset" id ="reset">
+                <button type="button" id="submit">Submit</button>
+                <button type="button" id="reset">Reset</button>
             </form>
     </main>
+    
+    <footer>
+        <p id="footer1">Desktop Version</p>
+        <p id ="footer2">Mobile Version</p>
+    </footer>
 </html>

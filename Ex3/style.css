@@ -1,4 +1,5 @@
 /* Desktop Styles */
+
 *{
     font-family: Arial, Helvetica, sans-serif; 
     color: white;
@@ -13,6 +14,9 @@ h3{
 }
 hr{
     border: 2px solid white;
+    width: 100%;   
+    margin: 0;        /* Remove default margins */
+    position: relative;
 }
 label, option, select, textarea{
     color: black;
@@ -30,7 +34,35 @@ label, option, select, textarea{
     margin-bottom: 5px;
     display: block;      /* Makes the label a block element for proper spacing */
 }
-
+button{
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin: 10px 3px;
+    padding: 10px 18px;
+}
+#submit{
+    background-color: rgb(85, 151, 85);
+}
+#reset{
+    background-color: rgb(194, 76, 76);
+}
+#submit:hover{
+    background-color: green;
+    transition-duration: 0.5s;
+}
+#reset:hover{
+    background-color: red;
+    transition-duration: 0.5s;
+}
+textArea{
+    width: 100%;
+}
+img[alt="Raiders movie cover"]{
+    width: 150px;
+    height: 150px;
+}
 @media screen and (min-width: 768px) {
     /* Add your desktop-specific CSS here */
     html{
@@ -52,22 +84,24 @@ label, option, select, textarea{
         border: 5px solid grey;
         font-size: 12px;
         background-color: rgb(43, 60, 73);
-        
+        width: 100%;              /* Make the table take up the full width of its container */    
+        max-width: 100%;     
     }
     td{
         border: 8px solid grey;
         text-align: center;
-        padding: 15px 50px;
+        width: 5%;   
     }
     th{
-        padding: 8px 30px;
+        width: 10%; /* provides more flexibility for responsive table */
         border: 8px solid grey;
         text-align: center;
         font-size: 12px;
     }
     tr{
-        width: 80%;
         height: 10px;
+        width: 100%;              /*  make the table take up the full width of its container */  
+        max-width: 100%;    
     }
     form{
         border: 8px solid grey;
@@ -81,21 +115,12 @@ label, option, select, textarea{
         font-weight: bolder;
         font-size: small;
     }
-    #submit, #reset{
-        font-size: 15px;
-        padding: 8px 18px;
-        background-color: rgb(85, 151, 85);
-        border: none;
-        border-radius: 3px;
-        margin: 10px 3px;
-    }
-    #reset{
-        background-color: rgb(194, 76, 76);
-    }
     input[type="checkbox"] {
         margin-bottom: 20px; /*space below checkboxes*/
     }
-    
+    #footer2{
+        display: none;
+    }
 }
 
 /* Mobile Styles */
@@ -160,17 +185,16 @@ label, option, select, textarea{
         width: 200px;  
         height: 40px;
     }
-    input[type="submit"], input[type="reset"] {
-        text-align: center;
-        font-size: 15px;
-        padding: 10px 110px;
-        background-color: rgb(85, 151, 85);
+    button{
         border: none;
         border-radius: 3px;
         margin: 10px 3px;
+        text-align: center;
+        font-size: 15px;
+        padding: 10px 110px;
     }
-    input[type="reset"]{
-        background-color: rgb(194, 76, 76);
+    #footer1{
+        display: none;
     }
 }
 
