@@ -10,7 +10,41 @@
       border: 5px solid #96D4D4;
       border-collapse: collapse;
       border-style: inset;
-    
+    }
+    body {
+      background-color: rgb(179, 157, 135);
+    }
+    #submitButton{
+			background-color: #96D4D4;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 20px;
+    }
+    #submitButton:hover {
+      background-color: #6d9696;
+    }
+    #resetButton{
+			background-color: #96D4D4;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 20px;
+    }
+    #resetButton:hover {
+            background-color: #6d9696; 
     }
   </style>
 <body>
@@ -96,8 +130,8 @@
   <textarea id ="userComment" rows="2" cols="20" name="comment" >Enter your comments here</textarea>
       <br><br>
     
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
+    <button id="submitButton">Submit</button>
+    <button id="resetButton">Reset</button>
 
 </center></form>
 
