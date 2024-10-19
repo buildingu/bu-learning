@@ -17,6 +17,9 @@
         text-align: center;
         margin-bottom: 0;
     }
+    #sub {
+        font-weight: bold;
+    }
     p {
         color: white;
         text-align: center;
@@ -27,6 +30,7 @@
         background-color:rgb(48, 56, 63)
     }
     td {
+        text-align: center;
         color: white;
         padding: 50px;
         background-color:rgb(33, 47, 48);
@@ -35,6 +39,12 @@
         text-align: center;
         border: 8px solid gray;
         border-collapse: collapse;
+    }
+    table {
+        text-align: center;
+    }
+    .italic {
+        font-style: italic;
     }
     .form-container {
         background-color: rgb(172, 172, 172);
