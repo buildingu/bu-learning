@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(162, 218, 235);
+}
+h1 {
+    text-align: center;
+    color: red;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    border-color: #274359;
+}
+table td {
+    border: solid;
+    border-spacing: 1px;
+    border-color: #274359;
+    padding: 10px;
+}
+table th{
+    border: solid;
+    border-spacing: 1px;
+    border-color: hsl(206, 39%, 25%);
+    padding: 3px;
+}
+#flyer {
+    display: block;
+    margin: auto;
+}
+p {
+    text-align: center;
+}
+form {
+    text-align: center;
+}
+.italics {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}

@@ -1,40 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        h1 {
-            text-align: center;
-            color: red;
-        }
-        h2 {
-            text-align: center;
-        }
-        h3 {
-            text-align: center;
-        }
-        table {
-            margin-left: auto;
-            margin-right: auto;
-            border: solid;
-            border-color: #274359;
-        }
-        table td {
-            border: solid;
-            border-spacing: 1px;
-            border-color: #274359;
-            padding: 10px;
-        }
-        table th{
-            border: solid;
-            border-spacing: 1px;
-            border-color: #274359;
-            padding: 3px;
-        }
-    </style>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fireworks Fundraiser</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Fireworks Fundraiser</h1>
@@ -47,29 +17,29 @@
             <td>June 28 - July 5th; 9am - 9pm</td>
         </tr>
     </table>
-    <center><img src="https://static.wixstatic.com/media/c308f8_6ebff1dc0eeb4c56ad6c64c612ec6ce6~mv2.png/v1/fill/w_394,h_357,al_c,lg_1,q_85,enc_auto/image.png" alt="Flyer" width="394" height="357"></center>
-    <center><p>
+    <img src="https://static.wixstatic.com/media/c308f8_6ebff1dc0eeb4c56ad6c64c612ec6ce6~mv2.png/v1/fill/w_394,h_357,al_c,lg_1,q_85,enc_auto/image.png" alt="Flyer" width="394" height="357" id="flyer">
+    <p>
         The success of Alliance's annual fireworks fundraiser is what 
         mainly enables us to support Mark Keppel's various departments. 
         Our booth, located in Atlantic Square, is run by student and 
         parent volunteers. You can volunteer with us, too! 
         Please reference the flyer for more details.
 
-        <br><br><i>**Customers must be at least 16 years old to purchase fireworks.</i>
-    </p></center>
-    <h3><center><a href="https://mkhsalliance.wixsite.com/my-site-2/fireworks-fundraiser" target="_blank">Click for more info!</a></center></h3>
+        <br><br><p class="italics">**Customers must be at least 16 years old to purchase fireworks.</p>
+    </p>
+    <h3><a href="https://mkhsalliance.wixsite.com/my-site-2/fireworks-fundraiser" target="_blank" id="link">Click for more info!</a></h3>
 
     <hr>
 
-    <h2><center>Volunteer Signup Form:</center></h2>
-    <form><center>
-        <label for="name"><b>Full Name: </b></label>
+    <h2>Volunteer Signup Form:</h2>
+    <form>
+        <label for="name" class="bold">Full Name: </label>
         <input type="text" id="name" name="name" placeholder="Your Name">
         <br><br>
-        <label for="email"><b>Email: </b></label>
+        <label for="email" class="bold">Email: </label>
         <input type="text" id="email" name="email" placeholder="youremail@gmail.com">
         <br><br>
-        <label><b>Grade:</b></label>
+        <label class="bold">Grade:</label>
         <select name="grades" id="grades"> 
             <option value="morning"> Freshman</option> 
             <option value="afternoon"> Sophomore</option> 
@@ -78,7 +48,7 @@
         </select>
         <br>
         <br>
-        <label><b>Volunteer Date(s): </b></label>
+        <label class="bold">Volunteer Date(s): </label>
         <input type="radio">
         <label>June 28</label>
         <input type="radio">
@@ -97,8 +67,8 @@
         <label>July 5</label>
         <br>
         <br>
-        <input type="submit">
-    </center></form>
+        <button type="button">Submit</button>
+    </form>
 
 </body>
 </html>
