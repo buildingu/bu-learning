@@ -1,0 +1,79 @@
+body{
+    background-image: url('Assets/background-desktop.jpg');
+}
+*{
+color: white;
+text-align: center;
+}
+h3{
+    color: white;
+    text-align: center;
+  
+}
+#id_First{
+    color: white;
+    text-align: center;
+    line-height: 5px;
+    margin: 0px;
+    
+}
+h5{
+    text-align: center;
+}
+table{
+   
+    color: white;
+    text-align: center;
+    margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+th,td{
+    border: 5px solid white; 
+  padding: 8px;
+
+}
+
+label {
+    color: white; /* Change this to your desired text color */
+}
+
+input {
+    color: black; 
+    font-size: 14px; 
+  }
+  button{
+    background-color: gray;
+  }
+  @media only screen and (max-width: 900px) {
+    body {
+        background-image: url('Assets/background-mobile.jpg');
+        font-size: 14px; 
+    }
+
+    table {
+        width: 100%; 
+        border-collapse: collapse;
+    }
+
+    tr {
+        display: flex; 
+        flex-direction: column; 
+        margin:auto; 
+
+    th {
+        display: block; 
+        width: 100%; 
+        text-align: left; 
+        border: solid;
+        padding: 8px; 
+    }
+
+    td {
+        display: block; 
+        width: 100%; 
+        text-align: left; 
+        border: solid;
+        padding: 5px; 
+    }
+}
