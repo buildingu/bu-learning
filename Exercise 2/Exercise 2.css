@@ -1,0 +1,54 @@
+/* External Css */
+
+body{
+    background-color: #000024;
+}
+
+h1, h3, p {
+    color: #bbdd52;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th, td{
+    padding: 8px;
+    text-align: center;
+    border: 5px dotted;
+    border-color: #8f4195;
+    color: #f5835e;
+    width: 300px;
+}
+
+form{
+    text-align: center;
+}
+
+img{
+    border-radius: 8px;
+    padding: 5px;
+    width: 150px;
+}
+
+input, textarea{
+    border: 1px;
+    background-color: #ce928f;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color: black;
+}
+
+a{
+    color: #f5835e;
+}
+
+div{
+    word-wrap: break-word;
+    margin: auto;
+    width: 900px;
+}
