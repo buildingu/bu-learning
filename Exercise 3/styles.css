@@ -1,0 +1,146 @@
+/* Apply a pastel color scheme and general styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2; /* Light grey background for the whole page */
+    color: #333; /* Dark grey text color for better readability */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #6a5acd; /* Pastel purple for headings */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+table {
+    width: 90%;
+    max-width: 800px; /* Limit table width on large screens */
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #ffffff; /* White background for the table */
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #ffb6c1; /* Pastel pink for table headers */
+    color: #fff; /* White text for headers */
+    font-weight: bold;
+}
+
+td {
+    background-color: #f0f8ff; /* Pastel light blue for table cells */
+}
+
+img {
+    max-width: 80%; /* Ensure images are responsive */
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+audio, iframe {
+    max-width: 100%; /* Ensure media elements are responsive */
+    border-radius: 8px; /* Rounded corners for media elements */
+}
+
+iframe {
+    width: 100%; /* Default width for iframe */
+    max-width: 560px; /* Adjust max width for better responsiveness */
+    height: auto; /* Maintain aspect ratio */
+}
+
+form {
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px; /* Limit form width on large screens */
+}
+
+label {
+    color: #6a5acd; /* Pastel purple for labels */
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea, select {
+    width: calc(100% - 22px); /* Full width minus padding */
+    padding: 10px;
+    border: 1px solid #dcdcdc; /* Light grey border */
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+button {
+    background-color: #ffb6c1; /* Pastel pink for buttons */
+    color: #fff; /* White text for buttons */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #ff69b4; /* Slightly darker pink on hover */
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    /* Desktop Styles */
+    table {
+        width: 80%; /* Larger table width on desktop */
+    }
+
+    form {
+        width: 80%; /* Larger form width on desktop */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* Mobile Styles */
+    table {
+        width: 100%; /* Full width on mobile */
+    }
+
+    iframe {
+        width: 100%; /* Full width for iframe on mobile */
+    }
+
+    form {
+        width: 100%; /* Full width for form on mobile */
+    }
+}
+
+/* Advanced Selectors */
+/* Example 1: Using the :not() selector */
+input:not([type="submit"]) {
+    background-color: #f5f5f5; /* Light grey background for non-submit inputs */
+}
+
+/* Example 2: Using the :nth-child() selector */
+table tr:nth-child(odd) {
+    background-color: #e6e6fa; /* Light lavender background for odd table rows */
+}
