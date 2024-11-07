@@ -1,0 +1,203 @@
+@media screen and (min-width: 768px) {
+body {
+    background-image: url('assets/background-desktop.jpg');
+}
+.center{
+    text-align: center;
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.deskTable{
+    border-collapse: collapse;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mobTable{
+    display: none;
+}
+td {
+    background-color: rgb(2, 62, 80);
+    border: 5px solid #747474;
+    text-align: left;
+    padding: 8px;
+    font-size: 20px;
+}
+th {
+    background-color: rgb(2, 31, 44);
+    border: 5px solid #747474;
+    text-align: left;
+    padding: 8px;
+    font-size: 20px;
+}
+.centerImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 200px;
+}
+.ital{
+    font-style: italic;
+    font-weight: bold;
+
+}
+.answer{
+    text-align: center;
+    width: 400px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+.form{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    background-color: #c4c4c4;
+    border: 5px solid #636363;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button{
+    color:white;
+    width: 100px;
+    height: 35px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: none;
+}
+.submit{
+    background-color: green;
+}
+.reset{
+    background-color: rgb(138, 4, 4);
+}
+.submit:hover{
+    background-color: rgb(51, 156, 2);
+}
+.reset:hover{
+    background-color: rgb(219, 7, 7);
+}
+.footerDes {
+    margin-left: -10px;
+    margin-bottom: -60px;
+    padding-bottom: 5px;
+    width: 100vw;
+    background-color: rgb(168, 25, 137);
+    color: white;
+    text-align: center;
+}
+.footerMob{
+    display: none;
+}
+}
+
+/*FOR MOBILE*/
+@media screen and (max-width: 767px) {
+    body {
+        background-image: url('assets/background-mobile.jpg');
+    }
+    .center{
+        text-align: center;
+        color: white;
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+    .left{
+        text-align: left;
+        color: white;
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+    .deskTable{
+        display:none;
+    }
+    .mobTable{
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+    }
+    td {
+        background-color: rgb(88, 48, 48);
+        border: 10px solid #747474;
+        text-align: left;
+        padding: 8px;
+        font-size: 20px;
+    }
+    th {
+        background-color: rgb(145, 44, 14);
+        border: 10px solid #747474;
+        text-align: left;
+        padding: 8px;
+        font-size: 20px;
+    }
+    .centerElement{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .centerImg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        height: 200px;
+    }
+    .ital{
+        font-style: italic;
+        font-weight: bold;
+    
+    }
+    .answer{
+        text-align: center;
+        width: 50vw;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+    .form{
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        background-color: #c4c4c4;
+        border: 10px solid #636363;
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .button{
+        color:white;
+        width: 60vw;
+        height: 50px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        border-radius: 8px;
+        border: none;
+    }
+    .submit{
+        background-color: rgb(25, 172, 25);
+        margin-bottom: 10px;
+    }
+    .reset{
+        background-color: rgb(219, 5, 5);
+        margin-top: 5px;
+    }
+    .submit:hover{
+        background-color: rgb(26, 194, 26);
+    }
+    .reset:hover{
+        background-color: rgb(255, 1, 1);
+    }
+    .footerMob {
+        margin-left: -10px;
+        margin-bottom: -60px;
+        padding-bottom: 5px;
+        width: 100vw;
+        background-color: rgb(11, 4, 114);
+        color: white;
+        text-align: center;
+       
+    }
+    .footerDes{
+        display: none;
+    }
+}

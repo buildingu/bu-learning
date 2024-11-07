@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title -->
+        <title>Exercise 3 by Aneesh</title>
+        <!--Metadada-->
+        <meta charset="UTF-8" />
+        <!-- Keywords -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name = "keywords" content="HTML5" />
+        <!-- Description -->
+        <meta name="description" content="Exercise 3" />
+        <!-- Author -->
+        <meta name="author" content="Aneesh" />
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Refresh Document -->
+        <meta http-equiv="refesh" content="30" />
+        <!-- CSS File -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <!-- Title -->
+        <h1 class="center"> Exercise 3 By Aneesh Ghosal</h1>
+        <p class="center">Date Submitted: 11/2/2024</p>
+        <hr>
+        <!--The Table For Desktop-->
+        <p class="center" style="font-size: 25px;"> Fun facts about me:</p>
+            <table class="deskTable">
+                <!--Headers-->
+                <tr>
+                    <th class="center">First Name</th>
+                    <th class="center">Last Name</th>
+                    <th class="center">Favorite Movie</th>
+                    <th class="center">Favorite Song</th>
+                    <th class="center">Favorite Video</th>
+                </tr>
+                <!--Data-->
+                <tr>
+                    <td class="center">Aneesh</td>
+                    <td class="center">Ghosal</td>
+                    <div class="centerElement">
+                        <td>
+                            <a href="https://en.wikipedia.org/wiki/Fast_%26_Furious" target="_blank"><img src="assets/fast.jpg" alt="Fast and Furious image" class="centerElement centerImg"></a>
+                        </td>
+                        <td class="center">
+                            <p>Click play button to play music:</p>
+                            <audio controls>
+                            <source src="assets/rick_roll.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                            </audio>
+                        </td>
+                        <td class="center">
+                            <video controls width="300" height="200">
+                            <source src="assets/marvel_studios.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video></td>
+                    </div>
+            </table>
+
+            <!--The Table For Mobile-->
+            <table class="mobTable">
+                <!--First & Last Name Rows-->
+                <tr>
+                    <th class="center">First Name</th>
+                    <th class="center">Last Name</th>
+                </tr>
+                <tr>
+                    <td class="center">Aneesh</td>
+                    <td class="center">Ghosal</td>
+                </tr>
+                <!--Favorite Movie-->
+                <tr><th class="center" colspan="2">Favorite Movie</th></tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="https://en.wikipedia.org/wiki/Fast_%26_Furious" target="_blank"><img src="assets/fast.jpg" alt="Fast and Furious image" class="centerElement centerImg"></a>
+                    </td>
+                </tr>
+                <!--Favorite Song-->
+                <tr><th class="center" colspan="2">Favorite Song</th></tr>
+                <tr>
+                    <td class="center" colspan="2">
+                        <p style="font-size: 15px;">Click play button to play music:</p>
+                        <audio controls>
+                        <source src="assets/rick_roll.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+                <!--Favorite Video-->
+                <tr><th class="center" colspan="2">Favorite Video</th>
+                </tr>
+                <tr>
+                    <td class="center" colspan="2">
+                        <video controls width="300" height="200">
+                        <source src="assets/marvel_studios.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video></td>
+                </tr>
+            </table>
+            <hr>
+            <!--The Form-->
+            <p class="center">Enter your information below:</p>
+            <div class = "form">
+                <from>
+                    <br>
+                    <label class="ital"> Full Name </label><br>
+                    <input type="" placeholder="John Doe" class="answer"><br>
+                    <label class="ital"> Email </label><br>
+                    <input type="email" placeholder="john.doe@gmail.com" class="answer"><br>
+                    <label class="ital">Password</label><br>
+                    <input type="password" placeholder="****" class="answer">
+
+                    <p class="ital"> <b>Available meeting days:</b></p>
+                    <div style="font-weight: bold; font-size: 17px;">
+                        <input type="checkbox">
+                        <label>Monday</label>
+                        <input type="checkbox">
+                        <label>Tuesday</label>
+                        <input type="checkbox">
+                        <label>Wednesday</label>
+                        <input type="checkbox">
+                        <label>Thursday</label>
+                        <input type="checkbox">
+                        <label>Friday</label>
+                        <input type="checkbox">
+                        <label>Saturday</label>
+                        <input type="checkbox">
+                        <label>Sunday</label><br><br>
+                    </div>
+
+                    <label class="ital">Available time:</label><br>
+                    <select class="answer">
+                        <option>Morning(9-12)</option>
+                        <option>Early Afternoon(12-2:30)</option>
+                        <option>Late Afternoon(2:30-5)</option>
+                    </select>
+
+                    <p class="ital"><b>Are you currently working on the new website?</b></p>
+                    <input type="checkbox" checked>Yes
+                    <input type="checkbox"> No
+
+                    <p class="ital"><b>If yes, please enter which page you're working on</b></p>
+                    <textarea cols="40" rows="4" placeholder="Comments"></textarea><br>
+
+                    <input type="submit" class="button submit">
+                    <input type="reset" class="button reset">
+                </from>
+            </div>
+            <h1 class = "footerDes">Desktop Version</h1>
+            <h1 class = "footerMob">Mobile Version</h1>
+    </body>
+</html>
