@@ -1,77 +1,95 @@
 h1 {
-    color: black;
-    text-align: center;
-    border: 20px;
+  color: black;
+  text-align: center;
+  border: 20px;
 }
 
 #table {
-    border-style: solid;
-    text-align: center;
+  border-style: solid;
+  text-align: center;
 }
 
 #toptitle {
-    background-color: white;
-    width: 100%;
+  background-color: white;
+  width: 100%;
 }
 
 body {
-    background-color: lightblue;
-    color: #333333;
+  background-color: lightblue;
+  color: #333333;
 }
 
 table {
-    display: auto;
-    margin: auto auto;
-    border-collapse: collapse;
-    background-color: white;
+  display: auto;
+  margin: auto auto;
+  border-collapse: collapse;
+  background-color: white;
 }
 
 #meet {
-    text-align: center;
-    text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 form {
-    text-align: center;
+  text-align: center;
 }
 
 #seperator {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 img {
-    display: block;
-    margin: auto auto;
-    margin-top: 10px;
-    width: 10%;
-    height: 10%;
+  display: block;
+  margin: auto auto;
+  margin-top: 10px;
+  width: 10%;
+  height: 10%;
 }
 
 main {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #toptitle {
-    text-align: center;
-    border: solid;
+  text-align: center;
+  border: solid;
 }
 
 h2 {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: antiquewhite;
+}
+#signup {
+  text-decoration: underline;
+  text-decoration-color: antiquewhite;
+}
+#webtitle {
+  justify-content: center;
+  text-align: center;
+}
+img:hover {
+  transform: scale(0.9);
+}
+#musichead2{
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: antiquewhite;
 }
-#signup{text-decoration: underline;
-    text-decoration-color: antiquewhite;
-
+audio{
+    display: block;
+    margin: auto auto;
 }
-#webtitle{
-    justify-content: center;
-    text-align: center;
+#linktoloc{
+   text-align: center;}
+footer{
+    background-color: white;
+    border: #333333;}
+#eventtable, tr, th{
+    border: 2px solid black;
 }
-img:hover{
- transform:scale(0.9);
+footer{
+    border: 3px solid black;
 }

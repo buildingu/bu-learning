@@ -10,18 +10,15 @@
     <link rel="stylesheet" type="text/css" href="./css/style2.css">
 </head>
 <main>
-    <header>
-
-    </header>
-
     <body>
         <h1 id="webtitle">Track & Field Meet:</h1>
         <div id="toptitle">Hosted at Building-U High School - Toronto, Canada from 8:00am - 11:00am on September 29th, 2025
         </div>
         <img id="t&f"
-            src="assets2/illustration-of-track-and-field-logo-perfect-for-background-print-etc-free-vector.jpg">
-        <table id="event_table" border="5px" width="1000px" height="200px">
+            src="assets2/illustration-of-track-and-field-logo-perfect-for-background-print-etc-free-vector.jpg"
+            alt="Track & Field Logo">
             <h2 id="meet">Meet Schedule:</h2>
+            <table id="event_table" width="1000px" height="200px">
             <tr>
                 <th>Events:</th>
                 <th>Heat:</th>
@@ -56,15 +53,15 @@
         <h1 id="signup">Sign up Form:</h1>
         <form>
             <div class="formbase"><label for="firstname">First Name:</label>
-                <input type="text" id="firstname"><br><br>
+                <input type="text" id="firstname" name="firstnameinput"><br><br>
                 <label for="lastname">Last Name:</label>
-                <input type="text" id="lastname"><br><br>
+                <input type="text" id="lastname" name="lastnameinput"><br><br>
                 <label for="DOB">Date of Birth:</label>
-                <input type="text" id="DOB"><br><br>
+                <input type="text" id="DOB" name="DOBinput"><br><br>
                 <label for="e_mail">Email:</label>
-                <input type="email" id="e_mail"><br><br>
+                <input type="email" id="e_mail" name="emailinput"><br><br>
                 <label for="raceoptions">Selected Race:</label>
-                <select required id="raceoptions">
+                <select required id="raceoptions" name="dist_racechoices">
 
                     <option>100m</option>
                     <option>200m</option>
@@ -73,34 +70,27 @@
                     <option>1600m</option>
 
                 </select><br><br>
-                <input type="submit" id="submitbutton"><input type="reset">
+                <input type="submit" id="submitbutton" name="button_to_submit"><input type="reset" name="button_to_reset">
                 <label for="submitbutton"></label>
             </div>
         </form>
         <div id="seperator"></div>
-        <h2>Race Footage from Last Year:</h2>
+        <h2 id=""racevidlastyr>Race Footage from Last Year:</h2>
         <div id="seperator">
-            <video controls height="300px" width="400px">
+            <video controls height="137.5px" width="200px">
                 <source src="assets2/3125907-uhd_3840_2160_25fps.mp4" type="video/mp4">
             </video>
         </div>
-        <center>
-            <h2>Music during the event:</h2>
+            <h2 id="musichead2">Music during the event:</h2>
     </body>
-    </center>
-    <center><audio controls autoplay>
+    <audio controls autoplay>
             <source src="assets2/fun-day-150602.mp3" type="audio/mp3">
-        </audio></center>
+        </audio>
 
     </body>
     <footer>
-        <hr>
-        <hr>
-        <center>
-            <a
-                href="https://www.google.ca/maps/place/Toronto,+ON,+Canada/@43.718371,-79.5428661,11z/data=!3m1!4b1!4m6!3m5!1s0x89d4cb90d7c63ba5:0x323555502ab4c477!8m2!3d43.653226!4d-79.3831843!16zL20vMGg3aDY?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D">Link
-                to Location</a>
-        </center>
+            <div id="linktoloc"><a href="https://www.google.ca/maps/place/Toronto,+ON,+Canada/@43.718371,-79.5428661,11z/data=!3m1!4b1!4m6!3m5!1s0x89d4cb90d7c63ba5:0x323555502ab4c477!8m2!3d43.653226!4d-79.3831843!16zL20vMGg3aDY?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D">Link
+                to Location</a></div>
     </footer>
 </main>
 
