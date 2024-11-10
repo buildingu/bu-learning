@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1</title>
+  </head>
+  <body>
+    <!--Title and Date-->
+    <h1 style="text-align: center">Exercise 1 by Hrishi Patel</h1>
+    <p style="text-align: center">Date submitted: 11/10/2024</p>
+
+    <!--Subheading-->
+    <h2 style="text-align: center">Fun facts about me:</h2>
+
+    <!--Table-->
+    <table border="1" align="center" cellpadding="10" cellspacing="0">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Favorite Movie</th>
+        <th>Favorite Song</th>
+        <th>Favorite Video</th>
+      </tr>
+      <tr>
+        <td>Hrishi</td>
+        <td>Patel</td>
+        <td>
+          <a
+            href="https://en.wikipedia.org/wiki/Oppenheimer_(film)"
+            target="_blank"
+          >
+            <img src="Oppenheimer_(film).jpg" alt="Oppenheimer" width="100"
+          /></a>
+        </td>
+        <td>
+          <audio controls>
+            <source
+              src="The Weeknd - Blinding Lights (Official Audio).mp3"
+              type="audio/mpeg"
+            />
+          </audio>
+        </td>
+        <td>
+          <video width="200" controls>
+            <source src="4772983-uhd_2160_3840_24fps.mp4" type="video/mp4" />
+            Your browser does not support the video element.
+          </video>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Form Subheading -->
+    <h2 style="text-align: center">Enter your details below:</h2>
+
+    <!-- Form -->
+    <form align="center">
+      <label
+        >Full Name:
+        <input type="text" name="fullname" placeholder="Hrishi Patel" />
+      </label>
+      <br /><br />
+
+      <label
+        >Email Addr:
+        <input type="email" name="email" placeholder="hrishi8731@gmail.com" />
+      </label>
+      <br /><br />
+
+      <label
+        >Password:
+        <input type="password" name="password" placeholder="********" />
+      </label>
+      <br /><br />
+
+      <!-- Available Meeting Days -->
+      <p>Available Meeting Days:</p>
+      <label><input type="checkbox" name="day" value="Monday" />Monday</label>
+      <label><input type="checkbox" name="day" value="Tuesday" />Tuesday</label>
+      <label
+        ><input type="checkbox" name="day" value="Wednesday" />Wednesday</label
+      >
+      <label
+        ><input type="checkbox" name="day" value="Thursday" />Thursday</label
+      >
+      <label><input type="checkbox" name="day" value="Friday" />Friday</label>
+      <label
+        ><input type="checkbox" name="day" value="Saturday" />Saturday</label
+      >
+      <label><input type="checkbox" name="day" value="Sunday" />Sunday</label>
+      <br /><br />
+
+      <!-- Available Time -->
+      <label
+        >Available Time:
+        <select name="available-time">
+          <option>Morning (8am to 12pm)</option>
+          <option>Afternoon (12pm to 4pm)</option>
+          <option>Evening (4pm to 8pm)</option>
+        </select>
+      </label>
+      <br /><br />
+
+      <!-- Working on New Website? -->
+      <p>Currently working on new website?:</p>
+      <label
+        ><input type="radio" name="working" value="yes" checked /> Yes</label
+      >
+      <label><input type="radio" name="working" value="no" /> No</label>
+      <br /><br />
+
+      <!-- Comments -->
+      <label
+        >Comments:
+        <textarea
+          name="comments"
+          rows="4"
+          cols="40"
+          placeholder="Enter your comments here"
+        ></textarea>
+      </label>
+      <br /><br />
+
+      <!-- Submit and Reset Buttons -->
+      <input type="submit" value="submit" />
+      <input type="reset" value="reset" />
+    </form>
+  </body>
+</html>
