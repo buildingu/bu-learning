@@ -75,21 +75,25 @@ h2 {
 img:hover {
   transform: scale(0.9);
 }
-#musichead2{
-    text-align: center;
+#musichead2 {
+  text-align: center;
 }
-audio{
-    display: block;
-    margin: auto auto;
+audio {
+  display: block;
+  margin: auto auto;
 }
-#linktoloc{
-   text-align: center;}
-footer{
-    background-color: white;
-    border: #333333;}
-#eventtable, tr, th{
-    border: 2px solid black;
+#linktoloc {
+  text-align: center;
 }
-footer{
-    border: 3px solid black;
+footer {
+  background-color: white;
+  border: #333333;
+}
+#eventtable,
+tr,
+th {
+  border: 2px solid black;
+}
+footer {
+  border: 3px solid black;
 }
