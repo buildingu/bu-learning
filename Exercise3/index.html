@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basketball Game at Lake Washington High School</title>
-    <link href="styles.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header class="header"></header>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 3</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <span id="title">Exercise 3 by Anay Singh</span>
+    <p id="date">Date submitted: 11/11/2024</p>
+  </header>
+
+  <section class="fun-facts">
+    <h2>Fun facts about me:</h2>
+    <div class="facts-table">
+      <div>First Name</div>
+      <div>Last Name</div>
+      <div>Favorite Movie</div>
+      <div>Favorite Song</div>
+      <div>Anay</div>
+      <div>Singh</div>
+      <div><img src="assets/starwars.jpeg" alt="Favorite Movie"></div>
+      <div><audio controls><source src="assets/rick_roll.mp3" type="audio/mpeg"></audio></div>
+      <div>Favorite Video</div>
+      <div colspan="3"><video controls><source src="assets/marvel_studios.mp4" type="video/mp4"></video></div>
+    </div>
+  </section>
+
+  <section class="details-form">
+    <h2>Enter your details below:</h2>
+    <form>
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="John Doe">
+      </div>
+      
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="jdoe@fakemail.com">
+      </div>
+      
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" placeholder="*****">
+      </div>
+      
+      <div class="form-group">
+        <div>Available Meeting Days:</div>
+        <div class="checkbox-group">
+          <label><input type="checkbox"> Monday</label>
+          <label><input type="checkbox"> Tuesday</label>
+          <label><input type="checkbox"> Wednesday</label>
+          <label><input type="checkbox"> Thursday</label>
+          <label><input type="checkbox"> Friday</label>
+          <label><input type="checkbox"> Saturday</label>
+          <label><input type="checkbox"> Sunday</label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <div>Available Time:</div>
+        <select>
+          <option>Morning (8am to 12pm)</option>
+          <option>Afternoon (12pm to 4pm)</option>
+          <option>Evening (4pm to 8pm)</option>
+          <option>Night (8pm to 12am)</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <div>Currently working on a new website?</div>
+        <div class="radio-group">
+          <label><input type="radio" name="website"> Yes</label>
+          <label><input type="radio" name="website"> No</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>If yes, please enter which page(s) you are working on</label>
+        <textarea placeholder="Enter your comments here"></textarea>
+      </div>
+      
+      <div class="button-container">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </section>
+</body>
 </html>

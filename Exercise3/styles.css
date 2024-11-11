@@ -1,0 +1,203 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('assets/background-desktop.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+
+.header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #430a64;
+  width: 100%;
+}
+
+#title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#date {
+  font-size: 14px;
+}
+
+
+.fun-facts {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.fun-facts h2 {
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.facts-table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(51, 51, 51, 0.9);
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.facts-table div {
+  padding: 10px;
+  border: 1px solid #555;
+  color: #ffffff;
+}
+
+.facts-table div:nth-child(odd) {
+  background-color: #333;
+}
+
+.facts-table img,
+.facts-table video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+.details-form {
+  background-color: rgba(68, 68, 68, 0.9); 
+  padding: 30px;
+  width: 50%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+
+.details-form h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #cccccc;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+
+.checkbox-group, .radio-group {
+  display: flex;
+  gap: 10px;
+  color: #cccccc;
+}
+
+.checkbox-group label, .radio-group label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-container button {
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #430a64;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #5c0e89;
+}
+
+
+input:not(.special-input) {
+  border: 1px solid #ddd;
+}
+
+
+@media screen and (min-width: 768px) {
+  .details-form {
+    width: 50%;
+  }
+
+  .facts-table {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .header {
+    font-size: 18px;
+  }
+
+  body {
+    background: url('assets/background-mobile.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .facts-table {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .details-form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .button-container button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
