@@ -1,0 +1,16 @@
+
+
+.top {
+    background-image: url('Assets/bgimage.jpeg');
+    color: pink;
+}
+
+.uniform-image {
+    width: 200px; 
+    height: 200px; 
+    object-fit: contain; 
+}
+.bottom{
+    background-image: url('Assets/bgimage.jpeg'); 
+    color: pink;   
+}
