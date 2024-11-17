@@ -1,0 +1,86 @@
+/* Header Styles */
+header {
+    background-color:  #9370DB;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Body Styles */
+body {
+    background-color:  #4b0082;
+    color: black; 
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Overall section styling */
+.information {
+    padding: 20px;
+    background-color: #CBC3E3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Title styling */
+.information h2 {
+    font-size: 1.8em;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table styling */
+.information table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table headers */
+.information th {
+    text-align: left;
+    background-color: #CBC3E3;
+    padding: 12px 15px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Table data */
+.information td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: black;
+}
+
+/* Styling for the video section */
+.video {
+    text-align: center;
+    padding: 10px;
+    background-color: #CBC3E3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+/* Styling for the video title */
+.video h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: black;
+}
+
+/* Styling for the form section */
+.form {
+        padding: 20px;
+        background-color: #CBC3E3;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        max-width: 800px;
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+}
