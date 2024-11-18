@@ -1,4 +1,3 @@
-/* Header Styles */
 header {
     background-color:  #9370DB;
     color: black;
@@ -6,7 +5,6 @@ header {
     text-align: center;
 }
 
-/* Body Styles */
 body {
     background-color:  #4b0082;
     color: black; 
@@ -14,7 +12,6 @@ body {
     padding: 20px;
 }
 
-/* Overall section styling */
 .information {
     padding: 20px;
     background-color: #CBC3E3;
@@ -25,7 +22,6 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-/* Title styling */
 .information h2 {
     font-size: 1.8em;
     color: black;
@@ -33,14 +29,12 @@ body {
     margin-bottom: 20px;
 }
 
-/* Table styling */
 .information table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-/* Table headers */
 .information th {
     text-align: left;
     background-color: #CBC3E3;
@@ -49,7 +43,6 @@ body {
     font-weight: bold;
 }
 
-/* Table data */
 .information td {
     padding: 12px 15px;
     text-align: left;
@@ -57,7 +50,6 @@ body {
     color: black;
 }
 
-/* Styling for the video section */
 .video {
     text-align: center;
     padding: 10px;
@@ -66,14 +58,11 @@ body {
     border-radius: 4px;
 }
 
-/* Styling for the video title */
 .video h2 {
     font-size: 1.5em;
     margin-bottom: 15px;
     color: black;
 }
-
-/* Styling for the form section */
 .form {
         padding: 20px;
         background-color: #CBC3E3;
