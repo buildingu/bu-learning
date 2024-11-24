@@ -21,25 +21,32 @@
 
 import { createContext, useState } from "react";
 
-// Mock user obj.
-const user = {
-  // Initialize user fields mentioned...
-}
+const mockUser = {
+  firstName: "Owen",
+  lastName: "Feng",
+  email: "owen.feng@example.com",
+};
 
-// const AuthContext =
+const AuthContext = createContext();
 
 export function AuthContextProvider({ children }) {
 
+  const [user, setUser] = useState(null);
 
-//   return (
-//     <AuthContext.Provider
-//       value={{
-//         ...
-//       }}
-//     >
-//       {children}
-//     </AuthContext.Provider>
-//   );
+  const login = () => {
+    setUser(mockUser);
+  };
+
+  const logout = () => {
+    setUser(null);
+    alert("User session timed out.");
+  };
+
+  return (
+    <AuthContext.Provider value={{ user, login, logout }}>
+      {children}
+    </AuthContext.Provider>
+  );
 }
 
 export default AuthContext;
