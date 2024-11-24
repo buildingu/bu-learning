@@ -10,19 +10,27 @@
  */
 
 import { useContext } from "react";
+import AuthContext from "./AuthContext";
 
 export default function UseContextChallenge() {
+  const { user, login, logout } = useContext(AuthContext);
 
   return (
     <main>
       <h1>useContext Challenge</h1>
-
-      <button>
-        {/* ... */}
+      <button onClick={user ? logout : login}>
+        {user ? "Logout" : "Login"}
       </button>
-      <div>
-        {/* Show user info here when logged in. */}
-      </div>
+
+      {user && (
+        <div>
+          <h2>User Info</h2>
+          <p>First Name: {user.firstName}</p>
+          <p>Last Name: {user.lastName}</p>
+          <p>Email: {user.email}</p>
+        </div>
+      )}
     </main>
   );
 }
+
