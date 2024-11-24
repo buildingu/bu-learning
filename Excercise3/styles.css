@@ -110,69 +110,85 @@ input[type="checkbox"], input[type="radio"] {
 @media (max-width: 767px) {
     body {
         background-image: url(Assets/background-mobile.jpg);
+        font-size: 16px;
+    }
+
+    header {
+        padding: 15px;
     }
 
     .form-section {
-        max-width: 390px; 
+        max-width: 300px; 
         border: 10px solid #5c5a5a;
-    }
-
-    table {
-        display: block;
-        width: 100%;
-        border: 0;
-        background-color: transparent;
-        color: white;
-        
+        font-size: 15px;
     }
     
-
-    .button-group {
-        display: block;
-        margin-top: 20px;
+    form input:not([type="radio"]):not([type="checkbox"]) {
+        width: calc(100% - 22px); 
     }
 
-    input[type="submit"], input[type="reset"] {
-        width: 100%;
-    }
+    @media (max-width: 767px) {
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+    
+        thead {
+            display: none;
+        }
+    
+        tr {
+            margin-bottom: 10px;
+        }
+    
+        tr:first-of-type {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    
+        tr:first-of-type td[data-label="Firstname"],
+        tr:first-of-type td[data-label="Last Name"] {
+            width: 50%; 
+            box-sizing: border-box;
+            text-align: center;
+            background-color: #800080; 
+            color: white;
+        }
 
-
-
-
-
-    thead {
-        display:none;
-    }
-
-    tbody, tr {
-        display: block;
-        width: 80%;
-        margin-bottom: 10px;
-        margin: 0 auto;
-        font-weight: bold;
-    }
-
-    td, th {
-        display: block;
-        text-align: center;
-        border: 20px solid grey; 
-        padding: 10px;
-        box-sizing: border-box;
-        margin: 0;
-        width: 100%; 
-    }
-
-    td::before {
-        content: attr(data-label);
-        font-weight: bold;
-        display: block;
-        margin-bottom: 5px;
-        background-color: #580202;
-        margin-top: 0px;
-        border: 2px grey;
-    }
-
-    td{
-        background-color: #b73d3d;
-    }
+        tr:first-of-type td[data-label="Favorite Movie"],
+        tr:first-of-type td[data-label="Favorite Song"],
+        tr:first-of-type td[data-label="Favorite Video"] {
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: #800080; 
+            color: white;
+        }
+    
+        tr:not(:first-of-type) td {
+            width: 100%;
+            background-color: #800080; 
+            text-align: center;
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            position: relative;
+        }
+    
+        td::before {
+            content: attr(data-label);
+            display: block;
+            font-weight: bold;
+            background-color: grey; 
+            padding: 5px;
+            color: white;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+    
+        td img, td audio, td video {
+            display: block;
+            margin: 0 auto;
+        }
+    }    
 }
