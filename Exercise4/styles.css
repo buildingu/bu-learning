@@ -1,0 +1,88 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 60px;
+}
+
+.gradient-bg {
+    background: linear-gradient(to bottom right, #6400e4, #34008e);
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('your-background.jpg') no-repeat center center/cover;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 20px 0;
+    background: linear-gradient(to top, #34008e, #6400e4);
+}
+
+#about img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#about p {
+    margin: 10px 0;
+}
+
+#contact .form-control {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-toggler {
+        margin-right: 10px;
+    }
+
+    #projects .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    #projects .card-title {
+        font-size: 1rem;
+    }
+
+    #projects .card-text {
+        font-size: 0.9rem;
+    }
+}
