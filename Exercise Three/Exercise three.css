@@ -208,7 +208,7 @@ img{
         background-color: lightgray;
     }
 
-    #input{
+    .textArea{
         width: 200px;  
         height: 40px;
     }
