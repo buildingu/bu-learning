@@ -30,13 +30,7 @@ if (typelist[0] !== "string") {
 } else if (typelist[3] !== "string") {
   console.log("The phonenumber must be a string");
 }
-if (
-  Object.keys(params).length === 4 ||
-  typelist[0] === "string" ||
-  typelist[1] === "string" ||
-  typelist[2] === "string" ||
-  typelist[4] === "number"
-) {
+{
   if (params.age < 18) {
     console.log("Sorry, not old enough for our app.");
   } else {
