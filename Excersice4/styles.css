@@ -39,8 +39,8 @@
     text-align: left; 
     position: absolute; 
     left: 100px; 
-    bottom: 150px; 
-    width: auto; 
+    bottom: 150px;
+    max-width: 900px; 
 }
 
 .colored-section h1 {
@@ -76,9 +76,10 @@
 }
 
 .colored-section .custom-image {
-    max-width: 100px; 
-    margin-right: 250px;
-    margin-top: 100px;
+    max-width: 5cm; 
+    margin-right: 90px;
+    margin-top: 60px;
+    max-height: 5cm;
 
 }
 
@@ -103,6 +104,65 @@ form {
     border-radius: 10px; 
     width: 100%; 
     max-width: 600px; 
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    .colored-section {
+        height: 1100px;
+    }
+    .colored-section h1{
+        margin-top: 0cm;
+    }
+    .colored-section p {
+        margin-top: 1px;
+    }
+    .colored-section h2{
+        left: 0.5cm;
+        height: 10cm
+    }
+    .colored-section .description {
+        height: 14cm;
+        margin-right: 0cm;
+        margin-left: 0cm;
+    }
+    .form-container{
+        height: 7cm;
+    }
+    .colored-section .custom-image{
+        margin-top: 15cm;
+        max-width: 5cm;
+        max-height: 5cm;
+        margin-right: 2cm;
+        position: relative;
+        align-items: center;
+    }
+    .projects{
+        height: 31cm;
+    }
+    .contact-form-section{
+        background-image: url('Assets/black__purple__blue_background_by_amanithelion_db7xpzv-fullview.jpg');
+        background-size: cover; 
+        background-position: center; 
+        padding: 60px;
+        color: white; 
+        height: 20cm; 
+    }
+    .projects .box{
+        position: relative;
+    }
+    .contact-form-section .form-container{
+        right: 1cm;
+        height: 11cm;
+    }
+    .contact-form-section .h1{
+        padding: 60px;
+        color: white; 
+        height: 10cm; 
+    }
+    .contact-form-section .form-control {
+        width: 7cm;
+    }
 }
 
 
