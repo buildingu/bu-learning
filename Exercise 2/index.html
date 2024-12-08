@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model UN</title>
+    <link rel="stylesheet" href="css/mystyle.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>International High School Model UN Conference</h1>
+      <nav id="main-nav">
+        <a href="#event-info">Event Info</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#contact-info">Contact</a>
+      </nav>
+    </header>
+
+    <div id="content">
+      <section id="event-info">
+        <h2>About the Event</h2>
+        <p>
+          Join us for the International Model UN Conference 2024, where
+          delegates from various schools and countries will gather to discuss
+          global issues. It will take place at Bridgewater-Raritan High School
+          on January 1st.
+        </p>
+        <section id="committee-assignments">
+          <h3>Committee Assignments</h3>
+          <p>
+            Check out the committee assignments and topics for the conference!
+            Click the link below to view the detailed list:
+          </p>
+          <a
+            id="committee-link"
+            href="https://docs.google.com/spreadsheets/d/1_7DDBWNp95h1RaYZ0rQ93i3WNTLr_zSMt42KC8o5LpI/edit?gid=0#gid=0"
+            target="_blank"
+          >
+            View Committee Assignments
+          </a>
+        </section>
+      </section>
+
+      <section id="schedule">
+        <h2>Schedule</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Event</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>9:00 AM</td>
+              <td>Opening Ceremony</td>
+              <td>Main Hall</td>
+            </tr>
+            <tr>
+              <td>10:00 AM</td>
+              <td>Committee Session 1</td>
+              <td>Committee Rooms</td>
+            </tr>
+            <tr>
+              <td>1:00 PM</td>
+              <td>Lunch</td>
+              <td>Cafeteria</td>
+            </tr>
+            <tr>
+              <td>2:00 PM</td>
+              <td>Committee Session 2</td>
+              <td>Committee Rooms</td>
+            </tr>
+            <tr>
+              <td>5:00 PM</td>
+              <td>Closing Ceremony</td>
+              <td>Main Hall</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="registration">
+        <h2>Register for the Conference</h2>
+        <p>
+          Fill out the form below to register for the International High School
+          Model UN Conference 2024:
+        </p>
+        <form
+          id="registration-form"
+          action="submit_registration_form_url"
+          method="POST"
+        >
+          <label for="full-name">Full Name:</label>
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            placeholder="Your Full Name"
+            required
+          />
+
+          <label for="school">School:</label>
+          <input
+            type="text"
+            id="school"
+            name="school"
+            placeholder="Your School"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <label for="preferred-committee">Preferred Committee:</label>
+          <select id="preferred-committee" name="committee" required>
+            <option value="">Select Committee</option>
+            <option value="DISEC">DISEC</option>
+            <option value="ECOFIN">ECOFIN</option>
+            <option value="SPECPOL">SPECPOL</option>
+            <option value="WHO">WHO</option>
+            <option value="Legal">Legal Committee</option>
+            <option value="UNHCR">UNHCR</option>
+            <option value="Crisis">Crisis</option>
+          </select>
+
+          <button id="register-button" type="submit">Register</button>
+        </form>
+      </section>
+    </div>
+
+    <section id="contact-info">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:contact@modelun.com">IHSMUNC.com</a></p>
+      <p>Cellphone: <a href="tel:+1234567890">+1 (123) 456-789</a></p>
+    </section>
+
+    <footer id="main-footer">
+      <p>&copy; 2024 International High School Model UN Conference</p>
+    </footer>
+  </body>
+</html>
