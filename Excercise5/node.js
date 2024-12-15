@@ -1,5 +1,5 @@
 function formValidator(firstName, lastName, age, phoneNumber) {
-    const resultDiv = document.getElementById('result');
+    const resultDiv = document.getElementById("result");
   
     if (!firstName) {
       resultDiv.textContent = "The first name input is missing.";
@@ -19,20 +19,20 @@ function formValidator(firstName, lastName, age, phoneNumber) {
     }
   
     if (typeof firstName !== "string" || !/^[a-zA-Z]+$/.test(firstName)) {
-      resultDiv.textContent = `The first name should be a string.`;
+      resultDiv.textContent = "The first name should be a string.";
       return;
     }
     if (typeof lastName !== "string" || !/^[a-zA-Z]+$/.test(lastName)) {
-      resultDiv.textContent = `The last name should be a string.`;
+      resultDiv.textContent = "The last name should be a string.";
       return;
     }
     if (typeof phoneNumber !== "string") {
-      resultDiv.textContent = `The phone number should be a string.`;
+      resultDiv.textContent = "The phone number should be a string.";
       return;
     }
   
     if (typeof age !== "number") {
-      resultDiv.textContent = `The age should be a number.`;
+      resultDiv.textContent = "The age should be a number.";
       return;
     }
   
@@ -44,7 +44,7 @@ function formValidator(firstName, lastName, age, phoneNumber) {
     resultDiv.textContent = "WELCOME TO THE ADOS APP.";
   }
   
-  document.getElementById('userForm').addEventListener('submit', function(event) {
+  document.getElementById("userForm").addEventListener("submit", function(event) {
     event.preventDefault(); 
   
     const firstName = document.getElementById('firstName').value;
