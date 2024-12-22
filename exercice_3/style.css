@@ -1,0 +1,98 @@
+* {
+    margin: 0 auto;
+    padding: 10px;
+}
+body {
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(/third_exercice/background-desktop.jpg);
+    color: aliceblue;
+}
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+header p {
+    font-size: 1rem;
+    color: #ddd;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.child > th {
+    background-color: rgb(31, 36, 68);
+}
+.child > td {
+    background-color: rgb(61, 64, 105);
+}
+.parent .child td, th {
+    border: 5px solid rgb(122, 121, 138);
+}
+.form {
+    width: 35%;
+    height: 40rem;
+    border: 10px solid rgb(142, 142, 151);
+    background-color:#ddd;
+    color: black;
+    font-weight: 700;
+}
+.form input[type="radio"] {
+    margin-right: 10px;
+}
+.form input[type="submit"], .form input[type="reset"] {
+    width: 45%;
+    margin: 10px 2.5%;
+    padding: 7px;
+    background-color: green;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: white;
+}
+.form input[type="reset"] {
+    background-color: red;
+}
+/* Desktop Styles */
+@media screen and (min-width: 1099px) {
+    #mobile { /*i made the mobile table invisible */
+        display: none;
+       }
+    body {
+        font-size: 16px;
+    }
+    .form {
+        width: 50%; 
+        height: auto; 
+   }
+}
+@media screen and (max-width: 1100px) {
+    #desktop { /*made the desktop table invisible */
+        display: none;
+    }
+    body {
+        font-size: 14px;
+        background-image: url(/third_exercice/background-mobile.jpg);
+        background-size: cover; 
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+    #mobile th {
+        background-color: rgb(82, 40, 90);
+        border: 5px solid rgb(122, 121, 138);
+    }
+    #mobile td {
+        background-color: rgb(51, 24, 73);
+        border: 5px solid rgb(122, 121, 138);
+    }
+    .form {
+        width: 70%;
+    }
+    .form input[type="submit"],
+    .form input[type="reset"] {
+        width: 60%; 
+        margin: 10px 0;
+    }
+}

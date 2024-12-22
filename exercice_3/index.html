@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>exercie 3</title>
+</head>
+<body>
+    <header>
+        <h1> exercice 3 by ikram labbassi</h1>
+        <p> date submitted: </p>
+    </header>
+    <section class="parent">
+        <fieldset>
+            <h3>fun facts about me!</h3>
+            <table id="desktop"> <!-- this first table is for the desktop version of the webpage--> 
+                <tr class="child">
+                    <th> first name</th>
+                    <th> last name</th>
+                    <th> favourite movie</th>
+                    <th> favourite song</th>
+                    <th> favourite video</th>
+                </tr>
+                <tr class="child">
+                    <td> ikram</td>
+                    <td> labbassi</td>
+                    <td> <img src="/third_exercice/fear_street.jpg" alt="image error" height="150px"/></td>
+                    <td> <audio controls src="/third_exercice/Hotel_California.mp3"> click the play button to play music </audio></td>
+                    <td> <video controls height="150px"><source src="/third_exercice/Brian_and_Stewie_Over.mp4" type="video/mp4"></video></td>
+                </tr>
+            </table>
+            <table id="mobile"> <!-- this second table is for the mobile version of the --> 
+                <tr>
+                    <th> first name</th>
+                    <th> last name</th>
+                <tr>
+                    <td> ikram</td>
+                    <td> labbassi</td>
+                </tr>
+                <tr>
+                    <th colspan="2">favourite movie</th>
+                </tr>
+                <tr>
+                    <td colspan="2"> <img src="/third_exercice/fear_street.jpg" alt="image error" height="250px"/></td>
+                </tr>
+                <tr>
+                    <th colspan="2">favourite song</th>
+                </tr>
+                <tr>
+                    <td colspan="2"> <audio controls src="/third_exercice/Hotel_California.mp3"> click the play button to play music </audio></td>
+                </tr>
+                <tr>
+                    <th colspan="2"> favourite video</th>
+                </tr>
+                <tr>
+                    <td colspan="2"> <video controls height="250px"><source src="/third_exercice/Brian_and_Stewie_Over.mp4" type="video/mp4"></video></td>
+                </tr>
+            </table>
+        </fieldset>
+    </section>
+    <h3> enter your info in the form below</h3>
+    <section class="form">
+        <form>
+            <label>your full name</label><br>
+            <input type="text" placeholder="full name" required><br>
+            <label>your email address</label><br>
+            <input type="text" placeholder="email address" required><br>
+            <label>your password</label><br>
+            <input type="password" placeholder="...." required><br><br>
+            <P>available meeting days:</P>
+                            <input type="radio"> Monday
+                            <input type="radio"> Tuesday
+                            <input type="radio"> Wednesday
+                            <input type="radio"> Thursday
+                            <input type="radio"> Friday
+                            <input type="radio"> Saturday
+                            <input type="radio"> Sunday<br><br>
+                            <label>Choose what time you're mostly available:</label><br>
+                <select>
+                    <option>morning </option>
+                    <option>afternoon</option>
+                    <option>evening</option>
+                </select> <br><br>
+                <p> are you currently working on a new website?</p>
+                <input type="radio"> yes
+                <input type="radio"> no<br><br>
+                <p>if so, please specify which page are u working on.</p>
+                <textarea placeholder="enter your text here"></textarea><br>
+                <input type="submit"><input type="reset">
+        </form>
+    </section>
+</body>
+</html>
