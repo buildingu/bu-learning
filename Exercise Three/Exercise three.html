@@ -15,7 +15,6 @@
             <!-- Viewport -->
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="Exercise three.css" />
-        <hr>
     </head>
 
     <body>
@@ -27,7 +26,7 @@
         <!-- Desktop Table -->
         <p id="facts">Fun facts about me:</p>
 
-        <table class="desktop_table">
+        <table id="desktop_table">
             <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
@@ -60,7 +59,7 @@
         </table>
         
         <!-- Mobile Table -->
-        <table class="mobile_table">
+        <table id="mobile_table">
             <tr>
                 <th class="title">First Name</th>
                 <th class="title">Last Name</th>
@@ -146,7 +145,7 @@
                 <br>
 
                 <label class="formtext">Currently working on the new site?</label>
-                    <input type= "checkbox">Yes
+                    <input type= "checkbox" checked="checked"> Yes
                     <input type= "checkbox">No
                 <br> <br>
 
@@ -157,4 +156,12 @@
                     <button type="button" id="reset">Reset</button>
             </form>
     </body>
+
+    <footer id="desktop">
+        Desktop Version
+    </footer>
+
+    <footer id="mobile">
+        Mobile Version
+    </footer>
 </html>

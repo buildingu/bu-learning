@@ -76,6 +76,12 @@ img{
     height: 150px;
 }
 
+.form:focus{
+    border-color: #f77d2b;
+    outline: none;
+    box-shadow: 0 0 5px rgba(29, 29, 29, 0.5);
+}
+
 
 @media screen and (min-width: 768px) {
     html{
@@ -87,13 +93,19 @@ img{
     
     body, main{
         text-align: center;
+        padding: 0;
+        margin: 0;
     }
 
-    .mobile_table{
+    #mobile_table{
         display: none;
     }
 
-    .desktop_table{
+    #mobile{
+        display: none;
+    }
+
+    #desktop_table{
         margin: 15px auto; 
         border-collapse: collapse;
         border: 5px solid grey;
@@ -101,6 +113,10 @@ img{
         background-color: rgb(43, 60, 73);
         width: 100%;  
         max-width: 100%;     
+    }
+
+    #desktop{
+        background: blueviolet;
     }
 
     td{
@@ -151,12 +167,18 @@ img{
 
     body{
         font-size: 14px;
+        padding: 0;
+        margin: 0;
     }
 
-    .mobile_table{
+    #mobile_table{
         margin: 15px auto; 
         border-collapse: collapse;
         font-size: 12px;
+    }
+
+    #mobile{
+        background-color: blue;
     }
 
     tr{
@@ -183,7 +205,11 @@ img{
         background-color: rgb(201, 96, 96);
     }
 
-    .desktop_table{
+    #desktop_table{
+        display: none;
+    }
+
+    #desktop{
         display: none;
     }
 
@@ -220,5 +246,6 @@ img{
         font-size: 15px;
         padding: 10px 110px;
     }
+
 }
 
