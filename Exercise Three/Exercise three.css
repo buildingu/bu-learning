@@ -82,6 +82,10 @@ img{
     box-shadow: 0 0 5px rgba(29, 29, 29, 0.5);
 }
 
+form label{
+    text-decoration: underline;
+}
+
 
 @media screen and (min-width: 768px) {
     html{
