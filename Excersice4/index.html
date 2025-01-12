@@ -1,114 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 4</title>
- 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collapsible Navbar with Bootstrap 4</title>
+  <!-- Bootstrap 4 CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <h2> BuildingU</h2>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav">
-                <a class="nav-link" href="#welcome">Home</a>
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-                <a class="nav-link" href="#contact">Contact</a>
-            </div>
-        </div>
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">BuildingU</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#welcome">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <section id="welcome" class="colored-section">
-        <h1>Welcome to My BuildingU Projects Page</h1>
-        <p>Discover my work on github</p>
-        <a href="https://github.com/buildingu/bu-learning/tree/d_rao" class="btn btn-custom">View My Work</a>
+  <!-- Welcome Section -->
+  <section id="welcome" class="colored-section">
+    <h1>Welcome to My BuildingU Projects Page</h1>
+    <p>Discover my work on GitHub</p>
+    <a href="https://github.com/buildingu/bu-learning/tree/d_rao" class="btn btn-custom">View My Work</a>
 
-        <h2>About Me</h2>    
-        <p class="description rounded"> My name is Deepti Rao and I'm a high school senior at Cumberland Valley High school. I have been learning to code for years and have learned HTML, CSS, Java, and Python. <br>
-            <br> Through the building u internship, I have learned more indepth skills such as Bootstrap which has proven to be an facinating technogy. Bootstrap has allowed me to create responsive, mobile-first websites with ease. Through this internship, I’ve also gained hands-on experience with version control tools like Git and GitHub, which have been essential for collaborating on group projects and tracking changes in my code.
-        </p>    
-        <div>
-            <img src="Assets/image.png" class="img-fluid rounded float-right custom-image">
-        </div>
-            
-    </section>
-    
-    <section id="portfolio" class="projects">
-        <h1>My Portfolio</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="box p-3 text-center">
-                        <img src="Assets/Screenshot 2024-09-19 194816.png" class="img-fluid rounded float-center custom-image">
-                        <h3>Project 1:</h3>
-                        <p>
-                            Project 1 showcased my HTML skills. I used HTML basics to create a form and table. Click learn more to see the project.
-                        </p>
-                        <a href="https://vscode.dev/github/buildingu/bu-learning/blob/d_rao/Exercise1" class="btn btn-danger float-left" role="button">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="box p-3 text-center">
-                        <img src="Assets/Screenshot 2024-09-19 195101.png" class="img-fluid rounded float-center custom-image">
-                        <h3>Project 2:</h3>
-                        <p>
-                            Project 2 showcased my basic CSS skills: basic CSS with HTML to make an event page. Click learn more to see the project.
-                        </p>                   
-                        <a href="https://vscode.dev/github/buildingu/bu-learning/blob/d_rao/Exercise2" class="btn btn-info float-left" role="button">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="box p-3 text-center">
-                        <img src="Assets/Screenshot 2024-09-19 195522.png" class="img-fluid rounded float-center custom-image">
-                        <h3>Project 3:</h3>
-                        <p>
-                            Project 3 showcased my advanced CSS skills: a mobile and desktop version. Click learn more to see the project.
-                        </p>                
-                        <a href="https://vscode.dev/github/buildingu/bu-learning/blob/d_rao/Exercise3" class="btn btn-warning float-left" role="button">Learn More</a>
-                    </div>
+    <h2>About Me</h2>
+    <p class="description rounded"> My name is Deepti Rao and I'm a high school senior at Cumberland Valley High school. I have been learning to code for years and have learned HTML, CSS, Java, and Python. <br><br> Through the building u internship, I have learned more in-depth skills such as Bootstrap which has proven to be a fascinating technology. Bootstrap has allowed me to create responsive, mobile-first websites with ease. Through this internship, I’ve also gained hands-on experience with version control tools like Git and GitHub, which have been essential for collaborating on group projects and tracking changes in my code.
+    </p>
+    <div>
+        <img src="Assets/image.png" class="img-fluid right welcome-image">
+    </div>
+</section>
+
+ <!-- Portfolio Section -->
+ <section id="portfolio" class="projects">
+    <h1>My Portfolio</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box p-3 text-center">
+                    <img src="Assets/Screenshot 2024-09-19 194816.png" class="img-fluid rounded float-center custom-image">
+                    <h3>Project 1:</h3>
+                    <p>
+                        Project 1 showcased my HTML skills. I used HTML basics to create a form and table. Click learn more to see the project.
+                    </p>
+                    <a href="https://vscode.dev/github/buildingu/bu-learning/blob/d_rao/Exercise1" class="btn btn-danger float-left" role="button">Learn More</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-form-section">
-        <h1>Contact Form</h1>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 form-container">
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" class="form-control" id="name" placeholder="John Doe" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" placeholder="jdoe@fakemail.com" required>
-                        </div>
-        
-                        <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Enter your comment here" required></textarea>
-                        </div>
-        
-                        <button type="submit" class="btn btn-success">Send message</button>
-                    </form>
+            <div class="col-md-4">
+                <div class="box p-3 text-center">
+                    <img src="Assets/Screenshot 2024-09-19 195101.png" class="img-fluid rounded float-center custom-image">
+                    <h3>Project 2:</h3>
+                    <p>
+                        Project 2 showcased my basic CSS skills: basic CSS with HTML to make an event page. Click learn more to see the project.
+                    </p>
+                    <a href="https://vscode.dev/github/buildingu/bu-learning/blob/d_rao/Exercise2" class="btn btn-info float-left" role="button">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box p-3 text-center">
+                    <img src="Assets/Screenshot 2024-09-19 195522.png" class="img-fluid rounded float-center custom-image">
+                    <h3>Project 3:</h3>
+                    <p>
+                        Project 3 showcased my advanced CSS skills: a mobile and desktop version. Click learn more to see the project.
+                    </p>
+                    <a href="https://vscode.dev/github/buildingu/bu-learning/blob/d_rao/Exercise3" class="btn btn-warning float-left" role="button">Learn More</a>
                 </div>
             </div>
         </div>
-    </section>
-    
- 
+    </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+<!-- Contact Section -->
+<section id="contact" class="contact-form-section">
+    <h1>Contact Form</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 form-container">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="jdoe@fakemail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Enter your comment here" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Send message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div>
+        <p class="pull-left">2024 Deepti Rao</p>
+        <p class="pull-right">Desktop/Mobile Version</p>
+    </div>
+</footer>
+
+  <!-- Bootstrap 4 JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

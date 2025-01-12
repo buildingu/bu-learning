@@ -1,9 +1,11 @@
+/* Navbar */
 .navbar-custom {
-    background-image: url('path/to/your/image.jpg');
+    background-image: url('Assets/black__purple__blue_background_by_amanithelion_db7xpzv-fullview.jpg');
     background-size: cover;
     background-position: center;
     padding: 10px 0;
 }
+
 .navbar-custom .nav-link {
     color: black;
     margin-right: 10px;
@@ -12,157 +14,204 @@
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
 }
+
 .navbar-custom .nav-link:hover {
     background-color: #e0e0e0;
 }
 
+/* Welcome Section */
 .colored-section {
-    background-image: url('Assets/black__purple__blue_background_by_amanithelion_db7xpzv-fullview.jpg'); 
+    background-image: url('Assets/black__purple__blue_background_by_amanithelion_db7xpzv-fullview.jpg');
     background-size: cover;
     background-position: center;
-    padding: 40px 20px; 
-    text-align: center; 
-    position: relative; 
-    height: 600px;
-}
-
-.colored-section h2 {
-    color: white;
-    text-align: left;
-    position: absolute; 
-    left: 100px; 
-    bottom: 355px;
-}
-
-.colored-section .description {
-    color: white;
-    text-align: left; 
-    position: absolute; 
-    left: 100px; 
-    bottom: 150px;
-    max-width: 900px; 
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    height: auto;
+    min-height: 600px;
 }
 
 .colored-section h1 {
     color: white;
-    font-size: 3rem; 
-    margin-bottom: 20px; 
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.colored-section h2 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: left;  
+}
+
+.colored-section .description {
+    color: white;
+    font-size: 1rem;
+    max-width: 900px;
+    text-align: left;
+    line-height: 1.5;
 }
 
 .colored-section p {
-    color: white !important; 
+    color: white;
 }
 
 .colored-section .btn-custom {
-    background-color: #007bff; 
-    color: white; 
-    padding: 10px 20px; 
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
     border: none;
-    font-size: 1 rem;
+    font-size: 1rem;
     text-decoration: none;
 }
 
+.welcome-image {
+    max-width: 20%; 
+    margin-left: 900px;
+    margin-top: -200px;
+    object-fit: cover;
+}
+
+/* Portfolio Section */
 .projects {
     background-color: rgb(245, 246, 251);
-    height: 450px;
+    padding: 50px 0;
 }
 
 .box {
     background-color: #ffffff;
     color: rgb(13, 13, 13);
-    margin-bottom: 20px;  
-    height: 350px; 
-    border: 2px solid #b9bcc0; 
+    margin-bottom: 10px;
+    height: 500px;
+    border: 2px solid #b9bcc0;
+    padding: 20px;
 }
 
-.colored-section .custom-image {
-    max-width: 5cm; 
-    margin-right: 90px;
-    margin-top: 60px;
-    max-height: 5cm;
-
+.box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2px;
+    margin-left: 30px;
 }
 
+.custom-image {
+    max-width: 20%;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* Contact Form Section */
 .contact-form-section {
     background-image: url('Assets/black__purple__blue_background_by_amanithelion_db7xpzv-fullview.jpg');
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     padding: 60px;
-    color: white; 
-    height: 70vh; 
+    color: white;
+    min-height: 70vh;
 }
 
 .form-container {
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
-    height: 100%; 
+    height: 100%;
 }
 
 form {
-    padding: 30px; 
-    border-radius: 10px; 
-    width: 100%; 
-    max-width: 600px; 
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
 }
 
-/* Mobile styles */
-@media (max-width: 767px) {
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    margin-top: auto; 
+    width: 100%;       
+}
+
+/* Footer Styling */
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Form Input Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 1290px) {
     .colored-section {
         height: 1100px;
     }
-    .colored-section h1{
-        margin-top: 0cm;
+    .colored-section h1 {
+        font-size: 2.5rem;
     }
-    .colored-section p {
-        margin-top: 1px;
-    }
-    .colored-section h2{
-        left: 0.5cm;
-        height: 10cm
+    .colored-section h2 {
+        left: 1cm;
+        bottom: 350px;
     }
     .colored-section .description {
-        height: 14cm;
-        margin-right: 0cm;
-        margin-left: 0cm;
+        margin-left: 1cm;
+        margin-right: 1cm;
+        bottom: 100px;
     }
-    .form-container{
-        height: 7cm;
+    .welcome-image {
+        max-width: 50%; 
+        margin-left: 100px;
+        margin-top: 20px;
+        display: block;
+        margin-bottom: 20px;
+        object-fit: contain;
     }
-    .colored-section .custom-image{
-        margin-top: 15cm;
-        max-width: 5cm;
-        max-height: 5cm;
-        margin-right: 2cm;
-        position: relative;
-        align-items: center;
+    .projects {
+        height: auto;
     }
-    .projects{
-        height: 31cm;
+    .contact-form-section {
+        height: 30vh;
     }
-    .contact-form-section{
-        background-image: url('Assets/black__purple__blue_background_by_amanithelion_db7xpzv-fullview.jpg');
-        background-size: cover; 
-        background-position: center; 
-        padding: 60px;
-        color: white; 
-        height: 20cm; 
-    }
-    .projects .box{
-        position: relative;
-    }
-    .contact-form-section .form-container{
-        right: 1cm;
-        height: 11cm;
-    }
-    .contact-form-section .h1{
-        padding: 60px;
-        color: white; 
-        height: 10cm; 
-    }
-    .contact-form-section .form-control {
-        width: 7cm;
+    .box {
+        background-color: #ffffff;
+        color: rgb(13, 13, 13);
+        margin-bottom: 10px;
+        height: 500px;
+        border: 2px solid #b9bcc0;
+        padding: 20px;
     }
 }
 
+/* Pull-left and Pull-right */
+.pull-left {
+    float: left;
+    margin: 10px;
+}
 
+.pull-right {
+    float: right;
+    margin: 10px;
+}
