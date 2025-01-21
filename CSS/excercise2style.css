@@ -1,0 +1,61 @@
+body{
+background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHg2NDI4MjctaW1hZ2Uta3d2eGtsNjQuanBn.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+h1{
+background-color: aliceblue;
+border: solid;
+}
+
+
+
+div{
+    background-color: gainsboro;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    border: 5px outset red;
+    position: relative;
+    margin-left: auto;
+    
+    
+    
+  
+
+
+
+    
+}
+h2{
+color:darkslategray;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 40px;
+padding: 5px;
+text-align: center;
+text-decoration: underline;
+
+}
+table{
+    
+
+    border: solid;
+    text-align: center;
+    margin: auto;
+}
+th{
+    background-color: red
+
+
+}
+p{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+font-size: 20px;
+
+}
+p1{
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
