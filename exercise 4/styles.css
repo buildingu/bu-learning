@@ -1,0 +1,60 @@
+form {
+    text-align: center;
+    color: black;
+    vertical-align: center;
+    margin: auto;
+    height: 13cm;
+    width: 11cm;
+    
+}
+.form {
+    background-color: #9ec9ef;
+}
+
+nav {
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+
+.hero2 {
+    background-color: cadetblue;
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1px;
+}
+
+img {
+    border-radius: 50%;
+    width: 10cm;
+    height: 10cm;
+}
+ .hero {
+    background-color: #7FDBFF;
+    text-align: center;
+ }
+
+
+.col-md-4 {
+    background-color: rgb(192, 255, 243);
+    border: 2px solid rgb(0, 0, 0);
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    height: 300px ;
+ 
+
+}
+.block {
+    background-color: black;
+    width: 100%;
+    height: 190px;
+
+}
+
+.form {
+    text-align: center;
+}
