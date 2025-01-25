@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(Assets/background-desktop.jpg);
+    background-size: cover; 
+    background-position: center;
+}
+
+header {
+    margin: 20px 0;
+}
+
+h1, h5 {
+    margin: 10px 0;
+    color: white;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: grey;
+}
+
+th, td {
+    padding: 10px;
+    border: 2px solid rgb(13, 13, 13);
+    text-align: center;
+}
+
+
+.form-section {
+    margin-top: 20px;
+    background-color: rgb(196, 195, 193);
+    padding: 20px; 
+    box-sizing: border-box;
+    max-width: 500px; 
+    margin: 20px auto; 
+    border: 10px solid #ddd;
+}
+
+label, input, select, textarea {
+    display: block;
+    margin: 10px auto; 
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 80%; 
+    max-width: 400px; 
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.checkbox-group, .select-group, .radio-group {
+    margin-bottom: 20px;
+}
+
+.checkbox-group label, .radio-group label {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.checkbox-group input[type="checkbox"], .radio-group input[type="radio"] {
+    width: 16px;
+    height: 16px;
+}
+
+.select-group {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.select-group select {
+    display: inline-block;
+    font-size: 14px;
+    padding: 4px 8px;
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; 
+}
+
+input[type="reset"] {
+    background-color: #f44336; 
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    body {
+        background-image: url(Assets/background-mobile.jpg);
+        font-size: 16px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .form-section {
+        max-width: 300px; 
+        border: 10px solid #5c5a5a;
+        font-size: 15px;
+    }
+    
+    form input:not([type="radio"]):not([type="checkbox"]) {
+        width: calc(100% - 22px); 
+    }
+
+    @media (max-width: 767px) {
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+    
+        thead {
+            display: none;
+        }
+    
+        tr {
+            margin-bottom: 10px;
+        }
+    
+        tr:first-of-type {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    
+        tr:first-of-type td[data-label="Firstname"],
+        tr:first-of-type td[data-label="Last Name"] {
+            width: 50%; 
+            box-sizing: border-box;
+            text-align: center;
+            background-color: #800080; 
+            color: white;
+        }
+
+        tr:first-of-type td[data-label="Favorite Movie"],
+        tr:first-of-type td[data-label="Favorite Song"],
+        tr:first-of-type td[data-label="Favorite Video"] {
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: #800080; 
+            color: white;
+        }
+    
+        tr:not(:first-of-type) td {
+            width: 100%;
+            background-color: #800080; 
+            text-align: center;
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            position: relative;
+        }
+    
+        td::before {
+            content: attr(data-label);
+            display: block;
+            font-weight: bold;
+            background-color: grey; 
+            padding: 5px;
+            color: white;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+    
+        td img, td audio, td video {
+            display: block;
+            margin: 0 auto;
+        }
+    }    
+}
