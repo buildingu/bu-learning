@@ -1,0 +1,201 @@
+$primary: red;
+$danger: rgb(226, 70, 50);
+$secondary: purple;
+
+@media screen and (min-width: 768px) {
+.myPrimary{
+    color:primary;
+}
+
+.leftM{
+    margin-left: 100px;
+}
+
+.pg{ 
+    width: 40vw;
+}
+
+#aboutMe{
+    margin: 100px;
+    #deskHead{
+        width: 40vw;
+       // margin-left: 30px;
+    }
+
+    #mobileHead{
+        display: none;
+    }
+}
+.projects {
+
+    .btn-danger{
+        background-color: $danger; 
+        color: white;
+    }
+    .btn-danger:hover{
+        background-color: rgb(240, 128, 93); 
+        color: white;
+    }
+    .btn-secondary{
+        background-color: $secondary; 
+        color: white;
+    }
+    .btn-secondary:hover{
+        background-color: rgb(172, 4, 172); 
+        color: white;
+    }
+    .col{
+        background-color: white;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(204, 193, 91);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.contact{
+    .form-label{
+        color: white;
+    }
+
+    .answer{
+        width: 30vw;
+        height: 40px
+    }
+    .mobMessage{
+        display: none;
+    }
+}
+
+.modText{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+}
+
+/*FOR MOBILE*/
+@media screen and (max-width: 767px) {
+    .myPrimary{
+        color: primary;
+    }
+    
+    .leftM{
+        margin-left: 25px;
+    }
+
+    .pg{ 
+        width: 80vw;
+    }
+
+    #aboutMe{
+        margin-left: 35px;
+    }
+    #deskHead{
+        display: none;
+    }
+    
+    #mobileHead{
+        width: 70vw;
+        margin-left: 10vw;
+        margin-top: 15px;
+    }
+
+    .projects {
+    
+        .btn-danger{
+            background-color: $danger; 
+            color: white;
+            margin-bottom: 10px;
+        }
+        .btn-danger:hover{
+            background-color: rgb(240, 128, 93); 
+            color: white;
+            margin-bottom: 10px;
+        }
+        .btn-primary{
+            background-color: rgb(2, 6, 248); 
+            color: white;
+            margin-bottom: 10px;
+        }
+        .btn-secondary{
+            background-color: $secondary; 
+            color: white;
+        }
+        .btn-secondary:hover{
+            background-color: rgb(172, 4, 172); 
+            color: white;
+            margin-bottom: 7px;
+        }
+        .col{
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: rgb(204, 193, 91);
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 5px;
+        }
+    }
+    
+    .contact{
+        .form-label{
+            color: white;
+        }
+    
+        .answer{
+            width: 50vw;
+            height: 40px
+        }
+
+        .deskMessage{
+            display: none;
+        }
+
+        .btn-success{
+            width: 50vw;
+            height: 50px;
+            display: center;
+        }
+
+    }
+
+    .modText{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../Exercise4/node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+//$theme-colors:("primary": $primary);
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "../Exercise4/node_modules/bootstrap/scss/variables";
+@import "../Exercise4/node_modules/bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "../Exercise4/node_modules/bootstrap/scss/maps";
+@import "../Exercise4/node_modules/bootstrap/scss/mixins";
+@import "../Exercise4/node_modules/bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "../Exercise4/node_modules/bootstrap/scss/utilities";
+@import "../Exercise4/node_modules/bootstrap/scss/reboot";
+@import "../Exercise4/node_modules/bootstrap/scss/type";
+@import "../Exercise4/node_modules/bootstrap/scss/images";
+@import "../Exercise4/node_modules/bootstrap/scss/containers";
+@import "../Exercise4/node_modules/bootstrap/scss/grid";
+@import "../Exercise4/node_modules/bootstrap/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../Exercise4/node_modules/bootstrap/scss/utilities/api";
+// 8. Add additional custom code here

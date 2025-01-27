@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aneesh Ghosal BuildingU</title>
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: fixed; width: 100%;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/cropped-BUlogo (1).png" alt="BU Logo" style="height: 45px; width: 45px;">BuildingU</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#viewWork">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portPlace">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactPlace">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <br>
+    <br>
+    <br>
+      <div style="background-image: url('assets/bgGoldBlack.webp');">
+        <br>
+        <p class="h1 text-center text-light">Welcome to Aneesh Ghosal's BuildingU Projects Page</p>
+        <p class="h3 text-center text-light">Check out my work on Github</p>
+        <a class="btn btn-light d-grid gap-2 w-25 mx-auto" href="https://github.com/aghosal1317" target="_blank" role="button" id="viewWork">View My Work</a>
+
+        <br>
+        <br>
+
+        <!--About Me-->
+        <div class="container" id="aboutMe">
+          <div class="row">
+            <div class="col">
+              <p class="abtMe text-start h1 text-light fw-bold">About Me</p>
+              <p class="pg h4 text-light text-wrap">My name is Aneesh Ghosal, and I am a student who enjoys coding. 
+                When I was younger, I was influenced by my parents to pick CS up, and from there I kept going. I've worked on many different projects, and continue to expand my knowledge in the field. 
+                Recently, I joined Building-U, which has helped me grow in web development <br> <br>
+                Outside of coding, I enjoy spending time with family and participate in an FRC robotics team. I also play basketball, enjoy watching horror movies, and like to try new foods. 
+                My favorite food has to be chicken - from tenders, to burgers, to on pasta!<br> <br>
+                I enjoy coding games and developing websites like this one. I have experience with python and java as well, and I enjoy challenging myself to problems with these languages. 
+                Recently, I've picked up Bootstap, which I am showcasing in this website. Below, you can find my previous projects done with Building-U, including HTML, CSS, and advanced CSS.
+                
+              </p>
+            </div>
+            <div class="col" id="deskHead">
+              <img class="rounded float-end" src="assets/Headshot.jpg" alt="Picture of Aneesh">
+            </div>
+          </div>
+          <div class="row"><img class="rounded" src="assets/Headshot.jpg" alt="Picture of Aneesh" id="mobileHead"></div>
+        </div>
+        <br><br><br>
+    </div>
+
+    <!--My portfolio-->
+
+      <div style="background-color: rgb(252, 247, 225);" id="portPlace">
+        <br><br><br>
+          <p class="portfolio h1 leftM">My Portfolio</p><br>
+          <div class="projects container text-center">
+            <div class="row">
+              <div class="col">
+                <!--HTML card-->
+                <br>
+                <img src="assets/htmlLogo.png" alt="HTML logo">
+                <p class="h3 text-center">Project 1: HTML</p>
+                <p class="h4 text-center lead">Project 1 showcases my HTML skills. It contains a table and a sample form. Click learn more to see the project.</p><br>
+                <button type="button" class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#htmlModal">
+                  Learn More
+                </button>
+                <br>
+              </div>
+              <div class="col">
+                <!--CSS card-->
+                <br>
+                <img src="assets/cssLogo.png" alt="CSS logo" style="width: 360px;">
+                <p class="h3 text-center">Project 2: CSS</p>
+                <p class="h4 text-center lead">Project 2 showcases my CSS skills. It is a website for an robotics end of year event. Click learn more to see the project.</p><br>
+                <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#cssModal">
+                  Learn More
+                </button>
+                <br>
+              </div>
+              <div class="col">
+                <!--Advanced CSS card-->
+                <br>
+                <img src="assets/AdvCSSLogo.png" alt="Advanced CSS logo">
+                <p class="h3 text-center">Project 3: Advanced CSS</p>
+                <p class="h4 text-center lead">Project 3 showcases my advanced CSS. It contains a table and a form, utilizing media queries. Click learn more to see the project</p><br>
+                <button type="button" class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#advModal" id="contactPlace">
+                  Learn More
+                </button>
+                <br><br>
+              </div>
+            </div>
+          </div>
+          <br><br>
+      </div>
+      <!--Modal Pages-->
+      <div class="modal fade" id="htmlModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <h1 class="modText text-center">Project 1: HTML</h1>
+                <p class="modText text-center">In this project, I was getting started with HTML. I made a table with my favorite things, like movies and music. 
+                  I also had an interest form to practice making forms. If you want to see it, go to my GitHub at the top of this website. </p>
+            </div>
+        </div>
+      </div>
+      <div class="modal fade" id="cssModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <h1 class="modText text-center">Project 2: CSS</h1>
+                <p class="modText text-center">In this project, I made a website for my robotics end of year event. It had pictures and tables of informtation.
+                  At the end, the website had a form to sign up for bringing a specific food. If you want to see it, go to my GitHub at the top of this website.
+                </p>
+            </div>
+        </div>
+      </div>
+      <div class="modal fade" id="advModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <h1 class="modText text-center">Project 3: Advanced CSS</h1>
+                <p class="modText text-center">In this project, I remade my first HTML page, but used my CSS knowledge for extra style. If you want to see it, go to my GitHub at the top of this website.</p>
+            </div>
+        </div>
+      </div>
+    <!--The form-->
+    <div class="contact"style="background-image: url(assets/bgGoldBlack.webp);">
+      <br><br>
+      <p class="h1 leftM text-light">Contact Me</p><br>
+      <form class="leftM">
+        <div class="h4 mb-3">
+          <label class="form-label">Full Name:</label>
+          <input type="password" placeholder="John Doe" class="form-control answer">
+        </div>
+        <div class="h4 mb-3">
+          <label class="form-label">Email address:</label>
+          <input type="email" placeholder="JohnDoe@gmail.com" class="form-control answer">
+        </div>
+        <p class="h4 text-light">Would you like to send a message?</p>
+        <textarea class="rounded deskMessage" cols="75" rows="6" placeholder="Comments"></textarea>
+        <textarea class="rounded mobMessage" cols="60" rows="6" placeholder="Comments"></textarea>
+        <br><br>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      <br>
+    </div>
+
+
+</body>
+</html>
