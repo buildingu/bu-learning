@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navbar {
+    display: flex;
+    background-color: lightblue;
+    width: 100%;
+}
+
+.navbar a {
+    flex-grow: 1;
+    text-align: center;
+    padding: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #87cefa;
+}
+
+body {
+    display: block;
+}
+
+.centered-form {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    padding: 30px;
+    border-radius: 10px;
+    gap: 15px;
+    width: 300px;
+}
+
+.centered-form input, .centered-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.centered-form button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+.checker{
+    text-align: center;
+    color:green;
+}
+.entry {
+    background-color: lightgray;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.entry button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.entry button.edit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.entry button.delete {
+    background-color: red;
+    color: white;
+}

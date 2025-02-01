@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/movie.css">
+    <title>Movie App</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../pages/home.html">Home</a>
+        <a href="../pages/validatorapp.html">Validator App</a>
+        <a href="../pages/crud.html">Crud App</a>
+        <a href="../pages/movie.html">Movie App</a>
+    </div>
+
+    <div class="movie-app">
+        <h1>Movie Information Finder</h1>
+        <form id="movie-form" class="movie-form">
+            <label for="movie-name">Enter Movie Name:</label>
+            <input type="text" id="movie-name" name="movie-name" placeholder="e.g. Inception">
+            <button id="submit-button" class="submit-button" type="submit">Search</button>
+        </form>
+
+        <div id="movie-details" class="movie-details">
+            <h2>Movie Details</h2>
+            <div id="movie-box" class="movie-box">
+                <!-- Movie details will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../Logic/movie.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+.navbar a {
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+/* Movie App Container */
+.movie-app {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Movie Form */
+.movie-form {
+    margin-bottom: 30px;
+}
+
+.movie-form input {
+    padding: 10px;
+    width: 80%;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.movie-form button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.movie-form button:hover {
+    background-color: #45a049;
+}
+
+/* Movie details box */
+.movie-details {
+    display: none; /* Hide movie details initially */
+}
+
+.movie-box {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-box img {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.movie-box h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.movie-box p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.movie-box .rating {
+    font-weight: bold;
+    color: #333;
+}
+
+.movie-box .director {
+    font-style: italic;
+    color: #666;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navbar {
+    display: flex;
+    background-color: lightblue;
+    width: 100%;
+}
+
+.navbar a {
+    flex-grow: 1;
+    text-align: center;
+    padding: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #87cefa;
+}
+
+body {
+    display: block;
+}
+
+.centered-form {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    padding: 30px;
+    border-radius: 10px;
+    gap: 15px;
+    width: 300px;
+}
+
+.centered-form input, .centered-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.centered-form button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+.checker{
+    text-align: center;
+    color:green;
+}
+.entry {
+    background-color: lightgray;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.entry button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.entry button.edit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.entry button.delete {
+    background-color: red;
+    color: white;
+}

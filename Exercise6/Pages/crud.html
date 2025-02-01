@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/crud.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../pages/home.html">Home</a>
+        <a href="../pages/validatorapp.html">Validator App</a>
+        <a href="../pages/crud.html">Crud App</a>
+        <a href="../pages/movie.html">Movie App</a>
+    </div>
+   
+    <form class = "centered-form">
+        <label for="First name">First Name:</label>
+        <input type="text" id="First name" name="First name"><br>
+
+        <label for="Last Name">Last Name:</label>
+        <input type="text" id="Last Name" name="Last Name" ><br>
+        
+        <label for="Age">Age:</label>
+        <input type="number" id="Age" name="Age"><br>
+
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number"><br>
+        
+        <input id="submit" type="submit" value="Submit">
+    </form>
+    
+    <div id="entriesContainer"></div>
+
+
+    <script src="../Logic/crud.js"></script>
+</body>
+</html>
