@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Exercise 1: HTML</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Fun Facts" />
+        <meta name="author" content="Ksyusha" />
+        <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+    </head>
+    <body style="text-align:center">
+        <h1>Exersice 1 by Ksyusha Barzdova<br><small>Date submitted 08/02/2025</small></h1>
+        <hr>
+
+        <h2>Fun facts about me:</h2>
+        <table border="7" cellspacing="0" cellpadding="10" style="margin-left:auto; margin-right:auto; border-color: rgb(50, 151, 50);">
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Favourite Movie</td>
+                <td>Favourite Song</td>
+                <td>Favourite Video</td>
+            </tr>
+
+            <tr>
+                <td>Ksyusha</td>
+                <td>Barzdova</td>
+                <td>
+                    <a href="https://harrypotter.fandom.com/wiki/Harry_Potter_and_the_Half-Blood_Prince">
+                    <img src="fav_movie.jpg" alt="Harry Potter and The Half-Blood Prince" width="120"; height="180"></a></td>
+                <td>
+                    <label>Click here to play music:</label><br>
+                    <audio controls><source src="The Weeknd ft. Daft Punk - Star-boy.mp3" type="audio/mp3"></audio></td>
+                <td><video width="290" height="180" controls><source src="MVI_2585.mp4" type="video/mp4"></video></td>
+            </tr>
+        </table>
+        <form>
+        <hr>
+
+
+            <h1>Enter your details below:</h1> 
+            <label for="FullName">Full Name:</label>
+            <input type="text" name="FullName" id="FullName" placeholder="Ksyusha Barzdova"><br><br>
+            <label for="emailAddress">Email Address:</label>
+            <input type="email" name="emailAddress" id="emailAddress" placeholder="barzdouva@gmail.com"><br><br>
+            <label for="Password">Password:</label>
+            <input type="password" name="Password" id="Password" placeholder="••••••••"><br><br>
+            <label>Available Meetings Days:</label>
+            <p>
+                <input type="checkbox" name="Monday" id="Monday">
+                <label for="Monday">Monday</label>
+                <input type="checkbox" name="Tuesday" id="Tuesday">
+                <label for="Tuesday">Tuesday</label>
+                <input type="checkbox" name="Wednesday" id="Wednesday">
+                <label for="Wednesday">Wednesday</label>
+                <input type="checkbox" name="Thursday" id="Thursday">
+                <label for="Thursday">Thursday</label>
+                <input type="checkbox" name="Friday" id="Friday">
+                <label for="Friday">Friday</label>
+                <input type="checkbox" name="Saturday" id="Saturday">
+                <label for="Saturday">Saturday</label>
+                <input type="checkbox" name="Sunday" id="Sunday">
+                <label for="Sunday">Sunday</label>
+            </p>  
+            <label for="eventtime">Available Time:</label>
+            <input list="times" id="eventtime" placeholder="Choose time">
+
+            <datalist id="times">
+                <option value="9:00 AM">
+                <option value="12:00 PM">
+                <option value="3:00 PM">
+                <option value="6:00 PM">
+            </datalist><br><br>
+
+            <label>Currently working on new website?</label>
+            <input type="radio" name="websiteStatus" id="yes" value="yes" checked>
+            <label for="yes">Yes</label>               
+            <input type="radio" name="websiteStatus" id="no" value="no">
+            <label for="no">No</label><br><br>
+
+            <textarea name="text" cols="25" rows="5" placeholder="Enter your comments here"></textarea><br><br>
+            <button type="button">Submit</button>
+            <button type="button">Reset</button>
+        </form>
+    </body>
+</html>
