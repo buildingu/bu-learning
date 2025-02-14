@@ -1,0 +1,79 @@
+<!DOCTYPE>
+<html>
+
+<head>
+	<title>html exercise 1</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HTML">
+	<meta name="description" content="html exercise website">
+	<meta name="author" content="Joseph Felski">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<meta http-equiv="refresh" content="120">
+</head>
+
+<body>
+	<center>
+	<h1>Exercise 1 by Joseph Felski</h1>
+	<h5>Date Submitted: 2/XX/2025</h5>
+		<hr>
+	<h5>Fun facts about me:</h5>
+	<table>
+		<tr>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Favorite Movie</th>
+			<th>Favorite Song</th>
+			<th>Favorite Clip</th>
+		</tr>
+		<tr>
+			<td>Joseph</td>
+			<td>Felski</td>
+			<td><a href="https://en.wikipedia.org/wiki/Pacific_Rim_(film)"><img src="movie.jpeg" alt="image of Pacific Rim poster" width="200px" height="300px"></td>
+			<td><audio controls><source src="song.mp3" type="audio/mpeg"></audio></td>
+			<td><iframe width="350" height="200" src="https://www.youtube.com/embed/y3qrHn0WALs" title="Cheese meme" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+		</tr>
+	</table>
+		<hr>
+	<main>
+		<h4>Enter your details below:</h4>
+		<form>
+			<label> Full Name</label>
+			<input type="text" placeholder="John Doe"><br><br>
+			<label> Email Addr </label>
+			<input type="text" placeholder="jdoe@fakemail.com"><br><br>
+			<label> Password </label>	
+			<input type="text" placeholder="*****"><br><br>
+			
+			<label>Available Meeting Days:</label>
+			<input type="checkbox"> Monday
+			<input type="checkbox"> Tuesday
+			<input type="checkbox"> Wednesday
+			<input type="checkbox"> Thursday
+			<input type="checkbox"> Friday
+			<input type="checkbox"> Saturday
+			<input type="checkbox"> Sunday<br><br>
+			
+			<label for="time"> Available Time: </label>
+			<select id="time" name="time">
+				<option value="morning (9am to 11am)">morning (9am to 11am)</option>
+				<option value="noon (12pm to 2pm)">noon (12pm to 2pm)</option>
+				<option value="afternoon (3pm to 5pm)">afternoon (3pm to 5pm)</option>
+				<option value="night (6pm to 8pm)">night (6pm to 8pm)</option>
+			</select><br><br>
+				
+			<label>Currently working on a new website?</label>
+			<input type="radio" id="yes" name="working" value="Yes"> 
+			<label for="yes">Yes</label>
+			<input type="radio" id="no" name="working" value="No"> 
+			<label for="no">No</label><br><br>
+			<textarea cols="30" rows="10" placeholder="Enter your comments here"></textarea><br>
+			<input type="submit" value="Submit">
+			<input type="reset" value="reset">
+			
+		</form>
+	</main>
+	
+	</center>
+</body>
+
+</html>
