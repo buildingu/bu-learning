@@ -35,13 +35,12 @@
       </body>
       <!--Information form-->
       <form>
-        <body>
         <label> Full name: </label>
-        <input type = "text" placeholder=""><br><br>
+        <input type = "text" placeholder="Peyton Wrazen"><br><br>
         <label> Email address: </label>
-        <input type = "email" placeholder=""><br><br>
+        <input type = "email" placeholder="john.doe@gmail.com"><br><br>
         <label> Password: </label>
-        <input type = "password" placeholder=""><br><br>
+        <input type = "password" placeholder="Fire89213"><br><br>
         <p>Available Meeting Days:</p>
         <input type="checkbox">
         <label>Monday</label>
