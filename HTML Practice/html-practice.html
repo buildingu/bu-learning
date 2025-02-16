@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="description" content="HTML Exercise">
+		<meta name="author" content="Devin Rodriguez">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="refresh" content="30">
+	</head>
+	<body>
+		<center>
+		<h1>Exercise 1 by Devin Rodriguez</h1>
+		<h3>Date submitted: 02/15/2025</h3>
+		<hr><br>
+		
+		<table border="1" width="80%">
+			<caption><strong>Fun Facts About Me:</strong></caption>
+			<tr>
+				<th width="16%">First Name</th>
+				<th width="16%">Last Name</th>
+				<th width="16%">Favorite Movie</th>
+				<th width="16%">Favorite Music</th>
+				<th width="16%">Favorite Video</th>
+			</tr>
+			<tr>
+				<!--First Name-->
+				<td><center>Devin</center></td> 
+				
+				<!--Last Name-->
+				<td><center>Rodriguez</center></td> 
+				
+				<!--Favorite Movie-->
+				<td><center> 
+					<img src="Images/spiderverse.jpg" alt="Spider-Man: Into The Spiderverse" width="50%" height="50%">
+				</center></td> 
+				
+				<!--Favorite Song-->
+				<td><center>Electric Soul - Rodrigo y Gabriela 
+					<audio controls>
+						<source src="Media/electricsoul.mp3" type="audio/mpeg">
+					</audio>
+				</center></td>
+				
+				<!--Favorite Video-->
+				<td><center> 
+					<iframe src="https://www.youtube.com/embed/tPEE9ZwTmy0"></iframe>
+				</center></td>
+			</tr>
+		</table>
+		<br><hr><br>
+		
+		<form>
+			<caption><strong>Enter your details below:</strong></caption><br><br>
+			
+			<!--Full Name-->
+			<label for="fullName"><em>Full Name:</em></label>
+			<input type="text" id="fullName" name="fullName" placeholder="John Doe"><br><br>
+			
+			<!--Email Address-->
+			<label for="email"><em>Email Address:</em></label>
+			<input type="text" id="email" name="email" placeholder="jdoe@fakemail.com"><br><br>
+			
+			<!--Meeting Days-->
+			<caption><em>Available Meeting Days</em></caption><br>
+			
+			<input type="checkbox" id="mon" name="mon" value="Monday">
+			<label for="mon">Monday</label>
+			
+			<input type="checkbox" id="tues" name="tues" value="Tuesday">
+			<label for="tues">Tuesday</label>
+			
+			<input type="checkbox" id="wed" name="wed" value="Wednesday">
+			<label for="wed">Wednesday</label>
+			
+			<input type="checkbox" id="thurs" name="thurs" value="Thursday">
+			<label for="thurs">Thursday</label>
+			
+			<input type="checkbox" id="fri" name="fri" value="Friday">
+			<label for="fri">Friday</label>
+			
+			<input type="checkbox" id="sat" name="sat" value="Saturday">
+			<label for="sat">Saturday</label>
+			
+			<input type="checkbox" id="sun" name="sun" value="Sunday">
+			<label for="sun">Sunday</label><br><br>
+			
+			<!--Meeting Times-->
+			<label for="times"><em>Available Time:</em></label>
+			<select id="times" name="times">
+				<option value="Morning">Morning (8am to 12pm)</option>
+				<option value="Afternoon">Afternoon (12pm to 5pm)</option>
+				<option value="Evening">Evening (5pm to 9pm)</option>
+			</select><br><br>
+			
+			<!--Website Status-->
+			<caption><em>Currently working on new website?</em></caption>
+			<input type="radio" id="yes" name="websiteStatus" value="Yes" checked>
+			<label for="yes">Yes</label>
+			<input type="radio" id="no" name="websiteStatus" value="No">
+			<label for="no">No</label><br><br>
+			
+			<!--Comments-->
+			<textarea id="comments" name="comments" rows="5" cols="50" placeholder="Enter your comments here"></textarea><br><br>
+			
+			<!--Submit & Reset Buttons-->
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+			
+		</form>
+		
+		</center>
+	</body>
+</html>
