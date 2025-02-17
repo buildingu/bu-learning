@@ -26,7 +26,7 @@
           <td>Peyton</td>
           <td>Wrazen</td>
           <td><img width='120' src = "https://upload.wikimedia.org/wikipedia/en/8/87/The_Imitation_Game_%282014%29.png" ></td>
-            <td><audio controls><source src="live_and_learn.mp3"></audio></td>
+            <td><audio controls><source src="live_and_learn.mp3" type="audio/mpeg."></audio></td>
           <td><iframe width="300" height="200" src="https://www.bing.com/videos/riverview/relatedvideo?q=dailytatics+army+men&&mid=32DD44F92A485FD8A89032DD44F92A485FD8A890&FORM=VCGVRP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
          </tr>
         </table>
