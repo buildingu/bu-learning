@@ -27,7 +27,10 @@
           <td>Wrazen</td>
           <td><img width='120' src = "https://upload.wikimedia.org/wikipedia/en/8/87/The_Imitation_Game_%282014%29.png" ></td>
             <td><audio controls><source src="live_and_learn.mp3" type="audio/mpeg"></audio></td>
-          <td><source src="</td>
+    <video width="320" height="240" controls>
+          <td>
+<source src="
+</td>
          </tr>
         </table>
         <hr>
