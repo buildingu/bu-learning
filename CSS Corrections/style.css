@@ -1,0 +1,99 @@
+@import url('https://fonts.cdnfonts.com/css/the-halloween');
+@import url('https://fonts.cdnfonts.com/css/gilton');
+@import url('https://fonts.cdnfonts.com/css/lugate');
+    body{
+        background-color: #F4831B;
+        margin: 0;
+        padding: 20px; 
+        font-family: 'Gilton', sans-serif;      
+    }
+
+    h1{
+        font-family:"The Halloween", sans-serif;
+        text-align: center;
+        color: #902EBB; 
+        margin-bottom: 20px;
+        font-size: 40px;
+        text-shadow: 2px 2px white; 
+    }
+
+    .event-info{
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 10px;;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        border: 5px solid #902EBB;    
+    }
+
+    .event-table{
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+
+    .event-table, .event-table th, .event-table td {
+        border: 2px solid #902EBB;
+    }
+
+    .event-table th {
+        background-color: #63C328;
+        font-family: 'Lugate', sans-serif;
+        color: #903EBB;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .event-table td {
+        font-family: 'Gilton', sans-serif;
+        padding: 10px;
+        font-size: 30px;
+    }
+
+    h2, h3{
+        color:#902EBB;
+        margin: 10px 0;
+    }
+
+    h3 {
+        border-bottom: 2px solid #F4A300; 
+        padding-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="submit"],
+    input[type="radio"]{
+        border: 2px solid #903EBB;
+        padding: 10px;
+        margin:10px 0;
+        border-radius: 5px;
+    }
+
+    input[type="submit"]{
+        background-color: #902EBB;
+        color: white;
+        font-weight:bold;
+        font-size: 16px;
+    }
+
+    input[type="submit"]:hover{
+        background-color: #61217c;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        color:white;
+        background-color:#902EBB;
+        padding: 10px;
+        border-radius: 5px;
+    }
+ 
+    a {
+        color: #902EBB;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
