@@ -1,0 +1,31 @@
+html	{
+	font-family: Arial, Verdana, Garamond;
+	background-color: #a2c6fc;
+}
+
+h1, h2	{
+	padding-left: 50px;
+	color: blue;
+}
+		
+table	{
+	border: 2px solid blue;
+	border-collapse: collapse;
+}
+		
+th, td	{
+	border: 1px solid navy;
+}
+
+th	{
+	background-color: #cfcfcf;
+}
+
+td {
+	background-color: #efefef;
+}
+
+ul {
+	list-style-type: disc;
+}
+	
