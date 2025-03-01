@@ -1,0 +1,107 @@
+body{
+	background-color: black;
+}
+
+h1{
+	color: white;
+	text-align: center;
+	font-size: 32px;
+}
+
+h2{
+	color: white;
+	text-align: center;
+	font-size: 28px;
+}
+
+li{
+	color: white;
+	text-align: center;
+	font-size: 18px;
+}
+
+div{
+	background-color: #CC6700;
+}
+
+ul{
+	list-style-type: none;
+}
+
+table{
+	border: 2px solid black;
+	width: 1500px;
+	height: 500px;
+	border-collapse: collapse;
+}
+
+tr{
+	border: 2px solid black;
+}
+
+th{
+	border: 2px solid black;
+	width: 14.3%;
+	color: white;
+}
+
+td{
+	border: 2px solid black;
+	height: 16.7%;
+	color: white;
+}
+
+
+
+a:link{color:white;}
+
+a:visited{color: black;}
+
+a:hover{color: white;}
+
+
+
+.left{
+	float:left;
+	border: 2px solid black;
+	margin-left: 195px;
+}
+
+.right{
+	float:right;
+	border: 2px solid black;
+	margin-right: 195px;
+}
+
+.middle{
+	border: 2px solid white;
+	width: 1730px;
+	height: 600px;
+	float: left;
+	padding: 5px;
+}
+
+.page_link{
+	text-align: center;
+}
+
+.table{
+	background-color: #CC6700;
+	border: 2px solid white;
+	width: 1730px;
+	height: 700px;
+	float: left;
+	padding: 5px;
+}
+
+.questions{
+	text-align: center;
+}
+
+.list{
+	width: 400px;
+	height: 100px;
+	margin-left:640px;
+	margin-right: auto;
+	padding: 10px;
+}
