@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+   <head>
+      <title>Excercise 1</title><title>Excercise 1</title>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta http-equiv="refresh" content="30" />
+      <style>
+         table, td, th {
+            border : 1px solid black;
+         }
+      </style>
+
+   </head>
+   <body>
+      <h1><center>Excercise 1 by Evaan Kothari </center></h1> <br>
+      <h2> <center>Date of Submission : 1-03-2025 </center></h2>
+      <fieldset>
+         <p> <center> <b> Few things about me </b></center></p> <br>
+         <table style="margin-left: 0; margin-right: auto;">
+            <tr> 
+               <!-- Header-->
+                <th>First Name </th>
+                <th> Last Name  </th>
+                <th> Favourite Movie Image</th>
+                <th> Favourite Audio Sample</th>
+                <th> Favourite Video Sample</th>
+           </tr>
+   
+           <!-- Second Row-->
+            <tr> 
+               <td> Evaan </td>
+               <td> Kothari </td>
+               <td> <img src="Assets/rushhour.jpeg" alt="Picture of Rush Hour" <br> <a href="https://en.wikipedia.org/wiki/Rush_Hour_(1998_film)" target ="_blank"> Click to go to Rush Hour</a></td>
+               <td>
+                  <audio controls width = "400">
+                     <source src="Assets/Lil Tecca - BAD TIME (Official Music Video).mp3" type="audio/mp3">
+                 </audio>
+               </td>
+               <td>
+                  <video controls width="400">
+                      <source src="Assets/Funniest Rush Hour Moments_!.mp4" type="video/mp4">
+                  </video>
+              </td>
+            </tr>
+         </table>
+      </fieldset> <br>
+      <center> <b>Enter your details below please. </b></center>
+      <center><i> Full Name </i> <input type="text"> </center> <br>
+      <center><i> Email Address </i> <input type="email"> </center> <br>
+      <center><i> Password </i> <input type="password"> </center> <br>
+      <center><i> Available Days for Meeting :  </i>  </center> <br>
+      <center> <input type="radio"> Monday 
+      <input type="radio"> Tuesday
+      <input type="radio"> Wednesday 
+      <input type="radio"> Thursday 
+      <input type="radio"> Friday 
+      <input type="radio"> Saturday 
+      <input type="radio"> Sunday 
+      </center> <br>
+      <center> 
+         <label for="available-time">Available time :</label>
+         <select id="available-time" name="available-time">
+            <option value="morning">Morning (8 AM - 12 PM)</option>
+            <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+            <option value="evening">Evening (4 PM - 8 PM)</option>
+            <option value="night">Night (8 PM - 12 AM)</option>
+         </select> <br> <br>
+         <i> Currently working on new website?</i>
+         <input type="radio"> Yes
+         <input type="radio"> No <br> <br>
+         <textarea cols = "30" rows="10"> </textarea> <br>
+         <input type="submit">
+         <input type="reset">
+      </center>
+   </body>
 </html>
