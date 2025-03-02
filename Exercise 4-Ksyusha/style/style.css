@@ -1,0 +1,214 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+#portfolio {
+    background-color: #fff;
+}
+
+#portfolio h2{
+    color:#000;
+}
+
+#about, #contact {
+    background-image: url("bg-desktop.jpg");
+    background-size: cover;
+    color: #fff; 
+}
+
+.form-group{
+    width: 450px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    color: #333; 
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    color:#000;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 850px;
+    width: 100%;
+    position: relative;
+}
+
+#modal:not(:target) {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 24px;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: #8a0303; 
+}
+
+
+nav {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 10%;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+nav .nav-list {
+    display: flex;
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+nav .nav-list .nav-item {
+    cursor: pointer;
+    height: 100%;
+    padding: 0 20px;
+    transition: 0.3s;
+}
+
+nav .nav-list .nav-item:hover {
+    background: #fff;
+}
+
+nav .nav-list .nav-item .nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav .nav-list .nav-item:hover .nav-link {
+    color: #000;
+}
+
+@media (max-width: 935px) {
+    nav {
+        padding: 0 5%;
+    }
+
+    nav .nav-list .nav-item {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 675px) {
+    #portfolio {
+        background-color: #fff; 
+    }
+
+    #portfolio h2{
+        color:#000;
+    }
+    
+    #about {
+        background-image: url("bg-mobile.jpg");
+        background-size: cover;
+        color: #fff;
+    }
+    
+    #contact {
+        background-image: url("bg-mobile.jpg");
+        background-size: cover;
+        color: #fff; 
+    }
+
+    .modal-content{
+        margin:15px;
+        padding: 20px;
+    }
+
+    nav .nav-list {
+        display: grid;
+        position: absolute;
+        background: #000;
+        width: 100%;
+        left: 0;
+        top: 70px;
+        z-index: 1; 
+        transform: translateY(-150%);
+        transition: 0.3s;
+    }
+
+    nav .nav-list .nav-item {
+        padding-left: 35px;
+    }
+
+    nav .menu-toggle {
+        display: grid !important;
+    }
+}
+
+input {
+    display: none;
+}
+
+nav .menu-toggle {
+    display: none;
+    height: min-content;
+    margin: 18px -10px 0 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav .menu-toggle .bar {
+    width: 40px;
+    height: 5px;
+    background: #fff;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+input:checked ~ nav .nav-list {
+    transform: translateY(0);
+}
+
+input:checked ~ nav .menu-toggle {
+    margin-top: 35px;
+}
+
+input:checked ~ nav .menu-toggle .bar:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+input:checked ~ nav .menu-toggle .bar:nth-child(2) {
+    display: none;
+}
+
+input:checked ~ nav .menu-toggle .bar:nth-child(3) {
+    transform: rotate(-45deg);
+}
