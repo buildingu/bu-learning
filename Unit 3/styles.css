@@ -1,0 +1,85 @@
+html {
+	background-image: url("background-desktop.jpg");
+	background-repeat: repeat;
+	color: white;
+}
+
+header {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+hr {
+	color: white;
+}
+
+table, th, td {
+	font-family: sans-serif;
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: #222222;
+	border: 8px solid;
+	border-color: #777777;
+	border-collapse: collapse;
+}
+
+th	{
+	padding: 10px;
+}
+
+
+form	{
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 9pt;
+	color: black;
+	width: 365px;
+	float: center;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #cccccc;
+	border: 8px solid;
+	border-color: #777777;
+	text-align: center;
+	padding: 10px;
+}
+
+fieldset	{
+	border-style: none;
+	padding: 10px;
+}
+
+input, select, textarea	{
+	margin: 7px;
+	padding: 5px;
+	text-align: center;
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cred	{
+	width: 330px;
+}
+
+.submit	{
+	background-color: green;
+	border-style: none;
+	padding: 7px;
+	width: 70px;
+	color: white;
+	border-radius: 10%;
+}
+
+.reset	{
+	background-color: red;
+	border-style: none;
+	padding: 7px;
+	width: 70px;
+	color: white;
+	border-radius: 10%;
+}
+	
+	
