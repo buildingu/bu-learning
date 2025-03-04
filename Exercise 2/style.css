@@ -1,0 +1,31 @@
+h1 {
+  color: blue;
+  font-family: verdana;
+}
+p {
+  color: red;
+  font-family: courier;
+  margin: 50px;
+  padding: 30px; 
+}
+td {
+	color: red;
+	font-family: arial;
+	margin: 50px;
+	padding: 30px;
+}
+h2 {
+color: blue;
+  font-family: verdana;
+}
+h3 {
+color: blue;
+  font-family: verdana;
+}
+h4 {
+color: blue;
+  font-family: verdana;
+}
+body {
+background-color: orange
+}
