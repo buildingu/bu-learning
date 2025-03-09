@@ -18,28 +18,37 @@
  * 2. Go to the `App.jsx` file and wrap the `AuthContextProvider` around `UseContextChallenge`.
  * 3. Go to the `UseContext.jsx` file, and follow the steps there.
  */
-
 import { createContext, useState } from "react";
 
-// Mock user obj.
-const user = {
-  // Initialize user fields mentioned...
-}
+// Mock user object
+const mockUser = {
+  firstName: "John",
+  lastName: "Doe",
+  email: "john.doe@example.com",
+};
 
-// const AuthContext =
+// Create AuthContext
+const AuthContext = createContext();
 
 export function AuthContextProvider({ children }) {
+  const [user, setUser] = useState(null);
 
+  // Login function
+  const login = () => {
+    setUser(mockUser);
+  };
 
-//   return (
-//     <AuthContext.Provider
-//       value={{
-//         ...
-//       }}
-//     >
-//       {children}
-//     </AuthContext.Provider>
-//   );
+  // Logout function
+  const logout = () => {
+    setUser(null);
+    alert("User session timed out.");
+  };
+
+  return (
+    <AuthContext.Provider value={{ user, login, logout }}>
+      {children}
+    </AuthContext.Provider>
+  );
 }
 
 export default AuthContext;

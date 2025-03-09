@@ -16,12 +16,17 @@ export default function UseContextChallenge() {
   return (
     <main>
       <h1>useContext Challenge</h1>
-
-      <button>
-        {/* ... */}
+      <button onClick={user ? logout : login}>
+        {user ? "Logout" : "Login"}
       </button>
       <div>
-        {/* Show user info here when logged in. */}
+        {user && (
+          <>
+            <p>First Name: {user.firstName}</p>
+            <p>Last Name: {user.lastName}</p>
+            <p>Email: {user.email}</p>
+          </>
+        )}
       </div>
     </main>
   );
