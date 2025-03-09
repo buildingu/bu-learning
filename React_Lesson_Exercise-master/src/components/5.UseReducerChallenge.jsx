@@ -37,17 +37,20 @@ export default function UseReducerChallenge() {
       <h1>useReducer Challenge</h1>
       <div>
         <h2>To-do</h2>
-        <input ref={inputRef} placeholder="Add a new to-do" />
-        <button onClick={handleAdd}>Add</button>
-        <ul>
-          
+        <div className="useReducer-add-wrapper">
+          <input ref={inputRef} placeholder="Add a new to-do" />
+          <button onClick={handleAdd}>Add</button>
+        </div>
+        <ul className="useReducer-ul-wrapper"> 
           {/* Mapping through the to-do list and rendering each item */}
           {todos.map((todo) => (
             <li key={todo.id}>
-              {todo.text} 
-                            
-              {/* Remove button to dispatch a REMOVE action.*/}
-              <button onClick={() => dispatch({ type: "REMOVE", payload: todo.id })}>Remove</button>
+              <div className="useReducer-list-wrapper">
+                {todo.text}
+                
+                {/* Remove button to dispatch a REMOVE action.*/}
+                <button onClick={() => dispatch({ type: "REMOVE", payload: todo.id })}>Remove</button>
+              </div>
             </li>
           ))}
         </ul>
