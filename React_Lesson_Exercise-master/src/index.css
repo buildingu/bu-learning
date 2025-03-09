@@ -52,6 +52,12 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.useRef-Container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 5%;
+}
+
 .useReducer-ul-wrapper {
   margin-top: 5rem;
 }
@@ -75,5 +81,9 @@ button:focus-visible {
   
   .useReducer-add-wrapper {
     grid-template-columns: repeat(1,1fr) !important;
+  }
+  .useRef-Container{
+    grid-template-columns: repeat(1,1fr) !important;
+    row-gap: 5%;
   }
 }

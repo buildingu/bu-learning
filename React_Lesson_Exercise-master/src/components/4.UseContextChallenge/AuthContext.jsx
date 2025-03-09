@@ -20,6 +20,9 @@
  */
 import { createContext, useState } from "react";
 
+// Create AuthContext
+export const AuthContext = createContext();
+
 // Mock user object
 const mockUser = {
   firstName: "John",
@@ -27,16 +30,11 @@ const mockUser = {
   email: "john.doe@example.com",
 };
 
-// Create AuthContext
-const AuthContext = createContext();
-
 export function AuthContextProvider({ children }) {
   const [user, setUser] = useState(null);
 
   // Login function
-  const login = () => {
-    setUser(mockUser);
-  };
+  const login = () => setUser(mockUser);
 
   // Logout function
   const logout = () => {
@@ -50,5 +48,3 @@ export function AuthContextProvider({ children }) {
     </AuthContext.Provider>
   );
 }
-
-export default AuthContext;

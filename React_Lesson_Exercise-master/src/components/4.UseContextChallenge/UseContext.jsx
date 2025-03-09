@@ -8,10 +8,11 @@
  * 2. Display a button that toggles between `login` and `logout` states.
  * 3. If the user is logged in, display their first name, last name, and email.
  */
-
 import { useContext } from "react";
+import { AuthContext } from "./AuthContext";
 
 export default function UseContextChallenge() {
+  const { user, login, logout } = useContext(AuthContext);
 
   return (
     <main>

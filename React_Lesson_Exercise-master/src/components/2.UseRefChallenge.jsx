@@ -21,11 +21,12 @@ export default function UseRefChallenge() {
     <main>
       <h1>useRef Challenge</h1>
 
-      {/* Input field with ref of inputRef*/}
-      <input ref={inputRef} type="text" placeholder="Type something..." />
-
-      {/* This button calls our handleFocus function. */}
-      <button onClick={handleFocus}>Focus</button>
+      <div className="useRef-Container">
+        {/* Input field with ref of inputRef*/}
+        <input ref={inputRef} type="text" placeholder="Type something..." />
+        {/* This button calls our handleFocus function. */}
+        <button onClick={handleFocus}>Focus</button>
+      </div>
     </main>
   );
 }
