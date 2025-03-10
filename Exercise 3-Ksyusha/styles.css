@@ -10,6 +10,10 @@
         padding: 20px;
     }
 
+    h1{
+        color:#ffffff;
+    }
+
     img {
         max-width: 150px;
         height: auto;
@@ -44,6 +48,7 @@
         width: 290px;
         height: auto;
     }
+    
 
     h3 {
         background-color: rgba(255, 155, 155, 0.795);
@@ -90,6 +95,10 @@
         color: rgb(0, 0, 0);
         text-align: center;
         padding: 20px;
+    }
+
+    h1{
+        color:black;
     }
 
     img {

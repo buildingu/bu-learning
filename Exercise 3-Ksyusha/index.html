@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Exercise 1: HTML</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body style="text-align:center">
+        <h1>Exersice 1 by Ksyusha Barzdova<br><small>Date submitted 08/02/2025</small></h1>
+        <hr>
+
+        <h2>Fun facts about me:</h2>
+        <div class="main-container">
+            <div class="table-container">
+        
+                <div class="table-row">
+                    <div class="table-cell" data-label="First Name">Ksyusha</div>
+                    <div class="table-cell" data-label="Last Name">Barzdova</div>
+                    <div class="table-cell" data-label="Favourite Movie">
+                        <a href="https://harrypotter.fandom.com/wiki/Harry_Potter_and_the_Half-Blood_Prince">
+                            <img src="fav_movie.jpg" alt="Harry Potter and The Half-Blood Prince">
+                        </a>
+                    </div>
+                    <div class="table-cell" data-label="Favourite Song">
+                        <label>Click here to play music:</label><br>
+                        <audio controls>
+                            <source src="The Weeknd ft. Daft Punk - Star-boy.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                    <div class="table-cell" data-label="Favourite Video">
+                        <video controls>
+                            <source src="MVI_2585.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <h2>Enter your details below:</h2> 
+
+            <form>
+                <h3>
+                    <label for="FullName">Full Name:</label>
+                    <input type="text" name="FullName" id="FullName" placeholder="Ksyusha Barzdova"><br><br>
+                    <label for="emailAddress">Email Address:</label>
+                    <input type="email" name="emailAddress" id="emailAddress" placeholder="barzdouva@gmail.com"><br><br>
+                    <label for="Password">Password:</label>
+                    <input type="password" name="Password" id="Password" placeholder="••••••••"><br><br>
+                    <label>Available Meetings Days:</label>
+                    <p>
+                        <input type="checkbox" name="Monday" id="Monday">
+                        <label for="Monday">Monday</label>
+                        <input type="checkbox" name="Tuesday" id="Tuesday">
+                        <label for="Tuesday">Tuesday</label>
+                        <input type="checkbox" name="Wednesday" id="Wednesday">
+                        <label for="Wednesday">Wednesday</label>
+                        <input type="checkbox" name="Thursday" id="Thursday">
+                        <label for="Thursday">Thursday</label>
+                        <input type="checkbox" name="Friday" id="Friday">
+                        <label for="Friday">Friday</label>
+                        <input type="checkbox" name="Saturday" id="Saturday">
+                        <label for="Saturday">Saturday</label>
+                        <input type="checkbox" name="Sunday" id="Sunday">
+                        <label for="Sunday">Sunday</label>
+                    </p>  
+                    <label for="eventtime">Available Time:</label>
+                    <input list="times" id="eventtime" placeholder="Choose time">
+
+                    <datalist id="times">
+                        <option value="9:00 AM">
+                        <option value="12:00 PM">
+                        <option value="3:00 PM">
+                        <option value="6:00 PM">
+                    </datalist><br><br>
+
+                    <label>Currently working on new website?</label>
+                    <input type="radio" name="websiteStatus" id="yes" value="yes" checked>
+                    <label for="yes">Yes</label>               
+                    <input type="radio" name="websiteStatus" id="no" value="no">
+                    <label for="no">No</label><br><br>
+
+                    <textarea name="text" cols="25" rows="5" placeholder="Enter your comments here"></textarea><br><br>
+                    <button type="submit" class="submit">Submit</button>
+                    <button type="reset" class="reset">Reset</button>
+                </h3>
+            </form>
+    </body>
+</html>
