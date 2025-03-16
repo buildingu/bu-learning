@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/harrypotter.css">
+    <title>Character App</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="validatorapp.html">Validator App</a></li>
+            <li><a href="crudapp.html">Crud App</a></li>
+        </ul>
+    </nav>
+    <br>
+    <div id="characterContainer">
+        <h1>CHARACTERS APP</h1><br>
+        <input type="text" name="characterName" id="searchBar"><br><br>
+        <button onclick="getCharacterData()">Search</button>
+
+        <div id="characterCard"></div>
+        <div id="error"></div>
+    </div>
+    <script src="../logic/harrypotter.js"></script>    
+</body>
+</html>

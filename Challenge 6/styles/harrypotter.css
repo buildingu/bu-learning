@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+nav{
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    list-style-type:none;
+    justify-content: center;
+    background-color: #0077ff;
+    width: 100%;
+    
+}
+
+li{
+    padding: 14px 16px;
+}
+  
+  
+li a {
+    color: white;
+    text-align: center;   
+    text-decoration: none;
+}
+  
+li a:hover {
+    text-decoration: underline;
+}
+
+input[type=text] {
+    width: 40%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    margin: auto;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#characterCard {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.character {
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+}
+
+

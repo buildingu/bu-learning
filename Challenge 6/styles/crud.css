@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    text-align: center;
+}
+
+h1,
+h3{
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    list-style-type:none;
+    justify-content: center;
+    background-color: #0077ff;
+    width: 100%;
+    
+}
+
+li{
+    padding: 14px 16px;
+}
+  
+  
+li a {
+    color: white;
+    text-align: center;   
+    text-decoration: none;
+}
+  
+li a:hover {
+    text-decoration: underline;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+#submit{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+#submit:hover {
+    background-color: #45a049;
+}
+  
+form {
+    margin: 0 auto;
+    margin-top: 20px; 
+    width:350px;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#userData {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.user-card {
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+}
+
+#userData p {
+    font-weight: bold;
+}
+
+#userData button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#userData div button[type=edit] {
+    background-color: #00ca11;
+    color: white;
+    border: none;
+}
+
+#userData div button[type=edit]:hover {
+    background-color: #009607; 
+}
+
+#userData div button[type=delete] {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+}
+
+#userData div button[type=delete]:hover {
+    background-color: #cc0000; 
+}
+

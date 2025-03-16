@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/crud.css">
+    <title>Crud App</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="validatorapp.html">Validator App</a></li>
+            <li><a href="harrypotter.html">Harry Potter App</a></li>
+        </ul>
+    </nav>
+    <br>
+    <h1>CRUD APP</h1><br>
+    <h3>Add User Information</h3>
+    <form id="validationForm">
+        <div id="message"></div>
+        <input type="text" id="fullName" placeholder="Full Name">
+        <input type="text" id="age" placeholder="Age">
+        <input type="text" id="sex" placeholder="Sex">
+        <input type="text" id="position" placeholder="Position">
+        <button type="submit" id="submit">Add Entry</button>
+    </form>
+
+    <div id="userData"></div>
+    <script src="../logic/crud.js"></script>
+</body>
+</html>
