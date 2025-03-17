@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+><html>
+<head>
+    <title>Excerise 1 by Zayna</title>
+</head>
+<body>
+    <h1 align = "center" >
+        Excerise 1 by Zayna 
+    </h1>
+    <h5 align = "center">
+        Date Submitted: 03/1/2025
+    </h5>
+    <hr>
+    <h4 align = "center">
+        <b>Fun facts about me:</b>
+    </h4>
+    <table align = "center">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Movie</th>
+            <th>Favorite Song</th>
+            <th>Favorite Videe</th>
+        </tr>
+        <tr>
+            <td><h3>Zayna</h3></td>
+            <td><h3>Shaik</h3></td>
+            <td>Image</td>
+            <td>
+                <h3>Heat Waves by Glass Animals</h3>
+                <audio control>
+                    <source src="Heat Waves by Glass Animals.mp3" type="audio/mpeg">
+                </audio>
+            </td>
+            <td>
+                <h3>70 Life Lessons That Will Fix 93% Of Your Problems</h3>
+                <video width="320" height="240" controls>
+                    <source src="70 Life Lessons That Will Fix 93% Of Your Problems.mp4" type="video/mp4">
+            </td>
+        </tr>
+        <style>
+            table, th, td {
+                border: 2px solid rgb(64, 31, 154);
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 10px;
+                background-color: rgb(127, 127, 163);
+            }
+        </style>
+    </table>
+    <div>
+    </div>
+    <h3> Enter your details below:</h3>
+    <form> 
+        <label>Full Name:</label>
+        <input type="text" placeholder="Zayna Shaik"><br><br>
+        <label>Email Address:</label>
+        <input type="text" placeholder="zaynshaik24@gmail.com"><br><br>
+        <label>Password:</label>
+        <input type="password" placeholder="*****"><br><br>
+        </form>
+        <form>
+        <p>Available Days: </p>
+        <input type = "radio"> Sunday
+        <input type = "radio"> Monday
+        <input type = "radio"> Tueday
+        <input type = "radio"> Wednesday
+        <input type = "radio"> Thursday
+        <input type = "radio"> Friday
+        <input type = "radio"> Saturday
+        <br><br>
+        <label for="available-time">Available Time:</label>
+        <select id="available-time" name="available-time">
+            <option value="08:00">08:00 AM</option>
+            <option value="09:00">09:00 AM</option>
+            <option value="10:00">10:00 AM</option>
+            <option value="11:00">11:00 AM</option>
+            <option value="12:00">12:00 PM</option>
+            <option value="13:00">01:00 PM</option>
+        </select>
+    </form>
+    </form>
+    <form>
+        <br><legend>Currently Working on new website?</legend>
+          <div>
+            <input type="radio" id="yes" name="working" value="yes" checked>
+            <label for="yes">Yes</label>
+          </div>
+          <div>
+            <input type="radio" id="no" name="working" value="no">
+            <label for="no">No</label>
+          </div>
+      </form>
+    <form>
+        <br><textarea cols = "30" rows = "10" placeholder="If any questions or comments, write here "></textarea><br><br>
+        <input type ="submit"> <input type = "reset">
+    </form>
+</body>
+</html>
