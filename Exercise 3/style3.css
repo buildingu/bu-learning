@@ -1,88 +1,102 @@
 @media screen and (min-width: 768px) {
     body {
         background-image: url("../assets3/background-desktop.jpg");
+        background-size: cover;
+        background-position: center;
         padding-bottom: 30px;
+        margin: 0;
+        font-family: Arial, sans-serif;
     }
-    h1,h4 {
-        text-align:center;
+    h1, h4 {
+        text-align: center;
         color: white;
     }
     form {
-        text-align:center;
-        color:black;
+        text-align: center;
+        color: black;
+        font-size: 18px;
     }
     table {
-        background-color: grey; 
-        margin-left:auto; 
-        margin-right:auto; 
+        background-color: grey;
+        margin-left: auto;
+        margin-right: auto;
         border-spacing: 10px;
+        width: 80%;
     }
     th {
         background-color: #404040;
         color: white;
+        padding: 12px;
     }
     td {
-        height:200px; 
-        width:150px; 
-        margin:0; 
-        text-align:center;
+        height: 200px;
+        width: 150px;
+        margin: 0;
+        text-align: center;
         background-color: #404040;
         color: white;
+        padding: 10px;
     }
     .form-styles {
+        display: flex;
         justify-content: center;
-        border: #404040;
+        align-items: center;
+        border: solid 7px #404040;
         background-color: lightgrey;
-        margin: auto;
-        width: 400px;
-        padding: 10px;
-        border: solid;
+        margin: 30px auto;
+        width: 50%;
+        padding: 20px;
         border-color: grey;
-        border-width: 7px;
     }
 }
 
-/* Mobile Styles */
+/* Mobile Styles (max-width: 767px) */
 @media screen and (max-width: 767px) {
     body {
         background-image: url("../assets3/background-mobile.jpg");
+        background-size: cover;
+        background-position: center;
         padding-bottom: 30px;
+        margin: 0;
+        font-family: Arial, sans-serif;
     }
-    h1,h4 {
-        text-align:center;
+    h1, h4 {
+        text-align: center;
         color: white;
     }
     form {
-        text-align:center;
-        color:black;
+        text-align: center;
+        color: black;
+        font-size: 16px;
     }
     .form-styles {
+        display: flex;
         justify-content: center;
-        border: #404040;
+        align-items: center;
+        border: solid 7px #404040;
         background-color: lightgrey;
-        margin: auto;
-        width: 400px;
-        padding: 10px;
-        border: solid;
+        margin: 20px auto;
+        width: 90%;
+        padding: 15px;
         border-color: grey;
-        border-width: 7px;
     }
-    table, th, td{
-        margin:auto;
-        padding:15px;
-        font-size:12px;
+    table {
+        margin: auto;
+        padding: 15px;
+        font-size: 12px;
+        background-color: gray;
+        width: 90%;
     }
-    table{
-      background-color:gray;
-      text-align: center;
-      width:75%;
+    th {
+        background-color: #ae3c08;
+        color: white;
+        width: 100%;
+        padding: 12px;
     }
-    th{
-        background-color:#ae3c08;
-        width:75%;
-    }
-    td{
-        background-color:#813d1d;
-        width:75%;
+    td {
+        background-color: #813d1d;
+        color: white;
+        width: 100%;
+        padding: 12px;
     }
 }
