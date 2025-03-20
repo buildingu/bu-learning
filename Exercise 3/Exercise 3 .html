@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Metadata-->
+    <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--Title-->
     <title>building-U Challenge</title>
     <link rel="stylesheet" href="css3/style3.css">
 </head>
@@ -14,7 +13,8 @@
     <h3>Date submitted: 2/6/25</h3>
     <hr>
     <h3>Fun facts about me:</h3>
-    <!--Table-->
+    
+    <!-- Table -->
     <table border="1" align="center">
         <tr>
             <th>First name</th>
@@ -26,9 +26,18 @@
         <tr>
             <td>Peyton</td>
             <td>Wrazen</td>
-            <td><img width='120' src="https://upload.wikimedia.org/wikipedia/en/8/87/The_Imitation_Game_%282014%29.png" alt="The Imitation Game"></td>
-            <td><audio controls><source src="live_and_learn.mp3" type="audio/mpeg"></audio></td>
-            <td><iframe width="300" height="200" src="https://www.bing.com/videos/riverview/relatedvideo?q=dailytatics+army+men&&mid=32DD44F92A485FD8A89032DD44F92A485FD8A890&FORM=VCGVRP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+            <td>
+                <img width='120' src="https://upload.wikimedia.org/wikipedia/en/8/87/The_Imitation_Game_%282014%29.png" alt="The Imitation Game Movie Poster">
+            </td>
+            <td>
+                <audio controls>
+                    <source src="live_and_learn.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+            <td>
+                <iframe width="300" height="200" src="https://www.bing.com/videos/riverview/relatedvideo?q=dailytatics+army+men&&mid=32DD44F92A485FD8A89032DD44F92A485FD8A890&FORM=VCGVRP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </td>
         </tr>
     </table>
     <hr>
@@ -46,19 +55,19 @@
         <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
 
         <p>Available Meeting Days:</p>
-        <input type="checkbox" id="monday" name="days" value="Monday">
+        <input type="checkbox" id="monday" name="days[]" value="Monday">
         <label for="monday">Monday</label>
-        <input type="checkbox" id="tuesday" name="days" value="Tuesday">
+        <input type="checkbox" id="tuesday" name="days[]" value="Tuesday">
         <label for="tuesday">Tuesday</label>
-        <input type="checkbox" id="wednesday" name="days" value="Wednesday">
+        <input type="checkbox" id="wednesday" name="days[]" value="Wednesday">
         <label for="wednesday">Wednesday</label>
-        <input type="checkbox" id="thursday" name="days" value="Thursday">
+        <input type="checkbox" id="thursday" name="days[]" value="Thursday">
         <label for="thursday">Thursday</label>
-        <input type="checkbox" id="friday" name="days" value="Friday">
+        <input type="checkbox" id="friday" name="days[]" value="Friday">
         <label for="friday">Friday</label>
-        <input type="checkbox" id="saturday" name="days" value="Saturday">
+        <input type="checkbox" id="saturday" name="days[]" value="Saturday">
         <label for="saturday">Saturday</label>
-        <input type="checkbox" id="sunday" name="days" value="Sunday">
+        <input type="checkbox" id="sunday" name="days[]" value="Sunday">
         <label for="sunday">Sunday</label><br><br>
 
         <label for="time">Available Time:</label>
