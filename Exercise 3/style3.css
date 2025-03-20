@@ -1,129 +1,129 @@
 @media screen and (min-width: 768px) {
     body {
-        background-image: url("../assets3/background-desktop.jpg");
-        background-size: cover;
-        background-position: center;
-        padding-bottom: 30px;
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
+    background-image: url("../assets3/background-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
     h1, h4 {
-        text-align: center;
-        color: white;
-    }
+    text-align: center;
+    color: white;
+}
     form {
-        text-align: center;
-        color: black;
-        font-size: 18px;
-    }
+    text-align: center;
+    color: black;
+    font-size: 18px;
+}
     table {
-        background-color: grey;
-        margin-left: auto;
-        margin-right: auto;
-        border-spacing: 10px;
-        width: 80%;
-    }
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 10px;
+    width: 80%;
+}
     th {
-        background-color: #404040;
-        color: white;
-        padding: 12px;
-    }
+    background-color: #404040;
+    color: white;
+    padding: 12px;
+}
     td {
-        height: 200px;
-        width: 150px;
-        margin: 0;
-        text-align: center;
-        background-color: #404040;
-        color: white;
-        padding: 10px;
-    }
+    height: 200px;
+    width: 150px;
+    margin: 0;
+    text-align: center;
+    background-color: #404040;
+    color: white;
+    padding: 10px;
+}
     .form-styles {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: solid 7px #404040;
-        background-color: lightgrey;
-        margin: 30px auto;
-        width: 50%;
-        padding: 20px;
-        border-color: grey;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 7px #404040;
+    background-color: lightgrey;
+    margin: 30px auto;
+    width: 50%;
+    padding: 20px;
+    border-color: grey;
+}
 }
 
 /* Mobile Styles (max-width: 767px) */
 @media screen and (max-width: 767px) {
     body {
-        background-image: url("../assets3/background-mobile.jpg");
-        background-size: cover;
-        background-position: center;
-        padding-bottom: 30px;
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
+    background-image: url("../assets3/background-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
     h1, h4 {
-        text-align: center;
-        color: white;
-    }
+    text-align: center;
+    color: white;
+}
     form {
-        text-align: center;
-        color: black;
-        font-size: 16px;
-    }
+    text-align: center;
+    color: black;
+    font-size: 16px;
+}
     .form-styles {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: solid 7px #404040;
-        background-color: lightgrey;
-        margin: 20px auto;
-        width: 90%;
-        padding: 15px;
-        border-color: grey;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 7px #404040;
+    background-color: lightgrey;
+    margin: 20px auto;
+    width: 90%;
+    padding: 15px;
+    border-color: grey;
+}
     table {
     width: 100%;
     display: block;  /* This makes the table scrollable and prevents overflow issues */
     overflow-x: auto;
     white-space: nowrap;
-  }
+}
 
   /* Convert table rows into vertical blocks */
-  thead {
+ thead {
     display: none;  /* Hide the header row */
-  }
+}
 
-  tbody, tr {
+tbody, tr {
     display: block; /* Block-level for each row */
     width: 100%;
     margin-bottom: 10px;
-  }
+}
 
-  tr {
+tr {
     background-color: #f9f9f9;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ddd;
-  }
+}
 
-  td {
+ td {
     display: block; /* Make each cell block-level to appear vertically */
     text-align: right;  /* Align text to the right */
     position: relative;
     padding-left: 50%; /* Space for labels */
     padding-bottom: 10px;
-  }
+}
 
-  td::before {
+td::before {
     /* Add labels before each cell's data */
     content: attr(data-label);
     position: absolute;
     left: 10px;
     top: 10px;
     font-weight: bold;
-  }
+}
      td div {
     display: table-cell;
     padding-left: 10px;
     vertical-align: middle;
-  }
+}
 }
