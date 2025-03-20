@@ -81,22 +81,49 @@
         border-color: grey;
     }
     table {
-        margin: auto;
-        padding: 15px;
-        font-size: 12px;
-        background-color: gray;
-        width: 90%;
-    }
-    th {
-        background-color: #ae3c08;
-        color: white;
-        width: 100%;
-        padding: 12px;
-    }
-    td {
-        background-color: #813d1d;
-        color: white;
-        width: 100%;
-        padding: 12px;
-    }
+    width: 100%;
+    display: block;  /* This makes the table scrollable and prevents overflow issues */
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Convert table rows into vertical blocks */
+  thead {
+    display: none;  /* Hide the header row */
+  }
+
+  tbody, tr {
+    display: block; /* Block-level for each row */
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  tr {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+
+  td {
+    display: block; /* Make each cell block-level to appear vertically */
+    text-align: right;  /* Align text to the right */
+    position: relative;
+    padding-left: 50%; /* Space for labels */
+    padding-bottom: 10px;
+  }
+
+  td::before {
+    /* Add labels before each cell's data */
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+  }
+     td div {
+    display: table-cell;
+    padding-left: 10px;
+    vertical-align: middle;
+  }
 }
