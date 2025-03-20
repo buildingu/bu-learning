@@ -35,12 +35,12 @@ function formValidator(first, last, age, number) {
     }
 
     if (age < 18){
-        console.log("Sorry, not old enough for our app.")
+        console.log("Sorry, not old enough for our app.");
         return 0;
     }
 
     console.log("WELCOME TO THE ADOS APP!");
-    
 }
 
-formValidator("Om", "Gautam
+// Example usage
+formValidator("Om", "Gautam", 22, "1234567890");
