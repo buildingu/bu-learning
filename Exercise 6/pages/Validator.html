@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validator App</title>
+    <link rel="stylesheet" href="/Exercise 6/styles/validator.css" />
+    <link rel="icon" type="image/x-icon" href="/Exercise 6/assets/checkmark_icon.jpg">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/Exercise 6/pages/Home.html">Home</a></li>
+        <li><a href="/Exercise 6/pages/Validator.html">Validator</a></li>
+        <li><a href="/Exercise 6/pages/Crud.html">CRUD</a></li>
+        <li><a href="/Exercise 6/pages/Location.html">Location</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Form Validator App</h1>
+      <form id="form" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required/>
+        <div class="error-message" id="nameError" aria-live="assertive"></div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required/>
+        <div class="error-message" id="emailError" aria-live="assertive"></div>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age" required min="18" max="120"/>
+        <div class="error-message" id="ageError" aria-live="assertive"></div>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required/>
+        <div class="error-message" id="passwordError" aria-live="assertive"></div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="/Exercise 6/logic/validatorapp.js"></script>
+  </body>
+</html>

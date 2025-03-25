@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Validator app for CRUD operations" />
+    <meta name="keywords" content="CRUD, Validator, Web App, Form Validation" />
+    <meta name="author" content="Your Name" />
+    <link rel="stylesheet" href="/Exercise 6/styles/crud.css" />
+    <link rel="icon" type="image/x-icon" href="/Exercise 6/assets/CRUD_icon.jpg">
+    <title>CRUD Validator</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/Exercise 6/pages/Home.html">Home</a></li>
+        <li><a href="/Exercise 6/pages/Validator.html">Validator</a></li>
+        <li><a href="/Exercise 6/pages/Crud.html">CRUD</a></li>
+        <li><a href="/Exercise 6/pages/Location.html">Location</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <form id="validationForm" action="#" method="post">
+        <fieldset>
+          <legend>Enter User Information</legend> <!-- Added legend for better accessibility -->
+          <div id="message"></div>
+          <input 
+            type="text" 
+            id="fname" 
+            placeholder="Bob" 
+            required 
+            aria-label="First Name" /> <!-- Added aria-label for accessibility -->
+          <br /><br />
+          <input 
+            type="text" 
+            id="lname" 
+            placeholder="Smith" 
+            required 
+            aria-label="Last Name" /> <!-- Added aria-label for accessibility -->
+          <br /><br />
+          <input 
+            type="number" 
+            id="age" 
+            placeholder="23" 
+            required 
+            min="18" 
+            max="100" 
+            aria-label="Age" /> <!-- Number input for age with min and max validation -->
+          <br /><br />
+          <input 
+            type="tel" 
+            id="phone" 
+            placeholder="123456789" 
+            pattern="^[0-9]{10}$" 
+            required 
+            aria-label="Phone Number" /> <!-- Phone input with pattern for validation -->
+          <br /><br /><br />
+          <button type="submit">Validate</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <div id="userData"></div>
+    <script src="/Exercise 6/logic/validatorapp.js"></script>
+  </body>
+</html>
