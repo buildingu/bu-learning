@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Exercise 6/styles/movie.css" />
+    <style>
+      /* General Page Styling */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        background-color: #333;
+        padding: 15px;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav li {
+        margin: 0 15px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #f8f8f8;
+      }
+
+      /* Button Styling */
+      #getLocationBtn {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 24px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      #getLocationBtn:hover {
+        background-color: #45a049;
+      }
+
+      /* Location Display */
+      #demo {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #333;
+        text-align: center;
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+        }
+
+        nav li {
+          margin-bottom: 10px;
+        }
+
+        #getLocationBtn {
+          width: 100%;
+        }
+      }
+    </style>
+    <title>Location</title>
+  </head>
+  <body>
+    <nav>
+    <ul>
+        <li><a href="/Exercise 6/pages/Home.html">Home</a></li>
+        <li><a href="/Exercise 6/pages/Validator.html">Validator</a></li>
+        <li><a href="/Exercise 6/pages/Crud.html">CRUD</a></li>
+        <li><a href="/Exercise 6/pages/Location.html">Location</a></li>
+      </ul>
+    </nav>
+    
+    <div style="text-align: center; margin-top: 50px;">
+      <button
+        id="getLocationBtn"
+        onclick="getLocation()"
+        aria-label="Get your current location"
+      >
+        Get My Location
+      </button>
+      
+      <p id="demo"></p>
+    </div>
+
+    <script>
+      const x = document.getElementById("demo");
+
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+
+      function showPosition(position) {
+        x.innerHTML =
+          "Latitude: " +
+          position.coords.latitude +
+          "<br>Longitude: " +
+          position.coords.longitude;
+      }
+
+      function showError(error) {
+        switch (error.code) {
+          case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation.";
+            break;
+          case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable.";
+            break;
+          case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out.";
+            break;
+          case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred.";
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>
