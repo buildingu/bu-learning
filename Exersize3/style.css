@@ -2,7 +2,7 @@ table, th, td {
     border: 1px solid white;
     width: 50%;
     color: white;
-    text-align: center;
+    text-align:  center;
 }
 
 h1{
@@ -17,4 +17,13 @@ video {
 
 body {
     background-image: url("assets/background-desktop.jpg");
+    color: white;
+}
+
+form{
+    text-align: center;
+}
+
+.line{
+    background-color: white;
 }
