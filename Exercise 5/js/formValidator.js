@@ -32,4 +32,4 @@ let formValid = (fname, lname, age, pnum) => {
 
 };
 
-console.log(formValid("AJ", "Gho", 18, "123-456-7890"));
+console.log(formValid(" ", " ", " ", " "));

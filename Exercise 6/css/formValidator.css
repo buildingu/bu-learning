@@ -1,0 +1,21 @@
+.form{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-size: 15px;
+    background-color: #ffffff;
+    border: 3px solid #dddcdf;
+    width: 350px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    input{
+        margin-bottom: 10px;
+        margin-left: 5px;
+        width: 300px;
+    }
+    #submit{
+        margin-bottom: 10px;
+        width: 300px;
+        background-color: #81b0f7;
+    }
+}
