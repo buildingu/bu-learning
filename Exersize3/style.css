@@ -1,8 +1,12 @@
-table, th, td {
-    border: 1px solid white;
-    width: 50%;
-    color: white;
-    text-align:  center;
+table,td,th {
+   
+    background-color:cadetblue;
+    width: 750px;
+    height: 100px;
+    border: 5px solid white;
+    margin: auto;
+    
+
 }
 
 h1{
@@ -18,12 +22,60 @@ video {
 body {
     background-image: url("assets/background-desktop.jpg");
     color: white;
+
+}
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: bold;
+    
+    
 }
 
 form{
+
+    color: black;
+    background-color: gainsboro; 
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+    border: solid gray 10px;
+    margin: auto;
     text-align: center;
 }
 
 .line{
     background-color: white;
+}
+@media (max-width:600px) {
+    body{
+        background-image: url("assets/background-mobile.jpg");
+        background-size: cover;
+    
+    }
+
+    table, th, td{
+        margin:auto;
+        padding:15px;
+        font-size:12px;
+        width: 75%;
+        height: 75%;
+    }
+    table{
+      background-color:gray;
+      text-align: center;
+      width:75%;
+    }
+    th{
+        background-color:#ae3c08;
+        width:75%;
+    }
+    td{
+        background-color:#813d1d;
+        width:75%;
+    }
+
+    form{
+        align-self: center;
+    }
 }
