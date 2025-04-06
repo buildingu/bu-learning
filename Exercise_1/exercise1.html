@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1: HTML Building-U</title>
+</head>
+<body>
+
+    <h1>Exercise 1: HTML Building-U</h1>
+    <h2>Date of Submission: April 6, 2025</h2>
+
+    <h3>Favorite Movies, Music, and Videos</h3>
+    <table border="1">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Movie Image</th>
+            <th>Favorite Music Audio Sample</th>
+            <th>Favorite Video Sample</th>
+        </tr>
+        <tr>
+            <td>Alexandra</td>
+            <td>Popusoi</td>
+            <td><a href="https://en.wikipedia.org/wiki/Indiana_Jones" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/2/2d/Indiana_Jones_and_the_Last_Crusade.jpg" alt="Indiana Jones" width="100"></a></td>
+            <td><audio controls><source src="path_to_your_audio.mp3" type="audio/mpeg">Your browser does not support the audio tag.</audio></td>
+            <td><video width="100" controls><source src="path_to_your_video.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+        </tr>
+      
+    </table>
+
+    <h3>Feedback Form</h3>
+    <form>
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email address"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+
+        <label>Available Days:</label><br>
+        <input type="checkbox" id="monday" name="days" value="Monday">Monday<br>
+        <input type="checkbox" id="tuesday" name="days" value="Tuesday">Tuesday<br>
+        <input type="checkbox" id="wednesday" name="days" value="Wednesday">Wednesday<br>
+        <input type="checkbox" id="thursday" name="days" value="Thursday">Thursday<br>
+        <input type="checkbox" id="friday" name="days" value="Friday">Friday<br><br>
+
+        <label for="availableTime">Available Time:</label><br>
+        <select id="availableTime" name="availableTime">
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+        </select><br><br>
+
+        <label>Working on a New Website?</label><br>
+        <input type="radio" id="yes" name="newWebsite" value="yes" checked> Yes<br>
+        <input type="radio" id="no" name="newWebsite" value="no"> No<br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" placeholder="Add any comments or additional information"></textarea><br><br>
+
+        <button type="button">Submit</button>
+        <button type="button">Reset</button>
+    </form>
+
+</body>
+</html>
