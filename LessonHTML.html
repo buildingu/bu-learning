@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td {
+                border: 5px solid blue;
+                border-radius: 10px;
+                margin-top: 20px;
+                text-align: center;
+                padding: 10px;
+                
+            }
+
+            table {
+                margin-bottom: 20px;
+            }
+
+            form {
+                text-align: center;
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+        <h1><center>Exercise 1 by Rishab Pradhan</center></h1>
+        <h8><center><b>Date submitted: 4/6/2025</b></center></h8>
+
+        <hr>
+
+        <h8><center><b>Fun facts about me:</b></center></h8>
+        <table style="width:100%">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Favorite Movie</th>
+                <th>Favorite Song</th>
+                <th>Favorite Video</th>
+            </tr>
+            <tr>
+                <td>Rishab</td>
+                <td>Pradhan</td>
+                <td><img src="https://thedmonline.com/wp-content/uploads/2022/01/spiderman-nwh-poster-202x300.jpeg" alt="Spider-Man: No Way Home"></td>
+                <td>
+                    <p>Click play button to play music:</p>
+                    <audio controls>
+                        <source src="calm-waves-soft-piano-314968.mp3">
+                    </audio>
+                </td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/48h57PspBec?si=__467oqBAWU8qcZL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h8><center><b>Enter your details below:</b></center></h8><br>
+        <form action = "/action_page.php">
+            <label for="fname"><i>Full Name:</i></label>
+            <input type="text" id="fname" name="fname" placeholder="(insert full name)"><br><br>
+            <label for="eadress"><i>Email Address:</i></label>
+            <input type="text" id="eadress" name="eadress" placeholder="(insert email address)"><br><br>
+            <label for="tpassword"><i>Password:</i></label>
+            <input type="text" id="tpassword" name="tpassword" placeholder="(insert password)"><br><br>
+
+            <label><i>Available Meeting Days:</i></label><br><br>
+            <input type="checkbox" id="day1" name="day1" value="Monday">
+            <label for="day1">Monday</label>
+            <input type="checkbox" id="day2" name="day2" value="Tuesday">
+            <label for="day2">Tuesday</label>
+            <input type="checkbox" id="day3" name="day3" value="Wednesday">
+            <label for="day3">Wednesday</label>
+            <input type="checkbox" id="day4" name="day4" value="Thursday">
+            <label for="day4">Thursday</label>
+            <input type="checkbox" id="day5" name="day5" value="Friday">
+            <label for="day5">Friday</label>
+            <input type="checkbox" id="day6" name="day6" value="Saturday">
+            <label for="day6">Saturday</label>
+            <input type="checkbox" id="day7" name="day7" value="Sunday">
+            <label for="day7">Sunday</label><br><br>
+
+            <label><i>Available Time:</i></label>
+            <select name="timeA" id="timeA">
+                <option value="Morning">Morning (8am to 12pm)</option>
+                <option value="Afternoon">Afternoon (12pm to 6pm)</option>
+                <option value="Evening">Evening (6pm to 10pm)</option>
+                <option value="Night">Night (10pm to 12am)</option>
+            </select><br><br>
+
+            <label><i>Currently working on new website?</i></label>
+            <label>
+                <input type="radio" name="yesno" value="yes" checked> Yes
+            </label>
+            <label>
+                <input type="radio" name="yesno" value="no"> No
+            </label><br><br>
+
+            <textarea name="message" rows="4" cols="20" placeholder="(Enter your comments here)"></textarea><br><br>
+
+            <button type="button">submit</button>
+            <button type="button">reset</button>
+
+        </form>
+    </body>
+</html>
