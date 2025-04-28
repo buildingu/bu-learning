@@ -13,15 +13,14 @@
     <h1>
         Exercise 1 by Louis
     </h1>
-    <p> 
-       <b> Date Submitted: 26/04/2025 </b>
-    </p>
+    <h4> Date Submitted: 26/04/2025 </h4>
     
-    <!--Insert Line!-->
+    <hr>
+
     <p>
        <b> Fun facts about me: </b>
     </p>
-    <table>
+    <table border="1" cellpadding="5" cellspacing="0">
         <tr>
             <th> First Name </th>
             <th> Last Name </th>
@@ -33,7 +32,7 @@
             <td> Louis </td>
             <td> Assava </td>
             <td> 
-                <img src="C:\Users\Josia\bu-learning\Exercise 1\assets\mushoku-tensei-poster.jpg" width="144" height="240">
+                <a href="https://en.wikipedia.org/wiki/Mushoku_Tensei"><img src="C:\Users\Josia\bu-learning\Exercise 1\assets\mushoku-tensei-poster.jpg" width="144" height="240"></a>
             </td>
             <td> 
                 <audio controls>
@@ -45,37 +44,43 @@
                     <source src="C:\Users\Josia\bu-learning\Exercise 1\assets\Suisei-RandomClip.mp4" type="video/mp4">
                 </video>
             </td>
-            <!--Insert image, vn, video!-->
         </tr>
-    </table>
-    <!--Insert Line!-->
+    </table><br><br>
+
+    <hr>
+
     <p>
         <b> Enter your details below:</b>
     </p>
     <form>
         <label>Full name: </label> 
-        <input type="text"> <br>
+        <input type="text" placeholder="Enter your name"> <br>
         <label>Email address: </label> 
-        <input type="text"> <br>
+        <input type="text" placeholder="Enter your email"> <br>
         <label>Password: </label> 
-        <input type="text"> <br>
+        <input type="text" placeholder="Enter your password"> <br>
 
-        <p> Available Meeting Days: </p>
+        <p><i>Available Meeting Days:</i></p>
         <input type="checkbox"> Sunday
         <input type="checkbox"> Monday
         <input type="checkbox"> Tuesday
         <input type="checkbox"> Wednesday
         <input type="checkbox"> Thursday
         <input type="checkbox"> Friday
-        <input type="checkbox"> Saturday <br>
+        <input type="checkbox"> Saturday <br><br>
 
-        <!--Dropdown List !-->
+        <label><i>Available Time:</i></label>
+        <select id="time" name="time">
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+        </select><br><br>
 
-        <p><i>Currently working on new website? </i></p>
+        <label><i>Currently working on new website? </i></label>
         <input type="radio"> Yes
-        <input type="radio"> No <br>
+        <input type="radio"> No <br><br>
 
-        <textarea cols="30" rows="10"></textarea>
+        <textarea placeholder="Enter your comments here" cols="30" rows="2"></textarea> <br><br>
         
         <input type="submit">
         <input type="reset">
