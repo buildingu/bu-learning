@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise&nbsp;3 – Advanced CSS Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- =====  Header  ===== -->
+  <header class="page-header">
+    <h1>Exercise 3 by <span class="highlight">Mohamad Dabbabo</span></h1>
+    <p class="sub">Date submitted: <time datetime="2025-04-30">30&nbsp;Apr 2025</time></p>
+  </header>
+
+  <!-- ===== Desktop Grid ===== -->
+<div class="facts-grid-desktop facts-grid">
+    <div class="cell head">First Name</div>
+    <div class="cell head">Last Name</div>
+    <div class="cell head">Favorite Movie</div>
+    <div class="cell head">Favorite Song</div>
+    <div class="cell head">Favorite Video</div>
+  
+    <div class="cell">Mohamad</div>
+    <div class="cell">Dabbabo</div>
+    <div class="cell movie">
+      <a href="https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(1995_film)" target="_blank" rel="noopener">
+        <p>Ghost in the Shell (1995 film): Philosophy, AI, Robotics, Identity</p>
+        <img src="https://i.pinimg.com/736x/24/50/a4/2450a46de5f7fc0dbf13e2ec8909c03c.jpg" alt="Ghost in the Shell (1995 film)">
+      </a>
+    </div>
+    <div class="cell song">
+      <audio controls src="media/rick_roll.mp3"></audio>
+    </div>
+    <div class="cell video">
+      <video controls width="240" src="media/marvel_studios.mp4"></video>
+    </div>
+</div>  
+
+<!-- ===== Had issues with Desktop and Mobile grids. Decided to use the same grid for both. =====-->
+
+<!-- ===== Mobile Grid ===== -->
+<div class="facts-grid-mobile facts-grid">
+    <div class="cell head">First Name</div>
+    <div class="cell">Mohamad</div>
+  
+    <div class="cell head">Last Name</div>
+    <div class="cell">Dabbabo</div>
+  
+    <div class="cell head">Favorite Movie</div>
+    <div class="cell movie">
+      <a href="https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(1995_film)" target="_blank" rel="noopener">
+        <p>Ghost in the Shell (1995 film): Philosophy, AI, Robotics, Identity</p>
+        <img src="https://i.pinimg.com/736x/24/50/a4/2450a46de5f7fc0dbf13e2ec8909c03c.jpg" alt="Ghost in the Shell (1995 film)">
+      </a>
+    </div>
+  
+    <div class="cell head">Favorite Song</div>
+    <div class="cell song">
+      <audio controls src="media/rick_roll.mp3"></audio>
+    </div>
+  
+    <div class="cell head">Favorite Video</div>
+    <div class="cell video">
+      <video controls width="240" src="media/marvel_studios.mp4"></video>
+    </div>
+  </div>
+  
+
+  <!-- =====  Form  ===== -->
+  <section id="registration" class="content-section">
+    <h2>Enter your details below:</h2>
+    <form class="details-form" action="#" method="post">
+      <label>Full Name<input type="text" placeholder="Your Name" required></label>
+      <label>Email Address<input type="email" placeholder="you@example.com" required></label>
+      <label>Password<input type="password" required></label>
+
+      <fieldset>
+        <legend>Available Meeting Days:</legend>
+        <div class="check-group">
+          <label><input type="checkbox" name="day"> Monday</label>
+          <label><input type="checkbox" name="day"> Tuesday</label>
+          <label><input type="checkbox" name="day"> Wednesday</label>
+          <label><input type="checkbox" name="day"> Thursday</label>
+          <label><input type="checkbox" name="day"> Friday</label>
+          <label><input type="checkbox" name="day"> Saturday</label>
+          <label><input type="checkbox" name="day"> Sunday</label>
+        </div>
+      </fieldset>
+
+      <label>Available Time:
+        <select>
+          <option>Morning (8am – 12pm)</option>
+          <option>Afternoon (12pm – 4pm)</option>
+          <option>Evening (4pm – 8pm)</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <legend>Currently working on a new website?</legend>
+        <label><input type="radio" name="newsite" value="yes"> Yes</label>
+        <label><input type="radio" name="newsite" value="no" checked> No</label>
+      </fieldset>
+
+      <label>If yes, please enter which page(s) you are working on
+        <textarea rows="3" placeholder="Enter your comments here"></textarea>
+      </label>
+
+      <div class="btn-row">
+        <button type="submit" class="btn submit">Submit</button>
+        <button type="reset"  class="btn reset">Reset</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="page-footer">
+    <p class="copy">Desktop Version® / Mobile Version®</p>
+  </footer>
+</body>
+</html>
