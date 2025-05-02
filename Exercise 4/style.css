@@ -1,0 +1,134 @@
+/* === Global tweaks === */
+:root {
+    --bs-primary-rgb: 80, 34, 255;          /* tweak bootstrap primary if desired */
+  }
+  
+  body {
+    scroll-behavior: smooth;
+  }
+  
+  /* Section headings */
+  .section-title {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  
+  /* ===== Hero ===== */
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(100,0,255,0.8), rgba(0,0,0,0.8)),
+                url("media/ai_gradient_bg.jpg") center/cover no-repeat;
+  }
+  
+  /* ===== Contact section background ===== */
+  .contact {
+    background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(102,0,255,0.8)),
+                url("media/ai_mesh_bg.jpg") center/cover fixed;
+  }
+  
+  /* ===== Custom button (black → charcoal) ===== */
+  .btn-custom {
+    background: #000;
+    color: #fff;
+    border: none;
+    transition: background 0.3s;
+  }
+  
+  .btn-custom:hover,
+  .btn-custom:focus {
+    background: #333;
+    color: #fff;
+  }
+  
+  /* Navbar active link */
+  .navbar-nav .nav-link.active {
+    font-weight: 600;
+  }
+  
+  /* Portfolio cards */
+  .card-img-top {
+    height: 320px;
+    object-fit: contain;
+  }
+  
+  /* Make modals slightly translucent for style */
+  .modal-content {
+    backdrop-filter: blur(4px);
+  }
+
+  /*  Custom Badge Colors  */
+  .badge-html {
+    background-color: #ff6600; /* vibrant HTML orange */
+    color: white;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  .badge-html:hover::after {
+    content: " • Started Apr 2025";
+    font-size: 0.75rem;
+    color: #fff;
+  }
+  
+  .badge-css {
+    background-color: #2965f1; /* official CSS blue */
+    color: white;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  .badge-css:hover::after {
+    content: " • Started Apr 2025";
+    font-size: 0.75rem;
+    color: #fff;
+  }
+  
+  .badge-python {
+    background-color: #306998; /* Python blue */
+    color: #ffd343;            /* Python yellow accent */
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  .badge-python:hover::after {
+    content: " • Started 2023";
+    font-size: 0.75rem;
+    color: #ffd343;
+  }
+  
+  .badge-csharp {
+    background-color: #68217a; /* deep purple C# */
+    color: #ffffff;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  .badge-csharp:hover::after {
+    content: " • Started 2023";
+    font-size: 0.75rem;
+    color: #fff;
+  }
+  
+  .badge-latex {
+    background-color: #0f0f0f; /* dark, serious tone */
+    color: #00ffee;            /* glowing cyan for flair */
+    border-radius: 0.5rem;
+    font-family: 'Courier New', monospace;
+    transition: all 0.3s ease;
+  }
+  .badge-latex:hover::after {
+    content: " • Started 2024";
+    font-size: 0.75rem;
+    color: #00ffee;
+  }
+
+  .badge-js {
+    background-color: #f7df1e; /* bright yellow JS */
+    color: #000000;           /* black text for contrast */
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  .badge-js:hover::after {
+        content: " • Started May 2025";
+        font-size: 0.75rem;
+        color: #000000;
+    }
+  
+  
+  

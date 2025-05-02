@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robotics & AI Expo 2025 – Information Page</title>
+
+  <!-- external CSS (basic only) -->
+  <link rel="stylesheet" href="./css_ex2/style.css" />
+</head>
+
+<body>
+
+  <!-- Headings -->
+  <h1>Robotics & AI Expo 2025</h1>
+  <h3>Saturday · 24 May 2025 · Gesamtschule Konradsdorf · 10:00–17:00</h3>
+
+  <!-- Brief description -->
+  <p>
+    Ever wanted to unleash your AI skills? Join us for a day of hands-on workshops (practical), thrilling competitions (hackathons), and thought-provoking debates (About future AI)!
+    You will learn about the latest in robotics and AI, and have the chance to showcase your own projects. Even bring your arguments to the table!
+    So what are you waiting for? Come join the event!
+  </p>
+
+  <!-- Table (event schedule) -->
+  <h2>Event Schedule</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Activity</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>10 : 00</td><td>Opening Keynote</td><td>Aula</td></tr>
+      <tr><td>11 : 00</td><td>Autonomous-Bot Race</td><td>Sporthalle</td></tr>
+      <tr><td>13 : 00</td><td>ML Workshop: "Teach a CNN to lower grade students"</td><td>Lab 1B</td></tr>
+      <tr><td>15 : 30</td><td>Debate – "Will AI surpass us?"</td><td>Auditorium</td></tr>
+      <tr><td>16 : 45</td><td>Awards & Closing</td><td>Aula</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Images + Links -->
+  <h2>Sneak-peek</h2>
+  <p style="text-align:center">
+    <a href="https://www.gesamtschule-konradsdorf.de/" target="_blank">
+      <img src="media_ex2/poster.png" alt="Expo poster by GPT-4o image gen" width="450" />
+    </a>
+  </p>
+
+  <!-- Couldn't find a good Audio, went with a Video made in matplotlib .ipynb (took me a while to make) -->
+  <!-- I also added an internal CSS here, since it's much quicker this way -->
+
+  <figure style="margin:24px auto; text-align:center; max-width:none;">
+    <figcaption>10-seconds highlight reel:</figcaption>
+    <video 
+      width="1000" 
+      controls 
+      style="display:block; margin:0 auto;"
+    >
+      <source src="media_ex2/robotics_schedule.mp4" type="video/mp4" />
+      Your browser doesn’t support the video tag.
+    </video>
+  </figure>
+  
+
+  <!-- Form (contact / registration) -->
+  <h2>Register / Contact Us</h2>
+  <form>
+    <label>Full Name:
+      <input type="text" name="fullname" placeholder="Jane Doe" required />
+    </label>
+
+    <label>Email:
+      <input type="email" name="email" placeholder="you@example.com" required />
+    </label>
+
+    <!-- Grade Selection -->
+    <label>Year Group:
+      <select name="year">
+        <option>Grade 10</option>
+        <option>Grade 11</option>
+        <option>Grade 12</option>
+        <option>Teacher / Guest</option>
+      </select>
+    </label>
+
+
+    <!-- Interest Checkboxes -->
+    <fieldset>
+      <legend>Interested in:</legend>
+      <label><input type="checkbox" name="interest" value="workshop" /> Workshops</label>
+      <label><input type="checkbox" name="interest" value="competition" /> Competitions</label>
+      <label><input type="checkbox" name="interest" value="debate" /> Debate</label>
+    </fieldset>
+
+    <label>Comments:
+      <textarea name="comments" rows="3" placeholder="Anything we should know?"></textarea>
+    </label>
+
+    <button type="submit">Send</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <footer>
+    <p>
+      More info at
+      <a href="https://www.gesamtschule-konradsdorf.de/" target="_blank">gesamtschule-konradsdorf.de</a>
+    </p>
+  </footer>
+
+</body>
+</html>
