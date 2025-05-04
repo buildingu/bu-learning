@@ -1,0 +1,71 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-image: url(https://wallpapersok.com/images/high/blue-vector-mountain-professional-desktop-tzqryx06td7g198n.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+    
+}
+form{
+ background-color: grey;  
+ width: 500px; 
+ height: 200px;
+ padding: 10px;
+ border: 5px black outset;
+ text-align: center;
+ margin: auto;
+
+
+}
+button{
+    background-color: midnightblue ;
+    width: 100px;
+    height: 30px;
+    color: white;
+}
+ul{
+    padding: 50px;
+    background-color: teal;
+}
+li{
+    display:inline;
+    background-color: teal;
+    margin: 0 100px;
+    
+}
+a{
+    padding: 20px;
+    background-color: grey;
+}
+@media only screen and (max-width: 600px){
+    body{
+        background-image: url(https://wallpapersok.com/images/high/blue-vector-mountain-professional-desktop-tzqryx06td7g198n.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        background-color: teal;
+        align-items: center;
+        gap: 20px;
+    }
+    li{
+        
+        margin: 0;
+        
+    }
+    a{
+        padding: 5px 20px;
+       
+
+}}

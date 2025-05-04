@@ -1,0 +1,102 @@
+body{
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/01c1cad6-a54c-430a-a91c-d330b68403df/da5ucbm-78018326-2f14-452d-a8f3-4bc7fc0acb37.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAxYzFjYWQ2LWE1NGMtNDMwYS1hOTFjLWQzMzBiNjg0MDNkZlwvZGE1dWNibS03ODAxODMyNi0yZjE0LTQ1MmQtYThmMy00YmM3ZmMwYWNiMzcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gZQb5m-qKUQYPDJEkDa9HG2Yeh-xnuYMsTCArk7J6X4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: auto;
+    
+}
+
+    
+
+ul{
+    padding: 50px;
+    background-color: teal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+li{
+    display:inline;
+    background-color: teal;
+    margin: 0 100px;
+    
+}
+a{
+    padding: 10px 15px;
+    background-color: grey;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+div{
+    background-color: red;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 450px;
+    border: 5px solid black;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px
+}
+img{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+}
+#Pokemon{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+#Type{
+    background-color: grey;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px
+}
+#Number{
+    background-color: grey;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px
+}
+#Ability{
+    background-color: grey;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px
+}
+button{
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 25px
+}
+@media only screen and (max-width: 600px){
+    body{
+        background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/01c1cad6-a54c-430a-a91c-d330b68403df/da5ucbm-78018326-2f14-452d-a8f3-4bc7fc0acb37.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAxYzFjYWQ2LWE1NGMtNDMwYS1hOTFjLWQzMzBiNjg0MDNkZlwvZGE1dWNibS03ODAxODMyNi0yZjE0LTQ1MmQtYThmMy00YmM3ZmMwYWNiMzcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gZQb5m-qKUQYPDJEkDa9HG2Yeh-xnuYMsTCArk7J6X4);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        background-color: teal;
+        align-items: center;
+        gap: 20px;
+    }
+    li{
+        
+        margin: 0;
+        
+    }
+    a{
+        padding: 5px 20px;
+       
+
+}}

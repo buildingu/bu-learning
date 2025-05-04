@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API App</title>
+    <link rel = "stylesheet" href = app3.css>
+</head>
+<body>
+    
+    <ul>
+        <li><a href = "app1.html">Validator App</a></li>
+        <li><a href = "app2.html">Employee Entry App</a></li>
+        <li><a href = "app3.html">Pokedex App</a></li>
+      </ul>
+   
+    
+    <h1>Pokedex App</h1>
+    
+        <p>Enter Pokemon Name: <input type = "text" id = "pokemon_name"></p>
+        <button onclick = "getPokemon()">Search</button>
+        <br>
+        <br>
+        <p>If you're lucky, the Pokemon may be shiny!</p>
+        <div>
+            
+        <p id = "Pokemon"></p>
+        <img src = "" alt = "Pokemon Sprite" id = "pokemonSprite" style = "display: none">
+       
+        <p id = "Type" style = "display: none"></p>
+        <p id = "Number" style = "display: none"></p>
+        <p id = "Ability" style = "display: none"></p>
+        <p id = "Weight"></p>
+        </div>
+  
+    <script src = app3.js ></script>
+</body>
+</html>
