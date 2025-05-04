@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="CRUD form for user management" />
-  <meta name="keywords" content="CRUD, Web App, Form" />
+  <meta name="description" content="CRUD Form" />
   <meta name="author" content="Your Name" />
   <link rel="stylesheet" href="/Exercise 6/styles/crud.css" />
-  <link rel="icon" type="image/x-icon" href="/Exercise 6/assets/CRUD_icon.jpg">
+  <link rel="icon" href="/Exercise 6/assets/CRUD_icon.jpg" />
   <title>CRUD App</title>
 </head>
 <body>
@@ -26,26 +25,36 @@
         <legend>Enter Employee Information</legend>
 
         <label for="name">Name:</label>
-<input type="text" id="name" placeholder="Enter full name">
+        <input type="text" id="name" required placeholder="e.g. Bob Smith" />
+        <br /><br />
 
-<label for="age">Age:</label>
-<input type="number" id="age" placeholder="Enter age">
+        <label for="age">Age:</label>
+        <input type="number" id="age" required min="18" max="100" placeholder="e.g. 30" />
+        <br /><br />
 
-<label for="sex">Sex:</label>
-<select id="sex">
-    <option value="">Select sex</option>
-    <option value="Male">Male</option>
-    <option value="Female">Female</option>
-</select>
+        <label for="sex">Sex:</label>
+        <select id="sex" required>
+          <option value="">Select</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+        <br /><br />
 
-<label for="position">Position:</label>
-<input type="text" id="position" placeholder="Enter job position">
+        <label for="position">Position:</label>
+        <input type="text" id="position" required placeholder="e.g. Manager" />
         <br /><br />
 
         <button type="submit">Submit</button>
       </fieldset>
     </form>
   </div>
+
+  <div id="userData" class="output"></div>
+
+  <script src="/Exercise 6/logic/crud.js"></script>
+</body>
+</html>
 
   <div id="userData"></div>
 
