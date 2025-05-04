@@ -1,103 +1,32 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Light background for better contrast */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-nav {
-    background-color: #333;
-    padding: 15px 30px;  /* More padding for a cleaner, spacious nav */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+nav ul {
+  display: flex;
+  list-style: none;
+  background-color: #333;
+  padding: 10px;
+  margin: 0;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Center the navigation items */
+nav ul li {
+  margin-right: 20px;
 }
 
-li {
-    margin-right: 20px;
-}
-
-li:last-child {
-    margin-right: 0; /* No margin on the last item */
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;  /* Slightly larger font for readability */
-    transition: color 0.3s, transform 0.3s ease; /* Smooth transition */
-}
-
-a:hover {
-    color: #f8f8f8;
-    transform: scale(1.1); /* Slight zoom effect on hover */
+nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 .container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px; /* More rounded corners for a smoother design */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased shadow for more depth */
-    text-align: center; /* Center content inside the container */
+  padding: 20px;
 }
 
-form {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px; /* Increased margin for better spacing */
-    font-size: 14px;  /* Smaller label font for better hierarchy */
-    font-weight: normal;
-}
-
-input {
-    width: 100%;
-    padding: 10px;  /* More padding for easier input */
-    margin-bottom: 15px; /* Slightly larger margin between inputs */
-    border: 1px solid #ccc;
-    border-radius: 5px; /* Slightly rounded corners for inputs */
-    font-size: 16px; /* Larger font size for better readability */
-}
-
-input:focus {
-    border-color: #007bff; /* Blue border on focus for better UX */
-    outline: none;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;  /* Rounded corners for the button */
-    cursor: pointer;
-    font-size: 16px; /* Slightly larger button text */
-    transition: background-color 0.3s, transform 0.2s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);  /* Subtle zoom effect on hover */
-}
-
-#error-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 10px;
-    font-weight: bold; /* Make error messages stand out more */
-}
-
-fieldset {
-    border: none;
+.user-entry {
+  margin-top: 10px;
+  background: #f0f0f0;
+  padding: 10px;
 }
