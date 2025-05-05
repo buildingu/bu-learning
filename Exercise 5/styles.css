@@ -1,0 +1,203 @@
+/* ─────────── Global Reset & Tokens ─────────── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  :root {
+    --violet-1: #0c0032;
+    --violet-2: #190061;
+    --violet-3: #240090;
+    --violet-4: #3500d3;
+    --neon-1:   #4a00e0;
+    --neon-2:   #8e2de2;
+    --cyan:     #00e5ff;
+  }
+  
+  /* ─────────── Cosmic Background ─────────── */
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 2rem;
+    background: linear-gradient(
+      135deg,
+      var(--violet-1),
+      var(--violet-2),
+      var(--violet-3),
+      var(--violet-4)
+    );
+    overflow: hidden;
+    position: relative;
+  }
+  body::before {
+    /* subtle nebula glow */
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(
+      circle at 60% 30%,
+      rgba(255, 0, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0) 60%
+    );
+    pointer-events: none;
+    z-index: -2;
+  }
+  
+  /* ─────────── Star Particles ─────────── */
+  .particles {
+    position: fixed;
+    inset: 0;
+    z-index: -3;
+    overflow: hidden;
+  }
+  .particles span {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    background: #fff;
+    animation: floating linear infinite;
+    opacity: var(--o);
+  }
+  @keyframes floating {
+    from {
+      transform: translateY(var(--start)) translateX(0);
+    }
+    to {
+      transform: translateY(calc(var(--start) + 100vh))
+        translateX(var(--xShift));
+    }
+  }
+  
+  /* ─────────── Glass Card ─────────── */
+  .container {
+    width: 100%;
+    max-width: 600px;
+    backdrop-filter: blur(20px) saturate(160%);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .container:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* ─────────── Typography ─────────── */
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* ─────────── Form Layout ─────────── */
+  form {
+    display: grid;
+    gap: 1.5rem;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  label {
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  /* ─────────── Inputs ─────────── */
+  input {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.3s;
+  }
+  input::placeholder {
+    color: #cfcfff;
+  }
+  input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.18);
+    border-color: var(--cyan);
+    box-shadow: 0 0 0 3px rgba(0, 229, 255, 0.25);
+  }
+  
+  /* ─────────── CTA Button ─────────── */
+  button {
+    background: linear-gradient(
+      to right,
+      var(--neon-1),
+      var(--neon-2)
+    );
+    border: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 0.5rem;
+  }
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  }
+  
+  /* ─────────── Validation Message ─────────── */
+  .message {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .message.show {
+    opacity: 1;
+  }
+  .error {
+    background: rgba(255, 87, 87, 0.2);
+    border: 1px solid rgba(255, 87, 87, 0.5);
+    color: #ff5757;
+  }
+  .success {
+    background: rgba(87, 255, 154, 0.2);
+    border: 1px solid rgba(87, 255, 154, 0.5);
+    color: #57ff9a;
+  }
+  
+  /* ─────────── Responsiveness ─────────── */
+  @media (max-width: 768px) {
+    .container {
+      padding: 1.5rem;
+    }
+  }
+  @media (max-width: 480px) {
+    body {
+      padding: 1rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  

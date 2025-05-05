@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADOS App | Cosmic AI Form Validator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Parallax particle layer container -->
+  <div class="particles" id="starsLayer"></div>
+
+  <!-- Glass-morphism validator card -->
+  <div class="container">
+    <h1>ADOS APP VALIDATOR</h1>
+    <form id="validatorForm">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" placeholder="Enter your first name">
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" placeholder="Enter your last name">
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Enter your age">
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="tel" id="phoneNumber" placeholder="Enter your phone number">
+      </div>
+      <button type="submit">Validate</button>
+    </form>
+    <div id="resultMessage" class="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
