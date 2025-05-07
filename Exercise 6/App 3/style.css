@@ -1,0 +1,192 @@
+/* =======================================================
+   Retro-Futuristic Chat - styles.css
+   Dark theme, neon glow effects, responsive design
+======================================================= */
+
+/* Neon Palette Colors:
+   #0ff (cyan) for user bubbles,
+   #f0f (magenta) for bot bubbles,
+   #08f (blue) for UI highlights. */
+
+/* Base resets and body background */
+body {
+    margin: 0;
+    padding: 0;
+    background: #111; /* Dark gray background for dark theme */
+    color: #eee;      /* Light gray text color */
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Hide scrollbars for full-screen canvas */
+  }
+  
+  /* Chat container panel */
+  #chatContainer {
+    position: relative;
+    z-index: 2; /* Above the canvas background */
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(20, 20, 30, 0.9); /* Semi-transparent dark panel */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* =======================================================
+     Button Styles (Start and Send)
+  ======================================================= */
+  
+  #startBtn {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0ff; /* Neon cyan background */
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px #0ff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  /* Hover and focus for start button */
+  #startBtn:hover, #startBtn:focus {
+    box-shadow: 0 0 20px #0ff;
+    transform: translateX(-50%) scale(1.05);
+  }
+  
+  /* =======================================================
+     Chat Messages (Bubbles)
+  ======================================================= */
+  
+  .messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding-right: 10px; /* Padding for scrollbar */
+  }
+  
+  .message {
+    margin: 8px 0;
+    padding: 10px 15px;
+    max-width: 80%;
+    border-radius: 15px;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+    /* Neon text glow using multiple text-shadows */
+    color: #fff;
+    text-shadow:
+      0 0 5px rgba(255,255,255,0.8),
+      0 0 10px rgba(0,255,255,0.6),
+      0 0 15px rgba(0,255,255,0.4);
+    background: rgba(0, 50, 50, 0.8);
+    box-shadow: 0 0 10px rgba(0, 200, 255, 0.3);
+  }
+  
+  .message.user {
+    align-self: flex-end;
+    background: rgba(0, 60, 80, 0.9);
+    color: #0ff;
+    text-shadow:
+      0 0 5px #0ff,
+      0 0 10px #0ff,
+      0 0 20px #0ff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  }
+  
+  .message.bot {
+    align-self: flex-start;
+    background: rgba(80, 0, 60, 0.9);
+    color: #f0f;
+    text-shadow:
+      0 0 5px #f0f,
+      0 0 10px #f0f,
+      0 0 20px #f0f;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+  }
+  
+  /* =======================================================
+     Input Field and Send Button
+  ======================================================= */
+  
+  #inputArea {
+    display: flex;
+    margin-top: 10px;
+  }
+  #chatInput {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #0ff;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(30, 30, 40, 0.8);
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.2);
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+  /* Glow on focus for the text input */
+  #chatInput:focus {
+    border-color: #0ff;
+    box-shadow: 0 0 10px #0ff;
+  }
+  #sendBtn {
+    margin-left: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #f0f;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px #f0f;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  #sendBtn:hover, #sendBtn:focus {
+    box-shadow: 0 0 20px #f0f;
+    transform: scale(1.05);
+  }
+  
+  /* =======================================================
+     Responsive Layout Adjustments
+  ======================================================= */
+  
+  @media (max-width: 600px) {
+    #chatContainer {
+      width: 100%;
+      margin: 0;
+      border-radius: 0;
+      max-width: none;
+      box-shadow: none;
+    }
+    #startBtn {
+      top: 10px;
+    }
+  }
+  
+  /* =======================================================
+     Example flicker keyframes for neon effect (commented out)
+  ======================================================= */
+  /* @keyframes flicker { */
+  /*   0%   { text-shadow: 0 0 10px #0ff; } */
+  /*   50%  { text-shadow: 0 0 20px #0ff; } */
+  /*   100% { text-shadow: 0 0 10px #0ff; } */
+  /* } */
+  
+  /* =======================================================
+     Canvas Starfield Background
+  ======================================================= */
+  
+  #starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  /* End of styles.css */
+  

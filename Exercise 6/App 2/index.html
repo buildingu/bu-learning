@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cosmic HR • Employee Entry</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Parallax star layers -->
+  <canvas id="bgNear"></canvas>
+  <canvas id="bgFar"></canvas>
+
+  <!-- Glass card -->
+  <main class="card">
+    <header class="card__header">
+      <h1 class="card__title">Employee <span>Entry App</span></h1>
+      <p class="card__subtitle">Add • Edit • Delete in light‑speed</p>
+    </header>
+
+    <!-- Form -->
+    <form id="employeeForm" novalidate>
+      <div class="grid">
+        <label class="field">
+          <span>Name</span>
+          <input id="name" type="text" placeholder="Jane Doe" />
+        </label>
+
+        <label class="field">
+          <span>Age</span>
+          <input id="age" type="number" min="18" max="100" placeholder="30" />
+        </label>
+
+        <label class="field">
+          <span>Sex</span>
+          <select id="sex">
+            <option value="">— Select —</option>
+            <option>Female</option>
+            <option>Male</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Position</span>
+          <input id="position" type="text" placeholder="Software Engineer" />
+        </label>
+      </div>
+
+      <button type="submit" class="cta" id="submitBtn">
+        <span class="txt">Add Entry</span>
+        <span class="glow"></span>
+      </button>
+    </form>
+
+    <!-- Live entries -->
+    <section class="entries" id="entries"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
