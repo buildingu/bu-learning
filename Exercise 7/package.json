@@ -1,0 +1,31 @@
+{
+  "name": "exercise-7",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+
+    "dev:useState":   "cross-env VITE_REACT_CHALLENGE=useState   vite",
+    "dev:useRef":     "cross-env VITE_REACT_CHALLENGE=useRef     vite",
+    "dev:useEffect":  "cross-env VITE_REACT_CHALLENGE=useEffect  vite",
+    "dev:useContext": "cross-env VITE_REACT_CHALLENGE=useContext vite",
+    "dev:useReducer": "cross-env VITE_REACT_CHALLENGE=useReducer vite",
+    "dev:useMemo":    "cross-env VITE_REACT_CHALLENGE=useMemo    vite",
+    "dev:final":      "cross-env VITE_REACT_CHALLENGE=final      vite"
+  },
+
+  "dependencies": {
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^5.0.0",
+    "cross-env": "^7.0.3"
+  }
+}
