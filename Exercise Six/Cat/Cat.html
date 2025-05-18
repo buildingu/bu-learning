@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTTP Status Cats</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Exercise" />
+    <meta name="description" content="Exercise 6" />
+    <meta name="author" content="Elisa" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Cat.css">
+</head>
+
+
+<body>
+          <!--Navogation Bar-->
+    <div class="overflow-hidden">
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" class="navbar-toggler">
+              <span class='navbar-toggler-icon'></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class='navbar-nav'>
+                    <li><a href="../Form/validator form.html" class="nav-link">Validator Form</a></li>
+                    <li><a href="../CRUD/CRUD.html" class="nav-link">CRUD APP</a></li>
+                    <li><a href="../Cat/Cat.html" class="nav-link">HTTP Cat</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <h1>HTTP Status Cats</h1>
+        <div class="input-section">
+            <input type="number" id="statusInput" placeholder="Enter HTTP status code">
+            <button onclick="fetchCat()">Show Cat</button>
+        </div>
+        <div class="result-section">
+            <img id="catImage" src="" alt="Status Cat" style="display: none;">
+            <p id="errorMessage"></p>
+        </div>
+    </div>
+    <script src="Cat.js"></script>
+</body>
+</html>

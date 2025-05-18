@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CRUD APP</title>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="Exercise" />
+        <meta name="description" content="Exercise 6" />
+        <meta name="author" content="Elisa" />
+        <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="CRUD.css">
+        <script src="CRUD.js"></script>
+
+    </head>
+
+    <body>
+    <!--Navogation Bar-->
+        <div class="overflow-hidden">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" class="navbar-toggler">
+                <span class='navbar-toggler-icon'></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class='navbar-nav'>
+                        <li><a href="../Form/validator form.html" class="nav-link">Validator Form</a></li>
+                        <li><a href="../CRUD/CRUD.html" class="nav-link">CRUD APP</a></li>
+                        <li><a href="../Cat/Cat.html" class="nav-link">HTTP Cat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </div>
+
+		<div class="worker-form">
+            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                <div>
+                    <label>Name*</label>
+                    <label class="validation-error hide" id="nameValidationError">This field is required.</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div>
+                    <label>Age</label>
+                    <label class="validation-error hide" id="ageValidationError">This field is required.</label>
+                    <input type="text" name="age" id="age">
+                </div>
+                <div>
+                    <label>Sex</label>
+                    <label class="validation-error hide" id="sexValidationError">This field is required.</label>
+                    <input type="text" name="sex" id="sex">
+                </div>
+                <div>
+                    <label>Position</label>
+                    <label class="validation-error hide" id="positionValidationError">This field is required.</label>
+                    <input type="text" name="position" id="position">
+                </div>
+                <div  class="form-action-buttons">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+		</div>
+		<br/>
+		<div class = "worker-table">
+            <table class="list" id="workerList">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Sex</th>
+                        <th>Position</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Form Validation</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Exercise" />
+    <meta name="description" content="Exercise 6" />
+    <meta name="author" content="Elisa" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="validator form.css">
+
+    <!--Validator-->
+    <script type = "text/javascript">
+      function validate() {
+      /* Checking values */
+          if( document.myForm.fName.value == "" ) {
+              alert( "Please input your first name" );
+              document.myForm.fName.focus() ;
+              return false;
+          }
+
+          if( document.myForm.lName.value == "" ) {
+              alert( "Please input your last name" );
+              document.myForm.lName.focus() ;
+              return false;
+          }
+
+          if( document.myForm.age.value == "" ) {
+              alert( "Please input your Age" );
+              document.myForm.age.focus() ;
+              return false;
+          }
+
+          if( document.myForm.phoneNumber.value == "" ) {
+              alert( "Please input your Phone Number" );
+              document.myForm.phoneNumber.focus() ;
+              return false;
+          }
+
+
+          if( document.myForm.age.value < 18 ) {
+              alert( "Sorry, you are unable to use this app" );
+              document.myForm.age.focus() ;
+              return false;
+          }
+
+          if( document.myForm.age.value >= 18 ) {
+              alert( "Welcome to the app!" );
+              document.myForm.age.focus() ;
+              return false;
+          }
+
+          return( true );
+        }
+    </script>      
+  </head>
+
+  <body>
+    <!--Navogation Bar-->
+    <div class="overflow-hidden">
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" class="navbar-toggler">
+              <span class='navbar-toggler-icon'></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class='navbar-nav'>
+                    <li><a href="../Form/validator form.html" class="nav-link">Validator Form</a></li>
+                    <li><a href="../CRUD/CRUD.html" class="nav-link">CRUD APP</a></li>
+                    <li><a href="../Cat/Cat.html" class="nav-link">HTTP Cat</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    </div>
+
+  <!--Form-->
+  <br><br>
+      <form name = "myForm" onsubmit = "return(validate());">
+        <table cellspacing = "2" cellpadding = "2">
+          <tr>
+            <td> First Name</td>
+            <td><input type = "text" name = "fName" /></td>
+          </tr>
+
+          <tr>
+            <td> Last Name</td>
+            <td><input type = "text" name = "lName" /></td>
+          </tr>
+            
+          <tr>
+            <td>Age</td>
+            <td><input type = "text" name = "age" /></td>
+          </tr>
+            
+          <tr>
+            <td> Phone Number</td>
+            <td><input type = "text" name = "phoneNumber" /></td>
+            </tr>
+            
+          <tr>
+            <td></td>
+            <td><input type = "submit" value = "Submit" /></td>
+          </tr>
+            
+        </table>
+
+      </form>      
+  </body>
+</html>
