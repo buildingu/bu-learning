@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 1: HTML Building-U</title>
+</head>
+<body>
+
+    <center>
+        <h1>Exercise 1: HTML Building-U</h1>
+        <h3>Date of Submission: May 18, 2025</h3>
+
+        <h2>Fun facts about me:</h2>
+        <table border="1", bgcolor="green">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Favorite Movie Image</th>
+                <th>Favorite Music Audio Sample</th>
+                <th>Favorite Video Sample</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Bullet_Train_(film)">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Bullet_Train_film_poster.jpg" alt="Bullet Train" width="100">
+                    </a>
+                </td>
+                <td>
+                    <small>Click to play:</medium>
+                    <audio controls>
+                        <source src="https://cdn.pixabay.com/audio/2023/03/22/audio_8fcf7e7703.mp3" type="audio/mpeg">
+                    </audio>
+                </td>
+                <td>
+                    <iframe width="200" height="113" src="https://www.youtube.com/embed/0e3GPea1Tyg" 
+                        title="MrBeast Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </td>
+            </tr>
+        </table>
+
+        <h2>User Information Form</h2>
+        <form>
+            <p>
+                Full Name: <input type="text" placeholder="Enter your full name">
+            </p>
+            <p>
+                Email: <input type="email" placeholder="Enter your email">
+            </p>
+            <p>
+                Password: <input type="password" placeholder="Create a password">
+            </p>
+            <p>
+                Available Days:<br>
+                <input type="checkbox" name="day" value="Monday"> Monday<br>
+                <input type="checkbox" name="day" value="Tuesday"> Tuesday<br>
+                <input type="checkbox" name="day" value="Wednesday"> Wednesday<br>
+                <input type="checkbox" name="day" value="Thursday"> Thursday<br>
+                <input type="checkbox" name="day" value="Friday"> Friday<br>
+                <input type="checkbox" name="day" value="Saturday"> Saturday<br>
+                <input type="checkbox" name="day" value="Sunday"> Sunday<br>
+            </p>
+            <p>
+                Available Time:
+                <select>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                </select>
+            </p>
+            <p>
+                Working on a New Website?<br>
+                <input type="radio" name="website" value="yes" checked> Yes
+                <input type="radio" name="website" value="no"> No
+            </p>
+            <p>
+                Comments:<br>
+                <textarea placeholder="Add any comments or additional information here"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </p>
+        </form>
+    </center>
+
+</body>
+</html>
