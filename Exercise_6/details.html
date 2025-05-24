@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Entry App</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input { margin: 10px 0; display: block; }
+        .employee-list { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Employee Entry</h1>
+    <input type="text" id="name" placeholder="Name" />
+    <input type="number" id="age" placeholder="Age" />
+    <input type="text" id="sex" placeholder="Sex" />
+    <input type="text" id="position" placeholder="Position" />
+    <button id="addBtn">Add Entry</button>
+    <div class="employee-list" id="employeeList"></div>
+
+    <script>
+        const employeeList = document.getElementById('employeeList');
+
+        document.getElementById('addBtn').addEventListener('click', function() {
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const sex = document.getElementById('sex').value;
+            const position = document.getElementById('position').value;
+
+            const entryDiv = document.createElement('div');
+            entryDiv.innerHTML = `${name}, ${age}, ${sex}, ${position} 
+                <button onclick="editEntry(this)">Edit</button>
+                <button onclick="deleteEntry(this)">Delete</button>`;
+            employeeList.appendChild(entryDiv);
+
+            // Clear inputs
+            document.getElementById('name').value = '';
+            document.getElementById('age').value = '';
+            document.getElementById('sex').value = '';
+            document.getElementById('position').value = '';
+        });
+
+        function deleteEntry(button) {
+            employeeList.removeChild(button.parentElement);
+        }
+
+        function editEntry(button) {
+            const entry = button.parentElement;
+            const details = entry.innerText.split(', ').slice(0, 4);
+            document.getElementById('name').value = details[0];
+            document.getElementById('age').value = details[1];
+            document.getElementById('sex').value = details[2];
+            document.getElementById('position').value = details[3];
+            deleteEntry(button);
+        }
+    </script>
+</body>
+</html>
