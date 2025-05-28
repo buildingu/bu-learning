@@ -1,0 +1,85 @@
+/* External CSS Page */
+
+/* For the header */
+h1{
+    /* Text */
+    color: black;
+    font-size: 50px;
+    font-family: Tahoma;
+
+    /* Box to hold the text */
+    border: 3px solid gold;
+    background-color: gold;
+    padding: 30px;
+    /* Ensure box does not span the entire length of the page*/
+    display: inline-block;
+    /* curve the edges of the box */
+    border-radius: 50px;
+}
+
+body {
+    /* Set the title in the middle */
+    text-align: center;
+
+    /* Set background color for page */
+    background-color: #f4f4f9
+}
+
+/* For each of the sub-headers */
+#div-section-header {
+    /* Text */
+    color: #333;
+    font-size: 25px;
+    font-family: Tahoma;
+    font-weight: bold;
+    text-align: center;
+
+    /* Box to hold the text */
+    border-radius: 50px;
+    border: 2px solid lightblue;
+    background-color: lightblue;
+    padding: 10px;
+    width: 100px;
+    height: 100px; 
+
+    /* Set in middle of page */
+    margin: auto;
+}
+
+/* For the parts under each sub-heading */
+#div-section-content {
+    /* Text */
+    color: #333;
+    font-size: 25px;
+    font-family: Tahoma;
+    font-weight: bold;
+    text-align: center;
+
+    /* Box to hold the text */
+    border-radius: 50px;
+    border: 2px solid lightblue;
+    background-color: lightblue;
+    padding: 10px;
+    width: 100px;
+    height: 100px; 
+
+    /* Set in middle of page */
+    margin: auto;
+
+    /* Text */
+    font-family: Tahoma;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+
+    /* Box to hold the information */
+    border: 3px solid black;
+    background-color: white;
+    padding: 10px;
+    width: 500px;
+    height: 150px;
+    border-radius: 50px;
+
+    /* Set in middle of page */
+    margin: auto;
+}

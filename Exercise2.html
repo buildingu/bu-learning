@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title for the webpage -->
+        <title>Meet the Alumni!</title>
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="exercise2.css">
+
+    </head>
+
+    <body>
+        <!-- Top of the page -->
+        <h2 style="text-align: center; font-family: Tahoma;">Awesome Heights Secondary School Presents:</h2>
+
+        <!-- Formatted by External CSS page -->
+        <h1>MEET THE STUDENTS!</h1>
+        
+        <!-- Formatted by External CSS page -->
+        <div id="div-section-header">
+            <p>What Is It?</p>
+        </div>
+
+        <!-- Formatted by External CSS page -->
+        <div id="div-section-content">
+            <ul>
+                <li>Event held by AHSS's Programming Club</li>
+                <li>Meet past members of the Club now in Computer studies!</li>
+                <li>Learn more about Computer Science and Computer Engineering!</li>
+                <li>All are welcome!</li>
+            </ul>
+        </div>
+
+        <!-- Add space -->
+        <br>
+
+        <!-- Formatted by External CSS page -->
+        <div id="div-section-header">
+            <p>When Is It?</p>
+        </div>
+
+        <!-- Formatted by External CSS page -->
+        <div id="div-section-content">
+            <!-- Use a list to show the dates -->
+            <ul>
+                <li>Lunch and after school!</li>
+                <br>
+                <li>Monday, June 2nd</li>
+                <li>Tuesday, June 3rd</li>
+                <li>Wednesday, June 4th</li>
+                <li>Thursday, June 5th</li>
+                <li>Friday, June 6th</li>
+            </ul>
+        </div>
+
+        <!-- Add space -->
+        <br>
+
+        <!-- Formatted by External CSS page -->
+        <div id="div-section-header">
+            <p>Where Is It?</p>
+        </div>
+        
+        <!-- Formatted by External CSS page -->
+        <div id="div-section-content">
+            <!-- Use list to show the location -->
+            <ul>
+                <li>3rd Floor</li>
+                <br>
+                <li>Room 300</li>
+                <br>
+                <li>Opposite the Science Room</li>
+            </ul>
+        </div>
+
+        <br>
+
+        <!-- Formatted by External CSS page -->
+        <div id="div-section-header">
+            <p>Why Go?</p>
+        </div>
+
+        <!-- Formatted by External CSS page -->
+        <div id="div-section-content">
+            <!-- Use a list again -->
+            <ul>
+                <li>Help prepare yourself for a degree in Computer Studies!</li>
+                <br>
+                <li>Meet new people at the Programming Club!</li>
+                <br>
+                <li>Free food!</li>
+                <br>
+                <li>Learn about the university experience!</li>
+            </ul>
+        </div>
+
+        <!-- Add space -->
+        <br>
+
+        <!-- Formatted by External CSS page -->
+        <div id="div-section-header">
+            <p>Students From:</p>
+        </div>
+
+        <!-- Formatted by External CSS page -->
+        <div id="div-section-content">
+            <!-- Create a table to show the universities -->
+            <table border="2" style="margin:0 auto;" bgcolor="white">
+                <tr>
+                    <!-- Use an image and link for each university -->
+
+                    <!-- UofT -->
+                    <td>
+                        <a href="https://www.utoronto.ca/">
+                            <img src="UofT.webp" alt="University of Toronto" width="100"/>
+                        </a>
+                    </td>
+
+                    <!-- Waterloo -->
+                    <td>
+                        <a href="https://uwaterloo.ca/">
+                            <img src="UW.png" alt="University of Waterloo" width="100"/>
+                        </a>
+                    </td>
+
+                    <!-- Harvard -->
+                    <td>
+                        <a href="https://www.harvard.edu/">
+                            <img src="Harvard.png" alt="Harvard University" width="100"/>
+                        </a>
+                    </td>
+
+                    <!-- Oxford -->
+                    <td>
+                        <a href="https://www.ox.ac.uk/">
+                            <img src="Oxford.jpg" alt="University of Oxford" width="100"/>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            
+            <!-- Under the table, add some text to tell user they can click on the images -->
+            <p style="font-family: Tahoma">Click the images to go to their websites!</p>
+        </div>
+
+        <br>
+
+        <div id="div-section-header">
+            <p>Your Details:</p>
+        </div>
+
+        <!-- So the user can enter their information to "sign up" for the event -->
+        <div id="div-section-content">
+            <form>
+                <!-- Adding their name -->
+                <label>Full Name</label>
+                <input type="text" id="full-name" name="fullName" placeholder="John Doe">
+
+                <br>
+
+                <!-- Email address -->
+                <label>Email Address</label>
+                <input type="email" id="email" name="email" placeholder="johndoe@gmail.com">
+
+                <br>
+
+                <!-- Day(s) they choose to attend (can choose multiple) -->
+                <p>Day(s) you will attend:</p>
+                <input type="radio" id="june2" name="day" value="June 2"> June 2
+                <input type="radio" id="june3" name="day" value="June 3"> June 3
+                <input type="radio" id="june4" name="day" value="June 4"> June 4
+                <input type="radio" id="june5" name="day" value="June 5"> June 5
+                <input type="radio" id="june6" name="day" value="June 6"> June 6
+
+                <br>
+                <br>
+
+                <!-- Submit and reset buttons for the user to enter their information -->
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
+    </body>
+</html>
