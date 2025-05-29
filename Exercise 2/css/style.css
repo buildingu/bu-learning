@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #004080;
+    padding: 1em 2em;
+    color: white;
+  }
+  
+  nav {
+    display: flex;
+    gap: 1.5em;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+    transform: scale(1.1);
+  }  
+  
+  .container {
+    text-align: center;
+    margin-top: 10vh;
+  }
+  
+  .construction {
+    font-size: 2em;
+    font-weight: bold;
+    color: #cc0000;
+  }
+  
