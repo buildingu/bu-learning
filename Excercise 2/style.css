@@ -1,0 +1,110 @@
+body {
+    background-color: brown;
+    color: rgb(15, 1, 1);
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+td {
+    background-color: white;
+}
+
+table {
+    background-color: rgb(85, 17, 17);
+}
+
+nav {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05), rgb(49, 0, 0), rgba(0, 0, 0, 0.05));
+    color: rgb(253, 253, 253);
+    text-align: center;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+nav h2 {
+    color: rgb(255, 208, 0);
+}
+nav h1{
+    background-image: linear-gradient(to bottom, red, yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+main {
+    text-align: center;
+    line-height: 2;
+    font-size: large;
+    word-spacing: 3px;
+}
+
+.linear-text-gradient-bg {
+    color: rgb(77, 11, 11);
+    background: linear-gradient(to top, red, rgb(255, 208, 0));
+    margin: 0;
+}
+
+h3 {
+    color: rgb(255, 208, 0);
+    text-transform: uppercase;
+    font-size: larger;
+    background-color: rgb(77, 11, 11);
+    padding: 10px;
+}
+
+.Infosection {
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    padding-inline: 15px;
+    margin-top: 10px;
+}
+
+.linear-text-gradient {
+    background-image: linear-gradient(to bottom, red, yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-size: larger;
+}
+
+ul li{
+    color: orange;
+}
+
+a{
+    color:rgb(78, 14, 14);
+}
+.forms{
+    background-color: rgb(255, 208, 0);
+    padding: 25px;
+}
+
+tr{
+    background-color: rgb(255, 208, 0);
+}
+input {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  font-size: inherit;
+  text-align: center;
+  border-radius: 50px;
+}
+
+button{
+    font-size: inherit;
+    padding:9px;
+    border-radius: 20px;
+    background-color:rgb(77, 11, 11);
+    color: yellow;
+}
+textarea{
+    font-size: inherit;
+    text-align: center;
+    width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+label{
+    color:rgb(77, 11, 11);
+}
