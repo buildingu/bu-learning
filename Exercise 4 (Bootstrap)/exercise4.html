@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="bg-light text-dark p-4 d-flex align-items-center gap-4">
+        <span class="fw-bold fs-5">BuildingU</span>
+        <nav class="d-flex gap-3" id="navbar">
+            <a href="exercise4.html" class="text-dark text-decoration-none">Home</a>
+            <a href="#about" class="text-dark text-decoration-none">About</a>
+            <a href="#project" class="text-dark text-decoration-none">Projects</a>
+            <a href="#contact" class="text-dark text-decoration-none">Contact</a>
+        </nav>
+
+        <script>
+            const links = document.querySelectorAll('#navbar a');
+            const currentPage = window.location.pathname.split('/').pop();
+
+            links.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('opacity-100');
+                    link.classList.remove('opacity-50');
+                } else {
+                    link.classList.add('opacity-50');
+                    link.classList.remove('opacity-100');
+                }
+            });
+        </script>
+    </div>
+
+    <div id="about" class="position-relative text-center" style="width: 100%;">
+        <img src="/Users/wangwenting/bu-learning/Exercise 4 (Bootstrap)/premium_photo-1701534008693-0eee0632d47a.jpeg"
+            alt="background-image" class="img-fluid" />
+
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-between px-5">
+
+            <div class="position-absolute start-50"
+                style="top: 30px; transform: translateX(-50%); color: white; font-weight: 450; font-size: 2.50rem; white-space: nowrap;">
+                Welcome to My BuildingU Projects Page
+            </div>
+
+            <div class="position-absolute start-50"
+                style="top: 100px; transform: translateX(-50%); color: white; font-weight: 450; font-size: 1.25rem; white-space: nowrap;">
+                Discover my work on Github
+            </div>
+
+            <a href="#project" class="btn btn-primary position-absolute start-50"
+                style="top: 160px; transform: translateX(-50%);">
+                View My Work
+            </a>
+
+            <!-- About Me text on left -->
+            <div class="text-start text-dark"
+                style="max-width: 50%; margin-top: 140px; margin-left: 30px; margin-right: 40px;">
+                <h2>About Me</h2>
+                <p>
+                    Hey! I'm Wen Ting Wang, and I'm passionate about web development and coding. I volunteer my skills
+                    to build amazing websites and
+                    write efficient code that brings ideas to life.
+                </p>
+                <p>
+                    With several years of experience in the field, I've had the privilege of working on a wide range of
+                    projects,
+                    from creating responsive and user-friendly websites to developing custom web applications that solve
+                    complex problems.
+                </p>
+                My journey in web development has allowed me to explore various technologies and frameworks, and
+                Bootstap is one
+                of my favorites. It's a fantastic tool for creating sleek and responsive web designs, which is why I'm
+                excited to share
+                my knowledge with you through this exercise.
+                </p>
+            </div>
+
+            <!-- Profile picture on right -->
+            <div style="margin-top: 120px; ">
+                <img src="/Users/wangwenting/bu-learning/Exercise 4 (Bootstrap)/29e655c617ca501314c5f4d40df64445.jpg"
+                    alt="Profile Picture" class="img-fluid rounded-circle" style="max-width: 60%" />
+            </div>
+        </div>
+    </div>
+
+    <div id="project" class="position-relative text-start" style="width: 100%; margin-bottom: 30px;">
+        <h2 style=" margin-left: 80px; margin-top: 30px; margin-bottom: 0px">My Portfolio</h2>
+
+        <div class="container mt-4 align-items-center">
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="HTML.webp" class="card-img-top" alt="Card 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1: HTML</h5>
+                            <p class="card-text">Project 1 showcases my HTML skills. It's a webpage involving HTML with
+                                table and static form components. Click learn more to see the project.</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#htmlProjectModal">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="CSS.png" class="card-img-top" alt="Card 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2: CSS</h5>
+                            <p class="card-text">Project 2 showcases my CSS skills. It's a stylized webpage for an event
+                                done using HTML and CSS with custom components. Click learn more to see the project.</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#CSSProjectModal">Learn More</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="Javascript.png" class="card-img-top" style="margin-top: 50px;" alt="Card 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3: Advanced CSS</h5>
+                            <p class="card-text">Project 3 showcases my advanced CSS skills. It's a responsive webpage
+                                (Desktop & Mobile) from Project 1. Click learn more to see the project.</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#javascriptProjectModal">Learn More</a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="position-relative text-start" style="width: 100%;">
+        <img src="/Users/wangwenting/bu-learning/Exercise 4 (Bootstrap)/premium_photo-1701534008693-0eee0632d47a.jpeg"
+            alt="background-image" class="img-fluid" />
+
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-start justify-content-between px-5">
+
+            <div class="text-start text-white" style="margin-left: 30px; margin-top: 60px;">
+                <h2>Contact Me</h2>
+
+                <form class="needs-validation mt-3" novalidate style="width: 600px;">
+                    <div class="mb-3">
+                        <label for="name" class="form-label text-white">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Wen Ting Wang">
+                        <div class="invalid-feedback">
+                            Please enter your name.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label text-white">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="wwang@fake.com">
+                        <div class="invalid-feedback">
+                            Please enter a valid email.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label text-white">Message</label>
+                        <textarea class="form-control" id="message" rows="4"
+                            placeholder="Write your message here..."></textarea>
+                        <div class="invalid-feedback">
+                            Please write a message.
+                        </div>
+                    </div><br><br>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="bg-light text-dark p-4 d-flex justify-content-between">
+        <span>2025 Wen Ting Wang</span>
+        <span>Desktop Version</span>
+    </div>
+
+
+    <script src="bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Bootstrap form validation
+        (function () {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+    
+            Array.from(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+    
+
+    <div class="modal fade" id="htmlProjectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <a href="file:///Users/wangwenting/bu-learning/Exercise%201%20(HTML)/exercise1.html"
+                        class="text-primary">HTML Exercise</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="CSSProjectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <a href="file:///Users/wangwenting/bu-learning/Exercise%202%20(CSS)/exercise2.html"
+                        class="text-primary">CSS Exercise</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="javascriptProjectModal" tabindex="-1" aria-labelledby="projectModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>None</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
