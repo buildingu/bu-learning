@@ -9,17 +9,40 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="bg-light text-dark p-4 d-flex align-items-center gap-4">
-        <span class="fw-bold fs-5">BuildingU</span>
-        <nav class="d-flex gap-3" id="navbar">
-            <a href="exercise4.html" class="text-dark text-decoration-none">Home</a>
-            <a href="#about" class="text-dark text-decoration-none">About</a>
-            <a href="#project" class="text-dark text-decoration-none">Projects</a>
-            <a href="#contact" class="text-dark text-decoration-none">Contact</a>
+        <nav class="navbar navbar-expand-md navbar-light bg-light w-100" id = "navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold fs-5" href="#">BuildingU</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0 gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="exercise4.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#project">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
 
         <script>
             const links = document.querySelectorAll('#navbar a');
@@ -37,157 +60,139 @@
         </script>
     </div>
 
-    <div id="about" class="position-relative text-center" style="width: 100%;">
+    <section id="about" class="mb-5">
         <img src="/Users/wangwenting/bu-learning/Exercise 4 (Bootstrap)/premium_photo-1701534008693-0eee0632d47a.jpeg"
-            alt="background-image" class="img-fluid" />
-
-        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-between px-5">
-
-            <div class="position-absolute start-50"
-                style="top: 30px; transform: translateX(-50%); color: white; font-weight: 450; font-size: 2.50rem; white-space: nowrap;">
-                Welcome to My BuildingU Projects Page
+            alt="Background" class="bg-image" />
+        <div class="overlay-content container">
+            <div class="welcome-text w-100">
+                <h1>Welcome to My BuildingU Projects Page</h1>
+                <p>Discover my work on Github</p>
+                <a href="#project" class="btn btn-primary btn-view-work">View My Work</a>
             </div>
 
-            <div class="position-absolute start-50"
-                style="top: 100px; transform: translateX(-50%); color: white; font-weight: 450; font-size: 1.25rem; white-space: nowrap;">
-                Discover my work on Github
-            </div>
-
-            <a href="#project" class="btn btn-primary position-absolute start-50"
-                style="top: 160px; transform: translateX(-50%);">
-                View My Work
-            </a>
-
-            <!-- About Me text on left -->
-            <div class="text-start text-dark"
-                style="max-width: 50%; margin-top: 140px; margin-left: 30px; margin-right: 40px;">
+            <div class="text-content text-start">
                 <h2>About Me</h2>
                 <p>
                     Hey! I'm Wen Ting Wang, and I'm passionate about web development and coding. I volunteer my skills
-                    to build amazing websites and
-                    write efficient code that brings ideas to life.
+                    to build amazing websites and write efficient code that brings ideas to life.
                 </p>
                 <p>
                     With several years of experience in the field, I've had the privilege of working on a wide range of
                     projects,
                     from creating responsive and user-friendly websites to developing custom web applications that solve
-                    complex problems.
+                    complex
+                    problems.
                 </p>
-                My journey in web development has allowed me to explore various technologies and frameworks, and
-                Bootstap is one
-                of my favorites. It's a fantastic tool for creating sleek and responsive web designs, which is why I'm
-                excited to share
-                my knowledge with you through this exercise.
+                <p>
+                    My journey in web development has allowed me to explore various technologies and frameworks, and
+                    Bootstrap is one
+                    of my favorites. It's a fantastic tool for creating sleek and responsive web designs, which is why
+                    I'm excited to
+                    share my knowledge with you through this exercise.
                 </p>
             </div>
 
-            <!-- Profile picture on right -->
-            <div style="margin-top: 120px; ">
+            <div>
                 <img src="/Users/wangwenting/bu-learning/Exercise 4 (Bootstrap)/29e655c617ca501314c5f4d40df64445.jpg"
-                    alt="Profile Picture" class="img-fluid rounded-circle" style="max-width: 60%" />
+                    alt="Profile Picture" class="profile-pic img-fluid" />
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="project" class="position-relative text-start" style="width: 100%; margin-bottom: 30px;">
-        <h2 style=" margin-left: 80px; margin-top: 30px; margin-bottom: 0px">My Portfolio</h2>
-
-        <div class="container mt-4 align-items-center">
-            <div class="row g-4">
-
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="HTML.webp" class="card-img-top" alt="Card 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1: HTML</h5>
-                            <p class="card-text">Project 1 showcases my HTML skills. It's a webpage involving HTML with
-                                table and static form components. Click learn more to see the project.</p>
-                            <a href="#" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#htmlProjectModal">Learn More</a>
-                        </div>
+    <section id="project" class="container">
+        <h2>My Portfolio</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="HTML.webp" class="card-img-top" alt="Project 1" />
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1: HTML</h5>
+                        <p class="card-text">
+                            Project 1 showcases my HTML skills. It's a webpage involving HTML with table and static form
+                            components.
+                            Click learn more to see the project.
+                        </p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#htmlProjectModal">Learn More</a>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="CSS.png" class="card-img-top" alt="Card 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2: CSS</h5>
-                            <p class="card-text">Project 2 showcases my CSS skills. It's a stylized webpage for an event
-                                done using HTML and CSS with custom components. Click learn more to see the project.</p>
-                            <a href="#" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#CSSProjectModal">Learn More</a>
-
-                        </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="CSS.png" class="card-img-top" alt="Project 2" />
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2: CSS</h5>
+                        <p class="card-text">
+                            Project 2 showcases my CSS skills. It's a stylized webpage for an event done using HTML and
+                            CSS with custom
+                            components. Click learn more to see the project.
+                        </p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#CSSProjectModal">Learn More</a>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="Javascript.png" class="card-img-top" style="margin-top: 50px;" alt="Card 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3: Advanced CSS</h5>
-                            <p class="card-text">Project 3 showcases my advanced CSS skills. It's a responsive webpage
-                                (Desktop & Mobile) from Project 1. Click learn more to see the project.</p>
-                            <a href="#" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#javascriptProjectModal">Learn More</a>
-
-                        </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="Javascript.png" style = "margin-top: 10px;" class="card-img-top" alt="Project 3" />
+                    <div class="card-body"  style = "margin-top: 40px;">
+                        <h5 class="card-title">Project 3: Advanced CSS</h5>
+                        <p class="card-text">
+                            Project 3 showcases my advanced CSS skills. It's a responsive webpage (Desktop & Mobile)
+                            from Project 1. Click
+                            learn more to see the project.
+                        </p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#javascriptProjectModal">Learn
+                            More</a>
                     </div>
                 </div>
-
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="contact" class="position-relative text-start" style="width: 100%;">
+    <section id="contact" class="my-5 position-relative">
         <img src="/Users/wangwenting/bu-learning/Exercise 4 (Bootstrap)/premium_photo-1701534008693-0eee0632d47a.jpeg"
-            alt="background-image" class="img-fluid" />
-
-        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-start justify-content-between px-5">
-
-            <div class="text-start text-white" style="margin-left: 30px; margin-top: 60px;">
-                <h2>Contact Me</h2>
-
-                <form class="needs-validation mt-3" novalidate style="width: 600px;">
-                    <div class="mb-3">
-                        <label for="name" class="form-label text-white">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Wen Ting Wang">
-                        <div class="invalid-feedback">
-                            Please enter your name.
-                        </div>
+            alt="Background" class="bg-image" />
+        <div class="overlay-content container">
+            <h2 class="mb-4 text-center">Contact</h2>
+            <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="name" class="form-label text-white">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Wen Ting Wang" required>
+                    <div class="invalid-feedback">
+                        Please enter your name.
                     </div>
+                </div>
 
-                    <div class="mb-3">
-                        <label for="email" class="form-label text-white">Email address</label>
-                        <input type="email" class="form-control" id="email" placeholder="wwang@fake.com">
-                        <div class="invalid-feedback">
-                            Please enter a valid email.
-                        </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label text-white">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="wwang@fake.com" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid email.
                     </div>
+                </div>
 
-                    <div class="mb-3">
-                        <label for="message" class="form-label text-white">Message</label>
-                        <textarea class="form-control" id="message" rows="4"
-                            placeholder="Write your message here..."></textarea>
-                        <div class="invalid-feedback">
-                            Please write a message.
-                        </div>
-                    </div><br><br>
+                <div class="mb-3">
+                    <label for="message" class="form-label text-white">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..."
+                        required></textarea>
+                    <div class="invalid-feedback">
+                        Please write a message.
+                    </div>
+                </div>
 
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-
-
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
         </div>
-    </div>
+    </section>
 
-    <div class="bg-light text-dark p-4 d-flex justify-content-between">
-        <span>2025 Wen Ting Wang</span>
-        <span>Desktop Version</span>
-    </div>
-
+    <footer>
+        <div>© 2025 Wen Ting Wang</div>
+        <div>Built with Bootstrap 5.3</div>
+    </footer>
 
     <script src="bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
 
@@ -196,7 +201,7 @@
         (function () {
             'use strict';
             const forms = document.querySelectorAll('.needs-validation');
-    
+
             Array.from(forms).forEach(function (form) {
                 form.addEventListener('submit', function (event) {
                     if (!form.checkValidity()) {
@@ -208,7 +213,7 @@
             });
         })();
     </script>
-    
+
 
     <div class="modal fade" id="htmlProjectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
