@@ -23,7 +23,8 @@ h1 {
 }
 
 video{
-    height: 250px;
+    width: 500px;
+    height: 300px;
 }
 
 td, th {
@@ -39,24 +40,28 @@ td, th {
     background-color: #2e2e2e;
     color: white;
     border-radius: 10px;
-    translate: -20px;
+    
 }
+
 
 .mobile table {
     width: 100%;
-    text-align: center;
     background-color: #5a2a2a;
     border-collapse: separate;
     border-spacing: 0 10px;
     border-radius: 10px;
     padding: 10px;
+   
 }
 
-video, img {
-    max-width: 100%;
-    height: auto;
+
+img {
+  
+    height: 300px;
     border-radius: 5px;
 }
+
+
 
 form {
     color: black;
