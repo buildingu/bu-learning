@@ -1,0 +1,66 @@
+.navbar-custom {
+    background-color: #f8f9fa;
+    padding: 1rem 2rem;
+}
+
+.navbar-custom .nav-item {
+    margin-left: 1rem;
+}
+
+.navbar-custom .nav-link {
+    color: #000;
+    font-weight: 500;
+    opacity: 0.5;
+    transition: opacity 0.3s ease, font-weight 0.3s ease;
+}
+
+.navbar-custom a {
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    filter: invert(0); /* black icon */
+}
+
+
+.navbar-custom .nav-link.active,
+.navbar-custom .nav-link:hover {
+    opacity: 1;
+    font-weight: 700;
+}
+
+#contact #employeeEntry {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.overlay-content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    border-radius: 8px;
+    color: white;
+}
+
+.contact-form {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+

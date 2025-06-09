@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 by Wen Ting Wang</title>
+    <link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-light text-dark p-4 d-flex align-items-center gap-4">
+        <nav class="navbar navbar-expand-md navbar-light bg-light w-100" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold fs-5" href="#">BuildingU</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0 gap-3">
+                        <li class="nav-item">
+                            <a id = "formValidation" class="nav-link text-dark btn">Form Validator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id = "employeeEntry" class="nav-link text-dark btn">Employee Entry</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id = "api" class="nav-link text-dark btn">API</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main id="mainContent"></main>
+
+    <script type="module" src="function.js"></script>
+
+    <script src="bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('#navbar .nav-link');
+    
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.forEach(l => l.classList.remove('text-dark', 'fw-bold', 'border-bottom'));
+                    link.classList.add('text-dark', 'fw-bold', 'border-bottom');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

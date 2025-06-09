@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+
+<section id="contact" class="my-5 position-relative">
+    <img src="premium_photo-1701534008693-0eee0632d47a copy.jpeg" alt="Background" class="bg-image" />
+    <div class="overlay-content container">
+      <h2 class="mb-4 text-center">Form Validator App</h2>
+      <form class="needs-validation" novalidate id="contactForm">
+        <div class="mb-3">
+          <label for="firstName" class="form-label text-white">First Name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="Wen Ting" required />
+          <div class="invalid-feedback">Please enter your first name.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="lastName" class="form-label text-white">Last Name</label>
+          <input type="text" class="form-control" id="lastName" placeholder="Wang" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="age" class="form-label text-white">Age</label>
+          <input type="number" class="form-control" id="age" placeholder="18" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="phonePart1" class="form-label text-white">Phone Number</label>
+          <div class="d-flex gap-2">
+            <input type="text" id="phonePart1" maxlength="3" class="form-control" placeholder="XXX" required>
+            <span class="text-white align-self-center">-</span>
+            <input type="text" id="phonePart2" maxlength="3" class="form-control" placeholder="XXX" required>
+            <span class="text-white align-self-center">-</span>
+            <input type="text" id="phonePart3" maxlength="4" class="form-control" placeholder="XXXX" required>
+          </div>
+        </div><br>
+        
+
+        <button type="submit" class="btn btn-primary">Send</button>
+
+      </form>
+    </div>
+  </section>
+
+  <script src="bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="validation.js"></script>
