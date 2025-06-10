@@ -1,0 +1,33 @@
+{
+  "name": "react-lesson",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:useState": "cross-env VITE_REACT_CHALLENGE=useState vite",
+    "dev:useRef": "cross-env VITE_REACT_CHALLENGE=useRef vite",
+    "dev:useEffect": "cross-env VITE_REACT_CHALLENGE=useEffect vite",
+    "dev:useContext": "cross-env VITE_REACT_CHALLENGE=useContext vite",
+    "dev:useReducer": "cross-env VITE_REACT_CHALLENGE=useReducer vite",
+    "dev:useMemo": "cross-env VITE_REACT_CHALLENGE=useMemo vite",
+    "dev:final": "cross-env VITE_REACT_CHALLENGE=final vite",
+    "start:express": "vite",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "express": "^5.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-router-dom": "^7.6.2",
+    "uuid": "^10"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "~4.3.0",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "vite": "~6.2.0"
+  }
+}
