@@ -1,0 +1,162 @@
+/* For desktops */
+@media only screen and (min-width: 768px) {
+    body {
+        /* Background image and text style */
+        background-image: url(assets/background-desktop.jpg);
+        background-size: cover;
+        font-family:'Verdana', sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    /* Table for desktop */
+    .desktop-table {
+        border-color: white;
+        margin: 0 auto;
+        background-color: darkslateblue;
+        height: 400px;
+    }
+
+    /* Borders for table */
+    th, td {
+        border: 5px solid rgb(125, 142, 214);
+        padding: 10px;
+    }
+
+    /* Video and image sizes */
+    video {
+        width: 300px;
+    }
+    img {
+        width: 300px;
+    }
+
+    /* Styling user form */
+    .user-information {
+        margin: auto;
+        width: 500px;
+        background-color: lightgray;
+    }
+
+    /* Labels */
+    div label {
+        color: black;
+        font-size: 17px;
+    }
+
+    /* Input text / non radio buttons */
+    input[type="text"], input[type="email"], input[type="password"]  {
+        color: black;
+        font-size: 15px;
+    }
+
+    /* radio buttons */
+    .radio-buttons{
+        color: black;
+        font-size: 15px;
+    }
+
+    /* Button colors */
+    .reset {
+        background-color: red;
+    }
+    .submit {
+        background-color: lightgreen;
+    }
+
+    /* Hide mobile table on desktop */
+    .mobile-table {
+        display: none;
+    }
+
+    /* Hide mobile footer on desktop */
+    .mobile-footer {
+        display: none;
+    }
+
+    /* Footer for desktop */
+    .desktop-footer {
+        text-align: center;
+        color: white;
+        font-size: 40px;
+    }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+    body {
+        /* Background and text style */
+        background-image: url(assets/background-mobile.jpg);
+        background-size: cover;
+        font-family: 'Verdana', sans-serif;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Hide desktop table on mobile */
+    .desktop-table {
+        display: none;
+    }
+
+    /* Mobile version of table */
+    .mobile-table {
+        border-collapse: collapse;
+        border-color: white;
+        margin: 0 auto;
+        background-color: darkslateblue;
+        height: 400px;
+    }
+
+    /* Table borders */
+    th, td {
+        border: 5px solid rgb(125, 142, 214);
+        padding: 10px;
+    }
+
+    /* Reduce media size for mobile */
+    img, video {
+        width: 100px;
+        height: 125px;
+    }
+
+    /* Reduce audio player size */
+    .audio {
+        transform: scale(0.8);
+    }
+
+    /* Style the text-based inputs */
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 85%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Form container */
+    .user-information {
+        background-color: lightgray;
+        width: 75%;
+        margin: 0 auto;
+        color: black;
+    }
+
+    /* Submit and Reset buttons */
+    .submit {
+        background-color: lightgreen;
+    }
+    .reset {
+        background-color: red;
+    }
+
+    /* Hide desktop footer on mobile */
+    .desktop-footer {
+        display: none;
+    }
+
+    /* Footer for mobile */
+    .mobile-footer {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+}

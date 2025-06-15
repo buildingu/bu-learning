@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- External CSS file -->
+        <link rel="stylesheet" href="style-exercise3.css"/>
+    </head>
+
+    <body>
+        <!-- Page title and date -->
+        <h1>Exercise 3 by Neel Vinayak</h1>
+        <h3>Date Submitted: June 14 2025</h3>
+
+        <!-- Main content -->
+        <fieldset>
+            <h4>Fun Facts About Me</h4>
+
+            <!-- Mobile only table (hidden on desktop) -->
+            <table class="mobile-table">
+                <!-- Basic info -->
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+                <tr>
+                    <td>Neel</td>
+                    <td>Vinayak</td>
+                </tr>
+
+                <!-- Movie row -->
+                <tr>
+                    <th>Favorite Movie</th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://en.wikipedia.org/wiki/Interstellar_(film)">
+                            <img src="assets/InterstellarPicture.jpg" alt="My favorite movie: Interstellar"/>
+                        </a>
+                    </td>
+                </tr>
+
+                <!-- Song row -->
+                <tr>
+                    <th>Favorite Song</th>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls>
+                            <source src="assets/rick_roll.mp3">
+                        </audio>
+                    </td>
+                </tr>
+
+                <!-- Video row -->
+                <tr>
+                    <th>Favorite Video</th>
+                </tr>
+                <tr>
+                    <td>
+                        <video controls src="assets/marvel_studios.mp4"></video>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Desktop only table (hidden on mobile) -->
+            <table class="desktop-table">
+                <!-- Header row -->
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Favorite Movie</th>
+                    <th>Favorite Song</th>
+                    <th>Favorite Video</th>
+                </tr>
+                <!-- Content row -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href="https://en.wikipedia.org/wiki/Interstellar_(film)">
+                            <img src="assets/InterstellarPicture.jpg" alt="My favorite movie: Interstellar"/>
+                        </a>
+                    </td>
+                    <td>
+                        <audio controls class="audio">
+                            <source src="assets/rick_roll.mp3">
+                        </audio>
+                    </td>
+                    <td>
+                        <video controls src="assets/marvel_studios.mp4"></video>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Form header -->
+        <h4>Enter Your Details Below:</h4>
+
+        <!-- Form content -->
+        <table class="user-information">
+            <tr>
+                <td>
+                    <div>
+                        <!-- Full Name -->
+                        <label>Full Name</label><br>
+                        <input type="text" placeholder="John Doe"><br><br>
+
+                        <!-- Email -->
+                        <label>Email Address</label><br>
+                        <input type="email" placeholder="jdoe@fakemail.com"><br><br>
+
+                        <!-- Password -->
+                        <label>Password</label><br>
+                        <input type="password" placeholder="password"><br><br><br>
+
+                        <!-- Meeting Days -->
+                        <label>Available Meeting Days:</label><br>
+                        <div class="radio-buttons">
+                            <input type="radio"> Monday
+                            <input type="radio"> Tuesday
+                            <input type="radio"> Wednesday
+                            <input type="radio"> Thursday<br>
+                            <input type="radio"> Friday
+                            <input type="radio"> Saturday
+                            <input type="radio"> Sunday
+                        </div>
+                        <br>
+
+                        <!-- Time Selection -->
+                        <label>Available Time:</label>
+                        <select>
+                            <option>Morning (8:00 AM - 12:00 PM)</option>
+                            <option>Afternoon (12:00 PM - 4:00 PM)</option>
+                            <option>Evening (4:00 PM - 8:00 PM)</option>
+                            <option>Night (8:00 PM - 12:00 AM)</option>
+                        </select>
+                        <br><br>
+
+                        <!-- Working on website -->
+                        <label>Currently working on new website?</label>
+                        <div class="radio-buttons">
+                            <input type="radio" checked> Yes
+                            <input type="radio"> No
+                        </div>
+                        <br>
+
+                        <!-- User comments -->
+                        <label>Your Comments</label><br>
+                        <input type="text" placeholder="Enter your comments here"><br><br>
+
+                        <!-- Submit/Reset buttons -->
+                        <input class="submit" type="submit" value="Submit">
+                        <input class="reset" type="reset" value="Reset">
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Footer section -->
+        <br><br>
+        <footer class="desktop-footer">Desktop Version</footer>
+        <footer class="mobile-footer">Mobile Version</footer>
+    </body>
+</html>
