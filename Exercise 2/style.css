@@ -1,0 +1,34 @@
+
+body {background-color: black;}
+    .header {
+        background-color: rgb(23, 23, 23);
+        margin: 5px;
+        padding-bottom: 10px;
+    }
+    .column {
+        padding-top: 2px;
+        padding-left: 3px;
+        flex: 33.33%;
+    }
+    .row {
+        display: flex;
+    }
+    .gallery {
+        border: 2px solid rgb(231, 160, 54);
+    }
+     .invite {
+        background-color: rgb(23, 23, 23);
+        margin-top: 10px;
+        margin-left: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        line-height: 40px;
+    }
+    .line {
+        background-color: rgb(231, 160, 54);
+        margin-top: 10px;
+        margin-left: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        line-height: 40px;
+    }
