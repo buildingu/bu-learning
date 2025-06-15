@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #fff8dc;
+      font-family: Verdana, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: midnightblue;
+    }
+
+    hr {
+      border: 2px solid darkgoldenrod;
+      border-radius: 4px;
+    }
+
+    table {
+      margin: 20px auto;
+      border: 3px dashed teal;
+      border-collapse: collapse;
+    }
+
+    table th, table td {
+      border: 1px dashed teal;
+      padding: 12px;
+      background-color: #f5f5f5;
+    }
+
+    h2 {
+      text-align: center;
+      color: darkmagenta;
+      font-family: 'Georgia', serif;
+      border: double 4px gray;
+      padding: 6px;
+      width: fit-content;
+      margin: 20px auto;
+    }
+
+    form {
+      text-align: center;
+      background-color: #f0fff0;
+      padding: 20px;
+      margin: 0 auto;
+      width: 60%;
+      border-radius: 8px;
+      border: 1px solid lightgray;
+    }
+
+    form input[type="text"],
+    form input[type="email"] {
+      padding: 6px;
+      margin: 6px;
+      width: 200px;
+    }
+
+    form input[type="radio"] {
+      margin: 0 5px;
+    }
+
+    form input[type="submit"] {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: darkslateblue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    h3 {
+      text-align: center;
+      text-decoration: underline;
+      font-style: italic;
+      color: darkslategray;
+    }
+
+    h4 {
+      text-align: center;
+      font-weight: normal;
+    }
+
+    img {
+      border-radius: 10px;
+      border: 2px dotted rgba(255, 166, 0, 0.916);
+    }
+
+    audio, video {
+      display: block;
+      margin: 10px auto;
+    }
+
+    a {
+      color: rgba(139, 0, 0, 0.669);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1> Class of 2025 Graduation Bash </h1>
+  <hr />
+  <br />
+
+  <table>
+    <tr>
+      <th>Location</th>
+      <th>Date & Time</th>
+      <th>Guests</th>
+      <th>Highlights</th>
+    </tr>
+    <tr>
+      <td>Outdoor Pavilion, West Campus</td>
+      <td>
+        <img src="https://via.placeholder.com/160x100.png?text=July+10+%405PM" width="160" height="100" alt="July 10th" />
+      </td>
+      <td>Graduates + 2 Guests</td>
+      <td>
+        <a href="https://en.wikipedia.org/wiki/Graduation_ceremony" target="_blank">
+          <p>Live Music & BBQ</p>
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+  <hr>
+
+  <h2>RSVP for the Party</h2>
+  <form>
+    <label>Full Name:</label><br>
+    <input type="text" placeholder="Alex Johnson" required><br><br>
+    <label>Email Address:</label><br>
+    <input type="email" placeholder="alex.j@email.com" required><br><br>
+
+    <label>Role:</label><br>
+    <input type="radio" name="role" value= "Graduate"> Graduate
+    <input type="radio" name="role"> value="Parent">Parent
+    <input type="radio" name="role"> value="Staff">Staff
+
+    <input type="submit" value="Confirm Attendance">
+  </form>
+
+  <br>
+  <hr>
+
+  <h3>Listen to the Party Playlist 🎶</h3>
+  <audio controls>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h3>Throwback Video from 2024 🎥</h3>
+  <video width="320" height="240" controls>
+    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <hr>
+
+  <h3>Need Help?</h3>
+  <h4> Call: (555) 872-3019</h4>
+  <h4> Email: <a href="mailto:gradparty@myschool.edu">gradparty@myschool.edu</a></h4>
+
+</body>
+</html> 
