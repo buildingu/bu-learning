@@ -1,0 +1,85 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-image: url("../assets/background-desktop.jpg");
+  color: #FFF2E0;
+  text-align: center;
+}
+
+.table_header {
+  background-color: brown;
+}
+.table_data {
+  background-color: burlywood;
+}
+
+.contact {
+  color: black;
+  border: 10px solid gray;
+  background-color: whitesmoke;
+  width: 25%;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+.contact label {
+  font-style: italic;
+}
+.box_fitter {
+  width: 80%;
+}
+.contact input[type="submit"] {
+  background-color: green;
+  color: white;
+}
+.contact input[type="reset"] {
+  background-color: red;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  background-color: blueviolet;
+}
+.funfact_table {
+  width: 90%;
+  margin: auto;
+  overflow-x: auto;
+  display: block;
+  font-size: 13px;
+  border-collapse: collapse;
+}
+
+.funfact_table th,
+.funfact_table td {
+  padding: 6px;
+  text-align: center;
+  word-wrap: break-word;
+}
+.footer::after {
+  content: "Desktop Version ®";
+}
+
+@media only screen and (max-width: 600px) {
+  html, body{
+      background-image: url("../assets/background-mobile.jpg");
+  }
+  .contact {
+    width: 80%;
+  }
+  .box_fitter {
+    width: 80%;
+  }
+  .contact input[type="submit"] {
+  width: 80%;
+  }
+  .contact input[type="reset"] {
+    width: 80%;
+  }
+  .footer::after{
+    content: "Mobile Version ®";
+  }
+}  
