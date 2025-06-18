@@ -53,19 +53,36 @@ export default function FinalChallenge() {
   const validate = () => {
     const errs = {};
     const { firstName, lastName, age, phone } = formData;
+    //seperate errors
+    if (!firstName)
+      errs.firstName = "First name required";
 
-    if (!firstName || firstName.length > 120){
-      errs.firstName = "First name required, has to be under 120 char";
-    }
-    if (!lastName || lastName.length > 120)
-      errs.lastName = "Last name required, has to be under 120 char";
+    if(firstName.length > 120)
+      errs.firstName = "First Name as to be under 120 char";
+    
+    if (!lastName)
+      errs.lastName = "Last name required";
 
-    if (isNaN(age) || Number(age) <= 18 || age.length > 3)
-      errs.age = "Enter valid age over 18, max 3 digits";
+     if(lastName.length > 120)
+      errs.lastName = "Last Name as to be under 120 char";
 
-    if (!phone || isNaN(phone) || phone.length !== 10)
-      errs.phone = "Phone number must be 10 digits long";
+    if (isNaN(age))
+      errs.age = "Age is required as a number";
 
+    else if(Number(age) <= 18)
+      errs.age = "Enter an age over 18";
+
+    else if(age.length > 3)
+      errs.age = "Max digits of Age is 3";
+
+    if (!phone)
+      errs.phone = "Phone number is required";
+
+    else if (isNaN(phone))
+      errs.phone = "Phone number is required";
+
+    else if (phone.length !== 10)
+      errs.phone = "Length of phone number should be 10";
     return errs;
   }
 
@@ -117,6 +134,7 @@ export default function FinalChallenge() {
 
           <button type="submit">Submit</button>
         </form>
+        {success && <p style={{ color: "green" }}>{success}</p>}
       </div>
     </main>
   );

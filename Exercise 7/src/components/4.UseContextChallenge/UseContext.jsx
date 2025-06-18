@@ -14,13 +14,6 @@ import AuthContext from "./AuthContext";
 export default function UseContextChallenge() {
   const { user, login, logout } = useContext(AuthContext);
   let logged = "Logged in";
-
-  const checkLog = () => {
-    if(user === null){
-      logged = "Logged out";
-    }
-    else logged = "Logged in"
-  }
  
 
   return (
