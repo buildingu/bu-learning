@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormValidator</title>
+    <style>
+        label, input, button{
+            font-size:1.5rem;
+            padding: 10px;
+            margin: 1.2rem;
+        }
+        .hide{
+            font-size:1.2rem;
+            padding: 2rem;
+            background-color:aquamarine;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height:100vh;">
+    <form class="content">
+        <label for="1name">First Name:</label>
+        <input type="text" name="1name">
+        <br>
+        <label for="2name">Last Name:</label>
+        <input type="text" name="2name">
+        <br>
+        <label for="age">Age:</label>
+        <input type="number">
+        <br>
+        <label for="number">Phone Number:</label>
+        <input type="tel">
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+     <p class="hide">Welcome to the site!</p>
+    </form>
+   
+    <script src="script.js"></script>
+</body>
+</html>
