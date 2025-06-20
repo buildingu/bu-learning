@@ -1,0 +1,137 @@
+h3,
+h2,
+h1 {
+  text-align: center;
+}
+hr {
+  background-color: white;
+  height: 1px;
+  width: 100%;
+}
+body {
+  color: white;
+  text-align: center;
+  font-family: "Comic Sans MS", sans-serif;
+}
+textarea {
+  text-align: center;
+}
+form {
+  color: black;
+  background-color: whitesmoke;
+  border: 9px solid grey;
+}
+img {
+  max-width: 75%;
+  max-height: 75%;
+}
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+input[type="reset"] {
+  background-color: red;
+}
+input[type="submit"] {
+  background-color: green;
+}
+#tr1 > th {
+  background-color: darkslategray;
+}
+#tr2 > td {
+  background-color: darkslategray;
+}
+@media screen and (min-width: 769px) {
+  body {
+    background-image: url(assets3/background-desktop.jpg);
+  }
+  form {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    img,
+    video {
+      width: fit-content;
+      height: fit-content;
+    }
+    table,
+    td,
+    th {
+      border: 5px solid gray;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    body {
+      background-image: url("assets3/background-mobile.jpg");
+    }
+    table {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: fit-content;
+    }
+
+    form {
+      min-height: 60%;
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    th {
+      display: none;
+    }
+    td {
+      background-color: #793e3e;
+      display: table-row;
+    }
+
+    td:nth-of-type(1)::before {
+      content: "First name";
+      display: block;
+
+      width: 100%;
+      height: 20px;
+      background-color: #aa3c10;
+    }
+
+    td:nth-of-type(2)::before {
+      content: "Last name";
+      display: block;
+      width: 100%;
+      height: 20px;
+      background-color: #aa3c10;
+    }
+
+    td:nth-of-type(3)::before {
+      content: "Favorite Movie";
+      display: block;
+      width: 100%;
+      height: 20px;
+      background-color: #aa3c10;
+    }
+
+    td:nth-of-type(4)::before {
+      content: "Favorite Song";
+      display: block;
+      width: 100%;
+      height: 20px;
+      background-color: #aa3c10;
+    }
+
+    td:nth-of-type(5)::before {
+      content: "Favorite Video";
+      display: block;
+      width: 100%;
+      height: 20px;
+      background-color: #aa3c10;
+    }
+  }
+}
