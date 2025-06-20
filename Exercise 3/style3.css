@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  padding: 20px;
+}
+
+.fun-facts h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1f3b4d;
+}
+th, td {
+  border: 2px solid #999;
+  padding: 10px;
+  text-align: center;
+}
+img {
+  width: 100px;
+}
+
+.form-section {
+  background: #ccc;
+  color: #000;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+textarea {
+  height: 60px;
+}
+label {
+  font-weight: bold;
+}
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.submit {
+  background: green;
+  color: white;
+  padding: 10px;
+}
+.reset {
+  background: red;
+  color: white;
+  padding: 10px;
+}
+
+input:not([type="radio"]):not([type="checkbox"]) {
+  border: 1px solid #aaa;
+}
+form label:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background: url('assets/background-mobile.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  table, th, td {
+    font-size: 12px;
+  }
+
+  .form-section {
+    width: 100%;
+    background: #f0f0f0;
+    color: #000;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: url('assets/background-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .form-section {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #d3d3d3;
+  }
+}

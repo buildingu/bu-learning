@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 3</title>
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+    <h3>Date Submitted: 6/19/2025</h3>
+
+  <section class="fun-facts">
+    <h2>Fun facts about me:</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Favorite Movie</th>
+          <th>Favorite Song</th>
+          <th>Favorite Video</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Arjun</td>
+          <td>Vikram</td>
+          <td><img src="assets/bullet_train.jpeg" alt="Favorite Movie" /></td>
+          <td>
+            <p>Click play button to play music:</p>
+            <audio controls>
+              <source src="assets/rick_roll.mp3" type="audio/mpeg" />
+            </audio>
+          </td>
+          <td>
+            <video width="220" height="140" controls>
+              <source src="assets/marvel_studios.mp4" type="video/mp4" />
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="form-section">
+    <h2>Enter your details below:</h2>
+    <form>
+      <label>Full Name
+        <input type="text" placeholder="Example Text" />
+      </label>
+
+      <label>Email Address
+        <input type="email" placeholder="myname@gmail.com" />
+      </label>
+
+      <label>Password
+        <input type="password" />
+      </label>
+
+      <div class="days">
+        <p>Available Meeting Days:</p>
+        <label><input type="checkbox" /> Monday</label>
+        <label><input type="checkbox" /> Tuesday</label>
+        <label><input type="checkbox" /> Wednesday</label>
+        <label><input type="checkbox" /> Thursday</label>
+        <label><input type="checkbox" /> Friday</label>
+        <label><input type="checkbox" /> Saturday</label>
+        <label><input type="checkbox" /> Sunday</label>
+      </div>
+
+      <label>Available Time:
+        <select>
+          <option>Morning (8am to 12pm)</option>
+          <option>Afternoon (12pm to 5pm)</option>
+          <option>Evening (5pm to 9pm)</option>
+        </select>
+      </label>
+
+      <p>Currently working on a new website?</p>
+      <label><input type="radio" name="website" /> Yes</label>
+      <label><input type="radio" name="website" /> No</label>
+
+      <label>If yes, please enter which page(s) you are working on
+        <textarea placeholder="Enter your comments here"></textarea>
+      </label>
+
+      <div class="form-buttons">
+        <button type="submit" class="submit">Submit</button>
+        <button type="reset" class="reset">Reset</button>
+      </div>
+    </form>
+  </section>
+
+</body>
+</html>
