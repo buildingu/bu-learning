@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercise 3</title>
+        <header>Exercise 3 by Navyashree Balasubramaniyan Nagarajan</header>
+        <br>
+        <header>Date submitted: 06/20/2025</header><hr>
+    </head>
+    <body>
+        <p><h4>Fun Facts about me</h4></p>
+    
+    <div class="table">
+    <table>
+        <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Movie</th>
+            <th>Favorite Song</th>
+            <th>Favorite Video</th>
+        </tr>
+        </thead>
+        
+        <tbody>
+        <tr>
+            <td data-title="First Name">Navyashree</td>
+            <td data-title="Last Name">Balasubramaniyan Nagarajan</td>
+            <td data-title="Favorite Movie"><a href="https://en.wikipedia.org/wiki/27_Dresses"><img width="140" height="200" src="assets/27 Dresses.jpeg"></a></td>
+            <td data-title="Favorite Song"><p>Click button to play audio</p><audio src="assets/Fav Song.mp4" controls></td>
+            <td data-title="Favorite Video"><iframe src="https://www.youtube.com/embed/jYSlpC6Ud2A?si=vPzrdJnKQdSJ8t_9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+ 
+    <br>
+    <hr>
+    <p><h4>Enter contact information here</h4></p>
+    <div class="form">
+    <form style="text-align: center; justify-content: center;">
+
+        <p>
+        <label for="fname"><i><b>Full Name:</b></i></label><br>
+        <input type="text" id="fname" name="fname" placeholder="Navyashree Balasubramaniyan Nagarajan" maxlength="30"><br>
+        </p>
+
+        <p>
+        <label for="email"><i><b>Email:</b></i></label><br>
+        <input type="text" id="email" name="email" placeholder="nbalas@gmail.com"><br>
+        </p>
+
+        <p>
+        <label for="password"><i><b>Password:</b></i></label><br>
+        <input type="password" id="password" name="password" placeholder="••••••••••••"><br>
+        </p>
+
+        <p>
+        <label><i><b>Available Days:</b></i></label><br>
+        <input type="checkbox" id="day1" name="day1">
+        <label for="day1">Monday</label>
+        <input type="checkbox" id="day2" name="day2">
+        <label for="day2">Tuesday</label>
+        <input type="checkbox" id="day3" name="day3">
+        <label for="day3">Wednesday</label>
+        <input type="checkbox" id="day4" name="day4">
+        <label for="day4">Thursday</label>
+        <input type="checkbox" id="day5" name="day5">
+        <label for="day5">Friday</label><br>
+        <input type="checkbox" id="day6" name="day6">
+        <label for="day6">Saturday</label>
+        <input type="checkbox" id="day7" name="day7">
+        <label for="day7">Sunday</label>
+        </p>
+
+        <p>
+         <label for="time"><i><b>Available Time:</b></i></label><br>
+        <input type="time" id="time" name="time">
+        </p>
+
+         <p>
+         <label><i><b>Working on a New Website?</b></i></label><br>
+        <input type="radio" id="yes" name="yes" checked>
+         <label for="yes">Yes</label>
+        <input type="radio" id="no" name="no">
+         <label for="no">No</label>
+        </p>
+
+        <p>
+        <label for="comments"><i><b>Comments:</b></i></label><br>
+        <textarea id="comments" name="comments" placeholder="Enter your comments here" maxlength="200"></textarea>
+        </p>
+        <input type="submit" name="Submit">
+        <input type="reset" name="Reset">
+    </form>
+    </div>
+    </body>
+</html>

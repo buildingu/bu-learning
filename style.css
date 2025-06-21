@@ -1,0 +1,199 @@
+/* Desktop Styles */
+@media screen and (min-width: 992px) {
+   header {
+    text-align: center;
+    font-size: 25pt;
+    font-family: Comic Sans MS;
+    color: white;
+   } 
+   body {
+    background-image: url("assets/background-desktop.jpg");
+   }
+   h4 {
+    text-align: center;
+    color: white;
+    font-family: Comic Sans MS;
+   }
+   table {
+    border: 6px solid;
+    border-color:rgb(78, 78, 78);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(65, 83, 105);
+    font-family: Comic Sans MS;
+   }
+   thead {
+    padding: 8px;
+    background-color:rgb(37, 49, 62) ;
+    border: 6px solid; 
+    border-color: rgb(78, 78, 78);
+    color: white;
+   }
+   tbody {
+    padding: 8px;
+    background-color:rgb(45, 58, 73) ;
+    border: 6px solid; 
+    border-color: rgb(78, 78, 78);
+    color: white;
+   }
+    td,th {
+    border: 4px solid; 
+    border-color: rgb(78, 78, 78);
+    padding: 8px;
+   }
+   .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(185, 185, 185);
+    border: 6px solid rgb(120, 120, 120);
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Comic Sans MS;
+    width: fit-content;
+    height: fit-content;
+   }
+    input[type=text] {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 4px;
+    }
+    textarea {
+        width: 60%;
+        box-sizing: border-box;
+        padding: 4px;
+    }
+    input[type=submit] {
+        background-color: rgb(66, 202, 84);
+        border: 2px solid rgb(49, 173, 49);
+        color: white;
+        width: 20%;
+        padding: 5px;
+    }
+    input[type=reset] {
+        background-color: rgb(202, 66, 66);
+        border: 2px solid rgb(173, 49, 49);
+        color: white;
+        width: 20%;
+        padding: 5px;
+    }
+
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 400px) {
+    header {
+    text-align: center;
+    font-size: 18pt;
+    font-family: Comic Sans MS;
+    color: white;
+   } 
+   body {
+    background-image: url("assets/background-mobile.jpg");
+   }
+   h4 {
+    text-align: center;
+    color: white;
+    font-family: Comic Sans MS;
+    font-size: 14pt;
+   }
+   table {
+    border: 6px solid;
+    border-color:rgb(127, 127, 127);
+    text-align: center;
+    background-color: rgb(134, 47, 47);
+    font-family: Comic Sans MS;
+    font-size: 12pt;
+    border-collapse: collapse;
+   }
+  thead {
+    display: none;
+  }
+  tbody,
+  tr,
+  td {
+    display: block;
+    max-width: 320px;
+  }
+  tr {
+    background-color: #b64444;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  td {
+    border: 6px solid rgb(127, 127, 127);;
+    padding: 10px;
+    position: relative;
+    font-size: 15pt;
+    color: white;
+    text-align: center;
+    max-width: 320px;
+  }
+  td::before {
+    content: attr(data-title);
+    display: block;
+    background-color: #8b2d2d;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14pt;
+  }
+  audio {
+    display: block;
+    max-width: 90%;
+    margin: 10px auto;
+    border-radius: 8px;
+  }
+  iframe {
+    display: block;
+    max-width: 100%;
+    margin: 10px auto;
+  }
+  .table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  }
+  .form {
+    background-color: rgb(185, 185, 185);
+    border: 6px solid rgb(120, 120, 120);
+    padding: 5px;
+    font-family: Comic Sans MS;
+    font-size: 10pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    max-width: 300px;
+    margin: auto;
+   }
+   input[type=text] {
+        width: 70%;
+        box-sizing: border-box;
+        padding: 4px;
+    }
+   textarea {
+        width: 60%;
+        box-sizing: border-box;
+        padding: 4px;
+    }
+   input[type=submit] {
+        background-color: rgb(66, 202, 84);
+        border: 2px solid rgb(49, 173, 49);
+        color: white;
+        width: 20%;
+        padding: 5px;
+    }
+   input[type=reset] {
+        background-color: rgb(202, 66, 66);
+        border: 2px solid rgb(173, 49, 49);
+        color: white;
+        width: 20%;
+        padding: 5px;
+    }
+}
+    
