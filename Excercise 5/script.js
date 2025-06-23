@@ -15,7 +15,7 @@ submit.addEventListener('click', function (e) {
 });
 
 let reset = document.querySelector('button[type="reset"]');
-reset.addEventListener('click', function() {
+reset.addEventListener('click', function () {
     enterSite(allValid);
 });
 
@@ -35,7 +35,7 @@ function enterSite(permission) {
 function FormValidator(fname, lname, age, phone) {
     const data = [fname, lname, age, phone];
     const labels = ["First Name", "Last Name", "Age", "Phone Number"];
-    allValid=true;
+    allValid = true;
 
     data.forEach(function (detail, desc) {
         function isDataString(detail) {
@@ -45,31 +45,32 @@ function FormValidator(fname, lname, age, phone) {
             const phonePattern = /^\d{3}-\d{3}-\d{4}$/;
             return phonePattern.test(detail);
         };
-        if (!detail || detail.trim() === "") {
+
+        if (desc !==2 && (!detail || detail.trim() === "")) {
             alert(labels[desc] + " is not there");
-            allValid=false;
+            allValid = false;
         }
 
         else if ((desc !== 2 && desc !== 3) && !isDataString(detail)) {
             alert(labels[desc] + " should be of type string");
-            allValid=false;
+            allValid = false;
 
         }
         else if (desc === 3 && !isPhoneFormat(detail)) {
             alert(labels[desc] + " should be of type string, 10 digits, and seperated by '-' according to US telephone number format");
-            allValid=false;
+            allValid = false;
         }
-        else if ((desc === 2) && isNaN(detail)) {
-            alert(labels[desc] + " should be numbers");
-            allValid=false;
+        else if ((desc === 2) && !isNaN(detail)) {
+            alert(labels[desc] + " should be a number");
+            allValid = false;
 
         }
         else if (desc === 2 && data[desc] < 18) {
             alert("Sorry, you are not old enough for ths app.");
-            allValid=false;
+            allValid = false;
         };
 
     });
-   enterSite(allValid);
+    enterSite(allValid);
 
 };
