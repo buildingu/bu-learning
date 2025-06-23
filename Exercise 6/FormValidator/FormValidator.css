@@ -1,0 +1,26 @@
+.container{
+    background-color: rgb(1, 59, 40);
+    text-align: center;
+}
+.content{
+    font-size: 1.2em;
+    color: rgb(255, 208, 0);
+    margin: 4rem;
+}
+form input{
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
+}
+.hide {
+    margin:2rem;
+    border: solid;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    padding: 2rem;
+    background-color: grey;
+    visibility: hidden;
+}
+.homeButton{
+    height:2em;
+}
