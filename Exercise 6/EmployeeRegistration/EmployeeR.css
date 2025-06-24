@@ -12,7 +12,7 @@ height:2em;
     margin: 10px;
 }
 .scrollable{
-    height:87vh;
+    height:100vh;
     background-color: #9e4646;
     overflow-y: auto;
 }
