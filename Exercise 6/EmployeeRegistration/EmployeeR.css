@@ -6,3 +6,13 @@ height:2em;
     color: rgb(255, 174, 0);
     font-size: 1.1rem;
 }
+#slot{
+    background-color: #fff;
+    padding: 1.3rem;
+    margin: 10px;
+}
+.scrollable{
+    height:87vh;
+    background-color: #9e4646;
+    overflow-y: auto;
+}

@@ -60,7 +60,7 @@ function FormValidator(fname, lname, age, phone) {
             alert(labels[desc] + " should be of type string, 10 digits, and seperated by '-' according to US telephone number format");
             allValid = false;
         }
-        else if ((desc === 2) && !isNaN(detail)) {
+        else if ((desc === 2) && isNaN(detail)) {
             alert(labels[desc] + " should be a number");
             allValid = false;
 
