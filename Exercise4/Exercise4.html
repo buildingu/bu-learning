@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercise 4</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+        crossorigin="anonymous">
+
+        <!-- CSS Section -->
+        <style>
+            /* Color scheme for the Navbar*/
+            /* Use the !important rule to override any conflicting styles */
+            .navbar {
+                background-color: lightslategray !important;
+            }
+            .navbar-brand,.nav-link {
+                color: #ffffff !important;
+            }
+            .nav-link:hover {
+                color: #ffcc00 !important;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Creating the Navbar -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Add the building-U logo -->
+            <a class="navbar-brand">
+                <img src="assets/building-u-logo.png" alt="navbar-logo" width="80" height="80" class="d-inline-block align-text-top">
+            </a>
+
+            <!-- Hamburger Icon -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDiv" aria-controls="navbarDiv"
+                aria-expanded="false" aria-label="Toggle Navbar">   
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <!-- Buttons scroll down to their respective sections of the page -->
+            <div class="collapse navbar-collapse" id="navbarDiv">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="hero" class="py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Text -->
+                    <div class="col-md-6">
+                        <h1 class="display-4 fw-bold">Neel Vinayak</h1>
+                        <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-5 bg-light">
+            <div class="container">
+
+                <!-- Brief information --> 
+                <div class="row mb-4">
+                <div class="col-12">
+                    <h2 class="fw-bold">About Me</h2>
+                    <p>
+                        I'm a dedicated and creative web developer. I enjoy solving problems, learning new skills, and turning ideas into reality through code. 
+                        My foundation of web development stems from being an intern at building-U. I have had the amazing opportunity to grow with several peers.
+                        Let's connect, and build tomorrow's technologies together!
+                    </p>
+                </div>
+                </div>
+
+                <!-- Add 3 sections to show skills, achievements, and then a picture -->
+                <div class="row text-center">
+                    <div class="col grid-item">
+                        <h5>Skills</h5>
+                        <ul class="list-unstyled">
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Python, Java, C++</li>
+                        </ul>
+                    </div>
+                    <div class="col grid-item">
+                        <h5>Achievements</h5>
+                        <ul class="list-unstyled">
+                            <li>2025 School Hackathon Winner</li>
+                            <li>10+ web development projects created</li>
+                            <li>School Champion of Waterloo Math Competitions</li>
+                        </ul>
+                    </div>
+                    <div class="col grid-item">
+                        <h5>Favorite Sports Team</h5>
+                        <div class="row mb-4">
+                            <div class="col text-center">
+                                <img src="assets/toronto-raptors-logo.png" alt="profile-photo" 
+                                    class="img-fluid rounded-circle" style="max-width: 200px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="mb-4 f2-bold">My Projects</h2>
+                <div class="row g-4">
+                    <!-- Project 1 -->
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Project 1</h5>
+                                <p class="card-text">Project 1 demonstrates my HTML skills. It is a website that includes a table and form components. Click the link to see the project files.</p>
+                                <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="collapse" data-bs-target="#details1">
+                                    View Project 1
+                                </button>
+                                <div class="collapse mt-3" id="details1">
+                                    <p>
+                                        Project link:
+                                        <a href="https://github.com/buildingu/bu-learning/blob/n_vina/Exercise1" 
+                                        target="_blank" rel="noopener noreferrer">Visit Project</a>
+                                    </p>
+                                </div>
+                                <!-- Image for HTML -->
+                                <div class="text-center">
+                                    <img src="assets/html-logo.webp" alt="html-logo" height="300" width="300">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Project 2</h5>
+                                <p class="card-text">Project 2 shows my CSS skills. It is another website, this time for a school event using various custom components. Click the link to see the project files.
+                                </p>
+                                <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="collapse" data-bs-target="#details2">
+                                    View Project 2
+                                </button>
+                                <div class="collapse mt-3" id="details2">
+                                    <p>
+                                        Project link:
+                                        <a href="https://github.com/buildingu/bu-learning/tree/n_vina/Exercise2" 
+                                        target="_blank" rel="noopener noreferrer">Visit Project</a>
+                                    </p>
+                                </div>
+                                <!-- Image for CSS -->
+                                <div class="text-center">
+                                    <img src="assets/css-logo.png" alt="css-logo" height="300" width="300">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Project 3</h5>
+                                <p class="card-text">Project 3 shows my Advanced CSS skills. It is a rework of Project 1, this time compatible for different screen sizes. Click the link to see the project files.</p>
+                                <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="collapse" data-bs-target="#details3">
+                                    View Project 3
+                                </button>
+                                <div class="collapse mt-3" id="details3">
+                                    <p>
+                                        Project link:
+                                        <a href="https://github.com/buildingu/bu-learning/blob/n_vina/Exercise3" 
+                                        target="_blank" rel="noopener noreferrer">Visit Project</a>
+                                    </p>
+                                </div>
+                                <!-- Took the same image as in the sample page -->
+                                <div class="text-center">
+                                    <img src="assets/javascript-logo.png" alt="javascript-logo" height="300" width="200">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="mb-4 fw bold">Contact Information</h2>
+
+                <form>
+                    <div class="row mb-3">
+
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+                            <div class="invalid-feedback">
+                                Please enter your name.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="jdoe@fakemail.com" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid Email address.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message here." required></textarea>
+                        <div class="invalid-feedback">
+                            Please enter a message.
+                        </div>
+                    </div>
+
+                    <!-- Add space; use the same background so it doesn't look different in the break -->
+                    <br class="py-5 bg-light">
+
+                    <!-- Add a submit button at the end -->
+                    <button type="submit" class="btn btn-primary">Submit Information</button>
+                </form>
+            </div>
+        </section>
+         
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
