@@ -1,64 +1,71 @@
-# Building-U (bu-learning) Learning Session Project
+# React_Lesson_Exercise
+Welcome to the React 18 exercise. Upon completion of this exercise, you'll have permission to join the 'New Website' team, where you can contribute to a [real-world React application](https://github.com/buildingu/bu-front) for building-U. 
 
-This project is for the **Building-U (bu-learning) Learning Session** aimed at interns. It provides an opportunity for interns to learn and develop their skills in a collaborative environment.
+## Prerequisites
+- Completed both JavaScript lessons.
+- Node.js and NPM installed.
+- Git installed
 
-## Project Overview
+## Objective
+Demonstrate your understanding of various React hooks through a series of challenges. Each challenge will focus on a specific hook, and the final challenge will incorporate multiple hooks. Use this exercise to explore how React hooks can be used together to build dynamic forms and UI elements.
 
-The Building-U Learning Session project is designed to offer interns a practical learning experience. Throughout the session, interns will work on various tasks and assignments related to a specific project or set of projects.
+## Instructions
+### Step 1: Download the Project
+1. Download the project as a zip file from the [repository](https://github.com/buildingu/React_Lesson_Exercise), **Do not clone** the repository since you're not contributing to it, and extract it to your bu-learning repository with the name `Exercise 7` or any other name you think makes sense. You should already have the bu-learning repository cloned, if not, clone it [here](https://github.com/buildingu/bu-learning.git).
+2. Open the exercise directory in your preferred code editor or IDE.
 
-## Workflow and Submission
+### Step 2: Set Up the React App
+At the same level where the package.json is located install the dependencies in a terminal:
+```
+$ npm install
+```
 
-To ensure a structured workflow, interns are required to follow these guidelines:
+### Step 3: The Challenges
+Each challenge focuses on demonstrating the concept of each hook except the final challenge where you can use however many hooks you want. You will find the challenges in the src/components directory.
+- Each file is named according to the hook it demonstrates.
+- Read the comments inside each challenge file for what you have to complete.
 
-1. **Branches**: Each intern will have their own branch dedicated to their work, allowing for easy management of individual contributions.
+Here are the challenges you'll be working on:
+1. **Hook Challenges:**
+   - `1.UseStateChallenge.jsx`: Demonstrate the use of `useState`.
+   - `2.UseRefChallenge.jsx`: Demonstrate the use of `useRef`.
+   - `3.UseEffectChallenge.jsx`: Demonstrate the use of `useEffect`.
+   - `4.useContextChallenge`: A directory to mimic the idea of the context being used somewhere else in the project; containing AuthContext.jsx and UseContext.jsx for demonstrating useContext.
+   - `5.UseReducerChallenge.jsx`: Demonstrate the use of `useReducer`
+   - `6.UseMemoChallenge.jsx` (Optional): Show how `useMemo` can optimize performance.
+2. **Final Challenge:**
+   - The `7.FinalChallenge.jsx` will be a form that incorporates multiple hooks to manage form data, validation, and real-time feedback.
 
-2. **Task Assignment**: Interns will be assigned specific tasks or projects to work on during the learning session. Task assignments will be communicated through the project management system or other means of coordination.
+### Step 5: Running the Challenges
+The project is set up so you can run each challenge separately using npm scripts. Use the following commands in the terminal to start each challenge (e.g., npm run dev:useState):
 
-3. **Development**: Interns should clone the repository and create a local copy of their respective branch. They can then start working on the assigned tasks, making changes, and implementing new features.
+```
+$ npm run dev:<hook name>
+```
 
-4. **Commit and Push**: Interns should commit their work frequently, providing meaningful commit messages that clearly explain the changes made. After committing, they should push their changes to their respective branches on the remote repository.
+**Available Scripts:**
+- `dev:useState`
+- `dev:useRef`
+- `dev:useEffect`
+- `dev:useContext`
+- `dev:useReducer`
+- `dev:useMemo` (Optional)
+- `dev:final` (Final Challenge)
 
-## Collaboration and Communication
+## Bonus!
+Instead of using npm scripts like I mentioned to navigate between challenges, you can implement client-side routing using [`react-router-dom`](https://reactrouter.com) to create a page for each challenge. This will require modifying `App.jsx` to include route paths for each challenge and use the component as a page.
 
-Interns are encouraged to actively participate in discussions, ask questions, and seek guidance from mentors or fellow interns throughout the learning session. Collaborative tools, such as project management systems, communication channels, or regular meetings, will be utilized to facilitate effective communication and teamwork.
+If you decide to implement routing, you can delete the individual challenge scripts from the `package.json` and only use the `"dev"` script to run the app.
 
-## Getting Started
-
-To get started with the Building-U Learning Session project, follow these steps:
-
-1. Clone the repository to your local machine: `git clone <repository_url>`
-
-2. Create a branch with your name or assigned identifier: `git checkout -b <branch_name>` 
-
-3. Begin working on the assigned tasks or projects.
-
-## Branch Structure Example
-
-  - j_doe / (Your Git Branch Root)
-    - Exercise 1 
-      - `index.html`: HTML file for Exercise 1.
-      - `css/`
-        - `style.css`: CSS file for Exercise 1.
-      - `js/`
-        - `script.js`: JavaScript file for Exercise 1.
-    - Exercise 2
-      - `index.html`: HTML file for Exercise 2.
-      - `css/`
-        - `style2.css`: CSS file for Exercise 2.
-      - `js/`
-        - `script2.js`: JavaScript file for Exercise 2.
-
-Please note that while the folder names and structure within each exercise or challenge may vary, it is recommended to maintain a similar root structure for consistency across submissions. This will help ensure easy navigation and organization within the repository. 
-
-## Support
-
-If you encounter any issues, have questions, or need clarification regarding the project or your assigned tasks, reach out to your mentor or the designated contact person for assistance.
-
-We wish you a productive and enriching learning session!
-
-Best regards,
-Building-U
-
-
-
-
+## Your Submission
+1. Open a terminal in your code editor (e.g., VSCode) or use Git Bash/any other terminal of your choice if not open already.
+2. Ensure you are on your branch, it should be named as the first letter of your first name, followed by an underscore, and your last name (e.g., j_doe). If you somehow didn't create your branch yet use `git checkout -b your_branch_name` to create it.
+3. Make the necessary changes to the files required in the exercise and stage your changes using `git add <filename>` to add specific files, or use `git add .` to stage all modified files.
+4. Commit your files with a message (see commit message convention: [Conventional Commit Message](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13)) using:
+```
+$ git commit -m "feat: Insert message here"
+```
+5. Push the changes on your branch to the remote repository using:
+```
+$ git push origin your-branch-name
+```
