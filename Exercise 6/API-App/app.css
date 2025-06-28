@@ -1,0 +1,25 @@
+.homeButton{
+height:2em;
+}
+.container{
+    background-color: rgb(1, 59, 40);
+    color: rgb(255, 174, 0);
+}
+.Color{
+    background-color: #fff;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    border: 5px solid rgb(255, 230, 0);
+}
+
+.area{
+    background-color: #012013;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

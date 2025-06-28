@@ -1,18 +1,27 @@
 .homeButton{
 height:2em;
 }
+
 .container{
     background-color: rgb(1, 59, 40);
     color: rgb(255, 174, 0);
-    font-size: 1.1rem;
 }
-#slot{
+
+.scrollable{
+    height:87vh;
+    overflow-y: auto; 
+}
+.slot{
     background-color: #fff;
     padding: 1.3rem;
     margin: 10px;
+    border-radius: 10px;
+
+    word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
-.scrollable{
-    height:100vh;
-    background-color: #9e4646;
-    overflow-y: auto;
+
+.CRUD{
+    font-size: large;
 }
