@@ -41,6 +41,7 @@ export default function FinalChallenge() {
 
   })
   const[success, setSuccess] = useState(false);
+
   function Validate(e){
 
     e.preventDefault();
@@ -56,7 +57,7 @@ export default function FinalChallenge() {
       valid = false;
     }
     else if(form.first_name.length > 120){
-      newErrors.first_name = "First name is invalid"
+      newErrors.first_name = "First name is invalid" // You could give better error message.
       valid = false;
     }
     if(!form.last_name){
@@ -99,7 +100,8 @@ export default function FinalChallenge() {
       setTimeout(() => {
         setSuccess(false);
       }, 3000);
-      alert("You have successfully subscribed to our newsletter!");
+
+      // alert("You have successfully subscribed to our newsletter!");
     }
     else{
       setSuccess(false)
