@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 4</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="custom.css">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;" data-bs-theme="light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/profile.png" height="50px" width="50px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+            </li>
+            </ul>
+            </div>
+            </div>
+        </nav>
+
+    </head>
+    <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" 
+            integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap Grid system for Hero and About Me Sections -->
+        <div class="aboutme">
+            <div class="container hero">
+                <div class="row">
+                    <p class="h1">Building-U Exercises Portfolio</p>
+                </div>
+                <div class="row">
+                    <p class="h2">Navyashree Balasubramaniyan Nagarajan</p>
+                </div>
+                <p><button type="button" class="btn btn-primary btn-lg portfolio">
+                        View My Work
+                </button></p>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col intro" style="border: 1px solid black;">
+                        <p class="h1">About Me</p>
+                        <br>
+                        <br>
+                        <p class="h4">Hey! I'm Navyashree BN. I am a recent high school graduate who plans to major in Computer Science. I have recently discovered an interest in web design/development.
+                            I am still a beginner in this field who is attempting to learn as many coding languages as possible such as HTML, CSS, Bootstrap, and more. 
+                        </p>
+                        <br>
+                        <p class="h4">Below are few of my projects I did in Building-U after learning the coding materials. Feel free to scroll down and check them out.</p>
+                    </div>
+                    <div class="col intro">
+                        <img src="assets/profile.png" class="profile" style="border: 5px solid var(--purp1);">
+                    </div>
+                </div>  
+            </div>
+        <br>
+        <br>
+        </div>
+        <br>
+<br>
+        <!-- Bootstrap Grid system for Projects -->
+        <div class="container">
+            <div class="row">
+                <div class="col grid-item">
+                    <img src="assets/Pro1.png" width="200" height="200">
+                    <br>
+                    <p class="h3">Project 1: HTML</p>
+                    <p class="h5">Project 1 illustrates my understanding of fundamental HTML concepts through the creation of an About Me page. 
+                        Click more to learn about the project.</p>
+                    <button type="button" class="btn btn-primary learnmore1" data-bs-toggle="modal" data-bs-target="#project1">
+                        Learn More
+                    </button>
+                    <!-- Learnmore Modal 1 -->
+                    <div class="modal fade" id="project1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Project 1: HTML</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                        <div class="modal-body">
+                            Project 1 illustrates my understanding of fundamental HTML concepts through the creation of an About Me page. The About Me page consists of basic elements such as tables, forms, headers, and text.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary learnmore1" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col grid-item">
+                    <img src="assets/Pro2.png" width="200" height="200">
+                    <br>
+                    <p class="h3">Project 2: CSS</p>
+                    <p class="h5">Project 2 illustrates my understanding of fundamental CSS concepts through a stylized webpage for a High School Graduation party RSVP. 
+                        Click more to learn about the project.</p>
+                    <button type="button" class="btn btn-primary learnmore2" data-bs-toggle="modal" data-bs-target="#project2">
+                        Learn More
+                    </button>
+                    <!-- Learnmore Modal 2 -->
+                    <div class="modal fade" id="project2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Project 2: CSS</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                        <div class="modal-body">
+                            Project 2 illustrates my understanding of fundamental CSS concepts through a stylized webpage for a High School Graduation party RSVP. The style.css sheet consists of classes and selectors for particular dividers.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary learnmore2" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="col grid-item">
+                    <img src="assets/Pro3.png" width="200" height="200">
+                    <br>
+                    <p class="h3">Project 3: Advanced CSS</p>
+                    <p class="h5">Project 3 illustrates my understanding of responsive design for both Mobile and Desktop versions of Project 1. 
+                        Click more to learn about the project.</p>
+                    <button type="button" class="btn btn-primary learnmore3" data-bs-toggle="modal" data-bs-target="#project3">
+                        Learn More
+                    </button>
+                    <!-- Learnmore Modal 3 -->
+                    <div class="modal fade" id="project3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Project 3: Advanced CSS</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                        <div class="modal-body">
+                            Project 3 illustrates my understanding of responsive design for both Mobile and Desktop versions of Project 1. It utilizes responsive design media query to change the background images, colors and formatting for both the Mobile and Desktop versions. 
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary learnmore3" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br>
+<br>
+        <!-- Bootstrap Forms -->
+        <div class="form">
+        <p class="h1" style="color: white; text-align: left;">Contact</p>
+        <hr>
+        <form>
+            <div>
+                <div class="mb-3 w-75">
+                    <label for="name" class="form-label" style="color: white;">Name:</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                    <div class="mb-3 w-75">
+                    <label for="exampleInputEmail1" class="form-label" style="color: white;">Email address:</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3 w-75">
+                    <label for="message" class="form-label" style="color: white;">Message:</label>
+                    <input type="text" class="form-control" id="message">
+                </div>
+                <button type="submit" class="btn btn-primary send">Send</button>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+:root {
+            --pink1: #ff8888;
+            --pink2: #ffc7c7;
+            --blue1: #88d4ff;
+            --blue2: #c7f5ff;
+            --purp1: #d288ff;
+            --purp2: #edc7ff;
+        }
+        .hero {
+            background-color: transparent;
+            padding: 20px;
+            text-align: center;
+        }
+        .portfolio {
+            --bs-btn-padding:20px;
+            --bs-btn-font-size: 12pt;
+            --bs-btn-border-color: black;
+            --bs-btn-hover-border-color: black;
+            --bs-btn-active-border-color: white;
+            --bs-btn-bg: transparent;
+            --bs-btn-hover-bg: transparent;
+            --bs-btn-hover-color: grey;
+            --bs-btn-color: black;
+            --bs-btn-active-bg: white;
+        }
+        .intro {
+            padding: 20px;
+            text-align: center;
+        }
+        .aboutme {
+            background-image: url(assets/Bg1.png);
+        }
+        .grid-item {
+            background-color: white;
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 12pt;
+            text-align: center;
+        }
+        .learnmore1 {
+            --bs-btn-padding:20px;
+            --bs-btn-font-size: 12pt;
+            --bs-btn-border-color: white;
+            --bs-btn-hover-border-color: white;
+            --bs-btn-active-border-color: white;
+            --bs-btn-bg: var(--pink2);
+            --bs-btn-hover-bg: var(--pink1);
+            --bs-btn-active-bg: white;
+        }
+        .learnmore2 {
+            --bs-btn-padding:20px;
+            --bs-btn-font-size: 12pt;
+            --bs-btn-border-color: white;
+            --bs-btn-hover-border-color: white;
+            --bs-btn-active-border-color: white;
+            --bs-btn-bg: var(--blue2);
+            --bs-btn-hover-bg: var(--blue1);
+            --bs-btn-active-bg: white;
+        }
+        .learnmore3 {
+            --bs-btn-padding:20px;
+            --bs-btn-font-size: 12pt;
+            --bs-btn-border-color: white;
+            --bs-btn-hover-border-color: white;
+            --bs-btn-active-border-color: white;
+            --bs-btn-bg: var(--purp2);
+            --bs-btn-hover-bg: var(--purp1);
+            --bs-btn-active-bg: white;
+        }
+        .form {
+            background-color: var(--pink2);
+            padding: 20px;
+        }
+        .form label {
+            color: black;
+            font-size: 15pt;
+        }
+        .send {
+        --bs-btn-padding:20px;
+        --bs-btn-font-size: 12pt;
+        --bs-btn-border-color: white;
+        --bs-btn-hover-border-color: white;
+        --bs-btn-active-border-color: white;
+        --bs-btn-bg: var(--blue1);
+        --bs-btn-hover-bg: var(--blue2);
+        --bs-btn-active-bg: white;
+        }
+        hr {
+            border: 2pt solid white;
+        }
+    
+@media screen and (min-width: 400px) {
+    .profile {
+    max-height: 450px;
+    max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .profile {
+    max-height: 300px;
+    max-width: 300px;
+    }
+}
