@@ -4,6 +4,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Exercise 4: Bootstrap</title>
+  <!-- Custom CSS -->
+  <style>
+    /* Custom Styling for Navigation Hover */
+    .fw-bolder-hover:hover { font-weight: bold !important; }
+    
+    /* Custom Styling for Mobile Overlay Menu */
+    @media (max-width: 991.98px) {
+      /* Prevent horizontal scroll for smaller screens */
+      html, body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+      }
+      /* Mobile Navigation Bar Styles */
+      .navbar-collapse {
+        position: fixed;
+        top: 70px;
+        right: 10px;
+        left: auto;
+        background: white;
+        z-index: 1000;
+        padding: 10px 0;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        max-height: 70vh;
+        overflow-y: auto;
+        margin: 0;
+        width: 250px;
+        border-radius: 8px;
+      }
+      .navbar-nav {
+        background: white;
+        padding: 5px 0;
+        margin: 0;
+        width: 100%;
+      }
+      /* Individual Mobile Navigation Link Styles */
+      .nav-item {
+        text-align: left;
+        padding: 8px 20px;
+      }
+      .nav-item:hover {
+        background-color: #f8f9fa;
+      }
+      /* adjust mobile card padding */
+      .card-body {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+      
+      /* Ensure modals don't cause overflow in mobile */
+      .modal-dialog {
+        margin: 0.5rem;
+        max-width: calc(100% - 1rem);
+      }
+    }
+  </style>
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -11,12 +67,269 @@
     crossorigin="anonymous"
   />
 </head>
-<body>
+<body class="bg-light">
+ <!-- ================================ ========================= NAVIGATION BAR ========================= ================================-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center w-100">
+        <a class="navbar-brand fw-bold fs-1 me-4 px-3 flex-grow-0" href="#">BuildingU</a>
+        <!-- Mobile Toggler Button -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas-backdrop fade show d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="display: none;"></div>
+        <div class="collapse navbar-collapse bg-grey" id="navbarNav" data-bs-auto-close="true">
+          <!-- Close Button -->
+          <button type="button" class="btn-close position-absolute top-0 end-0 m-2 d-lg-none" aria-label="Close" id="closeMenu" data-bs-target="#navbarNav" data-bs-toggle="collapse"></button>
+          <ul class="navbar-nav fs-4">
+            <!-- Navigation Links -->
+            <li class="nav-item bg-white">
+              <a class="nav-link fw-bolder-hover" href="#home">Home</a>
+            </li>
+            <li class="nav-item bg-white">
+              <a class="nav-link fw-bolder-hover" href="#about-me">About</a>
+            </li>
+            <li class="nav-item bg-white">
+              <a class="nav-link fw-bolder-hover" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item bg-white">
+              <a class="nav-link fw-bolder-hover" href="#contact">Contact</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ <!-- ================================ ========================= HOME BAR ========================= ================================-->
+  <div id="home" class="text-white" style="background: url('ASSETS/background.jpg') no-repeat center center; background-size: cover;">
+    <!-- Welcome Section -->
+    <div class="container text-center py-3">
+      <h1 class="display-4 fw-bold mb-3">
+        Welcome to My BuildingU Projects Page
+      </h1>
+      <p class="lead fs-4 mb-3">
+        Discover my work on Github
+      </p>
+      <a href="https://github.com/Sooly64" target="_blank">
+        <button class="btn btn-primary px-5 py-3 rounded-0 btn-lg">
+          View My Work
+        </button>
+      </a>
+    </div>
 
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-  crossorigin="anonymous"
-></script>
+    <!-- ====================== About Me Bar ====================== -->
+    <div id="about-me" class="container py-5">
+      <div class="row align-items-center g-5">
+        <!-- About Me Text -->
+        <div class="col-lg-8 mx-auto" style="max-width: 700px;">
+          <h2 class="display-5 fw-bold mb-4">About Me</h2>
+          <div class="fs-4 lh-lg">
+            <p class="mb-4">
+              I'm Faisal, a 15-year-old student and aspiring software developer who’s been diving deep into Python, web scraping, and front-end development. 
+              I’ve already built a few working projects like a quote scraper and a file sorter, and I’m actively interning at BuildingU where I'm working towards contributing to real web development tasks. 
+            </p>
+            <p class="mb-4">
+              With Coding, I have been able to explore HTML, CSS, C# (via Unity Development), Java (via AP CSA), and now, Bootstrap! 
+              With this I’m starting to build up my confidence in real, practical development. Outside of coding, I’m obsessed with building 
+              systems that make life more efficient; whether that’s through scripts, timeboxing, or simply setting goals and driving to accomplish them!
+            </p>
+          </div>
+        </div>
+        <!-- Profile Image -->
+        <div class="col-lg-4 text-center">
+          <img class="img-fluid rounded-circle shadow" src="ASSETS/pfp.jpg" alt="Profile Picture" style="max-width: 350px; width: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ================================ ========================= PORTFOLIO BAR ========================= ================================-->
+   <div id="portfolio" class="container py-5 bg-lightgrey">
+    <!-- Portfolio Subheading -->
+    <h2 class="display-5 fw-bold mb-4">My Portfolio</h2>
+    <!-- Portfolio Projects Row -->
+    <div class="row fs-4 g-5">
+      <!-- ====================== Portfolio Project 1 ====================== -->
+      <div class="col-lg-4">
+        <div class="card h-100">
+          <!-- Project 1 Image -->
+          <img class="card-img-top" src="ASSETS/project1.jpg" alt="Project 1" style="height: 300px; object-fit:scale-down;">
+          <div class="card-body px-3">
+            <!-- Project 1 Header -->
+            <h4 class="card-title fs-2">
+              Project 1: HTML
+            </h4>
+            <!-- Project 1 Description -->
+            <p class="card-text fw-semibold" style="min-height: 9.5rem;">
+              Project 1 showcases my HTML skills. 
+              It's a webpage involving HTML with table and static form components. 
+              Click learn more to see the project.
+            </p>
+            <!-- Project 1 Modal Trigger Button -->
+            <button class="btn btn-danger fs-4" data-bs-toggle="modal" data-bs-target="#project1Modal">
+              Learn More
+            </button>
+            <!-- Project 1 Modal -->
+            <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <!-- Modal Content -->
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project1ModalLabel">Project 1: HTML</h5>
+                  </div>
+                  <!-- Modal Body -->
+                  <div class="modal-body text-center">
+                    <img src="ASSETS/project1(1).png" alt="Project 1" class="img-fluid">
+                  </div>
+                  <!-- Modal Footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- ====================== Portfolio Project 2 ====================== -->
+      <div class="col-lg-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="ASSETS/project2.jpg" alt="Project 2" style="height: 300px;object-fit:scale-down">
+          <div class="card-body">
+            <!-- Project 2 Header -->
+            <h4 class="card-title fs-2">
+              Project 2: CSS
+            </h4>
+            <!-- Project 2 Description -->
+            <p class="card-text fw-semibold" style="min-height: 9.5rem;">
+              Project 2 showcases my CSS skills. 
+              It's a stylized webpage for an graduation done using HTML & CSS with custom components. 
+              Click learn more to see the project.
+            </p>
+            <!-- Project 2 Modal Trigger Button -->
+            <button class="btn btn-primary fs-4" data-bs-toggle="modal" data-bs-target="#project2Modal">
+              Learn More
+            </button>
+            <!-- = = = =  Project 2 Modal = = = = -->
+            <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <!-- Modal Content -->
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project2ModalLabel">Project 2: CSS</h5>
+                  </div>
+                  <!-- Modal Body -->
+                  <div class="modal-body text-center">
+                    <img src="ASSETS/project2(1).png" alt="Project 2" class="img-fluid">
+                  </div>
+                  <!-- Modal Footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====================== Portfolio Project 3 ====================== -->
+      <div class="col-lg-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="ASSETS/project3.jpg" alt="Project 3" style="height: 300px;object-fit:scale-down">
+          <div class="card-body px-3">
+            <!-- Project 3 Header -->
+            <h4 class="card-title fs-2">
+              Project 3: Advanced CSS
+            </h4>
+            <!-- Project 3 Description -->
+            <p class="card-text fw-semibold" style="min-height: 9.5rem;">
+              Project 3 showcases my advanced CSS skills. 
+              It's a responsive webpage (Desktop & Mobile) from Project 1. 
+              Click learn more to see the project.
+            </p>
+            <!-- Project 3 Modal Trigger Button -->
+            <button class="btn btn-warning text-dark fs-4" data-bs-toggle="modal" data-bs-target="#project3Modal">
+              Learn More
+            </button>
+            <!-- = = = = Project 3 Modal = = = = -->
+            <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <!-- Modal Content -->
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project3ModalLabel">Project 3: Advanced CSS</h5>
+                  </div>
+                  <!-- Modal Body -->
+                  <div class="modal-body">
+                    <!-- Desktop View Image 3 -->
+                    <div class="text-center mb-4">
+                      <img src="ASSETS/project3(3).png" class="img-fluid" style="max-height: 50vh; width: auto; object-fit: contain;" alt="Project 3 - Desktop View">
+                    </div>
+                    <!-- Mobile Views Image 1 & 2 -->
+                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+                      <img src="ASSETS/project3(1).png" class="img-fluid" style="max-height: 40vh; max-width: 100%; object-fit: contain;" alt="Project 3 - Mobile View 1">
+                      <img src="ASSETS/project3(2).png" class="img-fluid" style="max-height: 40vh; max-width: 100%; object-fit: contain;" alt="Project 3 - Mobile View 2">
+                    </div>
+                  </div>
+                  <!-- Modal Footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- ================================ ========================= CONTACT BAR ========================= ================================-->
+  <div id="contact" class="py-5" style="background: url('ASSETS/background.jpg') no-repeat center center; background-size: cover;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-white">
+          <h2 class="display-4 fw-bold mb-5 pt-4">Contact Me</h2>
+          <form class="fs-5">
+            <div class="mb-3">
+              <label for="name" class="form-label fs-4">Name</label>
+              <input type="text" class="form-control form-control-lg" id="name" placeholder="John Doe" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label fs-4">Email</label>
+              <input type="email" class="form-control form-control-lg" id="email" placeholder="jdoe@fakemail.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label fs-4">Message</label>
+              <textarea class="form-control form-control-lg" id="message" rows="4" placeholder="Enter your comment here." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success btn-lg fs-4 my-4">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- ================================ ========================= FOOTER ========================= ================================-->
+  <footer class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-md-start text-center mb-3 mb-md-0">
+          <div class="fs-4">&copy; 2025 Faisal Alhaddad</div>
+        </div>
+        <div class="col-md-6 text-md-end text-center">
+          <!-- Desktop Version "removed on Mobile with d-none"-->
+          <span class="d-none d-md-inline fs-4">Desktop Version&#174;</span>
+          <!-- Mobile Version "removed on Desktop with d-md-none"-->
+          <span class="d-md-none fs-4">Mobile Version&#174;</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Script Imports -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
