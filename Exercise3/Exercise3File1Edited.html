@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercise 3</title>
+  <link rel="stylesheet" href="style-exercise3.css" />
+</head>
+
+<body>
+  <!-- Page title and date -->
+  <h1>Exercise 3 by Neel Vinayak</h1>
+  <h3>Date Submitted: June 28 2025</h3>
+
+  <fieldset>
+    <h4>Fun Facts About Me</h4>
+
+    <!-- Mobile only table (hidden on desktop) -->
+    <table class="mobile-table" role="table" aria-label="Fun facts mobile table">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+      </tr>
+      <tr>
+        <td>Neel</td>
+        <td>Vinayak</td>
+      </tr>
+
+      <tr><th colspan="2">Favorite Movie</th></tr>
+      <tr>
+        <td colspan="2" style="text-align:center;">
+          <a href="https://en.wikipedia.org/wiki/Interstellar_(film)" target="_blank" rel="noopener noreferrer">
+            <img src="assets/InterstellarPicture.jpg" alt="My favorite movie: Interstellar" />
+          </a>
+        </td>
+      </tr>
+
+      <tr><th colspan="2">Favorite Song</th></tr>
+      <tr>
+        <td colspan="2" style="text-align:center;">
+          <audio controls>
+            <source src="assets/rick_roll.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </td>
+      </tr>
+
+      <tr><th colspan="2">Favorite Video</th></tr>
+      <tr>
+        <td colspan="2" style="text-align:center;">
+          <video controls width="280" height="160" aria-label="Favorite video">
+            <source src="assets/marvel_studios.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Desktop only table (hidden on mobile) -->
+    <table class="desktop-table" role="table" aria-label="Fun facts desktop table">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Favorite Movie</th>
+        <th>Favorite Song</th>
+        <th>Favorite Video</th>
+      </tr>
+      <tr>
+        <td>Neel</td>
+        <td>Vinayak</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Interstellar_(film)" target="_blank" rel="noopener noreferrer">
+            <img src="assets/InterstellarPicture.jpg" alt="My favorite movie: Interstellar" />
+          </a>
+        </td>
+        <td>
+          <audio controls class="audio">
+            <source src="assets/rick_roll.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </td>
+        <td>
+          <video controls width="300" height="170" aria-label="Favorite video">
+            <source src="assets/marvel_studios.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+
+  <!-- Use classes to ensure the proper colored font is shown -->
+  <h4 class="desktop-header">Enter Your Details Below:</h4>
+  <h4 class="mobile-header">Enter Your Details Below:</h4>
+
+  <form class="user-information" aria-label="User information form">
+    <!-- Using form instead of table for semantic correctness -->
+    <div>
+      <label for="fullName">Full Name</label><br />
+      <input id="fullName" name="fullName" type="text" placeholder="John Doe" required /><br /><br />
+
+      <label for="email">Email Address</label><br />
+      <input id="email" name="email" type="email" placeholder="jdoe@fakemail.com" required /><br /><br />
+
+      <label for="password">Password</label><br />
+      <input id="password" name="password" type="password" placeholder="password" required /><br /><br />
+
+      <label>Available Meeting Days:</label><br />
+      <div class="radio-buttons" role="radiogroup" aria-label="Available Meeting Days">
+        <input type="radio" id="monday" name="meetingDay" value="Monday" />
+        <label for="monday">Monday</label>
+
+        <input type="radio" id="tuesday" name="meetingDay" value="Tuesday" />
+        <label for="tuesday">Tuesday</label>
+
+        <input type="radio" id="wednesday" name="meetingDay" value="Wednesday" />
+        <label for="wednesday">Wednesday</label>
+
+        <input type="radio" id="thursday" name="meetingDay" value="Thursday" />
+        <label for="thursday">Thursday</label><br />
+
+        <input type="radio" id="friday" name="meetingDay" value="Friday" />
+        <label for="friday">Friday</label>
+
+        <input type="radio" id="saturday" name="meetingDay" value="Saturday" />
+        <label for="saturday">Saturday</label>
+
+        <input type="radio" id="sunday" name="meetingDay" value="Sunday" />
+        <label for="sunday">Sunday</label>
+      </div>
+      <br />
+
+      <label for="availableTime">Available Time:</label><br />
+      <select id="availableTime" name="availableTime" required>
+        <option value="">Select a time</option>
+        <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+        <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+        <option value="evening">Evening (4:00 PM - 8:00 PM)</option>
+        <option value="night">Night (8:00 PM - 12:00 AM)</option>
+      </select>
+      <br /><br />
+
+      <label>Currently working on new website?</label><br />
+      <div class="radio-buttons" role="radiogroup" aria-label="Working on new website">
+        <input type="radio" id="workingYes" name="workingOnWebsite" value="Yes" checked />
+        <label for="workingYes">Yes</label>
+
+        <input type="radio" id="workingNo" name="workingOnWebsite" value="No" />
+        <label for="workingNo">No</label>
+      </div>
+      <br />
+
+      <label for="comments">Your Comments</label><br />
+      <input id="comments" name="comments" type="text" placeholder="Enter your comments here" /><br /><br />
+
+      <!-- Use buttons -->
+      <button type="button" class="button">Submit</button>
+      <button type="button" class="button">Reset</button>
+    </div>
+  </form>
+
+  <br /><br />
+  <footer class="desktop-footer">Desktop Version</footer>
+  <footer class="mobile-footer">Mobile Version</footer>
+</body>
+</html>
