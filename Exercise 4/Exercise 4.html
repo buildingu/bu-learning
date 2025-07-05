@@ -6,8 +6,13 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
         <link rel="stylesheet" href="custom.css">
+    </head>
+    <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" 
+            integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;" data-bs-theme="light">
+            <!-- Navigation Bar Bootstrap -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;" data-bs-theme="light">
             <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="assets/profile.png" height="50px" width="50px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,29 +20,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#aboutme">About</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
             </li>
             </ul>
             </div>
             </div>
         </nav>
 
-    </head>
-    <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" 
-            integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
-
         <!-- Bootstrap Grid system for Hero and About Me Sections -->
-        <div class="aboutme">
+        <div class="aboutme" id="home">
             <div class="container hero">
                 <div class="row">
                     <p class="h1">Building-U Exercises Portfolio</p>
@@ -50,7 +50,7 @@
                 </button></p>
             </div>
 
-            <div class="container">
+            <div class="container" id="aboutme">
                 <div class="row">
                     <div class="col intro" style="border: 1px solid black;">
                         <p class="h1">About Me</p>
@@ -73,7 +73,7 @@
         <br>
 <br>
         <!-- Bootstrap Grid system for Projects -->
-        <div class="container">
+        <div class="container" id="portfolio">
             <div class="row">
                 <div class="col grid-item">
                     <img src="assets/Pro1.png" width="200" height="200">
@@ -163,7 +163,7 @@
 <br>
 <br>
         <!-- Bootstrap Forms -->
-        <div class="form">
+        <div class="form" id="contact">
         <p class="h1" style="color: white; text-align: left;">Contact</p>
         <hr>
         <form>
