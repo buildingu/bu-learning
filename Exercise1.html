@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exercise 1</title>
+    </head>
+    <body style="background-color:rgb(210, 243, 255);">
+        <style>
+            h1 {text-align: center;}
+            h3 {text-align: center;}
+        </style>
+        <h1>Exercise 1: HTML</h1>
+        <h4>Date Submitted: July 5, 2025</h4>
+        <fieldset>
+            <h3> <i>Fun Facts:</i></h3>
+            <table border="1">
+                <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Favorite Movie Image</th>
+                <th>Favorite Music Audio Sample</th>
+                <th>Favorite Video Sample</th>
+                </tr>
+                <tr>
+                    <td>Avitel</td>
+                    <td>Gaidukova</td>
+                    <td>
+                        <a href="https://en.wikipedia.org/wiki/Home_Alone" target="_blank">
+                        <img src="homealone.webp" alt="Image from movie Home Alone." width="100">
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="pianomansample.mp3" type="audio/mpeg">
+                        </audio>
+                    </td>
+                    <td>
+                        <video width="200" controls>
+                            <source src="videosample.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h3><i>Sample Form</i></h3>
+            <form>
+                <label>Full Name:</label>
+                <input type="text" placeholder="Your Name"><br>
+                <label>Email:</label>
+                <input type="text" placeholder="Your Email"><br>
+                <label>Password:</label>
+                <input type="password" placeholder="Your Password"><br>
+                <p>Which of these days are you available?:</p>
+                <input type="checkbox"> Monday
+                <input type="checkbox"> Tuesday
+                <input type="checkbox"> Wednesday
+                <input type="checkbox"> Thursday
+                <input type="checkbox"> Friday
+                <input type="checkbox"> Saturday
+                <input type="checkbox"> Sunday<br>
+                <p>Available Time:</p>
+                <select>
+                    <option>Morning (8am-12pm)</option>
+                    <option>Afternoon (12pm-5pm)</option>
+                    <option>Evening (5pm-9pm)</option>
+                    <option>Night (9pm-8am)</option>
+                </select>
+                <p>Are you currently working on a new website?</p>
+                <input type="radio" name="newWebsite" checked> Yes
+                <input type="radio" name="newWebsite"> No
+                <p>Addtional Comments:</p>
+                <textarea cols="90" rows="7" placeholder="Enter your comments here!"></textarea> <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </fieldset>
+    </body>
+</html>
