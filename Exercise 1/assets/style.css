@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+}
+table {
+    margin: auto;
+    border-collapse: collapse;
+    border: 5px solid black;
+        }
+th, td {
+    border: 3px solid black;
+    padding: 10px;
+}
+th {
+    background-color: rgb(166, 77, 218);
+}
+
