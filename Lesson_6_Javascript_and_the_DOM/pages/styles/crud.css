@@ -1,0 +1,239 @@
+/* ===== VARIABLES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Color Palette */
+    --color-primary: #333;
+    --color-primary-hover: #666;
+    --color-text: #333;
+    --color-text-light: #666;
+    --color-bg: #f9f9f9;
+    --color-bg-light: #fff;
+    --color-border: #dddddd;
+    --color-header-bg: #f1f1f1;
+    --color-header-text: #333;
+    --color-spinner: #616161;
+    --color-spinner-track: #f9f9f9;
+    --color-error: #ff4d4f;
+    --color-success: #52c41a;
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s ease;
+}
+
+/* ===== BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, "Body Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--color-bg);
+    line-height: 1.6;
+    text-align: center;
+    color: var(--color-text);
+}
+
+/* ===== LAYOUT ===== */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--color-bg-light);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: var(--box-shadow);
+    margin-top: 20px;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1 {
+    color: var(--color-text);
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+h3 {
+    color: var(--color-text-light);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* ===== NAVIGATION ===== */
+header {
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Navigation Button Styles */
+nav {
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-text);
+    transition: color 0.3s ease;
+    padding: 5px;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: var(--color-primary-hover);
+}
+
+nav ul li a:active {
+    color: var(--color-primary-hover);
+    font-size: 13px;
+}
+
+/* ===== FORM ELEMENTS ===== */
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"] {
+    width: 100%;
+    padding: 0.75rem 0.9375rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: var(--transition);
+    background-color: #fff;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 1px var(--color-primary);
+}
+
+/* ===== BUTTONS ===== */
+.submit-btn {
+    width: 100%;
+    padding: 0.875rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 0.625rem;
+}
+.submit-btn:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-2px);
+}
+.btn {
+    width: 100%;
+    padding: 0.875rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 0.625rem;
+}
+.btn:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-2px);
+}
+
+/* ===== ENTRIES ===== */
+.entry-block {
+    border: 1px solid var(--color-border);
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    background-color: var(--color-bg-light);
+    border-radius: 15px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+.pfp {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--color-text);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 0 auto 30px;
+}
+#userData {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* ===== MESSAGES & FEEDBACK ===== */
+/* General Message Container */
+.message {
+    margin-bottom: 15px;
+    padding: 0.625rem;
+    border-radius: 4px;
+    text-align: center;
+    display: none;
+}
+.message h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+/* Error Message */
+#errorMessage {
+    color: #c62828;
+}
+#errorMessage h3 {
+    color: inherit;
+}
+
+/* Success Message */
+#successMessage {
+    color: #2e7d32;
+}
+#successMessage h3 {
+    color: inherit;
+}

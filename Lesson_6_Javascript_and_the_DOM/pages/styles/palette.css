@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+/* for a color palette app this has a pretty boring color palete xd */
+:root {
+    /* Color Palette */
+    --color-primary: #333;
+    --color-primary-hover: #666;
+    --color-text: #333;
+    --color-text-light: #666;
+    --color-bg: #f9f9f9;
+    --color-bg-light: #fff;
+    --color-border: #dddddd;
+    --color-header-bg: #f1f1f1;
+    --color-header-text: #333;
+    --color-spinner: #616161;
+    --color-spinner-track: #f9f9f9;
+}
+
+/* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, "Body Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--color-bg);
+    line-height: 1.6;
+    text-align: center;
+    color: var(--color-text);
+}
+
+header {
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    color: var(--color-text);
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+h3 {
+    color: var(--color-text-light);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* Navigation Button Styles */
+nav {
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-text);
+    transition: color 0.3s ease;
+    padding: 5px;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: var(--color-primary-hover);
+}
+
+nav ul li a:active {
+    color: var(--color-primary-hover);
+    font-size: 13px;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+}
+
+input {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    width: 650px;
+    background-color: var(--color-bg-light);
+    color: var(--color-text);
+    /* Remove default focus styles */
+    outline: none;
+}
+
+/* Prevent border color change on focus (keep it gray) */
+input:focus,
+input:focus-visible {
+    border-color: var(--color-border);
+    box-shadow: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: var(--color-bg-light);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: var(--color-primary-hover);
+}
+
+/* Loading Spinner */
+#loadingSpinner {
+    border: 4px solid var(--color-spinner-track);
+    border-top: 4px solid var(--color-spinner);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    animation: spin 1s linear infinite;
+    display: none;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* Palette Styles */
+.palette {
+    border: 1px solid var(--color-border);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: var(--color-bg-light);
+    border-radius: 5px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.color-box {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#paletteContainers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}

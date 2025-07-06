@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/palette.css">
+    <title>Palette Generator</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="crudapp.html">CRUD (Create, Read, Update, Delete) App</a></li>
+                <li><a href="validatorApp.html">Validator App</a></li>
+                <li><a href="paletteGenerator.html">Palette Generator</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <h1>Palette Generator</h1>
+    <h3>Create beautiful color palettes.<br>Generate color palettes from names (red, green, blue, etc.), franchises (Anime, Pokemon, etc.), keywords (grass, sky, etc.), and even hex codes!</h3>
+    <form id="paletteForm">
+        <input type="text" id="query" placeholder="Enter a name, franchise, keyword, or hex code to set the mood">
+        <button type="submit">Generate Color Palette <div id="loadingSpinner"></div></button>
+    </form>
+    <br>
+    <!-- Filled in Javascript after API call -->
+    <div id="paletteContainers"><h3>— Cmon, enter something, dont be shy! —</h3><div>
+    <script src="logic/palette.js"></script>
+</body>
+</html>

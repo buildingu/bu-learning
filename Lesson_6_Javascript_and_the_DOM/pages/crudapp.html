@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/crud.css">
+    <title>CRUD App</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="crudapp.html">CRUD (Create, Read, Update, Delete) App</a></li>
+                <li><a href="validatorApp.html">Validator App</a></li>
+                <li><a href="paletteGenerator.html">Palette Generator</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div class="container">
+        <h1>CRUD APP</h1>
+        <h3>Add User Information</h3>
+        <form id="validationForm">
+            <div id="errorMessage" class="message"></div>
+            <div id="successMessage" class="message"></div>
+            
+            <div class="form-group">
+                <input type="text" id="fname" name="fname" placeholder="First Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="lname" name="lname" placeholder="Last Name">
+            </div>
+
+            <div class="form-group">
+                <input type="number" id="age" name="age" placeholder="Age">
+            </div>
+
+            <div class="form-group">
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+            </div>
+
+            <button type="submit" class="submit-btn">
+                <span>Add Entry</span>
+            </button>
+        </form>
+    </div>
+
+    <!-- Data Showcase (Handled in JS) -->
+    <div id="userData"></div>
+    <!-- JS link -->
+    <script src="logic/crud.js"></script>
+</body>
+</html>

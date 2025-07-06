@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Color Palette */
+    --color-primary: #333;
+    --color-primary-hover: #666;
+    --color-text: #333;
+    --color-text-light: #666;
+    --color-bg: #f9f9f9;
+    --color-bg-light: #fff;
+    --color-border: #dddddd;
+    --color-header-bg: #f1f1f1;
+    --color-header-text: #333;
+    --color-spinner: #616161;
+    --color-spinner-track: #f9f9f9;
+}
+
+/* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--color-bg);
+    line-height: 1.6;
+    text-align: center;
+    color: var(--color-text);
+}
+
+h1 {
+    color: var(--color-text);
+    margin-top: 15%;
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+p {
+    color: var(--color-text-light);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* ===== NAVIGATION ===== */
+header {
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Navigation Button Styles */
+nav {
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-text);
+    transition: color 0.3s ease;
+    padding: 5px;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: var(--color-primary-hover);
+}
+
+nav ul li a:active {
+    color: var(--color-primary-hover);
+    font-size: 13px;
+}
