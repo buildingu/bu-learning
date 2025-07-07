@@ -187,6 +187,77 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
     padding: 20px;
+}
+
+/* Color box with tooltip */
+.color-box {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.color-box .tooltip {
+    visibility: hidden;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+    pointer-events: none;
+}
+.color-box:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    color: #fff;
+}
+
+/* Copy All Button "copy all hex codes" */
+.copy-all-btn {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+    transition: transform 0.2s ease;
+}
+.copy-all-btn:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-2px);
+}
+.copy-all-btn:active {
+    transform: translateY(4px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .color-box {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .copy-all-btn {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
 }

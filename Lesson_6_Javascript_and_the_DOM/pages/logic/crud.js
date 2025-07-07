@@ -26,9 +26,19 @@ const createDeleteButton = () => {
     deleteButton.classList.add('btn');
     deleteButton.textContent = 'Delete';
     deleteButton.addEventListener('click', () => {
+        // Hide any visible messages
+        document.getElementById('errorMessage').style.display = 'none';
+        document.getElementById('successMessage').style.display = 'none';
         const entryBlock = deleteButton.parentElement;
+        // If we're deleting the entry that's currently being edited
+        if (currentEditElement === entryBlock) {
+            // Reset the form and edit state
+            document.getElementById('validationForm').reset();
+            editMode = false;
+            currentEditElement = null;
+            document.querySelector('.submit-btn span').textContent = 'Add Entry';
+        }
         entryBlock.remove();
-        editMode = false;
     });
     return deleteButton;
 }
@@ -39,6 +49,9 @@ const createEditButton = (userInformation, entryBlock) => {
     editButton.textContent = 'Edit';
     editButton.addEventListener('click', (e) => {
         e.stopPropagation(); // Prevents event bubbling (going to parent elements)
+        // Hide any visible messages
+        document.getElementById('errorMessage').style.display = 'none';
+        document.getElementById('successMessage').style.display = 'none';
         refillForm(userInformation);
         editMode = true;
         currentEditElement = entryBlock; // Sets Global variable to the entry block being edited
