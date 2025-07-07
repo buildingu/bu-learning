@@ -89,116 +89,140 @@ const refillForm = (userInformation) => {
     document.getElementById('age').value = age;
     document.getElementById('phone').value = phoneNumber;
 }
-/* Validation Function */
-const formValidator = (firstName, lastName, age, phoneNumber) => {
-    let information = [MESSAGES.WELCOME, true];
 
-    /* === CHECK FOR MISSING PARAMETERS === */
-    
-    if (firstName == null || (typeof firstName === 'string' && firstName.trim() === '')) {
-        information = [MESSAGES.FIRST_NAME_MISSING, false];
-        return information;
-    }
-    if (lastName == null || (typeof lastName === 'string' && lastName.trim() === '')) {
-        information = [MESSAGES.LAST_NAME_MISSING, false];
-        return information;
-    }
-    if (age == null || (typeof age === 'string' && age.trim() === '')) {
-        information = [MESSAGES.AGE_MISSING, false];
-        return information;
-    }
-    if (phoneNumber == null || (typeof phoneNumber === 'string' && phoneNumber.trim() === '')) {
-        information = [MESSAGES.PHONE_MISSING, false];
-        return information;
-    }
+/* == VALIDATION FUNCTIONS == */
 
-    /* === VALIDATE PARAMETER TYPES === */
-
-    if (typeof firstName !== 'string') {
-        information = [MESSAGES.FIRST_NAME_TYPE, false];
-        return information;
+/* Check for missing parameters */
+const validateMissingParams = (userData) => {
+    if (userData[0] == null || (typeof userData[0] === 'string' && userData[0].trim() === '')) {
+        return [MESSAGES.FIRST_NAME_MISSING, false];
     }
-    if (typeof lastName !== 'string') {
-        information = [MESSAGES.LAST_NAME_TYPE, false];
-        return information;
+    if (userData[1] == null || (typeof userData[1] === 'string' && userData[1].trim() === '')) {
+        return [MESSAGES.LAST_NAME_MISSING, false];
     }
-    if (typeof phoneNumber !== 'string') {
-        information = [MESSAGES.PHONE_TYPE, false];
-        return information;
+    if (userData[2] == null || (typeof userData[2] === 'string' && userData[2].trim() === '')) {
+        return [MESSAGES.AGE_MISSING, false];
     }
-    const ageNum = parseInt(age, 10);
+    if (userData[3] == null || (typeof userData[3] === 'string' && userData[3].trim() === '')) {
+        return [MESSAGES.PHONE_MISSING, false];
+    }
+    return null; // No missing parameters, no error to return
+}
+/* Check for valid parameter types */
+const validateParamTypes = (userData) => {
+    if (typeof userData[0] !== 'string') {
+        return MESSAGES.FIRST_NAME_TYPE;
+    }
+    if (typeof userData[1] !== 'string') {
+        return MESSAGES.LAST_NAME_TYPE;
+    }
+    if (typeof userData[3] !== 'string') {
+        return MESSAGES.PHONE_TYPE;
+    }
+    const ageNum = parseInt(userData[2], 10);
     if (isNaN(ageNum)) {
-        information = [MESSAGES.AGE_TYPE, false];
-        return information;
+        return MESSAGES.AGE_TYPE;
     }
-
-    /* === VALIDATE AGE VALUE === */
     
+    return null; // All types are valid, no error to return
+}
+/* Check for valid age value */
+const validateAgeValue = (ageNum) => {
     if (ageNum < 18) {
-        information = [MESSAGES.AGE_RESTRICTION, false];
-        return information;
+        return MESSAGES.AGE_RESTRICTION;
     }
+    return null; // Age is valid, no error to return
+}
 
+/* === Main Validation Function === */
+
+const formValidator = (userData) => {
+    /* === CHECK FOR MISSING PARAMETERS === */
+    const missingParamError = validateMissingParams(userData);
+    if (missingParamError) return [missingParamError, false];
+    
+    /* === VALIDATE PARAMETER TYPES === */
+    const paramTypeError = validateParamTypes(userData);
+    if (paramTypeError) return [paramTypeError, false];
+    
+    /* === VALIDATE AGE VALUE === */
+    const ageNum = parseInt(userData[2], 10);
+    const ageValidation = validateAgeValue(ageNum);
+    if (ageValidation) return [ageValidation, false];
+    
     /* === ALL VALIDATIONS PASSED === */
-    return information;
+    return [MESSAGES.WELCOME, true]; // default return
 }
 
 /* ====== EVENT LISTENERS ===== */
 
-/* Form Submission Listener */
-document.getElementById('validationForm').addEventListener('submit', (event) => {
+/* ====== FORM SUBMISSION HELPERS ===== */
 
-    /* === FORM HANDLING AND ORGANIZATION === */
-
-    event.preventDefault();
-    document.getElementById('errorMessage').style.display = 'none';
-    document.getElementById('successMessage').style.display = 'none';
-    
-    /* === DETERMINE USER INFORMATION === */
-    
-    const firstName = document.getElementById('fname').value.trim();
-    const lastName = document.getElementById('lname').value.trim();
-    const age = document.getElementById('age').value.trim();
-    const phoneNumber = document.getElementById('phone').value.trim();
-    
-    /* === VALIDATION === */
-    
-    const [message, isValid] = formValidator(firstName, lastName, age, phoneNumber);
-    
-    /* === MESSAGE DETERMINATION AND DISPLAY === */
-    
+/* Reset Form and Edit State */
+const resetFormAndState = () => {
+    document.getElementById('validationForm').reset();
+    editMode = false;
+    currentEditElement = null;
+    document.querySelector('.submit-btn span').textContent = 'Add Entry';
+}
+/* Display Form Message */
+const displayFormMessage = (isValid, message) => {
     const messageElement = document.getElementById(isValid ? 'successMessage' : 'errorMessage');
     const successMessage = editMode ? MESSAGES.UPDATE_SUCCESS : MESSAGES.ADD_SUCCESS;
+    
     let h3 = messageElement.querySelector('h3');
     if (!h3) {
         h3 = document.createElement('h3');
         messageElement.appendChild(h3);
     }
+    
     h3.textContent = isValid ? successMessage : message;
     messageElement.style.display = 'block';
+}
+/* Handle New Entry Creation */
+const handleNewEntry = (userData) => {
+    const [firstName, lastName, age, phoneNumber] = userData;
+    const entryBlock = createEntryBlock([firstName, lastName, age, phoneNumber]);
+    document.getElementById('userData').appendChild(entryBlock);
+}
+/* Handle Entry Update */
+const handleEntryUpdate = (userData) => {
+    if (!currentEditElement) return;
+    
+    const [firstName, lastName, age, phoneNumber] = userData;
+    const updatedEntry = createEntryBlock([firstName, lastName, age, phoneNumber]);
+    currentEditElement.replaceWith(updatedEntry);
+}
+
+/* ====== MAIN FORM SUBMISSION LISTENER ===== */
+
+document.getElementById('validationForm').addEventListener('submit', (event) => {
+    /* === FORM HANDLING AND ORGANIZATION === */
+    event.preventDefault();
+    document.getElementById('errorMessage').style.display = 'none';
+    document.getElementById('successMessage').style.display = 'none';
+    
+    /* === PACK USER INFORMATION === */
+    const userData = [
+        document.getElementById('fname').value.trim(),
+        document.getElementById('lname').value.trim(),
+        document.getElementById('age').value.trim(),
+        document.getElementById('phone').value.trim()
+    ];
+    
+    /* === VALIDATION === */
+    const [message, isValid] = formValidator(userData);
+    
+    /* === MESSAGE DISPLAY === */
+    displayFormMessage(isValid, message);
 
     /* === FUNCTIONALITY === */
-
     if (isValid) {
         if (!editMode) {
-            let userInformation = [firstName, lastName, age, phoneNumber];
-            const entryBlock = createEntryBlock(userInformation);
-            document.getElementById('userData').appendChild(entryBlock);
+            handleNewEntry(userData);
+        } else {
+            handleEntryUpdate(userData);
         }
-        // If valid and editing, update the existing entry
-        else if (editMode && currentEditElement) {
-            // Create a new entry block with updated data
-            const updatedEntry = createEntryBlock([firstName, lastName, age, phoneNumber]);
-            
-            // Replace the old entry with the updated one
-            currentEditElement.replaceWith(updatedEntry);
-        
-            // Reset form and state
-            document.getElementById('validationForm').reset();
-            editMode = false;
-            currentEditElement = null;
-            document.querySelector('.submit-btn span').textContent = 'Add Entry';
-        }
+        resetFormAndState(); // only reset if the entry was succesful so users dont have to reset if they input wrong
     }
-
 });
