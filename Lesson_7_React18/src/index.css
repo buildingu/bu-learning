@@ -1,0 +1,215 @@
+/* === Base styles and variables ===*/
+/* Remove focus outline but keep it for keyboard navigation */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+:root {
+  /* === Typography === */
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* === Colors === */
+
+  color-scheme: dark;
+  color: #a2a2c8;
+  background-color: #303050;
+
+  --color-header-bg: #1e1e2f;
+  --color-header-text: #a2a2c8;
+  --button-bg: #7373a0;
+  --button-color-text: #a2a2c8;
+  --color-hover: #4e4e6e;
+  --color-spinner: #7373a0;
+  --color-spinner-track: #1e1e2f;
+
+  /* === Misc === */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === Layout components === */
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  width: 100vw;
+  max-width: 100%;
+}
+.app {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+div {
+  justify-content: center;
+}
+header {
+  width: 100%;
+  background-color: var(--color-header-bg);
+  color: var(--color-header-text);
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+/* === Typography === */
+
+h1 {
+  margin-top: 15%;
+  font-size: 5em;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+h2 {
+  margin-bottom: 15px;
+  font-size: 3em;
+}
+h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.high-title {
+  margin-top: 5%;
+}
+
+/* === Users Grid (Challenge 3, useEffect) === */
+
+.users-grid {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+.user-card {
+  background-color: var(--color-header-bg);
+  border-radius: 8px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.user-card p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+.user-card strong {
+  margin-right: 5px;
+}
+
+/* === Form/Input elements === */
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  background-color: var(--button-bg);
+  color: var(--button-color-text);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transition: transform 0.2s ease;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+button:hover {
+  background-color: var(--color-hover);
+}
+button:active {
+  transform: translateY(4px);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Loading effect */
+#loadingSpinner {
+  border: 8px solid var(--color-spinner-track);
+  border-top: 8px solid var(--color-spinner);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+  margin-top: 15%;
+  position: relative;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Challenge 4 - Specific Adjustments */
+/* Target the user-grid that's a direct child of main in Challenge 4 */
+main > .user-grid {
+  display: flex;
+  padding: 2rem;
+  margin: 0 auto; /* Centers the grid */
+}
+
+/* Target the user-card that's inside the above grid */
+main > .user-grid > .user-card {
+  padding: 1.5rem;
+}
+
+/* === BONUS: Navigation === */
+
+nav {
+  background-color: var(--color-header-bg);
+  color: var(--color-header-text);
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--color-header-text);
+  transition: color 0.3s ease;
+  padding: 5px;
+  font-size: 15px;
+}
+nav ul li a:hover {
+  color: var(--color-hover);
+}
+nav ul li a:active {
+  color: var(--color-hover);
+  font-size: 13px;
+}
