@@ -1,10 +1,5 @@
-/* === Base styles and variables ===*/
-/* Remove focus outline but keep it for keyboard navigation */
-:focus:not(:focus-visible) {
-  outline: none;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 :root {
   /* === Typography === */
 
@@ -18,7 +13,7 @@
   color: #a2a2c8;
   background-color: #303050;
 
-  --color-header-bg: #1e1e2f;
+  --color-header-bg: #1e1e2f81;
   --color-header-text: #a2a2c8;
   --button-bg: #7373a0;
   --button-color-text: #a2a2c8;
@@ -120,6 +115,11 @@ h3 {
 
 /* === Form/Input elements === */
 
+input {
+  padding: 10px;
+  margin: 10px;
+  font-size: 15px;
+}
 button {
   padding: 10px 20px;
   margin: 10px;
@@ -147,7 +147,51 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* Loading effect */
+
+/* === Challenge 4 User Card Specific Adjustments === */
+
+/* Target the user-grid that's a direct child of main in Challenge 4 */
+main > .user-grid {
+  display: flex;
+  padding: 2rem;
+  margin: 0 auto; /* Centers the grid */
+}
+/* Target the user-card that's inside the above grid */
+main > .user-grid > .user-card {
+  padding: 1.5rem;
+}
+
+/* === Challenge 5 To-Do List Styling === */
+.todo-list {
+  list-style-type: none; /* remove bullet points */
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+  gap: 1rem;
+  justify-content: center;
+  padding: 0 1rem;
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 100%;
+}
+.todo-item {
+  background-color: var(--color-header-bg);
+  padding: 1rem;
+  width: 90%;
+  max-width: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  word-break: break-word;
+}
+
+/* === misc === */
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
 #loadingSpinner {
   border: 8px solid var(--color-spinner-track);
   border-top: 8px solid var(--color-spinner);
@@ -164,23 +208,9 @@ button:focus-visible {
   100% { transform: rotate(360deg); }
 }
 
-/* Challenge 4 - Specific Adjustments */
-/* Target the user-grid that's a direct child of main in Challenge 4 */
-main > .user-grid {
-  display: flex;
-  padding: 2rem;
-  margin: 0 auto; /* Centers the grid */
-}
-
-/* Target the user-card that's inside the above grid */
-main > .user-grid > .user-card {
-  padding: 1.5rem;
-}
-
 /* === BONUS: Navigation === */
 
 nav {
-  background-color: var(--color-header-bg);
   color: var(--color-header-text);
   padding: 10px;
   text-align: center;
