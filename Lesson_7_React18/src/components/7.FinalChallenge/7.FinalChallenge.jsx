@@ -14,7 +14,7 @@
  * - The `age` field must:
  *    1. Must be a number
  *    2. Have max character count of 3.
- *    3. Greater than 18. (or equal to?)
+ *    3. Greater than (or equal to?) 18.
  * - The `phone` field must be a number and a have max character count of 3.
  *    1. Must be a number
  *    2. Character count equals 10 (e.g., 5048073240).
@@ -22,9 +22,21 @@
  * Lastly, clear the form if validation passes and render a success message.
  */
 
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
+import { useSubscription } from "./SubscriptionContext";
+
+const ERROR_MESSAGES = {
+  REQUIRED: 'This field is required',
+  NAME_TOO_LONG: 'Maximum 120 characters allowed',
+  INVALID_NUMBER: 'Must be a number',
+  AGE_TOO_LONG: 'Maximum 3 digits allowed',
+  AGE_TOO_YOUNG: 'Must be 18+',
+  PHONE_LENGTH: 'Must be 10 digits'
+};
 
 export default function FinalChallenge() {
+  const { isSubscribed, subscribe, resetSubscription } = useSubscription(); // get subscription information from context (makes globally trackable)
+  
   /* useState for userData tracking */
   const [formData, setFormData] = useState({
     firstName: '',
@@ -32,112 +44,100 @@ export default function FinalChallenge() {
     age: '',
     phone: ''
   });
-  /* useStates for selective logic */
+  /* useStates for error tracking */
   const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-  /* useRefs for focus management throughout input fields */
-  const firstNameRef = useRef(null);
-  const lastNameRef = useRef(null);
-  const ageRef = useRef(null);
-  const phoneRef = useRef(null);
 
-  // Focus first input on mount (initial focus)
-  useEffect(() => {
-    firstNameRef.current.focus();
-  }, []);
-
+  
   // abstracted validation function for individual fields
   const validateField = (name, value) => {
-    if (!value.trim()) return 'This field is required';
+    value = value.trim();
+
+    if (!value) return ERROR_MESSAGES.REQUIRED;
     
     switch (name) {
       case 'firstName':
       case 'lastName':
-        return value.length > 120 ? 'Maximum 120 characters allowed' : '';
+        return value.length > 120 ? ERROR_MESSAGES.NAME_TOO_LONG : '';
       case 'age':
-        if (isNaN(value)) return 'Must be a number';
-        if (value.length > 3) return 'Maximum 3 digits allowed';
-        if (parseInt(value) < 18) return 'Must be older than 18';
+        if (isNaN(value)) return ERROR_MESSAGES.INVALID_NUMBER;
+        if (value.length > 3) return ERROR_MESSAGES.AGE_TOO_LONG;
+        if (parseInt(value) < 18) return ERROR_MESSAGES.AGE_TOO_YOUNG;
         return '';
       case 'phone':
-        if (isNaN(value)) return 'Must be a number';
-        return value.length !== 10 ? 'Must be 10 digits' : '';
-      default:
+        const digitsOnly = value.replace(/\D/g, '');
+        if (!digitsOnly) return ERROR_MESSAGES.REQUIRED;
+        if (digitsOnly.length !== 10) return ERROR_MESSAGES.PHONE_LENGTH;
         return '';
     }
   };
 
-  /* 
-    handleChange:
-    Get Changed form element, its name and the current inputed value
-    update the formData appropriately
-    clear error warnings for the specific changed form element if there are any
-  */
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value}));
-    if (errors[name]) {
-      setErrors(prev => {
-        const newErrors = { ...prev };
-        delete newErrors[name];
-        return newErrors;
-      });
-    }
+  // Handle real time validation (parameters for the name of the input and the current inputted value)
+  const handleFieldChange = (name, value) => {
+    setFormData(prev => ({
+      ...prev, 
+      [name]: value
+    }));
+    
+    // Only validate the current field for real-time feedback specifically on what you are currently changing
+    validateSingleField(name, value);
+  };
+  
+  // Validate a single field and update errors
+  const validateSingleField = (name, value) => {
+    const error = validateField(name, value);
+    setErrors(prev => ({
+      ...prev,
+      [name]: error || undefined // Remove the error if there are no errors (validation passes)
+    }));
   };
 
-  const handleSubmit = (e) => {
-    /* 
-      Logic tree:
-      1. Prevent default form submission from html
-      2. Initialize the newErrors object
-      3. Validate all fields
-      4. If there are errors, set them and return
-      5. If there are no errors, set isSubmitting to true
-      6. Simulate API call
-      7. If successful, clear form data, errors, and isSubmitting
-    */
-    e.preventDefault();
+  // Validate all form fields
+  const validateAllFields = () => {
     const newErrors = {};
-
-    // Validate all fields
     Object.entries(formData).forEach(([key, value]) => {
       const error = validateField(key, value);
       if (error) {
-        newErrors[key] = error; // if we get an error from any of our fields, add the error with its appropriate key to the newErrors object
+        newErrors[key] = error;
       }
     });
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      return;
-    }
+  // Reset form to initial state
+  const resetForm = () => {
+    setFormData({
+      firstName: '',
+      lastName: '',
+      age: '',
+      phone: ''
+    });
+    setErrors({});
+  };
 
-    setIsSubmitting(true);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    handleFieldChange(name, value);
+  };
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
     
-    // Simulate API call
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
-      setIsSuccess(true);
-      setFormData({
-        firstName: '',
-        lastName: '',
-        age: '',
-        phone: ''
-      });
-      setErrors({});
-      setIsSubmitting(false);
-    }, 1000);
+    if (validateAllFields()) {
+      // Form is valid, proceed with submission
+      subscribe();
+      resetForm();
+    }
   };
 
   /* case: already subscribed */
-  if (isSuccess) {
+  if (isSubscribed) {
     return (
       <main>
         <h1 className="high-title">Final Challenge</h1>
         <div className="form-container">
           <h2>Thank you for subscribing!</h2>
-          <button onClick={() => setIsSuccess(false)}>Unsubscribe</button>
+          <button onClick={resetSubscription}>Unsubscribe</button>
         </div>
       </main>
     );
@@ -153,7 +153,7 @@ export default function FinalChallenge() {
           {/* First Name */}
           <div className="form-group">
             <input
-              ref={firstNameRef}
+              autoFocus // UX: focus on the first name field automatically on mount
               type="text"
               name="firstName"
               value={formData.firstName}
@@ -167,7 +167,6 @@ export default function FinalChallenge() {
           {/* Last Name */}
           <div className="form-group">
             <input
-              ref={lastNameRef}
               type="text"
               name="lastName"
               value={formData.lastName}
@@ -181,8 +180,7 @@ export default function FinalChallenge() {
           {/* Age */}
           <div className="form-group">
             <input
-              ref={ageRef}
-              type="text"
+              type="number"
               name="age"
               value={formData.age}
               onChange={handleChange}
@@ -195,22 +193,19 @@ export default function FinalChallenge() {
           {/* Phone */}
           <div className="form-group">
             <input
-              ref={phoneRef}
-              type="text"
+              type="tel"
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              placeholder="Phone (10 digits)"
+              placeholder="Phone"
               className={errors.phone ? 'error' : ''}
             />
             {errors.phone && <div className="error-message">{errors.phone}</div>}
           </div>
 
           {/* Submit Button */}
-          <button type="submit" disabled={isSubmitting}>
+          <button type="submit">
             Subscribe
-            {/* LoadingAnim logic and Display */}
-            {isSubmitting && <span className="spinner"></span>}
           </button>
         </form>
       </div>

@@ -4,14 +4,16 @@ import UseEffectChallenge from "./components/3.UseEffectChallenge";
 import UseContextChallenge from "./components/4.UseContextChallenge/UseContext";
 import UseReducerChallenge from "./components/5.UseReducerChallenge";
 import UseMemoChallenge from "./components/6.UseMemoChallenge";
-import FinalChallenge from "./components/7.FinalChallenge";
+import FinalChallenge from "./components/7.FinalChallenge/7.FinalChallenge";
 import { Routes, Route, Link } from "react-router-dom";
 import "./index.css";
 import { AuthContextProvider } from "./components/4.UseContextChallenge/AuthContext";
+import { SubscriptionProvider } from "./components/7.FinalChallenge/SubscriptionContext.jsx";
 
 function App() {
   return (
     <div className="app">
+      <SubscriptionProvider>
       <AuthContextProvider>
       <header>
         <nav>
@@ -38,6 +40,7 @@ function App() {
         <Route path="*" element={<div><h1>Select a Challenge</h1></div>} />
       </Routes>
       </AuthContextProvider>
+      </SubscriptionProvider>
     </div>
   );
 }
