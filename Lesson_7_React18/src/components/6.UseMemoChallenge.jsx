@@ -9,7 +9,15 @@ import { useState, useMemo } from "react";
 
 export default function UseMemoChallenge() {
   const [number, setNumber] = useState(0);
-
+  /* Main Factorial Method */
+  const factorial = useMemo(() => {
+    /* Factorial Calculation */
+    let result = 1;
+    for (let i = 1; i <= number; i++) {
+      result *= i;
+    }
+    return result;
+  }, [number]); // we only need to recompute the factorial if the input number changes
   return (
     <main>
       <h1>useMemo Challenge</h1>
@@ -17,12 +25,12 @@ export default function UseMemoChallenge() {
         <input
           type="number"
           value={number}
-          onChange={(e) => setNumber(/** Value from input and convert to a number... */)}
+          onChange={(e) => setNumber(Number(e.target.value))}
           placeholder="Enter a number"
         />
-        <p>
-           Factorial of {number} is: {/* Factorial result... */}
-        </p>
+        <h3>
+           Factorial of {number} is: {factorial}
+        </h3>
       </div>
     </main>
   );
