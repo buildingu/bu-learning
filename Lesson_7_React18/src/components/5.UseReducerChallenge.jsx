@@ -51,8 +51,8 @@ export default function UseReducerChallenge() {
     <main>
       <h1 className="high-title">useReducer Challenge</h1>
       <form onSubmit={handleSubmit}>
-        <h2>To-do</h2>
-        <input ref={inputRef} placeholder="Add a new to-do" className="text-field"/>
+        <h2 className="high-title">To-do</h2>
+        <input className="high-title" ref={inputRef} placeholder="Add a new to-do" />
         <button type="submit">Add</button>
       </form>
 

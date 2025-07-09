@@ -111,17 +111,17 @@ const validateMissingParams = (userData) => {
 /* Check for valid parameter types */
 const validateParamTypes = (userData) => {
     if (typeof userData[0] !== 'string') {
-        return MESSAGES.FIRST_NAME_TYPE;
+        return [MESSAGES.FIRST_NAME_TYPE, false];
     }
     if (typeof userData[1] !== 'string') {
-        return MESSAGES.LAST_NAME_TYPE;
+        return [MESSAGES.LAST_NAME_TYPE, false];
     }
     if (typeof userData[3] !== 'string') {
-        return MESSAGES.PHONE_TYPE;
+        return [MESSAGES.PHONE_TYPE, false];
     }
     const ageNum = parseInt(userData[2], 10);
     if (isNaN(ageNum)) {
-        return MESSAGES.AGE_TYPE;
+        return [MESSAGES.AGE_TYPE, false];
     }
     
     return null; // All types are valid, no error to return
@@ -129,7 +129,7 @@ const validateParamTypes = (userData) => {
 /* Check for valid age value */
 const validateAgeValue = (ageNum) => {
     if (ageNum < 18) {
-        return MESSAGES.AGE_RESTRICTION;
+        return [MESSAGES.AGE_RESTRICTION, false];
     }
     return null; // Age is valid, no error to return
 }
@@ -139,16 +139,16 @@ const validateAgeValue = (ageNum) => {
 const formValidator = (userData) => {
     /* === CHECK FOR MISSING PARAMETERS === */
     const missingParamError = validateMissingParams(userData);
-    if (missingParamError) return [missingParamError, false];
+    if (missingParamError) return missingParamError;
     
     /* === VALIDATE PARAMETER TYPES === */
     const paramTypeError = validateParamTypes(userData);
-    if (paramTypeError) return [paramTypeError, false];
+    if (paramTypeError) return paramTypeError;
     
     /* === VALIDATE AGE VALUE === */
     const ageNum = parseInt(userData[2], 10);
     const ageValidation = validateAgeValue(ageNum);
-    if (ageValidation) return [ageValidation, false];
+    if (ageValidation) return ageValidation;
     
     /* === ALL VALIDATIONS PASSED === */
     return [MESSAGES.WELCOME, true]; // default return

@@ -18,7 +18,7 @@ export default function UseRefChallenge() {
   return (
     <main>
       <h1>useRef Challenge</h1>
-      <input className="text-field" ref={inputRef} />
+      <input ref={inputRef} />
       <button onClick={focusInput}>Focus</button>
     </main>
   );

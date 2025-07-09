@@ -20,17 +20,17 @@ export default function UseMemoChallenge() {
   }, [number]); // we only need to recompute the factorial if the input number changes
   return (
     <main>
-      <h1>useMemo Challenge</h1>
+      <h1 className="high-title">useMemo Challenge</h1>
       <div>
-        <input
+        <input 
+          className="text-field"
           type="number"
-          value={number}
           onChange={(e) => setNumber(Number(e.target.value))}
           placeholder="Enter a number"
         />
-        <h3>
+        <h2>
            Factorial of {number} is: {factorial}
-        </h3>
+        </h2>
       </div>
     </main>
   );

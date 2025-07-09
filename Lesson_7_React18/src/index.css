@@ -78,7 +78,7 @@ h3 {
   font-size: 20px;
 }
 .high-title {
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 /* === Users Grid (Challenge 3, useEffect) === */
@@ -119,6 +119,10 @@ input {
   padding: 10px;
   margin: 10px;
   font-size: 15px;
+}
+.text-field {
+  margin-top: 200px;
+  margin-bottom: 0;
 }
 button {
   padding: 10px 20px;
