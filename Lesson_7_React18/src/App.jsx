@@ -37,7 +37,7 @@ function App() {
         <Route path="/use-reducer" element={<UseReducerChallenge />} />
         <Route path="/use-memo" element={<UseMemoChallenge />} />
         <Route path="/final" element={<FinalChallenge />} />
-        <Route path="*" element={<div><h1>Select a Challenge</h1></div>} />
+        <Route path="*" element={<h1>Select a Challenge</h1>} />
       </Routes>
       </AuthContextProvider>
       </SubscriptionProvider>

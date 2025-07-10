@@ -7,7 +7,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  /* === Colors === */
+  /* === Color Scheme === */
 
   color-scheme: dark;
   color: #a2a2c8;
@@ -39,18 +39,22 @@
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  min-height: 100vh;
   overflow-x: hidden; /* Prevent horizontal scroll */
-  width: 100vw;
+  width: 100%;
   max-width: 100%;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
 }
 .app {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-}
-div {
-  justify-content: center;
 }
 header {
   width: 100%;
@@ -75,14 +79,18 @@ h2 {
 }
 h3 {
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 25px;
 }
 .high-title {
   margin-top: 1%;
 }
+.maximum {
+  height: 100%;
+}
 
 /* === Users Grid (Challenge 3, useEffect) === */
 
+/* Grid for multiple user cards (Challenge 3) */
 .users-grid {
   padding: 10px;
   margin: 10px;
@@ -92,14 +100,21 @@ h3 {
   gap: 20px;
   justify-content: center;
 }
+
+/* Single card container (Challenge 4) */
+.user-grid {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
 .user-card {
   background-color: var(--color-header-bg);
   border-radius: 8px;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 300px;
+  margin: 0 auto;
 }
 .user-card:hover {
   transform: translateY(-5px);
@@ -113,15 +128,17 @@ h3 {
   margin-right: 5px;
 }
 
-/* === Form/Input elements === */
+/* === Input elements === */
 
 input {
   padding: 10px;
   margin: 10px;
   font-size: 15px;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease;
 }
 .text-field {
-  margin-top: 200px;
+  margin-top: 40px;
   margin-bottom: 0;
 }
 button {
@@ -151,10 +168,34 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* === Challenge 7 Form Styling === */
+
+/* Error State */
+input.error {
+  outline: 1px solid red !important;
+}
+/* Success State */
+input.success {
+  outline: 1px solid green !important;
+}
+.error-message {
+  color: red;
+}
+
+.form-container {
+  width: 22%;
+  min-width: 400px;
+  margin: 5rem auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--color-header-bg);
+  border-radius: 15px;
+}
+
 
 /* === Challenge 4 User Card Specific Adjustments === */
 
-/* Target the user-grid that's a direct child of main in Challenge 4 */
+/* Target the user-grid that's a direct child of main in Challenge 4 (Challenge 3 is in a div) */
 main > .user-grid {
   display: flex;
   padding: 2rem;
@@ -168,7 +209,7 @@ main > .user-grid > .user-card {
 /* === Challenge 5 To-Do List Styling === */
 .todo-list {
   list-style-type: none; /* remove bullet points */
-  padding: 0;
+  padding-bottom: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
   gap: 1rem;
@@ -181,13 +222,14 @@ main > .user-grid > .user-card {
 .todo-item {
   background-color: var(--color-header-bg);
   padding: 1rem;
+  margin-bottom: 25px;
   width: 90%;
   max-width: 300px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
   word-break: break-word;
 }
 
