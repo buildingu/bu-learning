@@ -1,0 +1,128 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: #1f1f1f !important;
+  border-bottom: 1px solid #333;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #f1f1f1 !important;
+}
+
+.nav-link:hover {
+  color: #0dcaf0 !important;
+}
+
+.hero {
+  background: #1e1e1e;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p.lead {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #0dcaf0;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #00b3d6;
+}
+
+#about {
+  background-color: #121212;
+}
+
+.about-img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+#projects {
+  background-color: #1e1e1e;
+}
+
+.project-card {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+#contact {
+  background-color: #121212;
+}
+
+form input,
+form textarea {
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #252525;
+}
+
+form button {
+  padding: 10px 30px;
+  background-color: #0dcaf0;
+  border: none;
+}
+
+form button:hover {
+  background-color: #00b3d6;
+}
+
+footer {
+  background: #1f1f1f;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p.lead {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}
