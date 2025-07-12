@@ -4,19 +4,19 @@
 function formValidator(firstName, lastName, age, phoneNumber) { // Form Validator function
 
         // input missing check
-        if (firstName == null || (typeof firstName === "string" && firstName.trim() == "")) {
+        if (firstName == null) {
             return "The first name input is missing";
         }
-        if (lastName == null || (typeof lastName === "string" && lastName.trim() == "")) {
+        if (lastName == null) {
             return "The last name input is missing";
         }
-        if (age == null || (typeof age === "string" && age.trim() == "")) {
+        if (age == null) {
             return "The age input is missing";
         }
-        if (phoneNumber == null || (typeof phoneNumber === "string" && phoneNumber.trim() == "")) {
+        if (phoneNumber == null) {
             return "The phone number input is missing";
         }
-        if (firstName == null || (typeof firstName === "string" && firstName.trim() == "")) {
+        if (firstName == null) {
             return "The first name input is missing";
         }
 
