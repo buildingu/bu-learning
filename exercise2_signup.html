@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style_exercise2.css" />
+  <title>Chess Tournament - Sign Up</title>
+  <link rel="icon" type="image/png" href="media/icon.png" />
+</head>
+<body>
+
+  <!-- Header with Return Button -->
+  <table style="margin-left:25%;">
+    <tr>
+      <td>
+        <h1>
+          <img src="media/pawn.png" alt="Image of Pawn" width="30" style="border:0px" />
+          District-Wide Chess Tournament
+          <img src="media/pawn.png" alt="Image of Pawn" width="30" style="border:0px" />
+        </h1>
+      </td>
+      <td>
+        <a href="exercise2.html">
+          <button type="button">
+            Return
+            <img src="media/return.png" alt="Return Icon" width="30" style="border:0px" />
+          </button>
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+
+  <!-- Main Sign-Up Form -->
+  <table style="margin-left:10%;">
+    <tr>
+      <td>
+        <img src="media/king.png" alt="Image of King Chess Piece" style="border:0px" />
+      </td>
+      <td>
+        <form>
+          <br>
+          <label style="color:rgb(97, 17, 121);font-size:40px;"><b><u>Sign Up:</u></b></label>
+          <br><br>
+
+          <hr class="thick-line">
+
+          <label style="color: rgb(42, 63, 165);"><b>Full Name*:</b></label>
+          <input type="text" placeholder="John" required><br>
+
+          <label>Nickname:</label>
+          <input type="text" placeholder="Smith"><br>
+
+          <label style="color: rgb(42, 63, 165);"><b>Age*:</b></label>
+          <input type="number" placeholder="18" min="1" max="100" step="1" required><br>
+
+          <label>Shirt Size:</label><br>
+          <label>Extra Small</label>
+          <input type="radio" name="size">
+          <label>Small</label>
+          <input type="radio" name="size"><br>
+          <label>Medium</label>
+          <input type="radio" name="size">
+          <label>Large</label>
+          <input type="radio" name="size">
+          <label>Extra Large</label>
+          <input type="radio" name="size"><br>
+
+          <label style="color: rgb(42, 63, 165);"><b>School*:</b></label>
+          <input type="text" list="schools" required placeholder="Town High School">
+          <datalist id="schools">
+            <option value="Town Elementary School">
+            <option value="Town Middle School">
+            <option value="Town High School">
+            <option value="None">
+          </datalist>
+
+          <hr class="thick-line">
+
+          <label style="color: rgb(42, 63, 165);"><b>Email*:</b></label>
+          <input type="email" placeholder="johnsmith@gmail.com" required><br>
+
+          <label style="color: rgb(42, 63, 165);"><b>Username*:</b> (4–8 lowercase letters or numbers)</label>
+          <input type="text" placeholder="smith22" pattern="[a-z0-9]{4,8}" required><br>
+
+          <label style="color: rgb(42, 63, 165);"><b>Password*:</b> (5–12 characters)</label>
+          <input type="password" placeholder="Your Password" minlength="5" maxlength="12" required><br>
+
+          <hr class="thick-line">
+
+          <label>Gender:</label>
+          <label>Male</label>
+          <input type="radio" name="gender">
+          <label>Female</label>
+          <input type="radio" name="gender">
+          <label>Other</label>
+          <input type="radio" name="gender"><br>
+
+          <label>Pronouns:</label>
+          <input type="text" placeholder="He/Him"><br>
+
+          <hr class="thick-line">
+
+          <label>Enter Your Current Chess Rating:</label>
+          <input type="number" placeholder="1450" min="100" max="3000" step="1" required><br>
+
+          <br>
+          <label>Please Describe Your Past Chess Experience:</label><br>
+          <textarea cols="50" rows="2" placeholder="..."></textarea><br>
+
+          <input type="submit">
+          <input type="reset">
+          <br><br>
+        </form>
+      </td>
+      <td>
+        <img src="media/king.png" alt="Image of King Chess Piece" style="border:0px" />
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
