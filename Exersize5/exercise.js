@@ -7,7 +7,7 @@ function formValidator(fName, lName, age, pNumber) {
         return "The last name input is missing";
     }
 
-    else if(age === null) {
+    else if (age === null) {
         return "The age input is missing";
     }
 
@@ -45,5 +45,5 @@ function formValidator(fName, lName, age, pNumber) {
 // TESTING
 console.log(formValidator("John", "Doe", 18, "555-555-5555"));
 console.log(formValidator("John", "Doe", 17, 55));
-console.log(formValidator("", "Doe", 18, "555-555-5555"));
+console.log(formValidator(null, "Doe", 18, "555-555-5555"));
 console.log(formValidator("John", "" ,18, "555-555-5555"));
