@@ -1,4 +1,5 @@
 function formValidator(fName, lName, age, pNumber) {
+
      if (fName === null || fName.length === 0) {
         return "The first name input is missing";  
     }
@@ -32,7 +33,7 @@ function formValidator(fName, lName, age, pNumber) {
         return "Phone Number should be a string";
     }
 
-    if(age < 18) {
+    if (age < 18) {
         return "Sorry, not old enough for our App";
 
     }
@@ -42,6 +43,8 @@ function formValidator(fName, lName, age, pNumber) {
 
 
 }
+
+
 // TESTING
 console.log(formValidator("John", "Doe", 18, "555-555-5555"));
 console.log(formValidator("John", "Doe", 17, 55));
