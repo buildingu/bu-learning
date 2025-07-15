@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <title>Exercise 1: HTML Building-U</title>
+    </head>
+    <body>
+
+        <center>
+        <!--Headings-->
+            <h1>Exercise 1: HTML Building-U</h1>
+            <h3>Date of Submission: July 11, 2205</h3>
+        <!--Table Section-->
+            <h2>Favourite Things Table</h2>
+            <table border="1" cellpadding="5">
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Favourite Movie Image</th>
+              <th>Fauorite Music Audio Sample</th>
+              <th>Favourite Video Sample</th>
+            </tr>
+            <tr>
+              <td>Ajitesh</td>
+              <td>Sankara</td>
+            <td>
+               <a href="https://wall.alphacoders.com/big.php?i=1396586">
+                <img src="0.jpg" alt="Mission Impossible" width="100">
+              </a>
+            </td>
+            <td>
+              <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>
+              <video width="200" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </td>
+          </tr>
+        </table>
+            <!--Form Section-->
+            <h2>Personal Information Form</h2>
+            <form>
+              <label for="fullname">Full Name:</label><br>
+              <input type="text" id="fullname" placeholder="Enter your full name"><br><br>
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" placeholder="Enter your email"><br><br>
+              <label for="passowrd">Password:</label><br>
+              <input type="password" id="password" placeholder="Enter your password"><br><br>
+
+              <label>Avaliable Days:</label><br>
+              <input type="checkbox" name="days" value="Monday"> Monday
+              <input type="checkbox" name="days" value="Tuesday"> Tuesday
+              <input type="checkbox" name="days" value="Wednesday"> Wednesday
+              <input type="checkbox" name="days" value="Thursday"> Thursday
+              <input type="checkbox" name="days" value="Friday"> Friday<br><br>
+
+              <label for="time">Available Time:</label><br>
+              <select id="time" name="time">
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+              </select><br><br>
+
+              <label>Working on a New Website?:</label><br>
+              <input type="radio" id="yes" name="newsite" value="Yes" checked> Yes
+              <input type="radio" id="no" name="newsite" value="No"> No
+
+              <label for="comments">Comments:</label><br>
+              <textarea id="comments" name="comments" rows="4" cols="40" placeholdr="'Enter addition Information..."></textarea>
+
+              <input type="submit" value="Submit">
+              <input type="reset" value="Reset">
+
+            </form>
+            
+        </center>
+ </body>
+ </html>
