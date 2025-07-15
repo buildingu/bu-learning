@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap - Lesson 4</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style4.css" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://building-u.com/" a>
+          <img
+            src="assets/cropped-BUlogo.png"
+            alt="building-u"
+            width="30"
+            height="24"
+            class="Building-U"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarDiv"
+          aria-controls="navbarDiv"
+          aria-expanded="false"
+          aria-label="Toggle navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Hamburger Icon-->
+        <div class="collapse navbar-collapse" id="navbarDiv">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#aboutme">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#Portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#inputform">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="bigsection">
+      <div id="intro">
+        <h1 id="home" class="text-center">
+          Welcome to my BuildingU Projects Page
+        </h1>
+        <h3 class="fs-5 text-center">Discover my work on GitHub</h3>
+        <div class="text-center">
+          <a
+            role="button"
+            class="btn btn-primary"
+            href="https://github.com/buildingu/bu-learning/tree/t_tran"
+            >View my work</a
+          >
+        </div>
+      </div>
+      <div class="container" id="aboutme">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <h2 id="aboutme">About Me:</h2>
+            <p>
+              Hello, my name is Timothy Tran and I am an 11th grade student
+              passionate about web development, coding, and education. I
+              volunteer my skills to build amazing websites and write efficient
+              code that brings ideas to life. Throughout my journey, I have
+              explored various technologies and frameworks. My favorite is
+              Python, which is great for creating AI models or working with
+              data.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img id="tim" src="assets/pfp.jpg" alt="profile of Timothy Tran" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Portfolio-->
+    <div name="Portfolio">
+      <h2 id="Portfolio">My Portfolio</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="assets/HTML.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Project 1 - HTML</h5>
+              <p class="card-text">HTML Project with my customizations</p>
+              <a
+                class="btn btn-primary"
+                href="https://github.com/buildingu/bu-learning/tree/t_tran/Exercise%201"
+                role="button"
+                >Show More</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="assets/CSS.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Project 2 - CSS</h5>
+              <p class="card-text">CSS Project with my customizations</p>
+              <a
+                class="btn btn-primary"
+                href="https://github.com/buildingu/bu-learning/tree/t_tran/Exercise%202"
+                role="button"
+                >Show More</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="assets/Responsive Design.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Project 3 - Advanced CSS</h5>
+              <p class="card-text">
+                Advanced CSS with my special customizations
+              </p>
+              <a
+                class="btn btn-primary"
+                href="https://github.com/buildingu/bu-learning/tree/t_tran/Exercise%203"
+                role="button"
+                >Show More</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="assets/JS.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Project 5 - JS</h5>
+              <p class="card-text">JS Project - Form Validator</p>
+              <a
+                class="btn btn-primary"
+                href="https://github.com/buildingu/bu-learning/tree/t_tran/Exercise%205"
+                role="button"
+                >Show More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Form-->
+    <form id="inputform" class="was-validated">
+      <div class="form-group">
+        <h2>Contact Me</h2>
+        <label for="input_name" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control w-50"
+          id="input_name"
+          placeholder="James Fake"
+          required
+          is-valid
+        />
+        <div class="invalid-feedback">Please enter a name in the textbox</div>
+        <div class="valid-feedback">Looks good!</div>
+
+        <label for="input_email" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control w-50 is-valid"
+          id="input_email"
+          placeholder="fakeemail.com"
+          required
+          is-valid
+        />
+        <div class="invalid-feedback">
+          You must type an email before submitting.
+        </div>
+
+        <label for="input_message" class="form-label w-50">Message</label><br />
+        <textarea
+          id="input_message"
+          class="form-control w-25"
+          required
+          is-valid
+        >
+        </textarea>
+        <div class="invalid-feedback">
+          You must send a message before submitting.
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-success" id="submit">
+        Send Message
+      </button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <hr />
+    <footer>
+      <h3 id="footertxt">Made by Timothy Tran</h3>
+    </footer>
+  </body>
+</html>
