@@ -1,0 +1,284 @@
+/* desktop */
+@media screen and (min-width: 768px) {
+
+    body {
+        background-image: url("ex3bg.jpg");
+    }
+    
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        font-family: sans-serif;
+    }
+
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+
+    h3 {
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    } 
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+
+        align-content: center;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        font-family: sans-serif;
+
+        th {
+            padding-left: 40px;
+            padding-right:40px;
+            background-color: #292e4e;
+            border-style: solid;
+            border-width: 5px;
+            border-color: darkgray;
+        }
+        td {
+            padding-left: 40px;
+            padding-right:40px;
+            background-color: #2b4350;
+            border-style: solid;
+            border-width: 5px;
+            border-color: darkgray;
+            font-size: 10px;
+        }
+    }
+
+    .mobile-head {
+        display: none;
+    }
+
+    .mobile-other {
+        display: none;
+    }
+
+    form {
+        
+        text-align: center;
+        margin-left: 530px;
+        margin-right: 530px;
+        line-height: 2;
+        background-color: rgb(196, 196, 196);
+
+        border-style: solid;
+        border-width: 8px;
+        border-color: grey;
+        
+        font-size: 13px;
+        font-family: sans-serif;
+        font-style: italic;
+        font-weight: 600;
+        color: black;
+
+    }
+
+    input[type="text"] {
+        width: 300px;
+        height: 23px;
+    }
+
+    input[type="password"] {
+        width: 300px;
+        height: 23px;
+    }
+
+    input::placeholder {
+        text-align: center;
+    }
+
+    textarea::placeholder {
+        text-align: center;
+    }
+
+    select {
+        width: 300px;
+        height: 40px;
+        text-align: center;
+    }
+
+    textarea{
+        width: 300px;
+        height: 50px;
+    }
+
+    .button {
+        margin: 4px 2px;
+        padding: 10px 27px;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        color: white;
+    }
+
+    input[type="submit"]{
+        background-color: rgb(40, 191, 40);
+    }
+
+    input[type="reset"]{
+        background-color: crimson;
+    }
+}
+
+
+/* mobile */
+@media screen and (max-width: 767px) {
+    body {
+        background-image: url("ex3bg2.jpg");
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    h3 {
+        color: white;
+        text-align: center;
+        font-size: 15px;
+    } 
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        flex-direction: column;
+
+        align-content: center;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .desktop-table {
+        display:none;
+    }
+
+    .mobile-head {
+        th {
+            padding-left: 51px;
+            padding-right:51px;
+            background-color: #b7433d;
+            border-style: solid;
+            border-width: 5px;
+            border-color: darkgray;
+        }
+        td {
+            padding-left: 51px;
+            padding-right:51px;
+            background-color: #663743;
+            border-style: solid;
+            border-width: 5px;
+            border-color: darkgray;
+            font-size: 10px;
+        }
+    }
+
+    .mobile-other {
+        th {
+            padding-left: 40px;
+            padding-right:40px;
+            background-color: #b7433d;
+            border-style: solid;
+            border-width: 5px;
+            border-color: darkgray;
+        }
+        td {
+            padding-left: 40px;
+            padding-right:40px;
+            background-color: #663743;
+            border-style: solid;
+            border-width: 5px;
+            border-color: darkgray;
+            font-size: 10px;
+        }
+    }
+
+    form {
+        
+        text-align: center;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-left: 5px;
+        padding-right: 5px;
+        line-height: 2;
+        background-color: rgb(196, 196, 196);
+
+        border-style: solid;
+        border-width: 8px;
+        border-color: grey;
+        
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 600;
+        color: black;
+
+    }
+
+    input[type="text"] {
+        width: 200px;
+        height: 23px;
+    }
+
+    input[type="password"] {
+        width: 200px;
+        height: 23px;
+    }
+
+    input::placeholder {
+        text-align: center;
+    }
+
+    textarea::placeholder {
+        text-align: center;
+    }
+
+    select {
+        width: 200px;
+        height: 40px;
+        text-align: center;
+    }
+
+    textarea{
+        width: 200px;
+        height: 45px;
+    }
+
+    .button {
+        margin: 4px 2px;
+        padding: 10px 80px;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        color: white;
+
+        flex-direction: column;
+    }
+
+    input[type="submit"]{
+        background-color: rgb(40, 191, 40);
+    }
+
+    input[type="reset"]{
+        background-color: crimson;
+    }
+}
