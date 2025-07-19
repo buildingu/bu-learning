@@ -57,5 +57,3 @@ function formValidator(firstName,lastName,age,phoneNumber) {
         console.log("Welcome to the ADOS App.");
     }
 }
-
-formValidator("e","e",24,"123123123");
