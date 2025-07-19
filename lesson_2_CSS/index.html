@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goldwood High Sports Day 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">Goldwood High Sports Day</div>
+    <ul class="nav-links">
+        <li><a href="#teams">Teams</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#registration" class="register-btn">Register</a></li>
+    </ul>
+</nav>
+
+   <!-- Loader with Video + Spinner -->
+<div id="loader">
+    <video autoplay muted loop playsinline>
+        <source src="assets/Aqua_Inferno.mp4" type="video/mp4">
+    </video>
+    <div class="loader-overlay">
+        <div class="bt-spinner"></div>
+        <p class="loader-msg">Loading Sports Arena...</p>
+    </div>
+</div>
+
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="overlay">
+                <h1>Goldwood High Sports Day 2025</h1>
+                <h2>Team Aqua vs Team Inferno</h2>
+                <p>March 15, 2025 | Goldwood High Sports Complex</p>
+                <a href="#registration" class="btn-primary">Register Now</a>
+            </div>
+        </header>
+
+        <!-- Teams Section -->
+        <section class="teams">
+            <h2>Football Showdown</h2>
+            <div class="teams-container">
+                <a href="#football-aqua" class="team-card aqua">Team Aqua</a>
+                <div class="vs-text">VS</div>
+                <a href="#football-inferno" class="team-card inferno">Team Inferno</a>
+            </div>
+        </section>
+
+        <section class="teams">
+            <h2>Basketball Battle</h2>
+            <div class="teams-container">
+                <a href="#basketball-aqua" class="team-card aqua">Team Aqua</a>
+                <div class="vs-text">VS</div>
+                <a href="#basketball-inferno" class="team-card inferno">Team Inferno</a>
+            </div>
+        </section>
+
+      <!-- Highlights -->
+<section class="highlights" id="highlights">
+    <h2>Event Highlights</h2>
+    <div class="highlight-grid">
+        <a href="#video1" class="highlight">Football Finals</a>
+        <a href="#video2" class="highlight">Basketball Tournament</a>
+        <a href="#video3" class="highlight">Cheer Squad Performance</a>
+        <a href="#video4" class="highlight">Trophy Ceremony</a>
+    </div>
+
+    <!-- Video Sections -->
+    <div class="video-container" id="video1">
+        <h3>Watch Football Finals</h3>
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+        <a href="#highlights" class="close-btn">Close</a>
+    </div>
+
+    <div class="video-container" id="video2">
+        <h3>Watch Basketball Tournament</h3>
+        <video controls>
+            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        </video>
+        <a href="#highlights" class="close-btn">Close</a>
+    </div>
+
+    <div class="video-container" id="video3">
+        <h3>Watch Cheer Squad Performance</h3>
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+        <a href="#highlights" class="close-btn">Close</a>
+    </div>
+
+    <div class="video-container" id="video4">
+        <h3>Watch Trophy Ceremony</h3>
+        <video controls>
+            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        </video>
+        <a href="#highlights" class="close-btn">Close</a>
+    </div>
+</section>
+
+
+        <!-- Schedule -->
+        <section class="schedule">
+            <h2>Event Schedule</h2>
+            <div class="schedule-grid">
+                <div class="schedule-item"><strong>9:00 AM</strong> - Opening Ceremony</div>
+                <div class="schedule-item"><strong>10:30 AM</strong> - Football Match (Aqua vs Inferno)</div>
+                <div class="schedule-item"><strong>1:30 PM</strong> - Basketball Tournament</div>
+                <div class="schedule-item"><strong>4:00 PM</strong> - Prize Distribution</div>
+            </div>
+        </section>
+
+        <!-- Registration -->
+        <section class="forms" id="registration">
+            <h2>Register Now</h2>
+            <form class="form-card">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select>
+                    <option disabled selected>Select Team</option>
+                    <option>Football - Team Aqua</option>
+                    <option>Football - Team Inferno</option>
+                    <option>Basketball - Team Aqua</option>
+                    <option>Basketball - Team Inferno</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2025 Goldwood High | Contact: info@goldwoodhigh.edu</p>
+        </footer>
+    </div>
+</body>
+</html>
