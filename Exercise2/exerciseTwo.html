@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- normal site setup, title-->
+
+  <meta charset="UTF-8">
+  <title>School Debate Tournament</title>
+
+    <!-- css used to make each section of the site unique-->
+    <!-- i created different sections with classes so different styles can be used in various areas-->
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      color: #2e8b57;
+      border-bottom: 2px solid #2e8b57;
+      padding-bottom: 10px;
+    }
+
+    .event-info {
+      border: 2px dashed #4682b4;
+      padding: 20px;
+      margin-bottom: 30px;
+      background-color: #ffffff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th, td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .media {
+      margin-top: 30px;
+    }
+
+    .form-section {
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<!-- beginning of body and header of page-->
+
+<body>
+
+<header>
+  <h1>Annual School Debate Tournament</h1>
+  <img src="debate logo.webp" alt="Debate Logo" width="150">
+</header>
+
+<!-- Event details/description -->
+
+<section class="event-info">
+  <h2>Event Details</h2>
+  <p>Join us for Meridian's annual school debate tournament! Anyone and everyone is welcome so come, try your best, and have a great time. The debate will be hosted from 10:30 AM to 4:30 PM on July 19th, 2025 (7/19/25).</p>
+  <br>
+  <p>The event is being hosted on Meridian World School's campus in the Mays Building Cafeteria. Here, we will have debate brackets with each contestant matched up against another in a classic bracket format. The winner of the event gets a $100 prize!</p>
+  
+<!-- Table for all the information for the debate tournament event -->
+
+  <table>
+    <tr>
+      <th>Location</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Invited</th>
+    </tr>
+    <tr>
+      <td>Meridian Mays Cafeteria</td>
+      <td>July 19th, 2025</td>
+      <td>10:30 AM - 4:30 PM</td>
+      <td>All Students, Parents, and Friends</td>
+    </tr>
+  </table>
+
+<!-- Contact information section with email contact -->
+
+  <p>Contact us: debateclub@mwschool.org</p>
+  <p>Don't be afraid to reach out if you have any comments, questions, or concerns!</p>
+  <br>
+  <p>Also find us on the school webpage <a href="https://mwschool.org">here</a>!</p>
+</section>
+
+<!-- debate tips given in both audio and video formats with different files each -->
+
+<section class="media">
+  <h2>Listen to Last Year's Highlights</h2>
+  <audio controls>
+    <source src="debateAudioTips.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h2>Watch a video to help you get a start in debate!</h2>
+  <video width="320" height="240" controls>
+    <source src="debateTips.mp4" type="video/mp4">
+    Your browser does not support the video.
+  </video>
+</section>
+
+<!-- creating a form to get the guest contact information such as name, grade, and email so they can attend the debate tournament -->
+
+<section class="form-section">
+  <h2>Sign Up to Attend</h2>
+  <form action="#" method="POST">
+    <label for="name">Name:</label><br>
+    <input type="text" placeholder="John Doe" id="name" name="name" required ><br><br>
+
+    <label for="grade">Grade:</label><br>
+    <input type="text" placeholder="10th" id="grade" name="grade"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" placeholder="johndoe@fakemail.com" id="email" name="email" required><br><br>
+
+    <input type="submit">
+  </form>
+</section>
+
+</html>
