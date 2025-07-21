@@ -1,0 +1,92 @@
+/* Desktop Styles */
+@media screen and (min-width: 400px) {
+    body {
+        background-color: rgb(246, 234, 219);
+        max-height: 200vh;
+    }
+    hr {
+        border: 1px solid rgb(202, 182, 157);
+    }
+    header {
+        text-align: center;
+        font-size: 20pt;
+        font-family: Alte Haas Grotesk;
+        color: rgb(119, 102, 81);
+    }
+    h2 {
+        text-align: center;
+    }
+    .colorPicker {
+        font-family: Alte Haas Grotesk;
+        background-color: rgb(119, 102, 81);
+        padding: 20px;
+        color: rgb(95, 82, 67);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button {
+        justify-content: center;
+        align-items: center;
+        font-family: Alte Haas Grotesk;
+        background-color: rgb(124, 108, 89);
+        border: 1px solid rgb(97, 84, 67);
+        color: rgb(86, 74, 64);
+        padding: 10px;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 400px) {
+body {
+        background-color: rgb(246, 234, 219);
+        height: 120vh;
+    }
+    hr {
+        border: 1px solid rgb(202, 182, 157);
+    }
+    header {
+        text-align: center;
+        font-size: 20pt;
+        font-family: Alte Haas Grotesk;
+        color: rgb(119, 102, 81);
+    }
+    h2 {
+        text-align: center;
+    }
+    .colorPicker {
+        width: 80%;
+        font-family: Alte Haas Grotesk;
+        background-color: rgb(119, 102, 81);
+        padding: 20px;
+        color: rgb(95, 82, 67);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 75vh;
+        max-width: 300px;
+        margin: auto;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button {
+        justify-content: center;
+        align-items: center;
+        font-family: Alte Haas Grotesk;
+        background-color: rgb(124, 108, 89);
+        border: 1px solid rgb(97, 84, 67);
+        color: rgb(86, 74, 64);
+        padding: 10px;
+    }
+}
