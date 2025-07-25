@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 by Arjun Mijar</title>
+    <link rel="stylesheet" href="exercise3.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Exercise 3 by Arjun Mijar</h1>
+            <p class="date">Date submitted: 07/25/2025</p>
+        </header>
+
+        <section class="fun-facts">
+            <h2>Fun facts about me:</h2>
+            <div class="profile-grid">
+                <div class="profile-item">
+                    <h3>First Name</h3>
+                    <p>Arjun</p>
+                </div>
+                <div class="profile-item">
+                    <h3>Last Name</h3>
+                    <p>Mijar</p>
+                </div>
+                <div class="profile-item">
+                    <h3>Favorite Movie</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Captain_America_Civil_War_poster.jpg" alt="Raiders of the Lost Ark" class="movie-poster">
+                </div>
+                <div class="profile-item">
+                    <h3>Favorite Song</h3>
+                    <div class="audio-player">
+                        <audio controls>
+                            <source src="future-design-344320.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <div class="profile-item">
+                    <h3>Favorite Video</h3>
+                    <div class="video-player">
+                        <video width="320" height="240" controls>
+                            <source src="babydog.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Enter your details below:</h2>
+            <form>
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="•••••">
+                </div>
+
+                <div class="form-group">
+                    <label>Available Meeting Days:</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="monday" name="days" value="monday">
+                            <label for="monday">Monday</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="tuesday" name="days" value="tuesday">
+                            <label for="tuesday">Tuesday</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="wednesday" name="days" value="wednesday">
+                            <label for="wednesday">Wednesday</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="thursday" name="days" value="thursday">
+                            <label for="thursday">Thursday</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="friday" name="days" value="friday">
+                            <label for="friday">Friday</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="saturday" name="days" value="saturday">
+                            <label for="saturday">Saturday</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sunday" name="days" value="sunday">
+                            <label for="sunday">Sunday</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Available Time:</label>
+                    <select id="time" name="time">
+                        <option>Morning (9am to 12pm)</option>
+                        <option>Afternoon (12pm to 5pm)</option>
+                        <option>Evening (5pm to 9pm)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Currently working on a new website?</label>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="yes" name="website" value="yes">
+                            <label for="yes">Yes</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="no" name="website" value="no">
+                            <label for="no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="pages">If yes, please enter which page(s) you are working on</label>
+                    <textarea id="pages" name="pages" rows="3" placeholder="Enter your comments here"></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="btn btn-submit">Submit</button>
+                    <button type="reset" class="btn btn-reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
