@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 3: Advanced CSS</title>
+  <link rel="stylesheet" href="style_exercise3.css" />
+</head>
+
+<body>
+  <header>
+    <h2>Exercise 3 by Avitel Gaidukova</h2>
+    <h5>Date submitted: 25/07/2025</h5>
+  </header>
+
+  <hr />
+
+  <h4>Fun facts about me:</h4>
+
+  <!-- Desktop Table -->
+  <table class="c">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Favorite Movie</th>
+      <th>Favorite Song</th>
+      <th>Favorite Video</th>
+    </tr>
+    <tr>
+      <td class="textandimage">Avitel</td>
+      <td class="textandimage">Gaidukova</td>
+      <td>
+        <img src="Assets/homealone.webp" alt="Home Alone Poster" class="textandimage" />
+      </td>
+      <td>
+        <h6>Click play to play music:</h6>
+        <audio controls>
+          <source src="Assets/rick_roll.mp3" type="audio/mpeg" />
+        </audio>
+      </td>
+      <td>
+        <video controls width="200">
+          <source src="Assets/marvel_studios.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Mobile Table -->
+  <table class="m">
+    <tr>
+      <th style="border-top:0px;">First Name</th>
+      <th class="right" style="border-top:0px;">Last Name</th>
+    </tr>
+    <tr>
+      <td>Avitel</td>
+      <td class="right">Gaidukova</td>
+    </tr>
+    <tr>
+      <th colspan="2" style="border-right:0px;">Favorite Movie</th>
+    </tr>
+    <tr>
+      <td colspan="2" style="border-right:0px;">
+        <img src="Assets/homealone.webp" alt="Home Alone Poster" class="textandimage" />
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2" style="border-right:0px;">Favorite Song</th>
+    </tr>
+    <tr>
+      <td colspan="2" style="border-right:0px;">
+        <h6>Click play to play music:</h6>
+        <audio controls>
+          <source src="Assets/rick_roll.mp3" type="audio/mpeg" />
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2" style="border-right:0px;">Favorite Video</th>
+    </tr>
+    <tr>
+      <td colspan="2" style="border-right:0px;">
+        <video controls width="200">
+          <source src="Assets/marvel_studios.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </td>
+    </tr>
+  </table>
+
+  <hr />
+
+  <h4>Enter your details below:</h4>
+  <div id="details">
+    <form>
+      <br />
+      <label><i>Full Name</i></label><br />
+      <input type="text" name="name" placeholder="John Doe" required /><br /><br />
+
+      <label><i>Email Address</i></label><br />
+      <input type="text" name="email" placeholder="jdoe@fakeemail.com" required /><br /><br />
+
+      <label><i>Password</i></label><br />
+      <input type="password" name="pw" placeholder="•••••" required /><br /><br />
+
+      <label><i>Available Meeting Days:</i></label><br />
+      <label><input type="checkbox" name="days" value="Monday" /> Monday</label>
+      <label><input type="checkbox" name="days" value="Tuesday" /> Tuesday</label>
+      <label><input type="checkbox" name="days" value="Wednesday" /> Wednesday</label>
+      <label><input type="checkbox" name="days" value="Thursday" /> Thursday</label>
+      <label><input type="checkbox" name="days" value="Friday" /> Friday</label><br />
+      <label><input type="checkbox" name="days" value="Saturday" /> Saturday</label>
+      <label><input type="checkbox" name="days" value="Sunday" /> Sunday</label><br /><br />
+
+      <label><i>Available Time:</i></label><br />
+      <select name="features" id="features">
+        <option value="morning">Morning (5am to 12pm)</option>
+        <option value="afternoon">Afternoon (12pm to 4pm)</option>
+        <option value="evening">Evening (4pm to 9pm)</option>
+        <option value="night">Night (9pm to 5am)</option>
+      </select><br /><br />
+
+      <label><i>Currently Working on a New Website?</i></label><br />
+      <label><input type="radio" name="website" value="yes" checked /> Yes</label>
+      <label><input type="radio" name="website" value="no" /> No</label><br /><br />
+
+      <label id="comment"><i>If yes, please enter which page(s) you are working on</i></label><br />
+      <textarea cols="50" rows="2" placeholder="Enter your comments here"></textarea><br /><br />
+
+      <input type="submit" value="Submit" /><br class="m" /><br class="m" />
+      <input type="reset" value="Reset" /><br /><br />
+    </form>
+  </div>
+
+  <br />
+
+  <footer id="desktop" class="c">
+    <p>Desktop Version®</p>
+  </footer>
+
+  <footer id="mobile" class="m">
+    <p>Mobile Version®</p>
+  </footer>
+</body>
+</html>
