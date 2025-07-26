@@ -4,7 +4,7 @@
     <title>Exercise 1: HTML</title>
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
+    </head>
   <body>
     <h1>Exercise 3 by Anika Dureja</h1>
     <h2>Date submitted: 07/02/2025</h2>
@@ -25,14 +25,10 @@
           <td data-label="First Name">Anika</td>
           <td data-label="Last Name">Dureja</td>
           <td data-label="Favorite Movie Image">
-            <a>
-              <img
-                src="https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b2/Morris_%28Dijiang%29.png/revision/latest?cb=20231021023725"
-                alt="Morris"
-                width="175"
-                height="200"
-              />
-            </a>
+            <img
+              src="https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b2/Morris_%28Dijiang%29.png/revision/latest?cb=20231021023725"
+              alt="Morris"
+            />
           </td>
           <td data-label="Favorite Music Audio Sample">
             <p>Click to play audio</p>
@@ -44,7 +40,7 @@
             </audio>
           </td>
           <td data-label="Favorite Video Sample">
-            <video width="320" height="240" controls>
+            <video controls>
               <source
                 src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
                 type="video/mp4"
@@ -81,55 +77,57 @@
       </p>
       <p>
         <label>Available Meeting Days:</label><br />
-        <input
-          type="checkbox"
-          id="monday"
-          name="availableDays"
-          value="monday"
-        />
-        <label for="monday">Monday</label>
-        <input
-          type="checkbox"
-          id="tuesday"
-          name="availableDays"
-          value="tuesday"
-        />
-        <label for="tuesday">Tuesday</label>
-        <input
-          type="checkbox"
-          id="wednesday"
-          name="availableDays"
-          value="wednesday"
-        />
-        <label for="wednesday">Wednesday</label>
-        <input
-          type="checkbox"
-          id="thursday"
-          name="availableDays"
-          value="thursday"
-        />
-        <label for="thursday">Thursday</label>
-        <input
-          type="checkbox"
-          id="friday"
-          name="availableDays"
-          value="friday"
-        />
-        <label for="friday">Friday</label>
-        <input
-          type="checkbox"
-          id="saturday"
-          name="availableDays"
-          value="saturday"
-        />
-        <label for="saturday">Saturday</label>
-        <input
-          type="checkbox"
-          id="sunday"
-          name="availableDays"
-          value="sunday"
-        />
-        <label for="sunday">Sunday</label>
+        <div class="checkbox-group">
+          <input
+            type="checkbox"
+            id="monday"
+            name="availableDays"
+            value="monday"
+          />
+          <label for="monday">Monday</label>
+          <input
+            type="checkbox"
+            id="tuesday"
+            name="availableDays"
+            value="tuesday"
+          />
+          <label for="tuesday">Tuesday</label>
+          <input
+            type="checkbox"
+            id="wednesday"
+            name="availableDays"
+            value="wednesday"
+          />
+          <label for="wednesday">Wednesday</label>
+          <input
+            type="checkbox"
+            id="thursday"
+            name="availableDays"
+            value="thursday"
+          />
+          <label for="thursday">Thursday</label>
+          <input
+            type="checkbox"
+            id="friday"
+            name="availableDays"
+            value="friday"
+          />
+          <label for="friday">Friday</label>
+          <input
+            type="checkbox"
+            id="saturday"
+            name="availableDays"
+            value="saturday"
+          />
+          <label for="saturday">Saturday</label>
+          <input
+            type="checkbox"
+            id="sunday"
+            name="availableDays"
+            value="sunday"
+          />
+          <label for="sunday">Sunday</label>
+        </div>
       </p>
       <p>
         <label for="availableTime">Available Time:</label><br />
@@ -141,16 +139,18 @@
       </p>
       <p>
         <label>Currently working on a new website?:</label><br />
-        <input
-          type="radio"
-          id="yesNewWebsite"
-          name="newWebsite"
-          value="yes"
-          checked
-        />
-        <label for="yesNewWebsite">Yes</label>
-        <input type="radio" id="noNewWebsite" name="newWebsite" value="no" />
-        <label for="noNewWebsite">No</label>
+        <div class="radio-group">
+          <input
+            type="radio"
+            id="yesNewWebsite"
+            name="newWebsite"
+            value="yes"
+            checked
+          />
+          <label for="yesNewWebsite">Yes</label>
+          <input type="radio" id="noNewWebsite" name="newWebsite" value="no" />
+          <label for="noNewWebsite">No</label>
+        </div>
       </p>
       <p>
         <label for="comments">Comments:</label><br />
@@ -162,10 +162,13 @@
           placeholder="Enter your comments here..."
         ></textarea>
       </p>
-      <p>
+      <p class="button-group">
         <input type="submit" value="Submit" />
         <input type="reset" value="Reset" />
       </p>
     </form>
+    <footer>
+      <p>&copy; 2025 Anika Dureja. All rights reserved.</p>
+    </footer>
   </body>
 </html>

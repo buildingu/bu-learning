@@ -1,0 +1,319 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  background-color: #f4f4f4;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: #22b244;
+}
+
+hr {
+  border: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+  vertical-align: middle; 
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+
+table td img,
+table td video,
+table td audio {
+  display: block; 
+  max-width: 100%; 
+  height: auto; 
+  margin: 0 auto; 
+}
+
+table td p {
+  text-align: center; 
+}
+
+
+form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto; 
+  border: 1px solid #ccc; 
+}
+
+form p {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select,
+form textarea {
+  width: calc(100% - 16px);
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+.checkbox-group,
+.radio-group {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.checkbox-group input[type="checkbox"],
+.radio-group input[type="radio"] {
+  margin-right: 0; 
+  vertical-align: middle;
+}
+
+.checkbox-group label,
+.radio-group label {
+  display: inline-block; 
+  margin-bottom: 0; 
+  font-weight: normal; 
+  margin-right: 10px;
+}
+
+
+.checkbox-group input[type="checkbox"] + label,
+.radio-group input[type="radio"] + label {
+  margin-left: -3px; 
+}
+
+
+.button-group {
+  text-align: center; 
+  margin-top: 20px;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px; 
+  border: 1px solid #0056b3; 
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 5px; 
+  transition: background-color 0.3s ease, border-color 0.3s ease; 
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+form
+  input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not(
+    [type="reset"]
+  ) {
+  border: 2px solid #a0a0a0;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; 
+  background-color: #333;
+  color: white;
+  font-size: 0.9em;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("background-desktop.jpg");
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  table {
+    max-width: 90%;
+    margin: 0 auto 20px auto;
+  }
+
+
+  table td img,
+  table td video,
+  table td audio {
+    max-width: 175px; 
+    height: auto;
+  }
+  table td video {
+    width: 320px; 
+    height: auto;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  body {
+    padding: 10px;
+    background-image: url("background-mobile.jpg");
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  table,
+  form {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+
+  table thead {
+    display: none;
+  }
+
+  table,
+  table tbody,
+  table tr,
+  table td {
+    display: block;
+  }
+
+  table tr {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-end; 
+    min-height: 50px; 
+  }
+
+  table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+    align-self: flex-start; 
+  }
+
+  
+  table td img,
+  table td video,
+  table td audio {
+    margin: 0 auto; 
+    width: auto; 
+    height: auto;
+    max-width: 100%; 
+  }
+
+
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"],
+  form select,
+  form textarea {
+    width: 100%;
+  }
+
+  
+  .checkbox-group,
+  .radio-group {
+    flex-direction: column; 
+    gap: 5px; 
+  }
+
+  
+  .checkbox-group label,
+  .radio-group label {
+    width: auto; 
+    display: block; 
+    margin-right: 0;
+
+  .checkbox-group input[type="checkbox"],
+  .radio-group input[type="radio"] {
+    margin-right: 5px; 
+    vertical-align: middle;
+  }
+
+  .button-group {
+    text-align: center;
+  }
+}
