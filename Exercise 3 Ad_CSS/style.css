@@ -1,0 +1,105 @@
+/* Global Styles */
+:root {
+    --text-color: white;
+    --header-bg: rgba(0, 0, 0, 0.6);
+    --border-color: #ccc;
+    --form-bg: rgba(255,255,255,0.9);
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+}
+
+/* Header */
+header {
+    background-color: var(--header-bg);
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+/* Table Common */
+.table-container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+}
+th {
+    background-color: #333;
+    color: #fff;
+}
+td img, td video {
+    width: 100px;
+    border-radius: 5px;
+}
+audio { width: 150px; }
+
+/* Form */
+form {
+    background: var(--form-bg);
+    color: black;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+form input, form select, form textarea {
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px;
+}
+form button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+#mobile-footer { display: none; }
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    body {
+        background-image: url('Resources-Assets/background-mobile.jpg');
+    }
+    #desktop-table { display: none; }
+    #mobile-table { display: block; }
+    #desktop-footer { display: none; }
+    #mobile-footer { display: block; }
+}
+@media (min-width: 769px) {
+    body {
+        background-image: url('Resources-Assets/background-desktop.jpg');
+    }
+    #desktop-table { display: block; }
+    #mobile-table { display: none; }
+}

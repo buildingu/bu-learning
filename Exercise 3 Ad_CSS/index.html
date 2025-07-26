@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 by J Santosh Raj</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Exercise 3 by J Santosh Raj</h1>
+        <p>Date Submitted: 20/07/2025</p>
+    </header>
+
+    <!-- Desktop Table -->
+    <div class="table-container" id="desktop-table">
+        <h2>Fun Facts About Me:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Favorite Movie</th>
+                    <th>Favorite Song</th>
+                    <th>Favorite Video</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>J.Santosh</td>
+                    <td>Raj</td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg" alt="Interstellar">
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="Resources-Assets/rick_roll.mp3" type="audio/mpeg">
+                        </audio>
+                    </td>
+                    <td>
+                        <video controls width="200">
+                            <source src="Resources-Assets/marvel_studios.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Mobile Table -->
+    <div class="table-container" id="mobile-table">
+        <h2>Fun Facts About Me:</h2>
+        <table>
+            <tr><th>First Name</th><td>J.Santosh</td></tr>
+            <tr><th>Last Name</th><td>Raj</td></tr>
+            <tr><th>Favorite Movie</th>
+                <td><img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg" alt="Interstellar"></td>
+            </tr>
+            <tr><th>Favorite Song</th>
+                <td><audio controls><source src="Resources-Assets/rick_roll.mp3" type="audio/mpeg"></audio></td>
+            </tr>
+            <tr><th>Favorite Video</th>
+                <td><video controls width="180"><source src="Resources-Assets/marvel_studios.mp4" type="video/mp4"></video></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Form -->
+    <h2>Enter your details below:</h2>
+    <form>
+        <label>Full Name: <input type="text" placeholder="Enter full name"></label><br>
+        <label>Email: <input type="email" placeholder="Enter email"></label><br>
+        <label>Password: <input type="password" placeholder="Enter password"></label><br>
+        <p>Available Meeting Days:</p>
+        <label><input type="checkbox">Mon</label>
+        <label><input type="checkbox">Tue</label>
+        <label><input type="checkbox">Wed</label>
+        <label><input type="checkbox">Thu</label>
+        <label><input type="checkbox">Fri</label>
+        <label><input type="checkbox">Sat</label>
+        <label><input type="checkbox">Sun</label><br>
+        <p>Available Time:
+            <select>
+                <option>Morning (8am - 12pm)</option>
+                <option>Afternoon (12pm - 4pm)</option>
+                <option>Evening (4pm - 8pm)</option>
+            </select>
+        </p>
+        <p>
+            Currently working on a new website?
+            <label><input type="radio" name="work" checked> Yes</label>
+            <label><input type="radio" name="work"> No</label>
+        </p>
+        <textarea placeholder="Enter comments here" rows="3"></textarea><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+        <p id="desktop-footer">Desktop Version © 2025</p>
+        <p id="mobile-footer">Mobile Version © 2025</p>
+    </footer>
+</body>
+</html>
