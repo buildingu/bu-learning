@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AB High School Debate Tournament 2025</title>
+  <style>
+    /* Background, Font, and Box Model */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f9f9ff, #e0f7fa);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 2px solid #00acc1;
+      border-radius: 10px;
+    }
+
+    h1, h2 {
+      color: #00796b;
+      text-align: center;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border: 3px solid #00796b;
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #b2ebf2;
+    }
+
+    a {
+      color: #00796b;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .media {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    form {
+      margin-top: 30px;
+      padding: 15px;
+      border: 2px dashed #00acc1;
+      border-radius: 8px;
+      background-color: #f1f1f1;
+    }
+
+    input, textarea {
+      margin: 8px 0;
+      padding: 8px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+
+    input[type="submit"] {
+      background-color: #00acc1;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #007c91;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎤 AB High School Debate Tournament 2025</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Debate_Icon.svg/1200px-Debate_Icon.svg.png" alt="Debate Icon">
+    
+    <h2>Event Overview</h2>
+    <p>
+      Welcome to the annual Debate Tournament hosted by Acton-Boxborough Regional High School! Join us for a day of sharp arguments, critical thinking, and teamwork as students from around the district showcase their debating skills.
+    </p>
+
+    <h2>Event Details</h2>
+    <table>
+      <tr>
+        <th>Location</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Guests</th>
+      </tr>
+      <tr>
+        <td>ABRHS Auditorium</td>
+        <td>September 28, 2025</td>
+        <td>10:00 AM – 4:00 PM</td>
+        <td>All students, families & teachers welcome!</td>
+      </tr>
+    </table>
+
+    <h2>Media Highlights</h2>
+    <div class="media">
+      <p>Check out this video from last year’s debate finals:</p>
+      <video width="320" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <p>Theme song of the tournament:</p>
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="question">Any Questions?</label>
+      <textarea id="question" name="question" rows="4"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <p class="footer">
+      Visit our official page: <a href="https://www.abrhs.org" target="_blank">www.abrhs.org</a>
+    </p>
+  </div>
+</body>
+</html>
