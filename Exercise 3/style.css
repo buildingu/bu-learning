@@ -2,67 +2,135 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
     sans-serif;
   margin: 0;
-  padding: 20px;
-  color: #333;
-  background-color: #f4f4f4;
+  padding: 0;
+  color: #fff;
+  background-color: #000;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+table,
+form {
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
 }
 
 h1,
 h2,
 h3 {
   text-align: center;
-  color: #22b244;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 hr {
-  border: 1px solid #ddd;
-  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #666;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
 }
 
 table {
-  width: 100%;
+  width: 90%;
+  max-width: 900px;
   border-collapse: collapse;
-  margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  background-color: rgba(26, 26, 26, 0.9);
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.4), 0 0 30px rgba(0, 191, 255, 0.2);
+  border: 5px solid #00bfff;
+  color: #fff;
 }
 
 table th,
 table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+  border: 5px solid #444;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 table th {
-  background-color: #007bff;
-  color: white;
+  background-color: #1a1a1a;
+  color: #00bfff;
+  font-weight: bold;
 }
 
 table tbody tr:nth-child(odd) {
-  background-color: #f9f9f9;
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
+table td img,
+table td video,
+table td audio {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #555;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+table td audio {
+  display: block;
+  max-width: 250px;
+}
+
+table td video {
+  max-width: 320px;
+}
+
+table td p {
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 form {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 0 auto;
+  background-color: rgba(26, 26, 26, 0.9);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.4), 0 0 30px rgba(0, 191, 255, 0.2);
+  max-width: 450px;
+  margin: 20px auto;
+  border: 5px solid #00bfff;
+  color: #fff;
 }
 
 form p {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+  display: inline-flex;
+  margin-bottom: 8px;
+  font-weight: normal;
+  color: #00bfff;
+  font-size: 0.9em;
 }
 
 form input[type="text"],
@@ -70,62 +138,168 @@ form input[type="email"],
 form input[type="password"],
 form select,
 form textarea {
-  width: calc(100% - 16px);
-  padding: 8px;
-  border: 1px solid #ddd;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #666;
   border-radius: 4px;
   box-sizing: border-box;
+  background-color: #333;
+  color: #fff;
+  outline: none;
 }
 
-form input[type="checkbox"],
-form input[type="radio"] {
-  margin-right: 5px;
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder,
+form input[type="password"]::placeholder,
+form textarea::placeholder {
+  color: #aaa;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #00bfff;
+  box-shadow: 0 0 8px rgba(0, 191, 255, 0.6);
+}
+
+.checkbox-group,
+.radio-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.checkbox-group input[type="checkbox"],
+.radio-group input[type="radio"] {
+  margin-right: 0;
+  vertical-align: middle;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #00bfff;
+  border-radius: 5px;
+  background-color: #333;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.checkbox-group input[type="checkbox"]:checked,
+.radio-group input[type="radio"]:checked {
+  background-color: #00bfff;
+  border-color: #00bfff;
+}
+
+.checkbox-group input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.radio-group input[type="radio"] {
+  border-radius: 50%;
+}
+
+.radio-group input[type="radio"]:checked::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox-group label,
+.radio-group label {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0;
+  font-weight: normal;
+  color: #fff;
+  font-size: 1em;
+}
+
+.button-group {
+  text-align: center;
+  margin-top: 30px;
 }
 
 form input[type="submit"],
 form input[type="reset"] {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 15px;
+  width: 100%;
+  padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
-  margin-right: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-form input[type="submit"]:hover,
+form input[type="submit"] {
+  background-color: #22b244;
+}
+
+form input[type="reset"] {
+  background-color: #dc3545;
+}
+
+form input[type="submit"]:hover {
+  background-color: #1e9a3b;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
 form input[type="reset"]:hover {
-  background-color: #0056b3;
+  background-color: #c82333;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
-form
-  input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not(
-    [type="reset"]
-  ) {
-  border: 2px solid #a0a0a0;
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+  background-color: #1a1a1a;
+  color: #00bfff;
+  font-size: 0.9em;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: bold;
+  border-top: 1px solid #00bfff;
+}
+
+.mobile-footer {
+  display: none;
+}
+.desktop-footer {
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
   body {
     background-image: url("background-desktop.jpg");
+    background-size: cover;
+    background-attachment: fixed;
   }
 
-  h1 {
-    font-size: 2.5em;
+  .desktop-footer {
+    display: block;
   }
-
-  h2 {
-    font-size: 1.8em;
-  }
-
-  h3 {
-    font-size: 1.5em;
-  }
-
-  table {
-    max-width: 90%;
-    margin: 0 auto 20px auto;
+  .mobile-footer {
+    display: none;
   }
 }
 
@@ -133,23 +307,24 @@ form
   body {
     padding: 10px;
     background-image: url("background-mobile.jpg");
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   h1 {
     font-size: 1.8em;
   }
-
   h2 {
     font-size: 1.4em;
   }
-
   h3 {
     font-size: 1.2em;
   }
 
   table,
   form {
-    width: 100%;
+    width: 95%;
+    margin: 15px auto;
     box-sizing: border-box;
   }
 
@@ -166,25 +341,50 @@ form
 
   table tr {
     margin-bottom: 10px;
-    border: 1px solid #ddd;
-    background-color: rgba(255, 255, 255, 0.9);
+    border: 5px solid #444;
+    background-color: rgba(26, 26, 26, 0.9);
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.3);
   }
 
   table td {
     text-align: right;
     padding-left: 50%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 50px;
   }
 
   table td::before {
     content: attr(data-label);
     position: absolute;
-    left: 6px;
+    left: 10px;
     width: 45%;
     padding-right: 10px;
     white-space: nowrap;
     text-align: left;
     font-weight: bold;
+    align-self: flex-start;
+    color: #00bfff;
+    font-size: 0.9em;
+  }
+
+  table td img,
+  table td video {
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+
+  table td audio {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 40px;
+    max-width: 100%;
   }
 
   form input[type="text"],
@@ -193,5 +393,32 @@ form
   form select,
   form textarea {
     width: 100%;
+  }
+
+  .checkbox-group,
+  .radio-group {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .checkbox-group label,
+  .radio-group label {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .checkbox-group input[type="checkbox"],
+  .radio-group input[type="radio"] {
+    margin-right: 8px;
+  }
+
+  .desktop-footer {
+    display: none;
+  }
+  .mobile-footer {
+    display: block;
   }
 }

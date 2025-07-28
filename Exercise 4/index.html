@@ -1,174 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Exercise 1: HTML</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
+    <title>BuildingU Learning Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
   <body>
-    <h1>Exercise 3 by Anika Dureja</h1>
-    <h2>Date submitted: 07/02/2025</h2>
-    <hr />
-    <h3>Fun facts about me:</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Favorite Movie Image</th>
-          <th>Favorite Music Audio Sample</th>
-          <th>Favorite Video Sample</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="First Name">Anika</td>
-          <td data-label="Last Name">Dureja</td>
-          <td data-label="Favorite Movie Image">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="buildingu_logo.png"
+            alt="BuildingU Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+          />
+          BuildingU
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="hero-section text-center py-5">
+      <div class="container">
+        <h1 class="display-4">Welcome to My BuildingU Learning Portfolio</h1>
+        <p class="lead">
+          A brief introduction about yourself and your learning journey at
+          BuildingU.
+        </p>
+        <a href="#portfolio" class="btn btn-primary btn-lg">View My Work</a>
+      </div>
+    </section>
+
+    <section id="about" class="about-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center">
             <img
-              src="https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b2/Morris_%28Dijiang%29.png/revision/latest?cb=20231021023725"
-              alt="Morris"
+              src="profile_image.jpg"
+              alt="Profile Image"
+              class="img-fluid rounded-circle mb-3"
+              style="width: 150px; height: 150px; object-fit: cover"
             />
-          </td>
-          <td data-label="Favorite Music Audio Sample">
-            <p>Click to play audio</p>
-            <audio controls>
-              <source
-                src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"
-                type="audio/mpeg"
-              />
-            </audio>
-          </td>
-          <td data-label="Favorite Video Sample">
-            <video controls>
-              <source
-                src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <hr />
-    <h3>Enter your details below:</h3>
-    <form>
-      <p>
-        <label for="fullName">Full Name:</label><br />
-        <input
-          type="text"
-          id="fullName"
-          name="fullName"
-          placeholder="Enter your full name"
-        />
-      </p>
-      <p>
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" placeholder="Email" />
-      </p>
-      <p>
-        <label for="password">Password:</label><br />
-        <input
-          type="password"
-          id="password"
-          name="password"
-          placeholder="Password"
-        />
-      </p>
-      <p>
-        <label>Available Meeting Days:</label><br />
-        <div class="checkbox-group">
-          <input
-            type="checkbox"
-            id="monday"
-            name="availableDays"
-            value="monday"
-          />
-          <label for="monday">Monday</label>
-          <input
-            type="checkbox"
-            id="tuesday"
-            name="availableDays"
-            value="tuesday"
-          />
-          <label for="tuesday">Tuesday</label>
-          <input
-            type="checkbox"
-            id="wednesday"
-            name="availableDays"
-            value="wednesday"
-          />
-          <label for="wednesday">Wednesday</label>
-          <input
-            type="checkbox"
-            id="thursday"
-            name="availableDays"
-            value="thursday"
-          />
-          <label for="thursday">Thursday</label>
-          <input
-            type="checkbox"
-            id="friday"
-            name="availableDays"
-            value="friday"
-          />
-          <label for="friday">Friday</label>
-          <input
-            type="checkbox"
-            id="saturday"
-            name="availableDays"
-            value="saturday"
-          />
-          <label for="saturday">Saturday</label>
-          <input
-            type="checkbox"
-            id="sunday"
-            name="availableDays"
-            value="sunday"
-          />
-          <label for="sunday">Sunday</label>
+          </div>
+          <div class="col-md-8">
+            <p>
+              This is where you'll write a short bio about yourself. Talk about
+              your interests, your goals, and what you've learned at BuildingU.
+            </p>
+            <ul>
+              <li>Key Skill 1: Web Development</li>
+              <li>Key Skill 2: UI/UX Design</li>
+              <li>Achievement: Completed Bootstrap Module</li>
+            </ul>
+          </div>
         </div>
-      </p>
-      <p>
-        <label for="availableTime">Available Time:</label><br />
-        <select id="availableTime" name="availableTime">
-          <option value="morning">Morning (9am to 12pm)</option>
-          <option value="afternoon">Afternoon (12pm to 5pm)</option>
-          <option value="evening">Evening (5pm to 9pm)</option>
-        </select>
-      </p>
-      <p>
-        <label>Currently working on a new website?:</label><br />
-        <div class="radio-group">
-          <input
-            type="radio"
-            id="yesNewWebsite"
-            name="newWebsite"
-            value="yes"
-            checked
-          />
-          <label for="yesNewWebsite">Yes</label>
-          <input type="radio" id="noNewWebsite" name="newWebsite" value="no" />
-          <label for="noNewWebsite">No</label>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">My Projects</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="project1.jpg"
+                class="card-img-top"
+                alt="Project 1 Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project Title 1</h5>
+                <p class="card-text">
+                  A brief description of your first project. Highlight what you
+                  learned and achieved.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectModal1"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="project2.jpg"
+                class="card-img-top"
+                alt="Project 2 Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project Title 2</h5>
+                <p class="card-text">
+                  A brief description of your second project. Explain its
+                  purpose and your role.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectModal2"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="project3.jpg"
+                class="card-img-top"
+                alt="Project 3 Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project Title 3</h5>
+                <p class="card-text">
+                  A brief description of your third project. Mention any
+                  challenges and how you overcame them.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectModal3"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </p>
-      <p>
-        <label for="comments">Comments:</label><br />
-        <textarea
-          id="comments"
-          name="comments"
-          rows="4"
-          cols="50"
-          placeholder="Enter your comments here..."
-        ></textarea>
-      </p>
-      <p class="button-group">
-        <input type="submit" value="Submit" />
-        <input type="reset" value="Reset" />
-      </p>
-    </form>
-    <footer>
-      <p>&copy; 2025 Anika Dureja. All rights reserved.</p>
-    </footer>
+      </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="projectModal1"
+      tabindex="-1"
+      aria-labelledby="projectModal1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal1Label">
+              Project Title 1 Details
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Detailed information about Project 1. You can include more images,
+              a longer description, technologies used, and a link to the live
+              project or repository.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="projectModal2"
+      tabindex="-1"
+      aria-labelledby="projectModal2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal2Label">
+              Project Title 2 Details
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Detailed information about Project 2.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="projectModal3"
+      tabindex="-1"
+      aria-labelledby="projectModal3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal3Label">
+              Project Title 3 Details
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Detailed information about Project 3.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="contact" class="contact-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
