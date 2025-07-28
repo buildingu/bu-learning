@@ -10,48 +10,44 @@
     <h2>Date submitted: 07/02/2025</h2>
     <hr />
     <h3>Fun facts about me:</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Favorite Movie Image</th>
-          <th>Favorite Music Audio Sample</th>
-          <th>Favorite Video Sample</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="First Name">Anika</td>
-          <td data-label="Last Name">Dureja</td>
-          <td data-label="Favorite Movie Image">
-            <a>
-              <img
-                src="https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b2/Morris_%28Dijiang%29.png/revision/latest?cb=20231021023725"
-                alt="Morris"
-              />
-            </a>
-          </td>
-          <td data-label="Favorite Music Audio Sample">
-            <p>Click to play audio</p>
-            <audio>
-              <source
-                src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"
-                type="audio/mp3"
-              />
-            </audio>
-          </td>
-          <td data-label="Favorite Video Sample">
-            <video controls>
-              <source
-                src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-grid-container">
+      <div class="table-grid-header">
+        <div class="table-grid-cell">First Name</div>
+        <div class="table-grid-cell">Last Name</div>
+        <div class="table-grid-cell">Favorite Movie Image</div>
+        <div class="table-grid-cell">Favorite Music Audio Sample</div>
+        <div class="table-grid-cell">Favorite Video Sample</div>
+      </div>
+      <div class="table-grid-row">
+        <div class="table-grid-cell" data-label="First Name">Anika</div>
+        <div class="table-grid-cell" data-label="Last Name">Dureja</div>
+        <div class="table-grid-cell" data-label="Favorite Movie Image">
+          <a href="#">
+            <img
+              src="https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b2/Morris_%28Dijiang%29.png/revision/latest?cb=20231021023725"
+              alt="Morris"
+            />
+          </a>
+        </div>
+        <div class="table-grid-cell" data-label="Favorite Music Audio Sample">
+          <p>Click to play audio</p>
+          <audio controls>
+            <source
+              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"
+              type="audio/mp3"
+            />
+          </audio>
+        </div>
+        <div class="table-grid-cell" data-label="Favorite Video Sample">
+          <video controls>
+            <source
+              src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+    </div>
     <hr />
     <h3>Enter your details below:</h3>
     <form>
