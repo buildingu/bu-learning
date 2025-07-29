@@ -1,0 +1,147 @@
+/* Background + Body */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #00ffff;
+  background: url('background-desktop.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  text-shadow: 0 0 10px #fff;
+}
+
+/* Info Table */
+.info-table {
+  margin: 20px;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 40, 0.8);
+  border: 2px solid purple;
+  color: #00ccff;
+  text-align: center;
+}
+
+th {
+  background: linear-gradient(to right, purple, black);
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+img {
+  width: 100px;
+}
+
+audio, video {
+  width: 180px;
+  margin-top: 5px;
+}
+
+/* Form Section */
+.form-section {
+  background: rgba(40, 0, 70, 0.8);
+  margin: 30px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px purple;
+  color: white;
+}
+
+label, fieldset {
+  display: block;
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  background-color: #111;
+  color: cyan;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+fieldset {
+  border: 1px solid purple;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+legend {
+  color: #fff;
+  font-weight: bold;
+}
+
+textarea {
+  height: 80px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #000;
+}
+
+button[type="submit"] {
+  background-color: limegreen;
+  color: black;
+}
+
+button[type="reset"] {
+  background-color: crimson;
+  color: white;
+}
+
+/* Advanced Selectors */
+input:not([type="checkbox"]):not([type="radio"]) {
+  border-left: 3px solid cyan;
+}
+
+form label:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  table, .form-section {
+    width: 95%;
+  }
+
+  audio, video {
+    width: 100%;
+  }
+}

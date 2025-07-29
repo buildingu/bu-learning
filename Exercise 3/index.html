@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exercise 3 - Ajitesh Sankara Narayanan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Exercise 3 - Ajitesh Sankara Narayanan</h1>
+    <p>Date submitted: 20/07/2023</p>
+  </header>
+
+  <section class="info-table">
+    <h2>Fun facts about me:</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Favorite Movie</th>
+          <th>Favorite Song</th>
+          <th>Favorite Video</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ajitesh</td>
+          <td>Sankara Narayanan</td>
+          <td><img src="0.jpg" alt="Movie Poster"></td>
+          <td>
+            <p>Click play button to play music:</p>
+            <audio controls>
+              <source src="rick_roll.mp3" type="audio/mpeg">
+              Your browser does not support audio.
+            </audio>
+          </td>
+          <td>
+            <video width="200" controls>
+              <source src="marvel_studios.mp4" type="video/mp4">
+              Your browser does not support video.
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="form-section">
+    <h2>Enter your details below:</h2>
+    <form>
+      <label>Full Name
+        <input type="text" placeholder="Ajitesh Sankara Narayanan" />
+      </label>
+
+      <label>Email Address
+        <input type="email" placeholder="a_san@fakemail.com" />
+      </label>
+
+      <label>Password
+        <input type="password" />
+      </label>
+
+      <fieldset>
+        <legend>Available Meeting Days:</legend>
+        <label><input type="checkbox" /> Monday</label>
+        <label><input type="checkbox" /> Tuesday</label>
+        <label><input type="checkbox" /> Wednesday</label>
+        <label><input type="checkbox" /> Thursday</label>
+        <label><input type="checkbox" /> Friday</label>
+        <label><input type="checkbox" /> Saturday</label>
+        <label><input type="checkbox" /> Sunday</label>
+      </fieldset>
+
+      <label>Available Time:
+        <select>
+          <option>Morning (8am - 12pm)</option>
+          <option>Afternoon (12pm - 5pm)</option>
+          <option>Evening (5pm - 9pm)</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <legend>Currently working on a new website?</legend>
+        <label><input type="radio" name="project" /> Yes</label>
+        <label><input type="radio" name="project" /> No</label>
+      </fieldset>
+
+      <label>If yes, enter which page(s)
+        <textarea placeholder="Enter your comments here"></textarea>
+      </label>
+
+      <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
