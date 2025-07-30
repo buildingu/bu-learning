@@ -1,0 +1,22 @@
+/* instead of making a separate CSS file for each, each application accesses this one */
+
+html,body{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight:bolder;
+    text-align:center;
+    color:white;
+    
+    background-image: url("assets/background-image2.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+a{
+    color:white;
+}
