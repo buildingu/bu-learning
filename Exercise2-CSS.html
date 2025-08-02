@@ -1,0 +1,52 @@
+<IDOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, Initial-scale-1.0"> 
+        <meta http-equiv="X-UA-Compatible" content="ieedge">
+        <title>Lesson 2: CSS</title>
+
+        <!--External CSS Refrence-->
+         <link rel="stylesheet" href="CSS/Exercise2.css" />
+        
+    </head>
+    <body>
+         <h1 style="color:red; font-style: italic"> CHS Open Basketball Tournament</h1>
+
+         <h2>Information:</h2>
+
+        <div class="container">
+            <div class="box">Students will form teams of 5-10 to play in a basketball tournament. The game will be four 15 minute quarters.</div>
+            <div class="box">Requirements: Be a current CHS student and Register by Jan 25 2026</div>
+            <div class="box">Where: CHS Large Gym - 15655 Brookstone Dr, Parker, CO 80134</div>
+            <div class="box">When: Jan 26 2026 @5:00 p.m.</div>
+            <div class="box">Fee: $40 per team. Payment must be completed by Jan 25 2026 at the finance office (Room 106). Contact Sam Smith:    SamSmith@gmail.com with questions</div>
+        </div>
+
+        <h2>Registration:</h2>
+        <center>
+            <label> Team Name:</label><br><br>
+                <input type="text"/><br><br>
+
+            <label> Number of Players:</label><br><br>
+                <input type="radio" name="players" value="5"> 5<br><br>
+                <input type="radio" name="players" value="6"> 6<br><br>
+                <input type="radio" name="players" value="7"> 7<br><br>
+                <input type="radio" name="players" value="8"> 8<br><br>
+                <input type="radio" name="players" value="9"> 9<br><br>
+                <input type="radio" name="players" value="10"> 10<br><br>
+
+
+            <label> Team Memeber's Info (First, Middle and Last Name - Email):</label><br><br>
+                <form>
+                    <textarea cols="30" rows="10" placeholder="Type Your Team Member's Info Here..."></textarea>
+                </form>
+
+            <label> Team Captain (First, Middle and Last Name):</label><br><br>
+                <input type="text"/><br><br>
+
+            <br><input type="submit"/>
+            <input type="reset"/>
+                
+        </center>
+    </body>
