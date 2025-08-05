@@ -1,0 +1,129 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Banner image */
+.banner-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Header styling */
+header {
+  background-color: #005f73;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-icon {
+  width: 20px;
+  vertical-align: middle;
+}
+
+/* Main content */
+main {
+  padding: 2rem;
+}
+
+.content-section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+.section-img {
+  width: 150px;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eee;
+}
+
+/* Advanced Selector 1: :not() - Apply only to input elements WITHOUT .selected-item */
+input:not(.selected-item) {
+  border: 2px solid green;
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+/* Advanced Selector 2: :nth-child() - Style odd-numbered content sections */
+.content-section:nth-child(odd) {
+  background-color: #e0fbfc;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 767px) {
+  header {
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .section-img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 768px) {
+  .content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .content-section p {
+    flex: 1;
+  }
+
+  form {
+    margin-top: 2rem;
+  }
+}

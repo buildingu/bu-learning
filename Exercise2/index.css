@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>AB High School Debate Tournament 2025</title>
   <style>
     /* Background, Font, and Box Model */
@@ -70,6 +70,16 @@
       text-align: center;
     }
 
+    iframe, audio {
+      width: 80%;
+      max-width: 700px;
+      margin: 20px auto;
+      display: block;
+      border: 4px solid #00796b;
+      border-radius: 12px;
+      box-shadow: 0 8px 15px rgba(0, 121, 107, 0.3);
+    }
+
     form {
       margin-top: 30px;
       padding: 15px;
@@ -97,16 +107,28 @@
     input[type="submit"]:hover {
       background-color: #007c91;
     }
+
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>🎤 AB High School Debate Tournament 2025</h1>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Debate_Icon.svg/1200px-Debate_Icon.svg.png" alt="Debate Icon">
-    
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Debate_Icon.svg/1200px-Debate_Icon.svg.png"
+      alt="Debate Icon"
+    />
+
     <h2>Event Overview</h2>
     <p>
-      Welcome to the annual Debate Tournament hosted by Acton-Boxborough Regional High School! Join us for a day of sharp arguments, critical thinking, and teamwork as students from around the district showcase their debating skills.
+      Welcome to the annual Debate Tournament hosted by Acton-Boxborough Regional High School! Join us
+      for a day of sharp arguments, critical thinking, and teamwork as students from around the
+      district showcase their debating skills.
     </p>
 
     <h2>Event Details</h2>
@@ -121,40 +143,51 @@
         <td>ABRHS Auditorium</td>
         <td>September 28, 2025</td>
         <td>10:00 AM – 4:00 PM</td>
-        <td>All students, families & teachers welcome!</td>
+        <td>All students, families &amp; teachers welcome!</td>
       </tr>
     </table>
 
     <h2>Media Highlights</h2>
     <div class="media">
-      <p>Check out this video from last year’s debate finals:</p>
-      <video width="320" controls>
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <p>Watch the final round from the 2024 National Speech & Debate Tournament:</p>
+      <iframe
+        width="80%"
+        height="360"
+        src="https://www.youtube.com/embed/OID4M_0Qa8Q"
+        title="National Speech & Debate Tournament Final Round"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
 
-      <p>Theme song of the tournament:</p>
+      <p>Listen to the official theme music used at the 2023 Debate Championships:</p>
       <audio controls>
-        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        <source
+          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          type="audio/mpeg"
+        />
       </audio>
     </div>
 
     <h2>Contact Us</h2>
     <form>
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name">
+      <input type="text" id="name" name="name" />
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email">
+      <input type="email" id="email" name="email" />
 
       <label for="question">Any Questions?</label>
       <textarea id="question" name="question" rows="4"></textarea>
 
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit" />
     </form>
 
     <p class="footer">
-      Visit our official page: <a href="https://www.abrhs.org" target="_blank">www.abrhs.org</a>
+      Visit our official page:
+      <a href="https://www.abrhs.org" target="_blank" rel="noopener noreferrer"
+        >www.abrhs.org</a
+      >
     </p>
   </div>
 </body>
