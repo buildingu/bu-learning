@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Bootstrap Portfolio</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="building-u.jpg" alt="BuildingU Logo" class="me-2">BuildingU</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container text-center">
+      <h1>Hello, I'm a Web Developer!</h1>
+      <p>Welcome to my Bootstrap-powered portfolio site.</p>
+      <a href="#portfolio" class="btn btn-primary">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <img src="luffy.jpeg" alt="Profile Image">
+        </div>
+        <div class="col-md-8">
+          <h2>About Me</h2>
+          <p>Hi! I'm Ajitesh Sankara Narayanan, a Grade 12 student at Garth Webb Secondary School in Ontario, Canada. At 16, I'm already deeply passionate about the intersection of science, engineering, and community impact. My journey in STEM started early, and I've been fortunate to explore this passion through various volunteer opportunities and hands-on experiences. From working with Young Engineers Oakville to my coding internship at Building-U, I've discovered that I love solving complex problems and helping others learn.</p>
+          <ul>
+            <li>🌟 Quick learner</li>
+            <li>💡 Problem Solver</li>
+            <li>🎯 Focused on user experience</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">My Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card project-card">
+            <img src="bootstrap.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project One</h5>
+              <p class="card-text">A simple responsive project using Bootstrap.</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">View More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modal -->
+  <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project1ModalLabel">Project One</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          This portfolio website was built using Bootstrap 5. I used the grid system to create a responsive layout that works on all screen sizes. The navbar is fully responsive with a hamburger menu on mobile, and the hero section features a call-to-action button styled with Bootstrap classes.
+
+          The About and Projects sections are structured using rows and columns, and each project card includes a "View More" button that opens a Bootstrap modal (like this one). The contact form uses Bootstrap’s form controls and includes basic validation. I also added some custom CSS to tweak the design and colors.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-6">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+          <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+          <div class="invalid-feedback">Please enter a valid email.</div>
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+          <div class="invalid-feedback">Please enter your message.</div>
+        </div>
+        <div class="col-12 text-center">
+          <button class="btn btn-success" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ajitesh Sankara Narayanan. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Form Validation Script -->
+  <script>
+    (function () {
+      'use strict';
+      const forms = document.querySelectorAll('.needs-validation');
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+  </script>
+</body>
+</html>
