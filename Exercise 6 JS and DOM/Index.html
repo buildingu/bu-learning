@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exercise 6 - App Launcher</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .app-link {
+      background: #00c6ff;
+      color: black;
+      text-decoration: none;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-size: 1.1em;
+      margin: 10px;
+      display: inline-block;
+      transition: 0.3s ease;
+    }
+
+    .app-link:hover {
+      background: #0072ff;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 Welcome to Exercise 6 - Apps Hub</h1>
+
+  <a class="app-link" href="./APP1/index.html" target="_blank">🔐 Form Validator App</a><br>
+  <a class="app-link" href="./APP2/index.html" target="_blank">👨‍💼 Employee Entry App</a><br>
+  <a class="app-link" href="./APP3/index.html" target="_blank">🤣 Joke Generator API App</a>
+
+  <p style="margin-top: 40px; font-size: 0.9em; color: #bbb;">
+    All apps open in new tabs
+  </p>
+</body>
+</html>

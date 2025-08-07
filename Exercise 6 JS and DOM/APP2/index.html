@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Entry App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Employee Entry System</h1>
+    
+    <form id="employee-form">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="number" id="age" placeholder="Age" required />
+      <select id="sex" required>
+        <option value="">Select Sex</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="text" id="position" placeholder="Position" required />
+      <button type="submit">Add Entry</button>
+    </form>
+
+    <h2>Employee List</h2>
+    <div id="employee-list"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

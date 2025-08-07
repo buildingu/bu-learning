@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ADOS Validator App</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    input {
+      display: block;
+      width: 80%;
+      max-width: 400px;
+      margin: 10px auto;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #ffcc00;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    button:hover {
+      background-color: #e6b800;
+    }
+    #output {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #d00000;
+    }
+    #menu {
+      margin-top: 20px;
+      font-family: monospace;
+      display: none;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ADOS App - Form Validator</h1>
+  <input type="text" id="firstName" placeholder="First Name" />
+  <input type="text" id="lastName" placeholder="Last Name" />
+  <input type="number" id="age" placeholder="Age" />
+  <input type="text" id="phone" placeholder="Phone Number" />
+  <button onclick="validateForm()">Submit</button>
+
+  <div id="output"></div>
+  <div id="menu">
+    <p>✅ WELCOME TO THE ADOS APP.</p>
+
+  </div>
+
+  <script src="adosAPP.js"></script>
+</body>
+</html>
