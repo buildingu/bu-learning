@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body {
+    background-image: url(res/background-desktop.jpg);
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+header {
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translate(-50%, -50%);
+}
+
+.movie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+}
+
+.movie::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translate(-50%, -50%);
+}
+
+.movie_video video {
+    width: 800px;
+}
+
+.movie_content {
+    width: 400px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.movie_content-btn {
+    background-color: #b0096c;
+    padding: 10px 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border: 2px solid #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.movie_content-btn:hover {
+    background-color: #fff;
+    color: #b0096c;
+    border-color: #b0096c;
+}
+
+.movie_content-title {
+    margin-bottom: 15px;
+}
+
+.movie_content-desc {
+    font-size: 18px;
+}
+
+.audio {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.audio_content {
+    width: 600px;
+}
+
+.audio_content-title {
+    margin-bottom: 15px;
+}
+
+.audio_content-desc {
+    font-size: 18px;
+}
+
+.audio_sound audio{
+    width: 600px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .movie {
+        display: block;
+    }
+
+    .movie_video video{
+        width: 100%;
+    }
+
+    .movie_content {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    h2 {
+        font-size: 4.5vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    .movie_content-desc {
+        font-size: 4vw;
+    }
+
+    .audio {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .audio_content {
+        width: 100%;
+    }
+
+    .audio_content-desc {
+        font-size: 4vw;
+    }
+
+    .audio_sound audio {
+        max-width: 100%;
+    }
+
+    .movie_content-btn {
+        font-size: 3vw;
+        padding: 1vh 7vw;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    body {
+        background: 
+        linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), /* dark overlay */
+        url("res/background-mobile.jpg") center/cover no-repeat;
+    }   
+}
