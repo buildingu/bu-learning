@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 - Space Wonders</title>
+    <link rel="stylesheet" href="version_a.css">
+</head>
+<body>
+    <header>
+        <h1>Space Wonders</h1>
+        <p class="subtitle">Exploring the Universe</p>
+    </header>
+
+    <main>
+        <section class="fun-facts">
+            <h2>Cool Space Facts</h2>
+            <div class="facts-container">
+                <div class="fact-card">
+                    <h3>Planet</h3>
+                    <p>Jupiter is the largest planet in our solar system.</p>
+                </div>
+                <div class="fact-card">
+                    <h3>Image</h3>
+                    <img src="planet.jpg" alt="Planet" class="media-img">
+                </div>
+                <div class="fact-card">
+                    <h3>Sound</h3>
+                    <audio controls>
+                        <source src="space_sounds.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div class="fact-card">
+                    <h3>Video</h3>
+                    <video controls width="250">
+                        <source src="rocket_launch.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Join the Space Club</h2>
+            <form>
+                <label>Full Name</label>
+                <input type="text" placeholder="Alex Star">
+
+                <label>Email</label>
+                <input type="email" placeholder="alex@example.com">
+
+                <label>Password</label>
+                <input type="password" placeholder="••••">
+
+                <label>Favorite Planet</label>
+                <select>
+                    <option>Earth</option>
+                    <option>Mars</option>
+                    <option>Saturn</option>
+                    <option>Neptune</option>
+                </select>
+
+                <label>Interested In</label>
+                <div class="checkboxes">
+                    <input type="checkbox"> Astronomy
+                    <input type="checkbox"> Rocket Science
+                    <input type="checkbox"> Space Travel
+                </div>
+
+                <label>Subscribe to Newsletter?</label>
+                <input type="radio" name="subscribe" checked> Yes
+                <input type="radio" name="subscribe"> No
+
+                <label>Message</label>
+                <textarea placeholder="Your thoughts about space..."></textarea>
+
+                <div class="form-buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
