@@ -1,0 +1,35 @@
+#fetchData {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+}
+nav {
+  text-align: center;
+  background-color: rgb(65, 187, 192);
+}
+#jokebox {
+  background-color: beige;
+}
+body,
+head {
+  background-color: whitesmoke;
+  font-family: sans-serif;
+}
+#fetchData {
+  display: block;
+  margin: 0 auto;
+}
+body,
+head {
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+}
