@@ -19,7 +19,11 @@ function App() {
     case "useEffect":
       return <UseEffectChallenge />;
     case "useContext":
-      return <UseContextChallenge />;
+      return (
+        <AuthContextProvider>
+        <UseContextChallenge />
+        </AuthContextProvider>
+      )
     case "useReducer":
       return <UseReducerChallenge />;
     case "useMemo":
