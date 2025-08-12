@@ -31,13 +31,13 @@ const ERROR = {
   age_toolong: "Age is too long.",
   age_notolder: "Must be 18+",
   phoneNumber_invalid: "Phone Number must be a number.",
-  phoneNumber_toolong: "Phone Number must only be 10 digits.",
+  phoneNumber_toolong: "Phone Number must be 10 digits.",
 };
 const INPUTS = {
-  firstName,
-  lastName,
-  age,
-  phoneNumber
+  firstName: "",
+  lastName: "",
+  age: "",
+  phoneNumber: ""
 };
 
 function formValidator(name, value) {
@@ -45,36 +45,30 @@ function formValidator(name, value) {
   switch (name) {
     case "firstName":
     case "lastName":
-      return value.length > 120 ? ERROR.name_toolong : undefined;
+      if (value.length > 120) return ERROR.name_toolong;
+      break;
     case "age":
       const parsedAge = parseInt(value);
       if (isNaN(parsedAge)) return ERROR.invalid_age;
-      if (parsedAge > 999) return ERROR.age_toolong;
+      if (value.length > 3) return ERROR.age_toolong;
       if (parsedAge < 18) return ERROR.age_notolder;
+      break;
     case "phoneNumber":
-    const num = value.replace(/\D/g, "");
-    if (isNaN(num)) return ERROR.phoneNumber_invalid;
-    if (num.length !==10) return ERROR.phoneNumber_toolong;   
+      const num = value.replace(/\D/g, "");
+      if (isNaN(Number(num))) return ERROR.phoneNumber_invalid;
+      if (num.length !== 10) return ERROR.phoneNumber_toolong;
+      break;
+    default:
+      break;
   }
-  
+  return "";
 }
 
 export default function FinalChallenge() {
-const [formData, setFormData] = useState(INPUTS);
-
-  const [errors, setErrors] = useState({
-    firstName: "",
-    lastName: "",
-    age: "",
-    phoneNumber: "",
-  });
-
+  const [formData, setFormData] = useState(INPUTS);
   const [successMessage, setSuccessMessage] = useState("");
 
-  const firstNameRef = useRef(null);
-  const lastNameRef = useRef(null);
-  const ageRef = useRef(null);
-  const phoneNumberRef = useRef(null);
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -83,32 +77,31 @@ const [formData, setFormData] = useState(INPUTS);
       [name]: value,
     }));
     setErrors((prevErrors) => ({
-      ...prevErrors,
-      [name]: "",
-    }));
-    setSuccessMessage("");
-  };
+    ...prevErrors,
+    [name]: "",
+  }));
+  setSuccessMessage("");
+};
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     let newErrors = {};
-    let isValid = true;
 
     for (const name in formData) {
       const value = formData[name];
       const error = formValidator(name, value);
       if (error) {
         newErrors[name] = error;
-        isValid = false;
       }
     }
-
     setErrors(newErrors);
+
+    const isValid = Object.keys(newErrors).length == 0;
 
     if (isValid) {
       setFormData(INPUTS);
-      setSuccessMessage("Submitted Successfully!");
+      setSuccessMessage("Successfully Submitted!");
       console.log("Form Data:", formData);
     } else {
       setSuccessMessage("");
@@ -121,57 +114,34 @@ const [formData, setFormData] = useState(INPUTS);
 
       <div>
         <h2>Subscribe to our Newsletter!</h2>
-        <form autoComplete="off" noValidate onSubmit={handleSubmit}>
+        <form>
 
           <div>
-            <label htmlFor="firstName">First Name:</label>
-            <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              value={formData.firstName}
-              onChange={handleChange}
-              ref={firstNameRef}
-            />
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleChange}/>
+            {errors.firstName && <p>{errors.firstName}</p>}
           </div>
-
+          <br></br>
           <div>
-            <label htmlFor="lastName">Last Name:</label>
-            <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              value={formData.lastName}
-              onChange={handleChange}
-              ref={lastNameRef}
-            />
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleChange}/>
+            {errors.lastName && <p>{errors.lastName}</p>}
           </div>
-
+          <br></br>
           <div>
-            <label htmlFor="age">Age:</label>
-            <input
-              type="number"
-              id="age"
-              name="age"
-              value={formData.age}
-              onChange={handleChange}
-              ref={ageRef}
-            />
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" value={formData.age} onChange={handleChange}/>
+            {errors.age && <p>{errors.age}</p>}
           </div>
-
+          <br></br>
           <div>
-            <label htmlFor="phoneNumber">Phone Number:</label>
-            <input
-              type="tel"
-              id="phoneNumber"
-              name="phoneNumber"
-              value={formData.phoneNumber}
-              onChange={handleChange}
-              ref={phoneNumberRef}
-            />
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange}/>
+          {errors.phoneNumber && <p>{errors.phoneNumber}</p>}
           </div>
-
-          <button type="submit">Submit</button>
+          <br></br>
+          <button type="submit" onClick={handleSubmit}>Submit</button> {
+          successMessage && <p>{successMessage}</p>}
         </form>
       </div>
     </main>
