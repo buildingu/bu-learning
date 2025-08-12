@@ -8,9 +8,9 @@
 import { useState } from "react";
 
 export default function UseStateChallenge() {
-  const [visible, setvisible] = useState(false);
+  const [visible, setVisible] = useState(false);
 
-  const toggleVisibility = () => {setvisible(!visible)};
+  const toggleVisibility = () => {setVisible(!visible)};
   return (
     <main>
       <h1>useState Challenge</h1>
