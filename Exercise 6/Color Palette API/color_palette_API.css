@@ -16,6 +16,36 @@
     h2 {
         text-align: center;
     }
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(119, 102, 81);
+    }
+
+    li {
+    float: left;
+    }
+
+    li a {
+    font-family: Alte Haas Grotesk;
+    display: block;
+    color: rgb(202, 182, 157);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    li a:hover {
+    background-color: rgb(86, 73, 57);
+    }
+    p {
+        text-align: center;
+        font-size: 15pt;
+        font-family: Alte Haas Grotesk;
+        color: rgb(119, 102, 81);
+}
     .colorPicker {
         font-family: Alte Haas Grotesk;
         background-color: rgb(119, 102, 81);
@@ -42,6 +72,18 @@
         color: rgb(86, 74, 64);
         padding: 10px;
     }
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input[type=text] {
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        box-sizing: border-box;
+        padding: 3px;
+    }
 }
 
 /* Mobile Styles */
@@ -62,6 +104,34 @@ body {
     h2 {
         text-align: center;
     }
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(119, 102, 81);
+    }
+    li {
+    float: left;
+    }
+    li a {
+    font-family: Alte Haas Grotesk;
+    font-size: 10pt;
+    display: block;
+    color: rgb(202, 182, 157);
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    }
+    li a:hover {
+    background-color: rgb(86, 73, 57);
+    }
+    p {
+        text-align: center;
+        font-size: 15pt;
+        font-family: Alte Haas Grotesk;
+        color: rgb(119, 102, 81);
+}
     .colorPicker {
         width: 80%;
         font-family: Alte Haas Grotesk;
@@ -88,5 +158,17 @@ body {
         border: 1px solid rgb(97, 84, 67);
         color: rgb(86, 74, 64);
         padding: 10px;
+    }
+     .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input[type=text] {
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        box-sizing: border-box;
+        padding: 3px;
     }
 }

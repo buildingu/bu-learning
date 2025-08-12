@@ -45,37 +45,6 @@
         font-family: Alte Haas Grotesk;
         color: rgb(119, 102, 81);
 }
-    .container {
-        font-family: Alte Haas Grotesk;
-        background-color: rgb(119, 102, 81);
-        border: 2px solid rgb(67, 56, 43);
-        padding: 20px;
-        color: rgb(169, 149, 125);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        width: fit-content;
-        height: fit-content;
-    }
-    input[type=text] {
-        width: 60%;
-        box-sizing: border-box;
-        padding: 3px;
-    }
-    .submit {
-        justify-content: center;
-        align-items: center;
-        font-family: Alte Haas Grotesk;
-        background-color: rgb(67, 56, 43);
-        border: 1px solid rgb(48, 39, 30);
-        color: rgb(30, 24, 19);
-        padding: 10px;
-    }
-    .message {
-        font-family: Alte Haas Grotesk;
-        color: rgb(30, 24, 19);
-    }
 }
 
 /* Mobile Styles */
@@ -96,7 +65,7 @@ body {
     h2 {
         text-align: center;
     }
-ul {
+    ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -124,36 +93,4 @@ ul {
         font-family: Alte Haas Grotesk;
         color: rgb(119, 102, 81);
 }
-    .container {
-        width: 80%;
-        font-family: Alte Haas Grotesk;
-        background-color: rgb(119, 102, 81);
-        border: 2px solid rgb(67, 56, 43);
-        padding: 20px;
-        color: rgb(169, 149, 125);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 75vh;
-        max-width: 300px;
-        margin: auto;
-    }
-    input[type=text] {
-        width: 60%;
-        box-sizing: border-box;
-        padding: 3px;
-    }
-    .submit {
-        justify-content: center;
-        align-items: center;
-        font-family: Alte Haas Grotesk;
-        background-color: rgb(67, 56, 43);
-        border: 1px solid rgb(48, 39, 30);
-        color: rgb(30, 24, 19);
-        padding: 10px;
-    }
-    .message {
-        font-family: Alte Haas Grotesk;
-        color: rgb(30, 24, 19);
-    }
 }

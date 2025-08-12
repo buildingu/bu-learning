@@ -1,107 +1,73 @@
-const addEntry = document.getElementById("entry");
-const editEntry = document.getElementById("edit");
-const deleteEntry = document.getElementById("delete");
-const updateEntry = document.getElementById("update");
-    updateEntry.style.display = "none";
+const submit = document.getElementById("entry");
+submit.addEventListener("click", employeeEntry);
 const employeeEntriesContainer = document.getElementById("employee-entries-container");
 let messageDiv = document.getElementById("messagetext");
-    let container = document.querySelector("formContainer");
-            messageDiv.style.fontFamily = "Alte Haas Grotesk";
-            messageDiv.style.color = "rgb(30, 24, 19)";
-            messageDiv.style.textAlign = "center";
-
+let container = document.querySelector(".formContainer");
+messageDiv.style.fontFamily = "Alte Haas Grotesk";
+messageDiv.style.color = "rgba(61, 50, 42, 1)";
+messageDiv.style.textAlign = "center";
 
 function employeeEntry(event) { // Employee Entry Function
     if (event) {
-        event.preventDefault();
-    }
+        event.preventDefault();} // prevents form clearing
     const employeeName = document.getElementById("name").value;
     const employeeAge = document.getElementById("age").value;
     const employeeGender = document.getElementById("gender").value;
     const employeePosition = document.getElementById("position").value;
     
-    if (!formValidator(employeeName, employeeAge, employeeGender, employeePosition)) {
-        return;
-    }
+    if (!formValidator()) {return;} // form validation
+    
+    const newEmployeeDiv = document.createElement("div");
+    newEmployeeDiv.classList.add("employee-item");
+    newEmployeeDiv.innerHTML = `
+        <p  style="color: rgba(61, 50, 42, 1);">Name: ${employeeName}, Age: ${employeeAge}, Gender: ${employeeGender}, Position: ${employeePosition}</p>
+        <button class="edit-btn">Edit</button>
+        <button class="delete-btn">Delete</button>`
+    newEmployeeDiv.style.textAlign = "center";
+    newEmployeeDiv.querySelector(".delete-btn").addEventListener("click", () => { newEmployeeDiv.remove(); messageDiv.textContent = "Entry deleted."; }); // deletes entry by deleting the div
+    newEmployeeDiv.querySelector(".edit-btn").addEventListener("click", function() { entryEdit(newEmployeeDiv)});
 
-    const newEmployeeDiv = document.createElement("div"); 
-    newEmployeeDiv.textContent = "Name: " + employeeName + " Age: " + employeeAge + " Gender: " + employeeGender + " Position: " + employeePosition; 
-    newEmployeeDiv.classList.add("employee-item"); 
     employeeEntriesContainer.appendChild(newEmployeeDiv);
-        employeeEntriesContainer.style.display = "block";
+    employeeEntriesContainer.style.display = "block";
 
-    }
-addEntry.addEventListener("click", employeeEntry); // adds Entry logic to the button
+function entryEdit(employeeDiv) {
+    currentEmployeeDivToEdit = employeeDiv;
 
-function entryDelete(event) { // Employee Entry Delete Function
-    if (event) {
-        event.preventDefault();
-    }
     const employeeName = document.getElementById("name").value;
     const employeeAge = document.getElementById("age").value;
     const employeeGender = document.getElementById("gender").value;
     const employeePosition = document.getElementById("position").value;
 
-    let entryDeleted = false;
-    const textMatch = "Name: " + employeeName + " Age: " + employeeAge + " Gender: " + employeeGender + " Position: " + employeePosition; 
-    const textEntry = document.querySelectorAll(".employee-item");
-    textEntry.forEach(item => {
-    const itemTextContent = item.textContent.trim();
-    if (textMatch === itemTextContent) {
-        item.remove();
-        entryDeleted = true;
-    } });
-
-    if(entryDeleted == true) {
-        messageDiv.textContent = "Entry deleted.";
-    } else {
-        messageDiv.textContent = "Entry not found.";
-    }
-
+    employeeDiv.innerHTML = `
+        <p style="color: rgba(61, 50, 42, 1);">Name: ${employeeName}, Age: ${employeeAge}, Gender: ${employeeGender}, Position: ${employeePosition}</p>
+        <button class="edit-btn">Edit</button>
+        <button class="update-btn">Update</button>
+        <button class="delete-btn">Delete</button>`;
+    employeeDiv.querySelector(".update-btn").addEventListener("click", updateEntry);
+    newEmployeeDiv.querySelector(".delete-btn").addEventListener("click", () => { newEmployeeDiv.remove(); messageDiv.textContent = "Entry deleted."; });
+    employeeDiv.querySelector(".edit-btn").addEventListener("click", function() { entryEdit(employeeDiv); });
 }
-deleteEntry.addEventListener("click", entryDelete); // delete Entry logic to the button
-
-updateEntry.addEventListener("click", updateEntry); // update button logic
-function entryEdit(event) {
-    if (event) {
-        event.preventDefault();
-    }
+    employeeDiv.querySelector(".edit-btn").addEventListener("click", function(event) { entryEdit(event); });
+function updateEntry() {
     const employeeName = document.getElementById("name").value;
     const employeeAge = document.getElementById("age").value;
     const employeeGender = document.getElementById("gender").value;
     const employeePosition = document.getElementById("position").value;
 
-    let entryDeleted = false;
-    const textMatch = "Name: " + employeeName + " Age: " + employeeAge + " Gender: " + employeeGender + " Position: " + employeePosition; 
-    const textEntry = document.querySelectorAll(".employee-item");
-    textEntry.forEach(item => {
-    const itemTextContent = item.textContent.trim();
-    if (textMatch === itemTextContent) {
-        item.remove();
-        entryDeleted = true;
-    } });
-
-    if(entryDeleted == true) {
-        messageDiv.textContent = "Enter updated entry.";
-        updateEntry.style.display = "block";
-    }
-
-    function updateEntry() {
-        const employeeName = document.getElementById("name").value;
-        const employeeAge = document.getElementById("age").value;
-        const employeeGender = document.getElementById("gender").value;
-        const employeePosition = document.getElementById("position").value;
-
-        
-        const newEmployeeDiv = document.createElement("div"); 
-        newEmployeeDiv.textContent = "Name: " + employeeName + " Age: " + employeeAge + " Gender: " + employeeGender + " Position: " + employeePosition; 
-        newEmployeeDiv.classList.add("employee-item"); 
-        employeeEntriesContainer.appendChild(newEmployeeDiv);
-            employeeEntriesContainer.style.display = "block";
-    }
-    }  
-editEntry.addEventListener("click", entryEdit); // edit Entry logic to the button
-
+    if (currentEmployeeDivToEdit) {
+        currentEmployeeDivToEdit.innerHTML = `
+            <p style="color: rgba(61, 50, 42, 1);">Name: ${employeeName}, Age: ${employeeAge}, Gender: ${employeeGender}, Position: ${employeePosition}</p>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>`;
+        currentEmployeeDivToEdit.style.textAlign = "center";
+        currentEmployeeDivToEdit.querySelector(".edit-btn").addEventListener("click", function() { entryEdit(currentEmployeeDivToEdit); });
+        newEmployeeDiv.querySelector(".delete-btn").addEventListener("click", () => { newEmployeeDiv.remove(); messageDiv.textContent = "Entry deleted."; });
+        messageDiv.textContent = "Entry updated successfully.";
+        currentEmployeeDivToEdit = null;
+    document.getElementById("entry").style.display = 'block';
+}}  
+    document.getElementById("update-btn").style.display = 'none';
+}  
 
 function formValidator() { // Form Validator function
     let formName = document.getElementById("name").value;

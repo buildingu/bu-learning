@@ -30,22 +30,22 @@ function formValidator() { // Form Validator function
             return messageDiv;
         }
         // var type check
-        if (firstName !== 'string') {
+        if (typeof firstName === 'string') {
             messageDiv.textContent = "The first name should be a string";
             document.body.appendChild(messageDiv);
             return messageDiv;
         }
-        if (lastName !== 'string') {
+        if (typeof lastName === 'string') {
             messageDiv.textContent = "The last name should be a string";
             document.body.appendChild(messageDiv);
             return messageDiv;
         }
-        if (age !== 'number' || (isNan(parseInt(age)))) {
+        if (typeof age === 'number' || (isNaN(parseInt(age)))) {
             messageDiv.textContent = "The age should be a number";
             document.body.appendChild(messageDiv);
             return messageDiv;
         }
-        if (phoneNumber !== 'number' || (isNan(phoneNumber))) {
+        if (typeof phoneNumber === 'number' || (isNaN(phoneNumber))) {
             messageDiv.textContent = "The phone number should be a number";
             document.body.appendChild(messageDiv);
             return messageDiv;
