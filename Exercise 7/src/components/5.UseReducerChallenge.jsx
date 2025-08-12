@@ -6,7 +6,7 @@
  */
 
 import { useReducer, useRef } from "react";
-import { v4 as uuidV4 } from "uuid"; // Use the uuid for a unique identifier for each todo.
+import { v4 as uuidV4 } from "uuid";
  
 function todoReducer(state, action) {
   switch(action.type) {
@@ -32,7 +32,7 @@ export default function UseReducerChallenge() {
       dispatch({ type: "ADD-TODO", payload: {text : addText}});
     }}
 
-  const handleRemove = () => {
+  const handleRemove = (id) => {
     dispatch({ type: "REMOVE-TODO", payload: {id}});
   }
 
