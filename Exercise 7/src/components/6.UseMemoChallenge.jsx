@@ -12,23 +12,16 @@ export default function UseMemoChallenge() {
 
   const memorizedValue = useMemo(() => {
     let no = 1;
-    for (let i = 1; i <= number; i++) {no *= i;}
-    return result;
-  }, [count]);
+    for (let i = 1; i <= number; i++) {no = no *= i;}
+    return no;
+  }, [number]);
 
   return (
     <main>
       <h1>useMemo Challenge</h1>
       <div>
-        <input
-          type="number"
-          value={number}
-          onChange={(e) => setNumber(Number(e.target.value))}
-          placeholder="Enter a number"
-        />
-        <p>
-           Factorial of {number} is: {memorizedValue}
-        </p>
+        <input type="number" value={number} onChange={(e) => setNumber(e.target.value)}placeholder="Enter a number"/>
+        <p>Factorial of {number} is: {memorizedValue}</p>
       </div>
     </main>
   );
