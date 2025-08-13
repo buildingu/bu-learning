@@ -3,17 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Prom</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
+
+
+<style>
+
+
+@font-face {
+    font-family: "Playwrite AU QLD", cursive;
+    src: url("Playwrite AU QLD.ttf") format("truetype");
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.prom ul{
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(175, 102, 243);
+    padding: 3em;
+    border: 10px;
+    list-style-type: none;
+    
+}
+
+.prom img{
+    opacity: .4;
+}
+
+.prom li{
+    font-family:"Playwrite AU QLD" ;
+    color: aliceblue;
+    
+}
+.prom li:hover{
+    background-color: rgb(63, 13, 110);
+    border-radius: 5px;
+    transition: .5s;
+}
+.prom img:hover{
+    opacity: .7;
+}
+img{
+    width: 25em;
+    border: 5px;
+    padding: 3px;
+
+}
+
+audio{
+    display: block;
+    justify-content: center;
+}
+</style>
 </head>
 <body>
+
     <center>
-    <h2>Prom</h2>
+<div class="prom">     
+    <ul>
+        <li>Prom</li>
+   </ul>
+</div>
+<img src="prom.jpg" alt="prom">
     <p>
-        Location: 4099 West Pina Colada Coast 89234 Meowland, Tx
+        <b>Location: </b>4099 West Pina Colada Coast 89234 Meowland, Tx
         <br>
-        Time: Saturday, May 15 at 9:30 pm
+        <b>Time:</b> Saturday, May 15 at 9:30 pm
         <br>
-        Invites: 
+       <b> Invites: </b>
         <br>
         <li>
             Ollie
@@ -30,20 +92,12 @@
         For further questions contact us at 123-456-7890 or panda1@gmail.com
 
     </p>
-    <table>
-        <tr>
-            <th></th>
-        </tr>
-    </table>
+  
+    
 
-    <img src="" alt="">
+    
 
-    <audio controls>
-        <source src="" type="">
-    </audio>
-
-    <video src="">
-    </video>
+   
     <h3>Sign up</h3>
     <form>
         <label>First Name </label> 
@@ -51,12 +105,22 @@
         <label>Last Name </label> 
         <input type="text">
         <br>
+        <br>
         <label>Email </label> 
         <input type="email">  
+        <br>
         <br>
         <label>Submit </label> 
         <input type="submit" placeholder="Submit">    
     </form>
+    <br>
+    <br>
+<h3>Music</h3>
+<audio controls>
+        <source src="washing machine heart1.MP4" type="audio/MP4">
+        </audio>
     </center>
+
+
 </body>
 </html>
