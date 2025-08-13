@@ -3,6 +3,10 @@
   height: 50px;
   display: flex;
   justify-content: center;
+  border-width: 1px;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
 }
 h1 {
   text-align: center;
@@ -17,14 +21,6 @@ nav {
 body,
 head {
   background-color: whitesmoke;
-  font-family: sans-serif;
-}
-#fetchData {
-  display: block;
-  margin: 0 auto;
-}
-body,
-head {
   font-family: sans-serif;
 }
 a {

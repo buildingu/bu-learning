@@ -26,18 +26,13 @@ nav {
   display: block;
   margin: 0 auto;
 }
-body,
-head {
-  font-family: sans-serif;
+input{
+  display: block;
+  margin: 0 auto;
 }
-a {
-  text-decoration: none;
-  color: black;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-input,
 button {
   display: block;
   margin: 0 auto;
+  border-width: 1px;
+  border-radius: 5px;
 }

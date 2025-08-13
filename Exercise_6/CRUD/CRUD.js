@@ -29,10 +29,11 @@ function addEntry() {
     newEdit.innerText = "Edit";
     newEdit.addEventListener("click", function () {
         alert("Edit your values in the form");
-        name.value = newDiv.getElementsByClassName("1").textContent.replace("Name: ", "");
-        age.value = newDiv.getElementsByClassName("2").textContent.replace("Age: ", "");
-        sex.value = newDiv.getElementsByClassName("3").textContent.replace("Sex: ", "");
-        position.value = newDiv.getElementsByClassName("4").textContent.replace("Position: ", "");
+        name.value = newDiv.getElementsByClassName("1")[0].textContent.replace("Name: ", "");
+        age.value = newDiv.getElementsByClassName("2")[0].textContent.replace("Age: ", "");
+        sex.value = newDiv.getElementsByClassName("3")[0].textContent.replace("Sex: ", "");
+        position.value = newDiv.getElementsByClassName("4")[0].textContent.replace("Position: ", "");
+        newDiv.remove();
     });
 
 

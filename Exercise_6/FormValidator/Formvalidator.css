@@ -13,16 +13,9 @@ h1{
     text-align: center;
 }
 #submit{
-    background-color: green;
-}
-a{
-    text-decoration:none;
-    color: black;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-h1{
-    text-align: center;
+    background-color: #77DD77;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 nav{
     text-align: center;
@@ -34,9 +27,6 @@ nav{
 #fetchData{
     display: block;
     margin: 0 auto;
-}
-body, head{
-    font-family:sans-serif;
 }
 a{
     text-decoration:none;
