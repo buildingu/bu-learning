@@ -1,0 +1,102 @@
+/* Desktop Styles */
+@media screen and (min-width: 768px) {
+    body {
+        background: url(assets/background-desktop.jpg)
+    }
+    #table2 {
+        display: none;
+    }
+    td {
+        padding: 0px 50px 0px 50px;
+    }
+    tr {
+        background-color: rgb(46, 46, 62);
+        color: white;
+    }
+    tr:nth-child(odd) {
+        background-color: rgb(47, 74, 79);
+    }
+
+    h2, h3:not(table) {
+    color: white;
+    }
+    #work-form {
+        width: 400px;
+        border: 5px solid grey;
+        background-color: rgb(220, 220, 220);
+    }
+    #fullName, #email, #password {
+        width: 300px;
+        height: 25px;
+    }
+    #sub-btn {
+        width: 100px;
+        height: 25px;
+        background-color: green;
+        color: white;
+    }
+    #res-btn {
+        width: 100px;
+        height: 25px;
+        background-color: rgb(255, 0, 0);
+        color: white;
+    }
+    #footer2 {
+        display: none;
+    }
+    #footer1 {
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        background-color: #8e33a7;
+    }
+}
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    body {
+        background: url(assets/background-mobile.jpg)
+    }
+    #table1 {
+        display: none;
+    }
+        tr {
+        background-color: rgb(108, 15, 15);
+        color: white;
+    }
+    tr:nth-child(odd) {
+        background-color: rgb(151, 52, 52);
+    }
+    h2, h3:not(table) {
+    color: white;
+    }
+    #work-form {
+        width: 300px;
+        border: 5px solid grey;
+        background-color: rgb(220, 220, 220);
+    }
+    #fullName, #email, #password {
+        width: 250px;
+        height: 25px;
+    }
+    #sub-btn {
+        width: 100px;
+        height: 25px;
+        background-color: green;
+        color: white;
+    }
+    #res-btn {
+        width: 100px;
+        height: 25px;
+        background-color: rgb(255, 0, 0);
+        color: white;
+    }
+    #footer1 {
+        display: none;
+    }
+    #footer2 {
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        background-color: #0c1260;
+    }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Title and Date Submitted -->
+    <center>
+        <h2>Exercise 1 by Zakariya Atanur</h2>
+        <h3>Date Submitted: 09/08/2025</h3>
+    </center>
+
+    <!-- Table -->
+    <center>
+        <hr>
+        <h3>Fun facts about me</h3>
+        <table id="table1" border="5" bordercolor="grey" bgcolor="grey">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Favorite Movie</th>
+                <th>Favorite Song</th>
+                <th>Favorite Video</th>
+            </tr>
+            <tr>
+                <td>Zakariya</td>
+                <td>Atanur</td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Raiders_of_the_Lost_Ark">
+                        <img src="assets/Raiders_of_the_Lost_Ark_Theatrical_Poster.jpg" alt="" width="176" height="176">
+                    </a>
+                </td>
+                <td style="text-align: center;">
+                    <p>Click play button to play music:</p>
+                    <audio controls>
+                        <source src="assets/rick_roll.mp3" type="audio/mp3">
+                    </audio>
+                </td>
+                <td>
+                    <video controls width="200">
+                        <source src="file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+                    </video>
+                </td>
+            </tr>
+        </table>
+        <table id="table2" border="5" bordercolor="grey" bgcolor="grey">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+            <tr>
+                <td><center>Zakariya</center></td>
+                <td><center>Atanur</center></td>
+            </tr>
+            <tr>
+                <th colspan="2"><center>Favorite Movie</center></th>
+            </tr>
+            <tr>
+                
+                    <td colspan="2">
+                    <center>
+                        <a href="https://en.wikipedia.org/wiki/Raiders_of_the_Lost_Ark">
+                            <img src="assets/Raiders_of_the_Lost_Ark_Theatrical_Poster.jpg" alt="" width="176" height="176">
+                        </a>
+                    </center>
+                    </td>
+                
+            </tr>
+            <tr>
+                <th colspan="2"><center>Favorite Song</center></th>
+            </tr>
+            <tr>
+                
+                    <td colspan="2" style="text-align: center;">
+                    <center>
+                        <p>Click play button to play music:</p>
+                        <audio controls>
+                            <source src="assets/rick_roll.mp3" type="audio/mp3">
+                        </audio>
+                    </center>
+                    </td>
+                
+                
+            </tr>
+            <tr>
+                <th colspan="2"><center>Favorite Video</center></th>
+            </tr>
+            <tr>
+                
+                <td colspan="2">
+                    <center>
+                    <video controls width="200">
+                        <source src="file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+                    </video>
+                </center>
+                </td>
+                
+                
+            </tr>
+        </table>
+        <br>
+        <hr>
+    </center>
+    <center>
+        <!-- Form -->
+        <h3>Enter your details below:</h3>
+        <form id="work-form"><br>
+            <label for="fullName">Full Name: </label><br>
+            <input type="text" id="fullName" placeholder="John Doe"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" placeholder="example@gmail.com"><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="text" id="password" placeholder="password123"><br><br>
+
+            <p>Available Days:</p>
+
+            <input type="checkbox" id="mon">
+            <label for="mon">Monday</label>
+
+            <input type="checkbox" id="tue">
+            <label for="tue">Tuesday</label>
+
+            <input type="checkbox" id="wed">
+            <label for="wed">Wednesday</label>
+
+            <input type="checkbox" id="thur">
+            <label for="thur">Thursday</label>
+
+            <input type="checkbox" id="fri">
+            <label for="fri">Friday</label>
+
+            <input type="checkbox" id="sat">
+            <label for="sat">Saturday</label>
+
+            <input type="checkbox" id="sun">
+            <label for="sun">Sunday</label><br><br>
+
+            <label for="availibilityD">Available Time: </label><br>
+            <select id="availibilityD">
+                <option value="morning">Morning (8AM to 12PM)</option>
+                <option value="afternoon">Afternoon (1PM to 5PM)</option>
+                <option value="evening">Evening (6PM to 10PM)</option>
+            </select>
+            <p>Currently working on new Website?</p>
+            <label for="yes">Yes</label>
+            <input name="choice" type="radio" id="yes" value="yes" checked>
+
+            <label for="no">No</label>
+            <input name="choice" type="radio" id="no" value="no"><br><br>
+
+            <p>(if yes, please enter which page(s) you are working on)</p>
+            <textarea name="comments" placeholder="Your comments here..."></textarea><br>
+            <input id="sub-btn" type="submit" value="submit">
+            <input id="res-btn" type="reset" value="reset">
+        </form>
+    </center>
+    <br>
+    <footer id="footer1">
+        Desktop Version
+    </footer>
+    <footer id="footer2">
+        Mobile Version
+    </footer>
+</body>
+</html>
