@@ -1,0 +1,86 @@
+#image {
+    width: 750px;
+    height: 600px;
+    border-radius: 15%;
+    border: 10px solid black;
+}
+
+p {
+    background-color: orange;
+    padding: 35px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+table {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.header {
+    background-color: lightblue;
+    font-size: 30px;
+    color: rgb(202, 114, 6);
+    border: 5px solid black;
+}
+
+.middle {
+    background-color: lightsalmon;
+    border: 5px solid black;
+}
+
+body {
+    background-color: pink;
+}
+
+.blurb {
+    font-size: 34px;
+    background-color: orange;
+    padding: 50px;
+    height: 450px;
+    width: 300px;
+    font-weight: bold;
+}
+
+.midfooter {
+    background-color: lightblue;
+    border: 5px solid black;
+}
+
+.sign {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#name {
+    height: 40px;
+    width: 400px;
+    font-size: 36px;
+}
+
+#email {
+    height: 40px;
+    width: 400px;
+    font-size: 36px
+}
+
+#submit {
+    height: 60px;
+    width: 150px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 36px;
+    color: green;
+}
+
+#reset {
+    height: 60px;
+    width: 150px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 36px;
+    color: red;
+}
+
+.contact {
+    background-color: lightcoral;
+    font-size: 25px;
+}
