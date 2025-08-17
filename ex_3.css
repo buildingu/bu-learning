@@ -84,12 +84,12 @@
     }
 
     input[type="text"] {
-        width: 300px;
+        width: 80%;
         height: 23px;
     }
 
     input[type="password"] {
-        width: 300px;
+        width: 80%;
         height: 23px;
     }
 
@@ -102,13 +102,13 @@
     }
 
     select {
-        width: 300px;
+        width: 80%;
         height: 40px;
         text-align: center;
     }
 
     textarea{
-        width: 300px;
+        width: 80%;
         height: 50px;
     }
 
@@ -235,12 +235,12 @@
     }
 
     input[type="text"] {
-        width: 200px;
+        width: 80%;
         height: 23px;
     }
 
     input[type="password"] {
-        width: 200px;
+        width: 80%;
         height: 23px;
     }
 
@@ -253,13 +253,13 @@
     }
 
     select {
-        width: 200px;
+        width: 80%;
         height: 40px;
         text-align: center;
     }
 
     textarea{
-        width: 200px;
+        width: 80%;
         height: 45px;
     }
 
