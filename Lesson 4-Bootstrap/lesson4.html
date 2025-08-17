@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Lesson 4 - Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lesson4.css">
+    <link rel="stylesheet" href="test.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo-bu.png" alt="Bootstrap" width="30" height="24">
+                Building-U
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio_1">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact_1">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="intro" id="intro_1" style="background-image: url(background.avif); background-size: cover; background-position: center;">
+        <div class="container">
+            <br><br><br>
+            <h1 class="text-center">Welcome to My BuildingU Projects Page</h1>
+            <h2 class="text-center">Discover my work on Github.</h2>
+            <div class="text-center">
+                <a class="btn btn-primary" href="https://github.com/buildingu/bu-learning/tree/s_basa" target="_blank" rel="noopener noreferrer">View My Work</a>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <h3 class="text-center">About Me</h3>
+                    <p class="aria-label">Hey, I am Sanjana Basa. I am passionate about coding and writing. I have done a couple of internships on Computer Science and Data Science, in journey to find a perfect major. I have also recently started to volunteered to help reduce digital divide.</p>
+                    <p class="aria-label">I also love to write. In fact, my goal is to write a book soon. Writing is my creative outlet and I enjoy exploring different genres and styles.</p>
+                    <p class="aria-label">I am a passionate developer with a keen interest in building innovative solutions. My projects reflect my dedication to learning and improving my skills.</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="logo.png" alt="Picture" class="img-fluid rounded-circle d-block mx-auto" style="width: 300px; height: 300px; ">
+            </div>
+        </div>
+        </div>
+    </div>
+
+<br>
+<div class="portfolio" id="portfolio_1">
+    <div class="container">
+        <h4 class="aria-label">My Portfolio</h4>
+        <div class="row">
+
+           
+            <div class="col-12 col-md-4">
+                <br>
+                <div class="card">
+                    <br>
+                    <img src="html.png" alt="Project 1" height="100px" width="80px" class="img-fluid d-block mx-auto">
+                    <h4 class="aria-label" style="padding: 20px;">Project 1: HTML</h4>
+                    <h5 class="aria-label" style="padding: 20px;">
+                        Project 1 showcases my HTML skills. It's a webpage involving HTML with table and static form components. Click learn more to see the project.
+                    </h5>
+                    <a href="https://github.com/buildingu/bu-learning/tree/s_basa/Lesson%201-%20HTML"
+                       target="_blank"
+                       class="btn btn-danger"
+                       style="width: 35%; margin: 10px auto; display: block;">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-md-4">
+                <br>
+                <div class="card">
+                    <br>
+                    <img src="css.png" alt="Project 2" height="80px" width="80px" class="img-fluid d-block mx-auto">
+                    <h4 class="aria-label" style="padding: 20px;">Project 2: CSS</h4>
+                    <h5 class="aria-label" style="padding: 20px;">
+                        Project 2 showcases my CSS skills. It's a stylized webpage for an event done using HTML and CSS with custom components. Click learn more to see the project.
+                    </h5>
+                    <a href="https://github.com/buildingu/bu-learning/tree/s_basa/Lesson%202-%20CSS"
+                       target="_blank"
+                       class="btn btn-info"
+                       style="width: 35%; margin: 10px auto; display: block;">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-md-4">
+                <br>
+                <div class="card">
+                    <br>
+                    <img src="js.png" alt="Project 3" height="80px" width="80px" class="img-fluid d-block mx-auto">
+                    <h4 class="aria-label" style="padding: 20px;">Project 3: Advanced CSS</h4>
+                    <h5 class="aria-label" style="padding: 20px;">
+                        Project 3 showcases my advanced CSS skills. It's a responsive webpage (Desktop & Mobile) from Project 1. Click learn more to see the project.
+                    </h5>
+                    <a href="https://github.com/buildingu/bu-learning/tree/s_basa/Lesson%203-Advanced%20CSS"
+                       target="_blank"
+                       class="btn btn-warning"
+                       style="width: 35%; margin: 10px auto; display: block;">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<br>
+<div class="contact" id="contact_1" style="background-image: url(background.avif); background-size: cover; background-position: center;">
+    <div class="container">
+        <br>
+        <form>
+            <h1 class="aria-label">Contact Me</h1>
+
+            <div class="form-floating mb-3-bottom">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+
+            <div class="form-floating mb-3-bottom">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+
+            <div class="form-floating mb-3-bottom">
+                <label for="message">Message</label>
+                <input type="text" class="form-control" id="message" placeholder="Enter your comment here.">
+            </div>
+
+            <input type="submit" value="Submit" style="background-color: #18b341; color: white; border: none; padding: 5px 10px; border-radius: 5px;">
+        </form>
+        <br><br>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2 {
+    color: rgb(248, 215, 237);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+    h2 {
+        color: rgb(245, 48, 179);
+    }
+    h1 {
+        -webkit-text-stroke: 1px rgb(250, 244, 82);
+    }
+    
+}
+.card {
+    background-color: aliceblue;
+}
+h5 {
+    color: rgb(110, 110, 111);
+}
+.navbar {
+  background-color: white !important; 
+}
+
+.form-floating.mb-3-bottom {
+    margin-bottom: 1rem;
+    align-content: start;
+    max-width: 50%;
+}
+@media screen and (max-width: 767px) {
+    .form-floating.mb-3-bottom {
+    margin-bottom: 1rem;
+    align-content: start;
+    max-width: 100%;
+}
+}
