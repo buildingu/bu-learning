@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro to HTML5</title>
+
+        <meta charset="UTF-8"/>
+        <meta name="keywords" content="HTML5"/>
+        <meta name="description" content="HTML5 Tutorial"/>
+        <meta name="author" content="V"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="refresh" content="30"/>
+    </head>
+
+    <body>
+        <h1>Exercise 1</h1>
+        <h2>Date Submitted: 4/6/2025</h2>
+        <h2>Date Resubmitted: 5/24/2025</h2>
+    <br>
+        <h3>Favorite things:</h3>
+        <fieldset>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Movie Poster</th>
+                <th>Sound</th>
+                <th>Video</th>
+            </tr>
+            <tr>
+                <td>Aarna</td>
+                <td>Kamath</td>
+                <td>
+                <a href="https://en.wikipedia.org/wiki/Cheaper_by_the_Dozen">
+                    <img src="movieimage.jpg" height=200 width=150 alt="Cheaper By the Dozen">
+                </a>
+                </td>
+                <td><audio controls>
+                    <source src="cat-meow.mp3" type="audio/mp3"></td></audio>
+                <td><video width="400" controls>
+                    <source src="video-sample.mp4" type="video/mp4"></td></video>
+            </tr>
+        </table>
+        </fieldset>
+    <br>
+        <h3>Enter details below:</h3>
+        <fieldset>
+        <form>
+            <label>Full Name: </label>
+            <input type="text" placeholder="John Doe"><br><br>
+            <label>Email:     </label>
+            <input type="text" placeholder="user@example.com"><br><br>
+            <label>Password:  </label>
+            <input type="password">
+        </fieldset>
+        <br>
+            <p>Available Days: 
+            <input type="checkbox"> Monday
+            <input type="checkbox"> Tuesday
+            <input type="checkbox"> Wednesday
+            <input type="checkbox"> Thursday
+            <input type="checkbox"> Friday
+            </p>
+        <label for="times">Available Time:</label>
+        <select name="times" id="times">
+            <option value="morning">morning (10am to 12pm)</option>
+            <option value="afternoon">afternoon (1pm to 3pm)</option>
+            <option value="evening">evening (3pm to 5pm)</option>
+        </select>
+            <p>Working on a new website? 
+            <input type="radio" checked> yes
+            <input type="radio"> no
+            </p>
+        </form>
+        <br>
+        <p>Comments?</p>
+        <textarea cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </body>
+</html>

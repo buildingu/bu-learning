@@ -1,0 +1,69 @@
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: azure;
+    border-style: dotted;
+    border-width: 7px;
+    color: #cc9fb8; 
+    font-style: italic;
+}
+h3 {
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: azure;
+}
+body{
+    background-color:rgb(211, 205, 194);
+}
+.first {
+    th {
+        font-size: 40px;
+        padding-right: 30px;
+        padding-bottom: 5px;
+    }
+    td {
+        font-size: 25px;
+        padding-right: 30px;
+        padding-bottom: 150px;
+    }
+    padding-right: 910px;
+    background-image: url("assets/Screenshot\ 2025-06-21\ 111116.png");
+}
+.second {
+    th {
+        font-size: 40px;
+        padding-left: 95px;
+        padding-right:95px;
+    }
+    td {
+        font-size: 25px;
+        padding-left: 95px;
+        padding-right:95px;
+    }
+    background-image: url("assets/Screenshot\ 2025-06-21\ 111116.png");
+
+}
+div {
+  border: 1px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgb(229, 237, 240);
+  font-size: 35px;
+  color: #9d6785; 
+  font-style:italic; 
+  text-align: center;
+}   
+fieldset {
+    background-color: rgb(241, 213, 234);
+    text-align: center;
+    font-size: 15px;
+}
+.details{
+    color:azure; 
+    text-align: left;
+}
