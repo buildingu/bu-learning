@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        .hero {
+            text-align: center;
+            color: white;
+        }
+        .background {
+            background: url(/img/photo-1699891730676-037bed3c1bed.jpeg);
+        }
+        .circle {
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+        }
+        .card-portfolio {
+            width: 400px;
+            min-height: 516px;
+        }
+        .contact-me {
+            color: white;
+            width: 750px;
+        }
+        .d-version {
+            display: block;
+        }
+        .m-version {
+            display: none;
+        }
+        @media screen and (max-width: 415px) {
+            .circle {
+            width: 200px;
+            height: 200px;
+            }
+            .responsive-img {
+                display: flex;
+            }
+            .card-portfolio {
+                width: 350px;
+                margin-bottom: 30px;
+            }
+            .portfolio {
+                display: flex;
+                justify-content: center;
+            }
+            .d-version {
+                display: none;
+            }
+            .m-version {
+                display: block;
+            }
+        }
+        @media screen and (max-width: 993px) {
+            .responsive-img {
+                display: flex;
+                justify-content: center;
+            }
+            .card-portfolio {
+                margin-bottom: 30px;
+            }
+            .portfolio {
+                display: flex;
+                justify-content: center;
+            }
+            .d-version {
+                display: none;
+            }
+            .m-version {
+                display: block;
+            }
+            .contact-me {
+                width: 350px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">BuildingU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="background">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Welcome to My BuildingU Portfolio</h1>
+                        <p>Discover my learning journey and projects.</p>
+                        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About -->
+        <div class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 style="color: white;">About Me</h2>
+                        <p style="color: white;">
+                            Hey, I'm Zakariya Atanur, and I'm passionate about web development and coding. I volunteer my skills to
+                            build amazing websites and write efficient code that brings ideas to life. <br><br>
+                            With several years of experience in the field, I've had the privilege of working on a wide range of
+                            projects, from creating responsive and user- friendly websites to developing custom web applications that
+                            solve complex problems. <br><br>
+                            My journey in web development has allowed me to explore various technologies and frameworks, and Bootstrap
+                            is one of my favorites. It's a fantastic tool for creating sleek and responsive web designs, which is why
+                            I'm excited to share my knowledge with you through this exercise. <br><br>
+                        </p>
+                    </div>
+                    <div class="col-lg-6 responsive-img">
+                        <img src="/img/_banana cat_ Sticker for Sale by abbex.jpeg" alt="Profile" class="circle">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio -->
+    <div class="portfolio py-5">
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <div class="card card-portfolio">
+                        <img src="img/html.png" class="card-img-top" alt="HTML" style="height: 300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1: HTML</h5>
+                            <p class="card-text">Project 1 showcases my HTML skills. It's a webpage involving HTML with table and static form components. Click learn more to see the project.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: red; border: none; color: white;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <div class="card card-portfolio">
+                        <img src="img/css.png" class="card-img-top" alt="CSS" style="height: 300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2: CSS</h5>
+                            <p class="card-text"> Project 2 showcases my CSS skills. It's a stylized webpage for an event done using HTML and CSS with custom components. Click learn more to see the project.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #4ec0c2; border: none; color: white;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <div class="card card-portfolio">
+                        <img src="img/js.png" class="card-img-top" alt="JS" style="height: 300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3: Advanced CSS</h5>
+                            <p class="card-text">Project 3 showcases my advanced CSS skills. It's a responsive webpage (Desktop & Mobile) from Project 1. Click learn more to see the project.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: rgb(181, 181, 0); border: none; color: white;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- Contacts -->
+    <div class="background py-5">
+        <div class="container">
+            <div class="contact-me">
+                <h2 style="color: white;">Contact Me</h2>
+                <form>
+                <div class="mb-3">
+                    <label for="exampleInputName" class="form-label">Name</label>
+                    <input type="name" class="form-control" id="exampleInputName" placeholder="John Doe">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your comment here."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="background-color: green; border: none;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-start">
+                    <p>2025 Zakariya Atanur</p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <p class="d-version">Desktop Version</p>
+                    <p class="m-version">Mobile Version</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
