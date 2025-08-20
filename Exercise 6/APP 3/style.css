@@ -1,0 +1,42 @@
+:root{
+  --bg:#071022;
+  --panel:#0f1833;
+  --ring:#2b3c73;
+  --text:#e9eefc;
+  --muted:#9fb0ff;
+}
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  background: var(--bg);
+  color:var(--text);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  display:grid;
+  place-items:center;
+  padding:24px;
+}
+
+#output{
+  margin-top: 12px;
+  width:min(720px, 100%);
+  background: linear-gradient(180deg, #121a33 0%, #0f162c 100%);
+  border:1px solid var(--ring);
+  border-radius:16px;
+  padding:22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  text-align:center;
+  font-size: clamp(18px, 2.4vw, 24px);
+  line-height:1.5;
+}
+
+button{
+  padding:14px 18px;
+  border-radius:12px;
+  border:1px solid var(--ring);
+  background:#172145;
+  color:var(--text);
+  cursor:pointer;
+  font-weight:600;
+}
+button:hover{ filter:brightness(1.1); }
