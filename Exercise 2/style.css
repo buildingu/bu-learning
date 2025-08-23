@@ -1,0 +1,162 @@
+body {
+    background-color: beige;
+    font-family: Arial;
+    margin: 0;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #c5d9c5;
+    padding: 25px;
+    border: 3px solid #2d5a2d;
+}
+
+header {
+    background-color: #1a4d1a;
+    color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+}
+
+.header-text {
+    text-align: center;
+    flex: 1;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 5px 0 0 0;
+}
+
+.info {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #2d5a2d;
+    text-align: center;
+}
+
+.details {
+    background-color: #b8d4b8;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #1a4d1a;
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border: 2px solid #1a4d1a;
+    margin-top: 15px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #2d5a2d;
+}
+
+td:first-child {    
+    background-color: #2d5a2d;
+    color: white;
+    font-weight: bold;
+}
+
+.speaker-info {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#speaker-pic {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #1a4d1a;
+    margin: 15px auto;
+    display: block;
+}
+
+.resources {
+    background-color: #b8d4b8;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.resources a {
+    color: #1a4d1a;
+    background-color: #c5d9c5;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: 2px solid #2d5a2d;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+.signup {
+    background-color: #b8d4b8;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.signup p {
+    color: #1a4d1a;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #2d5a2d;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #1a4d1a;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.contact-us {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #2d5a2d;
+    text-align: center;
+}
+
+footer {
+    background-color: #1a4d1a;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
