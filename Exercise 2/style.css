@@ -1,0 +1,94 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F0F0F0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  color: #C080FF;
+  font-size: 80px;
+  text-align: center;
+  margin: 20px 0;
+  padding: 15px;
+  border-bottom: 6px groove #A020F0;
+}
+
+h2, h3 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: #2E1A47;
+  margin: 10px 0;
+}
+
+.contact {
+  text-align: center;
+}
+
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #FFFFFF;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #2E1A47;
+}
+
+th {
+  background-color: #00E5FF;
+  color: white;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.activity img {
+  width: 200px;
+  border: 2px solid #00E5FF;
+  padding: 5px;
+  background-color: white;
+}
+
+.activity h3 {
+  color: #00E5FF;
+}
+
+iframe {
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #2E1A47;
+}
+
+form {
+  text-align: center;
+  margin: 20px;
+}
+
+#play-btn {
+  display: block;
+  margin: 40px auto 20px auto;
+  padding: 12px 25px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 22px;
+  color: #FFFFFF;
+  background-color: #00E5FF;
+  border: 3px groove #2E1A47;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#play-btn:hover {
+  background-color: #2E1A47;
+  color: #00E5FF;
+}
