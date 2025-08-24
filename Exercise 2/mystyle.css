@@ -1,60 +1,125 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #eef4f7;
+  font-family: 'Georgia', sans-serif;
+  background-color: #f0f8ff; 
+  color: #333333; 
   margin: 0;
   padding: 0;
 }
 
-header {
-  background-color: #a4b9c4;
-  color: #e35117;
+h1 {
   text-align: center;
-  padding: 20px;
+  margin: 20px 0;
+  color: #fca971;
 }
 
-section {
-  background: white;
-  border: 1px solid #d3d3c4;
-  border-radius: 8px;
-  padding: 15px;
-  margin: 15px;
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #349fec;
+}
+
+h3 {
+  text-align: center;
+  margin: 20px 0;
+  color: #349fec;
+}
+
+.info {
+  text-align: center;
+  margin: 20px 0;
+  color: #fca971;
+}
+
+hr {
+  border: 2px solid #60a6d8; 
+  margin: 20px auto;
+  width: 80%;
 }
 
 table {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto 30px;
   border-collapse: collapse;
 }
+
 table, th, td {
-  border: 1px solid #d3d3c4;
-}
-th, td {
+  border: 2px solid #60a6d8;
   padding: 10px;
+  text-align: center;
 }
 
-img, video {
-  max-width: 100%;
-  border: 2px solid #a4b9c4;
-  border-radius: 6px;
-  margin-top: 10px;
+th {
+  background-color: #60a6d8; 
+  color: white;
+}
+
+img {
+  width: 600px;
+  height: 400px; 
+  display: block;
+  margin: 10px auto;
+  border: 2px solid #fca971;
+  border-radius: 10px;
+  object-fit: cover; 
+}
+
+iframe {
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #fca971;
+  border-radius: 10px;
 }
 
 form {
-  margin-top: 10px;
+  width: 60%;
+  margin: 0 auto 30px auto;
+  padding: 20px;
+  border: 2px solid #60a6d8;
+  border-radius: 10px;
+  background-color: #e6f2ff;
 }
 
-button {
-  background-color: #e35117;
-  color: white;
+input, select, textarea {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #fca971;
+  border-radius: 5px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+input[type="submit"] {
+  font-size: 14px;         
+  color: white;           
+  background-color: #fbab76;
+  padding: 6px 12px;       
   border: none;
+  border-radius: 5px; 
+  max-width: 200px;         
   cursor: pointer;
 }
-button:hover {
-  background-color: #c23f12;
+
+input[type="submit"]:hover {
+  background-color: #45a049; 
+}
+
+.contactinfo {
+  margin-left: 40px;
 }
 
 footer {
-  background-color: black;
-  color: white;
+  font-size: 20px;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  background-color: #fca971;
+  color: white;
+  margin-top: 40px;
+}
+
+* {
+  box-sizing: border-box;
 }
