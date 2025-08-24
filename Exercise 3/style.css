@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('assets/background-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+h1, h2, h3, textarea {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+header h1 { font-size: 2em; margin-bottom: 10px; }
+header h3 { font-size: 1.2em; }
+
+.fun-facts, .contact-form {
+    padding: 20px;
+    margin: 15px auto;
+    border: 5px solid;
+}
+
+.fun-facts { background: #1a3a5c; border-color: #fff; }
+.contact-form { background: #c0c0c0; border-color: #999; color: black; }
+
+.form-group { margin-bottom: 20px; }
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 4px solid #ccc;
+}
+textarea { resize: vertical; }
+
+input[type="submit"] { background: #4CAF50; color: white; cursor: pointer; }
+input[type="reset"] { background: #f44336; color: white; cursor: pointer; }
+
+.button-group, .checkbox-group, .radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.checkbox-group label, .radio-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.checkbox-group input, .radio-group input { margin-right: 8px; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px auto;
+    background: rgba(255,255,255,0.1);
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    border: 4px solid #0066cc;
+}
+th { 
+    font-weight: bold; 
+    font-size: 1.1em; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+th:nth-child(odd) { background: #0052cc; }
+td { background: #4d79a4; }
+
+td img { max-width: 120px; height: auto; }
+td video { max-width: 480px; height: auto; }
+td audio { width: 100%; margin: 5px 0; }
+
+.version-indicator {
+    text-align: center;
+    padding: 15px;
+    background: #8B008B;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #ccc;
+}
+
+@media (max-width: 767px) {
+    body { background: url('assets/background-mobile.jpg') no-repeat center center fixed; }
+    .container, header, .fun-facts, .contact-form, .form-group, .button-group { padding: 10px; }
+
+    header h1 { font-size: 1.5em; }
+    header h3 { font-size: 1em; }
+
+    table { display: block; width: 100%; border: none; background: transparent; }
+    thead, th { display: none; }
+    tr { display: block; margin-bottom: 20px; }
+    td {
+        display: block;
+        width: 100%;
+        border: 4px solid #0066cc;
+        margin-bottom: 10px;
+    }
+
+    td:nth-child(1), td:nth-child(2) { display: inline-block; width: 48%; margin-right: 2%; }
+    td:nth-child(2) { margin-right: 0; }
+    td:nth-child(3), td:nth-child(4), td:nth-child(5) { width: 100%; margin-top: 10px; }
+
+    td:nth-child(1)::before { content: "First Name"; color: #ffd700; font-weight: bold; margin-bottom: 8px; display: block; }
+    td:nth-child(2)::before { content: "Last Name"; color: #ffd700; font-weight: bold; margin-bottom: 8px; display: block; }
+    td:nth-child(3)::before { content: "Favorite Movie"; color: #ffd700; font-weight: bold; margin-bottom: 8px; display: block; }
+    td:nth-child(4)::before { content: "Favorite Song"; color: #ffd700; font-weight: bold; margin-bottom: 8px; display: block; }
+    td:nth-child(5)::before { content: "Favorite Video"; color: #ffd700; font-weight: bold; margin-bottom: 8px; display: block; }
+
+    td img, td video, td audio { max-width: 100%; margin: 0 auto; display: block; }
+    .version-indicator { background: #000080; }
+}
+
+@media (min-width: 768px) { .version-indicator::before { content: "Desktop Version®"; } }
+@media (max-width: 767px) { .version-indicator::before { content: "Mobile Version®"; } }
