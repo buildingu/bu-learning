@@ -1,0 +1,45 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(270deg, black, rgb(4, 59, 4), rgb(217, 217, 0));
+    background-size: 600% 600%;
+    animation: gradientAnimation 40s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.aboutme {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto; }
+
+.aboutme .row {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.aboutme img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.background-white{
+    border: 5px solid rgba(2, 141, 0,1);
+    border-radius: 15px;
+    background-color: rgba(252,252,252,0.7);
+}
+
+.aboutme .image-col {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.aboutme .image-col img {
+    max-width: 100%;   
+    height: auto;      
+}
