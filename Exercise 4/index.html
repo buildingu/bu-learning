@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang= "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercise 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { 
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; min-height: 100vh; }
+        .about-section { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+        .contact-section { background: linear-gradient(135deg, #8e44ad 0%, #3498db 100%); color: white; }
+        .profile-img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; }
+        .project-card { border: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .project-card:hover { transform: translateY(-5px); }
+        .project-card .card-text { font-size: 16px; }
+        .project-card .card-title { font-size: 1.4rem; font-weight: bold; }
+        .tech-icon { width: 150px; height: 120px; object-fit: contain; }
+        .tech-section h3 { font-size: 1.5rem; font-weight: bold; }
+        footer { color: #333; }
+        .portfolio-header { 
+            font-size: 3rem; 
+            font-weight: bold; 
+            text-align: left; 
+            margin-bottom: 3rem; 
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">BuildingU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portflio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero d-flex align-items-center" style="margin-top: 56px;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold mb-4">Welcome to My BuildingU Projects Page</h1>
+                <p class="lead mb-4">Discover my work on Github.</p>
+                <a class="btn btn-primary" href="https://github.com/aaronkoolkoder" role="button" target="_blank">View My Work</a>
+
+            </div>
+
+            <div id="about" class="row align-items-center mt-5">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">About Me</h2>
+                    <p class="mb-3">Hey, I'm Aaron Merchant, and I'm passionate about web development and coding. I volunteer my skills to build amazing websites and write efficient code that brings ideas to life.</p>
+                    <p class="mb-3">With several years of experience in the field, I've had the privilege of working on a wide range of projects, from creating responsive and user-friendly websites to developing custom web applications that solve complex problems.</p>
+                    <p>My journey in web development has allowed me to explore various technologies and frameworks, and Bootstrap is one of my favorites. It's a fantastic tool for creating sleek and responsive web designs, which is why I'm excited to share my knowledge with you through this exercise.</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img src="assets/profile.jpg" alt="Profile" class="profile-img mb-3" style="background: #444; display: flex; align-items: center; justify-content: center; color: white;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="portfolio-header">My Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="assets/htmlproj.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1: HTML Basics</h5>
+                            <p class="card-text">Project 1 showcases my HTML skills. It's a webpage involving HTML with table and static form components. Click learn more to see the project.</p>
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#project1Modal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="assets/cssproj.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2: CSS Styling</h5>
+                            <p class="card-text">Project 2 showcases my CSS skills. It's a stylized webpage for an event done using HTML and CSS with custom components. Click learn more to see the project.</p>
+                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#project2Modal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="assets/advcssproj.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3: Advanced CSS</h5>
+                            <p class="card-text">Project 3 showcases my advanced CSS skills. It's a responsive webpage (Desktop & Mobile) from Project 1. Click learn more to see the project.</p>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#project3Modal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <h2 class="mb-4">Contact Me</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="jdoe@fakemail.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="4" placeholder="Enter your comment here." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-lg">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-md-start text-center mb-3 mb-md-0">
+                    <div class="fs-4">&copy; 2025 Aaron Merchant</div>
+                </div>
+                <div class="col-md-6 text-md-end text-center">
+                    <span class="d-none d-md-inline fs-4">Desktop Version&#174;</span>
+                    <span class="d-md-none fs-4">Mobile Version&#174;</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="project1Modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project 1: HTML</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/htmlprojsite.jpg" class="img-fluid mb-3" alt="HTML Website Preview">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project2Modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project 2: CSS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/cssprojsite.jpg" class="img-fluid mb-3" alt="CSS Website Preview">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project3Modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project 3: Advanced CSS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/advcssprojsite.jpg" class="img-fluid mb-3" alt="Advanced CSS Website Preview">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
