@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Exercise 3</title>
+
+        <meta charset="UTF-8"/>
+        <meta name="keywords" content="ex3"/>
+        <meta name="description" content="ex3 website"/>
+        <meta name="author" content="V"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="refresh" content="30"/>
+
+        <link rel="stylesheet" href="ex_3.css">
+    </head>
+
+    <body>
+        <h1>Exercise 3 by Aarna K.</h1>
+        <h2>Date submitted: TBD</h2>
+
+        <hr>
+        <h3>Fun facts about me:</h3>
+
+        <table class="desktop-table">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Favorite Movie</th>
+                <th>Favorite Song</th>
+                <th>Favorite Video</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>
+                <img src="assets/ex3image.jpg" height=200 width=200 alt="Raiders">
+                </td>
+                <td>Click play button to play music: <br><audio controls>
+                    <source src="assets/ex3audio.mp3" type="audio/mp3"></td></audio>
+                <td><video width="300" controls>
+                    <source src="assets/ex3video.mp4" type="video/mp4"></td></video>
+            </tr>
+        </table>
+
+        <table class="mobile-head">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+            </tr>
+        </table>
+        <table class="mobile-other">
+            <tr>
+                <th>Favorite Movie</th>
+            </tr>
+            <tr>
+                <td>
+                <img src="assets/ex3image.jpg" height=200 width=200 alt="Raiders">
+                </td></tr>
+            <tr>
+            <tr>
+                <th>Favorite Song</th></tr>
+            </tr>
+                <td>Click play button to play music: <br><audio controls>
+                    <source src="assets/ex3audio.mp3" type="audio/mp3"></td></audio></tr>
+            <tr>
+                <th>Favorite Video</th>
+            <tr>
+                <td><video width="300" controls>
+                    <source src="assets/ex3video.mp4" type="video/mp4"></td></video>
+            </tr>
+        </table>
+
+        <br><hr>
+        
+        <br><h3>Enter your details below:</h3>
+
+        <form>
+            <label>Full Name</label><br>
+            <input type="text" placeholder="John Doe"><br><br>
+
+            <label>Email Address   </label><br>
+            <input type="text" placeholder="jdoe@fakemail.com"><br><br>
+
+            <label>Password  </label><br>
+            <input type="password" placeholder="****">
+            <br><br>
+
+            <label>Available Meeting Days:</label> <br>
+            <input type="checkbox"> Monday
+            <input type="checkbox"> Tuesday
+            <input type="checkbox"> Wednesday
+            <input type="checkbox"> Thursday
+            <input type="checkbox"> Friday<br>
+            <input type="checkbox"> Saturday
+            <input type="checkbox"> Sunday<br><br>
+            
+
+            <label for="times">Available Time:</label><br>
+            <select name="times" id="times">
+            <option value="morning">morning (10am to 12pm)</option>
+            <option value="afternoon">afternoon (1pm to 3pm)</option>
+            <option value="evening">evening (3pm to 5pm)</option></select>
+
+            <p>Currently working on a new website? <br>
+            <input type="radio" name="working" checked> yes
+            <input type="radio" name="working"> no
+            </p>
+
+            <p>If yes, please enter which page(s) you are working on</p>
+            <textarea placeholder="Enter your comments here"></textarea><br>
+            
+            <input class="button" type="submit" value="Submit">
+            <input class="button" type="reset" value="Reset">
+        </form>
+    </body>
+</html>
