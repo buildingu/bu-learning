@@ -4,15 +4,15 @@
         <link rel="stylesheet" type="text/css" href="lession.css">
     </head>
     <body>
-        <form onsubmit="return validateAndShowErrors(this);">
+        <form id="myForm" onsubmit="return validateAndShowErrors(this);">
             <div>
-                <label for="first_name">First Name:</label>
+                <label for="first_name">First name:</label>
                 <input type="text" id="first_name" name="first_name">
                 <span id="first_name_error" class="error-message"></span>
             </div>
             <br>
             <div>
-                <label for="last_name">Last Name:</label>
+                <label for="last_name">Last name:</label>
                 <input type="text" id="last_name" name="last_name">
                 <span id="last_name_error" class="error-message"></span>
             </div>
@@ -24,13 +24,15 @@
             </div>
             <br>
             <div>
-                <label for="phone_no">Phone Number:</label>
+                <label for="phone_no">Phone number:</label>
                 <input type="tel" id="phone_no" name="phone_no">
                 <span id="phone_no_error" class="error-message"></span>
             </div>
-
+            <br>
             <button type="submit">Submit</button>
         </form>
+
+        <h2 id="submissionSuccess" style="font-size: 18px; padding-left: 20px; color: rgb(246, 21, 21); font-family: Arial, sans-serif; display: none;">Welcome to the ADOS App.</h2>
         <script src="lesson5.js"></script>
     </body>
 </html>

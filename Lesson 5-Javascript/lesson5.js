@@ -1,55 +1,33 @@
-function validateForm(form) {
-    const firstNameInput = form.first_name;
-    const lastNameInput = form.last_name;
-    const ageInput = form.age;
-    const phoneNoInput = form.phone_no;
-
-    let isValid = true;
-
-    isValid = validateAndShowErrors(form);
-
-    return isValid;
-}
-
-function resetForm(form) {
-    form.reset();
-    form.first_name.setCustomValidity('');
-    form.last_name.setCustomValidity('');
-    form.age.setCustomValidity('');
-    form.phone_no.setCustomValidity('');
-}
-
 function validateInput(input) {
     let isValid = true;
-
-    input.setCustomValidity('');
+    let errorMessage = '';
 
     switch (input.name) {
         case 'first_name':
         case 'last_name':
             if (!/^[a-zA-Z]+$/.test(input.value)) {
-                input.setCustomValidity('Please enter a valid name');
                 isValid = false;
+                errorMessage = 'Please enter a valid name (with letters only)';
             }
             break;
         case 'age':
             if (!/^\d+$/.test(input.value)) {
-                input.setCustomValidity('Please enter a valid age');
                 isValid = false;
+                errorMessage = 'Please enter a valid age (with numbers only)';
             } else if (parseInt(input.value, 10) < 18) {
-                input.setCustomValidity('Sorry, not old enough for our app');
                 isValid = false;
+                errorMessage = 'Sorry, not old enough for our app';
             }
             break;
         case 'phone_no':
             if (!/^\d+$/.test(input.value)) {
-                input.setCustomValidity('Please enter a valid phone number');
                 isValid = false;
+                errorMessage = 'Please enter a valid phone number';
             }
             break;
     }
 
-    return isValid;
+    return { isValid, errorMessage };
 }
 
 function validateAndShowErrors(form) {
@@ -59,24 +37,45 @@ function validateAndShowErrors(form) {
         { input: form.age, errorSpan: 'age_error' },
         { input: form.phone_no, errorSpan: 'phone_no_error' }
     ];
-    let allFilled = true;
+    let isFormValid = true;
 
     requiredFields.forEach(({ input, errorSpan }) => {
-        document.getElementById(errorSpan).style.visibility = 'hidden';
+        const errorElement = document.getElementById(errorSpan);
+        errorElement.textContent = '';
+        errorElement.style.visibility = 'hidden';
         input.classList.remove('invalid-input');
     });
 
     requiredFields.forEach(({ input, errorSpan }) => {
+        const errorElement = document.getElementById(errorSpan);
+
         if (!input.value) {
-            const errorElement = document.getElementById(errorSpan);
-            errorElement.textContent = 'This field is required';
+            errorElement.textContent = `${input.name.replace('_', ' ')} is required`;
             errorElement.style.visibility = 'visible';
             input.classList.add('invalid-input');
-            allFilled = false;
+            isFormValid = false;
+        } else {
+            const validationResult = validateInput(input);
+            if (!validationResult.isValid) {
+                errorElement.textContent = validationResult.errorMessage;
+                errorElement.style.visibility = 'visible';
+                input.classList.add('invalid-input');
+                isFormValid = false;
+            }
         }
     });
-
-    return allFilled;
+    return isFormValid;
 }
 
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    const isFormValid = validateAndShowErrors(this);
 
+    if (!isFormValid) {
+        event.preventDefault();
+        return;
+    }
+
+    event.preventDefault();
+    document.getElementById('submissionSuccess').style.display = 'block';
+    this.reset();
+});
