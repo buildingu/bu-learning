@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <h1>Form</h1>
+        <link rel="stylesheet" type="text/css" href="lession.css">
+    </head>
+    <body>
+        <form onsubmit="return validateAndShowErrors(this);">
+            <div>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name">
+                <span id="first_name_error" class="error-message"></span>
+            </div>
+            <br>
+            <div>
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name">
+                <span id="last_name_error" class="error-message"></span>
+            </div>
+            <br>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age">
+                <span id="age_error" class="error-message"></span>
+            </div>
+            <br>
+            <div>
+                <label for="phone_no">Phone Number:</label>
+                <input type="tel" id="phone_no" name="phone_no">
+                <span id="phone_no_error" class="error-message"></span>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+        <script src="lesson5.js"></script>
+    </body>
+</html>

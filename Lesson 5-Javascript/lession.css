@@ -1,0 +1,11 @@
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-left: 10px;
+    visibility: hidden; /* Start hidden */
+}
+
+/* Optional: Style the input with an error */
+.invalid-input {
+    border-color: red;
+}
