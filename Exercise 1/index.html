@@ -13,7 +13,7 @@
         <fieldset>
             <h4>Fun facts about me:</h4>
 
-            <table align="center">
+            <table align="center" border=”5px” bordercolor="red" cellpadding=”5px” bgcolor="grey">
                 <tr>
                     <th>First Name</th>
                     <th>Last Name</th>
@@ -33,41 +33,41 @@
 
         <h4>Enter your details below:</h4>
         <form>
-            <label>Full Name</label>
-            <input type="text" placeholder="Jasur Abduxakimov"><br><br>
-            <label>Email</label>
-            <input type="email" placeholder="abdc@gmail.com"><br><br>
-            <label>Password</label>
-            <input type="password" placeholder="****"><br><br>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Jasur Abduxakimov"><br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="abdc@gmail.com"><br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="****"><br><br>
 
-            <label>Available meeting days:</label><br><br>            
-            <input type="checkbox">
-            <label>Monday</label>
-            <input type="checkbox">
-            <label>Tuesday</label>
-            <input type="checkbox">
-            <label>Wednesday</label>
-            <input type="checkbox">
-            <label>Thursday</label>
-            <input type="checkbox">
-            <label>Friday</label>
-            <input type="checkbox">
-            <label>Saturday</label>
-            <input type="checkbox">
-            <label>Sunday</label><br><br>
+            <label for="days">Available meeting days:</label><br><br>            
+            <input id="monday" type="checkbox">
+            <label for="monday">Monday</label>
+            <input id="tuesday" type="checkbox">
+            <label for="tuesday">Tuesday</label>
+            <input id="wednesday" type="checkbox">
+            <label for="wednesday">Wednesday</label>
+            <input id="thursday" type="checkbox">
+            <label for="thursday">Thursday</label>
+            <input id="friday" type="checkbox">
+            <label for="friday">Friday</label>
+            <input id="saturday" type="checkbox">
+            <label for="saturday">Saturday</label>
+            <input id="sunday" type="checkbox">
+            <label for="sunday">Sunday</label><br><br>
 
-            <label>Available Time:</label>
+            <label for="time">Available Time:</label>
             <select>
                 <option>Morning (8am to 12pm)</option>
                 <option>Evening (8pm to 12am)</option>
             </select><br><br>
 
-            <label>Currently working on new website:</label>
-            <input type="radio" checked>Yes
-            <input type="radio">No <br><br>
-            <textarea placeholder="Enter your comments here"></textarea><br><br>
-            <input type="submit">
-            <input type="reset">
+            <label for="working">Currently working on new website:</label>
+            <input id="working-yes" type="radio" checked>Yes
+            <input id="working-no" type="radio">No <br><br>
+            <textarea id="comments" placeholder="Enter your comments here"></textarea><br><br>
+            <input id="submit-btn" type="submit">
+            <input id="reset-btn" type="reset">
         </form>
     </center>
 </body>
