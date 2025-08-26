@@ -1,17 +1,17 @@
 body {
     background-color: #f3f3f3;
 }
-.Title {
+#Title {
     color: #363636;
     justify-self: center;
 }
-.subTitle {
+#subTitle {
     color: #363636;
     justify-self: center;
     position: relative;
     top: -20px;
 }
-.info {
+#info {
     width: 500px;
     border: 2px solid black;
     background-color: #eeeeee;
@@ -19,14 +19,14 @@ body {
     padding: 0px 20px 0px 20px;
     text-align: center;
 }
-.info-finalists {
+#info-finalists {
     color: red;
 }
-.info-DateAndWhere {
+#info-DateAndWhere {
     border: 1px solid black;
     margin: auto;
 }
-.info-DateAndWhere th, .info-DateAndWhere td{
+#info-DateAndWhere th, #info-DateAndWhere td{
     border: 1px solid black;
 }
 th, td{
@@ -38,19 +38,19 @@ th, td{
     margin: auto;
     display: block;
 }
-.main {
+#main {
     background-color: #68709e;
-    height: 800px;
+    height: 1000px;
 }
-.vips {
+#vips {
     margin: auto;
     color: white;
     padding: 20px 0px 20px 0px;
 }
-.match-cap {
+#match-cap {
     text-align: center;
 }
-.match-video {
+#match-video {
     justify-self: center;
     display: flex;
 }
@@ -58,7 +58,7 @@ th, td{
     width: 300px;           /* or whatever size you want */
     margin: auto;
 }
-.contacts {
+#contacts {
     color: white;
     margin: auto;
 }

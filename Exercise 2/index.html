@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="Title">Welcome to the School National Soccer Tournament Finals</h1>
-    <h2 class="subTitle">Where you will watch the best play the best!</h2>
+    <h1 id="Title">Welcome to the School National Soccer Tournament Finals</h1>
+    <h2 id="subTitle">Where you will watch the best play the best!</h2>
     <img id="logo" src="images.png" alt=""><br><br>
-    <div class="info">
-        <p class="info-finalists">The Finalists of the tournament are Johnsen heights secondary and Kwantlen park secondary. Winner goes home with cash prize of $5000 dollars!</p>
-        <table class="info-DateAndWhere">
+    <div id="info">
+        <p id="info-finalists">The Finalists of the tournament are Johnsen heights secondary and Kwantlen park secondary. Winner goes home with cash prize of $5000 dollars!</p>
+        <table id="info-DateAndWhere">
             <tr>
                 <th>Date:</th>
                 <th>Location: </th>
@@ -31,8 +31,8 @@
         </table>
     </div>
     <br><br><br>
-    <div class="main">
-        <table class="vips">
+    <div id="main">
+        <table id="vips">
         <tr>
             <th>VIP guests</th>
             <th>Going?</th>
@@ -94,28 +94,30 @@
             <td>No</td>
         </tr>
     </table>
-    <p class="match-cap">
+    <p id="match-cap">
         Match ended. Watch video for replay.
     </p>
-    <video controls class="match-video"></video>
+    <video controls id="match-video">
+        <source src="file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+    </video>
     <form id="Statistics">
-        <p class="match-statistics">Sign up for match statistics?</p>
+        <p id="match-statistics">Sign up for match statistics?</p>
         <label for="fname">
             First name
         </label>
-        <input type="text" placeholder="John"><br>
+        <input id="fname" type="text" placeholder="John"><br>
 
         <label for="lname">Last name</label>
-        <input type="text" placeholder="Doe"><br>
+        <input id="email" type="text" placeholder="Doe"><br>
 
         <label for="email">Email</label>
-        <input type="email" placeholder="Example@gmail.com"><br>
+        <input id="email" type="email" placeholder="Example@gmail.com"><br>
         <button type="submit">Submit</button>
 
     </form>
     
     <p style="text-align: center;">Contacts</p>
-    <table class="contacts">
+    <table id="contacts">
         <tr>
             <th>Phone</th>
             <th>gmail</th>
