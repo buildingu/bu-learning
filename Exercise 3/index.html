@@ -8,16 +8,13 @@
 </head>
 <body>
     <!-- Title and Date Submitted -->
-    <center>
-        <h2>Exercise 1 by Zakariya Atanur</h2>
-        <h3>Date Submitted: 09/08/2025</h3>
-    </center>
+        <h2 style="display: flex; justify-content: center;">Exercise 1 by Zakariya Atanur</h2>
+        <h3 style="display: flex; justify-content: center;">Date Submitted: 09/08/2025</h3>
 
     <!-- Table -->
-    <center>
         <hr>
-        <h3>Fun facts about me</h3>
-        <table id="table1" border="5" bordercolor="grey" bgcolor="grey">
+        <h3 style="display: flex; justify-content: center;">Fun facts about me</h3>
+        <table id="table1">
             <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
@@ -46,56 +43,56 @@
                 </td>
             </tr>
         </table>
-        <table id="table2" border="5" bordercolor="grey" bgcolor="grey">
+        <table id="table2">
             <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
             </tr>
             <tr>
-                <td><center>Zakariya</center></td>
-                <td><center>Atanur</center></td>
+                <td>Zakariya</td>
+                <td>Atanur</td>
             </tr>
             <tr>
-                <th colspan="2"><center>Favorite Movie</center></th>
+                <th colspan="2">Favorite Movie</th>
             </tr>
             <tr>
                 
                     <td colspan="2">
-                    <center>
+                    
                         <a href="https://en.wikipedia.org/wiki/Raiders_of_the_Lost_Ark">
                             <img src="assets/Raiders_of_the_Lost_Ark_Theatrical_Poster.jpg" alt="" width="176" height="176">
                         </a>
-                    </center>
+                    
                     </td>
                 
             </tr>
             <tr>
-                <th colspan="2"><center>Favorite Song</center></th>
+                <th colspan="2">Favorite Song</th>
             </tr>
             <tr>
                 
                     <td colspan="2" style="text-align: center;">
-                    <center>
+                    
                         <p>Click play button to play music:</p>
                         <audio controls>
                             <source src="assets/rick_roll.mp3" type="audio/mp3">
                         </audio>
-                    </center>
+                    
                     </td>
                 
                 
             </tr>
             <tr>
-                <th colspan="2"><center>Favorite Video</center></th>
+                <th colspan="2">Favorite Video</th>
             </tr>
             <tr>
                 
                 <td colspan="2">
-                    <center>
+                    
                     <video controls width="200">
                         <source src="file_example_MP4_480_1_5MG.mp4" type="video/mp4">
                     </video>
-                </center>
+                
                 </td>
                 
                 
@@ -103,22 +100,21 @@
         </table>
         <br>
         <hr>
-    </center>
-    <center>
+    
+    
         <!-- Form -->
-        <h3>Enter your details below:</h3>
+        <h3 style="display: flex; justify-content: center;">Enter your details below:</h3>
         <form id="work-form"><br>
-            <label for="fullName">Full Name: </label><br>
-            <input type="text" id="fullName" placeholder="John Doe"><br><br>
+            <label style="display: flex; justify-content: center;" for="fullName">Full Name: </label><br>
+            <input style="display: block; margin: auto;" type="text" id="fullName" placeholder="John Doe"><br><br>
 
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" placeholder="example@gmail.com"><br><br>
+            <label style="display: flex; justify-content: center;" for="email">Email:</label><br>
+            <input style="display: block; margin: auto;" type="text" id="email" placeholder="example@gmail.com"><br><br>
 
-            <label for="password">Password:</label><br>
-            <input type="text" id="password" placeholder="password123"><br><br>
+            <label style="display: flex; justify-content: center;" for="password">Password:</label><br>
+            <input style="display: block; margin: auto;" type="text" id="password" placeholder="password123"><br><br>
 
-            <p>Available Days:</p>
-
+            <p style="display: flex; justify-content: center;">Available Days:</p>
             <input type="checkbox" id="mon">
             <label for="mon">Monday</label>
 
@@ -140,25 +136,29 @@
             <input type="checkbox" id="sun">
             <label for="sun">Sunday</label><br><br>
 
-            <label for="availibilityD">Available Time: </label><br>
-            <select id="availibilityD">
+            <label style="display: flex; justify-content: center;" for="availibilityD">Available Time: </label><br>
+            <select id="availibilityD" style="display: block; margin: auto;">
                 <option value="morning">Morning (8AM to 12PM)</option>
                 <option value="afternoon">Afternoon (1PM to 5PM)</option>
                 <option value="evening">Evening (6PM to 10PM)</option>
             </select>
-            <p>Currently working on new Website?</p>
-            <label for="yes">Yes</label>
-            <input name="choice" type="radio" id="yes" value="yes" checked>
+            <p style="display: flex; justify-content: center;">Currently working on new Website?</p>
+            <div style="display: flex; justify-content: center;">
+                <label for="yes">Yes</label>
+                <input name="choice" type="radio" id="yes" value="yes" checked>
 
-            <label for="no">No</label>
-            <input name="choice" type="radio" id="no" value="no"><br><br>
+                <label for="no">No</label>
+                <input name="choice" type="radio" id="no" value="no"><br><br>
+            </div>
 
-            <p>(if yes, please enter which page(s) you are working on)</p>
-            <textarea name="comments" placeholder="Your comments here..."></textarea><br>
-            <input id="sub-btn" type="submit" value="submit">
-            <input id="res-btn" type="reset" value="reset">
+            <p style="display: flex; justify-content: center;">(if yes, please enter which page(s) you are working on)</p>
+            <textarea  style="display: block; margin: auto;" name="comments" placeholder="Your comments here..."></textarea><br>
+            <div style="display: flex; justify-content: center;">
+                <input id="sub-btn" type="submit" value="submit">
+                <input id="res-btn" type="reset" value="reset">
+            </div>
         </form>
-    </center>
+    
     <!-- Footers -->
     <br>
     <footer id="footer1">
