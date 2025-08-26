@@ -1,0 +1,24 @@
+.my-navbar {
+    background-color: #b7a5bd;
+}
+
+.nav-link {
+    color: #4d0066;
+}
+
+#about {
+    background-color: #e4dae7;
+}
+
+.btn {
+    background-color: #8821aa;
+    border-color: #4d0066;
+}
+
+#contact {
+    background-color: #e4dae7;
+}
+
+input, textarea {
+    outline: 1px solid #000;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Lesson 4</title>
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg my-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/logo.jpg" alt="" class="img-fluid w-50 rounded"></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="bg-light py-3">
+        <div class="container text-center">
+            <h1 class="fw-bold">Hi, I'm Jasur</h1>
+            <p>Ambitious web developer</p>
+            <a href="https://github.com/jasur0407" class="btn btn-primary home_btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-item-center g-5">
+                <div class="col-md-4">
+                    <img src="assets/about-img.jpg" class="img-fluid rounded-circle" alt="">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="fw-bold">About me</h3>
+                    <p>Hi, I’m [Your Name]. I’m interested in computer science, web development, and software engineering. I have experience with HTML, CSS, JavaScript, and I also work with C++. I enjoy building websites, creating tools that solve problems, and learning new technologies. <br><br>
+
+I’m also exploring React, Electron, and TypeScript to make modern apps. Outside of coding, I like improving my skills in design and animation, which helps me create projects that look good and work well. </p>
+                    <ul>
+                        <li>Responsive Web Design</li>
+                        <li>JavaScript & Bootstrap</li>
+                        <li>Problem-Solving & Teamwork</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h1 class="text-center fw-bold mb-4">My Projects</h1>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card p-3 h-100">
+                        <img src="assets/html-logo.png" alt="" class="card-img-top w-100">
+                        <div class="card-body">
+                            <h2 class="card-title fw-bold text-center">HTML Project</h2>
+                            <div class="card-text">A simple web project built with HTML, CSS, and JavaScript to practice front-end development. It includes responsive layout, styled components, and interactive features</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 h-100">
+                        <img src="assets/css-logo.png" alt="" class="card-img-top w-100">
+                        <div class="card-body">
+                            <h2 class="card-title fw-bold text-center">CSS Project</h2>
+                            <div class="card-text">A styling project using CSS to design responsive layouts, custom components, and modern UI effects</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 h-100">
+                        <img src="assets/js-logo.png" alt="" class="card-img-top w-100">
+                        <div class="card-body">
+                            <h2 class="card-title fw-bold text-center">JS Project</h2>
+                            <div class="card-text">A web project built with JavaScript to add interactivity, dynamic content, and functional features</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h1 class="fw-bold text-center mb-2">Contact Me</h1>
+            <form class="w-75 mx-auto">
+                <div class="mb-3">
+                    <label for="name" class="mb-1 fs-5">Name</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="mb-1 fs-5">Email</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="mb-1 fs-5">Message</label>
+                    <textarea id="message" rows="4" class="form-control"></textarea>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-success text-center fs-5">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <script src="bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
