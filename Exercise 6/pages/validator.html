@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="../styles/validator.css">
+</head>
+<body>
+    <nav class="header-nav">
+        <a href="homepage.html" class="nav-link">Home</a>
+        <a href="pokemon.html" class="nav-link">Pokemon Finder</a>
+        <a href="crud.html" class="nav-link">CRUD App</a>
+        <a href="validator.html" class="nav-link active">Validator</a>
+    </nav>
+    
+    <div class="container">
+        <header>
+            <h1>Form Validator</h1>
+            <p>Enter your information below to validate your form data</p>
+        </header>
+        
+        <div class="form-section">
+            <div class="input-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" placeholder="Enter your first name">
+            </div>
+            
+            <div class="input-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" placeholder="Enter your last name">
+            </div>
+            
+            <div class="input-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="Enter your age">
+            </div>
+            
+            <div class="input-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" id="phoneNumber" placeholder="Enter your phone number">
+            </div>
+            
+            <button id="validateBtn">Validate Form</button>
+        </div>
+        
+        <div id="results" class="results hidden">
+            <div id="errorMessages" class="error-messages"></div>
+            <div id="successMessage" class="success-message hidden">
+                WELCOME TO THE ADOS APP.
+            </div>
+        </div>
+    </div>
+    
+    <script src="../logic/validator.js"></script>
+</body>
+</html>

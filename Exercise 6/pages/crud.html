@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="../styles/crud.css">
+</head>
+<body>
+    <nav class="header-nav">
+        <a href="homepage.html" class="nav-link">Home</a>
+        <a href="pokemon.html" class="nav-link">Pokemon Finder</a>
+        <a href="crud.html" class="nav-link active">CRUD App</a>
+        <a href="validator.html" class="nav-link">Validator</a>
+    </nav>
+    
+    <div class="container">
+        <header>
+            <h1>Employee Entry App</h1>
+            <p>Manage your company's employee database</p>
+        </header>
+        
+        <div class="form-section">
+            <div class="input-group">
+                <label for="employeeName">Name:</label>
+                <input type="text" id="employeeName" placeholder="Enter employee name">
+            </div>
+            
+            <div class="input-group">
+                <label for="employeeAge">Age:</label>
+                <input type="number" id="employeeAge" placeholder="Enter employee age">
+            </div>
+            
+            <div class="input-group">
+                <label for="employeeSex">Sex:</label>
+                <select id="employeeSex">
+                    <option value="">Select sex</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <div class="input-group">
+                <label for="employeePosition">Position:</label>
+                <input type="text" id="employeePosition" placeholder="Enter employee position">
+            </div>
+            
+            <button id="addBtn">Add Entry</button>
+            <button id="updateBtn" class="hidden">Update Entry</button>
+            <button id="cancelBtn" class="hidden">Cancel</button>
+        </div>
+        
+        <div id="employeeList" class="employee-list">
+            <div id="noEmployees" class="no-employees">
+                No employees added yet. Add your first employee above!
+            </div>
+        </div>
+    </div>
+    
+    <script src="../logic/crud.js"></script>
+</body>
+</html>
