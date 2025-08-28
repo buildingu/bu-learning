@@ -19,14 +19,18 @@ const validateForm = () => {
 };
 
 const renderEmployees = () => {
-    if (employees.length === 0) {
+    const isEmpty = employees.length === 0;
+    
+    if (isEmpty) {
         employeeList.innerHTML = '';
-        employeeList.appendChild(noEmployees.cloneNode(true));
+        employeeList.appendChild(noEmployees);
+        noEmployees.classList.remove('hidden');
         return;
     }
     
+    noEmployees.classList.add('hidden');
     employeeList.innerHTML = employees.map((emp, i) => `
-        <div class="employee-card">
+        <div class="employee-card" data-index="${i}">
             <div class="employee-info">
                 <div class="employee-name">${emp.name}</div>
                 <div class="employee-details">
@@ -36,8 +40,8 @@ const renderEmployees = () => {
                 </div>
             </div>
             <div class="employee-actions">
-                <button class="edit-btn" onclick="editEmployee(${i})">Edit</button>
-                <button class="delete-btn" onclick="deleteEmployee(${i})">Delete</button>
+                <button class="edit-btn" data-action="edit">Edit</button>
+                <button class="delete-btn" data-action="delete">Delete</button>
             </div>
         </div>
     `).join('');
@@ -107,5 +111,17 @@ ageInput.addEventListener('input', (e) => {
     }));
 
 document.addEventListener('DOMContentLoaded', () => (renderEmployees(), nameInput.focus()));
+
+// Event delegation for edit/delete buttons
+employeeList.addEventListener('click', (e) => {
+    const button = e.target.closest('button[data-action]');
+    if (!button) return;
+    
+    const card = button.closest('.employee-card');
+    const index = parseInt(card.dataset.index);
+    
+    if (button.dataset.action === 'edit') editEmployee(index);
+    if (button.dataset.action === 'delete') deleteEmployee(index);
+});
 
 Object.assign(window, { editEmployee, deleteEmployee });

@@ -90,3 +90,8 @@ validateBtn.addEventListener('click', validateForm);
         hideElement(resultsDiv);
     });
 });
+
+
+phoneNumberInput.addEventListener('input', (e) => {
+    e.target.value = e.target.value.replace(/\D/g, '');
+});
