@@ -1,68 +1,77 @@
-function formValidator(fName, lName, age, pNumber) {
+let fNameVal, lNameVal, positionVal, genderVal;
+let selectedEmployeeItem = null; // Will store the list item that's being edited.
 
-     if (fName === null || fName.length === 0) {
-        return "The first name input is missing";  
-    }
+const form = document.getElementById("form");
+const list = document.getElementById("employeeList");
 
-    else if (lName === null || lName.length === 0) {
-        return "The last name input is missing";
-    }
-
-    else if (age === null) {
-        return "The age input is missing";
-    }
-
-    else if (pNumber === null || pNumber.length === 0) {
-        return "The phone number is missing";
-    }
-
-
-    if (typeof fName !== 'string') {
-        return "first Name should be a string";
-    }
-
-    else if (typeof lName !== 'string') {
-        return "lastt Name should be a string";
-    }
-
-    else if (!Number.isInteger(age)) {
-        return "Age should be a number";
-    }
-    
-    else if (typeof pNumber !== 'string') {
-        return "Phone Number should be a string";
-    }
-
-    if (age < 18) {
-        return "Sorry, not old enough for our App";
-
-    }
-
-    return "Welcome to the ADOS App";
-
-
-
-}
+// Change the submit button text to track mode
+const submitButton = form.querySelector("button[type='submit']");
+submitButton.textContent = "Add Employee";
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
-
     
-    const fNameVal = document.getElementById("fName").value.trim();
-    const lNameVal = document.getElementById("lName").value.trim();
-    const ageVal = document.getElementById("age").value.trim();
-    const pNumberVal = document.getElementById("pNumber").value.trim();
-    const message = document.getElementById("result");
+    // Get values from the form
+    fNameVal = document.getElementById("fName").value.trim();
+    lNameVal = document.getElementById("lName").value.trim();
+    positionVal = document.getElementById("position").value.trim();
+    genderVal = document.getElementById("sex").value.trim();
 
-    // Run validator
-    const result = formValidator(fNameVal, lNameVal, ageVal, pNumberVal);
-    message.textContent = result
-
-    if(message === "Welcome to ADOS APP") {
+    // If we are in edit mode, update the existing element:
+    if (selectedEmployeeItem) {
+        const pElements = selectedEmployeeItem.querySelectorAll("p");
+        pElements[0].textContent = `First Name: ${fNameVal}`;
+        pElements[1].textContent = `Last Name: ${lNameVal}`;
+        pElements[2].textContent = `Position: ${positionVal}`;
+        pElements[3].textContent = `Gender: ${genderVal}`;
         
-    } 
+        // Reset mode back to add employee.
+        submitButton.textContent = "Add Employee";
+        selectedEmployeeItem = null;
+    } else {
+        // Create a new list item (card)
+        const employeeItem = document.createElement("li");
+        employeeItem.innerHTML = `
+            <p>First Name: ${fNameVal}</p>
+            <p>Last Name: ${lNameVal}</p>
+            <p>Position: ${positionVal}</p>
+            <p>Gender: ${genderVal}</p>
+            <button class="edit"> Edit </button>
+            <button class="delete"> Delete </button> 
+        `;
+        employeeItem.style.borderBlockColor = "black";
+        list.appendChild(employeeItem);
+    }
 
-    else {
-        message.style.backgroundColor = "red";
+    form.reset();
+});
+
+list.addEventListener("click", function(event) {
+    // Handle delete click
+    if (event.target.classList.contains("delete")) {
+        // If deleting the item we are editing, reset form mode.
+        if (selectedEmployeeItem === event.target.parentElement) {
+            selectedEmployeeItem = null;
+            submitButton.textContent = "Add Employee";
+            form.reset();
+        }
+        event.target.parentElement.remove();
+    }
+
+    // Handle edit click
+    if (event.target.classList.contains("edit")) {
+        selectedEmployeeItem = event.target.parentElement;
+        const pElements = selectedEmployeeItem.querySelectorAll("p");
+        // Pre-fill form with the current values
+        document.getElementById("fName").value = pElements[0].textContent.replace("First Name: ", "").trim();
+        document.getElementById("lName").value = pElements[1].textContent.replace("Last Name: ", "").trim();
+        document.getElementById("position").value = pElements[2].textContent.replace("Position: ", "").trim();
+        document.getElementById("sex").value = pElements[3].textContent.replace("Gender: ", "").trim();
+
+        submitButton.textContent = "Update Employee";
     }
 });
+
+
+
+
