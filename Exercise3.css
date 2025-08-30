@@ -1,0 +1,118 @@
+/* Desktop */
+@media screen and (min-width: 768px) {
+    body{
+  
+        background-image:url(../Images/background-desktop.jpg);
+        text-align: center;
+        color: white;
+
+    }
+
+
+    table{
+        margin: auto;
+        background-color: rgb(6, 66, 66);
+    }
+
+    form {
+        background-color: #737272; 
+        padding: 20px;             
+        max-width: 600px;       
+        margin: 0 auto;            
+        border: 7px solid rgb(62, 62, 62);       
+    }
+
+    input[type="submit"] {
+        background-color: #28a745; /* Green */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+
+    }
+
+    input[type="reset"] {
+        background-color: #dc3545; /* Red */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+
+    }
+
+
+    h4{
+        background-color: blueviolet;
+
+    }
+
+    .desktop-label {
+    display: block;
+  }
+  .mobile-label {
+    display: none;
+  }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    body{
+  
+        background-image:url(../Images/background-mobile.jpg);
+        text-align: center;
+        color: white;
+
+    }
+
+    main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+    table{
+        margin: auto;
+        background-color: rgb(6, 66, 66);
+    }
+
+    form {
+        background-color: #737272; 
+        padding: 20px;             
+        max-width: 600px;       
+        margin: 0 auto;            
+        border: 7px solid rgb(62, 62, 62);  
+        margin: auto;     
+    }
+
+    input[type="submit"] {
+        background-color: #28a745; /* Green */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+
+    }
+
+    input[type="reset"] {
+        background-color: #dc3545; /* Red */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+
+    }
+
+
+    h5{
+        background-color: rgb(0, 107, 64);
+
+    } 
+
+    .desktop-label {
+        display: none;
+    }
+    .mobile-label {
+        display: block;
+    }
+
+}
