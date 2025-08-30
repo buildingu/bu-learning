@@ -1,0 +1,130 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 0;
+}
+
+.centertext {
+    text-align: center;
+}
+
+.grey-box {
+  background-color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  color: black;
+  margin: 0 auto;
+  max-width: 400px;
+  border: 5px solid grey;
+}
+
+/* DESKTOP STYLES */
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url("assets/background-desktop.jpg");
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+
+    .desktop table {
+        border-collapse: collapse;
+        margin: 20px auto;
+        width: calc(100% - 40px);
+        border: 5px solid grey;
+    }
+
+    .desktop th,
+    .desktop td {
+        border: 5px solid grey;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+
+    .desktop tr:nth-child(odd) {
+        background-color: #0a3a77;
+    }
+
+    .desktop tr:nth-child(even) {
+        background-color: #064f44;
+    }
+
+    .mobile-footer { display: none; }
+
+    .desktop-footer {
+        text-align: center;
+        background-color: purple;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    
+    .mobile { display: none; }
+}
+
+.grey-box input:not([type="submit"]):not([type="reset"]) {
+    border: 2px solid #333;
+    padding: 4px;
+}
+
+
+/* MOBILE STYLES */
+@media screen and (max-width: 767px) {
+    body {
+        background-image: url("assets/background-mobile.jpg");
+        color: white;
+    }
+
+    .desktop { display: none; }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        width: calc(100% - 40px);
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .name-row {
+        display: flex;
+    }
+
+    .name-row div {
+        width: 50%;
+        padding: 6px 8px;
+        border: 5px solid grey;
+        background-color: #8b0000; 
+        text-align: center;
+    }
+
+    .fav-movie,
+    .fav-song,
+    .fav-video {
+        background-color: #8b0000;  
+        border: 4px solid grey;      
+        padding: 8px;                
+        margin: 0;        
+        color: white;
+    }
+
+    .mobile strong {
+        display: block;
+        background: #660000;
+        padding: 6px;
+    }
+
+    .desktop-footer { display: none; }
+
+    .mobile-footer {
+        text-align: center;
+        background-color: darkblue;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        margin-top: 20px;
+    } 
+}
