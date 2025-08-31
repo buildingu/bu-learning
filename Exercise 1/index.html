@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Title -->
+        <title>Exercise 1</title>
+        <!-- Metadata -->
+        <!-- Character set -->
+        <meta charset="UTF-8"/>
+        <!-- Keywords -->
+        <meta name="keywords" content="About Me"/>
+        <!-- Description -->
+        <meta name="description" content="A webpage about Varsha Kumar using simple HTML."/>
+        <!-- Author-->
+        <meta name ="author" content="Varsha Kumar"/>
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- Refresh Document -->
+        <meta http-equiv="refresh" content="30"/>
+    </head>
+    <body>
+        <!-- Title Headings -->
+        <h1 style="text-align: center">Exercise 1 by Varsha Kumar</h1>
+        <h3 style="text-align: center">Date submitted: 30/08/2025</h3>
+        <!-- Horizontal Break Line -->
+        <hr>
+        <!-- Table Subheading -->
+        <h3 style="text-align: center">Fun Facts About Me!</h3>
+        <!-- Table About Me -->
+        <fieldset style="padding: 15px; border-color:#D6EEEE; border-width: 10px;">
+            <table style="margin-left: auto; margin-right: auto; border: 1px solid black; border-collapse: collapse;">
+                <tr style="padding: 15px;">
+                    <th style="border: 1px solid black; padding: 15px; background-color: #D6EEEE;">First Name</th>
+                    <th style="border: 1px solid black; padding: 15px; background-color: #D6EEEE;">Last Name</th>
+                    <th style="border: 1px solid black; padding: 15px; background-color: #D6EEEE;">Favorite Movie</th>
+                    <th style="border: 1px solid black; padding: 15px; background-color: #D6EEEE;">Favorite Song</th>
+                    <th style="border: 1px solid black; padding: 15px; background-color: #D6EEEE;">Favorite Video</th>
+                </tr>
+                <tr style="padding: 15px;">
+                    <td style="border: 1px solid black; padding: 15px;">Varsha</td>
+                    <td style="border: 1px solid black; padding: 15px;">Kumar</td>
+                    <td style="border: 1px solid black; padding: 15px;">
+                        <a href="https://en.wikipedia.org/wiki/The_Incredibles" target="_blank">
+                            <img src="assets/images/fav_movie.jpg" width=200 alt="An image of one of the promotional posters for The Incredibles.">
+                        </a>
+                    </td>
+                    <td style="border: 1px solid black; padding: 15px;">
+                        <audio controls>
+                            <source src="assets/media/fav_song.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td style="border: 1px solid black; padding: 15px;">
+                        <video width="400" controls>
+                            <source src="assets/media/fav_video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <!-- Horizontal Break Line -->
+        <hr>
+        <!-- Details Form-->
+        <form style="text-align: center;">
+            <!-- Form Subheading -->
+            <h3>Enter Your Details Below!</h3>
+            <fieldset style="padding: 15px; border-color:#D6EEEE; border-width: 10px;">
+                <label>Full name:</label>
+                <input type="text" placeholder="John Smith">
+                <br><br>
+                <label>Email:</label>
+                <input type="email" placeholder="john.smith@gmail.com">
+                <br><br>
+                <label>Password:</label>
+                <input type="password" placeholder="********">
+                <br><br>
+                <label>Available Meeting Days:</label>
+                <br><br>
+                <input type="checkbox"> Monday
+                <input type="checkbox"> Tuesday
+                <input type="checkbox"> Wednesday
+                <input type="checkbox"> Thursday
+                <input type="checkbox"> Friday
+                <input type="checkbox"> Saturday
+                <input type="checkbox"> Sunday
+                <br><br>
+                <label>Available Time:</label>
+                <select>
+                <option>Morning (8AM to 12PM)</option>
+                <option>Afternoon (12PM to 6PM)</option>
+                <option>Evening (6PM to 12AM)</option>
+                </select>
+                <br><br>
+                <label>Working on New Website?</label>
+                <input type="radio" checked> Yes
+                <input type="radio"> No 
+                <br><br>
+                <textarea cols="30" rows="10" placeholder="Enter any additional comments here."></textarea>
+                <br>
+                <input type="submit">
+                <input type="reset">
+            </fieldset>
+        </form>
+        <!-- Horizontal Break Line -->
+        <hr>
+    </body>
+</html>
