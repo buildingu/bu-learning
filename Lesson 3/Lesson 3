@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>HTML</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML5">
+<meta name="description" content="HTML 5 Tutorial">
+<meta name="author" content="Shania">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+    @media screen and (min-width: 600px) {
+        table{
+            width: 500px;
+        };
+        img{
+            width: 500px;
+        };
+
+        body{
+            text-align: center
+        };
+    }
+
+    @media screen and (max-width: 767px) {
+
+    }
+
+    div input:not(.selected-item) {
+
+    }
+
+    .content-section:nth-child(odd) {
+
+    }
+</style>
+</head>
+<body>
+    
+<center> 
+<div>
+<h2>Exercise 1: HTML </h2>
+<h4> 7/22/2025 </h4>
+
+
+<hr>
+<h4>Fun Facts About Me:</h4>
+<table border="1">
+
+    <tr>
+       <th>First Name</th>
+       <th>Last Name</th> 
+       <th>Favorite Movie</th>
+       <th>Favorite Music Audio Sample</th>
+       <th>Favorite Video Sample</th>
+    </tr>
+    
+    <tr>
+    <td><center>John</center></td>
+    <td><center>Doe</center></td>
+    <td><img src="3 Idiots.jpg" alt="3 Idiots" width="350">
+            </td>
+    <td>
+        <center>
+        Click button to play music:
+        </center>
+        <br>
+        <audio controls>
+        <source src="washing machine heart1.MP4" type="audio/mpeg">
+        </audio>
+    </td>
+    <td>
+        <video width="320" height="320" controls>
+        <source src="washing machine heart video1.mp4" type="video/mp4">
+    </td>
+    </tr>
+    
+</table> 
+
+<hr>
+
+<main>
+   
+    <h4>Enter your details below:</h4>
+    <form>
+        <label><i>Full Name: </i></label>
+        <input type="text" placeholder="John Doe">
+
+        <br>
+        <br>
+
+        <label><i>Email:</i> </label>
+        <input type="email" placeholder="jdoe@fakemail.com">
+
+        <br>
+        <br>
+
+        <label><i>Password:</i></label>
+        <input type="password"placeholder="●●●●"> <br><br>
+
+        <label><i>Available Meeting Days:</i></label>
+
+        <br>
+        <br>
+
+        <input type="checkbox">Sunday
+        <input type="checkbox">Monday
+        <input type="checkbox">Tuesday
+        <input type="checkbox">Wednesday
+        <input type="checkbox">Thursday
+        <input type="checkbox">Friday
+        <input type="checkbox">Saturday
+
+        <br>
+        <br>
+
+        <label><i>Available Time:</i></label>
+            <select name="Time" id="Time">
+               <option value="morning (8am to 12pm)">Morning (8am to 12pm)</option>
+                <option value="afternoon (12pm to 6pm)">Afternoon (12pm to 6pm)</option>
+                <option value="evening (6am to 9pm)">Evening (6am to 9pm)</option>
+                <option value="night (9pm to 8am)">Night (9pm to 8am)</option>
+            </select>
+        
+        <br>
+        <br>
+
+        <label><i>Working on a New Website?</i></label>
+        <input type="radio" name="color" value="red"> Yes 
+        <input type="radio"name="color" value="Green"> No
+
+        <br>
+        <br>
+
+              
+        <textarea cols="20" rows="2" placeholder="Enter your comments here"></textarea>
+
+        <br>
+        <br>
+        
+        <input type="submit" value="Submit"> <input type="reset">
+        
+
+    </form>
+ 
+</div>
+</main>
+
+   </center>
+</body>
+
+</html>
