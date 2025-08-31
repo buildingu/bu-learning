@@ -1,3 +1,163 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuildingU Portfolio - Joshitha</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/building_u_logo.jpg" alt="BuildingU logo" width="100" height="100" class="me-2">
+        BuildingU
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">My BuildingU Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero bg-primary text-white py-5">
+    <div class="container">
+      <div class="row align-items-center text-center text-md-start">
+        <div class="col-md-8">
+          <h1 class="display-4">Joshitha Kalyani Govarthanan</h1>
+          <p class="lead mb-4">Incoming 11th Grade Student | BuildingU Projects | SPCS 2025 | Girls Who Code Alumni</p>
+          <a href="#portfolio" class="btn btn-light btn-lg">View My Projects</a>
+        </div>
+        <div class="col-md-4 d-none d-md-block text-center">
+          <img src="assets/profile.jpg" alt="Profile picture of Joshitha" class="img-fluid rounded-circle" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-5 about-section text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-3">
+          <img src="assets/profile.jpg" alt="Joshitha profile photo" class="img-fluid rounded-circle">
+        </div>
+        <div class="col-md-8">
+          <h2>About Me</h2>
+          <p>An 11th-grade student passionate about mathematics, science, and software development. I enjoy tackling complex problems, participating in math & science competitions, and applying coding skills to real-world projects. I am actively involved in chess, badminton, and music, and I have experience in AI, app development, and environmental research.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-transparent text-white border-0">AI & Machine Learning</li>
+            <li class="list-group-item bg-transparent text-white border-0">Full-stack Development</li>
+            <li class="list-group-item bg-transparent text-white border-0">Competitive Programming & Advanced CSS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">My BuildingU Projects</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <img src="assets/html.png" class="card-img-top mx-auto mt-3" style="width: 85px;" alt="HTML project logo">
+            <div class="card-body">
+              <h5 class="card-title">Project 1: HTML</h5>
+              <p class="card-text">Project 1 showcases my HTML skills. It is a webpage involving HTML with table and static form components. Click learn more to see the project.</p>
+              <a href="project1.html" class="btn btn-primary mt-2">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <img src="assets/css.png" class="card-img-top mx-auto mt-3" style="width: 60px;" alt="CSS project logo">
+            <div class="card-body">
+              <h5 class="card-title">Project 2: CSS</h5>
+              <p class="card-text">Project 2 showcases my CSS skills. It is a stylized webpage for an event done using HTML and css with custom components. Click learn more to see the project.</p>
+              <a href="project2.html" class="btn btn-success mt-2">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <img src="assets/css.png" class="card-img-top mx-auto mt-3" style="width: 60px;" alt="Advanced CSS project logo">
+            <div class="card-body">
+              <h5 class="card-title">Project 3: Advanced CSS</h5>
+              <p class="card-text">Project 3 showcases my advanced CSS skills. It is a responsive webpage (Desktop and Mobile) from project 1. Click learn more to see the project.</p>
+              <a href="project3.html" class="btn btn-info mt-2">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5 contact-section text-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-6">
+          <label for="name" class="form-label">Name</label>
+          <input id="name" type="text" class="form-control" placeholder="Jane Doe" required>
+          <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" type="email" class="form-control" placeholder="jane@example.com" required>
+          <div class="invalid-feedback">Please enter a valid email.</div>
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" class="form-control" rows="5" placeholder="Hi Joshitha..." required></textarea>
+          <div class="invalid-feedback">Please enter a message.</div>
+        </div>
+        <div class="col-12 text-center">
+          <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-1">© 2025 Joshitha Kalyani Govarthanan</p>
+      <p class="mb-0">
+        <a href="mailto:joshithakalyani@gmail.com" class="text-white text-decoration-none me-3">Email</a>
+        <a href="https://www.linkedin.com/in/joshithakalyani/" class="text-white text-decoration-none me-3">LinkedIn</a>
+        <a href="https://github.com/joshithakg" class="text-white text-decoration-none">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+  (() => {
+    'use strict';
+    const forms = document.querySelectorAll('.needs-validation');
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  })();
+  </script>
+</body>
+</html>

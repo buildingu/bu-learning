@@ -1,0 +1,60 @@
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hero {
+  background: linear-gradient(100deg, #6a00ff, #0099ff);
+}
+
+section h2 {
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.btn-html {
+    background-color: #E34F26; 
+    color: white;
+}
+.btn-html:hover {
+    background-color: #cf431f;
+}
+
+.btn-css {
+    background-color: #1572B6; 
+    color: white;
+}
+.btn-css:hover {
+    background-color: #0f5c91;
+}
+
+.btn-js {
+    background-color: #F7DF1E; 
+    color: black;
+}
+.btn-js:hover {
+    background-color: #e6d616;
+}
+
+.about-section {
+    background-image: url('assets/bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 4rem 0;
+}
+
+.contact-section {
+    background-image: url('assets/bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
