@@ -22,7 +22,7 @@
  * Lastly, clear the form if validation passes and render a success message.
  */
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 const ERROR = {
   required: "This field is required.",
@@ -48,13 +48,14 @@ function formValidator(name, value) {
       if (value.length > 120) return ERROR.name_toolong;
       break;
     case "age":
+       // FIXME:
       const parsedAge = parseInt(value);
       if (isNaN(parsedAge)) return ERROR.invalid_age;
       if (value.length > 3) return ERROR.age_toolong;
       if (parsedAge < 18) return ERROR.age_notolder;
       break;
     case "phoneNumber":
-      const num = value.replace(/\D/g, "");
+      const num = value.replace(/\D/g, ""); // FIXME:
       if (isNaN(Number(num))) return ERROR.phoneNumber_invalid;
       if (num.length !== 10) return ERROR.phoneNumber_toolong;
       break;
@@ -130,6 +131,7 @@ export default function FinalChallenge() {
           <br></br>
           <div>
             <label for="age">Age:</label>
+             {/* FIXME: */}
             <input type="number" id="age" name="age" value={formData.age} onChange={handleChange}/>
             {errors.age && <p>{errors.age}</p>}
           </div>
