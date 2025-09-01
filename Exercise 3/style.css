@@ -1,0 +1,135 @@
+body{
+background-image: url("https://w0.peakpx.com/wallpaper/401/930/HD-wallpaper-abstract-black-pink-texture.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+
+h{
+font-size: 40px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color:white;
+}
+h1{
+color: white;
+margin: auto;
+max-width:100%;
+}
+
+table{
+
+
+    background-color:cadetblue;
+    width: 750px;
+    height: 100px;
+    border: 5px solid grey ;
+    margin: auto;
+
+
+}
+th{
+   background-color: navy;
+
+}
+tr{
+    color: white;
+}
+h2{
+    color: white;
+    margin:auto;
+}
+img{
+width: 150px;
+padding: 10px;
+margin: auto;
+
+}
+
+form{
+background-color: gainsboro; 
+width: 500px;
+height: 550px;
+padding: 10px;
+border: solid gray 10px;
+margin: auto;
+text-align: center;
+}
+button{
+color: white;
+width: 80px;
+height: 40px;
+
+}
+
+.submit{
+    background-color: green;
+}
+.reset{
+    background-color: red;
+}
+p{
+font-family:Arial, Helvetica, sans-serif;
+font-style: bold;
+
+
+}
+.fullname{
+width: 100px
+}
+
+@media only screen and (max-width: 600px) {
+body{
+       background-image: url("https://i.pinimg.com/736x/18/b2/92/18b2927425fc70b52fda1bf4bbc14d9e.jpg");
+       background-size: cover;
+       background-repeat: no-repeat;
+   }
+   h{
+    width: 100%;
+   }
+   table{
+    background-color: rgb(255, 64, 0);
+       width: 100%;
+       height: auto;
+       border: 5px solid grey ;
+       border-collapse: collapse;
+       margin: 0 auto;
+       /*display: block;*/
+   }
+   tr{
+       display: block;
+       width: 100%;
+       margin: auto;
+
+   }
+   th{
+    display:none;
+    width: 100%;
+    margin: auto;
+   }
+     td{
+         display: grid;
+         width: 100%;
+         ;
+    }
+    td::before{
+        content: attr(id);
+        background-color: gray;
+        color: black;
+        padding: 10px;
+    }
+    iframe{
+        width: 100%;
+        height: auto;
+    }
+   form{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: solid gray 10px;
+    margin: auto;
+    text-align: center;
+    display: block;
+    border-collapse: collapse;
+}
+   }
