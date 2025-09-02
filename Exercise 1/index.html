@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" >
+    <meta name="keywords" content="HTML5" >
+    <meta name="description" content="HTML Lesson 1" >
+    <meta name="author" content="Sweetha" >
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" >
+    <title>Exercise 1</title>
+    <style>
+        body{
+            background-color:rgb(127, 219, 255); 
+            align-items: center; 
+            justify-content: center;
+            text-align: center;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        hr {
+            border-style: dashed;
+            border-color: blue;
+        }
+        input {
+            width: 200px;
+            margin-bottom: 10px;
+            border-color: black;
+    }
+    </style>
+</head>
+<body>
+    <h1>Exercise 1 by Sweetha Manikandan</h1> 
+    <h2>Submitted on August 26, 2025</h2> 
+    <hr>
+    <h3>Stuff About Me:</h3>
+    <table style="margin: 0 auto; border: 1px solid #000;">
+        <tr>
+           <th>First name</th> 
+           <th>Last name</th>
+           <th>Favorite Movie Poster</th>
+           <th>Favorite Song</th>
+           <th>Favorite Video</th>
+        </tr>
+        <tr>
+            <td>Sweetha</td>
+            <td>Manikandan</td>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Zombies_4:_Dawn_of_the_Vampires" target="_blank">
+                    <img src="zombies4.jpg" alt="Zombies 4" width="225" height="225">
+                </a>
+
+            </td>
+            <td>
+                <audio controls>
+                    <source src="Favorite_song.mp3" type="audio/mp3"> 
+                    Anbe Anbe
+                </audio>
+            </td>
+            <td>
+                <video width="338" height="189" controls>
+                    <source src="hogwarts_hp.mp4" type="video/mp4">
+                    Hogwarts
+                    <!--I love Harry Potter but I couldn't read find a clip from the movies so I just downloaded a clip of Hogwarts.-->
+                </video>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <form action="/submit" method="post">
+        <h3> Form: </h3>
+       <label> Full Name: </label> 
+       <input type="text" placeholder="Enter your full name" required><br>
+       <label> Email: </label>
+       <input type="email" placeholder="Enter your email here" required><br>
+       <label for="password">Password:</label>
+       <input type="password" id="password" name="password" required><br>
+       <h4>Days Available:</h4>
+       <label><input type="checkbox">Monday</label><label><input type="checkbox">Tuesday</label><label><input type="checkbox">Wednesday</label><label><input type="checkbox">Thursday</label><label><input type="checkbox">Friday</label><label><input type="checkbox">Saturday</label><label><input type="checkbox">Sunday</label><br><br>
+        <label for="time">Available Time:</label>
+        <select id="time" name="time">
+        <option value="">Select a time</option>
+        <option value="morning">Morning 8am - 12pm</option>
+        <option value="afternoon">Afternoon 12pm - 4pm</option>
+        <option value="evening">Evening 4pm - 8pm</option>
+        </select><br><br>
+        <label>Working on a New Website?:</label>
+        <input type="radio" value="yes" checked> Yes
+        <input type="radio" value="no"> No<br>
+        <label>Any Comments:</label><br>
+        <textarea rows="2" cols="40" placeholder="Add any comments here"></textarea><br>
+       <input type="submit" value="Submit" style="width: 90px;">
+       <input type="reset" value="Reset" style="width: 90px;">
+    </form>
+</body>
+</html>
