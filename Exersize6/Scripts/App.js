@@ -19,8 +19,9 @@ function searchMonster() {
         if (monsters[i].name.toLowerCase() === query) {
             return `
                 <h1> Name: ${monsters[i].name} </h1> 
-                Type: ${monsters[i].type}
-                Species: ${monsters[i].species}
+                <p>Type: ${monsters[i].type} </p>
+                <p>Species: ${monsters[i].species}</p>
+                <p>Description: ${monsters[i].description}</p>
             `;
         }
     }
@@ -34,5 +35,5 @@ searchButton.addEventListener("click", function(event) {
     result.innerHTML = output;
 });
 
-// Load monsters on start
+
 loadMonsters();

@@ -31,6 +31,7 @@ form.addEventListener("submit", function(event) {
     } else {
         // Create a new list item (card)
         const employeeItem = document.createElement("li");
+        list.classList.add("list-group-item")
         employeeItem.innerHTML = `
             <p>First Name: ${fNameVal}</p>
             <p>Last Name: ${lNameVal}</p>

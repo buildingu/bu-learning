@@ -26,7 +26,7 @@ function formValidator(fName, lName, age, pNumber) {
         return "lastt Name should be a string";
     }
 
-    else if (!Number.isInteger(age)) {
+    else if (Number.isInteger(age)) {
         return "Age should be a number";
     }
     
@@ -61,7 +61,7 @@ form.addEventListener("submit", function(event) {
     const result = formValidator(fNameVal, lNameVal, ageVal, pNumberVal);
     message.textContent = result
 
-    if(message === "Welcome to ADOS APP"){
+    if(message === "Welcome to the ADOS APP"){
         message.style.backgroundColor = "green";
     } 
 
