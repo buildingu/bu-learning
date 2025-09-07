@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+  <title>Exercise-1</title>
+</head>
+<body>
+
+  <center><h1>Exercise-1 by Ishita Singh </h1></center>
+  <center></h1>Date Submitted: 09/05/2025</h1></center>
+
+  <center><h2>Fun Fact about me:</h2></center>
+
+  <!-- Table -->
+  <table border="1">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Favorite Movie Image</th>
+      <th>Favorite Music Audio </th>
+      <th>Favorite Video </th>
+    </tr>
+
+    <!-- Example Row -->
+    <tr>
+      <td>Ishita</td>
+      <td>Singh</td>
+      <td>
+          <img src="data/movie.avif" alt="Wall-E" width="100">
+      </td>
+      <td>
+        <audio controls>
+          <source src="https://dn721708.ca.archive.org/0/items/acidplanet-audio-00167167/00167167.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <iframe width="560" height="315"
+  src="https://www.youtube.com/embed/GyBeACKZOU4"
+  title="YouTube video player" frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        </iframe>
+          
+        </video>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Form Section -->
+  <h2>Availability Form</h2>
+  <form>
+    <!-- Full Name -->
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+
+    <!-- Available Days -->
+    <label>Available Days:</label><br>
+    <input type="checkbox" name="days" value="Monday"> Monday<br>
+    <input type="checkbox" name="days" value="Tuesday"> Tuesday<br>
+    <input type="checkbox" name="days" value="Wednesday"> Wednesday<br>
+    <input type="checkbox" name="days" value="Thursday"> Thursday<br>
+    <input type="checkbox" name="days" value="Friday"> Friday<br><br>
+
+    <!-- Available Time -->
+    <label for="time">Available Time:</label><br>
+    <select id="time" name="time">
+      <option value="morning">Morning</option>
+      <option value="afternoon">Afternoon</option>
+      <option value="evening">Evening</option>
+    </select><br><br>
+
+    <!-- Working on a New Website -->
+    <label>Working on a New Website?</label><br>
+    <input type="radio" name="website" value="yes" checked> Yes
+    <input type="radio" name="website" value="no"> No<br><br>
+
+    <!-- Comments -->
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Enter any additional information here..."></textarea><br><br>
+
+    <!-- Submit & Reset Buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+</body>
+</html>
