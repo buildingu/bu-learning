@@ -9,38 +9,94 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <style>
-    @media screen and (max-width: 600px) {
-        table{
-            max-width: 100px;
-        }
-        img{
-            width: 100px;
-        }
-        audio{
-            width: 100px;
-        }
-        video{
-            width:100px;
-        }
-
-        body{
-            text-align: center;
-            background-color: blueviolet;
-        }
-    }
-
+   
+    
     @media screen and (max-width: 767px) {
 
-    }
-
-    div input:not(.selected-item) {
-
-    }
-
-    .content-section:nth-child(odd) {
+     body {
+  background-image: url(background-desktop.jpg);
+  color: white
 
     }
+    th{
+        background-color: steelblue;
+    }
+    table{
+        background-color:slategray
+    }
+    form{
+        padding:5px;
+        border:5px solid gray;      
+        background-color: lightgrey;
+}
+.week{
+    color:rgb(0, 0, 0);
+}
+.yes{
+    color: black;
+}
+.green{
+    background-color: green;
+    color: white;
+}
+.red{
+    background-color: red;
+    color:white;
+}
+label{
+    color: black;
+    
+}
+ 
+
+    };
+    </style>
+    <style>
+@media screen and (max-width: 700px) {
+body{
+ text-align: center;
+ background-image: url(background-mobile.jpg)
+
+ }
+ table{
+ table-layout:fixed;
+ }
+td{
+ overflow: hidden;
+text-overflow: ellipsis;
+ word-wrap: break-word;
+}
+ p, h4, th, td, h2{
+ color: rgb(255, 255, 255);
+ text-align: center;
+ }
+ th{
+ background-color:rgb(173, 63, 19) ;
+ }
+ tr{
+display: flex;
+ flex-direction: column;
+ background-color: rgb(126, 49, 25);
+ }
+
+ img{
+width: 100px;
+ }
+audio{
+ width: 200px;
+ }
+ video{
+ width:250px;
+ }
+
+ form{
+ background-color: rgb(201, 196, 196);
+ }
+    
+};
 </style>
+
+
 </head>
 <body>
     
@@ -109,7 +165,7 @@
 
         <br>
         <br>
-
+        <div class="week">
         <input type="checkbox">Sunday
         <input type="checkbox">Monday
         <input type="checkbox">Tuesday
@@ -117,7 +173,7 @@
         <input type="checkbox">Thursday
         <input type="checkbox">Friday
         <input type="checkbox">Saturday
-
+            </div>
         <br>
         <br>
 
@@ -133,9 +189,9 @@
         <br>
 
         <label><i>Working on a New Website?</i></label>
-        <input type="radio" name="color" value="red"> Yes 
-        <input type="radio"name="color" value="Green"> No
-
+       <div class="yes"><input type="radio" name="color" value="red"> Yes 
+       <input type="radio"name="color" value="Green"> No
+        </div>
         <br>
         <br>
 
@@ -145,7 +201,9 @@
         <br>
         <br>
         
-        <input type="submit" value="Submit"> <input type="reset">
+        <input class="green" type="submit" value="Submit">
+        
+        <input class="red" type="reset">
         
 
     </form>
