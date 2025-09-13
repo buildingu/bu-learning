@@ -6,11 +6,6 @@
 	<title>Exercise 4: Bootstrap</title>
 	<link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style_exercise4.css">
-	<style>
-		html {
-			scroll-behavior: smooth;
-		}
-	</style>
 </head>
 <body>
 	<script src="bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
@@ -80,31 +75,75 @@
 					<img src="assets/github.png" alt="github logo" width="150px" class="mb-3">
 					<h4 class="mb-2">Lesson 0:</h4>
 					<p class="mb-3">Git Hub</p>
-					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lesson0Modal">View More</button>
+					<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#lesson0Description" aria-expanded="false">
+						<span class="collapsed">View More</span>
+						<span class="expanded"> View Less</span>
+					</button>
+					<div class="collapse mt-3" id="lesson0Description">
+						<div class="card card-body">
+							Lesson covered the basics of using Git Hub, how to set it up, and how to submit exercises.
+						</div>
+					</div>
 				</div>
+
 				<div class="col p-4 background-white">
-					<img src="assets/html.png" alt="html logo" width="150px" class="mb-3">
+					<img src="assets/html.png" alt="HTML logo" width="150px" class="mb-3">
 					<h4 class="mb-2">Lesson 1:</h4>
 					<p class="mb-3">HTML</p>
-					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lesson1Modal">View More</button>
+					<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#lesson1Description" aria-expanded="false">
+						<span class="collapsed">View More</span>
+						<span class="expanded"> View Less</span>
+					</button>
+					<div class="collapse mt-3" id="lesson1Description">
+						<div class="card card-body">
+							Lesson introduced HTML, document structure, main tags and elements, and text formatting.
+						</div>
+					</div>
 				</div>
+
 				<div class="col p-4 background-white">
-					<img src="assets/css.png" alt="css logo" width="150px" class="mb-3">
+					<img src="assets/css.png" alt="CSS logo" width="150px" class="mb-3">
 					<h4 class="mb-2">Lesson 2:</h4>
 					<p class="mb-3">CSS</p>
-					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lesson2Modal">View More</button>
+					<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#lesson2Description" aria-expanded="false">
+						<span class="collapsed">View More</span>
+						<span class="expanded"> View Less</span>
+					</button>
+					<div class="collapse mt-3" id="lesson2Description">
+						<div class="card card-body">
+							Lesson introduced CSS, styling HTML elements, and topics like margins, colors, borders, and padding.
+						</div>
+					</div>
 				</div>
+
 				<div class="col p-4 background-white">
-					<img src="assets/advanced_css.png" alt="advanced css logo" width="150px" class="mb-3">
+					<img src="assets/advanced_css.png" alt="CSS logo" width="150px" class="mb-3">
 					<h4 class="mb-2">Lesson 3:</h4>
-					<p class="mb-3">Advanced CSS</p>
-					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lesson3Modal">View More</button>
+					<p class="mb-3"> Advanced CSS</p>
+					<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#lesson3Description" aria-expanded="false">
+						<span class="collapsed">View More</span>
+						<span class="expanded"> View Less</span>
+					</button>
+					<div class="collapse mt-3" id="lesson3Description">
+						<div class="card card-body">
+							Lesson introduced advanced CSS topics such as media queries and advanced selectors.
+						</div>
+					</div>
 				</div>
+
 				<div class="col p-4 background-white">
-					<img src="assets/bootstrap.png" alt="bootstrap logo" width="150px" class="mb-3">
+					<img src="assets/bootstrap.png" alt="CSS logo" width="150px" class="mb-3">
 					<h4 class="mb-2">Lesson 4:</h4>
 					<p class="mb-3">Bootstrap</p>
-					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lesson4Modal">View More</button>
+					<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#lesson4Description" aria-expanded="false">
+						<span class="collapsed">View More</span>
+						<span class="expanded"> View Less</span>
+					</button>
+					<div class="collapse mt-3" id="lesson4Description">
+						<div class="card card-body">
+							Lesson introduced Bootstrap framework and its components.						
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -123,70 +162,6 @@
 		</div>
 	</section>
 
-	<div class="modal fade" id="lesson0Modal" tabindex="-1" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Lesson 0: Git Hub</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-				</div>
-				<div class="modal-body">Lesson covered the basics of using Git Hub, how to set it up, and how to submit exercises.</div>
-				<div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="lesson1Modal" tabindex="-1" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Lesson 1: HTML</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-				</div>
-				<div class="modal-body">Lesson introduced HTML, document structure, main tags and elements, and text formatting.</div>
-				<div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="lesson2Modal" tabindex="-1" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Lesson 2: CSS</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-				</div>
-				<div class="modal-body">Lesson introduced CSS, styling HTML elements, and topics like margins, colors, borders, and padding.</div>
-				<div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="lesson3Modal" tabindex="-1" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Lesson 3: Advanced CSS</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-				</div>
-				<div class="modal-body">Lesson introduced advanced CSS topics such as media queries and advanced selectors.</div>
-				<div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="lesson4Modal" tabindex="-1" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Lesson 4: Bootstrap</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-				</div>
-				<div class="modal-body">Lesson introduced Bootstrap framework and its components.</div>
-				<div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
-			</div>
-		</div>
-	</div>
     <br>
 </body>
 </html>
