@@ -1,6 +1,6 @@
 body {
     min-height: 100vh;
-    background: linear-gradient(270deg, black, rgb(4, 59, 4), rgb(217, 217, 0));
+    background: linear-gradient(270deg,rgb(21, 163, 207),rgb(0, 169, 0), rgb(217, 217, 0));
     background-size: 600% 600%;
     animation: gradientAnimation 40s ease infinite;
 }
@@ -42,4 +42,20 @@ body {
 .aboutme .image-col img {
     max-width: 100%;   
     height: auto;      
+}
+button[aria-expanded="false"] .expanded {
+  display: none;
+}
+button[aria-expanded="false"] .collapsed {
+  display: inline;
+}
+
+button[aria-expanded="true"] .expanded {
+  display: inline;
+}
+button[aria-expanded="true"] .collapsed {
+  display: none;
+}
+html {
+	scroll-behavior: smooth;
 }
