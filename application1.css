@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(97, 152, 235);
+    padding:80px;
+}
+#form{
+    background-color: rgb(255, 255, 255);
+    margin:auto;
+    width: fit-content;
+    padding-top: 20px;
+    padding-left:60px;
+    padding-right: 60px;
+    padding-bottom:20px;
+    border-radius: 10px;
+    border:2px solid rgb(43, 0, 135);
+}
+form{
+    justify-content: center;
+    }
+h3{
+    font-size: 30px;
+}
+label{
+    font-size:20px;
+}
+button{
+    font-weight: lighter;
+    color:rgb(255, 255, 255);
+    background-color:rgb(50, 50, 186);
+}
+button:hover{
+    background-color: rgb(3, 3, 96);
+    font-weight: bolder;
+}
