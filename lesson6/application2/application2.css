@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(97, 152, 235);
+    padding:80px;
+    padding-top: 0;
+}
+
+h3{
+    font-size: 20px;
+}
+label{
+    font-size:15px;
+}
+#add_emp{
+    font-size: 30px;
+}
+button {
+    display: block;       
+    margin: 10px auto;    
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 50, 186);
+}
+button:hover{
+    background-color: rgb(3, 3, 96);
+    font-weight: bolder;
+}
+.edit_form,.add_form{
+    margin: auto;
+    text-align: center;
+    margin-top:20px;
+    width:400px;
+    border-radius:10px;
+    padding:10px;
+}
+.edit_form{
+    background-color: rgba(234, 198, 255, 1);
+    border:4px solid rgb(137, 75, 176);
+}
+.add_form{
+    background-color: rgba(174, 237, 255, 0.735);
+    border:4px solid rgb(45, 129, 162);
+}
+.edit_form:hover{
+    background-color: rgba(234, 198, 255, 0.7);
+}
+input{
+    color:rgb(108, 48, 163);
+    font-weight: bolder;
+}
