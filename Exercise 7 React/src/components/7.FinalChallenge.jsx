@@ -1,13 +1,6 @@
 /**
  * Challenge 7: Final (Corrected + Records)
- *
- * Fixes applied:
- * 1. Removed maxLength, min, and type="number" attributes → use custom validators only.
- * 2. Used refs properly → focus first invalid field when validation fails.
- * 3. Used `isValid` → disable submit button until form passes validation.
- * 4. Added submissions history → saved records displayed in collapsible boxes.
- */
-
+ 
 import { useState, useRef, useEffect } from "react";
 
 export default function FinalChallenge() {
