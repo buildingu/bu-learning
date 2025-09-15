@@ -1,25 +1,11 @@
 /**
- * Challenge 7: Final
+ * Challenge 7: Final (Corrected + Records)
  *
- * Description:
- * Create a form with fields for first name, last name, age, and phone number. Use state, refs, and any other React hooks of your choice to 
- * manage form data, validation, and real-time feedback. Incorporate how ever many hooks you want!
- *
- * Validation:
- * Display validation messages under each input if the input is invalid using useState and the error message should clear for the specific 
- * field if the user types in the field.
- * 
- * - All fields are required.
- * - `First name` and `last name` fields should have a max character count of 120.
- * - The `age` field must:
- *    1. Must be a number
- *    2. Have max character count of 3.
- *    3. Must be 18 or older.
- * - The `phone` field must:
- *    1. Must be a number
- *    2. Character count equals 10 (e.g., 5048073240).
- * 
- * Lastly, clear the form if validation passes and render a success message.
+ * Fixes applied:
+ * 1. Removed maxLength, min, and type="number" attributes → use custom validators only.
+ * 2. Used refs properly → focus first invalid field when validation fails.
+ * 3. Used `isValid` → disable submit button until form passes validation.
+ * 4. Added submissions history → saved records displayed in collapsible boxes.
  */
 
 import { useState, useRef, useEffect } from "react";
@@ -41,7 +27,9 @@ export default function FinalChallenge() {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isValid, setIsValid] = useState(false);
+  const [submissions, setSubmissions] = useState([]); // stores submitted records
 
+  // Refs
   const firstNameRef = useRef(null);
   const lastNameRef = useRef(null);
   const ageRef = useRef(null);
@@ -64,7 +52,7 @@ export default function FinalChallenge() {
     if (!value.trim()) return "Age is required";
     if (value.length > 3) return "Age must be 3 characters or less";
     if (!/^\d+$/.test(value)) return "Age must be a number";
-    const age = parseInt(value);
+    const age = parseInt(value, 10);
     if (age < 18) return "Age must be 18 or older";
     return "";
   };
@@ -78,14 +66,13 @@ export default function FinalChallenge() {
 
   // Handle input changes
   const handleInputChange = (field, value) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
       [field]: value
     }));
 
-    // Clear error when user starts typing
     if (errors[field]) {
-      setErrors(prev => ({
+      setErrors((prev) => ({
         ...prev,
         [field]: ""
       }));
@@ -102,19 +89,24 @@ export default function FinalChallenge() {
     };
 
     setErrors(newErrors);
-    
-    const hasErrors = Object.values(newErrors).some(error => error !== "");
+
+    const hasErrors = Object.values(newErrors).some((err) => err !== "");
     setIsValid(!hasErrors);
-    
-    return !hasErrors;
+
+    return { isFormValid: !hasErrors, newErrors };
   };
 
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    if (validateForm()) {
+    const { isFormValid, newErrors } = validateForm();
+
+    if (isFormValid) {
       setIsSubmitted(true);
+
+      // Save record
+      setSubmissions((prev) => [...prev, formData]);
+
       // Clear form
       setFormData({
         firstName: "",
@@ -122,20 +114,29 @@ export default function FinalChallenge() {
         age: "",
         phone: ""
       });
-      // Focus first field
       firstNameRef.current?.focus();
+    } else {
+      if (newErrors.firstName) firstNameRef.current?.focus();
+      else if (newErrors.lastName) lastNameRef.current?.focus();
+      else if (newErrors.age) ageRef.current?.focus();
+      else if (newErrors.phone) phoneRef.current?.focus();
     }
   };
 
-  // Reset success message after 5 seconds
+  // Reset success message
   useEffect(() => {
     if (isSubmitted) {
-      const timer = setTimeout(() => {
-        setIsSubmitted(false);
-      }, 5000);
+      const timer = setTimeout(() => setIsSubmitted(false), 5000);
       return () => clearTimeout(timer);
     }
   }, [isSubmitted]);
+
+  // Re-run validation when data changes
+  useEffect(() => {
+    const { isFormValid } = validateForm();
+    setIsValid(isFormValid);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [formData]);
 
   return (
     <main>
@@ -143,25 +144,26 @@ export default function FinalChallenge() {
 
       <div>
         <h2>Subscribe to our Newsletter!</h2>
-        
+
         {isSubmitted && (
-          <div style={{ 
-            backgroundColor: "#d4edda", 
-            color: "#155724", 
-            padding: "1rem", 
-            borderRadius: "4px", 
-            marginBottom: "1rem",
-            border: "1px solid #c3e6cb"
-          }}>
-            ✅ Success! Thank you for subscribing to our newsletter!
+          <div
+            style={{
+              backgroundColor: "#d4edda",
+              color: "#155724",
+              padding: "1rem",
+              borderRadius: "4px",
+              marginBottom: "1rem",
+              border: "1px solid #c3e6cb"
+            }}
+          >
+             Success! Thank you for subscribing to our newsletter!
           </div>
         )}
 
         <form autoComplete="off" noValidate onSubmit={handleSubmit}>
+          {/* First Name */}
           <div style={{ marginBottom: "1rem" }}>
-            <label htmlFor="firstName" style={{ display: "block", marginBottom: "0.5rem" }}>
-              First Name *
-            </label>
+            <label htmlFor="firstName">First Name *</label>
             <input
               ref={firstNameRef}
               type="text"
@@ -174,19 +176,13 @@ export default function FinalChallenge() {
                 border: errors.firstName ? "1px solid #dc3545" : "1px solid #ccc",
                 borderRadius: "4px"
               }}
-              maxLength={120}
             />
-            {errors.firstName && (
-              <p style={{ color: "#dc3545", fontSize: "0.875rem", marginTop: "0.25rem" }}>
-                {errors.firstName}
-              </p>
-            )}
+            {errors.firstName && <p style={{ color: "#dc3545" }}>{errors.firstName}</p>}
           </div>
 
+          {/* Last Name */}
           <div style={{ marginBottom: "1rem" }}>
-            <label htmlFor="lastName" style={{ display: "block", marginBottom: "0.5rem" }}>
-              Last Name *
-            </label>
+            <label htmlFor="lastName">Last Name *</label>
             <input
               ref={lastNameRef}
               type="text"
@@ -199,22 +195,16 @@ export default function FinalChallenge() {
                 border: errors.lastName ? "1px solid #dc3545" : "1px solid #ccc",
                 borderRadius: "4px"
               }}
-              maxLength={120}
             />
-            {errors.lastName && (
-              <p style={{ color: "#dc3545", fontSize: "0.875rem", marginTop: "0.25rem" }}>
-                {errors.lastName}
-              </p>
-            )}
+            {errors.lastName && <p style={{ color: "#dc3545" }}>{errors.lastName}</p>}
           </div>
 
+          {/* Age */}
           <div style={{ marginBottom: "1rem" }}>
-            <label htmlFor="age" style={{ display: "block", marginBottom: "0.5rem" }}>
-              Age *
-            </label>
+            <label htmlFor="age">Age *</label>
             <input
               ref={ageRef}
-              type="number"
+              type="text"
               id="age"
               value={formData.age}
               onChange={(e) => handleInputChange("age", e.target.value)}
@@ -224,23 +214,16 @@ export default function FinalChallenge() {
                 border: errors.age ? "1px solid #dc3545" : "1px solid #ccc",
                 borderRadius: "4px"
               }}
-              maxLength={3}
-              min="18"
             />
-            {errors.age && (
-              <p style={{ color: "#dc3545", fontSize: "0.875rem", marginTop: "0.25rem" }}>
-                {errors.age}
-              </p>
-            )}
+            {errors.age && <p style={{ color: "#dc3545" }}>{errors.age}</p>}
           </div>
 
+          {/* Phone */}
           <div style={{ marginBottom: "1rem" }}>
-            <label htmlFor="phone" style={{ display: "block", marginBottom: "0.5rem" }}>
-              Phone Number *
-            </label>
+            <label htmlFor="phone">Phone Number *</label>
             <input
               ref={phoneRef}
-              type="tel"
+              type="text"
               id="phone"
               value={formData.phone}
               onChange={(e) => handleInputChange("phone", e.target.value)}
@@ -250,34 +233,55 @@ export default function FinalChallenge() {
                 border: errors.phone ? "1px solid #dc3545" : "1px solid #ccc",
                 borderRadius: "4px"
               }}
-              maxLength={10}
               placeholder="5048073240"
             />
-            {errors.phone && (
-              <p style={{ color: "#dc3545", fontSize: "0.875rem", marginTop: "0.25rem" }}>
-                {errors.phone}
-              </p>
-            )}
+            {errors.phone && <p style={{ color: "#dc3545" }}>{errors.phone}</p>}
           </div>
 
-          <button 
+          {/* Submit */}
+          <button
             type="submit"
+            disabled={!isValid}
             style={{
-              backgroundColor: "#007bff",
+              backgroundColor: !isValid ? "#6c757d" : "#007bff",
               color: "white",
               padding: "0.75rem 1.5rem",
               border: "none",
               borderRadius: "4px",
-              cursor: "pointer",
-              fontSize: "1rem"
+              cursor: !isValid ? "not-allowed" : "pointer"
             }}
-            onMouseEnter={(e) => e.target.style.backgroundColor = "#0056b3"}
-            onMouseLeave={(e) => e.target.style.backgroundColor = "#007bff"}
           >
             Submit
           </button>
         </form>
       </div>
+
+      {/* Submitted Records */}
+      {submissions.length > 0 && (
+        <div style={{ marginTop: "2rem" }}>
+          <h3>Submitted Records</h3>
+          {submissions.map((sub, index) => (
+            <details
+              key={index}
+              style={{
+                marginBottom: "1rem",
+                padding: "0.5rem",
+                border: "1px solid #ccc",
+                borderRadius: "4px"
+              }}
+            >
+              <summary style={{ cursor: "pointer", fontWeight: "bold" }}>
+                {sub.firstName}
+              </summary>
+              <div style={{ marginTop: "0.5rem" }}>
+                <p>Last Name: {sub.lastName}</p>
+                <p>Age: {sub.age}</p>
+                <p>Phone: {sub.phone}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      )}
     </main>
   );
 }
