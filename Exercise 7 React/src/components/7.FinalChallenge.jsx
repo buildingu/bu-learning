@@ -1,6 +1,8 @@
 /**
  * Challenge 7: Final (Corrected + Records)
  
+ */
+
 import { useState, useRef, useEffect } from "react";
 
 export default function FinalChallenge() {
