@@ -1,99 +1,82 @@
-  <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exercise 1</title>
 </head>
 <body>
-<h1 align="center">Exercise 1 by Yasmina Al Shawwa</h1>
+  <h1 align="center">Exercise 1 by Yasmina Al Shawwa</h1>
+  <p align="center">Date Submitted: 16/8/2025</p>
+  <hr>
 
-<p align="center">Date Submitted: 16/8/2025</p>
-<hr>
+  <h3 align="center">Fun Facts About Me!</h3>
 
-<h3 align="center">Fun Facts About Me!</h3>
+  <table border="1" cellpadding="10" cellspacing="0" bgcolor="#EDEDED" align="center">
+    <thead>
+      <tr bgcolor="#F3D7F5">
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Favorite Movie Image</th>
+        <th>Favorite Music Audio Sample</th>
+        <th>Favorite Video Sample</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Yasmina</td>
+        <td>Al Shawwa</td>
+        <td>
+          <a href="http://en.wikipedia.org/wiki/Sherlock_Holmes_(2009_film)" target="_blank" rel="noopener noreferrer">
+            <img src="sherlockk.jpg" alt="Poster for Sherlock Holmes the Movie" width="150">
+          </a>
+        </td>
+        <td>I don't listen to music LOL >.<</td>
+        <td>
+          <iframe width="200" height="150" src="https://www.youtube.com/embed/odMdKdTa7g8" frameborder="0" allowfullscreen></iframe>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-<table border="1" cellpadding="10" cellspacing="0" bgcolor="#EDEDED" align="center">
-  <thead>
-    <tr bgcolor="#F3D7F5">
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Favorite Movie Image</th>
-      <th>Favorite Music Audio Sample</th>
-      <th>Favorite Video Sample</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Yasmina</td>
-      <td>Al Shawwa</td>
-      <td>
-        <a href="http://en.wikipedia.org/wiki/Sherlock_Holmes_(2009_film)" target="_blank" rel="noopener noreferrer">
-          <img src="sherlock.jpeg" alt="Whoops! The image didn't load D:. This is a poster for Sherlock Holmes the Movie" width="150">
-        </a>
-      </td>
-      <td>I don't listen to music LOL >.<</td>
-      <td>
-        <iframe width="200" height="150" src="https://www.youtube.com/embed/odMdKdTa7g8" frameborder="0" allowfullscreen></iframe>
-      </td>
-    </tr>
-  </tbody>
-</table>
+  <hr>
 
-<hr>
-<form>
-<div align="center">
-	<h2 align="center"> Enter Your Details Below !</h2>
-	<label> Full Name</label>
-	<input type="text" name="fullname" placeholder="Yasmina Al Shawwa"><br><br>
-</div>
-<div align="center">
-	<label>Email</label>
-	<input type="email"  name="email" placeholder="yasmina.shawwa.1311@gmail.com"><br><br>
-</div>  
-<div align="center">
-	<label>Password</label>
-	<input type="password" name="password" placeholder="*******"><br><br>
-</div>
-<div align="center">
-	<label>Available Meeting Days</label>
-<br>
-  <input type="checkbox" name="days" value="Mon"> Mon
-  <input type="checkbox" name="days" value="Tue"> Tue
-  <input type="checkbox" name="days" value="Wed"> Wed
-  <input type="checkbox" name="days" value="Thu"> Thu
-  <input type="checkbox" name="days" value="Fri"> Fri<br><br>
-</div>
-<div align="center">
-	<label>Available Time</label>
-<br>
-	<select name="time">
-	  <option value="morning">Morning(8am to 12pm)</option>
-	  <option value="afternoon">Afternoon(12pm to 5pm)</option>
-	  <option value="evening">Evening (5pm to 9pm)</option>
-</select>
-</div>
+  <form>
+    <div align="center">
+      <h2>Enter Your Details Below!</h2>
+      <label>Full Name</label>
+      <input type="text" name="fullname" placeholder="Yasmina Al Shawwa"><br><br>
 
-<br>
-<div align="center">
-<label>Currently Working on the Website?</label> 
-<label>
-  <input type="radio" name="website" value="Yes" checked> Yes :)
-</label>
-<label>
-  <input type="radio" name="website" value="No"> No :(
-</label>
-</div>
-<br>
-<div align="center">
-<label>Comments</label><br>
-  <textarea name="comments" rows="4" cols="40" placeholder="Write your comments here..."></textarea>
-</div>
-<br>
-<div align="center">
- 	<button type="submit">Submit</button>
-  	<button type="reset">Reset</button>
-</div>
+      <label>Email</label>
+      <input type="email" name="email" placeholder="yasmina.shawwa.1311@gmail.com"><br><br>
 
+      <label>Password</label>
+      <input type="password" name="password" placeholder="*******"><br><br>
 
-</form> 
-</body> 
-<html>
+      <label>Available Meeting Days</label><br>
+      <input type="checkbox" name="days" value="Mon"> Mon
+      <input type="checkbox" name="days" value="Tue"> Tue
+      <input type="checkbox" name="days" value="Wed"> Wed
+      <input type="checkbox" name="days" value="Thu"> Thu
+      <input type="checkbox" name="days" value="Fri"> Fri<br><br>
+
+      <label>Available Time</label><br>
+      <select name="time">
+        <option value="morning">Morning (8am to 12pm)</option>
+        <option value="afternoon">Afternoon (12pm to 5pm)</option>
+        <option value="evening">Evening (5pm to 9pm)</option>
+      </select><br><br>
+
+      <label>Currently Working on the Website?</label><br>
+      <label><input type="radio" name="website" value="Yes" checked> Yes :)</label>
+      <label><input type="radio" name="website" value="No"> No :(</label><br><br>
+
+      <label>Comments</label><br>
+      <textarea name="comments" rows="4" cols="40" placeholder="Write your comments here..."></textarea><br><br>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+</body>
+</html>
