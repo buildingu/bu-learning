@@ -1,0 +1,116 @@
+@import url('https://fonts.cdnfonts.com/css/bitcount-prop-double-ink');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+body, p, li, a, input, textarea, h2, h3, .btn, .nav-link {
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1.display-4 {
+    font-family: 'Bitcount Prop Double Ink', sans-serif;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.navbar {
+    background-color: #4b0082;
+}
+
+.navbar .nav-link, .navbar .navbar-brand {
+    color: #fff;
+    font-weight: 600;
+}
+
+.navbar .nav-link:hover {
+    color: #dda0dd;
+}
+
+#home {
+    background-color: #e6e6fa;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#home .btn-primary {
+    background-color: #4b0082;
+    border: none;
+    font-weight: bold;
+}
+
+#home .btn-primary:hover {
+    background-color: #6a0dad;
+}
+
+#about, #contact {
+    padding: 80px 20px;
+    background: url('bg.jpg') center center/cover no-repeat;
+    color: #f0f0f0;
+}
+
+#portfolio {
+    background-color: #fafafa;
+    padding: 80px 20px;
+}
+
+.card {
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#portfolio .col-md-4:nth-child(1) .card {
+    background-color: #d8b4ff;
+}
+
+#portfolio .col-md-4:nth-child(2) .card {
+    background-color: #9f7aea;
+}
+
+#portfolio .col-md-4:nth-child(3) .card {
+    background-color: #6b21a8;
+}
+
+#portfolio .col-md-4:nth-child(1) .btn {
+    background-color: #c084fc;
+    border: none;
+}
+
+#portfolio .col-md-4:nth-child(1) .btn:hover {
+    background-color: #a855f7;
+}
+
+#portfolio .col-md-4:nth-child(2) .btn {
+    background-color: #7c3aed;
+    border: none;
+}
+
+#portfolio .col-md-4:nth-child(2) .btn:hover {
+    background-color: #6d28d9;
+}
+
+#portfolio .col-md-4:nth-child(3) .btn {
+    background-color: #5b21b6;
+    border: none;
+}
+
+#portfolio .col-md-4:nth-child(3) .btn:hover {
+    background-color: #4c1d95;
+}
+
+#contact input, #contact textarea {
+    border-radius: 10px;
+}
+
+#contact .btn-primary {
+    background-color: #dda0dd;
+    border: none;
+    font-weight: bold;
+}
+
+#contact .btn-primary:hover {
+    background-color: #ba55d3;
+}
