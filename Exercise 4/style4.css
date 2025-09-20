@@ -1,15 +1,10 @@
-@import url('https://fonts.cdnfonts.com/css/bitcount-prop-double-ink');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 body, p, li, a, input, textarea, h2, h3, .btn, .nav-link {
     font-family: 'Roboto Mono', monospace;
 }
 
-h1.display-4 {
-    font-family: 'Bitcount Prop Double Ink', sans-serif;
-    font-weight: 700;
-    color: #2c3e50;
-}
 
 .navbar {
     background-color: #4b0082;
@@ -42,7 +37,7 @@ h1.display-4 {
 
 #about, #contact {
     padding: 80px 20px;
-    background: url('bg.jpg') center center/cover no-repeat;
+    background: url('assets/bg.jpg') center center/cover no-repeat;
     color: #f0f0f0;
 }
 
