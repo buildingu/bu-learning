@@ -47,7 +47,7 @@ section h2 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+    color: "white"
     padding: 4rem 0;
 }
 

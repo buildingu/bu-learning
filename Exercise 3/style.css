@@ -7,6 +7,15 @@ body {
     text-align: center;
 }
 
+table {
+  border: 5px solid grey;
+  border-collapse: collapse; 
+}
+td, th {
+  padding: 10px;
+  border: 5px solid grey;
+}
+
 .grey-box {
   background-color: #e0e0e0;
   padding: 20px;
@@ -28,7 +37,7 @@ body {
     .desktop table {
         border-collapse: collapse;
         margin: 20px auto;
-        width: calc(100% - 40px);
+        width: calc(100% - 340px);
         border: 5px solid grey;
     }
 
