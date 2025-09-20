@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Starlight High School Debate Tournament 2025</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9ff;
+      margin: 20px;
+      padding: 20px;
+    }
+    h1 {
+      color: #2c2c54;
+      text-align: center;
+      border: 3px solid #2c2c54;
+      padding: 12px;
+      background-color: #dcdcff;
+    }
+    h2 {
+      color: #3c3c80;
+      margin-top: 30px;
+    }
+    p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: #ffffff;
+    }
+    table, th, td {
+      border: 1px solid #2c2c54;
+      padding: 10px;
+      text-align: center;
+    }
+    .contact {
+      border: 2px dashed #3c3c80;
+      padding: 15px;
+      margin-top: 20px;
+      background-color: #f0f0ff;
+    }
+    form {
+      margin-top: 15px;
+    }
+    input, textarea {
+      margin: 5px 0;
+      padding: 8px;
+      width: 95%;
+      border: 1px solid #3c3c80;
+    }
+    button {
+      background-color: #3c3c80;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #5a5ad1;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Starlight High School Debate Tournament 2025</h1>
+
+  <h2>📍 Event Details</h2>
+  <p>Join us for the Annual Debate Tournament 2025 hosted by Starlight High School!  
+  This year’s theme is <b>“Voices of Tomorrow.”</b>  
+  Students will showcase their public speaking and critical thinking skills.</p>
+
+  <table>
+    <tr>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Venue</th>
+    </tr>
+    <tr>
+      <td>October 15, 2025</td>
+      <td>9:00 AM – 4:00 PM</td>
+      <td>Starlight High Auditorium</td>
+    </tr>
+  </table>
+
+  <h2>🎉 Who’s Invited?</h2>
+  <p>All students, teachers, parents and alumni are invited.</p>
+
+
+  <h2>📞 Contact Information</h2>
+  <div class="contact">
+    <p>For inquiries, reach us at:</p>
+    <p><b>Email:</b> debateclub@starlighthigh.edu</p>
+    <p><b>Phone:</b> +123-456-7890</p>
+  </div>
+
+  <h2>📝 RSVP Form</h2>
+  <form>
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+
+    <label for="message">Message / Special Requests:</label><br>
+    <textarea id="message" name="message" rows="4" placeholder="Write here..."></textarea><br>
+
+    <button type="submit">Submit RSVP</button>
+  </form>
+
+</body>
+</html>
