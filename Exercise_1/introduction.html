@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me: Devansh Malhotra</title>
+</head>
+<body>
+    <center>
+        <h1>Exercise 1 by Devansh Malhotra</h1>
+        <h3>Date submitted: 09/24/2025</h3>
+        
+        <hr>
+        
+        <h2>Fun facts about me:</h2>
+        <center>
+    <table border="20" bordercolor="" width="600" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table border="20" bordercolor="#29c5f6" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <th bordercolor="#29c5f6">First Name</th>
+                        <th bordercolor="#29c5f6">Last Name</th>
+                        <th bordercolor="#29c5f6">Favorite Movie Image</th>
+                        <th bordercolor="#29c5f6">Favorite Music Audio Sample</th>
+                        <th bordercolor="#29c5f6">Favorite Video Sample</th>
+                    </tr>
+                    <tr>
+                        <td bordercolor="#29c5f6">Devansh</td>
+                        <td bordercolor="#29c5f6">Malhotra</td>
+                        <td bordercolor="#29c5f6">
+                            <a href="https://en.wikipedia.org/wiki/Independence_Day_(1996_film)">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/b/bb/Independence_day_movieposter.jpg" 
+                                     alt="Independence Day" width="200">
+                            </a>
+                        </td>
+                        <td bordercolor="#29c5f6">
+                            <audio controls>
+                                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </td>
+                        <td bordercolor="#29c5f6">
+                            <iframe width="200" height="300" 
+                                src="https://www.youtube.com/embed/OVM1ohGHd2E" 
+                                frameborder="0" allowfullscreen>
+                            </iframe>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</center>
+        <br>
+        <hr>
+        <br>
+
+        <h2>Submission Form</h2>
+        <form>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+
+            <label font="italic">Available Meeting Days:</label><br><br>
+            <input type="checkbox" id="monday" name="days" value="Monday"> Monday
+            <input type="checkbox" id="tuesday" name="days" value="Tuesday"> Tuesday
+            <input type="checkbox" id="wednesday" name="days" value="Wednesday"> Wednesday
+            <input type="checkbox" id="thursday" name="days" value="Thursday"> Thursday
+            <input type="checkbox" id="friday" name="days" value="Friday"> Friday
+            <br><br>
+
+            <label for="time">Available Time:</label>
+            <select id="time" name="time">
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+            </select>
+            <br><br>
+
+            <label>Currently working on a new website?</label>
+            <input type="radio" id="yes" name="website" value="Yes" checked> Yes
+            <input type="radio" id="no" name="website" value="No"> No
+            <br><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Add any comments here..."></textarea>
+            <br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </center>
+</body>
+</html>
