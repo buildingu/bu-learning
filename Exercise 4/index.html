@@ -11,7 +11,7 @@
             color: white;
         }
         .background {
-            background: url(/img/photo-1699891730676-037bed3c1bed.jpeg);
+            background: url(/img/background.jpeg);
         }
         .circle {
             border-radius: 50%;
@@ -31,6 +31,37 @@
         }
         .m-version {
             display: none;
+        }
+        .card-image {
+            height: 300px;
+        }
+        #aboutMeText {
+            color: white;
+        }
+        #paragraph {
+            color: white;
+        }
+        #html-card {
+            background-color: red;
+            border: none;
+            color: white;
+        }
+        #css-card {
+            background-color: #4ec0c2;
+            border: none;
+            color: white;
+        }
+        #js-card {
+            background-color: rgb(181, 181, 0);
+            border: none;
+            color: white;
+        }
+        #contactHeader {
+            color: white;
+        }
+        #messageButton {
+            background-color: green;
+            border: none;
         }
         @media screen and (max-width: 415px) {
             .circle {
@@ -123,8 +154,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <h2 style="color: white;">About Me</h2>
-                        <p style="color: white;">
+                        <h2 id="aboutMeText">About Me</h2>
+                        <p id="paragraph">
                             Hey, I'm Zakariya Atanur, and I'm passionate about web development and coding. I volunteer my skills to
                             build amazing websites and write efficient code that brings ideas to life. <br><br>
                             With several years of experience in the field, I've had the privilege of working on a wide range of
@@ -136,7 +167,7 @@
                         </p>
                     </div>
                     <div class="col-lg-6 responsive-img">
-                        <img src="/img/_banana cat_ Sticker for Sale by abbex.jpeg" alt="Profile" class="circle">
+                        <img src="/img/banana_cat.jpeg" alt="Profile" class="circle">
                     </div>
                 </div>
             </div>
@@ -149,31 +180,31 @@
             <div class="row justify-content-center">
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card card-portfolio">
-                        <img src="img/html.png" class="card-img-top" alt="HTML" style="height: 300px;">
+                        <img src="img/html.png" class="card-img-top" alt="HTML" class="card-image">
                         <div class="card-body">
                             <h5 class="card-title">Project 1: HTML</h5>
                             <p class="card-text">Project 1 showcases my HTML skills. It's a webpage involving HTML with table and static form components. Click learn more to see the project.</p>
-                            <a href="#" class="btn btn-primary" style="background-color: red; border: none; color: white;">Learn More</a>
+                            <a href="#" class="btn btn-primary" id="html-card">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card card-portfolio">
-                        <img src="img/css.png" class="card-img-top" alt="CSS" style="height: 300px;">
+                        <img src="img/css.png" class="card-img-top" alt="CSS" class="card-image">
                         <div class="card-body">
                             <h5 class="card-title">Project 2: CSS</h5>
                             <p class="card-text"> Project 2 showcases my CSS skills. It's a stylized webpage for an event done using HTML and CSS with custom components. Click learn more to see the project.</p>
-                            <a href="#" class="btn btn-primary" style="background-color: #4ec0c2; border: none; color: white;">Learn More</a>
+                            <a href="#" class="btn btn-primary" id="css-card">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card card-portfolio">
-                        <img src="img/js.png" class="card-img-top" alt="JS" style="height: 300px;">
+                        <img src="img/js.png" class="card-img-top" alt="JS" class="card-image">
                         <div class="card-body">
                             <h5 class="card-title">Project 3: Advanced CSS</h5>
                             <p class="card-text">Project 3 showcases my advanced CSS skills. It's a responsive webpage (Desktop & Mobile) from Project 1. Click learn more to see the project.</p>
-                            <a href="#" class="btn btn-primary" style="background-color: rgb(181, 181, 0); border: none; color: white;">Learn More</a>
+                            <a href="#" class="btn btn-primary" id="js-card">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -184,7 +215,7 @@
     <div class="background py-5">
         <div class="container">
             <div class="contact-me">
-                <h2 style="color: white;">Contact Me</h2>
+                <h2 id="contactHeader">Contact Me</h2>
                 <form>
                 <div class="mb-3">
                     <label for="exampleInputName" class="form-label">Name</label>
@@ -198,7 +229,7 @@
                     <label for="exampleFormControlTextarea1" class="form-label">Message</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your comment here."></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary" style="background-color: green; border: none;">Send Message</button>
+                <button type="submit" class="btn btn-primary" id="messageButton">Send Message</button>
                 </form>
             </div>
         </div>
