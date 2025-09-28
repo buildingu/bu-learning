@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #4b0082;
+    --primary-hover: #6a0dad;
+    --accent-color: #dda0dd;
+    --light-bg: #e6e6fa;
+    --text-light: #f0f0f0;
+    --portfolio-bg: #fafafa;
+    --card1: #d8b4ff;
+    --card1-btn: #c084fc;
+    --card1-btn-hover: #a855f7;
+    --card2: #9f7aea;
+    --card2-btn: #7c3aed;
+    --card2-btn-hover: #6d28d9;
+    --card3: #6b21a8;
+    --card3-btn: #5b21b6;
+    --card3-btn-hover: #4c1d95;
+    --contact-btn: #dda0dd;
+    --contact-btn-hover: #ba55d3;
+    --white: #ffffff;
+    --dark-text: #2c3e50;
+}
+
+body, p, li, a, input, textarea, h2, h3, .btn, .nav-link {
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1.display-4 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    color: var(--dark-text);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+    .navbar .nav-link, .navbar .navbar-brand {
+        color: var(--white);
+        font-weight: 600;
+    }
+
+        .navbar .nav-link:hover {
+            color: var(--accent-color);
+        }
+
+#home {
+    background-color: var(--light-bg);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+    #home .btn-primary {
+        background-color: var(--primary-color);
+        border: none;
+        font-weight: bold;
+        color: var(--white);
+    }
+
+        #home .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+#about, #contact {
+    padding: 80px 20px;
+    background: url('assets/bg.jpg') center center/cover no-repeat;
+    color: var(--text-light);
+}
+
+#portfolio {
+    background-color: var(--portfolio-bg);
+    padding: 80px 20px;
+}
+
+.card {
+    border-radius: 15px;
+    color: var(--white);
+    text-align: center;
+}
+
+    .card img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+#portfolio .col-md-4:nth-child(1) .card {
+    background-color: var(--card1);
+}
+
+#portfolio .col-md-4:nth-child(2) .card {
+    background-color: var(--card2);
+}
+
+#portfolio .col-md-4:nth-child(3) .card {
+    background-color: var(--card3);
+}
+
+#portfolio .col-md-4:nth-child(1) .btn {
+    background-color: var(--card1-btn);
+    border: none;
+    color: var(--white);
+}
+
+    #portfolio .col-md-4:nth-child(1) .btn:hover {
+        background-color: var(--card1-btn-hover);
+    }
+
+#portfolio .col-md-4:nth-child(2) .btn {
+    background-color: var(--card2-btn);
+    border: none;
+    color: var(--white);
+}
+
+    #portfolio .col-md-4:nth-child(2) .btn:hover {
+        background-color: var(--card2-btn-hover);
+    }
+
+#portfolio .col-md-4:nth-child(3) .btn {
+    background-color: var(--card3-btn);
+    border: none;
+    color: var(--white);
+}
+
+    #portfolio .col-md-4:nth-child(3) .btn:hover {
+        background-color: var(--card3-btn-hover);
+    }
+
+#contact input, #contact textarea {
+    border-radius: 10px;
+    color: inherit;
+}
+
+#contact .btn-primary {
+    background-color: var(--contact-btn);
+    border: none;
+    font-weight: bold;
+    color: var(--white);
+}
+
+    #contact .btn-primary:hover {
+        background-color: var(--contact-btn-hover);
+    }
+
+.desktop-only {
+    display: inline-block;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: inline-block;
+    }
+}
