@@ -6,8 +6,8 @@ function formValidator(first, last, age, phone) {
         { name: "age", value: age, type: "number"},
         { name: "phone", value: phone, type: "string"}
     ]
-    for(i = 0; i < inputs.length; i++) {
-        if(inputs[i].value === "" || inputs[i].value === "null") {
+    for(let i = 0; i < inputs.length; i++) {
+        if(inputs[i].value === "" || inputs[i].value === null) {
             console.log(`The ${inputs[i].name} is empty`);
             valid = false;
         }
@@ -15,11 +15,10 @@ function formValidator(first, last, age, phone) {
             console.log(`The ${inputs[i].name} is formatted incorrectly`);
             valid = false;
         }
-        let ageval = inputs.find(input => input.name === "age").value;
-        if(ageval < 18 && !isNaN(ageval)) {
-            console.log("Sorry, not old enough for our app.");
-            valid = false;
-        }
+    }
+    if (age<18 && typeof age==='number') {
+        console.log("Sorry, not old enough for our app.");
+        valid = false;
     }
     if(valid) {
         console.log("WELCOME TO THE ADOS APP.");
