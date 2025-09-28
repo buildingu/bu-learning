@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+nav {
+  background: #fff;
+  border-bottom: 10px solid #FFD700;
+  padding: 10px 0;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #FFD700;
+}
+
+.crud-container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: left;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px;
+  background: #FFD700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #e6c200;
+}
+
+#employeeList {
+  margin-top: 30px;  
+display: flex;      
+  flex-wrap: wrap;     
+  gap: 20px;             
+  justify-content: flex-start;
+}
+
+.employee-card {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;  
+  background: #f0f2f5;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  width: 250px;   
+}
+
+.profile-circle {
+  width: 60px;
+  height: 60px;
+  background: #6a5a02;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px; 
+}
+
+.employee-info p {
+  margin: 4px 0;
+  text-align: left; 
+}

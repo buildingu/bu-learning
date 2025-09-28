@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../FormValidator/">Validator App</a>
+            <a href="../ApiApp/">Advice App</a>
+        </div>
+        </div>
+    </nav>
+
+  <div class="crud-container">
+    <h1>CRUD APP</h1>
+    <h2>Add User Information</h2>
+
+    <form id="employeeForm">
+      <input type="text" id="name" placeholder="Name">
+      <input type="number" id="age" placeholder="Age">
+      <input type="text" id="sex" placeholder="Sex">
+      <input type="text" id="position" placeholder="Position">
+      <button type="submit">Add Entry</button>
+    </form>
+
+    <div id="employeeList"></div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
