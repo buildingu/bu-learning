@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BuildingU Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .hero {
+      background-color: #f8f9fa;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .about img {
+      max-width: 100%;
+      border-radius: 50%;
+    }
+    .project-card {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">BuildingU</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Welcome to My Portfolio</h1>
+      <p>This is a brief introduction to my work at BuildingU.</p>
+      <a href="#portfolio" class="btn btn-primary">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img src="./data/IMG_8517.jpg" alt="Profile Picture">
+        </div>
+        <div class="col-md-8">
+          <h2>About Me</h2>
+          <p>Hi! My name is Ishita Singh and I am a sophmore in highschool. I've had some experince in coding through the computer science pathway at my school and i've learned great things through my time at Bulding-U!.</p>
+          <p><strong>Skills:</strong> HTML, CSS, Bootstrap,etc.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">My Projects</h2>
+      <div class="row">
+        <div class="col-md-4 project-card">
+          <div class="card">
+            <img src="./data/html.png"card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">This is my first project about hmtl</h5>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">View More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-card">
+          <div class="card">
+            <img src="./data/css.png" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">this is my 2nd project about css </h5>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">View More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-card">
+          <div class="card">
+            <img src="./data/images.png" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">this is my 3rd project that I made thorugh bootstarp which is this website you are on rigth now!!</h5>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">View More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modals -->
+  <div class="modal fade" id="project1Modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Project One Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          In this bootstrap project, I created a responsive portfolio website using HTML, CSS, and Bootstrap. The site includes sections for home, about, portfolio, and contact. It features a navbar, hero section, about section with an image, portfolio grid with modals for project details, and a contact form.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="project2Modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Project Two Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          In this Html project i created a website with some of my favorite things, such as my favorite move, a clip from that movie, a song an so on--the website all so included a form.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="project3Modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Project Three Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          In this css project i created a page for a debate tournmnet wiiht the information, detials,timings and a form for questions + how to regiester!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
