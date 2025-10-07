@@ -28,7 +28,7 @@ function searchMonster() {
     return "Monster not found!";
 }
 
-// Event listener
+
 searchButton.addEventListener("click", function(event) {
     event.preventDefault();
     const output = searchMonster();

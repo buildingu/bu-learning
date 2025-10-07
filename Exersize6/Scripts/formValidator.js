@@ -5,15 +5,15 @@ function formValidator(fName, lName, age, pNumber) {
         return "The first name input is missing";  
     }
 
-    else if (lName === null || lName.length === 0) {
+    if (lName === null || lName.length === 0) {
         return "The last name input is missing";
     }
 
-    else if (age === null) {
+    if (age === null) {
         return "The age input is missing";
     }
 
-    else if (pNumber === null || pNumber.length === 0) {
+    if (pNumber === null || pNumber.length === 0) {
         return "The phone number is missing";
     }
 
@@ -22,15 +22,15 @@ function formValidator(fName, lName, age, pNumber) {
         return "first Name should be a string";
     }
 
-    else if (typeof lName !== 'string') {
+    if (typeof lName !== 'string') {
         return "lastt Name should be a string";
     }
 
-    else if (Number.isInteger(age)) {
+    if (typeof age !== "number") {
         return "Age should be a number";
     }
     
-    else if (typeof pNumber !== 'string') {
+    if (typeof pNumber !== 'string') {
         return "Phone Number should be a string";
     }
 
@@ -57,7 +57,7 @@ form.addEventListener("submit", function(event) {
     const pNumberVal = document.getElementById("pNumber").value.trim();
     const message = document.getElementById("result");
 
-    // Run validator
+ =
     const result = formValidator(fNameVal, lNameVal, ageVal, pNumberVal);
     message.textContent = result
 
