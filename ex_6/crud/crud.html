@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD app - Lesson 6</title>
+
+    <link rel="stylesheet" href="crud.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="../ados/ados.html">ADOS app</a>
+        <a href="../api/api.html">API app</a>
+    </nav>
+
+    <h1> CRUD app</h1>
+    <form>
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="number" id="age" placeholder="Age">
+        <input type="text" id="sex" placeholder="Sex">
+        <input type="text" id="position" placeholder="Position">
+        <button onclick="addEmployee(event)">Add Entry</button>
+
+    </form>
+    <div id="employees"></div>
+
+
+
+    <script src="crud.js"></script>
+</body>
+</html>

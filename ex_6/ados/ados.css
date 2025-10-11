@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+
+    form {
+        width:20%;
+        background-color: lightgrey;
+        margin-left: 40%;
+        margin-right: 40%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+
+        input {
+            width:85%;
+            height: 40px;
+            border-radius: 3px;
+            margin-bottom:4px;
+            border-color: rgb(213, 188, 209);
+        }
+
+        button {
+            width:87%;
+            height: 40px;
+            border-radius: 3px;
+            background-color: rgb(213, 188, 209);
+            border-color: rgb(213, 188, 209);
+        }
+    }
+
+}

@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+
+    form {
+        /*width:20%;*/
+        background-color: lightgrey;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+
+        input {
+            width:20%;
+            height: 40px;
+            border-radius: 3px;
+            margin-bottom:4px;
+            border-color: rgb(213, 188, 209);
+        }
+
+        button {
+            width:10%;
+            height: 40px;
+            border-radius: 3px;
+            background-color: rgb(213, 188, 209);
+            border-color: rgb(213, 188, 209);
+        }
+    }
+
+    #output > div {
+        background-color: whitesmoke;
+        border: 1px solid rgb(213, 188, 209);
+        padding: 15px;
+        margin: 10px auto;
+        width: 80%;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+        .name {
+            font-weight: bold;
+        }
+    }
+
+}
