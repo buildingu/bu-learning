@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url("assets/background-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.date {
+  font-size: 0.9em;
+  color: #ffffff;
+}
+
+hr {
+  width: 100%;
+  margin: 20px 0;
+  border: 1px solid #555;
+}
+
+table {
+  border: 1px solid #757575;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-width: 10px;
+}
+
+th {
+  border: 10px solid #757575;
+  background-color: #2a3441;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  background-color: #263a42;
+  padding: 10px;
+  border: 10px solid #757575;
+}
+
+tr:nth-child(odd) td {
+  background-color: #2f4754;
+}
+
+img {
+  border-radius: 5px;
+}
+
+form {
+  display: inline-block;
+  text-align: center;
+  -webkit-text-fill-color: #000000;
+  background-color: #cecaca;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: grey;
+}
+
+input, select, textarea, button {
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #000000;
+  width: 100%;
+  max-width: 400px;
+}
+
+input:not([type="submit"]):not([type="reset"]) {
+  border: 1px solid #000000;
+}
+
+.checkbox-group,
+.radio-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.checkbox-group label,
+.radio-group label {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.checkbox-group input,
+.radio-group input {
+  width: auto;
+  margin-right: 5px;
+}
+
+button {
+  background-color: purple;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5c0099;
+}
+
+footer {
+  background-color: purple;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background-image: url("assets/background-mobile.jpg");
+  }
+  
+  table, img, audio, video {
+    width: 100%;
+    max-width: 100%;
+  }
+  form {
+    width: 90%;
+  }
+  footer {
+    background-color: violet;
+  }
+}
