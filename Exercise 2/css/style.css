@@ -1,0 +1,64 @@
+/* External CSS File*/
+
+/* div {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 10px solid black;
+    margin: auto;
+    text-align: center;
+        margin: top, right, bottom, left
+        e.g. margin: 10px (top) 10px (right) 10px (bottom) 5px (left)
+        
+        margin: top, right + left, bottom
+
+        margin: top + bottom, right + left
+
+    */
+
+main {
+    background-image: url("/../assets/images/background_image.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+main, div, footer { 
+    
+    padding: 20px;
+    border: 2px #1C0333 dashed;
+}
+
+div {
+    background-color: #DCD0FF;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body {
+    background-color: #D3D3FF;
+    font-family: "Poppins", sans-serif;
+}
+
+footer {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: #CCCCFF;
+}
+
+.table-img {
+    max-width: 100%;
+    height: auto;       
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+}
