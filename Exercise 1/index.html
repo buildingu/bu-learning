@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <!--Title of the page-->
+      <title>HTML5 Exercise</title>
+      <!--Metadata-->
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   </head>
+
+   <body>
+      <main>
+         <!--Headings of the page-->
+         <h1>Exercise 1 by Davide D'Urso</h1>
+         <h3>Date submitted: 10/12/2025</h3>
+         <hr>
+
+         <!--Table-->
+         <h3>Some of my favorite things</h3>
+         <table border="1px" cellpadding="10">
+            <tr>
+               <th>First Name</th>
+               <th>Last Name</th>
+               <th>Favorite Movie</th>
+               <th>Favorite Song</th>
+               <th>Favorite Video</th>
+            </tr>
+            <tr>
+               <td>Davide</td>
+               <td>D'Urso</td>
+               <td><img src="https://upload.wikimedia.org/wikipedia/en/3/37/Theringpostere.jpg"></img></td>
+               <td><audio controls><source src="assets/i love you.mp3" type="audio/mpeg"></audio></td>
+               <td><video controls width="512" height="288"><source src="assets/rain timer.mp4" type="video/mp4"></video></td>
+            </tr>
+         </table><br><hr>
+
+         <!--Form-->
+         <h3>Enter your details here</h3>
+         <form>
+            <!--Personal Details-->
+            <label><i>Full Name:</i></label>
+            <input type="text" placeholder="Tyler Williams" style="border:1px solid #000000"><br><br>
+            <label><i>Email:</i></label>
+            <input type="email" placeholder="Tyler@gmail.com" style="border:1px solid #000000"><br><br>
+            <label><i>Password:</i></label>
+            <input type="password" placeholder="********" style="border:1px solid #000000"><br><br>
+          
+            <!--Meeting Details-->
+            <label><i>Available Meeting Days:</i></label>
+            <label><input type="checkbox">Monday</label>
+            <label><input type="checkbox">Tueday</label>
+            <label><input type="checkbox">Wednesday</label>
+            <label><input type="checkbox">Thursday</label>
+            <label><input type="checkbox">Friday</label>
+            <label><input type="checkbox">Saturday</label>
+            <label><input type="checkbox">Sunday</label>
+            <br><br>
+
+            <label><i>Available Time:</i></label>
+            <select>
+               <option>12am - 4am</option>
+               <option>4am - 8am</option>
+               <option>8am - 12pm</option>
+               <option>12pm - 4pm</option>
+               <option>4pm - 8pm</option>
+               <option>8pm - 12am</option>
+            </select>
+            <br><br>
+
+            <!--Other Details-->
+            <label><i>Currently working on a new website?</i></label>
+            <input type="radio" name="website"> Yes
+            <input type="radio" name="website"> No
+            <br><br>
+
+            <textarea placeholder="Write your comments here" rows="5" cols="40"></textarea>
+            <br><br>
+
+            <!--Buttons-->
+            <input type="submit">
+            <input type="reset">
+         </form>
+         <br><br><br><br>
+      </main>
+   </body>
+</html>
