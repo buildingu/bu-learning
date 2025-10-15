@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="exercise3style.css" />
+  </head>
+
+  <body>
+    <h1>Exercise 3 by Rudra Patel</h1>
+    <h5>Date submitted: October 15th 2025</h5>
+    <hr />
+    <p id="facts">Fun facts about me</p>
+    <table id="table">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Favorite Movie</th>
+        <th>Favorite song</th>
+        <th>Favorite video</th>
+      </tr>
+
+      <tr>
+        <td>Rudra</td>
+        <td>Patel</td>
+        <td>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Avengers_%282012_film%29_poster.jpg"
+            alt="Image of avengers"
+          />
+        </td>
+        <td>
+          <audio controls>
+            <source
+              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3"
+              type="audio/mpeg"
+            />
+          </audio>
+        </td>
+        <td>
+          <iframe
+            width="500"
+            height="315"
+            src="https://www.youtube.com/embed/KfyXSz9jOM0?si=g0_C6Vpm22V_LPCs"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <p id="details">Enter your details below</p>
+    <div id="box1"></div>
+    <form id="form">
+      <label for="first_name">Full name</label><br />
+      <input type="text" /> <br />
+
+      <label for="email">Email</label> <br />
+      <input type="email" /><br />
+
+      <label for="password">Password</label><br />
+      <input type="password" />
+
+      <p>Available meeting days</p>
+
+      <label for="Monday">Monday</label>
+      <input type="radio" id="Monday" name="Days" value="Monday" />
+
+      <label for="Tuesday">Tuesday</label>
+      <input type="radio" id="Tuesday" name="Days" value="Tuesday" />
+
+      <label for="Wednesday">Wednesday</label>
+      <input type="radio" id="Wednesday" name="Days" value="Wednesday" />
+
+      <label for="Thursday">Thursday</label>
+      <input type="radio" id="Thursday" name="Days" value="Thursday" />
+
+      <label for="Friday">Friday</label>
+      <input type="radio" id="Friday" name="Days" value="Friday" /><br /><br />
+
+      <label for="available_time">Available Time:</label><br />
+      <select name="available_time" id="available_time">
+        <option value="Morning">Morning (8am-12pm)</option>
+        <option value="Afternoon">Afternoon (12pm)</option>
+        <option value="Evening">Evening (12pm-5pm)</option>
+      </select>
+
+      <p>Working on a new project?</p>
+      <label for="Yes">Yes</label>
+      <input type="radio" value="Yes" />
+      <label for="No">No</label>
+      <input type="radio" value="No" />
+
+      <p>If yes enter the project you are working on</p>
+      <textarea
+        name="project"
+        id="project"
+        placeholder="Enter comments here"
+      ></textarea
+      ><br />
+
+      <button>Submit</button>
+      <button>Reset</button>
+    </form>
+  </body>
+</html>
