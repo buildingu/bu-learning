@@ -1,0 +1,21 @@
+.col-4 {
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(97, 97, 97);
+    width: 200px;
+    height: auto;
+}
+#validationForm {
+    background-color: #f7f7f7;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#editBtn {
+    border: none;
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+}
+#deleteBtn {
+    border: none;
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+}
