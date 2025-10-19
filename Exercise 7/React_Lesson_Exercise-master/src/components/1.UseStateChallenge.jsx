@@ -10,13 +10,21 @@ import { useState } from "react";
 export default function UseStateChallenge() {
   const [show, setShow] = useState(true);
 
+  function toggleShow() {
+    if (show) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  }
+
   return (
     <main>
       <h1>useState Challenge</h1>
-      <button onClick={() => setShow(!show)}>
+      <button onClick={toggleShow}>
         {show ? "Hide" : "Show"}
       </button>
-      {show && <div>BOO!</div>}
+      {show ? <div>BOO!</div> : null}
     </main>
   );
 }

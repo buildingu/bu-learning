@@ -23,21 +23,23 @@ import { createContext, useState } from "react";
 
 const AuthContext = createContext();
 
+const mockUser = {
+  firstName: "Jane",
+  lastName: "Doe",
+  email: "jane.doe@example.com"
+};
+
 export function AuthContextProvider({ children }) {
   const [user, setUser] = useState(null);
 
-  const login = () => {
-    setUser({
-      firstName: "Jane",
-      lastName: "Doe",
-      email: "jane.doe@example.com",
-    });
-  };
+  function login() {
+    setUser(mockUser);
+  }
 
-  const logout = () => {
+  function logout() {
     setUser(null);
     alert("User session timed out.");
-  };
+  }
 
   return (
     <AuthContext.Provider value={{ user, login, logout }}>

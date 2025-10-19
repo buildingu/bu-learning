@@ -22,50 +22,59 @@
  * Lastly, clear the form if validation passes and render a success message.
  */
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 export default function FinalChallenge() {
   const [form, setForm] = useState({ firstName: "", lastName: "", age: "", phone: "" });
   const [errors, setErrors] = useState({});
   const [success, setSuccess] = useState("");
-  const firstRef = useRef();
 
-  const validate = () => {
-    const errs = {};
-    if (!form.firstName) errs.firstName = "First name required";
-    else if (form.firstName.length > 120) errs.firstName = "Max 120 chars";
+  function validateField(name, value) {
+    switch (name) {
+      case "firstName":
+      case "lastName":
+        if (!value.trim()) return "This field is required";
+        if (value.length > 120) return "Maximum 120 characters allowed";
+        return "";
+      case "age":
+        if (!value.trim()) return "Age is required";
+        if (!/^\d+$/.test(value)) return "Age must be a number";
+        if (value.length > 2) return "Maximum 2 digits allowed";
+        if (Number(value) < 18) return "Must be 18 or older";
+        return "";
+      case "phone":
+        if (!value.trim()) return "Phone is required";
+        if (!/^\d+$/.test(value)) return "Phone must be a number";
+        if (value.length !== 10) return "Phone must be exactly 10 digits";
+        return "";
+      default:
+        return "";
+    }
+  }
 
-    if (!form.lastName) errs.lastName = "Last name required";
-    else if (form.lastName.length > 120) errs.lastName = "Max 120 chars";
+  function handleChange(e) {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+    setErrors({ ...errors, [name]: validateField(name, value) });
+  }
 
-    if (!form.age) errs.age = "Age required";
-    else if (!/^\d+$/.test(form.age)) errs.age = "Age must be a number";
-    else if (form.age.length > 2) errs.age = "Max 2 digits";
-    else if (Number(form.age) < 18) errs.age = "Must be 18 or older";
-
-    if (!form.phone) errs.phone = "Phone required";
-    else if (!/^\d{10}$/.test(form.phone)) errs.phone = "Must be 10 digits";
-
-    return errs;
-  };
-
-  const handleChange = e => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: "" });
-  };
-
-  const handleSubmit = e => {
+  function handleSubmit(e) {
     e.preventDefault();
-    const errs = validate();
-    if (Object.keys(errs).length > 0) {
-      setErrors(errs);
-      setSuccess("");
-    } else {
+    const newErrors = {};
+    Object.keys(form).forEach((field) => {
+      newErrors[field] = validateField(field, form[field]);
+    });
+    setErrors(newErrors);
+
+    const hasErrors = Object.values(newErrors).some((err) => err !== "");
+
+    if (!hasErrors) {
       setSuccess("Form submitted successfully!");
       setForm({ firstName: "", lastName: "", age: "", phone: "" });
-      firstRef.current.focus();
+    } else {
+      setSuccess("");
     }
-  };
+  }
 
   return (
     <main>
@@ -75,7 +84,6 @@ export default function FinalChallenge() {
         <form onSubmit={handleSubmit} autoComplete="off" noValidate>
           <div>
             <input
-              ref={firstRef}
               placeholder="First Name"
               name="firstName"
               value={form.firstName}
@@ -83,6 +91,7 @@ export default function FinalChallenge() {
             />
             {errors.firstName && <p>{errors.firstName}</p>}
           </div>
+
           <div>
             <input
               placeholder="Last Name"
@@ -92,8 +101,10 @@ export default function FinalChallenge() {
             />
             {errors.lastName && <p>{errors.lastName}</p>}
           </div>
+
           <div>
             <input
+              type="text"
               placeholder="Age"
               name="age"
               value={form.age}
@@ -101,8 +112,10 @@ export default function FinalChallenge() {
             />
             {errors.age && <p>{errors.age}</p>}
           </div>
+
           <div>
             <input
+              type="text"
               placeholder="Phone Number"
               name="phone"
               value={form.phone}
@@ -110,8 +123,10 @@ export default function FinalChallenge() {
             />
             {errors.phone && <p>{errors.phone}</p>}
           </div>
+
           <button type="submit">Submit</button>
         </form>
+
         {success && <p>{success}</p>}
       </div>
     </main>

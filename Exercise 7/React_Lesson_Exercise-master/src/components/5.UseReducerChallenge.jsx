@@ -13,7 +13,9 @@ function todoReducer(state, action) {
     case "ADD":
       return [...state, { id: uuidV4(), text: action.text }];
     case "REMOVE":
-      return state.filter(todo => todo.id !== action.id);
+      return state.filter(function(todo) {
+        return todo.id !== action.id;
+      });
     default:
       return state;
   }
@@ -23,11 +25,17 @@ export default function UseReducerChallenge() {
   const inputRef = useRef();
   const [todos, dispatch] = useReducer(todoReducer, []);
 
-  const addTodo = () => {
-    if (inputRef.current.value.trim() === "") return;
+  function addTodo() {
+    if (inputRef.current.value.trim() === "") {
+      return;
+    }
     dispatch({ type: "ADD", text: inputRef.current.value });
     inputRef.current.value = "";
-  };
+  }
+
+  function removeTodo(id) {
+    dispatch({ type: "REMOVE", id: id });
+  }
 
   return (
     <main>
@@ -35,11 +43,16 @@ export default function UseReducerChallenge() {
       <input ref={inputRef} placeholder="Add a new to-do" />
       <button onClick={addTodo}>Add</button>
       <ul>
-        {todos.map(todo => (
-          <li key={todo.id}>
-            {todo.text} <button onClick={() => dispatch({ type: "REMOVE", id: todo.id })}>Remove</button>
-          </li>
-        ))}
+        {todos.map(function(todo) {
+          return (
+            <li key={todo.id}>
+              {todo.text}{" "}
+              <button onClick={function() { removeTodo(todo.id); }}>
+                Remove
+              </button>
+            </li>
+          );
+        })}
       </ul>
     </main>
   );

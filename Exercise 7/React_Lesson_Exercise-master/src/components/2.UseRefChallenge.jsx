@@ -10,7 +10,9 @@ import { useRef } from "react";
 export default function UseRefChallenge() {
   const inputRef = useRef();
 
-  const focusInput = () => inputRef.current.focus();
+  function focusInput() {
+    inputRef.current.focus();
+  }
 
   return (
     <main>
