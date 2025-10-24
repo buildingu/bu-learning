@@ -1,0 +1,28 @@
+table{
+    background: rgb(173, 216, 230);
+    border: 2px solid black;
+}
+
+.center{
+    margin-left: 240px;
+}
+
+.form{
+    text-align: center;
+}
+
+.select{
+    text-align: center;
+}
+
+.radio{
+    text-align: center;
+}
+
+.Textarea{
+    text-align: center;
+}
+
+.buttons{
+    text-align: center;
+}
