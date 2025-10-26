@@ -49,20 +49,20 @@ form{
 
 @media only screen and (min-width:600px){
     body{
-    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20240919/pngtree-a-background-of-orange-blue-and-yellow-gradients-with-gritty-appearance-image_16233934.jpg");
-    background-size: cover;      
-    background-repeat: no-repeat;
-    background-position: center;
+        background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20240919/pngtree-a-background-of-orange-blue-and-yellow-gradients-with-gritty-appearance-image_16233934.jpg");
+        background-size: cover;      
+        background-repeat: no-repeat;
+        background-position: center;
 }
 }
 
 @media only screen and (max-width:599px){
     body{
-    background-image: url("https://t4.ftcdn.net/jpg/04/89/68/23/360_F_489682374_ckc0OVyT6Av0NGcuYbwBSCxy62blF4CQ.jpg");
-    background-size: cover;      
-    background-repeat: no-repeat;
-    background-position: center;
-    color:green;
+        background-image: url("https://t4.ftcdn.net/jpg/04/89/68/23/360_F_489682374_ckc0OVyT6Av0NGcuYbwBSCxy62blF4CQ.jpg");
+        background-size: cover;      
+        background-repeat: no-repeat;
+        background-position: center;
+        color:green;
 }
 form{
     display:none
@@ -78,4 +78,6 @@ table, thead, tbody, th, td, tr {
 #box1{
     display:none
 }
+
+
 }
