@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon API</title>
+
+    <link rel="stylesheet" href="api.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokemon API</h1>
+
+        <div class="search">
+            <input type="text" placeholder="Enter Pokemon name" id="pokemonSearch">
+            <button onclick="fetchData()">Search</button>
+        </div>
+
+        <div id="pokemonInfoTable" style="display: none;">
+            <table>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Weight</th>
+                    <th>Height</th>
+                    <th>ID</th>
+                </tr>
+                <tr>
+                    <td><img id="pokemonImg"></td>
+                    <td id="pokemonName"></td>
+                    <td id="pokemonWeight"></td>
+                    <td id="pokemonHeight"></td>
+                    <td id="pokemonId"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="api.js"></script>
+</body>
+</html>
