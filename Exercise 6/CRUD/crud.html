@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD App</h1>
+        
+    
+        <form class="employee-form">
+            <input type="text" id="name" placeholder="Enter name" required><br>
+            <input type="number" id="age" placeholder="Enter age" required><br>
+            <select name="" id="sex" required>
+                <option value="">Select Sex</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br>
+            <input type="text" id="position" placeholder="Enter position" required><br>
+            <button type="submit">Add entry</button>
+        </form>
+
+        <h1 id="employee-list-title">Employees list</h1>
+
+        <div class="employee_inner"></div>
+    </div>
+        
+    <script src="crud.js"></script>
+</body>
+</html>
