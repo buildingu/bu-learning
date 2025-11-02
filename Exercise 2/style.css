@@ -1,0 +1,52 @@
+
+
+.heading{
+    font-size: 40px;
+    background-color: #9FB1BC;
+    text-align: center;
+    
+}
+
+.info{
+    font-size: 25px;
+}
+
+.table{
+    height: 250px;
+    width: 400px;
+    border: 2px solid red;
+    background-color: #D3D0CB;
+    margin-left: 80px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+.Images{
+    border: 5px solid yellow;
+}
+
+.Img_1{
+    width: 600px;
+    border: 5px solid purple;
+
+}
+
+.Img_2{
+    width: 600px;
+    height: auto;
+    border: 5px solid green;
+}
+
+.Img_3{
+    width: 600px;
+    border: 5px solid brown;
+}
+
+.video{
+    width: 320px;
+    height: 240px;
+}
