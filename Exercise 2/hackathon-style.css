@@ -1,0 +1,35 @@
+/* Hackathon External CSS */
+
+.companyLogo {
+    margin: 10px 0px 0px 20px;
+}
+
+.registrationStyle {
+    float: left;
+    margin-left: 80px;
+    background-color: RGBA(255, 255, 255, 1);
+    padding: 0px 20px 0px 20px;
+    border: 6px solid RGBA(20, 20, 20, 0.4);
+}
+
+.rightSide {
+    margin-left: 800px;
+    color: white;
+}
+
+.sponsors {
+    padding-right: 10px;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+.fontHeading {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fontBody {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(86, 86, 86);
+}
