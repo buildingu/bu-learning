@@ -1,0 +1,40 @@
+let firstName = prompt("Enter your first name: ");
+let lastName = prompt("Enter your last name: ");
+let age = prompt("Enter your age: ");
+let phoneNumber = prompt("Enter your phone number ");
+
+function formValidator(firstName, lastName, age, phoneNumber) {
+  const userInputs = {
+    firstName: firstName,
+    lastName: lastName,
+    age: age,
+    phoneNumber: phoneNumber
+  };
+
+  const expectedTypes = {
+    firstName: "string",
+    lastName: "string",
+    phoneNumber: "string",
+    age: "number"
+  };
+
+  for (const key in userInputs) {
+    if (userInputs[key] === undefined || userInputs[key] === null || userInputs[key] === "") {
+      return `The ${key} input is missing.`;
+    }
+  }
+
+  for (const key in expectedTypes) {
+    if (typeof userInputs[key] !== expectedTypes[key]) {
+      return `The ${key} should be a ${expectedTypes[key]}.`;
+    }
+  }
+
+  if (userInputs.age < 18) {
+    return "Sorry, not old enough for our app.";
+  }
+
+  return "WELCOME TO THE ADOS APP.";
+}
+
+console.log(formValidator(firstName, lastName, age, phoneNumber));
