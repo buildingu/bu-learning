@@ -8,14 +8,11 @@
 import { useState } from "react";
 
 export default function UseStateChallenge() {
+
   const [show, setShow] = useState(true);
 
   function toggleShow() {
-    if (show) {
-      setShow(false);
-    } else {
-      setShow(true);
-    }
+    setShow(prev => !prev);
   }
 
   return (
@@ -24,7 +21,7 @@ export default function UseStateChallenge() {
       <button onClick={toggleShow}>
         {show ? "Hide" : "Show"}
       </button>
-      {show ? <div>BOO!</div> : null}
+      {show && <div>BOO!</div>}
     </main>
   );
 }

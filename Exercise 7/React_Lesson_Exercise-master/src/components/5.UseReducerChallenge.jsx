@@ -11,11 +11,9 @@ import { v4 as uuidV4 } from "uuid";
 function todoReducer(state, action) {
   switch (action.type) {
     case "ADD":
-      return [...state, { id: uuidV4(), text: action.text }];
+      return [...state, { id: action.id, text: action.text }];
     case "REMOVE":
-      return state.filter(function(todo) {
-        return todo.id !== action.id;
-      });
+      return state.filter(todo => todo.id !== action.id);
     default:
       return state;
   }
@@ -26,10 +24,10 @@ export default function UseReducerChallenge() {
   const [todos, dispatch] = useReducer(todoReducer, []);
 
   function addTodo() {
-    if (inputRef.current.value.trim() === "") {
-      return;
-    }
-    dispatch({ type: "ADD", text: inputRef.current.value });
+    const text = inputRef.current.value.trim();
+    if (!text) return;
+
+    dispatch({ type: "ADD", id: uuidV4(), text });
     inputRef.current.value = "";
   }
 
@@ -47,7 +45,7 @@ export default function UseReducerChallenge() {
           return (
             <li key={todo.id}>
               {todo.text}{" "}
-              <button onClick={function() { removeTodo(todo.id); }}>
+              <button type = "button" onClick={function() { removeTodo(todo.id); }}>
                 Remove
               </button>
             </li>

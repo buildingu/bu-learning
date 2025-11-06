@@ -22,12 +22,17 @@
  * Lastly, clear the form if validation passes and render a success message.
  */
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export default function FinalChallenge() {
   const [form, setForm] = useState({ firstName: "", lastName: "", age: "", phone: "" });
   const [errors, setErrors] = useState({});
   const [success, setSuccess] = useState("");
+
+  const firstNameRef = useRef(null);
+  const lastNameRef = useRef(null);
+  const ageRef = useRef(null);
+  const phoneRef = useRef(null);
 
   function validateField(name, value) {
     switch (name) {
@@ -73,9 +78,15 @@ export default function FinalChallenge() {
       setForm({ firstName: "", lastName: "", age: "", phone: "" });
     } else {
       setSuccess("");
+      const order = ["firstName", "lastName", "age", "phone"];
+      const firstInvalid = order.find((key) => newErrors[key]);
+      if (firstInvalid === "firstName") firstNameRef.current.focus();
+      else if (firstInvalid === "lastName") lastNameRef.current.focus();
+      else if (firstInvalid === "age") ageRef.current.focus();
+      else if (firstInvalid === "phone") phoneRef.current.focus();
     }
   }
-
+  
   return (
     <main>
       <h1>Final Challenge</h1>
@@ -88,6 +99,8 @@ export default function FinalChallenge() {
               name="firstName"
               value={form.firstName}
               onChange={handleChange}
+              ref = {firstNameRef}
+              maxLength={120}
             />
             {errors.firstName && <p>{errors.firstName}</p>}
           </div>
@@ -98,6 +111,8 @@ export default function FinalChallenge() {
               name="lastName"
               value={form.lastName}
               onChange={handleChange}
+              ref={lastNameRef}
+              maxLength={120}
             />
             {errors.lastName && <p>{errors.lastName}</p>}
           </div>
@@ -109,17 +124,22 @@ export default function FinalChallenge() {
               name="age"
               value={form.age}
               onChange={handleChange}
+              ref={ageRef}
+              min = {18}
+              max = {99}
             />
             {errors.age && <p>{errors.age}</p>}
           </div>
 
           <div>
             <input
-              type="text"
+              type="number"
               placeholder="Phone Number"
               name="phone"
               value={form.phone}
               onChange={handleChange}
+              ref={phoneRef}
+              maxLength = {10}
             />
             {errors.phone && <p>{errors.phone}</p>}
           </div>

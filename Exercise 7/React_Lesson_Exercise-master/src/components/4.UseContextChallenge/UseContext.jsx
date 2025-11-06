@@ -19,7 +19,7 @@ export default function UseContextChallenge() {
     <main>
       <h1>useContext Challenge</h1>
 
-      <button onClick={user ? logout : login}>
+      <button type = "button" onClick={user ? logout : login}>
         {user ? "Logout" : "Login"}
       </button>
 

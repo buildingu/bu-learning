@@ -8,7 +8,8 @@
 import { useState, useMemo } from "react";
 
 function factorial(n) {
-  if (n < 0) return "N/A"; 
+  n = Math.round(n)
+  if (n < 0) return null; 
   let result = 1;
   for (let i = 2; i <= n; i++) {
     result *= i;
@@ -26,6 +27,7 @@ export default function UseMemoChallenge() {
       <h1>useMemo Challenge</h1>
       <input
         type="number"
+        min = {0}
         value={number}
         onChange={(e) => setNumber(Number(e.target.value))}
         placeholder="Enter a number"

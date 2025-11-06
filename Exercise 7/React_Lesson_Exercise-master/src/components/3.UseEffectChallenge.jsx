@@ -21,8 +21,12 @@ export default function UseEffectChallenge() {
       .then(res => res.json())
       .then(data => {
         setUsers(data);
-        setLoading(false);
-      });
+      })
+
+      .catch(err => {
+        console.error("Failed to fetch users:, err");
+      })
+      .finally(() => setLoading(false));
   }, []);
 
   return (

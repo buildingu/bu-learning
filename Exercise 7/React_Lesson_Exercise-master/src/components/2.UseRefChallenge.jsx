@@ -8,7 +8,7 @@
 import { useRef } from "react";
 
 export default function UseRefChallenge() {
-  const inputRef = useRef();
+  const inputRef = useRef(null);
 
   function focusInput() {
     inputRef.current.focus();
@@ -17,8 +17,13 @@ export default function UseRefChallenge() {
   return (
     <main>
       <h1>useRef Challenge</h1>
-      <input ref={inputRef} placeholder="Type something..." />
-      <button onClick={focusInput}>Focus</button>
+      <label htmlFor="input">Enter text: </label>
+      <input 
+        id = "input"
+        ref = {inputRef}
+        placeholder = "Type something..."
+      />
+      <button type = "button" onClick={focusInput}>Focus</button>
     </main>
   );
 }

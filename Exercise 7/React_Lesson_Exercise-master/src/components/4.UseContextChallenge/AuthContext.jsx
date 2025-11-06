@@ -19,7 +19,7 @@
  * 3. Go to the `UseContext.jsx` file, and follow the steps there.
  */
 
-import { createContext, useState } from "react";
+import { createContext, useState, useMemo } from "react";
 
 const AuthContext = createContext();
 
@@ -41,8 +41,9 @@ export function AuthContextProvider({ children }) {
     alert("User session timed out.");
   }
 
+  const value = useMemo(() => ({user,login,logout}), [user, login, logout]);
   return (
-    <AuthContext.Provider value={{ user, login, logout }}>
+    <AuthContext.Provider value= {value}>
       {children}
     </AuthContext.Provider>
   );
