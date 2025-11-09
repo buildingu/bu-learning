@@ -2,6 +2,8 @@ let users = [];
 
 function formValidator(firstName, lastName, age, phoneNum) {
     let user = {};
+    firstName = firstName.trim();
+    lastName = lastName.trim();
     if (firstName === undefined) {
         console.log("First name is missing");
         return;
@@ -51,7 +53,7 @@ function formValidator(firstName, lastName, age, phoneNum) {
     console.log(firstName + ", WELCOME TO THE ADOS APP.");
 }
 
- formValidator("Jasur", "Abduxakimov", 19, "123-345-484");
+ formValidator("     Jasur", "Abduxakimov", 19, "123-345-484");
  formValidator("Some", "One", 25, "394-343434")
 
 
