@@ -2,65 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Starlight High School Debate Tournament 2025</title>
+
   <style>
+    :root {
+      --primary-color: #2c2c54;
+      --secondary-color: #3c3c80;
+      --light-bg: #f9f9ff;
+      --accent-bg: #dcdcff;
+      --highlight-bg: #f0f0ff;
+      --hover-color: #5a5ad1;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      background-color: #f9f9ff;
+      background-color: var(--light-bg);
+      color: #1a1a1a;
       margin: 20px;
       padding: 20px;
     }
+
     h1 {
-      color: #2c2c54;
+      color: var(--primary-color);
       text-align: center;
-      border: 3px solid #2c2c54;
+      border: 3px solid var(--primary-color);
       padding: 12px;
-      background-color: #dcdcff;
+      background-color: var(--accent-bg);
+      border-radius: 6px;
     }
+
     h2 {
-      color: #3c3c80;
+      color: var(--secondary-color);
       margin-top: 30px;
     }
+
     p {
       margin: 10px 0;
       line-height: 1.6;
     }
+
     table {
       width: 80%;
       margin: 20px auto;
       border-collapse: collapse;
       background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      overflow: hidden;
     }
-    table, th, td {
-      border: 1px solid #2c2c54;
+
+    table th, table td {
+      border: 1px solid var(--primary-color);
       padding: 10px;
       text-align: center;
     }
+
+    table th {
+      background-color: var(--accent-bg);
+      color: var(--primary-color);
+    }
+
     .contact {
-      border: 2px dashed #3c3c80;
+      border: 2px dashed var(--secondary-color);
       padding: 15px;
       margin-top: 20px;
-      background-color: #f0f0ff;
+      background-color: var(--highlight-bg);
+      border-radius: 6px;
     }
+
     form {
       margin-top: 15px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
     }
+
     input, textarea {
-      margin: 5px 0;
+      margin: 5px 0 15px 0;
       padding: 8px;
       width: 95%;
-      border: 1px solid #3c3c80;
+      border: 1px solid var(--secondary-color);
+      border-radius: 4px;
+      font-size: 14px;
     }
+
+    textarea {
+      resize: vertical;
+    }
+
     button {
-      background-color: #3c3c80;
+      background-color: var(--secondary-color);
       color: white;
-      padding: 10px;
+      padding: 10px 20px;
       border: none;
+      border-radius: 4px;
       cursor: pointer;
-      margin-top: 10px;
+      font-size: 15px;
+      transition: background-color 0.3s ease;
     }
+
     button:hover {
-      background-color: #5a5ad1;
+      background-color: var(--hover-color);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        margin: 10px;
+        padding: 10px;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      form {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -87,8 +147,7 @@
   </table>
 
   <h2>🎉 Who’s Invited?</h2>
-  <p>All students, teachers, parents and alumni are invited.</p>
-
+  <p>All students, teachers, parents, and alumni are invited.</p>
 
   <h2>📞 Contact Information</h2>
   <div class="contact">
