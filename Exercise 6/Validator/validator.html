@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validator App</title>
+    <link rel="stylesheet" href="validator.css">
+</head>
+<body>
+    <h1 class="title">Validator form</h1>
+    <form class="form-container" onsubmit="formValidator(event)">
+        <input id="first-name" type="text" placeholder="First Name"><br>
+        <input id="last-name" type="text" placeholder="Last Name"><br>
+        <input id="age" type="number" placeholder="Age"><br>
+        <input id="phone" type="tel" placeholder="Phone Number"><br>
+        <button type="submit">Validate</button>
+    </form>
+
+    <script src="validator.js"></script>
+</body>
+</html>
