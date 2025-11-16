@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  text-align: center;
+}
+
+.nav {
+  height: 55px;
+  width: 100%;
+  background: #ffd900;
+}
+
+.title {
+  margin-top: 25px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  margin-top: -10px;
+  color: #666;
+}
+
+.form-box {
+  background: white;
+  width: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-box input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-box button {
+  padding: 12px;
+  background: #ffd900;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#cards-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  width: 220px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  background: #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 4px 0;
+}
+
+.card button {
+  width: 80px;
+  padding: 6px;
+  border: none;
+  border-radius: 6px;
+  background: #eee;
+  cursor: pointer;
+  margin-right: 8px;
+}
