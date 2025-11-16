@@ -1,0 +1,54 @@
+.navbar {
+    width: 100%;
+    background: #FFD700;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.navbar a.active {
+    text-decoration: underline;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #222;
+    color: white;
+}
+
+button {
+    background: gold;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.2s;
+    margin-top: 40px;
+}
+
+button:hover {
+    background: orange;
+}
+
+#adviceBox {
+    margin-top: 25px;
+    font-size: 20px;
+    max-width: 80%;
+    text-align: center;
+}
