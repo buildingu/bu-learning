@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="eng">
+    
+    <head>
+        <!-- Title of the page -->
+        <title>Exercise 3 MQ/RD</title>
+        <!-- Metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <!-- CSS Link -->
+         <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <main>
+            <!-- Headings of the page -->
+            <div class="parent">
+                <h2 class="child">Exercise 3 by Davide D'Urso</h2>
+                <h4 class="child">Date submitted: 11/19/2025</h4>
+            </div>
+            <hr>
+
+            <!-- Desktop Table -->
+            <h3>Facts about me:</h3>
+            <table class="DesktopTable" cellpadding="10">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Favorite Movie</th>
+                    <th>Favorite Song</th>
+                    <th>Favorite Video</th>
+                </tr>
+
+                <tr>
+                    <td>Davide</td>
+                    <td>D'Urso</td>
+                    <td><img src="assets/indiana_jones.jpg" width="125" height="177"></td>
+                    <td>Click the button to play the song <br> <audio controls><source src="assets/rick_roll.mp3" type="audio/mpeg"></audio></td>
+                    <td><video controls width="320" height="133"><source src="assets/marvel_studios.mp4"></video></td>
+                </tr>
+            </table>
+
+            <!-- Mobile Table -->
+            <table class="MobileTable" cellpadding="10">
+                <tr><th>First Name</th></tr>
+                <tr><td>Davide</td></tr>
+
+                <tr><th>Last Name</th></tr>
+                <tr><td>D'Urso</td></tr>
+
+                <tr><th>Favorite Movie</th></tr>
+                <tr><td><img src="assets/indiana_jones.jpg" width="125" height="177"></td></tr>
+
+                <tr><th>Favorite Song</th></tr>
+                <tr><td>Click the button to play the song <br> <audio controls><source src="assets/rick_roll.mp3" type="audio/mpeg"></audio></td></tr>
+
+                <tr><th>Favorite Video</th></tr>
+                <tr><td><video controls width="320" height="133"><source src="assets/marvel_studios.mp4"></video></td></tr>
+            </table>
+            <br><br><hr>
+
+            <!-- Form -->
+            <h3>Enter your details below:</h3>
+            <form>
+                <!-- Personal Details -->
+                <label><i><b>Full Name</b></i></label> <br>
+                <input type="text" placeholder="Tyler Williams" class="LargerBox"/> <br><br><br>
+                <label><i><b>Email Address</b></i></label> <br>
+                <input type="email" placeholder="name@email.com" class="LargerBox"/> <br><br><br>
+                <label><i><b>Password</b></i></label> <br>
+                <input type="password" placeholder="********" class="LargerBox"/> <br><br><br>
+
+                <!-- Meeting Details -->
+                <label><i><b>Available Meeting Days</b></i></label> <br>
+                <label><input type="checkbox">Monday</label>
+                <label><input type="checkbox">Tuesday</label>
+                <label><input type="checkbox">Wednesday</label>
+                <label><input type="checkbox">Thursday</label> <br>
+                <label><input type="checkbox">Friday</label>
+                <label><input type="checkbox">Saturday</label>
+                <label><input type="checkbox">Sunday</label>
+                <br><br><br>
+
+                <label><i><b>Available time</b></i></label> <br>
+                <select class="LargerBox">
+                    <option>12am - 6am</option>
+                    <option>6am - 12pm</option>
+                    <option>12pm - 6pm</option>
+                    <option>6pm - 12am</option>
+                </select>
+                <br><br><br>
+
+                <!-- Website Details -->
+                <label><i><b>Currently working on a new website?</b></i></label> <br>
+                <input type="radio" name="website"> Yes
+                <input type="radio" name="website"> No
+                <br><br><br>
+
+                <label><i><b>If yes, please enter which page(s) you are working on</b></i></label> <br>
+                <textarea rows="4" cols="40" placeholder="insert text here"></textarea>
+                <br><br><br>
+
+                <!-- Buttons -->
+                <input type="reset" class="ResetButtonStyle" />
+                <input type="submit" class="SubmitButtonStyle" />
+            </form>
+            <br><br>
+
+            <footer class="FooterStyle">
+                <p class="DesktopFooter">Desktop Version</p>
+                <p class="MobileFooter">Mobile Version</p>
+            </footer>
+        </main>
+    </body>
+</html>

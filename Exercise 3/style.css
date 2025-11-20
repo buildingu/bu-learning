@@ -1,0 +1,162 @@
+/* Exercise 3 external CSS */
+
+table, th, td {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid gray;
+    border-collapse: collapse;
+}
+
+form {
+    border: 5px solid gray;
+    background-color:lightgray;
+    text-align: center;
+    font-family: arial;
+    }
+
+.LargerBox {
+    width: 250px;
+    height: 20px;
+}
+
+.ResetButtonStyle {
+    background-color: red;
+    border-color: red;
+}
+
+.ResetButtonStyle:hover {
+    background-color: darkred;
+}
+
+.SubmitButtonStyle {
+    background-color: green;
+    border-color: green;
+}
+
+.SubmitButtonStyle:hover {
+    background-color: darkgreen;
+}
+
+.parent .child {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+/* DESKTOP DEVICES */
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url("assets/background-desktop.jpg");
+    }
+
+    th {
+        background-color:darkslategray; 
+    }
+
+    td {
+        background-color: slategray;
+    }
+
+    form {
+        padding: 20px 0px 20px 0px;
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+
+    .MobileTable {
+        display: none;
+    }
+
+    .ResetButtonStyle {
+        width: 100px;
+        height: 25px;
+    }
+
+    .SubmitButtonStyle {
+        width: 100px;
+        height: 25px;
+    }
+
+    .FooterStyle {
+        background-color: purple;
+        height: 60px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        padding: 4px;
+    }
+
+    .MobileFooter {
+        display: none;
+    }
+}
+
+
+/* MOBILE DEVICES */
+@media screen and (max-width: 767px) {
+    body {
+        background-image: url("assets/background-mobile.jpg")
+    }
+
+    th {
+        background-color: darkred; 
+    }
+
+    td {
+        background-color: firebrick;
+    }
+
+    form {
+        margin-left: 80px;
+        margin-right: 80px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .MobileTable {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .DesktopTable {
+        display: none;
+    }
+
+    .ResetButtonStyle {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        width: 300px;
+        height: 25px;
+    }
+
+    .SubmitButtonStyle {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 25px;
+    }
+
+    .FooterStyle {
+        background-color: darkslateblue;
+        height: 60px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        padding: 2px;
+    }
+
+    .DesktopFooter {
+        display: none;
+    }
+}
