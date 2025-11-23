@@ -6,14 +6,14 @@
         <title>Hackathon Event</title>
         <!--Metadata-->
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!--CSS link-->
         <link rel="stylesheet" href="hackathon-style.css" />
     </head>
 
     <body>
         <!--Company Logo-->
-        <img class="companyLogo" src="assets/CodingCompanyLogo.png" height="75px" width="100px" />
+        <img class="companyLogo" src="assets/CodingCompanyLogo.png" height="75px" width="100px">
         <br><br><br><br>
 
         <div class="registrationStyle">
@@ -37,40 +37,41 @@
             <form class="fontBody">
 
                 <!--Full Name-->
-                <input type="text" placeholder="Full Name" style="border:1px solid #000000" />
+                <input type="text" class="inputNameEmail" placeholder="Full Name" name="fullName" />
 
                 <!--Email-->
-                <input type="email" placeholder="Email Address" style="border:1px solid #000000" />
+                <input type="email" class="inputNameEmail" placeholder="Email Address" name="email" />
 
                 <!--Grade Selection-->
-                <select>
-                    <option>Select Your Grade</option>
-                    <option>9th Grade</option>
-                    <option>10th Grade</option>
-                    <option>11th Grade</option>
-                    <option>12th Grade</option>
+                <select name="grade">
+                    <option value="selectGrade">Select Your Grade</option>
+                    <option value="nineGrade">9th Grade</option>
+                    <option value="tenGrade">10th Grade</option>
+                    <option value="elevenGrade">11th Grade</option>
+                    <option value="twelveGrade">12th Grade</option>
                 </select>
                 <br><br>
 
                 <!--Coding Knowledge-->
                 <label><i>Which Coding Language do you know?</i></label>
-                <label><input type="checkbox">HTML</label>
-                <label><input type="checkbox">CSS</label>
-                <label><input type="checkbox">JavaScript</label>
-                <label><input type="checkbox">Python</label>
+                <label><input type="checkbox" name="language" value="HTML">HTML</label>
+                <label><input type="checkbox" name="language" value="CSS">CSS</label>
+                <label><input type="checkbox" name="language" value="JavaScript">JavaScript</label>
+                <label><input type="checkbox" name="language" value="Python">Python</label>
                 <br><br>
 
                 <!--Registration Button-->
                 <input type="reset" />
                 <input type="submit" />
-                <br><br><br><br><br><br><br><br><br><br>
             </form> 
         
             <!--Contact Us information-->
-            <p class="fontBody">
-                <a href="https://en.wikipedia.org/wiki/Hackathon"><i>Learn what a Hackathon is</i></a><br>
-                <i>Contact Us // support@coding-company.com // +1 (415)555-2671</i>
-            </p>
+            <div class="finalInformation">
+                <p class="fontBody">
+                    <a href="https://en.wikipedia.org/wiki/Hackathon"><i>Learn what a Hackathon is</i></a><br>
+                    <i>Contact Us // support@coding-company.com // +1 (415)555-2671</i>
+                </p>
+            </div>
         </div>
 
         <div class="rightSide">
@@ -79,8 +80,8 @@
             
             <!--Sponsors-->
             <h3 class="fontHeading">Event Sponsored by:</h3>
-            <img class="sponsors" src="assets/Sponsor1.png" height="50" width="200" />
-            <img src="assets/Sponsor2.png" height="50" width="200" />
+            <img class="sponsors" src="assets/Sponsor1.png" height="50" width="200">
+            <img src="assets/Sponsor2.png" height="50" width="200">
         </div>
     </body>
 </html>

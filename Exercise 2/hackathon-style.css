@@ -12,6 +12,10 @@
     border: 6px solid RGBA(20, 20, 20, 0.4);
 }
 
+.inputNameEmail {
+    border: 1px solid #000000;
+}
+
 .rightSide {
     margin-left: 800px;
     color: white;
@@ -32,4 +36,8 @@ body {
 .fontBody {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(86, 86, 86);
+}
+
+.finalInformation {
+    padding-top: 100px;
 }
