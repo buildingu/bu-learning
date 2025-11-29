@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Chess Tournament - Sign Up</title>
+  <link rel="icon" type="image/png" href="media/icon.png" />
+</head>
+<body>
+
+  <!-- Header with Return Button -->
+  <div class="header-container">
+    <h1>
+      District-Wide Chess Tournament
+    </h1>
+    <div class="return-btn-wrapper">
+      <a href="index.html" class="btn-link">
+        <button type="button">
+          Return
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- Main Sign-Up Form -->
+  <table style="margin: 0 auto;">
+    <tr>
+      <td>
+      </td>
+      <td>
+        <form>
+          <br>
+          <label class="signup-header"><b>Sign Up</b></label>
+          <br><br>
+
+          <hr class="thick-line">
+
+          <label><b>Full Name*:</b></label>
+          <input type="text" placeholder="John" required><br>
+
+          <label>Nickname:</label>
+          <input type="text" placeholder="Smith"><br>
+
+          <label><b>Age*:</b></label>
+          <input type="number" placeholder="18" min="1" max="100" step="1" required><br>
+
+          <label>Shirt Size:</label><br>
+          <label>Extra Small</label>
+          <input type="radio" name="size">
+          <label>Small</label>
+          <input type="radio" name="size"><br>
+          <label>Medium</label>
+          <input type="radio" name="size">
+          <label>Large</label>
+          <input type="radio" name="size">
+          <label>Extra Large</label>
+          <input type="radio" name="size"><br>
+
+          <label><b>School*:</b></label>
+          <input type="text" list="schools" required placeholder="Town High School">
+          <datalist id="schools">
+            <option value="Town Elementary School">
+            <option value="Town Middle School">
+            <option value="Town High School">
+            <option value="None">
+          </datalist>
+
+          <hr class="thick-line">
+
+          <label><b>Email*:</b></label>
+          <input type="email" placeholder="johnsmith@gmail.com" required><br>
+
+          <label><b>Username*:</b> (4–8 lowercase letters or numbers)</label>
+          <input type="text" placeholder="smith22" pattern="[a-z0-9]{4,8}" required><br>
+
+          <label><b>Password*:</b> (5–12 characters)</label>
+          <input type="password" placeholder="Your Password" minlength="5" maxlength="12" required><br>
+
+          <hr class="thick-line">
+
+          <label>Gender:</label>
+          <label>Male</label>
+          <input type="radio" name="gender">
+          <label>Female</label>
+          <input type="radio" name="gender">
+          <label>Other</label>
+          <input type="radio" name="gender"><br>
+
+          <label>Pronouns:</label>
+          <input type="text" placeholder="He/Him"><br>
+
+          <hr class="thick-line">
+
+          <label>Enter Your Current Chess Rating:</label>
+          <input type="number" placeholder="1450" min="100" max="3000" step="1" required><br>
+
+          <br>
+          <label>Please Describe Your Past Chess Experience:</label><br>
+          <textarea cols="50" rows="2" placeholder="..."></textarea><br>
+
+          <input type="submit">
+          <input type="reset">
+          <br><br>
+        </form>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
