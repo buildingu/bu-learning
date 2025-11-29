@@ -8,7 +8,7 @@
 import { useReducer, useRef } from "react";
 import { v4 as uuidV4 } from "uuid"; // Use the uuid for a unique identifier for each todo.
  
-function todo_reducer(state, action) {
+function todoReducer(state, action) {
   switch (action.type) {
     case 'add':
       return [...state, action.payload];
@@ -20,22 +20,22 @@ function todo_reducer(state, action) {
 }
 
 export default function UseReducerChallenge() {
-  const input_ref = useRef();
-  const [todos, dispatch] = useReducer(todo_reducer, []);
-  const add_input = () => {
-    const text = input_ref.current.value;
-    const new_todo = { id: uuidV4(), text }; 
-    dispatch({ type: 'add', payload: new_todo });
-    input_ref.current.value = ""; 
+  const inputRef = useRef();
+  const [todos, dispatch] = useReducer(todoReducer, []);
+  const addInput = () => {
+    const text = inputRef.current.value;
+    const newTodo = { id: uuidV4(), text }; 
+    dispatch({ type: 'add', payload: newTodo });
+    inputRef.current.value = ""; 
   };
-
   return (
     <main>
       <h1>useReducer Challenge</h1>
       <div>
         <h2>To-do</h2>
-        <input ref={input_ref} placeholder="Add a new to-do" />
-        <button onClick={add_input}>Add</button>        <ul>
+        <label for="addNew">Add New To-Do</label>
+        <input ref={inputRef} placeholder="Add a new to-do" id="addNew"/>
+        <button onClick={addInput} type="submit">Add</button>        <ul>
           {todos.map(todo => (
             <li key={todo.id}>
               {todo.text}
