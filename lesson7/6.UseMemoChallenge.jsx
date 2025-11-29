@@ -24,7 +24,7 @@ export default function UseMemoChallenge() {
         <input
           type="number"
           value={number}
-          onChange={(e) => setNumber(e.target.value)}
+          onChange={(e) => setNumber(Number(e.target.value))}
           placeholder="Enter a number"
         />
         <p>
