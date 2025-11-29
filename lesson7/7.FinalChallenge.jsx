@@ -1,150 +1,122 @@
-/**
- * Challenge 7: Final
- *
- * Description:
- * Create a form with fields for first name, last name, age, and phone number. Use state, refs, and any other React hooks of your choice to 
- * manage form data, validation, and real-time feedback. Incorporate how ever many hooks you want!
- *
- * Validation:
- * Display validation messages under each input if the input is invalid using useState and the error message should clear for the specific 
- * field if the user types in the field.
- * 
- * - All fields are required.
- * - `First name` and `last name` fields should have a max character count of 120.
- * - The `age` field must:
- *    1. Must be a number
- *    2. Have max character count of 2.
- *    3. Must be 18 or older.
- * - The `phone` field must:
- *    1. Must be a number
- *    2. Character count equals 10 (e.g., 5048073240).
- * 
- * Lastly, clear the form if validation passes and render a success message.
- */
-
-import { useState} from "react";
-
+import { useState, useRef } from "react";
 export default function FinalChallenge() {
-  const [formData, set_form_data] = useState({
-    first_name: "",
-    last_name: "",
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
     age: "",
     phone: "",
   });
-  const [errors, set_error] = useState({});
-  const [success, set_success] = useState("");
-
-  function change(e) {
+  const [errors, setErrors] = useState({});
+  const [success, setSuccess] = useState("");
+  const firstNameRef = useRef(null);
+  const lastNameRef = useRef(null);
+  const ageRef = useRef(null);
+  const phoneRef = useRef(null);
+  function handleChange(e) {
     const { name, value } = e.target;
-    set_form_data({ ...formData, [name]: value });
-    set_error({ ...errors, [name]: "" });
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+    setErrors((prev) => ({
+      ...prev,
+      [name]: "",
+    }));
+    setSuccess("");
   }
-
-  function submit(e) {
+  function handleSubmit(e) {
     e.preventDefault();
-    const new_errors = {};
-
-    if (!formData.first_name.trim()) {
-      new_errors.first_name = "First name is required.";
-    } else if (formData.first_name.length > 120) {
-      new_errors.first_name = "Max 120 characters allowed.";
+    const newErrors = {};
+    if (!formData.firstName.trim()) {
+      newErrors.firstName = "First name is required.";
+    } else if (formData.firstName.length > 120) {
+      newErrors.firstName = "Max 120 characters allowed.";
     }
-
-    if (!formData.last_name.trim()) {
-      new_errors.last_name = "Last name is required.";
-    } else if (formData.last_name.length > 120) {
-      new_errors.last_name = "Max 120 characters allowed.";
+    if (!formData.lastName.trim()) {
+      newErrors.lastName = "Last name is required.";
+    } else if (formData.lastName.length > 120) {
+      newErrors.lastName = "Max 120 characters allowed.";
     }
-
     if (!formData.age) {
-      new_errors.age = "Age is required.";
-    } else if (isNaN(formData.age)) {
-      new_errors.age = "Age must be a number.";
+      newErrors.age = "Age is required.";
+    } else if (!/^\d+$/.test(formData.age)) {
+      newErrors.age = "Age must be a number.";
     } else if (formData.age.length > 2) {
-      new_errors.age = "Age must be 2 digits max.";
+      newErrors.age = "Age must be 2 digits max.";
     } else if (Number(formData.age) < 18) {
-      new_errors.age = "You must be 18 or older.";
+      newErrors.age = "You must be 18 or older.";
     }
-
     if (!formData.phone) {
-      new_errors.phone = "Phone is required.";
-    } else if (isNaN(formData.phone)) {
-      new_errors.phone = "Phone must be a number.";
+      newErrors.phone = "Phone number is required.";
+    } else if (!/^\d+$/.test(formData.phone)) {
+      newErrors.phone = "Phone must be a number.";
     } else if (formData.phone.length !== 10) {
-      new_errors.phone = "Phone must be exactly 10 digits.";
+      newErrors.phone = "Phone must be exactly 10 digits.";
     }
-
-    if (Object.keys(new_errors).length > 0) {
-      set_error(new_errors);
-      set_success("");
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      if (newErrors.firstName) firstNameRef.current.focus();
+      else if (newErrors.lastName) lastNameRef.current.focus();
+      else if (newErrors.age) ageRef.current.focus();
+      else if (newErrors.phone) phoneRef.current.focus();
       return;
     }
-
-    set_success("Form submitted successfully!");
-    set_form_data({ first_name: "", last_name: "", age: "", phone: "" });
-    set_error({});
+    setSuccess("Form submitted successfully!");
+    setFormData({ firstName: "", lastName: "", age: "", phone: "" });
+    setErrors({});
   }
-
   return (
     <main>
       <h1>Final Challenge</h1>
+      <form onSubmit={handleSubmit} noValidate autoComplete="off">
+        <div className="field">
+          <label>First Name</label>
+          <input
+            ref={firstNameRef}
+            type="text"
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
+          />
+          {errors.firstName && <p className="error">{errors.firstName}</p>}
+        </div>
+        <div className="field">
+          <label>Last Name</label>
+          <input
+            ref={lastNameRef}
+            type="text"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+          />
+          {errors.lastName && <p className="error">{errors.lastName}</p>}
+        </div>
+        <div className="field">
+          <label>Age</label>
+          <input
+            ref={ageRef}
+            type="text"
+            name="age"
+            value={formData.age}
+            onChange={handleChange}
+          />
+          {errors.age && <p className="error">{errors.age}</p>}
+        </div>
+        <div className="field">
+          <label>Phone</label>
+          <input
+            ref={phoneRef}
+            type="text"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+          />
+          {errors.phone && <p className="error">{errors.phone}</p>}
+        </div>
 
-      <div>
-        <h2>Subscribe to our Newsletter!</h2>
-        <form autoComplete="off" noValidate onSubmit={submit}>
-          <label>
-            First Name:
-            <input
-              name="first_name"
-              value={formData.first_name}
-              onChange={change}
-              placeholder="Enter first name"
-            />
-            {errors.first_name && <p style={{ color: "red" }}>{errors.first_name}</p>}
-          </label>
-          <br></br>
-          <br></br>
-          <label>
-            Last Name:
-            <input
-              name="last_name"
-              value={formData.last_name}
-              onChange={change}
-              placeholder="Enter last name"
-            />
-            {errors.last_name && <p style={{ color: "red" }}>{errors.last_name}</p>}
-          </label>
-          <br></br>
-          <br></br>
-          <label>
-            Age:
-            <input
-              name="age"
-              value={formData.age}
-              onChange={change}
-              placeholder="Enter age"
-            />
-            {errors.age && <p style={{ color: "red" }}>{errors.age}</p>}
-          </label>
-          <br></br>
-          <br></br>
-          <label>
-            Phone:
-            <input
-              name="phone"
-              value={formData.phone}
-              onChange={change}
-              placeholder="Enter phone number"
-            />
-            {errors.phone && <p style={{ color: "red" }}>{errors.phone}</p>}
-          </label>
-          <br></br>
-          <br></br>
-          <button type="submit">Submit</button>
-        </form>
-
-        {success && <p style={{ color: "green" }}>{success}</p>}
-      </div>
+        <button type="submit">Submit</button>
+      </form>
+      {success && <p className="success">{success}</p>}
     </main>
   );
 }
