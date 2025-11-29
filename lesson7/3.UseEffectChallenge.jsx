@@ -13,10 +13,10 @@
 import { useEffect, useState } from "react";
 
 export default function UseEffectChallenge() {
-  const [users, set_users] = useState([]);
-  const [loading, set_loading] = useState(true);
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(function() {
+    const timer = setTimeout(function() {
       fetch("https://jsonplaceholder.typicode.com/users")
         .then((response) => {
           if (!response.ok) {
@@ -25,13 +25,16 @@ export default function UseEffectChallenge() {
           return response.json();
         })
         .then((data) => {
-          set_loading(false);
-          set_users(data);
+          setLoading(false);
+          setUsers(data);
         })
-        .catch((error) =>
-          console.error("There was a problem with the fetch operation:", error)
+        .catch((error) =>{
+          console.error("There was a problem with the fetch operation:", error);
+          setLoading(false);
+        }
         );
-    }, 2000); //setTimeout is there to show loading screen -- it is not actually needed in the code.
+    }, 2000); 
+    return ()=> clearTimeout(timer)
   }, []);
   return (
     <main>
