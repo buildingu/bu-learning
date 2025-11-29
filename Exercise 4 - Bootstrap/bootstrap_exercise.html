@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!--Important Note: Media queries weren't added because the website was functioning properly already for different screen sizes-->
+<!--Important Note: Bootstrap documentation was used for guidance-->
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 4: Bootstrap</title>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://building-u.com/wp-content/uploads/2018/10/cropped-BUlogo.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        Building U
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">About</a>
+              <a class="dropdown-item" href="#">Portfolio</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Contact</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Text Column -->
+          <div class="col-lg-6">
+            <h1 class="display-4 fw-bold">Welcome to My Portfolio</h1>
+            <p class="lead mt-3">
+              My name is Rudra Patel, and I'm a intern at Building-U!
+            </p>
+            <a href="#" class="btn btn-primary btn-lg mt-3">View My Work</a>
+          </div>
+
+          <!-- Image Column (optional placeholder) -->
+          <div class="col-md-6 text-center">
+            <img
+              src="https://www.usatoday.com/gcdn/-mm-/c1b5b594d55f38da800d2d35c2ef712ea84d78c3/c=0-1053-6637-4803/local/-/media/2017/03/23/USATODAY/USATODAY/636258624293490834-THEBIGBEND-oiio-18.jpg"
+              class="img-fluid rounded"
+              alt="Hero Image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h3 class="text-center my-5">About me!</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://www.smithgroup.com/sites/default/files/styles/slideshow_mobile_1x/public/2019-01/UTD%20Engineering%202.jpg?h=33c22240&itok=WZAz3H7d"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">About Rudra</h5>
+            <p>Rudra is a intern at Building-U</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem">
+            <!--Not a picture of my website, got it from the internet because it was more convinient-->
+            <img
+              src="https://i.ytimg.com/vi/M5JJxdrCvJQ/maxresdefault.jpg"
+              alt="..."
+              class="card-img-top"
+            />
+          </div>
+          <div class="card-body">
+            <h5>Rudra's CSS project</h5>
+            <p>Used CSS properties to create a website</p>
+            <a href="#" class="btn btn-primary"
+              >More details can be found here</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem">
+            <!--Not a picture of my website, got it from the internet because it was more convinient-->
+            <img
+              src="https://i.ytimg.com/vi/M5JJxdrCvJQ/maxresdefault.jpg"
+              alt="..."
+              class="card-img-top"
+            />
+          </div>
+          <div class="card-body">
+            <h5>Rudra's HTML project</h5>
+            <p>Used HTML properties to create a website</p>
+            <a href="#" class="btn btn-primary"
+              >More details can be found here</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Contact section-->
+    <div class="container">
+      <div class="text-center">
+        <h2>Book a meeting with Building U</h2>
+        <p class="display-5">We are always ready to help!</p>
+      </div>
+      <div class=".row justify-content-center my-5">
+        <div class="col-lg-6">
+          <form action="">
+            <label for="email" class="form-label">Email: </label>
+            <input
+              type="email"
+              id="email"
+              placeholder="my@gmail.com"
+              class="form-control"
+            />
+            <div class="form-floating my-5">
+              <label for="name" class="form-label">Name: </label>
+              <input
+                type="name"
+                id="name"
+                placeholder="e.g. David"
+                class="form-control"
+              />
+            </div>
+            <label for="subject" class="form-label">Details</label>
+            <select name="subject" id="subject" class="form-select">
+              <option value="pricing" selected>Meeting times</option>
+              <option value="technical">Members</option>
+              <option value="other">Other</option>
+            </select>
+
+            <div class="form-floating my-5">
+              <label for="query">Write a message</label>
+
+              <textarea
+                name="query"
+                id="query"
+                style="height: 150px"
+                class="form-control"
+                placeholder="Write a message"
+              ></textarea>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Sent!</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
