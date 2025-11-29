@@ -21,9 +21,9 @@
 
 import { createContext, useState } from "react";
 
-const mock_user = {
-  first_name: "Jane",
-  last_name: "Doe",
+const mockUser = {
+  firstName: "Jane",
+  lastName: "Doe",
   email: "jane_doe@gmail.com",
   password: "password",
 };
@@ -33,7 +33,7 @@ const AuthContext = createContext();
 export function AuthContextProvider({ children }) {
   const [user, setUser] = useState(null);
   const login = () => {
-    setUser(mock_user);
+    setUser(mockUser);
   };
   const logout = () => {
     setUser(null);
