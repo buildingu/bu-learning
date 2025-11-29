@@ -16,7 +16,7 @@ export default function UseStateChallenge() {
       <button onClick={() => setShow(!show)}>
         {show ? "Hide" : "Show"}
       </button>
-      {show ? <div>BOO!</div> : null}
+      {show && <div>BOO!</div>} 
     </main>
   );
 }
