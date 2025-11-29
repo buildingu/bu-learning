@@ -16,7 +16,7 @@ export default function UseRefChallenge() {
     <main>
       <h1>useRef Challenge</h1>
       <input ref={inputRef} type="text" placeholder="Enter your username" />
-      <button onClick={handleFocus}>FOCUS</button>
+      <button type="button" onClick={handleFocus}>FOCUS</button>
     </main>
   );
 }
