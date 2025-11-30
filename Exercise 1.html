@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 1 by Pranit Loganathan</title>
+</head>
+<body>
+
+<h1 align="center">Exercise 1 by Pranit Loganathan</h1>
+<h3 align="center">Date submitted: 11/29/2025</h3>
+<hr>
+
+<h2 align="center">Fun facts about me:</h2>
+
+<table border="1" cellpadding="10" align="center">
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Favorite Movie</th>
+    <th>Favorite Song</th>
+    <th>Favorite Video</th>
+  </tr>
+  <tr>
+    <td>Pranit</td>
+    <td>Loganathan</td>
+    <td>
+      <img src="https://static.wikia.nocookie.net/indianajones/images/a/aa/Indiana_Jones_logo.svg/revision/latest?cb=20090306122743" width="150">
+    </td>
+    <td>
+      <audio controls>
+        <source src="https://dn721801.ca.archive.org/0/items/post-malone-swae-lee-sunflower-spider-man-int-mp-3-128-k/Post%20Malone_%20Swae%20Lee%20-%20Sunflower%20%28Spider-Man_%20Int%28MP3_128K%29.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <video controls width="250">
+        <!-- Place your video file in the same folder as this HTML -->
+        <source src="3611035-hd_1920_1080_24fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </td>
+  </tr>
+</table>
+
+<hr>
+
+<h4 align="center">Enter your details below</h4>
+
+<form align="center">
+  <label for="fname">Full Name:</label>
+  <input type="text" id="fname" name="fname" placeholder="Enter your full name"><br><br>
+
+  <label for="EmailAddr">Email Address:</label>
+  <input type="email" id="EmailAddr" name="EmailAddr" placeholder="Enter your email"><br><br>
+
+  <label for="Passcode">Password:</label>
+  <input type="password" id="Passcode" name="Passcode" placeholder="Enter your password"><br><br>
+
+  <h5>Available Meeting Days:</h5>
+  <label><input type="checkbox" name="day" value="Monday"> Monday</label>
+  <label><input type="checkbox" name="day" value="Tuesday"> Tuesday</label>
+  <label><input type="checkbox" name="day" value="Wednesday"> Wednesday</label>
+  <label><input type="checkbox" name="day" value="Thursday"> Thursday</label>
+  <label><input type="checkbox" name="day" value="Friday"> Friday</label>
+  <label><input type="checkbox" name="day" value="Saturday"> Saturday</label>
+  <label><input type="checkbox" name="day" value="Sunday"> Sunday</label>
+  <br><br>
+
+  <label for="timeslot">Available Time:</label>
+  <select id="timeslot" name="timeslot">
+    <option value="monday8to12">Monday 8am to 12pm</option>
+  </select>
+  <br><br>
+
+  <label>Currently working on new website?</label>
+  <label><input type="radio" name="agree" value="yes"> Yes</label>
+  <label><input type="radio" name="agree" value="no"> No</label>
+  <br><br>
+
+  <label for="comments">Additional Comments:</label><br>
+  <input type="text" id="comments" name="comments" placeholder="Enter your comments here" size="50"><br><br>
+
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
