@@ -81,7 +81,11 @@ function add_entry(event) {
             input.readOnly = true;
         }
     });
-
+    
+    const age_input = parentDiv.querySelector('input[type="number"]');
+    if (age_input && Number(age_input.value) < 18) {
+        age_input.style.backgroundColor = 'red';
+    } 
     event.target.style.display = 'none';
 
     const edit_button = document.createElement('button');
@@ -108,7 +112,8 @@ function edit_entry(event) {
             input.readOnly = false;
         }
     });
-
+    const age_input = parentDiv.querySelector('input[type="number"]');
+    age_input.style.backgroundColor='white';
     const add_entry_button = parentDiv.querySelector('button:nth-of-type(1)');
     add_entry_button.style.display = 'inline-block';
 
