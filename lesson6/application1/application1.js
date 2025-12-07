@@ -16,19 +16,12 @@ function formValidator() {
     return `Missing parameters: ${missing.join(", ")}`;
   }
 
-  // Type checking
-  for (let i = 0; i < req.length; i++) {
-    let value = parameters[req[i]].value;
-    if (types[i] === "number") {
-      if (isNaN(Number(value))) {
-        return `${req[i]} must be a number`;
-      }
-    } else {
-      if (typeof value !== types[i]) {
-        return `${req[i]} must be a ${types[i]}`;
-      }
-    }
+
+  let value = parameters[req[2]].value;
+  if (isNaN(Number(value))) {
+    return `${req[2]} must be a number`;
   }
+
 
   // Age check
   if (Number(parameters["age"].value) < 18) {
