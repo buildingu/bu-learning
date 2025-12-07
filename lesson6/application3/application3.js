@@ -5,7 +5,9 @@ const generate = async () => {
         try {
             let response = await fetch(`http://numbersapi.com/${number}?notfound=floor`);
             alert(await response.text());
+            const fact = await response.text();
             console.log(fact);
+
         } catch (error) {
             console.error(error);
         }
