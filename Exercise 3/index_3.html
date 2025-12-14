@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML5">
+    <meta name="description" content="HTML Lesson 3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <link rel="stylesheet" href="css_3.css">
+</head>
+
+<body>
+
+    <h1>Exercise 3 by Sweetha Manikandan</h1>
+    <h3>Date submitted: 11/29/25</h3>
+    <hr>
+
+    <section class="fun-facts-section desktop-only">
+        <h2 class="section-title">Fun facts about me:</h2>
+
+        <table class="fun-facts-table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Favorite Movie</th>
+                    <th>Favorite Song</th>
+                    <th>Favorite Video</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Sweetha</td>
+                    <td>Manikandan</td>
+
+                    <td class="movie-cell">
+                        <img src="raiders_logo.jpg" alt="Raiders Poster">
+                    </td>
+
+                    <td class="song-cell">
+                        <p>Click play to listen:</p>
+                        <audio controls>
+                            <source src="rick_roll.mp3" type="audio/mpeg">
+                        </audio>
+                    </td>
+
+                    <td class="video-cell">
+                        <video controls>
+                            <source src="marvel_studios.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="mobile-only">
+        <div class="fun-facts-mobile-container">
+            <div class="fun-facts-mobile">
+
+                <h2 class="section-title">Fun facts about me:</h2>
+
+                <div class="name-label-row">
+                    <div class="name-label">First Name</div>
+                    <div class="name-label">Last Name</div>
+                </div>
+
+                <div class="name-row">
+                    <div class="name-box">Sweetha</div>
+                    <div class="name-box">Manikandan</div>
+                </div>
+
+                <div class="mobile-section-title">Favorite Movie</div>
+                <div class="mobile-card">
+                    <img src="raiders_logo.jpg" class="mobile-img" alt="Raiders Poster">
+                </div>
+
+                <div class="mobile-section-title">Favorite Song</div>
+                <div class="mobile-card">
+                    <p>Click play to listen:</p>
+                    <audio controls>
+                        <source src="rick_roll.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <div class="mobile-section-title">Favorite Video</div>
+                <div class="mobile-card">
+                    <video controls>
+                        <source src="marvel_studios.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h2 class="section-title">Enter your details below:</h2>
+
+        <form class="details-form">
+
+            <div class="form-row">
+                <label for="fullName">Full Name</label>
+                <input id="fullName" type="text" placeholder="John Doe">
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email Address</label>
+                <input id="email" type="email" placeholder="jdoe@fakemail.com">
+            </div>
+
+            <div class="form-row">
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="*****">
+            </div>
+
+            <div class="form-row">
+                <span class="label-block">Available Meeting Days:</span>
+
+                <div class="checkbox-grid">
+                    <label><input type="checkbox" value="Mon"> Monday</label>
+                    <label><input type="checkbox" value="Tue"> Tuesday</label>
+                    <label><input type="checkbox" value="Wed"> Wednesday</label>
+                    <label><input type="checkbox" value="Thu"> Thursday</label>
+                    <label><input type="checkbox" value="Fri"> Friday</label>
+                    <label><input type="checkbox" value="Sat"> Saturday</label>
+                    <label><input type="checkbox" value="Sun"> Sunday</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="time">Available Time:</label>
+                <select id="time">
+                    <option>Morning (8am - 12pm)</option>
+                    <option>Afternoon (12pm - 5pm)</option>
+                    <option>Evening (5pm - 9pm)</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <span class="label-block">Currently working on a new website?</span>
+
+                <div class="radio-row">
+                    <label><input type="radio" name="working" value="yes" checked> Yes</label>
+                    <label><input type="radio" name="working" value="no"> No</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="pages">If yes, please enter which page(s) you are working on:</label>
+                <textarea id="pages" placeholder="Enter your comments here"></textarea>
+            </div>
+
+            <div class="button-row">
+                <input type="submit" value="Submit" class="btn submit-btn">
+                <input type="reset" value="Reset" class="btn reset-btn">
+            </div>
+
+        </form>
+    </section>
+
+    <footer class="page-footer">
+        <p class="version-label desktop-only">Desktop Version®</p>
+        <p class="version-label mobile-only">Mobile Version®</p>
+    </footer>
+
+</body>
+</html>
