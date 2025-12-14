@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuildingU Portfolio - My Learning Journey</title>
+  
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar - Fixed Top -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">
+      <strong>BuildingU</strong>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-8 mx-auto text-center">
+        <h1 class="hero-title">Welcome to My Learning Portfolio</h1>
+        <p class="hero-subtitle">Exploring Web Development with BuildingU</p>
+        <a href="#portfolio" class="btn btn-hero">View My Work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+  <div class="container">
+    <h2 class="section-title text-center">About Me</h2>
+    <div class="row align-items-center">
+      <!-- Profile Image Column -->
+      <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+        <div class="profile-img mx-auto">
+          BU
+        </div>
+      </div>
+      <!-- Bio Column -->
+      <div class="col-12 col-md-8">
+        <h3 class="mb-3">BuildingU Student</h3>
+        <p class="lead">
+          I am a passionate learner on a journey to master web development through BuildingU's comprehensive program. 
+          I've been exploring HTML, CSS, JavaScript, and Bootstrap to create responsive and engaging web experiences.
+        </p>
+        <p>
+          Through this program, I've developed a strong foundation in front-end development and gained hands-on 
+          experience building real-world projects. I'm excited to continue growing my skills and creating 
+          innovative solutions.
+        </p>
+        
+        <!-- Key Skills -->
+        <div class="mt-4">
+          <h5 class="mb-3">Key Skills:</h5>
+          <span class="skill-badge">HTML5</span>
+          <span class="skill-badge">CSS3</span>
+          <span class="skill-badge">JavaScript</span>
+          <span class="skill-badge">Bootstrap</span>
+          <span class="skill-badge">Responsive Design</span>
+          <span class="skill-badge">Grid Systems</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio-section">
+  <div class="container">
+    <h2 class="section-title text-center">My Projects</h2>
+    <div class="row g-4">
+      
+      <!-- Project Card 1 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-img"><img src="assets/p1.png" class="img-fluid rounded" alt="Hero Image"></div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Personal Website</h5>
+            <p class="card-text flex-grow-1">
+              A fully responsive personal website built with HTML, CSS and JS, featuring smooth animations 
+              and a modern design aesthetic.
+            </p>
+            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#project1Modal">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-img"><img src="assets/p2.png" class="img-fluid rounded" alt="Hero Image"></div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">MailMate</h5>
+            <p class="card-text flex-grow-1">
+              Your AI-powered email assistant — built to simplify and streamline your inbox with intelligent automation.
+            </p>
+            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#project2Modal">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-img"><img src="assets/p3.png" class="img-fluid rounded" alt="Hero Image"></div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">EchoChambers</h5>
+            <p class="card-text flex-grow-1">
+              A cryptography-based escape game where you solve puzzles to shut down the rogue AI, OMNIS.
+            </p>
+            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#project3Modal">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 4 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-img"><img src="assets/p4.png" class="img-fluid rounded" alt="Hero Image"></div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">AI ProductFinder</h5>
+            <p class="card-text flex-grow-1">
+              An intelligent product recommendation platform powered by Gemini AI that suggests the best tech products based on your needs and budget.
+            <a href="https://jitterfreejammers.streamlit.app/" target="_blank">Try it out</a></p>
+            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#project4Modal">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 5 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-img"><img src="assets/p5.png" class="img-fluid rounded" alt="Hero Image"></div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Jeff</h5>
+            <p class="card-text flex-grow-1">
+              An AI-powered daily standup bot for Discord teams — combining intelligent automation with privacy-focused tools to help users stay organized and productive.
+            </p>
+            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#project5Modal">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 6 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-img"><img src="assets/p6.jpg" class="img-fluid rounded" alt="Hero Image"></div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">HackPHS Plant Monitor</h5>
+            <p class="card-text flex-grow-1">
+              A DIY plant monitor using basic electronic components with AI summaries, long-term hydration graphs, and detailed spectrograms.            </p>
+            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#project6Modal">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Project Modals -->
+<!-- Modal 1 -->
+<div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project1ModalLabel">Personal Website</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Technologies:</strong> HTML5, CSS, JavaScript</p>
+        <p><strong>Description:</strong> A fully responsive personal website built with HTML, CSS and JS, featuring smooth animations and a modern design aesthetic. <a href="https://devanshmalhotra17.github.io/" target="_blank">Take a look!</a></p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+          <li>Fully responsive design</li>
+          <li>Smooth animations</li>
+          <li>Modern aesthetic</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project2ModalLabel">MailMate</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Technologies:</strong> AI Integration, Automation, Email Processing</p>
+        <p><strong>Description:</strong> Your AI-powered email assistant designed to simplify and streamline your inbox with intelligent automation.</p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+          <li>AI-powered assistance</li>
+          <li>Intelligent automation</li>
+          <li>Inbox optimization</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project3ModalLabel">EchoChambers</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Technologies:</strong> Cryptography, Puzzle Design, Game Mechanics</p>
+        <p><strong>Description:</strong> A cryptography-based escape game where you solve puzzles to shut down the rogue AI, OMNIS.</p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+          <li>Cryptography challenges</li>
+          <li>Interactive puzzle solving</li>
+          <li>Engaging narrative</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="project4Modal" tabindex="-1" aria-labelledby="project4ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project4ModalLabel">AI ProductFinder</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Technologies:</strong> Gemini AI, Product Recommendation, Streamlit</p>
+        <p><strong>Description:</strong> An intelligent product recommendation platform powered by Gemini AI that suggests the best tech products based on your needs and budget.</p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+          <li>Gemini AI integration</li>
+          <li>Smart recommendations</li>
+          <li>Budget-aware suggestions</li>
+        </ul>
+        <p><a href="https://jitterfreejammers.streamlit.app/" target="_blank" class="btn btn-sm btn-outline-primary">Try it out</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="modal fade" id="project5Modal" tabindex="-1" aria-labelledby="project5ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project5ModalLabel">Jeff</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Technologies:</strong> Discord Bot, AI Automation, Privacy-Focused</p>
+        <p><strong>Description:</strong> An AI-powered daily standup bot for Discord teams combining intelligent automation with privacy-focused tools to help users stay organized and productive.</p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+          <li>Discord integration</li>
+          <li>Daily standup automation</li>
+          <li>Privacy-first design</li>
+          <li>Team productivity tracking</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 6 -->
+<div class="modal fade" id="project6Modal" tabindex="-1" aria-labelledby="project6ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project6ModalLabel">HackPHS Plant Monitor</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Technologies:</strong> Electronics, AI Summaries, Data Visualization</p>
+        <p><strong>Description:</strong> A DIY plant monitor using basic electronic components with AI summaries, long-term hydration graphs, and detailed spectrograms.</p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+          <li>DIY electronics integration</li>
+          <li>AI-powered summaries</li>
+          <li>Hydration tracking graphs</li>
+          <li>Spectrogram analysis</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title text-center">Get In Touch</h2>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+        <form class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+            <div class="invalid-feedback">
+              Please provide your name.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+            <div class="invalid-feedback">
+              Please provide a valid email address.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+            <div class="invalid-feedback">
+              Please enter your message.
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 BuildingU Portfolio. Created with Bootstrap & Passion.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
