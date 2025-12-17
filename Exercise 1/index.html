@@ -4,71 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
-    <h1 style="text-align: center;">Exercise 1 by Abdul Hanan</h1>
-    <h3 style="text-align: center;">Date submitted : 24/10/2025</h3>
-    <hr>
-    <h3 style="text-align: center;">Fun facts about me:</h3>
 </head>
 <body>
-    <table class="center">
-        <thead>
-            <tr>
-                <th scope="col">First name</th>
-                <th scope="col">Last name</th>
-                <th scope="col">Favorite movie</th>
-                <th scope="col">Favorite song</th>
-                <th scope="col">Favorite video</th>
-            </tr>
-        </thead>
-        <tbody>
-            <th scope="row">John</th>
-            <th scope="row">Doe</th>
-            <th scope="row"><img src="image_1.jpg" alt="Film" width="120px" height="120px"></th>
-            <th scope="row"><audio controls><source src="audio_1.mp3"></audio></th>
-            <th scope="row"><video width="200px" height="120px" controls><source src="video_1.mp4"></video></th>
-        </tbody>
-    </table>
-    <hr>
-    <div class="form">
-    <h3>Enter your details below:</h3>
-    <form>
-        Full name: <input type="text" > <br><br>
-        Email addr: <input type="text"> <br><br>
-        Password: <input type="text">
-    </form>
-    <h3>Available meeting day:</h3>
-    <input type="checkbox"> Monday
-    <input type="checkbox"> Tuesday
-    <input type="checkbox"> Wednesday
-    <input type="checkbox"> Thrusday
-    <input type="checkbox"> Friday
-    <input type="checkbox"> Saturday
-    <input type="checkbox"> Sunday
-    </div>
-<br><br>
-    <div class="select">
-    Available Time:
-    <select> 
-       <option>Monday (8am to 12pm)</option>
-    </select>
-    </div>
-<br>
-    <div class="radio">
-        <form>
-            Currently working on new website:
-            <input type="radio">Yes
-            <input type="radio">No
-        </form>
-    </div>
-<br>
-    <div class="Textarea">
-        <textarea>Enter your comments here</textarea>
-    </div>
-<br>
-    <div class="buttons">
-        <button>Submit</button>
-        <button>Cancel</button>
-    </div>
+    <center>
+        <h1>Exercise 1 by Abdul Hanan</h1>
+        <h3>Date submitted : 24/10/2025</h3>
+        <hr>
+
+        <h3>Fun facts about me:</h3>
+
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                    <th scope="col">First name</th>
+                    <th scope="col">Last name</th>
+                    <th scope="col">Favorite movie</th>
+                    <th scope="col">Favorite song</th>
+                    <th scope="col">Favorite video</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td><img src="image_1.jpg" alt="Film" width="120px" height="120px"></td>
+                    <td><audio controls><source src="audio_1.mp3"></audio></td>
+                    <td><video width="200px" height="120px" controls><source src="video_1.mp4"></video></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <fieldset>
+            <legend>Enter your details below</legend>
+
+            <form>
+                <p>Full name: <input type="text"></p>
+                <p>Email addr: <input type="text"></p>
+                <p>Password: <input type="text"></p>
+
+                <h3>Available meeting day:</h3>
+                <p>
+                    <input type="checkbox"> Monday
+                    <input type="checkbox"> Tuesday
+                    <input type="checkbox"> Wednesday
+                    <input type="checkbox"> Thrusday
+                    <input type="checkbox"> Friday
+                    <input type="checkbox"> Saturday
+                    <input type="checkbox"> Sunday
+                </p>
+
+                <p>
+                    Available Time:
+                    <select>
+                       <option>Monday (8am to 12pm)</option>
+                    </select>
+                </p>
+
+                <p>
+                    Currently working on new website:
+                    <input type="radio" name="working_on_new_website" value="yes" checked>Yes
+                    <input type="radio" name="working_on_new_website" value="no">No
+                </p>
+
+                <p>
+                    <textarea>Enter your comments here</textarea>
+                </p>
+
+                <p>
+                    <button>Submit</button>
+                    <button>Cancel</button>
+                </p>
+            </form>
+        </fieldset>
+    </center>
 </body>
 </html>
