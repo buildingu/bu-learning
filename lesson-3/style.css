@@ -1,0 +1,100 @@
+
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+img {
+    width: 150px;
+}
+
+form input {
+    margin-bottom: 10px;
+}
+
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: red;
+    color: white;
+}
+
+
+input:hover {
+    border: 2px solid black;
+}
+
+
+form p:nth-child(odd) {
+    font-weight: bold;
+}
+
+input:not([type="radio"]) {
+    width: 90%;
+}
+
+
+
+/*  DESKTOP */
+@media screen and (min-width: 768px) {
+
+    body {
+        background-image: url("desktop.jpg");
+        background-size: cover;
+        color: white;
+    }
+
+    table {
+        background-color: #2f3e46;
+    }
+
+    form {
+        background-color: #d3d3d3;
+        color: black;
+        width: 350px;
+        margin: 30px auto;
+        padding: 20px;
+    }
+}
+
+
+/* MOBILE*/
+@media screen and (max-width: 767px) {
+
+    body {
+        background-image: url("background-mobile.jpg");
+        color: black;
+    }
+
+    table {
+        background-color: #8b2c2c;
+        color: white;
+    }
+
+    form {
+        background-color: #e0e0e0;
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+}
