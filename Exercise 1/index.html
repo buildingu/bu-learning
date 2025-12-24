@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exercise 1 By Mohamad Dabbabo</title>
+</head>
+<body>
+
+  <!-- Heading -->
+  <h1 align="center">Exercise 1 by Mohamad Dabbabo</h1>
+  <h3 align="center">Date Submitted: 28/04/2025</h3>
+
+  <!-- Divider -->
+  <hr size="2" width="80%" align="center" color="#444" noshade />
+
+  <!-- Fun-facts Table -->
+  <table 
+    border="4" 
+    bgcolor="#e4f9ff" 
+    align="center" 
+    cellpadding="6" 
+    cellspacing="0"
+  >
+    <caption><b>Some facts about me:</b></caption>
+
+    <!-- Header Row -->
+    <tr bgcolor="#b3e5fc">
+      <th scope="col" border="3">First Name</th>
+      <th scope="col" border="3">Last Name</th>
+      <th scope="col" border="3">Favorite Movie</th>
+      <th scope="col" border="3">Favorite Song</th>
+      <th scope="col" border="3">Favorite Video</th>
+    </tr>
+
+    <!-- Data Row -->
+    <tr align="center">
+      <td bgcolor="#e7faff" width="110" height="160">Mohamad</td>
+      <td bgcolor="#e0f4ff">Dabbabo</td>
+      <td bgcolor="#e7faff">
+        <!-- Movie caption -->
+        <p align="center"><b>Ghost in the Shell (1995)<br/>Cyberpunk, AI, Philosophy, Identity</b></p>
+        <a 
+          href="https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(1995_film)"
+          target="_blank"
+          title="Ghost in the Shell (1995)">
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/en/c/ca/Ghostintheshellposter.jpg"
+            alt="Ghost in the Shell poster" 
+            width="120"
+          />
+        </a>
+      </td>
+      <td bgcolor="#e0f4ff" width="260">
+        <p align="center">Click “Play” to hear this concert performance<br/>held in memory of the 2011 victims.</p>
+        <audio controls>
+          <source src="media/Kenji_Kawai_Making_of_a_Cyborg.mp3" type="audio/mpeg">
+          Your browser doesn’t support audio.
+        </audio>
+      </td>
+      <td bgcolor="#e7faff" width="150">
+        <video controls width="150">
+          <source src="media/ai_biology_animation.mp4" type="video/mp4">
+          Your browser doesn’t support video.
+        </video>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Divider -->
+  <hr size="2" width="80%" align="center" color="#444" noshade />
+
+  <!-- Form Section -->
+  <h3 align="center">Enter your details below:</h3>
+
+  <form action="#" method="post" align="center">
+    <!-- Full Name -->
+    <label>
+      <em>Full Name:</em><br/>
+      <input type="text" name="fullname" placeholder="Jane Doe" size="30"/>
+    </label>
+    <br/><br/>
+
+    <!-- Email -->
+    <label>
+      <em>Email:</em><br/>
+      <input type="email" name="email" placeholder="you@example.com" size="30"/>
+    </label>
+    <br/><br/>
+
+    <!-- Password -->
+    <label>
+      <em>Password:</em><br/>
+      <input type="password" name="password" placeholder="••••••••" size="30"/>
+    </label>
+    <br/><br/>
+
+    <!-- Available Days -->
+    <fieldset style="border:1px solid #000;">
+      <legend><em>Available Days:</em></legend>
+      <label><input type="checkbox" name="days" value="mon"/> Monday</label><br/>
+      <label><input type="checkbox" name="days" value="tue"/> Tuesday</label><br/>
+      <label><input type="checkbox" name="days" value="wed"/> Wednesday</label><br/>
+      <label><input type="checkbox" name="days" value="thu"/> Thursday</label><br/>
+      <label><input type="checkbox" name="days" value="fri"/> Friday</label><br/>
+      <label><input type="checkbox" name="days" value="sat"/> Saturday</label><br/>
+      <label><input type="checkbox" name="days" value="sun"/> Sunday</label>
+    </fieldset>
+    <br/>
+
+    <!-- Available Time -->
+    <label>
+      <em>Available Time:</em><br/>
+      <select name="time">
+        <option value="morning">Morning (8am–12pm)</option>
+        <option value="afternoon">Afternoon (12pm–4pm)</option>
+        <option value="evening">Evening (4pm–8pm)</option>
+      </select>
+    </label>
+    <br/><br/>
+
+    <!-- Working on a new website -->
+    <fieldset style="border:1px solid #000;">
+      <legend><em>Working on a new website?</em></legend>
+      <label><input type="radio" name="newsite" value="yes" checked/> Yes</label><br/>
+      <label><input type="radio" name="newsite" value="no"/> No</label>
+    </fieldset>
+    <br/>
+
+    <!-- Comments -->
+    <label>
+      <em>Comments:</em><br/>
+      <textarea name="comments" rows="4" cols="30" placeholder="Any extras…"></textarea>
+    </label>
+    <br/><br/>
+
+    <!-- Submit & Reset -->
+    <input type="submit" value="Submit"/>
+    <input type="reset" value="Reset"/>
+  </form>
+
+</body>
+</html>

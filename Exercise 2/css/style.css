@@ -1,0 +1,127 @@
+/* palette variables (for later) */
+:root{
+    --primary:#0077b6;   /* deep blue */
+    --accent:#00b4d8;    /* cyan */
+    --light:#f0f8ff;     /* very light blue */
+    --bg:#e8f4ff;       /* page background */
+    --border:#185b8c;    /* darker blue */
+    --table-head:#e63946;/* red */
+  }
+  
+  /* base */
+  body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif; /* Fonts I picked that resonate with me */
+    background:var(--bg);
+    color:#222;
+    padding:0 12px 40px;
+  }
+  
+  /* reusable soft-card */
+  .soft{
+    background:#fff;
+    border:2px solid var(--border);
+    padding:20px;
+    margin:24px auto;
+    max-width:940px;
+    box-shadow:0 0 12px #0077b620;   /* subtle bloom */
+  }
+  
+  /* headings */
+  h1{
+    color:#fff;
+    background:var(--primary);
+    text-align:center;
+    margin:0 -12px 24px;
+    padding:28px 12px;
+    text-shadow:0 0 6px #ffffffaa;    /* glowing effect */
+  }
+  h2{
+    color:var(--primary);
+    border-bottom:4px solid var(--accent);
+    padding-bottom:4px;
+    margin:28px auto 12px;
+    max-width:940px;
+    text-shadow:0 0 4px #00b4d880;
+  }
+  h3{
+    margin:6px 0 24px;
+    color:var(--accent);
+    text-align:center;
+    text-shadow:0 0 4px #00b4d880;
+  }
+  
+  /* description paragraph */
+  p:first-of-type{
+    max-width:760px;
+    margin:0 auto 24px;
+  }
+  
+  /* table */
+  table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }  
+
+  th,td{
+    border:1px solid var(--accent);
+    padding:10px 6px;
+    text-align:center;
+  }
+  th{
+    background:var(--table-head);
+    color:#fff;
+  }
+  
+  /* media thumbs */
+  img{
+    border:4px solid var(--accent);
+    padding:4px;
+    background:#fff;
+    box-shadow:0 0 8px #00b4d820;
+  }
+  
+  /* form */
+  form{
+    background:#fff;
+    border:2px solid var(--border);
+    padding:20px;
+    max-width:540px;
+    margin:24px auto;
+    box-shadow:0 0 10px #0077b620;
+  }
+  label{display:block;margin:10px 0;}
+  input,select,textarea{
+    width:100%;max-width:100%;
+    padding:6px;border:1px solid #ccc;margin-top:4px;
+  }
+  fieldset{
+    border:1px solid var(--accent);
+    padding:10px;margin:14px 0;
+  }
+
+  /* Button CSS, background uses primary variable, no border, changes cursor to pointer */
+  button{
+    background:var(--primary);
+    color:#fff;
+    border:none;
+    padding:8px 18px;
+    margin-top:12px;
+    cursor:pointer;
+  }
+  /* This makes the reset button have a unique */
+  button[type="reset"]{background:var(--accent);}
+  
+  /* This uses :hover to change colors */
+  button:hover{
+    background:var(--light);
+    color:#000000;
+    box-shadow:0 0 6px #00b4d8aa;
+  }
+
+  /* figures */
+  figure{margin:24px auto;max-width:320px;text-align:center;}
+  figcaption{margin-bottom:6px;font-weight:bold;}
