@@ -19,27 +19,32 @@
  * 3. Go to the `UseContext.jsx` file, and follow the steps there.
  */
 
-import { createContext, useState } from "react";
+import React, { createContext, useState } from "react";
 
-// Mock user obj.
-const user = {
-  // Initialize user fields mentioned...
-}
 
-// const AuthContext =
+const AuthContext = createContext();
 
 export function AuthContextProvider({ children }) {
+  const [user, setUser] = useState(null);
 
+  function login() {
+    setUser({
+    firstName: "Richard",
+    lastName: "Docs",
+    email: "richardocs@mail"
+  })
+  }
 
-//   return (
-//     <AuthContext.Provider
-//       value={{
-//         ...
-//       }}
-//     >
-//       {children}
-//     </AuthContext.Provider>
-//   );
+  function logout() {
+    setUser(null);
+    alert("User session timed out")
+  }
+
+  return (
+    <AuthContext.Provider value={{user, login, logout}}>
+      {children}
+    </AuthContext.Provider>
+   );
 }
 
 export default AuthContext;

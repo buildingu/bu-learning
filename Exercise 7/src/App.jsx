@@ -2,6 +2,7 @@ import UseStateChallenge from "./components/1.UseStateChallenge";
 import UseRefChallenge from "./components/2.UseRefChallenge";
 import UseEffectChallenge from "./components/3.UseEffectChallenge";
 import UseContextChallenge from "./components/4.UseContextChallenge/UseContext";
+import { AuthContextProvider } from "./components/4.UseContextChallenge/AuthContext";
 import UseReducerChallenge from "./components/5.UseReducerChallenge";
 import UseMemoChallenge from "./components/6.UseMemoChallenge";
 import FinalChallenge from "./components/7.FinalChallenge";
@@ -17,7 +18,9 @@ function App() {
     case "useEffect":
       return <UseEffectChallenge />;
     case "useContext":
-      return <UseContextChallenge />;
+      return <AuthContextProvider>
+        <UseContextChallenge/>
+      </AuthContextProvider>;
     case "useReducer":
       return <UseReducerChallenge />;
     case "useMemo":
