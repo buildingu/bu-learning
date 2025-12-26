@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("background-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+hr {
+  width: 90%;
+  border: 1px solid white;
+}
+
+.facts {
+  width: 90%;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 5px;
+  background: #2c3e46;
+  padding: 10px;
+}
+
+th {
+  background: #3e4f57;
+  padding: 10px;
+}
+
+td {
+  background: #2c3e46;
+  padding: 20px;
+  text-align: center;
+}
+
+table tr:nth-child(even) td {
+  background: #344a52;
+}
+
+img {
+  width: 140px;
+}
+
+video {
+  width: 260px;
+}
+
+.form-container {
+  background: #d9d4d1;
+  color: black;
+  width: 320px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.form-container h3 {
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input:not([type="checkbox"]):not([type="radio"]),
+form select {
+  width: 100%;
+  padding: 6px;
+  margin-top: 5px;
+}
+
+.days label,
+.radio label {
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: normal;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.buttons input {
+  padding: 6px 15px;
+  border: none;
+  color: white;
+}
+
+.buttons input[type="submit"] {
+  background: #4caf50;
+}
+
+.buttons input[type="reset"] {
+  background: #e74c3c;
+}
+
+@media screen and (max-width: 767px) {
+  table, tr, td, th {
+    display: block;
+  }
+
+  th {
+    display: none;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .facts {
+    max-width: 1200px;
+  }
+}

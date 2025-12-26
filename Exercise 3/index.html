@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 3 by Pranit Loganathan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Exercise 3 by Pranit Loganathan</h1>
+  <p>Date submitted: 12/21/2025</p>
+</header>
+
+<hr>
+
+<section class="facts">
+  <h2>Fun facts about me</h2>
+
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Favorite Movie</th>
+      <th>Favorite Song</th>
+      <th>Favorite Video</th>
+    </tr>
+    <tr>
+      <td>Pranit</td>
+      <td>Loganathan</td>
+      <td>
+        <img src="assets/movie.jpg">
+      </td>
+      <td>
+        <p>Click play button to play music:</p>
+        <audio controls>
+          <source src="rick_roll.mp3" type="audio/mpeg">
+        </audio>
+      </td>
+      <td>
+        <video controls>
+          <source src="assets/video.mp4" type="video/mp4">
+        </video>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<hr>
+
+<section class="form-container">
+  <h3>Enter your details below:</h3>
+
+  <form>
+    <label>Full Name</label>
+    <input type="text" placeholder="Pranit Loganathan">
+
+    <label>Email Address</label>
+    <input type="email" placeholder="example@email.com">
+
+    <label>Password</label>
+    <input type="password" placeholder="******">
+
+    <label>Available Meeting Days:</label>
+    <div class="days">
+      <label><input type="checkbox"> Monday</label>
+      <label><input type="checkbox"> Tuesday</label>
+      <label><input type="checkbox"> Wednesday</label>
+      <label><input type="checkbox"> Thursday</label>
+      <label><input type="checkbox"> Friday</label>
+      <label><input type="checkbox"> Saturday</label>
+      <label><input type="checkbox"> Sunday</label>
+    </div>
+
+    <label>Available Time:</label>
+    <select>
+      <option>Morning (8am to 12pm)</option>
+    </select>
+
+    <label>Currently working on a new website?</label>
+    <div class="radio">
+      <label><input type="radio" name="site"> Yes</label>
+      <label><input type="radio" name="site"> No</label>
+    </div>
+
+    <label>If yes, please enter which page(s) you are working on</label>
+    <input type="text" placeholder="Enter your comments here">
+
+    <div class="buttons">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</section>
+
+</body>
+</html>
