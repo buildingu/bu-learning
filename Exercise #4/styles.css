@@ -1,0 +1,149 @@
+.hero-section {
+    background-color: #add8e6;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero-heading {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .hero-intro {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+  
+  .hero-button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+  }
+  
+  .about-section {
+    background-color: #fffdbb;
+    padding: 100px 0;
+  }
+  
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .about-heading {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .about-bio {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .skills-heading {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+  
+  .skills-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+  }
+  
+  .skills-list li {
+    margin-bottom: 10px;
+  } 
+
+  .projects-section {
+    background-color: #cbc3e3;
+    padding: 100px 0;
+  }
+  
+  .projects-heading {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+  }
+  
+  .card {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  } 
+
+  .card-body .btn {
+    display: block;
+    margin: 0 auto;
+  } 
+  .contact-section {
+    background-color: #90ee90;
+    padding: 100px 0;
+  }
+  
+  .contact-heading {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .contact-intro {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    height: 45px;
+    font-size: 1.1em;
+    max-width: 400px; 
+    margin: 0 ; 
+  }
+  
+  .form-control::placeholder {
+    font-size: 1em;
+  }
+  
+  textarea.form-control {
+    height: auto;
+  }
+  
+  .btn-block {
+    font-size: 1.2em;
+    padding: 10px 0;
+    max-width: 200px; 
+    margin: 0 ; 
+  }
