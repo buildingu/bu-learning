@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Building-U Lesson 4</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .hero {
+      background: linear-gradient(90deg, #2d81e2, #d644be);
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .about img {
+      max-width: 100%;
+      border-radius: 50%;
+    }
+    .project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding: 10px;
+    }
+    .card:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+    }
+
+    .project-card {
+      margin-bottom: 30px;
+    }
+    .footer-custom {
+    background: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .navbar-toggler {
+        display: none !important;
+      }
+      .navbar-collapse {
+        display: flex !important;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .navbar-collapse {
+        display: none;
+      }
+      .navbar-toggler {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Building-U</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Welcome to My About Me 😊</h1>
+      <p>Learn more about my projects </p>
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+    </div>
+  </section>
+
+  <section id="about" class="about py-4">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-8">
+          <h2>About Me</h2>
+          <p>Hello! My name is Sweetha Manikandan. I am a sophomore in highschool and am part of the class of 2028. I have experience in coding through different classes I have taken. </p>
+          <p>I joined Building-U as a High School Coding Intern in 2025. I can code in HTML, CSS, Python and a little bit of JavaScript.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">My Building-U Projects</h2>
+      <div class="row">
+        <div class="col-md-4 project-card">
+          <div class="card">
+            <img src="html.jfif"  class="card-img-top project-img" alt="Project 1: HTML">
+            <div class="card-body">
+              <h5 class="card-title">This is my first project made using HTML.</h5>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">View More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-card">
+          <div class="card">
+            <img src="css.webp" class="card-img-top project-img" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">This is my second project made using CSS.</h5>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">View More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-card">
+          <div class="card">
+            <img src="bootstrap.png" class="card-img-top project-img" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">This is my third project made using Bootstrap.</h5>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">View More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="project1Modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Project One Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          For this HTML (Hypertext Markup Language) project, I made a website which included some of my favorite things, such as my favorite move, my favorite video, my favorite song. The website also included a form at the end.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="project2Modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Project Two Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+           For this CSS (Cascading Style Sheet) project, I made a website for a High School Senior Sunset with information about the event, a schedule, a link for nostaglic songs, how to get to the beach and a rsvp form for the sunset. I also made the background similar to a sunset with a gradient going from orange to purple.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="project3Modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Project Three Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          For this Bootstrap (a HTML, CSS and Javascript library used to make responsive websites) project, I made a website with an about me, projects that I have done and a form to contact me. By the way, This project is this website that you are currently on.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="text-center text-dark py-4 mt-4 footer-custom">
+  <p class="mb-1">© 2025 Sweetha Manikandan</p>
+  <p class="small mb-0">Built using HTML, CSS, & Bootstrap</p>
+</footer>
+</body>
+</html>
