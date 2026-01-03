@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+.home-link {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #9cb4dd;
@@ -73,10 +88,6 @@ button {
     margin-top: 30px;
 }
 
-button:hover {
-    background-color: #245cbc;
-}
-
 #employee-list-title {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -117,5 +128,12 @@ button:hover {
 }
 
 .employee_item_edit-btn {
+    margin-top: 10px;
+}
+
+.employee_item_delete-btn {
+    background-color: #ffc6c6;
+    color: rgb(194, 3, 3);
+    border: 1px solid rgb(194, 3, 3);
     margin-top: 10px;
 }

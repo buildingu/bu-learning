@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+.home-link {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #386abe;

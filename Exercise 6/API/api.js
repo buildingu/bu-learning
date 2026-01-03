@@ -13,6 +13,7 @@ async function fetchData() {
 
         //Throwing an error if pokemon isn't found
         if(!response.ok) {
+            pokemonInfoTable.style.display = "none";
             alert("Pokemon not found");
             throw new Error("Couldn't fetch the data");
         }
