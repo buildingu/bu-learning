@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Entry App</title>
+    <link rel="stylesheet" href="employeeEntry.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Database</h1>
+        
+        <div class="form-section">
+            <input type="text" id="name" placeholder="Employee Name">
+            <input type="number" id="age" placeholder="Age">
+            <input type="text" id="sex" placeholder="Sex (M/F)">
+            <input type="text" id="position" placeholder="Position">
+            
+            <button id="addBtn">Add Entry</button>
+        </div>
+        
+        <div class="entries-section">
+            <h2>Employee List</h2>
+            <div id="employeeList"></div>
+        </div>
+    </div>
+
+    <script src="employeeEntry.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 3</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <h1>Exercise 3 by Vybhav Parthan</h1>
+    <hr>
+    <div id="table">
+        <table>
+            <h3 class="subheading">Fun Facts About Me!</h3>
+            <tr>
+                <th>Full Name</th>
+                <th>Favorite Movie</th>
+                <th>Fav. Song</th>
+                <th>Fav. Video</th>
+            </tr>
+            <tr>
+                <td id="FullName">Vybhav Parthan</td>
+                <td id="Movie"> 
+                    <a href="https://en.wikipedia.org/wiki/Dune_%282021_film%29">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Dune_%282021_film%29.jpg/250px-Dune_%282021_film%29.jpg"></img>
+                    </a>
+                </td>
+                <td id="Audio">
+                    <p>*Supposed to be Lovely, Billie Eilish and Khalid, but it's under Copyright. A placeholder is inserted instead</p>
+                    <center>
+                        <audio controls>
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></source>
+                        </audio>
+                    </center>
+                </td>
+                <td id="Video">
+                <p>Harry Potter Rap</p>
+                <iframe src="https://www.youtube.com/embed/Yn_uHvb5vPQ?si=lPhFltzNeAT2egmz">
+                </iframe>
+                </td>                
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div id="form">
+        <form>
+            <h3 class="subheading">Enter your Details Below:</h3>
+            Full Name: <input type="text" placeholder="Type Full Name Here..."></input>
+            <br><br>
+            Email: <input type="email" placeholder="Type Email Here..."></input>
+            <br><br>
+            Password: <input type="text" placeholder="Type Password Here..."></input>
+            <br><br>
+            Available Meeting Days:
+            <br><br>
+            <input type="checkbox">Monday</input>
+            <input type="checkbox">Tuesday</input>
+            <input type="checkbox">Wednesday</input>
+            <input type="checkbox">Thursday</input>
+            <input type="checkbox">Friday</input>
+            <input type="checkbox">Saturday</input>
+            <input type="checkbox">Sunday</input>
+            <br><br>
+            Available times:
+            <select id="Dropdown">
+                <option value="">Please choose a time</option>
+                <optgroup label="Morning">
+                    <option class="morning">7 AM to 8 AM</option>
+                    <option class="morning">8 AM to 9 AM</option>
+                    <option class="morning">9 AM to 10 AM</option>
+                    <option class="morning">10 AM to 11 AM</option>
+                    <option class="morning">11 AM to 12 AM</option>
+                </optgroup>
+                <optgroup label="Afternoon/Evening">
+                    <option class="A/E">12 AM to 1 PM</option>
+                    <option class="A/E">1 PM to 2 PM</option>
+                    <option class="A/E">2 PM to 3 PM</option>
+                    <option class="A/E">3 PM to 4 PM</option>
+                    <option class="A/E">4 PM to 5 PM</option>
+                    <option class="A/E">5 PM to 6 PM</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <p>Currently Working on New Website?:</p>
+            <input type="radio" name="button" checked>Yes</input>
+            <input type="radio" name="button">No</input>
+            <br><br>
+            <textarea id="CommentBox" placeholder="Any Comments?..."></textarea>   
+            <br><br>
+            <input type="submit"></input>
+            <input type="reset"></input>     
+        </form>
+    </div>
+</body>
+</html>
