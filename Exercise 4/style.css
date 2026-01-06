@@ -1,0 +1,22 @@
+
+/* About Me */
+
+.main{
+    background-image: url(Images/Background_Image.jpg);
+}
+
+/* For About Me Picture */
+
+
+.img1{
+    height: 350px;
+    width: 200px;
+}
+
+/* My Profile Section Background Color */
+
+
+.myprofile{
+    background-color: aliceblue;
+}
+

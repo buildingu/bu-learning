@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Building-U</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true">Contract</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- About Me -->
+
+
+      <div class="main">
+      <h1 class="text-uppercase text-center text-light">Welcome to MY BuildingU Projects Page</h1>
+      <p class="text-uppercase text-center text-light">Discover my work on Github</p>
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-primary text-center">View my work</button>
+      </div>
+      <div class="aboutme">
+      <p class="text-light fs-2 container">About Me</p>
+       <div class="clearfix container">
+        <img src="Images/Profile_Pic.jpg" class="img1 col-md-6 float-md-end mb-3 ms-md-3 rounded-circle" alt="...">
+      
+        <p class="text-light">
+        Hey, I'm John Doe, and I'm passionate about web development and coding. I volunteer my skills to build amazing websites and write efficient code that bring ideas to life.
+        </p>
+      
+        <p class="text-light">
+            With several years of experience in this field, I've had the privilege of working on a wide range of projects, from creating responsive and user-friendly websites to developing custom web applications sthat solve complex problems.
+        </p>
+      
+        <p class="text-light">
+            My journey in web development has allowed me to explore various technologies and framework, and Bootstrap is one of my favourites. It's a fantastic tool for creating sleek and responsive web designs, which is why I'm excited to share my knowledge with you through this exercise.
+        </p>
+      </div>
+    </div>
+    <br><br>
+
+    <!-- My Profile -->
+
+
+
+    <div class="myprofile">
+    <p class="text-black fs-2 container">My Profile</p>
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-12 col-md-4">
+          <div class="card h-100" style="width: 18rem;">
+            <img src="Images/HTML.jpg" class="img2 card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 1: HTML</h5>
+              <p class="card-text">Project 1 showcases my HTML skills. It's a webpage involving HTML with tables and static form components. Click learn more to see the project.</p>
+              <a href="#" class="btn btn-danger">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100" style="width: 18rem;">
+            <img src="Images/CSS.png" class="img2 card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 2: CSS</h5>
+              <p class="card-text">Project 2 showcases my CSS skills. It's a stylized webpage for an event using HTML and CSS with custom components. Click learn more to see the project.</p>
+              <a href="#" class="btn btn-warning">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100" style="width: 18rem;">
+            <img src="Images/JS" class="img2 card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 3: Advanced CSS</h5>
+              <p class="card-text">Project 3 showcases my advanced CSS skills. It's a responsive webpage (Destop & Mobile) from Project 1. Click learn more to see the project.</p>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <br><br>
+
+    <!-- Contact Me -->
+
+
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-5">
+          <p class="text-light fs-2">Contact me</p>
+
+    <form action="your_backend_script.php" method="POST">
+
+  <div class="mb-3">
+    <label for="nameInput" class=" text-light form-label">Name</label>
+    <div class="input-group input-group-sm">
+      <input type="text" class="form-control form-control-sm" id="nameInput" name="user_name" placeholder="John Doe" required>
+      <span class="input-group-text" id="nameIcon" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+          <circle cx="3" cy="8" r="1.5"></circle>
+          <circle cx="8" cy="8" r="1.5"></circle>
+          <circle cx="13" cy="8" r="1.5"></circle>
+        </svg>
+      </span>
+    </div>
+  </div>
+
+  
+  <div class="mb-3">
+    <label for="emailInput" class="text-light form-label">Email</label>
+    <input type="email" class="form-control form-control-sm" id="emailInput" name="user_email" placeholder="jdoe@fakeemail.com" required>
+  </div>
+
+  
+  <div class="mb-3">
+    <label for="messageTextarea" class=" text-light form-label">Message</label>
+    <textarea class="form-control form-control-sm" id="messageTextarea" name="user_message" placeholder="Enter your comment here." rows="4" required></textarea>
+  </div>
+
+
+  <button type="submit" class="btn btn-success">Send Message</button>
+    </form>
+        </div>
+      </div>
+    </div>
+    <br>
+
+
+    <!-- Footer -->
+
+
+
+    <footer class="py-4 bg-white text-black">
+      <div class="container d-flex justify-content-between align-items-center">
+        <span>&copy; John Doe</span>
+        <span>Desktop Version&reg;</span>
+      </div>
+
+</footer>
+
+
+
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
