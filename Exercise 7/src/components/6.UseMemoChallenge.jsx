@@ -10,9 +10,7 @@ import { useState, useMemo } from "react";
 export default function UseMemoChallenge() {
   const [number, setNumber] = useState(0);
 
-  const factorial = useMemo(() => {
-    console.log("Factorial calculated");
-    
+  const factorial = useMemo(() => {    
     let total = 1;
     for(let i = 1; i <= number; i++) {
       total = total * i;
@@ -27,6 +25,7 @@ export default function UseMemoChallenge() {
         <input
           type="number"
           value={number}
+          min={0}
           onChange={(e) => setNumber(parseInt(e.target.value))}
           placeholder="Enter a number"
         />

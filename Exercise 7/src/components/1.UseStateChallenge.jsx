@@ -11,8 +11,6 @@ export default function UseStateChallenge() {
   const [show, setShow] = useState(true);
 
   const toggleDiv = () => {setShow(!show)}
-  console.log(show)
-
 
   return (
     <main>

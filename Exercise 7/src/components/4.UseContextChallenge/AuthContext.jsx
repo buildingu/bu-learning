@@ -27,12 +27,14 @@ const AuthContext = createContext();
 export function AuthContextProvider({ children }) {
   const [user, setUser] = useState(null);
 
-  function login() {
-    setUser({
+  const userInfo = {
     firstName: "Richard",
     lastName: "Docs",
     email: "richardocs@mail"
-  })
+  }
+
+  function login() {
+    setUser(userInfo)
   }
 
   function logout() {

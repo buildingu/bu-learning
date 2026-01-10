@@ -123,9 +123,7 @@ export default function FinalChallenge() {
   function handleSubmit(e) {
     e.preventDefault();
     const errors = validation();
-    console.log(errors)
     if (!Object.values(errors).some(Boolean)) {
-      console.log("Yes")
       dispatch({ type: "clearForm" });
       alert("You have filled out the form successfully")
       firstInputRef.current?.focus()
