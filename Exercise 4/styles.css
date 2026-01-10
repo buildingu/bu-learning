@@ -1,0 +1,58 @@
+:root{
+  --accent: #0d6efd;
+  --muted-bg: #f8f9fa;
+  --hero-bg: linear-gradient(135deg, rgba(176,32,64,0.85) 0%, rgba(40,40,60,0.85) 45%, rgba(64,48,140,0.85) 100%);
+}
+body {
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #222;
+  background-color: var(--muted-bg);
+}
+.hero{
+  padding: 5.5rem 0;
+  background-image: url('https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=1a6ecfebf7b5f18e9aa8b5f0a8d1716b');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.45) 100%);
+}
+.hero .container { position: relative; z-index: 2; }
+.hero h1 { font-size: clamp(1.6rem, 3.4vw, 3.2rem); }
+.hero p { font-size: 1.1rem; }
+.profile-img{
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border: 8px solid rgba(255,255,255,0.08);
+  background: white;
+}
+#portfolio { padding-top: 2rem; padding-bottom: 3rem; }
+.card { border-radius: .35rem; }
+.contact-section{
+  background-image: url('https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=1a6ecfebf7b5f18e9aa8b5f0a8d1716b');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.contact-section::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%);
+}
+.contact-section .container { position: relative; z-index: 2; }
+.contact-section .form-control,
+.contact-section .form-label{
+  background: rgba(255,255,255,0.95);
+  color: #111;
+}
+footer { border-top: 1px solid #eee; }
+@media (max-width: 767.98px){
+  .profile-img { width: 220px; height: 220px; margin: 0 auto; display:block; }
+  .hero { padding: 4rem 0; }
+}

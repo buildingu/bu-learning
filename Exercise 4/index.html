@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BuildingU — My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">BuildingU</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="hero d-flex align-items-center text-white">
+      <div class="container text-center">
+        <h1 class="display-5 fw-bold mb-3">Welcome to My BuildingU Projects Page</h1>
+        <p class="lead mb-4">Discover my work on GitHub.</p>
+        <a href="#portfolio" class="btn btn-primary btn-lg">View My Work</a>
+      </div>
+    </header>
+
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <h2 class="mb-4">About Me</h2>
+            <p>Hey, I'm John Doe, and I'm passionate about web development and coding. I volunteer my skills to build amazing websites and write efficient code that brings ideas to life.
+
+With several years of experience in the field, I've had the privilege of working on a wide range of projects, from creating responsive and user-friendly websites to developing custom web applications that solve complex problems.
+
+My journey in web development has allowed me to explore various technologies and frameworks, and Bootstrap is one of my favorites. It's a fantastic tool for creating sleek and responsive web designs, which is why I'm excited to share my knowledge with you through this exercise.</p>
+            <ul class="list-unstyled mt-3">
+              <li><strong>Skills:</strong> HTML, CSS, JavaScript, Bootstrap, Responsive Design</li>
+              <li><strong>Achievements:</strong> Built 10+ portfolio projects, active contributor on GitHub</li>
+            </ul>
+          </div>
+          <div class="col-lg-5 text-center">
+            <img src="https://placehold.co/300x300/png?text=Profile" alt="Profile picture" class="rounded-circle img-fluid profile-img shadow-lg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">My Portfolio</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" class="card-img-top px-4 pt-4" style="height:160px; object-fit:contain;" alt="HTML project">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Project 1: HTML</h5>
+                <p class="card-text">Project 1 showcases HTML skills with tables and static form components.</p>
+                <div class="mt-auto">
+                  <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#project1Modal">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" class="card-img-top px-4 pt-4" style="height:160px; object-fit:contain;" alt="CSS project">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Project 2: CSS</h5>
+                <p class="card-text">A stylized event webpage using HTML and CSS with custom components.</p>
+                <div class="mt-auto">
+                  <button class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#project2Modal">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" class="card-img-top px-4 pt-4" style="height:160px; object-fit:contain;" alt="JS project">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Project 3: Advanced CSS</h5>
+                <p class="card-text">A responsive webpage combining advanced CSS techniques (desktop & mobile).</p>
+                <div class="mt-auto">
+                  <button class="btn btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#project3Modal">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5 contact-section text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="mb-4">Contact Me</h2>
+            <form id="contactForm" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Enter your comment here." required></textarea>
+                <div class="invalid-feedback">Please enter a message.</div>
+              </div>
+              <button class="btn btn-success" type="submit">Send Message</button>
+            </form>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-3 bg-white">
+      <div class="container d-flex justify-content-between">
+        <small>© 2023 John Doe</small>
+        <small>Desktop Version®</small>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="project1ModalLabel">Project 1 — HTML</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Details about Project 1 — includes tables, static forms, and semantic HTML. Replace this text with a project description, screenshots and links (for example to your GitHub repo).</p>
+            <a href="#" class="btn btn-primary" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="project2ModalLabel">Project 2 — CSS</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Details about Project 2 — stylized event webpage using CSS and custom components. Add screenshots, a live demo link, and code snippets as needed.</p>
+            <a href="#" class="btn btn-primary" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="project3ModalLabel">Project 3 — Advanced CSS</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Details about Project 3 — responsive design, advanced CSS (animations, grid/flex layout). Link to live site and repository.</p>
+            <a href="#" class="btn btn-primary" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
