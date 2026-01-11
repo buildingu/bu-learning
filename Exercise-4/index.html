@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuildingU Learning Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <style>
+    .hero {
+      background-image: url('assets/background.jpg');
+      background-repeat: no-repeat;
+      padding: 100px 0;
+      color: white;
+      background-size: cover;
+
+
+    }
+
+    .project-card {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">BuildingU</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Welcome to My BuildingU Portfolio</h1>
+          <p>Discover my learning journey and projects.</p>
+          <a href="#portfolio" class="btn btn-primary">View My Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="assets/newProf.png" alt="Profile Image" class="img-fluid rounded-circle">
+        </div>
+        <div class="col-lg-8">
+          <h2>About Me</h2>
+          <p>
+
+            Hey, I'm Navaneeth Sujith, and I'm passionate about web development and coding. I volunteer my skills to
+            build amazing websites and write efficient code that brings ideas to life.
+            With several years of experience in the field, I've had the privilege of working on a wide range of
+            projects, from creating responsive and user- friendly websites to developing custom web applications that
+            solve complex problems.
+            My journey in web development has allowed me to explore various technologies and frameworks, and Bootstrap
+            is one of my favorites. It's a fantastic tool for creating sleek and responsive web designs, which is why
+            I'm excited to share my knowledge with you through this exercise.</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="py-5">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card project-card"> <img src="assets/html.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project 1: HTML</h5>
+              <p class="card-text">
+
+              Project 1 showcases my HTML skills. It's a webpage involving HTML with table and static form components. Click learn more to see the project.</p> <a href="#" class="btn btn-primary"
+                data-bs-toggle="modal" data-bs-target="#project1Modal">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card project-card"> <img src="assets/css.png" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Project 2: CSS</h5>
+              <p class="card-text"> Project 2 showcases my CSS skills. It's a stylized webpage for an event done using HTML and CSS with custom components. Click learn more to see the project.</p> <a href="#" class="btn btn-primary"
+                data-bs-toggle="modal" data-bs-target="#project2Modal">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card project-card"> <img src="assets/js.png" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Project 3: Advanced CSS</h5>
+              <p class="card-text">Project 3 showcases my advanced CSS skills. It's a responsive webpage (Desktop & Mobile) from Project 1. Click learn more to see the project.</p> <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project1ModalLabel">Project 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> Here is the link: https://github.com/buildingu/bu-learning/blob/5b493291272711d9e4ecf5871faca73e121ba03f/Exercise-2/index.html</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project2ModalLabel">Project 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> Here is the link: https://github.com/buildingu/bu-learning/blob/5b493291272711d9e4ecf5871faca73e121ba03f/Exercise-2/index.html</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project3ModalLabel">Project 3</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <p>Here is the link: https://github.com/buildingu/bu-learning/blob/5b493291272711d9e4ecf5871faca73e121ba03f/Exercise-2/index.html</p>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
