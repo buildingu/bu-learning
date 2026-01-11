@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 1: HTML - January 10th, 2026</title>
+</head>
+
+<body>
+  <center>
+    <h1>Exercise 1: HTML - January 10th, 2026</h1>
+
+    <hr>
+
+    <h2>About Me Table</h2>
+
+    <table cellpadding="10" border="1">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Favorite Movie Image</th>
+        <th>Favorite Music Audio Sample</th>
+        <th>Favorite Video Sample</th>
+      </tr>
+      <tr>
+        <td>Aadit</td>
+        <td>Talele</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/The_Dark_Knight">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/The_Dark_Knight_%282008_film%29.jpg/250px-The_Dark_Knight_%282008_film%29.jpg"
+              alt="The Dark Knight Movie Poster"
+              width="150">
+          </a>
+        </td>
+        <td>
+          <audio controls>
+            <source src="im-batman.mp3" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <video width="200" controls>
+            <source src="bat_flying.mp4" type="video/mp4">
+          </video>
+        </td>
+      </tr>
+    </table>
+
+    <h2>About Me Form</h2>
+    <form>
+      <div>
+        <label>Full Name:</label>
+        <br>
+        <input type="text" name="fullname" placeholder="Enter your full name">
+      </div>
+      
+      <br>
+
+      <div>
+        <label>Email:</label>
+        <br>
+        <input type="email" name="email" placeholder="Enter your email address">
+      </div>
+
+      <br>
+
+      <div>
+        <label>Password:</label>
+        <br>
+        <input type="password" name="password" placeholder="Enter your password">
+      </div>
+
+      <br>
+
+      <div>
+        <label>Available Days:</label>
+        <br>
+        <input type="checkbox" name="days" value="Monday">
+        <label>Monday</label>
+        <br>
+        <input type="checkbox" name="days" value="Tuesday">
+        <label>Tuesday</label>
+        <br>
+        <input type="checkbox" name="days" value="Wednesday">
+        <label>Wednesday</label>
+        <br>
+        <input type="checkbox" name="days" value="Thursday">
+        <label>Thursday</label>
+        <br>
+        <input type="checkbox" name="days" value="Friday">
+        <label>Friday</label>
+      </div>
+
+      <br>
+
+      <div>
+        <label>Available Time:</label>
+        <br>
+        <select name="time">
+          <option value="morning">Morning, 6 AM - 11 AM</option>
+          <option value="afternoon">Afternoon, 12 PM - 3 PM</option>
+          <option value="evening">Evening, 5 PM - 8 PM</option>
+        </select>
+      </div>
+
+      <br>
+
+      <div>
+        <label>Working on a New Website?</label>
+        <br>
+        <input type="radio" name="website" value="yes" checked>
+        <label>Yes</label>
+        <br>
+        <input type="radio" name="website" value="no">
+        <label>No</label>
+      </div>
+
+      <br>
+
+      <div>
+        <label>Comments:</label>
+        <br>
+        <textarea name="comments" rows="4" cols="40" placeholder="Enter comments"></textarea>
+      </div>
+
+      <br>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </center>
+
+</body>
+
+</html>
