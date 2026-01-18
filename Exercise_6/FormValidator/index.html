@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validator App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Form Validator</h1>
+    <form id="userForm">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" placeholder="Enter first name">
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Enter last name">
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" placeholder="Enter age">
+
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter 10-digit phone number">
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="errorMessages"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

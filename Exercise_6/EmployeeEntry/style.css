@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+input, button {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+}
+.employee-entry {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.employee-entry button {
+    margin-right: 5px;
+}
