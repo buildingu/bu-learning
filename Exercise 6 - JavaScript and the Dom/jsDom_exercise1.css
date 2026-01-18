@@ -1,0 +1,19 @@
+h1{
+    color: grey;
+    text-align: center;
+    border-style: dotted;
+    border-color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#first_name, #last_name, #phone_number, #age {
+    font-size:14px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+body{
+    background-color: azure;
+}
