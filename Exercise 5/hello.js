@@ -1,9 +1,9 @@
 function formValidator(fName, lastName, age, pNumber) {
-    // We use a flag to track if any validation failed.
-    // It starts as true, and turns false if we find ANY mistake.
+
+
     let isValid = true;
 
-    // 1. Check First Name
+
     if (!fName) {
         console.log("The name input is missing.");
         isValid = false;
@@ -12,7 +12,6 @@ function formValidator(fName, lastName, age, pNumber) {
         isValid = false;
     }
 
-    // 2. Check Last Name
     if (!lastName) {
         console.log("The last name input is missing.");
         isValid = false;
@@ -21,11 +20,8 @@ function formValidator(fName, lastName, age, pNumber) {
         isValid = false;
     }
 
-    // 3. Check Age
+
     if (!age) {
-        // Note: 0 is falsy, so checking !age catches 0 too.
-        // If 0 is valid for "presence" but invalid for age limit, we might need stricter checks,
-        // but for this exercise !age is usually sufficient for "missing".
         console.log("The age input is missing.");
         isValid = false;
     } else if (typeof age !== 'number') {
@@ -36,7 +32,7 @@ function formValidator(fName, lastName, age, pNumber) {
         isValid = false;
     }
 
-    // 4. Check Phone Number
+
     if (!pNumber) {
         console.log("The phone number input is missing.");
         isValid = false;
@@ -45,10 +41,10 @@ function formValidator(fName, lastName, age, pNumber) {
         isValid = false;
     }
 
-    // FINAL CHECK: Only print Welcome if isValid is still true
+
     if (isValid) {
         console.log("WELCOME TO THE ADOS APP.");
     }
 }
 
-formValidator("Abdul", "Hanan", 19, "8523985");
+formValidator("John", "Doe", 20, "1234567890");
