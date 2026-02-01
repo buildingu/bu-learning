@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+input, button {
+  width: 280px;
+  padding: 10px;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+#employeeList {
+  margin-top: 20px;
+  width: 280px;
+}
+
+.employee-card {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.employee-card {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.action-button {
+  margin-top: 8px;
+  margin-right: 5px;
+  padding: 6px 10px;
+  font-size: 14px;
+  width: 100px;
+}
+
+.edit {
+  background-color: #ffc107;
+  color: black;
+}
+
+.delete {
+  background-color: #dc3545;
+}

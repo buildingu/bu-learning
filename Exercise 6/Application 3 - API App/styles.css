@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+button {
+  width: 280px;
+  padding: 10px;
+  margin: 8px 0;
+  font-size: 16px;
+  background-color: #007bff;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+
+#displayJoke {
+  margin-top: 20px;
+  width: 280px;
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+}
