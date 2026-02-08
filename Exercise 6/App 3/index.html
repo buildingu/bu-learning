@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="app">
+    <div class="card">
+      <div>
+        <h1 class="title">Weather Finder 🌦️</h1>
+        <p class="subtitle">Enter a U.S. city to view current weather conditions.</p>
+      </div>
+
+    <div class="input-group">
+    <input
+        id="cityInput"
+        class="input"
+        type="text"
+        placeholder="e.g. Atlanta, GA"
+    />
+    <button id="actionBtn">Get Weather</button>
+    </div>
+
+      <p class="status" id="status">
+        Enter a city and click the button.
+      </p>
+
+      <div class="weather" id="weather"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

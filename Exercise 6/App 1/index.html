@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADOS Form Validator</title>
+  <link rel="stylesheet" href="style.css" />
+  <h2>Please enter the following details</h2>
+</head>
+<body>
+  <input id="firstName" placeholder="First Name" autocomplete="given-name" />
+  <input id="lastName" placeholder="Last Name" autocomplete="family-name" />
+  <input id="age" placeholder="Age" inputmode="numeric" />
+  <input id="phoneNumber" placeholder="Phone Number" autocomplete="tel" />
+  <button id="submitBtn" type="button">Validate</button>
+
+  <input id="messages" value="Messages will appear here." disabled />
+  <script src="script.js"></script>
+</body>
+</html>

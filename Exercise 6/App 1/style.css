@@ -1,0 +1,48 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+input, button {
+  display: block;
+  width: min(520px, 100%);
+  margin: 0 auto 12px auto;
+}
+
+
+input:focus {
+  border-color: #6b7cff;
+  box-shadow: 0 0 0 4px rgba(107, 124, 255, 0.15);
+}
+
+button {
+  border: none;
+  background: #111827;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  filter: brightness(1.05);
+}
+
+#messages {
+  background: #fff;
+  color: #111827;
+}
+
+@media (max-width: 420px) {
+  input, button {
+    font-size: 15px;
+    padding: 11px 12px;
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee CRUD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Employee Database</h1>
+
+  <form id="employeeForm">
+    <input type="text" id="name" placeholder="Name" required />
+    <input type="number" id="age" placeholder="Age" required />
+    <input type="text" id="sex" placeholder="Sex" required />
+    <input type="text" id="position" placeholder="Position" required />
+
+    <button type="button" id="addBtn">Add Entry</button>
+  </form>
+
+  <!-- JS will insert employees here -->
+  <div id="employeeList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

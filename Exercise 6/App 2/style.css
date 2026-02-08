@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: grid;
+  gap: 10px;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  border: none;
+}
+
+#employeeList {
+  max-width: 600px;
+  margin: 30px auto;
+  display: grid;
+  gap: 10px;
+}
+
+.employee {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.employee button {
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.delete {
+  background: #dc2626;
+}
+
+.edit {
+  background: #16a34a;
+}
