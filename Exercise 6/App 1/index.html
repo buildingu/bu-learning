@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta -->
+    <title>Cosmic AI • Form Validator</title>
+    <meta name="description" content="A hyper‑stylized AI-like form validator built for Exercise 6." />
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Parallax Starfield Layers -->
+    <canvas id="farStars"></canvas>
+    <canvas id="nearStars"></canvas>
+
+    <!-- Glass‑Morphism Card -->
+    <main class="card">
+      <header class="card__header">
+        <h1 class="card__title">COSMIC <span>Validator</span></h1>
+        <p class="card__subtitle">Powered by the Sentineurons &nbsp;•&nbsp; Lesson 6</p> <!-- Sentineurons = My future AI architecture -->
+      </header>
+
+      <!-- Form -->
+      <form id="cosmicForm" novalidate>
+        <div class="grid">
+
+          <!-- Ada Lovelace was a pioneer in computer science. -->
+          
+          <label class="field">
+            <span>First Name</span>
+            <input id="firstName" type="text" autocomplete="given-name" placeholder="e.g. Ada" />
+            <small></small>
+          </label>
+
+          <label class="field">
+            <span>Last Name</span>
+            <input id="lastName" type="text" autocomplete="family-name" placeholder="e.g. Lovelace" />
+            <small></small>
+          </label>
+
+          <label class="field">
+            <span>Age</span>
+            <input id="age" type="number" min="0" step="1" placeholder="18+" />
+            <small></small>
+          </label>
+
+          <label class="field">
+            <span>Phone Number</span>
+            <input
+              id="phoneNumber"
+              type="tel"
+              inputmode="tel"
+              pattern="[0-9+\-\s]{7,}"
+              placeholder="+49 123 456 789"
+            />
+            <small></small>
+          </label>
+        </div>
+
+        <button type="submit" class="cta">
+          <span class="txt">Validate</span>
+          <span class="glow"></span>
+        </button>
+      </form>
+
+      <!-- Result Banner -->
+      <section id="resultBanner" class="banner" hidden>
+        <p id="resultText"></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

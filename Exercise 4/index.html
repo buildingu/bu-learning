@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>BuildingU Portfolio – Exercise 4</title>
+
+  <!-- Bootstrap 5 (CSS + JS bundle) -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  />
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+  <!-- tweaks from CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
+  <!-- ===== Navbar ===== -->
+  <nav id="mainNav" class="navbar navbar-expand-lg bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <!-- Swap with actual logo if you have it -->
+        <img src="media/cropped-BUlogo.png" alt="BuildingU" height="30" class="me-2 d-inline-block" />
+        BuildingU
+      </a>
+
+      <!-- ===== Toggler ===== -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- ===== Navbar links ===== -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <header id="home" class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3">Welcome to My BuildingU Projects Page</h1>
+      <p class="lead mb-4">Discover my work at Building-U.</p>
+      <a href="#portfolio" class="btn btn-custom btn-lg">View My Work</a>
+      <br />
+      <br />
+      <a href="#about" class="btn btn-custom btn-lg">View About Me</a>
+    </div>
+  </header>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">About Me</h2>
+
+      <div class="row align-items-center g-4">
+        <div class="col-md-4 text-center">
+          <!-- Replace with your portrait / avatar -->
+          <img src="media/Gemini_Generated_Image_mi342zmi342zmi34.jpg" alt="Profile" class="rounded-circle img-fluid shadow" />
+        </div>
+
+        <div class="col-md-8">
+          <p class="fs-5">
+            Hey, I'm <strong>Mohamad Dabbabo</strong>, a web‑dev and AI enthusiast on a quest to fuse code with creativity.
+            Lately I've been trying Bootstrap, which is perfect for rapid, responsive builds
+            (and great for this internship’s mini‑projects).
+          </p>
+          <div class="row text-center gy-3">
+            <div class="col-6 col-lg-3">
+                <span class="badge badge-html py-2 px-3">HTML</span>
+              </div>
+              <div class="col-6 col-lg-3">
+                <span class="badge badge-css py-2 px-3">CSS</span>
+              </div>
+              <div class="col-6 col-lg-3">
+                <span class="badge badge-python py-2 px-3">Python</span>
+              </div>
+              <div class="col-6 col-lg-3">
+                <span class="badge badge-csharp py-2 px-3">C#</span>
+              </div>
+              <div class="col-6 col-lg-3">
+                <span class="badge badge-latex py-2 px-3">LaTeX</span>
+              </div>
+              <div class="col-6 col-lg-3">
+                <span class="badge badge-js py-2 px-3">JavaScript</span>              
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Portfolio ===== -->
+  <section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">My Portfolio</h2>
+
+      <div class="row gy-4">
+        <!-- Project 1: HTML -->
+<div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <img src="media/HTML5_logo_and_wordmark.svg.png" class="card-img-top" alt="HTML Project" />
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title text-center">Project 1: HTML</h5>
+        <p class="card-text flex-grow-1">
+          A simple HTML page showcasing a table of personal favorites and a styled user input form using pure HTML.
+        </p>
+        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#project1Modal">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Project 2: CSS -->
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <img src="media/CSS3_logo_and_wordmark.svg.png" class="card-img-top" alt="CSS Project" />
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title text-center">Project 2: CSS</h5>
+        <p class="card-text flex-grow-1">
+          A custom-styled event schedule for the Robotics & AI Expo 2025, featuring colored headers and responsive table layout powered by CSS.
+        </p>
+        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#project2Modal">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Project 3: Advanced CSS -->
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <img src="media/css3-logo-black-and-white.png" class="card-img-top" alt="Advanced CSS Project" />
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title text-center">Project 3: Advanced CSS</h5>
+        <p class="card-text flex-grow-1">
+          A dark, AI-themed responsive redesign: hexagon background, grid-based layout, modals, and custom form styling with advanced CSS techniques.
+        </p>
+        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#project3Modal">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--  Project 4: 4th wall break -->
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <img src="media/Bootstrap_logo.svg.png" class="card-img-top" alt="Bootstrap Project" />
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title text-center">Project 4: Bootstrap</h5>
+        <p class="card-text flex-grow-1">
+          A playful nod to the power of Bootstrap itself.
+        </p>
+        <button
+          class="btn btn-custom mt-2"
+          data-bs-toggle="modal"
+          data-bs-target="#project4Modal">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="contact py-5 text-white">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Contact Me</h2>
+
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-12">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            placeholder="Your Name"
+            required>
+          <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+
+        <div class="col-12">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            placeholder="you@gmail.com"
+            required>
+          <div class="invalid-feedback">Please enter a valid email.</div>
+        </div>
+
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea
+            id="message"
+            rows="4"
+            class="form-control"
+            placeholder="Enter your comment here."
+            required></textarea>
+          <div class="invalid-feedback">Message can’t be empty.</div>
+        </div>
+
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-custom btn-lg mt-2">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="py-3 bg-light text-center">
+    <small>&copy; 2025 Mohamad Dabbabo — <a href="#home" class="text-decoration-none">Back to top</a></small>
+  </footer>
+
+  <!-- ===== Project Modals ===== -->
+  <!-- Displays all exercises from their respective files in /media, one might need all the media stuff from their corresponding folders -->
+  <div class="modal fade" id="project1Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Project 1: HTML</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Display Exercise 1 -->
+        <div class="modal-body">
+            <div class="modal-body p-0">
+                <iframe
+                  src="media/ex1.html"
+                  title="Exercise 1 Preview"
+                  frameborder="0"
+                  style="width:100%; height:500px; min-height:400px;">
+                </iframe>
+            </div>              
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- CSS Project 2 -->
+  <div class="modal fade" id="project2Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Project 2: CSS</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0">
+          <iframe
+            src="media/ex2.html"
+            title="Exercise 2 Preview"
+            frameborder="0"
+            style="width:100%; height:500px; min-height:400px;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Advanced CSS Project 3 -->
+  <div class="modal fade" id="project3Modal" tabindex="-1" aria-hidden="true">
+    <div 
+      class="modal-dialog modal-dialog-centered" 
+      style="max-width: 90vw; width: 90vw;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Project 3: Advanced CSS</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0">
+          <iframe
+            src="media/ex3.html"
+            title="Exercise 3 Preview"
+            frameborder="0"
+            class="w-100"
+            style="height:600px; min-height:500px;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 4: Bootstrap (Fourth-Wall Break) -->
+  <div class="modal fade" id="project4Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Project 4: Bootstrap</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0">
+          <iframe
+            id="bootstrapMirror"
+            title="Bootstrap Page Preview"
+            frameborder="0"
+            class="w-100"
+            style="height:600px; min-height:400px;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Simple validation script, can be learned from w3schools, had some assistance with Copilot (GitHub), this gives functionality ===== -->
+  <!-- ===== to the buttons and ensures the 4th wall break can be mirrored infinitely. ===== -->
+  <script>
+    (() => {
+      'use strict';                             // Enforce stricter JavaScript rules for safer code
+
+      // Find all forms that need Bootstrap validation
+      const forms = document.querySelectorAll('.needs-validation');
+
+      // For each of those forms…
+      forms.forEach(form => {
+
+        // When the user submits the form…
+        form.addEventListener('submit', e => {
+
+          // If the form is invalid (built-in browser check)
+          if (!form.checkValidity()) {
+            e.preventDefault();                 // ✋ Stop the form from submitting
+            e.stopPropagation();                // ✋ Stop the event from bubbling up
+          }
+
+          // Add Bootstrap’s “was-validated” class to trigger styling
+          form.classList.add('was-validated');
+
+        }, false);  // false means use bubbling phase (standard behavior)
+      });
+
+    })();  // Immediately invoke this function so validation setup runs right away
+
+    // Wait until the whole page is loaded before doing modal stuff
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Grab the Project 4 modal element by its ID
+      const project4Modal = document.getElementById('project4Modal');
+
+      // Grab the iframe inside that modal by its ID
+      const mirror = document.getElementById('bootstrapMirror');
+
+      // When the Project 4 modal is about to be shown…
+      project4Modal.addEventListener('show.bs.modal', () => {
+
+        // Take the current page URL, and strip off any ?query or #hash
+        let url = window.location.href.split(/[?#]/)[0];
+
+        // Add a changing timestamp (?mirror=…) so the browser reloads it fresh
+        url += '?mirror=' + Date.now();
+
+        // Point the iframe at that fresh-URL, causing it to load the page inside itself
+        mirror.src = url;
+      });
+    });
+  </script>
+
+</body>
+</html>
