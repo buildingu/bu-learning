@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator App</title>
+    <style>
+        /* Add some basic styles */
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input { margin: 10px 0; display: block; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Form Validator</h1>
+    <input type="text" id="name" placeholder="Enter your name" />
+    <input type="number" id="age" placeholder="Enter your age" />
+    <input type="text" id="email" placeholder="Enter your email" />
+    <button id="validateBtn">Validate</button>
+    <div id="errorMessages" class="error"></div>
+
+    <script>
+        document.getElementById('validateBtn').addEventListener('click', function() {
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const email = document.getElementById('email').value;
+            const messages = [];
+
+            if (!name) messages.push("Name is required.");
+            if (age < 18 || age > 100) messages.push("Age must be between 18 and 100.");
+            if (!email.includes('@')) messages.push("Email must be valid.");
+
+            document.getElementById('errorMessages').innerHTML = messages.join('<br>');
+        });
+    </script>
+</body>
+</html>

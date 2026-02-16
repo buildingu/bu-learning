@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API App</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Random User Generator</h1>
+    <button id="fetchBtn">Fetch User</button>
+    <div id="userInfo"></div>
+
+    <script>
+        document.getElementById('fetchBtn').addEventListener('click', function() {
+            fetch('https://randomuser.me/api/')
+                .then(response => response.json())
+                .then(data => {
+                    const user = data.results[0];
+                    document.getElementById('userInfo').innerHTML = `
+                        <p>Name: ${user.name.first} ${user.name.last}</p>
+                        <p>Email: ${user.email}</p>
+                        <img src="${user.picture.thumbnail}" alt="User Picture">
+                    `;
+                })
+                .catch(error => console.error('Error fetching user:', error));
+        });
+    </script>
+</body>
+</html>

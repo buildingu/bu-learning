@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Movies</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Desktop Styles */
+        @media screen and (min-width: 768px) {
+            body {
+                background-image: url('desktop/backgrounds/myackgroundimage2.jpg'); /* Replace with your desktop image path */
+                background-size: cover;
+                color: white;
+            }
+            
+            header {
+                text-align: center;
+                padding: 20px;
+            }
+            
+            .content-section {
+                margin: 20px;
+                padding: 20px;
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 10px;
+            }
+            
+            footer {
+                text-align: center;
+                padding: 10px;
+            }
+        }
+
+        /* Mobile Styles */
+        @media screen and (max-width: 767px) {
+            body {
+                background-image: url('desktop/backgrounds/mybackgroundimage1.jpg'); /* Replace with your mobile image path */
+                background-size: cover;
+                color: black;
+            }
+            
+            header {
+                text-align: center;
+                padding: 10px;
+            }
+            
+            .content-section {
+                margin: 10px;
+                padding: 15px;
+                background: rgba(255, 255, 255, 0.8);
+                border-radius: 8px;
+            }
+            
+            footer {
+                text-align: center;
+                padding: 5px;
+            }
+        }
+
+     
+        .content-section:not(:last-child) {
+            border-bottom: 2px solid white;
+        }
+
+    
+        .content-section:nth-child(odd) {
+            background: rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Marvel Movies</h1>
+    </header>
+    <main>
+        <section class="content-section">
+            <h2>About Marvel</h2>
+            <p>Marvel Entertainment is known for its superhero comics and films, featuring iconic characters like Spider-Man, Iron Man, and the Avengers.</p>
+        </section>
+        <section class="content-section">
+            <h2>Featured Movies</h2>
+            <ul>
+                <li>The Avengers (2012)</li>
+                <li>Black Panther (2018)</li>
+                <li>Spider-Man: No Way Home (2021)</li>
+                <li>Guardians of the Galaxy (2014)</li>
+                <li>Doctor Strange (2016)</li>
+            </ul>
+        </section>
+        <section class="content-section">
+            <h2>Contact Us</h2>
+            <p>For more information, reach out to us at <a href="mailto:info@marvelmovies.com">info@marvelmovies.com</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Marvel Movies</p>
+    </footer>
+</body>
+</html>
