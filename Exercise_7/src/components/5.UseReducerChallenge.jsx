@@ -77,7 +77,8 @@ export default function UseReducerChallenge() {
                   backgroundColor: '#c0440b',
                   display: 'flex',
                   justifyContent: 'space-between',
-                  alignItems: 'center'
+                  alignItems: 'center',
+                  marginBottom: '10px'
                 }}
               >
                 <span>{todo.text}</span>
