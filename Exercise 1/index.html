@@ -6,10 +6,13 @@
 </head>
 
 <body>
+<center>
     <!--heading-->
    <h1>Exercise 1: HTML</h1> 
-   <h2>2/18/26</h2>
+   <h2>Date Submitted: 2/18/26</h2>
     <!--table-->
+    <hr>
+    <h2>Facts About Me</h2>
     <table border="1" cellpadding="7">
         <tr>
             <th>First Name</th>
@@ -19,32 +22,60 @@
             <th>Favorite Video Sample</th>
         </tr>  
         <tr>
-            <td>Anna</td>
-            <td>Smith</td>
+            <td>Cayla</td>
+            <td>Huang</td>
             <td><img src="https://resizing.flixster.com/e4Ly5CeFRzwcDnnWemDQ_8YqNTo=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzZiZjRiZGZjLWFhOTItNGZlMi1hNmQ0LWE3NDhkOGQ0ZDAyYS53ZWJw" width = 100></td>
             <td><audio controls><source src="Sample Audio Exercise 1.mp3" type="audio/mp3"></audio></td>
-            <td><iframe width="560" height="315" src="https://www.youtube.com/watch?v=PWIaHHO2OO4"></iframe></td>
+            <td><video width="320" height="240" controls><source src="Sample Video Exercise 1.mp4" type="video/mp4"></video></td>
         </tr>
     </table>
+    <hr>
     <!--form-->
     <form>
-            <label>Full Name: </label>
-            <input type="text", placeholder="Enter your full name"> <br>
-            <label>Email: </label>
-            <input type="email", placeholder="Enter your email"> <br>
-            <label>Password: </label>
-            <input type="password"> <br>
-            <label>Available Days: </label> <br>
-                <input type="checkbox"> Monday 
-                <input type="checkbox"> Tuesday 
-                <input type="checkbox"> Wednesday 
-                <input type="checkbox"> Thursday 
-                <input type="checkbox"> Friday 
-                <input type="checkbox"> Saturday 
-                <input type="checkbox"> Sunday 
-            <label>Available Time</label>
-
+        <h2>Enter Your Information Below:</h2>
+        <label>Full Name: </label>
+        <input type="text", placeholder="Enter your full name"> 
+        <br>
+        <br>
+        <label>Email: </label>
+        <input type="email", placeholder="Enter your email"> 
+        <br>
+        <br>
+        <label>Password: </label>
+        <input type="password" placeholder="Enter your password"> 
+        <br>
+        <br>
+        <label>Available Days: </label> <br>
+            <input type="checkbox"> Monday 
+            <input type="checkbox"> Tuesday 
+            <input type="checkbox"> Wednesday 
+            <input type="checkbox"> Thursday 
+            <input type="checkbox"> Friday 
+            <input type="checkbox"> Saturday 
+            <input type="checkbox"> Sunday 
+        <br>
+        <br>
+        <label>Available Time:</label>
+        <select>
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Evening</option>
+        </select>
+        <br>
+        <br>
+        <label>Working on a New Website?</label>
+            <input type="radio" checked>Yes</input>
+            <input type="radio">No</input>
+        <br>
+        <br>
+        <textarea col="30" row="10" placeholder="Enter your comments here"></textarea>
+        <br>
+        <br>
+        <button>Submit</button>
+        <button>Reset</button>
    </form>
+   <hr>
+</center>
 </body>
 
 
