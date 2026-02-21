@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Exercise 1</title>
+    <title>Exercise 1: HTML</title>
     <meta charset="UTF-8">
 </head>
 
@@ -24,7 +24,7 @@
         <tr>
             <td>Cayla</td>
             <td>Huang</td>
-            <td><img src="https://resizing.flixster.com/e4Ly5CeFRzwcDnnWemDQ_8YqNTo=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzZiZjRiZGZjLWFhOTItNGZlMi1hNmQ0LWE3NDhkOGQ0ZDAyYS53ZWJw" width = 100></td>
+            <td><img src="https://resizing.flixster.com/e4Ly5CeFRzwcDnnWemDQ_8YqNTo=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzZiZjRiZGZjLWFhOTItNGZlMi1hNmQ0LWE3NDhkOGQ0ZDAyYS53ZWJw" width="100" alt="Favorite movie image"></td>
             <td><audio controls><source src="assets/Sample Audio Exercise 1.mp3" type="audio/mp3"></audio></td>
             <td><video width="320" height="240" controls><source src="assets/Sample Video Exercise 1.mp4" type="video/mp4"></video></td>
         </tr>
@@ -34,11 +34,11 @@
     <form>
         <h2>Enter Your Information Below:</h2>
         <label>Full Name: </label>
-        <input type="text", placeholder="Enter your full name"> 
+        <input type="text" placeholder="Enter your full name"> 
         <br>
         <br>
         <label>Email: </label>
-        <input type="email", placeholder="Enter your email"> 
+        <input type="email" placeholder="Enter your email"> 
         <br>
         <br>
         <label>Password: </label>
@@ -46,13 +46,13 @@
         <br>
         <br>
         <label>Available Days: </label> <br>
-            <input type="checkbox"> Monday 
-            <input type="checkbox"> Tuesday 
-            <input type="checkbox"> Wednesday 
-            <input type="checkbox"> Thursday 
-            <input type="checkbox"> Friday 
-            <input type="checkbox"> Saturday 
-            <input type="checkbox"> Sunday 
+            <input type="checkbox" name="available" value="monday"> Monday 
+            <input type="checkbox" name="available" value="tuesday"> Tuesday 
+            <input type="checkbox" name="available" value="wednesday"> Wednesday 
+            <input type="checkbox" name="available" value="thursday"> Thursday 
+            <input type="checkbox" name="available" value="friday"> Friday 
+            <input type="checkbox" name="available" value="saturday"> Saturday 
+            <input type="checkbox" name="available" value="sunday"> Sunday 
         <br>
         <br>
         <label>Available Time:</label>
@@ -64,11 +64,11 @@
         <br>
         <br>
         <label>Working on a New Website?</label>
-            <input type="radio" checked>Yes</input>
-            <input type="radio">No</input>
+            <input type="radio" name="worknew" value="yes" checked>Yes
+            <input type="radio" name="worknew" value="no">No
         <br>
         <br>
-        <textarea col="30" row="10" placeholder="Enter your comments here"></textarea>
+        <textarea cols="30" rows="10" placeholder="Enter your comments here"></textarea>
         <br>
         <br>
         <button>Submit</button>
@@ -77,6 +77,4 @@
    <hr>
 </center>
 </body>
-
-
 </html>
