@@ -1,0 +1,38 @@
+/* #9E72C3; #924DBF; #7338A0; #4A2574; #0F0529; */
+
+body{
+	font-family: poppins, Arial, sans-serif;
+	color: #9E72C3;
+	background-color: #0F0529;
+	text-align: center;
+}
+h1, h2, h3, h4, h5, h6{
+	color: #9E72C3;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+aside {
+	flex: 0 0 300px;
+	width: 25%;
+	background-color: #7338A0;
+	padding: 15px;
+	box-sizing: border-box;
+	border: 2.5px solid #4A2574;
+	border-radius: 6px;
+}
+
+aside th {
+	border: 1px solid #0F0529;
+	padding: 8px;
+	text-align: center;
+}
+
+aside td {
+	border: 1px solid #0F0529;
+	padding: 8px;
+	text-align: left;
+	vertical-align: middle;
+	text-align: center;
+	padding: 10px;
+}
