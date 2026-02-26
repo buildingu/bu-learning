@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 15px;             
+}
+body {
+    text-align: center;
+}
+
+h1 {
+    display: inline;
+}
+
+table {
+    border: 2px solid black;
+    padding:5px;
+    margin: 20px auto;  
+}
+
+th, td {
+    border: 2px solid gold;
+    padding: 10px;
+}
+
+form {
+    width: 100%;
+    padding:10px;
+    margin: 20px auto;
+}
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    margin-right: 15px;
+}
+.gold {
+    width: 750px;
+    padding: 10px; 
+    border: 5px solid gold;
+}
+
+.black {
+    width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    border: 5px solid black;
+}

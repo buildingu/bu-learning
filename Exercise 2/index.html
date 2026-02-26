@@ -3,58 +3,91 @@
 <head>
     <title>Exercise 2: CSS</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-<h1>Class of 2026 Graduation Party</h1>
-<!--table-->
-<h3>Potluck Sign Up</h3>
-<table>
-    <tr>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Item Being Brought</th>
-    </tr>
-    <tr>
-    <td>Scarlett Spencer</td>
-    <td>scarlttspncer713@gmail.com</td>
-    <td>Chips</td>
-    </tr>
-    <tr>
-    <td>Bellatrix Black</td>
-    <td>bellablck880@gmail.com</td>
-    <td>Soda</td>
-    </tr>
-    <tr>
-    <td>Adam Arden</td>
-    <td>aarden123@gmail.com</td>
-    <td>Donuts</td>
-    </tr>
-    <tr>
-    <td>Claire Cyrus</td>
-    <td>claireccc000@gmail.com</td>
-    <td>Sandwiches</td>
-    </tr>
-</table>
-<!--form-->
-<h3>Want to bring something for the graduates?</h3>
-<form>
-<label>Name:</label>
-<input type="text" placeholder="Enter your full name">
-<br>
-<label>Email:</label>
-<input type="email" placeholder="Enter your email">
-<br>
-<label>Things that are needed:</label>
-    <input type="checkbox" name="item" value="napkins"> Napkins 
-    <input type="checkbox" name="item" value="coffee"> Coffee 
-    <input type="checkbox" name="item" value="candy"> Candy 
-    <input type="checkbox" name="item" value="pizza"> Pizza 
-    <input type="checkbox" name="item" value="cupcakes"> Cupcakes 
-<br>
-<button>I want to bring the item(s) I selected</button>
-</form>
-
+    <div class="header">
+        <img src="assets/graduation cap.jpg" width="150" height="150" alt="Graduation cap">
+        <h1>Class of 2026 Graduation Party</h1>
+        <img src="assets/graduation cap.jpg" width="150" height="150" alt="Graduation cap">
+    </div>
+    <div class='black'>
+        <div class="gold">
+            <!--media-->
+            <br>
+            <video width="320" height="240" controls>
+                <source src="assets/Cap Throwing.mp4" type="video/mp4">
+            </video>
+            <br>
+            <audio controls>
+                <source src="assets/Graduation Audio.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <br>
+        <div class="gold">
+            <!--details-->
+            <h2>Details</h2>
+            <h3>Location: The Best High School</h3>
+            <h3>Time: 4:00PM - 7:00PM</h3>
+            <h3>Who? All are welcome: Students, Families, Teachers</h3>
+            <h4>Any Questions? Email scarlttspncer713@gmail.com</h4>
+        </div>
+        <br>
+        <div class="gold">
+            <!--table-->
+            <h2>Potluck Sign Up</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Item Being Brought</th>
+                </tr>
+                <tr>
+                    <td>Scarlett Spencer</td>
+                    <td>scarlttspncer713@gmail.com</td>
+                    <td>Chips</td>
+                </tr>
+                <tr>
+                    <td>Bellatrix Black</td>
+                    <td>bellablck880@gmail.com</td>
+                    <td>Soda</td>
+                </tr>
+                <tr>
+                    <td>Adam Arden</td>
+                    <td>aarden123@gmail.com</td>
+                    <td>Donuts</td>
+                </tr>
+                <tr>
+                    <td>Claire Cyrus</td>
+                    <td>claireccc000@gmail.com</td>
+                    <td>Sandwiches</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="gold">
+            <!--form-->
+            <h3>Want to bring something for the graduates?</h3>
+            <form>
+                <div class="form-row">
+                    <label>Name:</label>
+                    <input type="text" name="name" placeholder="Enter your full name">
+                </div>
+                <div class="form-row">
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="checkbox-group">
+                    <label>Things that are needed:</label>
+                        <input type="checkbox" name="item" value="napkins"> Napkins 
+                        <input type="checkbox" name="item" value="coffee"> Coffee 
+                        <input type="checkbox" name="item" value="candy"> Candy 
+                        <input type="checkbox" name="item" value="pizza"> Pizza 
+                        <input type="checkbox" name="item" value="cupcakes"> Cupcakes 
+                </div>
+                <button type="submit">I want to bring the item(s) I selected</button>
+            </form>
+        </div>
+    </div>
 </body>
-
 </html>
