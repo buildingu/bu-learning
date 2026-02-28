@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="back-link">
+                <a href="../home.html">← Back to Home</a>
+            </div>
+
+            <h1>Form Validator</h1>
+
+            <form id="validationForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input 
+                        type="text" 
+                        id="fullName" 
+                        name="fullName" 
+                        placeholder="Enter your full name"
+                        required
+                    >
+                    <span class="error" id="fullNameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Enter your email"
+                        required
+                    >
+                    <span class="error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Enter your password"
+                        required
+                    >
+                    <span class="error" id="passwordError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input 
+                        type="password" 
+                        id="confirmPassword" 
+                        name="confirmPassword" 
+                        placeholder="Confirm your password"
+                        required
+                    >
+                    <span class="error" id="confirmPasswordError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input 
+                        type="number" 
+                        id="age" 
+                        name="age" 
+                        placeholder="Enter your age"
+                        required
+                    >
+                    <span class="error" id="ageError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input 
+                        type="tel" 
+                        id="phoneNumber" 
+                        name="phoneNumber" 
+                        placeholder="Enter your phone number"
+                        required
+                    >
+                    <span class="error" id="phoneNumberError"></span>
+                </div>
+
+                <button type="submit" class="submit-btn">Validate & Submit</button>
+            </form>
+
+            <div id="successMessage" class="success-message hidden">
+                ✓ Form submitted successfully!
+            </div>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>

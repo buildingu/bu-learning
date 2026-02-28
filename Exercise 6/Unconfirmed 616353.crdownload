@@ -1,0 +1,104 @@
+const form = document.getElementById('validationForm');
+const successMessage = document.getElementById('successMessage');
+
+const validationRules = {
+    fullName: {
+        validate: (value) => {
+            if (!value.trim()) return false;
+            if (value.trim().split(' ').length < 2) return false;
+            if (!/^[a-zA-Z\s]+$/.test(value)) return false;
+            return true;
+        },
+        message: 'Full name must contain at least two words with only letters and spaces'
+    },
+    email: {
+        validate: (value) => {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(value);
+        },
+        message: 'Please enter a valid email address'
+    },
+    password: {
+        validate: (value) => {
+            if (value.length < 8) return false;
+            if (!/[A-Z]/.test(value)) return false;
+            if (!/[a-z]/.test(value)) return false;
+            if (!/[0-9]/.test(value)) return false;
+            if (!/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(value)) return false;
+            return true;
+        },
+        message: 'Password must be at least 8 characters with uppercase, lowercase, number, and special character'
+    },
+    confirmPassword: {
+        validate: (value) => {
+            const password = document.getElementById('password').value;
+            return value === password;
+        },
+        message: 'Passwords do not match'
+    },
+    age: {
+        validate: (value) => {
+            const age = parseInt(value);
+            return age >= 18 && age <= 120;
+        },
+        message: 'Age must be between 18 and 120'
+    },
+    phoneNumber: {
+        validate: (value) => {
+            const phoneRegex = /^(\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/;
+            return phoneRegex.test(value.replace(/\s/g, ''));
+        },
+        message: 'Please enter a valid phone number (e.g., 123-456-7890 or (123) 456-7890)'
+    }
+};
+
+Object.keys(validationRules).forEach(fieldName => {
+    const input = document.getElementById(fieldName);
+    input.addEventListener('blur', () => validateField(fieldName));
+});
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    if (validateForm()) {
+        successMessage.classList.remove('hidden');
+        form.reset();
+        document.querySelectorAll('input').forEach(input => {
+            input.classList.remove('error-input');
+            const errorElement = document.getElementById(input.id + 'Error');
+            if (errorElement) errorElement.textContent = '';
+        });
+        
+        setTimeout(() => {
+            successMessage.classList.add('hidden');
+        }, 3000);
+    }
+});
+
+function validateField(fieldName) {
+    const input = document.getElementById(fieldName);
+    const errorElement = document.getElementById(fieldName + 'Error');
+    const rule = validationRules[fieldName];
+
+    if (!rule.validate(input.value)) {
+        input.classList.add('error-input');
+        errorElement.textContent = rule.message;
+        return false;
+    } else {
+        input.classList.remove('error-input');
+        errorElement.textContent = '';
+        return true;
+    }
+}
+
+function validateForm() {
+    let isValid = true;
+    
+    Object.keys(validationRules).forEach(fieldName => {
+        if (!validateField(fieldName)) {
+            isValid = false;
+        }
+    });
+    
+    return isValid;
+}

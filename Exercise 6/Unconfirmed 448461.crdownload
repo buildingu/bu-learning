@@ -1,0 +1,14 @@
+document.querySelectorAll('.app-card').forEach(card => {
+    card.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = this.getAttribute('href');
+    });
+
+    card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-10px)';
+    });
+
+    card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+    });
+});

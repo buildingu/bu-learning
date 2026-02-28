@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Finder</title>
+    <link rel="stylesheet" href="pokemon.css">
+</head>
+<body>
+    <div class="container">
+        <div class="back-link">
+            <a href="../home.html">← Back to Home</a>
+        </div>
+
+        <div class="wrapper">
+            <h1>Pokemon Finder</h1>
+            <p class="subtitle">Search for your favorite Pokemon</p>
+
+            <div class="search-section">
+                <input 
+                    type="text" 
+                    id="pokemonInput" 
+                    placeholder="Enter Pokemon name or number (e.g., pikachu, 25)"
+                    autocomplete="off"
+                >
+                <button id="searchBtn" class="btn-search">Search</button>
+            </div>
+
+            <div id="result" class="result-container">
+                <p class="empty-message">Enter a Pokemon name or number to get started</p>
+            </div>
+
+            <div id="errorMessage" class="error-message hidden"></div>
+        </div>
+    </div>
+
+    <script src="pokemon.js"></script>
+</body>
+</html>

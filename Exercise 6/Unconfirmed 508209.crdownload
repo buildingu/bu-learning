@@ -1,0 +1,96 @@
+const pokemonInput = document.getElementById('pokemonInput');
+const searchBtn = document.getElementById('searchBtn');
+const result = document.getElementById('result');
+const errorMessage = document.getElementById('errorMessage');
+
+const API_URL = 'https://pokeapi.co/api/v2/pokemon/';
+
+searchBtn.addEventListener('click', searchPokemon);
+
+pokemonInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        searchPokemon();
+    }
+});
+
+async function searchPokemon() {
+    const pokemonName = pokemonInput.value.trim().toLowerCase();
+
+    if (!pokemonName) {
+        showError('Please enter a Pokemon name or number');
+        return;
+    }
+
+    showLoading();
+    clearError();
+
+    try {
+        const response = await fetch(API_URL + pokemonName);
+
+        if (!response.ok) {
+            throw new Error('Pokemon not found');
+        }
+
+        const data = await response.json();
+        displayPokemon(data);
+    } catch (error) {
+        showError(`Error: ${error.message}. Please check the name/number and try again.`);
+    }
+}
+
+function displayPokemon(pokemon) {
+    const typesTags = pokemon.types.map(t => `
+        <span class="type-tag">${t.type.name}</span>
+    `).join('');
+
+    const stats = pokemon.stats.map(stat => `
+        <div class="stat-row">
+            <span class="stat-label">${stat.stat.name}</span>
+            <span class="stat-value">${stat.base_stat}</span>
+        </div>
+    `).join('');
+
+    result.innerHTML = `
+        <div class="pokemon-result">
+            <img src="${pokemon.sprites.other['official-artwork'].front_default || pokemon.sprites.front_default}" 
+                 alt="${pokemon.name}" 
+                 class="pokemon-image">
+            <div class="pokemon-name">${pokemon.name}</div>
+            <div class="pokemon-id">#${String(pokemon.id).padStart(4, '0')}</div>
+            
+            <div class="pokemon-types">
+                <span class="type-label">Type(s):</span>
+                ${typesTags}
+            </div>
+
+            <div class="pokemon-stats">
+                <div style="font-weight: 600; margin-bottom: 10px; text-align: left;">Base Stats:</div>
+                ${stats}
+            </div>
+
+            <div style="margin-top: 20px; padding: 15px; background: #f0f0f0; border-radius: 6px; text-align: left;">
+                <p><strong>Height:</strong> ${(pokemon.height / 10).toFixed(1)} m</p>
+                <p><strong>Weight:</strong> ${(pokemon.weight / 10).toFixed(1)} kg</p>
+            </div>
+        </div>
+    `;
+}
+
+function showLoading() {
+    result.innerHTML = `
+        <div class="loading">
+            <div class="spinner"></div>
+            <p style="margin-top: 15px; color: #666;">Loading Pokemon...</p>
+        </div>
+    `;
+}
+
+function showError(message) {
+    errorMessage.textContent = message;
+    errorMessage.classList.remove('hidden');
+    result.innerHTML = '<p class="empty-message">Enter a Pokemon name or number to get started</p>';
+}
+
+function clearError() {
+    errorMessage.classList.add('hidden');
+}

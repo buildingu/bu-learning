@@ -1,0 +1,108 @@
+const employeeForm = document.getElementById('employeeForm');
+const employeeList = document.getElementById('employeeList');
+const editModal = document.getElementById('editModal');
+const editForm = document.getElementById('editForm');
+const closeBtn = document.querySelector('.close');
+const cancelBtn = document.getElementById('cancelBtn');
+
+let employees = JSON.parse(localStorage.getItem('employees')) || [];
+let currentEditingId = null;
+
+function displayEmployees() {
+    if (employees.length === 0) {
+        employeeList.innerHTML = '<p class="empty-message">No employees added yet</p>';
+        return;
+    }
+
+    employeeList.innerHTML = '';
+    employees.forEach((employee, index) => {
+        const employeeCard = document.createElement('div');
+        employeeCard.className = 'employee-card';
+        employeeCard.innerHTML = `
+            <h3>${employee.name}</h3>
+            <div class="employee-info">
+                <div class="info-item">
+                    <span class="info-label">Age:</span> ${employee.age}
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Sex:</span> ${employee.sex}
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Position:</span> ${employee.position}
+                </div>
+            </div>
+            <div class="employee-actions">
+                <button class="btn btn-edit" onclick="openEditModal(${index})">Edit</button>
+                <button class="btn btn-delete" onclick="deleteEmployee(${index})">Delete</button>
+            </div>
+        `;
+        employeeList.appendChild(employeeCard);
+    });
+}
+
+employeeForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const newEmployee = {
+        name: document.getElementById('name').value,
+        age: document.getElementById('age').value,
+        sex: document.getElementById('sex').value,
+        position: document.getElementById('position').value
+    };
+
+    employees.push(newEmployee);
+    localStorage.setItem('employees', JSON.stringify(employees));
+    displayEmployees();
+    employeeForm.reset();
+});
+
+function openEditModal(index) {
+    currentEditingId = index;
+    const employee = employees[index];
+
+    document.getElementById('editName').value = employee.name;
+    document.getElementById('editAge').value = employee.age;
+    document.getElementById('editSex').value = employee.sex;
+    document.getElementById('editPosition').value = employee.position;
+
+    editModal.classList.remove('hidden');
+}
+
+function closeModal() {
+    editModal.classList.add('hidden');
+    currentEditingId = null;
+}
+
+editForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    employees[currentEditingId] = {
+        name: document.getElementById('editName').value,
+        age: document.getElementById('editAge').value,
+        sex: document.getElementById('editSex').value,
+        position: document.getElementById('editPosition').value
+    };
+
+    localStorage.setItem('employees', JSON.stringify(employees));
+    displayEmployees();
+    closeModal();
+});
+
+function deleteEmployee(index) {
+    if (confirm('Are you sure you want to delete this employee?')) {
+        employees.splice(index, 1);
+        localStorage.setItem('employees', JSON.stringify(employees));
+        displayEmployees();
+    }
+}
+
+closeBtn.addEventListener('click', closeModal);
+cancelBtn.addEventListener('click', closeModal);
+
+editModal.addEventListener('click', (e) => {
+    if (e.target === editModal) {
+        closeModal();
+    }
+});
+
+displayEmployees();

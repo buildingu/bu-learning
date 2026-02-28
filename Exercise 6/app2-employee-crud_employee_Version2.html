@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee CRUD</title>
+    <link rel="stylesheet" href="employee.css">
+</head>
+<body>
+    <div class="container">
+        <div class="back-link">
+            <a href="../home.html">← Back to Home</a>
+        </div>
+
+        <div class="main-content">
+            <div class="form-section">
+                <h1>Employee Management</h1>
+                
+                <form id="employeeForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            placeholder="Enter employee name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input 
+                            type="number" 
+                            id="age" 
+                            min="18" 
+                            max="100"
+                            placeholder="Enter employee age"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sex">Sex:</label>
+                        <select id="sex" required>
+                            <option value="">Select sex</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="position">Position:</label>
+                        <input 
+                            type="text" 
+                            id="position" 
+                            placeholder="Enter job position"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit" id="addBtn" class="btn btn-primary">Add Entry</button>
+                </form>
+            </div>
+
+            <div class="table-section">
+                <h2>Employee Records</h2>
+                <div id="employeeList" class="employee-list">
+                    <p class="empty-message">No employees added yet</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="editModal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Edit Employee</h2>
+                <form id="editForm">
+                    <div class="form-group">
+                        <label for="editName">Name:</label>
+                        <input type="text" id="editName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editAge">Age:</label>
+                        <input type="number" id="editAge" min="18" max="100" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editSex">Sex:</label>
+                        <select id="editSex" required>
+                            <option value="">Select sex</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="editPosition">Position:</label>
+                        <input type="text" id="editPosition" required>
+                    </div>
+                    <div class="modal-buttons">
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                        <button type="button" class="btn btn-secondary" id="cancelBtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="employee.js"></script>
+</body>
+</html>
