@@ -99,6 +99,7 @@ export default function FinalChallenge() {
 
     //validate form
     const valForm = () => {
+        setValidity(false)
         const errors = {
             firstName : firstNameVal(userInput.firstName),
             lastName : lastNameVal(userInput.lastName),

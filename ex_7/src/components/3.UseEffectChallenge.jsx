@@ -23,8 +23,8 @@ export default function UseEffectChallenge() {
       setBooks(data.items || [])
       setLoading(false)
     })
-    .catch(() => {
-      console.log("Loading books was unsuccessful.")
+    .catch(err => {
+      console.error("Loading books was unsuccessful:", err)
       setLoading(false)
     })
   }

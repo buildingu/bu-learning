@@ -12,6 +12,9 @@ export default function UseMemoChallenge() {
 
 
   const factorial = useMemo(() => {
+    if (number < 0) {
+      return null;
+    }
     let num = 1;
 
     for (let i = 1; i <=number; i++) {
@@ -26,7 +29,8 @@ export default function UseMemoChallenge() {
       <h1>useMemo Challenge</h1>
       <div>
         <input
-          type="number"
+          type="number" 
+          min={0}
           value={number}
           onChange={(e) => setNumber(Number(e.target.value))}
           placeholder="Enter a number"
