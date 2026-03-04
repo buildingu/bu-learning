@@ -13,13 +13,21 @@ h1, h2, h3, h4, h5, h6{
 }
 
 aside {
-	flex: 0 0 300px;
-	width: 25%;
+	flex: 0 0 600px;
+	width: 50%;
 	background-color: #7338A0;
 	padding: 15px;
 	box-sizing: border-box;
 	border: 2.5px solid #4A2574;
 	border-radius: 6px;
+	margin: 20px auto;
+	color: #0F0529;;
+}
+
+aside iframe {
+	width: 100%;
+	height: auto;
+	max-width: 600px;
 }
 
 aside th {
@@ -35,4 +43,8 @@ aside td {
 	vertical-align: middle;
 	text-align: center;
 	padding: 10px;
+}
+
+form {
+
 }

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang = "en">
+<head>
+<link rel = "stylesheet" href = "styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale= 1.0">
+<meta name="description" content="First coding exercise for bu, shows my name and a few things I like">
+<meta name="keywords" content="Song, Name, Movie, Video, HTML, BU-Learning">
+<meta name="author" content="Anthony Young">
+<title>HTML EXERCISE 1</title>
+</head>
+
+<body>
+	<h1>HTML EXERCISE 1 - 3/3/26</h1>
+
+
+	<aside>
+		<h2>Fun Facts About Me:</h2>
+		<table>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Favorite Movie</th>
+				<th>Favorite Song</th>
+				<th>Favorite Video</th>
+			</tr>
+			<tr>
+				<td>Anthony</td>
+				<td>Young</td>
+				<td><a href = "https://en.wikipedia.org/wiki/Grown_Ups_(film)"><img src = "GUP.png" width = "100" height = "150" ></a></td>
+				<td>Send the Pain Below - Chevelle <audio controls><source src = "Song_Sample_1.mp3" type = "audio/ogg" width = "100"></audio></audio></td>
+				<td><iframe width="200" height="150" src="https://www.youtube.com/embed/KbLyWfwczbQ" title = "Favorite Video"  allowfullscreen></iframe></td>
+			</tr>
+		</table>
+	</aside>
+
+	<main>
+		<form>
+			<h2>Enter Your Info Below:</h2>
+			<label for="name">Your Name:</label>
+			<input type="text" id="name" placeholder="Enter your name"><br><br>
+
+			<label for="email">Your Email:</label>
+			<input type="text" id="email" placeholder="Enter your email"><br><br>
+
+			<label for="password">Your Password:</label>
+			<input type="password" id="password" placeholder="Enter your password"><br><br>
+
+			<h3>Available Meeting Days:</h3>
+			<label for="availabliltyD">Monday</label>
+			<input type="checkbox" id="monday">
+
+			<label for="availabliltyD">Tuesday</label>
+			<input type="checkbox" id="tuesday">
+
+			<label for="availabliltyD">Wednesday</label>
+			<input type="checkbox" id="wednesday">
+
+			<label for="availabliltyD">Thursday</label>
+			<input type="checkbox" id="thursday">
+
+			<label for="availabliltyD">Friday</label>
+			<input type="checkbox" id="friday">
+
+			<label for="availabliltyD">Saturday</label>
+			<input type="checkbox" id="saturday">
+
+			<label for="availabliltyD">Sunday</label>
+			<input type="checkbox" id="Sunday"><br><br>
+
+			<label for="availabliltyT">Available Time:</label>
+			<select name="times" id="times">
+				<option value="morning">Morning(8:00am-12:00pm)</option>
+				<option value="afternoon">Afternoon(12:00pm-4:00pm)</option>
+				<option value="night">Night(4:00pm-8:00pm)</option>
+			</select>
+
+			<p>Currently working on new website?</p>
+
+			<label for="working">Yes</label>
+			<input type="radio" id="yes" name="working" checked>
+
+			<label for="working">No</label>
+			<input type="radio" id="no" name="working"><br><br>
+
+			<label for="comments"></label>
+			<textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comments here"></textarea><br><br>
+
+			<input type="submit" value="submit">
+			<input type="reset" value="reset">
+		</form>
+	</main>
+</body>
+</html>
