@@ -1,0 +1,46 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+form label,
+form input,
+form select {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.checkboxes {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.checkboxes label {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.checkboxes input{
+    display: inline;
+}
+/* [type="checkbox"] {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+[type="radio"] {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
