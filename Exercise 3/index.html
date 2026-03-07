@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Exercise 3: Advanced CSS</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -10,43 +11,52 @@
     <h1>Exercise 3 by Cayla</h1>
     <p>Date submitted: 3/7/2026</p>
     <hr>
+    
     <h3>Fun facts about me:</h3>
     <table>
-        <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Favorite Movie</th>
-            <th>Favorite Song</th>
-            <th>Favorite Video</th>
-        </tr>
-        </th>
-        <tb>
+        <thead>
             <tr>
-                <td>Cayla</td>
-                <td>Huang</td>
-                <td><img src="assets/image.png"></td>
-                <td>
-                    <span>click play button to play music:</span>
+                <th class="fname-head">First Name</th>
+                <th class="lname-head">Last Name</th>
+                <th class="movie-head">Favorite Movie</th>
+                <th class="song-head">Favorite Song</th>
+                <th class="video-head">Favorite Video</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="fname-data">Cayla</td>
+                <td class="lname-data">Huang</td>
+                <td class="movie-data"><img src="assets/image.png" alt="Favorite Movie"></td>
+                <td class="song-data">
+                    <span class="media-instruction">Click play button to play music:</span>
                     <audio controls>
-                    <source src="assets/rick_roll.mp3">
+                        <source src="assets/rick_roll.mp3" type="audio/mpeg">
                     </audio>
                 </td>
-                <td><video controls>
-                    <source src="assets/marvel_studios.mp4">
-                </video></td>
+                <td class="video-data">
+                    <video controls>
+                        <source src="assets/marvel_studios.mp4" type="video/mp4">
+                    </video>
+                </td>
             </tr>
-        </tb>
+        </tbody>
     </table>
+    
     <hr>
     <br>
+    
     <h3>Enter your details below:</h3>
     <form>
         <label>Full Name: </label>
         <input type="text" placeholder="Cayla Huang"> 
+        
         <label>Email Address: </label>
         <input type="email" placeholder="ch20@idk.com">
+        
         <label>Password: </label>
         <input type="password" placeholder="*****">
+        
         <label>Available Meeting Days:</label>
         <div class="checkboxes">
             <label><input type="checkbox"> Monday</label>
@@ -58,20 +68,24 @@
             <label><input type="checkbox"> Sunday</label>
         </div>
         <br>
+        
         <label>Available Time:</label>
         <select>
             <option>Morning</option>
             <option>Afternoon</option>
             <option>Evening</option>
         </select>
+        
         <label>Are you working on a new page?</label>
         <div class="radios">
             <label><input type="radio" name="worknew" checked> Yes</label>
-            <label><input type="radio" name="worknew">No</label>
+            <label><input type="radio" name="worknew"> No</label>
         </div>
         <br>
+        
         <label>If yes, please enter which page(s) you are working on</label>
         <textarea id="comments" placeholder="Enter your comments here"></textarea>   
+        
         <div class="buttons">
             <button type="submit" id="submit">Submit</button>
             <button type="reset" id="reset">Reset</button>

@@ -1,7 +1,8 @@
+/* FOR DESKTOPS */
 body {
     background-image: url("assets/background-desktop.jpg");
     color: white;
-    font-family: 'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 hr { color: white; }
@@ -11,6 +12,7 @@ h1, h3, p {
     justify-content: center;
 }
 
+/* --- Table Styles --- */
 table {
     border: 6px solid grey;
     border-collapse: collapse;
@@ -25,12 +27,19 @@ th, td {
 th { background-color: rgb(27, 39, 50); }
 td { background-color: darkslategrey; }
 
+.media-instruction {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
 video {
     max-width: 400px;
 }
 
+/* --- Form Styles --- */
 form {
-    border: 5px solid grey;
+    border: 10px solid grey;
     background: lightgray;
     color: black;
     padding: 30px;
@@ -88,12 +97,15 @@ form > select {
 #submit { background: forestgreen; }
 #reset { background: red; }
 
+
 /* FOR MOBILE DEVICES */
 @media only screen and (max-width: 600px) {
+    
     body {
         background-image: url("assets/background-mobile.jpg");
     }
 
+    /* --- Mobile Table Grid --- */
     table {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -105,7 +117,6 @@ form > select {
     thead, tbody, tr {
         display: contents;
     }
-    
 
     th, td {
         border: 4px solid grey;
@@ -115,24 +126,23 @@ form > select {
         width: 100%;
     }
 
-    th:nth-child(1) { order: 1; } /* First Name Header */
-    th:nth-child(2) { order: 2; } /* Last Name Header */
+    th { background-color: saddlebrown; }
+    td { background-color: brown; }
 
-    /* -- ROW 2: Data side-by-side -- */
-    td:nth-child(1) { order: 3; } /* First Name Data */
-    td:nth-child(2) { order: 4; } /* Last Name Data */
+    /* Reorder Table Cells Using Classes */
+    .fname-head { order: 1; } 
+    .lname-head { order: 2; } 
+    .fname-data { order: 3; } 
+    .lname-data { order: 4; } 
 
-    /* -- ROW 3 & 4: Movie (Spans both columns) -- */
-    th:nth-child(3) { order: 5; grid-column: 1 / -1; }
-    td:nth-child(3) { order: 6; grid-column: 1 / -1; }
+    .movie-head { order: 5; grid-column: 1 / -1; }
+    .movie-data { order: 6; grid-column: 1 / -1; }
 
-    /* -- ROW 5 & 6: Song (Spans both columns) -- */
-    th:nth-child(4) { order: 7; grid-column: 1 / -1; }
-    td:nth-child(4) { order: 8; grid-column: 1 / -1; }
+    .song-head { order: 7; grid-column: 1 / -1; }
+    .song-data { order: 8; grid-column: 1 / -1; }
 
-    /* -- ROW 7 & 8: Video (Spans both columns) -- */
-    th:nth-child(5) { order: 9; grid-column: 1 / -1; }
-    td:nth-child(5) { order: 10; grid-column: 1 / -1; }
+    .video-head { order: 9; grid-column: 1 / -1; }
+    .video-data { order: 10; grid-column: 1 / -1; }
 
     img, video {
         max-width: 100%;
@@ -140,32 +150,20 @@ form > select {
     }
 
     audio {
-        max-width: 100%;
+        max-width: 100%; 
     }
 
-    th { background-color:saddlebrown; }
-    td { background-color:brown; }
-
     form {
-        border: 5px solid grey;
-        background: lightgray;
-        color: black;
-        padding: 30px;
-        max-width: 450px;
-        width: 70%;
-        margin: auto;
+        width: 70%; 
     }
 
     #comments {
         max-width: 300px;
         max-height: 40px;
         width: 60%;
-        margin: auto;
-        display: block;
     }
 
     .buttons {
-        display: flex;
         flex-direction: column;
         width: 100%;
     }
@@ -176,5 +174,4 @@ form > select {
         padding: 10px;
         box-sizing: border-box;
     }
-
 }
