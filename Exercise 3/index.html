@@ -43,11 +43,13 @@
             <option>Afternoon</option>
             <option>Evening</option>
         </select>
-        <label>Are you working on the new website?</label>
-        <input type="radio" name="worknew" checked>Yes
-        <input type="radio" name="worknew"> No 
+        <label>Are you working on a new page?</label>
+        <div class="radios">
+            <label><input type="radio" name="worknew" checked> Yes</label>
+            <label><input type="radio" name="worknew"> No</label>
+        </div>
         <label>If yes, please enter which page(s) you are working on</label>
-        <input type="text" placeholder="Enter your comments here">
+        <textarea id="comments" placeholder="Enter your comments here"></textarea>    
     </form>
 </body>
 </html>
