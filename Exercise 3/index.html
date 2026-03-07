@@ -10,6 +10,7 @@
     <h1>Exercise 3 by Cayla</h1>
     <p>Date submitted: 3/7/2026</p>
     <hr>
+    <h3>Fun facts about me:</h3>
     <table>
         <tr>
             <th>First Name</th>
@@ -18,15 +19,34 @@
             <th>Favorite Song</th>
             <th>Favorite Video</th>
         </tr>
+        </th>
+        <tb>
+            <tr>
+                <td>Cayla</td>
+                <td>Huang</td>
+                <td><img src="assets/image.png"></td>
+                <td>
+                    <span>click play button to play music:</span>
+                    <audio controls>
+                    <source src="assets/rick_roll.mp3">
+                    </audio>
+                </td>
+                <td><video controls>
+                    <source src="assets/marvel_studios.mp4">
+                </video></td>
+            </tr>
+        </tb>
     </table>
     <hr>
+    <br>
+    <h3>Enter your details below:</h3>
     <form>
         <label>Full Name: </label>
         <input type="text" placeholder="Cayla Huang"> 
         <label>Email Address: </label>
         <input type="email" placeholder="ch20@idk.com">
         <label>Password: </label>
-        <input type="password">
+        <input type="password" placeholder="*****">
         <label>Available Meeting Days:</label>
         <div class="checkboxes">
             <label><input type="checkbox"> Monday</label>
@@ -37,6 +57,7 @@
             <label><input type="checkbox"> Saturday</label>
             <label><input type="checkbox"> Sunday</label>
         </div>
+        <br>
         <label>Available Time:</label>
         <select>
             <option>Morning</option>
@@ -46,10 +67,15 @@
         <label>Are you working on a new page?</label>
         <div class="radios">
             <label><input type="radio" name="worknew" checked> Yes</label>
-            <label><input type="radio" name="worknew"> No</label>
+            <label><input type="radio" name="worknew">No</label>
         </div>
+        <br>
         <label>If yes, please enter which page(s) you are working on</label>
-        <textarea id="comments" placeholder="Enter your comments here"></textarea>    
+        <textarea id="comments" placeholder="Enter your comments here"></textarea>   
+        <div class="buttons">
+            <button type="submit" id="submit">Submit</button>
+            <button type="reset" id="reset">Reset</button>
+        </div>
     </form>
 </body>
 </html>
