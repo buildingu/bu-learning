@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 1</title>
+        <!-- Meta data -->
+        <!-- Character Set (typing) -->
+        <meta charset="UTF-8"/>
+        <!-- Search Engine Key Words -->
+        <meta name="keywords" content="HTML5"/>
+        <!-- Description -->
+        <meta name="description" content="EXERCISE 1"/>
+        <!-- Author -->
+        <meta name="author" content="Gabriel Rodriguez"/>
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <main>
+        <center><h1>Exercise 1 by Gabriel Rodriguez</h1>
+        <h3>Date Submitted: March 7, 2026</h3>
+        <!-- Horizontal line to break sections (hr) -->
+        <hr>
+        <h3>Fun Facts about me: </h3>
+    <table>
+        <!-- i dont know how to add lines to make it look like a table -->
+        <!-- First Row -->
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Movie</th>
+            <th>Favorite Song</th>
+            <th>Favorite Video</th>
+        </tr>
+        <!-- Second Row -->
+        <tr>
+            <td>Gabriel</td>
+            <td>Rodriguez</td>
+            <td><img src="assets/fire_and_ash.webp" width="200" height="200"/></td>
+            <td>
+                <iframe data-testid="embed-iframe" 
+                src="https://open.spotify.com/embed/track/5y2ijHECwFYWqcAHKTZgzD?utm_source=generator" >
+                </iframe>
+            </td>
+            <td>
+                <iframe 
+                width="200" 
+                height="200"
+                src="https://www.youtube.com/embed/nb_fFj_0rq8"
+                allowfullscreen>
+                </iframe>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h3>Enter your details below:</h3>
+    <form>
+        <label for="fullname"> Full Name:</label>
+        <input type="text"><br><br>
+
+        <label for="email">Email Addr:</label>
+        <input type="email"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password"><br><br>
+                <!-- em used for emphasis -->
+                <p><em>Available Meeting Days</em></p>
+                <label><input type="radio"> Monday</label>
+                <label><input type="radio"> Tuesday</label>
+                <label><input type="radio"> Wednesday</label>
+                <label><input type="radio"> Thursday</label>
+                <label><input type="radio"> Friday</label>
+                <label><input type="radio"> Saturday</label>
+                <label><input type="radio"> Sunday</label><br><br>
+
+                    <label for="available-time"><em>Available Time</em>:</label>
+                    <!-- what makes it work (important) -->
+                    <select id="available-time" name="available-time">
+                        <!-- options -->
+                        <option value="morning">Morning (8am to 12pm)</option>
+                        <option value="afternoon">Afternoon (12pm to 4pm)</option>
+                        <option value="evening">Evening (4pm to 8pm)</option>
+                    </select><br><br>
+                    <label>Currently working on a new website?</label>
+                    <label>
+                        <input type="radio" name="answer" value="yes"> Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="answer" value="no"> No
+                    </label><br><br>
+                <textarea rows="4" cols="25" placeholder="Your comments here..."></textarea><br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset"><br>
+    </form>
+    </center>
+    </main>
+    </body>
+</html>
