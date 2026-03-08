@@ -1,0 +1,98 @@
+body{
+    font-family: Arial;
+    background-color: lavender;
+    color: #222;
+    text-align: center;
+}
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+    width: 90%;
+    background-color:beige;
+}
+
+th, td{
+    border: 3px solid gray;
+    padding: 20px;
+}
+
+.form-box{
+     background-color: #ccc;
+     color: black;
+     width: 300px;
+     margin: 40px auto;
+     padding: 20px;
+     border: 4px solid gray;
+}
+
+input, select, textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+textarea{
+    height:60px;
+}
+
+button{
+    padding: 8px 15px;
+    border: none;
+    color: white;
+}
+
+.sumbit{
+    background-color: green;
+}
+
+.reset{
+    background-color: red;
+}
+
+@media screen and (max-width: 767px){
+    body{
+        font-size: 14px;
+    }
+    table{
+        width: 100%
+    }
+    th, td{
+        padding: 10px;
+    }
+    .form-box{
+        width: 90%;
+        padding: auto;
+    }
+    input, select, textarea{
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 768px){
+    table{
+        width: 60%;
+    }
+    .form-box{
+        width: 400px;
+    }
+}
+
+.reset:hover{
+    opacity: 0.5;
+}
+
+.sumbit:hover{
+    opacity: 0.5;
+}
+
+tr:nth-child(odd){
+    background-color:burlywood;
+}
+
+button:not(.reset){
+    background-color: blue;
+}
+
+input:not(.submit){
+    background-color: white;
+}
