@@ -13,11 +13,26 @@
             margin-bottom: 20px
         }
 
+        .portfolio-item {
+            border: lightslategray 1px solid;
+            background-color: white;
+            padding: 20px;
+            height: 100%;
+        }
+
+        .coolbackground {
+            background-image: url('assets/coolbackground.png');
+        }
+
+        .okaybackground {
+            background-color: lightgray;
+        }
+
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <a class="navbar-brand" href="#"><img src="assets/BUlogo.png" alt="Building-U Logo" width="100"></a>
+        <a class="navbar-brand" href="#"><img src="assets/BUlogo.png" alt="Building-U Logo" width="75"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDiv"
             aria-controls="navbarDiv" aria-expanded="false" aria-label="Toggle Navbar">
             <span class="navbar-toggler-icon"></span>
@@ -40,109 +55,155 @@
             </ul>
         </div>
     </nav>
-    <!--Hero-->
-    <div class="container text-center" id="home">
-        <div class="row">
-            <div class="col-sm grid-item"><h1>Welcome to My BuildingU Projects Page</h1></div>
-        </div>
-        <div class="row">
-            <div class="col-sm grid-item">Discover my work on Github</div>
-        </div>
-        <div class="row">
-            <div class="col-sm grid-item"><a class="btn btn-primary" href="https://github.com/cayla-hhh" role="button">View My Work</a></div>
-        </div>
-    </div>
-
-    <!--About Me-->
-    <div class="container text-center" id="about">
-        <div class="row">
-
-            <div class="col-5 text-start">
-            <div><h2>About Me</h2></div>
-            <div>Hey, I'm Cayla, and I'm passionate about coding and understanding how everything works. I thrive on solving complex problems and am always eager to learn new technologies. Whether I'm building apps or exploring the latest in tech, I love turning curiosity into creative solutions.</div> <br>
-            <div>I'm familiar with HTML, CSS, and Python, and I'm currently learning Bootstrap for the first time. These skills allow me to bring my ideas to life and continuously grow as a developer.</div>
+    <div class="coolbackground">
+        <!--Hero-->
+        <div class="container text-center" id="home">
+            <div class="row">
+                <div class="col-sm grid-item"><h1>Welcome to My BuildingU Projects Page</h1></div>
             </div>
-
-            <div class="col-7">
-            <img src="assets/pfp.jpg" class="img-fluid h-100" alt="Example" width="300">
+            <div class="row">
+                <div class="col-sm grid-item">Discover my work on Github</div>
             </div>
+            <div class="row">
+                <div class="col-sm grid-item"><a class="btn btn-primary" href="https://github.com/cayla-hhh" role="button">View My Work</a></div>
+            </div>
+        </div>
 
+        <!--About Me-->
+        <div class="container text-center" id="about">
+            <div class="row">
+
+                <div class="col-5 text-start">
+                <div><h2>About Me</h2></div>
+                <div>Hey, I'm Cayla, and I'm passionate about coding and understanding how everything works. I thrive on solving complex problems and am always eager to learn new technologies. Whether I'm building apps or exploring the latest in tech, I love turning curiosity into creative solutions.</div> <br>
+                <div>I'm familiar with HTML, CSS, and Python, and I'm currently learning Bootstrap for the first time. These skills allow me to bring my ideas to life and continuously grow as a developer.</div>
+                </div>
+
+                <div class="col-7">
+                <img src="assets/pfp.jpg" class="img-fluid h-100 pb-4" alt="Example" width="250">
+                </div>
+
+            </div>
         </div>
     </div>
 
     <!--Portfolio-->
-    <div class="container text-center" id="portfolio">
-        <h2>My Portfolio</h2>
-        <div class="row">
-            <div class="col-sm">
-                <h4>Project 1: HTML</h4>
-                <p>Project 1 showcases my HTML skills. It's a webpage involving HTML with table and static form components. Click learn more to see the project.</p>
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#htmlModal">
-                    Learn More
-                </button>
-                <div class="modal fade" id="htmlModal">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-
-                    <div class="modal-header">
-                        <h5 class="modal-title">Project 1: Html</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-
-                    <div class="modal-body">
-
-                        <iframe 
-                        src="https://buildingu.github.io/bu-learning/Exercise1/"
-                        width="100%"
-                        height="400"
-                        style="border:none;">
-                        </iframe>
-
-                    </div>
-
-                    <div class="modal-footer">
-                        <a href="https://github.com/buildingu/bu-learning/tree/c_huang/Exercise%201" class="btn btn-primary" target="_blank">
-                        Open Full Project
-                        </a>
-                        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-
+    <div class="okaybackground pb-4">
+        <div class="container" id="portfolio">
+            <h2 class="pt-4">My Portfolio</h2>
+            <div class="row g-4 align-items-stretch">
+                <div class="col-sm-4">
+                    <div class="portfolio-item h-100">
+                        <img src="assets/html.png" class="card-img-top w-50 mx-auto d-block">                
+                        <h4>Project 1: HTML</h4>
+                        <p>Project 1 showcases my HTML skills. It's a webpage involving HTML with table and static form components. Click learn more to see the project.</p>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#htmlModal">Learn More </button>
+                        <div class="modal fade" id="htmlModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Project 1: HTML</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+                                        <img src="assets/exercise 1 screenshot.png" width='450'>
+                                        <p>I used HTML to build a simple website with a table containing facts about me and a form for the user to enter their information. Click learn more to see the project.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">More Details</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="col-sm-4">
+                    <div class="portfolio-item h-100">
+                        <img src="assets/css.png" class="card-img-top w-50 mx-auto d-block">                
+                        <h4>Project 2: CSS</h4>
+                        <p>Project 2 showcases my CSS skills. It's a stylized webpage for an event done using HTML and CSS with custom components. Click learn more to see the project.</p>
+                        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#htmlModal">Learn More </button>
+                        <div class="modal fade" id="htmlModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Project 2: CSS</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+                                        <img src="assets/excercise 2 screenshot.png" width='450'>
+                                        <p>I used HTML and CSS to style an invitation website for a graduation event.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">More Details</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="portfolio-item h-100">
+                        <img src="assets/javascript.png" class="card-img-top w-50 mx-auto d-block">                
+                        <h4>Project 3: Advanced CSS</h4>
+                        <p>Project 3 showcases my advanced CSS skills. It's a responsive webpage (Desktop & Mobile) from Project 1. Click learn more to see the project.</p>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#htmlModal">Learn More </button>
+                        <div class="modal fade" id="htmlModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Project 2: CSS</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+                                        <img src="assets/exercise 3 screenshot.png" width='450'>
+                                        <p>I used HTML and CSS to style an invitation website for a graduation event.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">More Details</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
     <!--Contact Me-->
-    <div class="container mt-5" id="contact">
-    <h2>Contact Me</h2>
+    <div class="coolbackground">
+        <div class="container pt-5" id="contact">
+        <h2 class="pt-4">Contact Me</h2>
 
-    <form>
-        <div class="row g-3">
-            <div class="col-sm-6 form-item">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" id="name" class="form-control" required placeholder="Cayla">
+        <form>
+            <div class="row g-3">
+                <div class="col-sm-6 form-item">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" class="form-control" required placeholder="Cayla">
+                </div>
             </div>
-        </div>
-        <div class="row g-3">
-            <div class="col-sm-6 form-item">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" required placeholder="example@email.com">
+            <div class="row g-3">
+                <div class="col-sm-6 form-item">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" required placeholder="example@email.com">
+                </div>
             </div>
-        </div>
-        <div class="row g-3">
-            <div class="col-sm-6 form-item">
-                <label class="form-label">Message</label>
-                <textarea class="form-control" rows="4"></textarea>
+            <div class="row g-3">
+                <div class="col-sm-6 form-item">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" rows="4"></textarea>
+                </div>
             </div>
-        </div>
-        <div class="row g-3">
-            <div class="col-6 form-item">
-                <button type="submit" class="btn btn-success">Send Message</button>
+            <div class="row g-3">
+                <div class="col-6 form-item">
+                    <button type="submit" class="btn btn-success">Send Message</button>
+                </div>
             </div>
+        </form>
         </div>
-    </form>
     </div>
 <script src="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
