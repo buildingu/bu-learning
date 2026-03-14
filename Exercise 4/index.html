@@ -10,7 +10,7 @@
     <style>
         .grid-item,
         .form-item {
-            margin-bottom: 20px
+            margin-bottom: 20px;
         }
 
         .portfolio-item {
@@ -73,13 +73,13 @@
         <div class="container text-center" id="about">
             <div class="row">
 
-                <div class="col-5 text-start">
+                <div class="col-md-5 text-start">
                 <div><h2>About Me</h2></div>
                 <div>Hey, I'm Cayla, and I'm passionate about coding and understanding how everything works. I thrive on solving complex problems and am always eager to learn new technologies. Whether I'm building apps or exploring the latest in tech, I love turning curiosity into creative solutions.</div> <br>
                 <div>I'm familiar with HTML, CSS, and Python, and I'm currently learning Bootstrap for the first time. These skills allow me to bring my ideas to life and continuously grow as a developer.</div>
                 </div>
 
-                <div class="col-7">
+                <div class="col-md-7 mx-auto d-block">
                 <img src="assets/pfp.jpg" class="img-fluid h-100 pb-4" alt="Example" width="250">
                 </div>
 
@@ -92,7 +92,7 @@
         <div class="container" id="portfolio">
             <h2 class="pt-4">My Portfolio</h2>
             <div class="row g-4 align-items-stretch">
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <div class="portfolio-item h-100">
                         <img src="assets/html.png" class="card-img-top w-50 mx-auto d-block">                
                         <h4>Project 1: HTML</h4>
@@ -118,13 +118,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <div class="portfolio-item h-100">
                         <img src="assets/css.png" class="card-img-top w-50 mx-auto d-block">                
                         <h4>Project 2: CSS</h4>
                         <p>Project 2 showcases my CSS skills. It's a stylized webpage for an event done using HTML and CSS with custom components. Click learn more to see the project.</p>
-                        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#htmlModal">Learn More </button>
-                        <div class="modal fade" id="htmlModal">
+                        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#cssModal">Learn More </button>
+                        <div class="modal fade" id="cssModal">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -144,17 +144,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <div class="portfolio-item h-100">
                         <img src="assets/javascript.png" class="card-img-top w-50 mx-auto d-block">                
                         <h4>Project 3: Advanced CSS</h4>
                         <p>Project 3 showcases my advanced CSS skills. It's a responsive webpage (Desktop & Mobile) from Project 1. Click learn more to see the project.</p>
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#htmlModal">Learn More </button>
-                        <div class="modal fade" id="htmlModal">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#jsModal">Learn More </button>
+                        <div class="modal fade" id="jsModal">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">Project 2: CSS</h5>
+                                        <h5 class="modal-title">Project 3: Advanced CSS</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body text-start">
@@ -188,13 +188,13 @@
             <div class="row g-3">
                 <div class="col-sm-6 form-item">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" required placeholder="example@email.com">
+                    <input id="email" type="email" class="form-control" required placeholder="example@email.com">
                 </div>
             </div>
             <div class="row g-3">
-                <div class="col-sm-6 form-item">
-                    <label class="form-label">Message</label>
-                    <textarea class="form-control" rows="4"></textarea>
+                <div class="col-md-6 form-item">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" class="form-control" rows="4"></textarea>
                 </div>
             </div>
             <div class="row g-3">
