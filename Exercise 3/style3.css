@@ -70,6 +70,10 @@ label {
   padding: 10px;
 }
 
+.center-div {
+  text-align: center;
+}
+
 input:not([type="radio"]):not([type="checkbox"]) {
   border: 1px solid #aaa;
 }
