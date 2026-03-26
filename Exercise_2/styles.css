@@ -1,0 +1,127 @@
+/* #e5b502, #676408, #7e0800, #5e260f, #e1684a */
+
+
+body { 
+    background-color: #e1684a; 
+} 
+
+main { 
+    display: flex; 
+    justify-content: center;
+
+    align-items: flex-start; 
+    gap: 1rem; 
+    max-width: 2000px;
+    margin: 0 auto; 
+    padding: 1rem;
+    box-sizing: border-box; 
+}
+
+p { 
+    color: #5e260f; 
+    font-family: 'Inter', sans-serif; 
+    text-align: center; 
+    font-size: 1.1em; 
+} 
+
+h1 {
+    color: #5e260f;
+    font-family: 'Inter', sans-serif; 
+    font-size: 3.5em; 
+    text-align: center; 
+} 
+
+h2 {
+ 	color: #5e260f; 
+    font-size: 1.5em;
+    text-align:center; 
+}
+
+header {
+    padding: 30px;
+ } 
+
+.float-image-left{	
+    order: 1;
+    margin: 0 20px 10px 0; 	
+    max-width: 400px; 
+    flex: 0 0 200px;
+}
+
+ .float-image-right{
+	order: 4;
+    margin: 0 20px 10px 0; 
+	max-width: 400px; 
+    flex: 0 0 200px;
+}
+
+.float-image-left img {
+    max-width: 350px;
+    height: auto; 
+    display: block; 
+    margin-bottom: 20px;
+}
+
+.float-image-right img { 
+    max-width: 350px;
+    height: auto; 
+    display: block; 
+    margin-bottom: 20px;
+}
+
+form { 
+    text-align: center; 
+    color: #e5b502; 
+}
+
+.BBQ a{ 	
+    position: fixed; 	
+    bottom: 20px; 
+    right: 50px; 
+    z-index: 9999;
+    background-color: #5e260f;
+    color:#e1684a;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold; 
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3); 
+    transition: all 0.3s ease;
+    margin-top: 20px; 
+} 
+
+.BBQ a:hover {
+    background-color: #7e0800;
+    color: #e5b502; 
+    transform: scale(1.1);
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.4);
+}
+
+.section{
+    order: 2;
+    text-align: center;
+    max-width: 700px;
+    padding: 20px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+section p{
+    color: #5e260f;
+}
+
+.aside aside {
+    background: #7e0800;
+    padding: 1rem; 
+    border-radius: 6px;
+}
+
+.aside { 
+    order: 3; 
+    flex: 0 0 300px;
+    box-sizing: border-box;
+}
+
+.aside h2,h3,p{
+    color: #e1684a;
+}
