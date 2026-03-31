@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 1 - HTML Building-U</title>
+</head>
+<body>
+
+<center>
+
+    <h1>Exercise 1: HTML Building-U</h1>
+    <h3>Date of Submission: 31 March 2026</h3>
+
+    <h2>Student Information Table</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Movie Image</th>
+            <th>Favorite Music Audio Sample</th>
+            <th>Favorite Video Sample</th>
+        </tr>
+
+        <tr>
+            <td>Sarang</td>
+            <td>Menon</td>
+
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Indiana_Jones" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNQzbT-XiKTd_1nhFCiT2j44mkLFowYXFbSA&s" width="120">
+                </a>
+            </td>
+
+            <td>
+                <audio controls>
+                    <source src="sample-audio.mp3" type="audio/mpeg">
+                    Your browser does not support audio.
+                </audio>
+            </td>
+
+            <td>
+                <video width="200" controls>
+                    <source src="sample-video.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <h2>Registration Form</h2>
+
+    <form>
+
+        <label>Full Name:</label><br>
+        <input type="text" placeholder="Enter your full name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter your email"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" placeholder="Enter your password"><br><br>
+
+        <label>Available Days:</label><br>
+        <input type="checkbox"> Monday<br>
+        <input type="checkbox"> Tuesday<br>
+        <input type="checkbox"> Wednesday<br>
+        <input type="checkbox"> Thursday<br>
+        <input type="checkbox"> Friday<br><br>
+
+        <label>Available Time:</label><br>
+        <select>
+            <option>Select Time</option>
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Evening</option>
+        </select><br><br>
+
+        <label>Working on a New Website?</label><br>
+        <input type="radio" name="website" checked> Yes
+        <input type="radio" name="website"> No<br><br>
+
+        <label>Comments:</label><br>
+        <textarea placeholder="Enter your comments here"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</center>
+
+</body>
+</html>
