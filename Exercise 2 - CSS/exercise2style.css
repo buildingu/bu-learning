@@ -1,0 +1,75 @@
+h1{
+    text-align: center;
+}
+
+#info{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color:rgb(235, 144, 144);
+    padding:5px;
+}
+
+table{
+    width: 80%;
+    margin:40px;
+    font-family: Arial, sans-serif;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+}
+
+#contact{
+    border: 3px solid;
+    height:40px;
+    width:100px;
+    text-align: center;
+    font-weight:bold;
+    font-size: 15px;
+    background-color: paleturquoise;
+    margin: 20px;
+
+    animation: mover;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes mover{
+    from{margin-left:0%;}
+    to{margin-left:100%;}
+}
+
+img{
+    float:right;
+    position:relative;
+    top:10px;
+}
+
+a{
+    position:relative;
+    top:10px;
+}
+
+form{
+    position:relative;
+    top:30px;
+}
+
+#music{
+    position: relative;
+    top:70px;
+}
+
+audio{
+    position:relative;
+    top:60px;
+}
+
+#video{
+    position: relative;
+    top: 100px;
+}
+
+body{
+    background-color:azure
+}

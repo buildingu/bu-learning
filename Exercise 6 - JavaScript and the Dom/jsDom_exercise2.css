@@ -1,0 +1,30 @@
+h1{
+    text-align:center;
+    color: burlywood;
+    border-style:ridge;
+    border-color:grey;
+    border-width:5px;
+    border-radius:10px;
+}
+
+body{
+    background-color:azure;
+}
+
+#Name, #Age, #Gender, #Position{
+    color:burlywood;
+    text-decoration:underline;
+}
+
+#Button{
+    color:black;
+    background-color:blanchedalmond;
+}
+
+#employee_details{
+    transform: translate(550px, -200px);
+}
+
+#storage{
+    transform: translate(550px, -180px);
+}

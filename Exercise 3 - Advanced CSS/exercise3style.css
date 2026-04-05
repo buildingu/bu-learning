@@ -1,0 +1,83 @@
+h1{
+    text-align:center;
+    font-size:20px;
+
+}
+
+h5{
+    text-align:center;
+}
+
+#facts{
+    text-align:center;
+}
+
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #fafafa;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td{
+  border: 1px solid #ddd;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+#details{
+    text-align:center;
+}
+
+#box1{
+    width:410px;
+    height:500px;
+    border: 2px solid;
+    transform: translateX(100%);
+}
+
+form{
+    position:absolute;
+    top:650px;
+    left:430px;
+}
+
+
+
+@media only screen and (min-width:600px){
+    body{
+        background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20240919/pngtree-a-background-of-orange-blue-and-yellow-gradients-with-gritty-appearance-image_16233934.jpg");
+        background-size: cover;      
+        background-repeat: no-repeat;
+        background-position: center;
+}
+}
+
+@media only screen and (max-width:599px){
+    body{
+        background-image: url("https://t4.ftcdn.net/jpg/04/89/68/23/360_F_489682374_ckc0OVyT6Av0NGcuYbwBSCxy62blF4CQ.jpg");
+        background-size: cover;      
+        background-repeat: no-repeat;
+        background-position: center;
+        color:green;
+}
+form{
+    display:none
+}
+
+table, thead, tbody, th, td, tr {
+    display: block;  /* makes every row and cell block-level */
+    width: 100%;     /* full width */
+  }
+#details{
+    display:none;
+}
+#box1{
+    display:none
+}
+
+
+}
