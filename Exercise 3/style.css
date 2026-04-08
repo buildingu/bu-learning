@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: url('assets/bg-desktop.jpg') no-repeat center/cover;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 20px;
+}
+
+.fun-facts {
+  margin: 20px;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border: 5px solid gray;
+}
+
+.table div {
+  border: 2px solid gray;
+  padding: 10px;
+  background: #2f4f4f;
+}
+
+.table div:nth-child(-n+5) {
+  background: #1f2f3f;
+  font-weight: bold;
+}
+
+.table img {
+  width: 120px;
+}
+
+video {
+  width: 200px;
+}
+
+.form-section {
+  margin: 40px auto;
+  width: 300px;
+  background: #ccc;
+  color: black;
+  padding: 20px;
+  border: 5px solid gray;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select, textarea {
+  margin: 8px 0;
+  padding: 8px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+}
+
+.submit {
+  background: green;
+  color: white;
+}
+
+.reset {
+  background: red;
+  color: white;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 10px;
+  background: purple;
+}
+
+input:not([type="radio"]):not([type="checkbox"]) {
+  border: 2px solid #999;
+}
+
+.days label:nth-child(odd) {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background: url('assets/bg-mobile.jpg') no-repeat center/cover;
+  }
+
+  .table {
+    grid-template-columns: 1fr;
+  }
+
+  .table div {
+    width: 100%;
+  }
+
+  .form-section {
+    width: 90%;
+  }
+
+  footer p {
+    content: "Mobile Version®";
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form-section {
+    width: 400px;
+  }
+}

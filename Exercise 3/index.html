@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Exercise 3 by John Doe</h1>
+    <p>Date submitted: 20/07/2023</p>
+  </header>
+
+  <section class="fun-facts">
+    <h2>Fun facts about me:</h2>
+
+    <div class="table">
+      <div>First Name</div>
+      <div>Last Name</div>
+      <div>Favorite Movie</div>
+      <div>Favorite Song</div>
+      <div>Favorite Video</div>
+
+      <div>Sarang</div>
+      <div>Menon</div>
+
+      <div>
+        <img src="assets/movie.jpeg" alt="">
+      </div>
+
+      <div>
+        <p>Click play button to play music:</p>
+        <audio controls src="assets/song.mp3"></audio>
+      </div>
+
+      <div>
+        <video controls src="assets/video.mp4"></video>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Enter your details below:</h2>
+
+    <form>
+      <label>Full Name</label>
+      <input type="text" placeholder="John Doe">
+
+      <label>Email Address</label>
+      <input type="email" placeholder="example@example.com">
+
+      <label>Password</label>
+      <input type="password" placeholder="*****">
+
+      <p>Available Meeting Days:</p>
+      <div class="days">
+        <label><input type="checkbox"> Monday</label>
+        <label><input type="checkbox"> Tuesday</label>
+        <label><input type="checkbox"> Wednesday</label>
+        <label><input type="checkbox"> Thursday</label>
+        <label><input type="checkbox"> Friday</label>
+        <label><input type="checkbox"> Saturday</label>
+        <label><input type="checkbox"> Sunday</label>
+      </div>
+
+      <label>Available Time:</label>
+      <select>
+        <option>Morning (8am to 12pm)</option>
+      </select>
+
+      <p>Currently working on a new website?</p>
+      <label><input type="radio" name="work"> Yes</label>
+      <label><input type="radio" name="work"> No</label>
+
+      <p>If yes, please enter which page(s) you are working on</p>
+      <textarea placeholder="Enter your comments here"></textarea>
+
+      <button class="submit">Submit</button>
+      <button type="reset" class="reset">Reset</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Desktop Version®</p>
+  </footer>
+
+</body>
+</html>
