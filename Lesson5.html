@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2026 by queenjuhithestar1-source (http://jsbin.com/qojazag/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+function formValidator(fName, lName, age, phoneNum) {
+  if (!fName){
+    console.log("Please enter your first name");
+    return;
+  } else if (typeof fName !== 'string') {
+    console.log("The first name should be a string data type");
+    return;
+  }
+  
+  
+  if (!lName){
+    console.log("Plase enter your last name");
+    return;
+  } else if (typeof lName !== 'string') {
+    console.log("The last name should be a string data type");
+    return;
+  }
+  
+  
+  if (!age){
+    console.log("Please enter your age");
+    return;
+  } else if (typeof age !== 'number') {
+    console.log("The age should be a number");
+    return;
+  }
+  
+  if (!phoneNum){
+    console.log("Please enter your phone number");
+    return;
+  } else if (typeof phoneNum !== 'string') {
+    console.log("The phone number should be a string data type");
+    return;
+  }
+  
+}
+</script>
+</body>
+</html>
