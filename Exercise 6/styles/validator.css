@@ -6,9 +6,9 @@
 .navbar {
     width: 100%;
     background-color: #000080;
-    padding: 15px 50px;
+    padding: 15px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: fixed; 
     top: 0;
@@ -25,6 +25,7 @@
 }
 
 .nav-links {
+    margin:0 20px;
     list-style: none;
     display: flex;
 }
