@@ -4,41 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADOS App</title>
-    <link rel="stylesheet" href="../styles/validator.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <nav class="navbar">
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="validator.html" class="active">Validator</a></li>
+            <li><a href="crud.html">CRUD App</a></li>
+            <li><a href="movie.html">Movie App</a></li>
         </ul>
     </nav>
     <div class="card">
-        <h2>ADOS App</h2>
+        <h2>Form Validator</h2>
 
         <div class="form-group">
             <label>First Name</label>
-            <input type="text" id="firstName" placeholder="Enter first name">
+            <input type="text" id="v-firstName" placeholder="Enter first name">
         </div>
 
         <div class="form-group">
             <label>Last Name</label>
-            <input type="text" id="lastName" placeholder="Enter last name">
+            <input type="text" id="v-lastName" placeholder="Enter last name">
         </div>
 
         <div class="form-group">
             <label>Age</label>
-            <input type="number" id="age" placeholder="Minimum 18">
+            <input type="number" id="v-age" placeholder="Enter your age">
         </div>
 
         <div class="form-group">
             <label>Phone Number</label>
-            <input type="text" id="phoneNumber" placeholder="e.g. 555-0123">
+            <input type="text" id="v-phoneNumber" placeholder="Enter your phone number">
         </div>
 
-        <button id="submitBtn">Create Account</button>
+        <button id="v-submit">Create Account</button>
 
         <div id="messageBox"></div>
     </div>
