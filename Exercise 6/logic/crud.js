@@ -1,94 +1,94 @@
-let users = [];
-let isEditing = false;
-let currentEditId = null;
+let employees = [];
+let editMode = false;
+let editId = null;
 
-const saveBtn = document.getElementById('c-save');
-const userListDiv = document.getElementById('userList');
+const addBtn = document.getElementById('add-entry-btn');
+const displayArea = document.getElementById('employeeDisplay');
 
-saveBtn.addEventListener('click', () => {
-    const fName = document.getElementById('c-firstName').value;
-    const lName = document.getElementById('c-lastName').value;
-    const age = parseInt(document.getElementById('c-age').value);
-    const phone = document.getElementById('c-phone').value;
+const inputName = document.getElementById('emp-name');
+const inputAge = document.getElementById('emp-age');
+const inputSex = document.getElementById('emp-sex');
+const inputPos = document.getElementById('emp-position');
 
-    if (!fName || !lName || isNaN(age) || !phone) {
-        alert("Please fill out all fields.");
+addBtn.addEventListener('click', () => {
+    const name = inputName.value;
+    const age = inputAge.value;
+    const sex = inputSex.value;
+    const position = inputPos.value;
+
+    if (!name || !age || !sex || !position) {
+        alert("Please fill in all fields.");
         return;
     }
-    if (age < 18) {
-        alert("User must be 18 or older.");
-        return;
-    }
 
-    if (isEditing) {
-        const index = users.findIndex(u => u.id === currentEditId);
-        users[index] = { id: currentEditId, fName, lName, age, phone };
+    if (editMode) {
+        const index = employees.findIndex(e => e.id === editId);
+        employees[index] = { id: editId, name, age, sex, position };
         
-        isEditing = false;
-        currentEditId = null;
-        saveBtn.innerText = "Submit User";
-        document.getElementById('form-title').innerText = "User Manager";
+        editMode = false;
+        editId = null;
+        addBtn.innerText = "Add Entry";
+        document.getElementById('form-title').innerText = "Add New Employee";
     } else {
-        const newUser = {
-            id: Date.now(), 
-            fName,
-            lName,
+        const newEmployee = {
+            id: Date.now(),
+            name,
             age,
-            phone
+            sex,
+            position
         };
-        users.push(newUser);
+        employees.push(newEmployee);
     }
 
-    render();
-    clearForm(); 
+    renderEmployees();
+    clearInputs();
 });
 
-function deleteUser(id) {
-    users = users.filter(user => user.id !== id);
-    render();
+function deleteEntry(id) {
+    employees = employees.filter(emp => emp.id !== id);
+    renderEmployees();
 }
 
-function prepareEdit(id) {
-    const user = users.find(u => u.id === id);
+function editEntry(id) {
+    const emp = employees.find(e => e.id === id);
     
-    document.getElementById('c-firstName').value = user.fName;
-    document.getElementById('c-lastName').value = user.lName;
-    document.getElementById('c-age').value = user.age;
-    document.getElementById('c-phone').value = user.phone;
+    inputName.value = emp.name;
+    inputAge.value = emp.age;
+    inputSex.value = emp.sex;
+    inputPos.value = emp.position;
     
-    isEditing = true;
-    currentEditId = id;
-    saveBtn.innerText = "Update User";
-    document.getElementById('form-title').innerText = "Editing User...";
-    
-    window.scrollTo(0, 0);
+    editMode = true;
+    editId = id;
+    addBtn.innerText = "Save Changes";
+    document.getElementById('form-title').innerText = "Edit Employee Info";
+    window.scrollTo(0, 0); 
 }
 
+function renderEmployees() {
+    displayArea.innerHTML = "";
 
-function render() {
-    userListDiv.innerHTML = ""; 
-
-    users.forEach(user => {
-        const userCard = document.createElement('div');
-        userCard.className = "user-card";
-        userCard.style.cssText = "background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 250px; border-top: 5px solid #000080;";
+    employees.forEach(emp => {
+        const card = document.createElement('div');
+        card.className = "user-card"; 
+        card.style.cssText = "background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 280px; border-left: 6px solid #000080;";
         
-        userCard.innerHTML = `
-            <h3 style="color: #000080; margin-top: 0;">${user.fName} ${user.lName}</h3>
-            <p><strong>Age:</strong> ${user.age}</p>
-            <p><strong>Phone:</strong> ${user.phone}</p>
-            <div style="display: flex; gap: 10px; margin-top: 15px;">
-                <button onclick="prepareEdit(${user.id})" style="background: #9f9f9f; padding: 5px;">Edit</button>
-                <button onclick="deleteUser(${user.id})" style="background: #000000; padding: 5px;">Delete</button>
+        card.innerHTML = `
+            <h3 style="color: #000080; margin: 0 0 10px 0;">${emp.name}</h3>
+            <p><strong>Age:</strong> ${emp.age}</p>
+            <p><strong>Sex:</strong> ${emp.sex}</p>
+            <p><strong>Position:</strong> ${emp.position}</p>
+            <div style="margin-top: 15px; display: flex; gap: 10px;">
+                <button onclick="editEntry(${emp.id})" style="background: #9f9f9f; flex: 1; padding: 8px;">Edit</button>
+                <button onclick="deleteEntry(${emp.id})" style="background: #000000; flex: 1; padding: 8px;">Delete</button>
             </div>
         `;
-        userListDiv.appendChild(userCard);
+        displayArea.appendChild(card);
     });
 }
 
-function clearForm() {
-    document.getElementById('c-firstName').value = "";
-    document.getElementById('c-lastName').value = "";
-    document.getElementById('c-age').value = "";
-    document.getElementById('c-phone').value = "";
+function clearInputs() {
+    inputName.value = "";
+    inputAge.value = "";
+    inputSex.value = "";
+    inputPos.value = "";
 }

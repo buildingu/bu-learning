@@ -2,18 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search - ADOS App</title>
     <link rel="stylesheet" href="../styles/styles.css">
-    <title>Document</title>
 </head>
 <body>
     <nav class="navbar">
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="validator.html">Validator</a></li>
-        <li><a href="crud.html">User Manager</a></li>
-        <li><a href="api.html" class="active">Movie Search</a></li>
-    </ul>
-</nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="validator.html">Validator</a></li>
+            <li><a href="crud.html">Employee Entry</a></li>
+            <li><a href="movie.html" class="active">Movie App</a></li>
+        </ul>
+    </nav>
+
+    <div class="card">
+        <h2>Movie Search</h2>
+        <div class="form-group">
+            <label>Search Movie Title</label>
+            <input type="text" id="m-input" placeholder="e.g. Inception, Batman...">
+        </div>
+        <button id="m-search">Search Movie</button>
+    </div>
+
+    <div id="m-result" style="width: 100%; max-width: 450px; display: flex; justify-content: center;"></div>
+
+    <script src="../logic/movie.js"></script>
 </body>
 </html>

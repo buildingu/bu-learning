@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>User Manager - ADOS App</title>
+    <title>Employee Entry</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
@@ -10,35 +10,40 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="validator.html">Validator</a></li>
-            <li><a href="crud.html" class="active">CRUD App</a></li>
+            <li><a href="crud.html" class="active">Employee Entry</a></li>
             <li><a href="movie.html">Movie App</a></li>
         </ul>
     </nav>
 
     <div class="card">
-        <h2 id="form-title">User Manager</h2>
+        <h2 id="form-title">Add New Employee</h2>
         
         <div class="form-group">
-            <label>First Name</label>
-            <input type="text" id="c-firstName">
-        </div>
-        <div class="form-group">
-            <label>Last Name</label>
-            <input type="text" id="c-lastName">
+            <label>Full Name</label>
+            <input type="text" id="emp-name">
         </div>
         <div class="form-group">
             <label>Age</label>
-            <input type="number" id="c-age">
+            <input type="number" id="emp-age">
         </div>
         <div class="form-group">
-            <label>Phone Number</label>
-            <input type="text" id="c-phone">
+            <label>Sex</label>
+            <select id="emp-sex" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ddd;">
+                <option value="">Select...</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Position</label>
+            <input type="text" id="emp-position">
         </div>
 
-        <button id="c-save">Add Entry</button>
+        <button id="add-entry-btn">Add Entry</button>
     </div>
 
-    <div id="userList" style="width: 100%; max-width: 800px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding-bottom: 50px;"></div>
+    <div id="employeeDisplay" style="width: 100%; max-width: 900px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding-bottom: 50px;"></div>
 
     <script src="../logic/crud.js"></script>
 </body>
