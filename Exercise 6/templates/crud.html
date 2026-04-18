@@ -2,18 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Manager - ADOS App</title>
     <link rel="stylesheet" href="../styles/styles.css">
-    <title>Document</title>
 </head>
 <body>
     <nav class="navbar">
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="validator.html">Validator</a></li>
-        <li><a href="crud.html" class="active">User Manager</a></li>
-        <li><a href="api.html">Movie Search</a></li>
-    </ul>
-</nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="validator.html">Validator</a></li>
+            <li><a href="crud.html" class="active">CRUD App</a></li>
+            <li><a href="movie.html">Movie App</a></li>
+        </ul>
+    </nav>
+
+    <div class="card">
+        <h2 id="form-title">User Manager</h2>
+        
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" id="c-firstName">
+        </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" id="c-lastName">
+        </div>
+        <div class="form-group">
+            <label>Age</label>
+            <input type="number" id="c-age">
+        </div>
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="text" id="c-phone">
+        </div>
+
+        <button id="c-save">Add Entry</button>
+    </div>
+
+    <div id="userList" style="width: 100%; max-width: 800px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding-bottom: 50px;"></div>
+
+    <script src="../logic/crud.js"></script>
 </body>
 </html>
