@@ -3,6 +3,15 @@
 Created using JS Bin
 http://jsbin.com
 
+Copyright (c) 2026 by queenjuhithestar1-source (http://jsbin.com/rukosil/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<!--
+Created using JS Bin
+http://jsbin.com
+
 Copyright (c) 2026 by queenjuhithestar1-source (http://jsbin.com/qojazag/1/edit)
 
 Released under the MIT license: http://jsbin.mit-license.org
@@ -18,41 +27,45 @@ Released under the MIT license: http://jsbin.mit-license.org
 
 <script id="jsbin-javascript">
 function formValidator(fName, lName, age, phoneNum) {
-  if (!fName){
+  if (!fName) {
     console.log("Please enter your first name");
     return;
   } else if (typeof fName !== 'string') {
     console.log("The first name should be a string data type");
     return;
   }
-  
-  
-  if (!lName){
+
+  if (!lName) {
     console.log("Plase enter your last name");
     return;
   } else if (typeof lName !== 'string') {
     console.log("The last name should be a string data type");
     return;
   }
-  
-  
-  if (!age){
+
+  if (!age) {
     console.log("Please enter your age");
     return;
   } else if (typeof age !== 'number') {
     console.log("The age should be a number");
     return;
+  } else if (age < 18) {
+    console.log("Access Denied: You must be at least 18 years old.");
+    return;
   }
-  
-  if (!phoneNum){
+
+  if (!phoneNum) {
     console.log("Please enter your phone number");
     return;
   } else if (typeof phoneNum !== 'string') {
     console.log("The phone number should be a string data type");
     return;
   }
-  
+
+  console.log("WELCOME TO THE ADOS APP");
 }
+
+formValidator("John", "Doe", 18, "1234567890");
 </script>
 </body>
 </html>
