@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Movie Search - ADOS App</title>
+    <title>Movie Search</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
@@ -15,17 +15,9 @@
         </ul>
     </nav>
 
-    <div class="card">
-        <h2>Movie Search</h2>
-        <div class="form-group">
-            <label>Search Movie Title</label>
-            <input type="text" id="m-input" placeholder="e.g. Inception, Batman...">
-        </div>
-        <button id="m-search">Search Movie</button>
-    </div>
+    <input type="text" id="m-input" placeholder="Enter movie title...">
+    <button id="m-search">Search Movie</button>
 
-    <div id="m-result" style="width: 100%; max-width: 450px; display: flex; justify-content: center;"></div>
-
-    <script src="../logic/movie.js"></script>
+    <script src="../logic/api.js"></script>
 </body>
 </html>
