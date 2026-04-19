@@ -3,7 +3,8 @@ const inputField = document.getElementById('m-input');
 
 async function fetchMovie() {
     const title = inputField.value;
-    const apiKey = "80568fce";
+    const apiKey = "YOUR_API_KEY";
+    //// Link to get your own API key to test: https://www.omdbapi.com/apikey.aspx
 
     if (!title) {
         alert("Please enter a movie title.");
@@ -18,8 +19,8 @@ async function fetchMovie() {
         const data = await response.json();
 
         if (response.status === 401) {
-        alert("API Key Error: Your key is either incorrect or hasn't been activated via email yet.");
-        return;
+            alert("API Key Error: Your key is either incorrect or hasn't been activated via email yet.");
+            return;
         }
 
 
@@ -48,5 +49,3 @@ async function fetchMovie() {
 }
 
 searchBtn.addEventListener('click', fetchMovie);
-
-my_key = ""
