@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuildingU | Sarang Menon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: #1a1a2e !important;
+    }
+
+    .nav-link {
+      color: #555 !important;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover { color: #1a1a2e !important; }
+
+    .dark-bg {
+      background-image:
+        radial-gradient(ellipse at 80% 50%, rgba(120, 80, 200, 0.4) 0%, transparent 60%),
+        radial-gradient(ellipse at 20% 80%, rgba(180, 30, 60, 0.5) 0%, transparent 50%),
+        linear-gradient(135deg, #5a1020 0%, #1a0a3e 50%, #0a0a5e 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .dark-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 20px 20px;
+      pointer-events: none;
+    }
+
+    .gem-shape {
+      position: absolute;
+      right: 5%;
+      top: 5%;
+      width: 260px;
+      height: 480px;
+      background: linear-gradient(160deg, rgba(100,80,200,0.28), rgba(80,60,180,0.08));
+      clip-path: polygon(50% 0%, 100% 35%, 85% 100%, 15% 100%, 0% 35%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-top {
+      text-align: center;
+      padding: 70px 20px 50px;
+      color: white;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-top h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .hero-top p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 28px;
+    }
+
+    .about-section {
+      padding: 60px 0;
+      color: white;
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      color: rgba(255,255,255,0.85);
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+
+    .profile-placeholder {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 40% 35%, #3a2a5e, #0a0a2e);
+      border: 3px solid rgba(255,255,255,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5.5rem;
+      margin: 0 auto;
+    }
+
+    .portfolio-section {
+      background: #f8f9fa;
+      padding: 60px 0;
+    }
+
+    .portfolio-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #1a1a2e;
+    }
+
+    .project-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      background: white;
+      padding: 28px 24px 24px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tech-logo-block {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .tech-label {
+      display: block;
+      font-weight: 900;
+      font-size: 0.8rem;
+      letter-spacing: 3px;
+      margin-bottom: 4px;
+    }
+
+    .shield-icon {
+      font-size: 4.5rem;
+      line-height: 1;
+    }
+
+    .html-color { color: #e44d26; }
+    .css-color  { color: #264de4; }
+    .js-color   { color: #f0db4f; }
+
+    .project-card h5 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #1a1a2e;
+    }
+
+    .project-card p {
+      font-size: 0.92rem;
+      color: #555;
+      line-height: 1.65;
+      flex-grow: 1;
+    }
+
+    .btn-html { background-color: #dc3545; color: white; border: none; margin-top: 16px; border-radius: 5px; padding: 8px 20px; }
+    .btn-html:hover { background-color: #bb2d3b; color: white; }
+    .btn-css  { background-color: #0dcaf0; color: white; border: none; margin-top: 16px; border-radius: 5px; padding: 8px 20px; }
+    .btn-css:hover  { background-color: #0aa2c0; color: white; }
+    .btn-js   { background-color: #ffc107; color: #1a1a1a; border: none; margin-top: 16px; border-radius: 5px; padding: 8px 20px; }
+    .btn-js:hover   { background-color: #d9a800; color: #1a1a1a; }
+
+    .contact-section { padding: 70px 0; }
+
+    .contact-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 28px;
+    }
+
+    .contact-section label {
+      color: white;
+      font-weight: 500;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .contact-section .form-control {
+      background: rgba(255,255,255,0.95);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: #333;
+      margin-bottom: 18px;
+      border-radius: 6px;
+    }
+
+    .contact-section .form-control:focus {
+      background: white;
+      box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.2);
+      border-color: rgba(255,255,255,0.5);
+    }
+
+    .btn-send {
+      background-color: #198754;
+      color: white;
+      border: none;
+      padding: 10px 28px;
+      font-size: 1rem;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    .btn-send:hover { background-color: #146c43; color: white; }
+
+    footer {
+      background: #f0f0f0;
+      padding: 18px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .modal-project-img { text-align: center; padding: 16px 0 8px; font-size: 5rem; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand" href="#">BuildingU</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-3 gap-2">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="dark-bg" style="padding-top: 56px;">
+    <div class="gem-shape"></div>
+
+    <div class="hero-top">
+      <h1>Welcome to My BuildingU Projects Page</h1>
+      <p>Discover my work on Github.</p>
+      <a href="https://github.com/sarangmenon947" target="_blank" class="btn btn-primary px-4 py-2">View My Work</a>
+    </div>
+
+    <div id="about" class="about-section">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <h2>About Me</h2>
+            <p>Hey, I'm Sarang Menon, and I'm passionate about web development and coding. I volunteer my skills to build amazing websites and write efficient code that brings ideas to life.</p>
+            <p>With several years of experience in the field, I've had the privilege of working on a wide range of projects, from creating responsive and user-friendly websites to developing custom web applications that solve complex problems.</p>
+            <p>My journey in web development has allowed me to explore various technologies and frameworks, and Bootstrap is one of my favorites. It's a fantastic tool for creating sleek and responsive web designs, which is why I'm excited to share my knowledge with you through this exercise.</p>
+          </div>
+          <div class="col-lg-5 d-flex justify-content-center">
+            <img class="profile-placeholder" src="https://www.sarangmenon.me/assets/Profile-BKI4pzzw.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="portfolio-section">
+    <div class="container">
+      <h2>My Portfolio</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="tech-logo-block">
+              <span class="tech-label html-color">HTML</span>
+            </div>
+            <h5>Project 1: HTML</h5>
+            <p>Project 1 showcases my HTML skills. It's a webpage involving HTML with table and static form components. Click learn more to see the project.</p>
+            <button class="btn btn-html" data-bs-toggle="modal" data-bs-target="#modalHTML">Learn More</button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="tech-logo-block">
+              <span class="tech-label css-color">CSS</span>
+            </div>
+            <h5>Project 2: CSS</h5>
+            <p>Project 2 showcases my CSS skills. It's a stylized webpage for an event done using HTML and CSS with custom components. Click learn more to see the project.</p>
+            <button class="btn btn-css" data-bs-toggle="modal" data-bs-target="#modalCSS">Learn More</button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="tech-logo-block">
+              <span class="tech-label" style="color:#c9a800;">JS</span>
+            </div>
+            <h5>Project 3: Advanced CSS</h5>
+            <p>Project 3 showcases my advanced CSS skills. It's a responsive webpage (Desktop &amp; Mobile) from Project 1. Click learn more to see the project.</p>
+            <button class="btn btn-js" data-bs-toggle="modal" data-bs-target="#modalJS">Learn More</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="modalHTML" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Project 1: HTML</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-project-img html-color">&#11039;</div>
+          <p>This project showcases fundamental HTML skills including structured tables, static form components, semantic markup, and proper document structure. It demonstrates a solid understanding of HTML5 standards.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="#" class="btn btn-html">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalCSS" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Project 2: CSS</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-project-img css-color">&#11039;</div>
+          <p>This project is a stylized event webpage built with HTML and CSS. It features custom-designed components, creative layouts, hover effects, and consistent color theming throughout the page.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="#" class="btn btn-css">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalJS" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Project 3: Advanced CSS</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-project-img js-color">&#11039;</div>
+          <p>Building on Project 1, this advanced CSS project makes the webpage fully responsive for both desktop and mobile screens. It uses media queries, flexbox, and CSS Grid to create an adaptive layout.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="#" class="btn btn-js">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact" class="contact-section dark-bg">
+    <div class="gem-shape" style="top: auto; bottom: 0; height: 380px;"></div>
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Contact Me</h2>
+          <div class="mb-1">
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Sarang Menon">
+          </div>
+          <div class="mb-1">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="example@domain.com">
+          </div>
+          <div class="mb-1">
+            <label for="inputMessage">Message</label>
+            <textarea class="form-control" id="inputMessage" rows="5" placeholder="Enter your comment here."></textarea>
+          </div>
+          <button class="btn btn-send mt-2">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 Sarang Menon</span>
+    <span>Desktop Version&reg;</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
