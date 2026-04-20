@@ -1,18 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 1 - HTML Building-U</title>
-</head>
-<body>
 
-<center>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        form {
+            width: 300px;
+            margin: auto;
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
 
     <h1>Exercise 1: HTML Building-U</h1>
     <h3>Date of Submission: 31 March 2026</h3>
 
     <h2>Student Information Table</h2>
 
-    <table border="1" cellpadding="10">
+    <table>
         <tr>
             <th>First Name</th>
             <th>Last Name</th>
@@ -27,7 +59,9 @@
 
             <td>
                 <a href="https://en.wikipedia.org/wiki/Indiana_Jones" target="_blank">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNQzbT-XiKTd_1nhFCiT2j44mkLFowYXFbSA&s" width="120">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNQzbT-XiKTd_1nhFCiT2j44mkLFowYXFbSA&s"
+                         width="120"
+                         alt="Indiana Jones Movie Poster">
                 </a>
             </td>
 
@@ -47,49 +81,59 @@
         </tr>
     </table>
 
-    <br><br>
-
     <h2>Registration Form</h2>
 
-    <form>
+    <form action="#" method="post">
 
-        <label>Full Name:</label><br>
-        <input type="text" placeholder="Enter your full name"><br><br>
+        <div class="form-group">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="fullname" placeholder="Enter your full name">
+        </div>
 
-        <label>Email:</label><br>
-        <input type="email" placeholder="Enter your email"><br><br>
+        <div class="form-group">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
 
-        <label>Password:</label><br>
-        <input type="password" placeholder="Enter your password"><br><br>
+        <div class="form-group">
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+        </div>
 
-        <label>Available Days:</label><br>
-        <input type="checkbox"> Monday<br>
-        <input type="checkbox"> Tuesday<br>
-        <input type="checkbox"> Wednesday<br>
-        <input type="checkbox"> Thursday<br>
-        <input type="checkbox"> Friday<br><br>
+        <div class="form-group">
+            <label>Available Days:</label><br>
+            <label><input type="checkbox" name="days" value="Monday"> Monday</label><br>
+            <label><input type="checkbox" name="days" value="Tuesday"> Tuesday</label><br>
+            <label><input type="checkbox" name="days" value="Wednesday"> Wednesday</label><br>
+            <label><input type="checkbox" name="days" value="Thursday"> Thursday</label><br>
+            <label><input type="checkbox" name="days" value="Friday"> Friday</label>
+        </div>
 
-        <label>Available Time:</label><br>
-        <select>
-            <option>Select Time</option>
-            <option>Morning</option>
-            <option>Afternoon</option>
-            <option>Evening</option>
-        </select><br><br>
+        <div class="form-group">
+            <label for="time">Available Time:</label><br>
+            <select id="time" name="time">
+                <option value="" disabled selected>Select Time</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+            </select>
+        </div>
 
-        <label>Working on a New Website?</label><br>
-        <input type="radio" name="website" checked> Yes
-        <input type="radio" name="website"> No<br><br>
+        <div class="form-group">
+            <label>Working on a New Website?</label><br>
+            <label><input type="radio" name="website" value="yes" checked> Yes</label>
+            <label><input type="radio" name="website" value="no"> No</label>
+        </div>
 
-        <label>Comments:</label><br>
-        <textarea placeholder="Enter your comments here"></textarea><br><br>
+        <div class="form-group">
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+        </div>
 
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
 
     </form>
-
-</center>
 
 </body>
 </html>
