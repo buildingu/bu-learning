@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Validator</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root { --accent: #f97316; }
+  </style>
+</head>
+<body>
+  <div class="noise"></div>
+
+  <div class="page-header">
+    <a href="index.html" class="back-link">&#x2190; Home</a>
+    <h1>Form <span style="color:var(--accent)">Validator</span></h1>
+    <p>Fill in the fields below. Errors appear instantly as you interact.</p>
+  </div>
+
+  <div class="app-wrapper">
+    <div class="success-banner" id="successBanner">&#x2713; All fields are valid — form submitted!</div>
+
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="e.g. john_doe" />
+      <span class="error-msg" id="usernameError"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="e.g. john@example.com" />
+      <span class="error-msg" id="emailError"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="number" id="age" placeholder="Must be 18 – 120" />
+      <span class="error-msg" id="ageError"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Min 8 chars, 1 number" />
+      <span class="error-msg" id="passwordError"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" placeholder="Repeat your password" />
+      <span class="error-msg" id="confirmPasswordError"></span>
+    </div>
+
+    <button class="btn btn-primary btn-full" id="submitBtn">Validate &amp; Submit</button>
+  </div>
+
+  <script src="app1.js"></script>
+</body>
+</html>

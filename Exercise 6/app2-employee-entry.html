@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Entry</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root { --accent: #6366f1; }
+  </style>
+</head>
+<body>
+  <div class="noise"></div>
+
+  <div class="page-header">
+    <a href="index.html" class="back-link">&#x2190; Home</a>
+    <h1>Employee <span style="color:var(--accent)">Entry</span></h1>
+    <p>Add, edit, and remove employee records below.</p>
+  </div>
+
+  <div class="app-wrapper">
+    <div class="form-group">
+      <label for="empName">Name</label>
+      <input type="text" id="empName" placeholder="Full name" />
+    </div>
+
+    <div class="form-group">
+      <label for="empAge">Age</label>
+      <input type="number" id="empAge" placeholder="e.g. 28" />
+    </div>
+
+    <div class="form-group">
+      <label for="empSex">Sex</label>
+      <select id="empSex">
+        <option value="" disabled selected>Select…</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Non-binary">Non-binary</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="empPosition">Position</label>
+      <input type="text" id="empPosition" placeholder="e.g. Software Engineer" />
+    </div>
+
+    <span class="error-msg" id="empError" style="margin-bottom:.75rem;display:block"></span>
+
+    <button class="btn btn-primary btn-full" id="addEntryBtn">+ Add Entry</button>
+
+    <hr class="section-divider" />
+
+    <div class="entries-list" id="entriesList"></div>
+  </div>
+
+  <script src="app2.js"></script>
+</body>
+</html>

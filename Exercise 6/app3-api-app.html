@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Activity</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root { --accent: #10b981; }
+  </style>
+</head>
+<body>
+  <div class="noise"></div>
+
+  <div class="page-header">
+    <a href="index.html" class="back-link">&#x2190; Home</a>
+    <h1>Beat the <span style="color:var(--accent)">Boredom</span></h1>
+    <p>Stuck for ideas? Press the button and get a random activity — powered by the Bored API.</p>
+  </div>
+
+  <div class="app-wrapper">
+    <button class="btn btn-primary btn-full" id="fetchBtn">&#x2728; Give me something to do</button>
+
+    <div class="api-result-box" id="resultBox">
+      <p class="placeholder-text">Your activity will appear here…</p>
+    </div>
+  </div>
+
+  <script src="app3.js"></script>
+</body>
+</html>
