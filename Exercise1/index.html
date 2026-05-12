@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 3</title>
+        <!-- Meta data -->
+        <!-- Character Set (typing) -->
+        <meta charset="UTF-8"/>
+        <!-- Search Engine Key Words -->
+        <meta name="keywords" content="HTML5"/>
+        <!-- Description -->
+        <meta name="description" content="EXERCISE 1"/>
+        <!-- Author -->
+        <meta name="author" content="Gabriel Rodriguez"/>
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+        <center><h1>Exercise 1 by Gabriel Rodriguez</h1>
+        <h3>Date Submitted: March 7, 2026</h3>
+        <hr>
+        <h3>Fun Facts about me: </h3>
+    <table border="1">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Movie</th>
+            <th>Favorite Song</th>
+            <th>Favorite Video</th>
+        </tr>
+        <!-- Second Row -->
+        <tr>
+            <td>Gabriel</td>
+            <td>Rodriguez</td>
+            <td><img src="assets/Avatar.jpeg" width="200" height="200"/></td>
+            <td>
+                <audio controls>
+                    <source src="assets/Victor 5570 - Take Me Out to the Ball Game - 3.0 CT 630N-16 EQ.mp3" type="audio/mpeg">
+                </audio>
+            </td>
+            <td>
+                <iframe 
+                width="200" 
+                height="200"
+                src="https://www.youtube.com/embed/nb_fFj_0rq8"
+                allowfullscreen>
+                </iframe>
+            </td>
+        </tr>
+    </table border="1">
+    <hr>
+    <h3>Enter your details below:</h3>
+        <form>
+            <label id="fullname"> Full Name:</label><br>
+            <input type="text" placeholder="John Doe"><br><br>
+
+            <label for="email" >Email Address:</label><br>
+            <input type="email" placeholder="john.doe@example.com"><br><br>
+
+            <label for="password" >Password:</label> <br>
+            <input type="password" placeholder="••••••••"><br><br>
+                <!-- em used for emphasis -->
+                    <p><em>Available Meeting Days</em></p>
+                    <label><input type="checkbox"> Monday</label>
+                    <label><input type="checkbox"> Tuesday</label>
+                    <label><input type="checkbox"> Wednesday</label>
+                    <label><input type="checkbox"> Thursday</label>
+                    <label><input type="checkbox"> Friday</label>
+                    <label><input type="checkbox"> Saturday</label>
+                    <label><input type="checkbox"> Sunday</label><br><br>
+
+                <label for="available-time"><em>Available Time</em>:</label><br>
+                    <select id="available-time" name="available-time">
+                            <option value="morning">Morning (8am to 12pm)</option>
+                            <option value="afternoon">Afternoon (12pm to 4pm)</option>
+                            <option value="evening">Evening (4pm to 8pm)</option>
+                    </select><br><br>
+                <label>Currently working on a new website?</label><br>
+                <label>
+                    <input type="radio" name="answer" value="yes" checked> Yes
+                </label>
+                <label>
+                            <input type="radio" name="answer" value="no"> No
+                        </label><br><br>
+                    <textarea rows="4" cols="25" placeholder="Your comments here..."></textarea><br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset"><br>
+        </form>
+    </center>
+    </main>
+    </body>
+</html>
