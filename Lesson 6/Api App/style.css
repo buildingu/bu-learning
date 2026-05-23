@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightyellow;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+button {
+  padding: 15px;
+
+  background-color: orange;
+  color: white;
+
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: red;
+}
+
+#jokeDisplay {
+  margin-top: 20px;
+
+  padding: 10px;
+  width: 300px;
+
+  border: 2px solid blue;
+  background-color: white;
+
+  text-align: center;
+}

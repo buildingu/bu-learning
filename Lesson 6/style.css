@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: darkblue;
+}
+
+p {
+  color: gray;
+}
+
+.cards {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  color: black;
+
+  padding: 20px;
+  width: 200px;
+
+  border: 2px solid blue;
+  border-radius: 10px;
+
+  text-decoration: none;
+}
+
+.card:hover {
+  background-color: lightgray;
+}

@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgray;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.container {
+  width: 400px;
+}
+
+h1 {
+  color: darkblue;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+
+  margin-bottom: 10px;
+
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  margin-bottom: 10px;
+
+  background-color: blue;
+  color: white;
+
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+.employee-card {
+  border: 2px solid gray;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  background-color: white;
+}
+
+.edit-btn {
+  background-color: orange;
+  color: black;
+
+  margin-right: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+
+  border: none;
+  cursor: pointer;
+}

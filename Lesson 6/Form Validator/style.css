@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+
+  border: 2px solid blue;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  color: darkblue;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: blue;
+}
+
+button {
+  padding: 10px;
+
+  background-color: green;
+  color: white;
+
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lightgreen;
+}
+
+#error {
+  color: red;
+}
+
+#success {
+  color: green;
+}
