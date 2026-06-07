@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1</title>
+  </head>
+  <body>
+    <main>
+      <h1>Exercise 1 by Saeed Mamani</h1>
+      <h2>Date submitted: 07/06/2026</h2>
+
+      <section>
+        <h3>Table</h3>
+        <table>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favourite Movie Image</th>
+            <th>Favourite Music Audio Sample</th>
+            <th>Favourite Video Sample</th>
+          </tr>
+
+          <tr>
+            <td>Saeed</td>
+            <td>Mamani</td>
+            <td>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/0/02/Halo4forwarduntodawn.png"
+                alt=""
+              />
+            </td>
+            <td><!--Link here--></td>
+            <td><!--Link here--></td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h3>Form</h3>
+        <form action="">
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter full name"
+          />
+          <br /><br />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter email"
+          />
+          <br /><br />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter password"
+          />
+          <br /><br />
+
+          <label for="available-days">Available Days:</label>
+          <br />
+          <input type="checkbox" name="monday" id="monday" />Monday
+          <input type="checkbox" name="tuesday" id="tuesday" />Tuesday
+          <input type="checkbox" name="wednesday" id="wednesday" />Wednesday
+          <input
+            type="checkbox"
+            name="thursday"
+            id="thursday"
+            value="Thursday"
+          />Thursday <input type="checkbox" name="friday" id="friday" />Friday
+          <input type="checkbox" name="saturday" id="saturday" />Saturday
+          <input type="checkbox" name="sunday" id="sunday" />Sunday <br /><br />
+
+          <label for="available-time">Available Time:</label>
+          <select name="available-time" id="available-time">
+            <option value="8am">8am</option>
+            <option value="9am">9am</option>
+            <option value="10am">10am</option>
+            <option value="11am">11am</option>
+            <option value="12pm">12pm</option>
+            <option value="1pm">1pm</option>
+          </select>
+          <br /><br />
+
+          <label for="working-on-new-website">Working On New Website?</label
+          ><br />
+          <label
+            ><input
+              type="radio"
+              name="working-on-new-website"
+              id="yes"
+              checked
+            />Yes</label
+          >
+          <label
+            ><input type="radio" name="working-on-new-website" id="no" />No
+          </label>
+          <br /><br />
+
+          <label for="comments">Comments:</label><br />
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+            placeholder="Any comments? Write it here!"
+          ></textarea>
+          <br /><br />
+
+          <button type="submit">Submit</button>
+          <button type="reset">Reset Form</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
