@@ -9,22 +9,37 @@
   <body>
     <header>
       <h1>Soccer Game</h1>
-      <p>Walnut Ridge High School vs Marion Harding High School</p>
+      <p class="sub-heading">
+        Walnut Ridge High School vs Marion Harding High School
+      </p>
     </header>
 
     <!-- Event Information -->
     <section>
       <h2>Event Information</h2>
-      <ul>
-        <li>Date: Saturday, June 20, 2025</li>
-        <li>Time: 2:00 PM</li>
-        <li>Location: Walnut Ridge High School Stadium</li>
-        <li>Entry Fee: Free</li>
-      </ul>
+      <table>
+        <tr>
+          <td>Date</td>
+          <td>Saturday, June 20, 2025</td>
+        </tr>
+        <tr>
+          <td>Time</td>
+          <td>2:00 PM</td>
+        </tr>
+        <tr>
+          <td>Location</td>
+          <td>Walnut Ridge High School Stadium</td>
+        </tr>
+        <tr>
+          <td>Entry Fee</td>
+          <td>Free</td>
+        </tr>
+      </table>
     </section>
 
     <!-- Schedule Table -->
     <section>
+      <h2>Event Schedule</h2>
       <table>
         <tr>
           <th>Time</th>
@@ -51,15 +66,15 @@
 
     <!-- Multimedia -->
     <section>
-      <img src="assets/team-img.webp" alt="soccer related image" />
+      <img
+        src="assets/team-img.webp"
+        alt="soccer related image"
+        class="team-img"
+      />
 
-      <!-- <video controls>
-        <source src="" type="" />
-        soccer related video
-      </video> -->
       <iframe
-        width="560"
-        height="315"
+        width="500"
+        height="400"
         src="https://www.youtube.com/embed/m4hS3gFzSbU?si=donHKzKh7wD461jR"
         title="YouTube video player"
         frameborder="0"
@@ -125,27 +140,37 @@
             >See our past matches</a
           >
         </li>
-        <li><a href="">Visit our school website</a></li>
+        <li>
+          <a href="https://walnutridgehs.ccsoh.us/">Visit our school website</a>
+        </li>
       </ul>
     </section>
 
     <section>
       <h2>Sign Up Here</h2>
       <form action="">
-        <label for="name">Name:</label>
-        <input type="text" placeholder="Enter your name" /><br />
+        <div class="form-line">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" /><br />
+        </div>
 
-        <label for="gradeLevel">Grade Level:</label>
-        <select name="gradeLevel" id="gradeLevel">
-          <option value="placeholder">Select your grade</option>
-          <option value="grade9">Grade 9</option>
-          <option value="grade10">Grade 10</option>
-          <option value="grade11">Grade 11</option>
-          <option value="grade12">Grade 12</option>
-        </select>
-        <br />
+        <div class="form-line">
+          <label for="gradeLevel">Grade Level:</label>
+          <select name="gradeLevel" id="gradeLevel">
+            <option value="placeholder">Select your grade</option>
+            <option value="grade9">Grade 9</option>
+            <option value="grade10">Grade 10</option>
+            <option value="grade11">Grade 11</option>
+            <option value="grade12">Grade 12</option>
+          </select>
+        </div>
 
-        <button type="submit">Submit</button>
+        <div class="form-line">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="somebody@gmail.com" />
+        </div>
+
+        <button type="submit" class="submit-button">Submit</button>
       </form>
     </section>
   </body>
