@@ -1,0 +1,128 @@
+
+body {
+    color: white;
+    text-align: center;
+    background-image: url("img_assets/background-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 768px){
+    body {
+        width: 100%;
+        background-image: url("img_assets/background-mobile.jpg");
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    tr, td, th {
+        display: block;
+    }
+    table {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    td, th {
+        width: 100%;
+        max-width: 100%;
+    }
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+    img {
+        max-width: 100%;
+    }
+    .button-1, .button-2 {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    thead {
+        display: none;
+        background-color: #14191c;
+    }
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+    } 
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    tr {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+form {
+    background-color: rgb(200, 200, 200); /* grey background */
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.button-1 {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+.button-2 {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+th, td {
+    background-color: #334651;
+    padding: 10px;
+}
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.button-1:hover {
+    background-color: darkgreen;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.button-2:hover {
+    background-color: darkred;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+::placeholder {
+    color: rgb(30, 129, 179);
+}
+
+:focus::placeholder {
+    color: transparent;
+}
+
+form, form * {
+    color: black;
+}

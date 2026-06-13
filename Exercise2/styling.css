@@ -1,0 +1,44 @@
+/*a {
+    background-color: rgb(91, 188, 188);
+}*/
+/*#second-paragraph {
+    font-weight: bold;
+    font-style: italic;
+}*/
+/*.style-paragraph {
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(83, 93, 142);
+}*/
+/*img[alt] {
+    border: 10px solid olive;
+}*/
+/*.child-1 .grandchild-1{
+    background-color: brown;
+    text-align: center;
+    font-size: x-large;
+}*/
+
+/*.parent>.child {
+    border: 10px solid orange;
+}*/
+
+/*.child > p {
+    border: 10px solid black;
+}*/
+/*.grandchild + p {
+    color: red;
+}*/
+/*.grandchild ~ p{
+    color: red;
+}*/
+button {
+    background-color: orange;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+div > * {
+    color: blue;
+    border: 10px solid rgb(165, 205, 116);
+}

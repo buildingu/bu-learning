@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercise 3:Advanced CSS</title>
+        <link rel="stylesheet" href="styles_for_exercise_3.css">
+    </head>
+    <body>
+        <h1>Exercise 3 by Abubakr Oev</h1>
+        <h2>Submission date: June 12th, 2026</h2> <br>
+        <hr>
+        <h3>Fun facts about me:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Favorite Movie</th>
+                    <th>Favorite Music</th>
+                    <th>Favorite Video</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="First Name">Abubakr</td>
+                    <td data-label="Last Name">Oev</td>
+                    <td data-label="Favorite Movie">
+                        <a href="https://en.wikipedia.org/wiki/Kingdom_of_Heaven_(film)">
+                        <img src="img_assets/download.jfif" alt="Movie poster of Kingdom of Heaven"></a>
+                    </td>
+                    <td data-label="Favorite Music">
+                        <p>Click this button to play Thriller:</p>
+                        <audio controls>
+                        <source src="img_assets/08 - Michael Jackson - Thriller - Thriller.mp3" type="audio/mpeg">
+                    </audio>
+                    </td>
+                    <td data-label="Favorite Video">
+                        <p>This video leads to the music video for Thriller:</p>
+                        <iframe
+                            src="https://www.youtube.com/embed/4V90AmXnguw"
+                            title="Thriller">
+                        </iframe>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <main><br><br><br><br>
+            <form align="center">
+                <h3>Enter your details below:</h3> <br><br>
+                <label><i>Full name:</i></label><br>
+
+                <input type="text" placeholder="John Doe"><br><br>
+
+                <label><i>Email address:</i></label><br>
+
+                <input type="email" placeholder="johndoe@fakemail.com"><br><br>
+
+                <label><i>Password:</i></label><br>
+
+                <input type="password" placeholder="••••"><br><br>
+
+                <fieldset>
+                    <legend><i>Select the days you are available:</i></legend>
+
+                    <label>
+                        <input type="checkbox" name="available_days" value="monday"><i>Monday</i>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="available_days" value="tuesday"><i>Tuesday</i>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="available_days" value="wednesday"><i>Wednesday</i>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="available_days" value="thursday"><i>Thursday</i>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="available_days" value="friday"><i>Friday</i>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="available_days" value="saturday"><i>Saturday</i>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="available_days" value="sunday"><i>Sunday</i>
+                    </label>
+                </fieldset>
+                <label><i>Your available times:</i></label>
+                <select name="available_time" id="available-time">
+                    <option value="Morning">Morning: 8 AM to 12 PM</option>
+                    <option value="Afternoon">Afternoon: 1 PM to 5 PM</option>
+                    <option value="Evening">Evening: 6 PM to 10 PM</option>
+                </select><br><br><br><br>
+
+                <label><i>Are you working on the new website?</i></label>
+                <input type="radio" checked name="working_on_website">Yes
+                <input type="radio" name="working_on_website">No<br><br><br><br>
+                <textarea cols="20" rows="5" placeholder="Enter your comments here..."></textarea><br><br>
+                <button type="button" class="button-1">Submit</button>
+                <button type="button" class="button-2">Reset</button>
+            </form>
+        </main>
+    </body>
+</html>
