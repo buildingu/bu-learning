@@ -1,0 +1,29 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.timetable {
+    border: 15px;
+    padding: 3px;
+    margin: auto;
+}
+
+.details_and_table {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.main {
+    align-items: center;
+}
