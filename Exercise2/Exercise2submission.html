@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercise 2: CSS</title>
+    <link rel="stylesheet" href="styles_for_exercise_2.css">
+</head>
+
+
+<body>
+    <h1 class="my_headings">A Major Event Coming Soon to our High School!</h1>
+    <h2 class="my_headings">You won't Want to Miss it!</h2>
+    <table>
+        <tr>
+            <th>About</th>
+            <th>Where it is</th>
+            <th>Time</th>
+            <th>Who's invited?</th>
+            <th>Contact information section</th>
+        </tr>
+        <tr>
+            <td>It is a Boys Regional Golf Tournament (Varsity and Junior Varsity)</td>
+            <td>It is happening at Coyote Crossing Golf Club</td>
+            <td>Friday, June 12th, 2026 @9:00 AM EDT</td>
+            <td>Great question! Any person who is family or a friend to the people participating in this golf tourney to see who is the best of all the people. Go Shamrocks!</td>
+            <td>How do I get into contact with the golf course? Another great question! Contact +1 (765)-497-1061 to make sure that you can attend! Just to make sure, please fill out these questions to make sure you are able to attend and not intrude the game! Thanks!</td>
+        </tr>
+    </table>
+
+    <a href="https://www.chronogolf.com/club/coyote-crossing-golf-club-indiana?date=2026-06-12&tournamentId=ea529468-3cb1-405c-9466-f742cc306b45&coursesIds=7cc7e537-a0e2-40a9-bad4-316d6634a9a3&step=tournamentTeetimes">
+    <img src="../Exercise4/img_assets/images.png" alt="Picture of Coyote Crossing Golf Club"></a>
+    <img src="../Exercise4/img_assets/download.png" alt="Picture of a Person Swinging a Golf Club">
+    <h3>To get a good view of the golf course, click this video to check out one of the holes in the golf course!</h3>
+    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/4UNlFQaCnFE"
+                        title="Coyote Crossing Golf Club Video">
+    </iframe>
+    <p>Click this audio to listen to some golf clapping. This is proper ettiquette when it comes to clapping in golf.</p>
+    <audio controls>
+        <source src="golfclap.mp3" type="audio/mpeg">
+    </audio>
+    <main>
+    <form>
+        <h3>Please answer some questions.</h3>
+        <!--Support label and answer-->
+        <label for="support-input"><i>Who are you coming to support? (Individual person or team)</i></label>
+        <input type="text" id="support-input" placeholder="I am coming to support John Doe">
+        <!--Contact label and answer(s)-->
+        <label for="contact"><i>Did you already contact the people at the golf course?</i></label>
+        <!--Div to style properly-->
+        <div class="radio-group">
+            <input type="radio" id="contact-yes" name="contact_golf_course" value="yes" checked><label for="contact-yes"><i>Yes</i></label>
+            <input type="radio" id="contact-no" name="contact_golf_course" value="no"><label for="contact-no"><i>No</i></label>
+            <input type="radio" id="contact-maybe" name="contact_golf_course" value="maybe"><label for="contact-maybe"><i>Maybe</i></label>
+        </div>
+        <!--Knowing golf label and answer(s)-->
+        <label for="knowing-golf"><i>How much do you know about golf?</i></label>
+        <!--Div to style properly-->
+        <div class="radio-group">
+            <input type="radio" id="golf-a-lot" value="a_lot" name="know_golf" checked><label for="golf-a-lot">A lot</label>
+            <input type="radio" id="golf-some-parts" value="some_parts" name="know_golf"><label for="golf-some-parts">Some parts</label>
+            <input type="radio" id="golf-not-a-lot" value="not_a_lot" name="know_golf"><label for="golf-not-a-lot">Not a lot</label>
+            <input type="radio" id="golf-nothing" value="nothing_at_all" name="know_golf"><label for="golf-nothing">Nothing at all.</label>
+        </div>
+        <!--Feedback label and answer-->
+        <label for="feedback-textarea"><i>Do you have any feedback for this to improve this webpage for the benefit of a future user?</i></label>
+        <textarea id="feedback-textarea" cols="30" rows="5" placeholder="e.g., make it a bit more stylish"></textarea>
+    </form>
+    </main>
+</body>
+</html>
