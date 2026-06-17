@@ -6,5 +6,163 @@
     <title>Exercise 3</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="main-container">
+      <header>
+        <h1 class="main-heading">Exercise 3 by Saeed Mamani</h1>
+        <p class="sub-heading">Date submitted:</p>
+      </header>
+      <hr />
+
+      <main>
+        <section>
+          <p class="section-heading">Fun Facts about me:</p>
+
+          <div class="about-me-container">
+            <div class="name-table-container about-me-item">
+              <div class="name-table-column">
+                <div class="name-table-header">First Name</div>
+                <div class="name-table-content">Saeed</div>
+              </div>
+
+              <div class="name-table-column">
+                <div class="name-table-header">Last Name</div>
+                <div class="name-table-content">Mamani</div>
+              </div>
+            </div>
+
+            <div class="about-me-item">
+              <h3 class="about-me-item-header">Favorite Movie</h3>
+              <img class="media-content" src="" alt="Favorite movie" />
+            </div>
+
+            <div class="about-me-item">
+              <h3 class="about-me-item-header">Favorite Song</h3>
+              <div>Click play button to play music</div>
+              <audio class="media-content" controls>
+                <source src="assets/rick_roll.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+
+            <div class="about-me-item">
+              <h3 class="about-me-item-header">Favorite Video</h3>
+              <video class="media-content" width="240" height="160" controls>
+                <source src="assets/marvel_studios.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </section>
+        <hr />
+
+        <section>
+          <p>Enter you details below:</p>
+          <form action="">
+            <div class="form-item">
+              <label for="name">Full Name</label>
+              <input class="form-input" type="text" placeholder="John Doe" />
+            </div>
+
+            <div class="form-item">
+              <label for="email">Email Address</label>
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="jdoe@fakemail.com"
+              />
+            </div>
+
+            <div class="form-item">
+              <label for="password">Password</label>
+              <input
+                class="form-input"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="password"
+              />
+            </div>
+
+            <div class="form-item">
+              <label for="available-meeting-days"
+                >Available Meeting Days:</label
+              >
+              <div>
+                <input type="checkbox" name="monday" id="monday" />
+                <label for="monday">Monday</label>
+
+                <input type="checkbox" name="tuesday" id="tuesday" />
+                <label for="tuesday">Tuesday</label>
+
+                <input type="checkbox" name="wednesday" id="wednesday" />
+                <label for="wednesday">wednesday</label>
+
+                <input type="checkbox" name="thursday" id="thursday" />
+                <label for="thursday">thursday</label>
+
+                <input type="checkbox" name="friday" id="friday" />
+                <label for="friday">Friday</label>
+
+                <input type="checkbox" name="saturday" id="saturday" />
+                <label for="saturday">Saturday</label>
+
+                <input type="checkbox" name="sunday" id="sunday" />
+                <label for="sunday">Sunday</label>
+              </div>
+            </div>
+
+            <div class="form-item">
+              <label for="available-time">Available Time:</label>
+              <select
+                name="available-time"
+                id="available-time"
+                class="form-input"
+              >
+                <option value="morning">Morning (8am to 12pm)</option>
+                <option value="afternoon">Afternoon (12pm to 5pm)</option>
+                <option value="evening">Evening (5pm to 9pm)</option>
+              </select>
+            </div>
+
+            <div class="form-item">
+              <label for="currently-working-on-new-website"
+                >Currently working on new website?</label
+              >
+              <div>
+                <input type="radio" name="yes-no" id="yes-no" checked />
+                <label for="yes">Yes</label>
+
+                <input type="radio" name="yes-no" id="yes-no" />
+                <label for="no">No</label>
+              </div>
+            </div>
+
+            <div class="form-item">
+              <label for="pages-working-on"
+                >If yes, please enter which page(s) you are working on</label
+              ><br />
+              <textarea
+                name="pages-working-on"
+                id="pages-working-on"
+                cols="30"
+                rows="2"
+                placeholder="Enter your comments here"
+                class="form-input"
+              ></textarea>
+            </div>
+
+            <div class="button-container">
+              <button type="submit" class="submit-button">Submit</button>
+              <button type="reset" class="reset-button">Reset</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <p>Mobile Version</p>
+    </footer>
+  </body>
 </html>
