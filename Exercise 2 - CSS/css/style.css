@@ -9,21 +9,33 @@
     border: 15px;
     padding: 3px;
     margin: auto;
+    
+}
+
+.time_div {
+    margin-top: 10px;
+    border: 5px solid black;
 }
 
 .details_and_table {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 50%;
 }
 
 .details {
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    padding: 10px;
+    border: 5px solid black;
 }
 
 .main {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
