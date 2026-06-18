@@ -21,9 +21,11 @@
                 <h4 class="det_info">Any Questions? Contact us at <i>chess_tour@school.57.org</i></h4>
             </div>
             <div class="time_div">
-                <h5>tournament timetable</h5>
-                <h5 class="det_info">Tournament opening ceremony: 2:00PM</h5>
-                <table class="timetable" border="3" cellpadding="10">
+                <div class="time_head">
+                    <h2 class="det_info">Tournament timetable</h2>
+                    <h5 class="det_info">Tournament opening ceremony: 2:00PM</h5>
+                </div>
+                <table border="3" cellpadding="10">
                     <tr>
                         <th>Round</th>
                         <th>Group</th>
@@ -56,14 +58,36 @@
                     </tr>
                 </table>
             </div>
-            <div class="chess_episode">
-                <iframe
+            <div class="chess_media">
+                <p>Highlights of the previous tournament</p>
+                <div>
+                    <img src="assets/grandpa.jpg" alt="grandpa playing chess">
+                    <!-- <iframe height="300" width="400" src=""> !-->
+                    <iframe src="assets/kid_chess.mp4" height="170" width="300"></iframe>
+                </div>
+            </div>
+            <div class="registration">
+                <p>Want to attend? Register here</p>
+                <form class="reg_form">
+                    <label><i>Full name:</i></label>
+                    <input type="text" placeholder="Kovalev Tim">
+                    <br><br>
+                    <label><i>Email:</i></label>
+                    <input type="text" placeholder="kovalevtim@fakemail.com">
+                    <br><br>
+                    <label><i>Select your FIDE rating:</i></label>
+                    <select name="rating" id="rating">
+                        <option value="Beginner">Beginner - No rating</option>
+                        <option value="Starter">Starter - 1000 - 1700</option>
+                        <option value="Master">Master - 1700+</option>
+                    </select>
+                    <br><br>
+                    <label><i>How many people are you bringing to the tournament?</i></label>
+                    <input type="number" placeholder="1" class="people_cnt">
+                    <br><br>
+                    <button type="button">Register</button>
+                </form>
             </div>
         </div>
-        <table>
-            <tr>
-                <th></th>
-            </tr>
-        </table>
     </body>
 </html>
