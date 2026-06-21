@@ -207,4 +207,24 @@ form {
   .media-content {
     align-self: center;
   }
+
+  .table-content {
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .name-table-content {
+    width: 100%;
+    height: 80%;
+  }
+
+  h3 {
+    margin: 0;
+  }
 }
