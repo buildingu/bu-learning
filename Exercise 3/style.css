@@ -1,3 +1,11 @@
+:root {
+  --text-color: white;
+  --table-header-color: orangered;
+  --form-background-color: rgb(159, 159, 159);
+  --form-text-color: black;
+  --border-color: gray;
+}
+
 body {
   margin: 0;
 
@@ -15,7 +23,7 @@ body {
 
   background-attachment: fixed;
 
-  color: white;
+  color: var(--text-color);
 }
 
 hr {
@@ -33,11 +41,11 @@ hr {
 } */
 
 form {
-  border: 7px solid gray;
+  border: 7px solid var(--border-color);
 
-  background-color: rgb(159, 159, 159);
+  background-color: var(--form-background-color);
 
-  color: black;
+  color: var(--form-text-color);
 
   font-weight: bold;
 
@@ -71,13 +79,13 @@ form {
 }
 
 .about-me-container {
-  border: 5px solid gray;
+  border: 5px solid var(--border-color);
 
   background-color: brown;
 }
 
 .about-me-item {
-  border: 5px solid gray;
+  border: 5px solid var(--border-color);
 }
 
 .name-table-container {
@@ -87,13 +95,13 @@ form {
 }
 
 .name-table-column:first-child {
-  border-right: 5px solid gray;
+  border-right: 5px solid var(--border-color);
 }
 
 .name-table-header {
-  border-bottom: 5px solid gray;
+  border-bottom: 5px solid var(--border-color);
 
-  background-color: orangered;
+  background-color: var(--table-header-color);
 
   padding: 5px;
 }
@@ -105,11 +113,11 @@ form {
 .about-me-item-header {
   margin-top: 0;
 
-  background-color: orangered;
+  background-color: var(--table-header-color);
 
-  border-top: 5px solid gray;
+  border-top: 5px solid var(--border-color);
 
-  border-bottom: 5px solid gray;
+  border-bottom: 5px solid var(--border-color);
 
   padding: 5px;
 }
@@ -167,7 +175,7 @@ form {
   }
 
   .about-me-container {
-    border: 5px solid gray;
+    border: 5px solid var(--border-color);
 
     background-color: rgb(0, 23, 26);
 
@@ -226,5 +234,10 @@ form {
 
   h3 {
     margin: 0;
+  }
+
+  button:hover {
+    opacity: 0.8;
+    cursor: pointer;
   }
 }
