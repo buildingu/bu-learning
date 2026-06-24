@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title> Buidling-U Exercise 1</title>
+        <title> Building-U Exercise 1</title>
         <!--meta data-->
         <!--character set-->
         <meta charset="UTF-8" />
@@ -13,7 +13,7 @@
         <!--author-->
         <meta name="author" content="V">
         <!--viewport-->
-        <meta name="viewport" content="width= device width, initial-scale = 1" />
+        <meta name="viewport" content="width= device-width, initial-scale = 1" />
         <!--refresh doc-->
         <meta http.equiv="refresh" content="30" />
 
@@ -58,72 +58,73 @@
 
             <!--enter details-->
             <h3>Enter your details below</h3>
+            <form>
+                <div>
+                    <label> <i>Full name: </i></label>
+                    <input type="text" id="username" name="username" placeholder="Enter your name">
+                </div>
+                <p></p>
+                <div>
+                    <label> <i>Email Address: </i></label>
+                    <input type="text" id="username" name="useremail" placeholder="Enter your email">
+                </div>
+                <p></p>
+                <div>
+                    <label><i>Password: </i></label>
+                    <input type="password" id="password" name="usernpassword" placeholder="Enter your password">
+                </div>
 
-            <div>
-                <label> <i>Full name: </i></label>
-                <input type="text" id="username" name="username" placeholder="Enter your name">
-            </div>
-            <p></p>
-            <div>
-                <label> <i>Email Address: </i></label>
-                <input type="text" id="username" name="useremail" placeholder="Enter your email">
-            </div>
-            <p></p>
-            <div>
-                <label><i>Password: </i></label>
-                <input type="text" id="username" name="usernpassword" placeholder="Enter your password">
-            </div>
+                <div>
+                    <p> <i> Available Meeting Days  </i></p>
+                    <input type="checkbox" id="option1">
+                    <label for="option1">Monday</label>
 
-            <div>
-                <p> <i> Avaliable Meeting Days  </i></p>
-                <input type="checkbox" id="option1">
-                <label for="option1">Monday</label>
+                    <input type="checkbox" id="option2">
+                    <label for="option2">Tuesday</label>
 
-                <input type="checkbox" id="option2">
-                <label for="option2">Tuesday</label>
+                    <input type="checkbox" id="option3">
+                    <label for="option3">Wednesday</label>
 
-                <input type="checkbox" id="option3">
-                <label for="option3">Wednesday</label>
+                    <input type="checkbox" id="option4">
+                    <label for="option4">Thursday</label>
 
-                <input type="checkbox" id="option4">
-                <label for="option4">Thursday</label>
+                    <input type="checkbox" id="option5">
+                    <label for="option5">Friday</label>
 
-                <input type="checkbox" id="option5">
-                <label for="option5">Friday</label>
+                    <input type="checkbox" id="option6">
+                    <label for="option6">Saturday</label>
 
-                <input type="checkbox" id="option6">
-                <label for="option6">Saturday</label>
+                    <input type="checkbox" id="option7">
+                    <label for="option7">Sunday</label>
+                </div>
 
-                <input type="checkbox" id="option7">
-                <label for="option7">Sunday</label>
-            </div>
+                <div>
+                    <label> <i> Avaliable Times</i></label>
+                    <select>
+                        <option>Weekends Morning 9am to 12pm</option>
+                        <option>Weekdays Afternoon 4pm to 8pm</option>
+                        <option>Fridays Afternoon 4pm to 10pm</option>
+                    </select>
+                </div>
 
-            <div>
-                <label> <i> Avaliable Times</i></label>
-                <select>
-                    <option>Weekends Morning 9am to 12pm</option>
-                    <option>Weekdays Afternoon 4pm to 8pm</option>
-                    <option>Fridays Afternoon 4pm to 10pm</option>
-                </select>
-            </div>
+                <div>
+                    <p> <i> Currently working on the website?</i></p>
+                    <input type="radio" checked>
+                    <label>Yes</label>
 
-            <div>
-                <p> <i> Currently working on the website?</i></p>
-                <input type="radio" checked>
-                <label>Yes</label>
+                    <input type="radio">
+                    <label>No</label>
+                </div>
+                <p></p>
+                <div>
+                    <input type="text" id="comments" placeholder="Enter your comments here">
+                </div>
 
-                <input type="radio">
-                <label>No</label>
-            </div>
-            <p></p>
-            <div>
-                <input type="text" id="comments" placeholder="Enter your comments here">
-            </div>
+                <p></p>
 
-            <p></p>
-
-            <button>submit</button>
-            <button>reset</button>
+                <button>submit</button>
+                <button>reset</button>
+            </form>
         </center>
     </body>
 </html>
