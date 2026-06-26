@@ -8,6 +8,183 @@
       rel="stylesheet"
       href="libraries/bootstrap-5.3.8-dist/css/bootstrap.min.css"
     />
+    <style>
+      .logo {
+        height: 50px;
+      }
+    </style>
   </head>
-  <body></body>
+
+  <body class="bg-dark text-white">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="assets/cropped-BUlogo.png" alt="logo" class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="container text-center py-5">
+      <h1>Welcome to my Page</h1>
+      <p class="text-body-secondary">View my work on github</p>
+      <a role="button" class="btn btn-primary">View my work</a>
+    </section>
+
+    <!-- About section -->
+    <section class="container">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="col-12 col-md-8">
+          <p>
+            Hey there! I'm Saeed Mamani and I am passionate about web
+            development especially the backend.I enjoy writing code and solving
+            problems.
+          </p>
+
+          <p>
+            Just starting my journey, i only have months of experience writing
+            html, css and javascript code.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <img
+            src="assets/profile-pic.jpg"
+            alt="profile pic"
+            class="img-fluid w-25 rounded-circle"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- My portfolio section -->
+    <section class="container text-center">
+      <h2>My Portfolio</h2>
+
+      <div class="container">
+        <div class="row row-gap-5">
+          <div class="col-12 col-md-4">
+            <div class="card h-100">
+              <img
+                src="assets/html-logo.png"
+                alt=""
+                class="w-50 mx-auto pt-3"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title text-sm-start">HTML Project</h3>
+                <p class="card-text text-sm-start">
+                  This project helped me showcase my html skills. It's a simple
+                  webpage with table, multimedia and a form
+                </p>
+                <a role="button" class="btn btn-primary">View more details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card h-100">
+              <img src="assets/css-logo.png" alt="" class="w-50 mx-auto pt-3" />
+
+              <div class="card-body">
+                <h3 class="card-title text-sm-start">CSS Project</h3>
+                <p class="card-text text-sm-start">
+                  This project helped me showcase my css skills. It is a step up
+                  from the html page. This focuses of styling the web page to
+                  look appealing.
+                </p>
+                <a role="button" class="btn btn-primary">View more details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card h-100">
+              <img
+                src="assets/bootstap-logo.jpg"
+                alt=""
+                class="w-50 mx-auto pt-3"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title text-sm-start">Bootstrap Project</h3>
+                <p class="card-text text-sm-start">
+                  This project helped me showcase my bootstrap skills. I was
+                  able to build a website with bootstrap framework
+                </p>
+                <a role="button" class="btn btn-primary">View more details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <h2>Contact Me</h2>
+
+      <form action="">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" placeholder="John Doe" class="form-control w-75" />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="jdoe@fakemail.com"
+            class="form-control w-75"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Enter your comment here."
+            class="form-control w-75"
+          ></textarea>
+        </div>
+
+        <div>
+          <button class="btn btn-success">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+    <script src="libraries/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
