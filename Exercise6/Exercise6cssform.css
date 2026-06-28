@@ -1,0 +1,31 @@
+div {
+    text-align: center;
+    border-style: groove;
+    border: 2px solid brown;
+    background-color: bisque;
+    padding: 20px;
+    width: 90%;
+    max-width: 200px;
+    margin: 50px auto;
+}
+input, button {
+    display: block;
+    margin: 15px auto;
+    padding: 8px;
+    width: 80%;
+}
+#errorMessage {
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
+}
+button {
+    background-color: brown;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: darkred;
+}

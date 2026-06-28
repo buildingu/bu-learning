@@ -1,0 +1,42 @@
+input, button, select {
+    display: block;
+    margin: 15px auto;
+    padding: 8px;
+    width: 80%;
+    background-color: rgb(178, 174, 158);
+    border-radius: 10px;
+    border: 3px solid black;
+}
+ol {
+    background-color: aqua;
+    border: 2px dashed black;
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+}
+li {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+div {
+    background-color: beige;
+    border-style: groove;
+    border-radius: 15px;
+    margin: auto;
+    width: 80%;
+}
+.entry-button {
+    display: inline-block;
+    width: auto;
+    margin: 5px;
+    padding: 5px 10px;
+}
+.entry-input {
+    display: inline-block;
+    width: auto;
+    margin: 5px;
+    padding: 5px;
+}

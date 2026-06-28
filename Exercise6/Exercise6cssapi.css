@@ -1,0 +1,27 @@
+div {
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgb(9, 201, 215);
+    width: 60%;
+    max-width: 500px;
+    padding: 30px;
+    margin: auto;
+    height: 100px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+button {
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    background-color: chocolate;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(146, 73, 21);
+}
