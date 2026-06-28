@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+</head>
+<body>
+    <center>
+        <h1>Exercise 1 by Anshuman Baddam</h1>
+        <h3>Date Submitted: 06/26/2026</h3>
+    </center>
+    
+    <center>
+        <h2>Fun facts about me:</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>First Name:</th>
+                <th>Last Name:</th>
+                <th>Favorite Movie:</th>
+                <th>Favorite Song:</th>
+                <th>Favorite Video:</th>
+            </tr>
+            <tr>
+                <td>Anshuman</td>
+                <td>Baddam</td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Avengers:_Endgame" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg" alt="Avengers: Endgame Poster" width="100">
+                    </a>
+                </td>
+                <td>
+                    <p>Click play button to play music:</p>
+                    <audio controls>
+                        <source src="90210.mp3" type="audio/mpeg">
+                    </audio>
+                </td>
+                <td>
+                    <video width="320" height="240" controls>
+                        <source src="TIE A TIE.mp4" type="video/mp4">
+                </td>
+            </tr>
+        </table>
+    </center>
+    <center>
+        <h3>Enter your details below:</h3>
+        <form>
+            <label>
+                Full Name: <input type="text" name="fullName" placeholder="John Doe"><br><br>
+                Email: <input type="email" name="email" placeholder="john.doe@example.com"><br><br>
+                Password: <input type="password" name="password" placeholder="Enter your password"><br><br>
+            </label>
+
+            <p>Available Meeting Days</p>
+            <input type="checkbox" id="mon"> <label for="mon">Monday</label>
+            <input type="checkbox" id="tue"> <label for="tue">Tuesday</label>
+            <input type="checkbox" id="wed"> <label for="wed">Wednesday</label>
+            <input type="checkbox" id="thu"> <label for="thu">Thursday</label>
+            <input type="checkbox" id="fri"> <label for="fri">Friday</label>
+            <input type="checkbox" id="sat"> <label for="sat">Saturday</label>
+            <input type="checkbox" id="sun"> <label for="sun">Sunday</label>
+
+            <label><p>Available Time:</p></label>
+            <select>
+                <option value="morning">Morning (9am to 12pm)</option>
+                <option value="afternoon">Afternoon (12pm to 5pm)</option>
+                <option value="evening">Evening (5pm to 9pm)</option>
+            </select>
+
+            <p>Currently working on website?</p>
+            <input type="radio"> Yes <input type="radio"> No<br><br>
+            
+            <textarea cols="30" rows="10" placeholder="Enter your comments here"></textarea><br><br> 
+        </form>
+        <input type="submit" value="Submit">
+         <input type="reset" value="Reset">
+    </center>
+
+</body>
+</html>
