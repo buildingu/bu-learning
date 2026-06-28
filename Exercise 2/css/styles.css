@@ -1,0 +1,15 @@
+p{
+    font-size: 20px;
+    
+}
+body{
+    background-color: lightyellow;
+    margin: 20px;
+}
+form{
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
