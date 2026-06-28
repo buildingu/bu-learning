@@ -1,0 +1,120 @@
+body {
+    background-image: url(background-desktop.jpg);
+    color: white;
+}
+
+table {
+    background-color: #263A42;
+    border: 5px solid gray;
+}
+
+.header {
+    background-color: #2A3441;
+}
+
+form {
+    background-color: lightgray;
+    color: black;
+    width: 40%;
+    border: 14px solid gray;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 300px;
+    height: 25px;
+}
+
+#comments {
+    height: 40px;
+}
+
+#submit-btn,
+#reset-btn {
+    height: 30px;
+    width: 80px;
+}
+
+#submit-btn {
+    background-color: lightgreen;
+}
+
+#reset-btn {
+    background-color: lightsalmon;
+}
+
+/* 
+Desktop (1024px and up)*/
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: url("background-desktop.jpg");
+    }
+
+    form {
+        width: 40%;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 300px;
+    }
+
+    table {
+        width: 70%;
+    }
+}
+
+/*Mobile (768px and below)*/
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url("background-mobile.jpg");
+        background-size: cover;
+    }
+
+    form {
+        width: 90%;
+        border-width: 8px;
+    }
+
+    table {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    td,
+    th {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        padding: 8px;
+    }
+
+    img,
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 90%;
+    }
+
+    #comments {
+        width: 90%;
+    }
+
+    #submit-btn,
+    #reset-btn {
+        width: 100px;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

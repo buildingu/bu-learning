@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+<!--used my exercise 1 design-->
+
+<head>
+    <title> Building-U Exercise 1</title>
+    <!--meta data-->
+    <!--character set-->
+    <meta charset="UTF-8" />
+    <!--keywords-->
+    <meta name="keywords" content="HTML5" />
+    <!--description-->
+    <meta name="description" content="HTML Exercise - Stacie Ganguly" />
+    <!--author-->
+    <meta name="author" content="V">
+    <!--viewport-->
+    <meta name="viewport" content="width= device-width, initial-scale = 1" />
+    <!--refresh doc-->
+    <meta http.equiv="refresh" content="30" />
+    <!--link the style.css-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <center>
+        <h1>Exercise 1 by Stacie Ganguly</h1>
+        <h4>Date submitted: 5/10/2026</h4>
+        <hr>
+        <!--fun fact table-->
+        <h3>Fun Facts about me</h3>
+
+        <table border="5">
+            <tr class="header">
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Favorite Movie</th>
+                <th>Favorite Song</th>
+                <th>Favorite Video</th>
+            </tr>
+
+            <tr>
+                <td>Stacie</td>
+                <td>Ganguly</td>
+                <td><a href="https://www.imdb.com/title/tt0250494/"> <img src="fav_movie.png" width="100"> </a></td>
+                <td>
+                    <audio src="audio_file.mp3" controls>
+
+                    </audio>
+                </td>
+                <td>
+                    <video width="300" height="100" controls>
+                        <source src="fav_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                </td>
+            </tr>
+        </table>
+        <p></p>
+        <hr>
+
+        <!--enter details-->
+        <h3>Enter your details below</h3>
+        <form>
+            <br>
+            <div>
+                <label> <strong><i>Full name: </i></strong></label><br>
+                <input type="text" id="username" name="username" placeholder="Enter your name">
+            </div>
+            <p></p>
+            <div>
+                <label> <strong><i>Email Address: </i></strong></label><br>
+                <input type="text" id="username" name="useremail" placeholder="Enter your email">
+            </div>
+            <p></p>
+            <div>
+                <label><strong><i>Password: </i></strong></label><br>
+                <input type="password" id="password" name="usernpassword" placeholder="Enter your password">
+            </div>
+
+            <div>
+                <p><strong> <i> Available Meeting Days </i></strong></p>
+                <input type="checkbox" id="option1">
+                <label for="option1">Monday</label>
+
+                <input type="checkbox" id="option2">
+                <label for="option2">Tuesday</label>
+
+                <input type="checkbox" id="option3">
+                <label for="option3">Wednesday</label>
+
+                <input type="checkbox" id="option4">
+                <label for="option4">Thursday</label>
+
+                <input type="checkbox" id="option5">
+                <label for="option5">Friday</label>
+
+                <input type="checkbox" id="option6">
+                <label for="option6">Saturday</label>
+
+                <input type="checkbox" id="option7">
+                <label for="option7">Sunday</label>
+            </div>
+            <br>
+            <div>
+                <label> <i> Avaliable Times</i></label>
+                <select>
+                    <option>Weekends Morning 9am to 12pm</option>
+                    <option>Weekdays Afternoon 4pm to 8pm</option>
+                    <option>Fridays Afternoon 4pm to 10pm</option>
+                </select>
+            </div>
+
+            <div>
+                <p><strong> <i> Currently working on the website?</i> </strong></p>
+                <input type="radio" checked>
+                <label>Yes</label>
+
+                <input type="radio">
+                <label>No</label>
+            </div>
+            <p></p>
+            <div>
+                <p><strong>If yes, explain what you are working on</strong></p>
+                <input type="text" id="comments" placeholder="Enter your comments here">
+            </div>
+
+            <p></p>
+
+            <button id="submit-btn">submit</button>
+            <button id="reset-btn">reset</button>
+            <br>
+        </form>
+        <br>
+    </center>
+</body>
+
+</html>
