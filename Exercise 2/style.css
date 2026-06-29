@@ -1,0 +1,57 @@
+.container {
+  border: 1px solid #ccc;  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/56/Avicenna_birthday_anniversary_14.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  
+}
+.container h1 {
+  margin-top: 0;
+  color: #fff;
+}
+.container p {
+  color: #fff;
+}
+.schedule {
+  background-color: rgba(192, 204, 19, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.schedule h2 {
+  margin-top: 0;
+}
+.host {
+    background-color: rgba(19, 204, 192, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;   
+}
+.host h2 {
+    margin-top: 0;
+}
+.host table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.host table th,
+.host table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+.host p{
+    color: #fff;
+}
+
+.register {
+  background-color: rgba(71, 223, 134, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}

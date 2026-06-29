@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Graduation Party</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Graduation Party</h1>
+            <p>Welcome to the graduation party! We are excited to celebrate this special occasion with you. Please enjoy the festivities and have a great time!</p>
+
+        </div>
+        <div class="schedule">
+            <h2>Party Schedule</h2>
+            <ul>
+                <li>6:00 PM - Arrival and Welcome Drinks</li>
+                <li>7:00 PM - Dinner</li>
+                <li>8:30 PM - Entertainment and Dancing</li>
+                <li>10:00 PM - Farewell and Goodbye</li>
+            </ul>
+        </div>
+        <div class="host">
+            <h2>Meet the Hosts</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Party Host</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>Event Coordinator</td>
+                </tr>
+            </table>
+            <p>We are thrilled to host this graduation party and celebrate this milestone with you. Our team has worked hard to ensure that you have a memorable experience. Enjoy the party!</p>
+        </div>
+        <div class="register">
+            <h2>Register for the Party</h2>
+            <form action="submit_registration.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="0" required><br><br>
+
+                <input type="submit" value="Register">
+            </form>            
+        </div>
+    </body>
+
+</html>
+
