@@ -1,0 +1,106 @@
+body{
+    background-image: url("Assets/Background-desktop.jpg"); 
+    align-items: center;   
+    margin: auto;
+}
+.header{
+    background-color: rgba(19, 204, 192, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;       
+}
+.header h1{
+    text-align: center;
+}
+.header h2{
+    text-align: center;
+}
+
+.about{
+    background-color: rgba(229, 154, 231, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;   
+}
+
+.about table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.about table th,
+.about table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    color:#320aa0
+}
+.form{
+    background-color: rgba(227, 235, 230, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin:auto;   
+}
+.form *{
+    color: #fff;
+}
+.form input[type="submit"]{
+    background-color: rgba(71, 223, 134, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.form input[type="submit"]:hover{
+    background-color: rgba(71, 223, 134, 1);
+    cursor: pointer;
+}
+.form input[type="reset"]{
+    background-color: rgba(223, 71, 134, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+@media screen and (max-width: 600px) {
+    body{
+        background-image: url("Assets/Background-mobile.jpg");
+    }
+    .header{
+        background-color: rgba(124, 204, 19, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #ccc;       
+    }
+    .about table{
+        background-color: rgba(124, 204, 19, 0.8);
+        padding: 20px;
+        width: 100%;
+        margin: auto;
+        position: relative;
+    }
+    .form{
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        margin:auto;   
+    }
+    .form *{
+        color: #062197;
+    }
+    .form input[type="submit"]{
+    background-color: rgba(71, 223, 134, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    }
+    .form input[type="submit"]:hover{
+        background-color: rgba(71, 223, 134, 1);
+        cursor: pointer;
+    }
+    .form input[type="reset"]{
+        background-color: rgba(223, 71, 134, 0.8);
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+}
