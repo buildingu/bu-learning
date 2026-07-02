@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { AuthContext } from "./AuthContext";
+import AuthContext from "./AuthContext";
 
 export default function UseContextChallenge() {
   const { user, login, logout } = useContext(AuthContext);
