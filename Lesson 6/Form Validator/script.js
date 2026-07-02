@@ -7,39 +7,40 @@ const submitBtn = document.getElementById("submitBtn");
 const message = document.getElementById("message");
 
 function formValidator(fName, lName, ageValue, phoneValue) {
+  let errors = [];
 
   if (!fName) {
-    message.textContent = "Please enter your first name";
-    return;
+    errors.push("Please enter your first name.");
   } else if (typeof fName !== 'string') {
     message.textContent = "The first name should be a string data type";
     return;
   }
 
   if (!lName) {
-    message.textContent = "Please enter your last name";
-    return;
+    errors.push("Please enter your last name.");
   } else if (typeof lName !== 'string') {
     message.textContent = "The last name should be a string data type";
     return;
   }
 
   if (!ageValue) {
-    message.textContent = "Please enter your age";
-    return;
-  } else if (typeof ageValue !== 'number' || isNaN(ageValue)) {
-    message.textContent = "The age should be a number";
-    return;
-  } else if (ageValue < 18) {
+    errors.push("Please enter your age.");
+  } else if (isNaN(ageValue)) {
+    errors.push("Please enter a valid number for your age.");
+  } else if (Number(ageValue) < 18) {
     message.textContent = "Access Denied: You must be at least 18 years old.";
     return;
   }
 
   if (!phoneValue) {
-    message.textContent = "Please enter your phone number";
-    return;
+    errors.push("Please enter your phone number.");
   } else if (typeof phoneValue !== 'string') {
     message.textContent = "The phone number should be a string data type";
+    return;
+  }
+
+  if (errors.length > 0) {
+    message.textContent = errors.join(" ");
     return;
   }
 
@@ -47,12 +48,10 @@ function formValidator(fName, lName, ageValue, phoneValue) {
 }
 
 submitBtn.addEventListener("click", function () {
-
   const fName = firstName.value.trim();
   const lName = lastName.value.trim();
-  const ageValue = Number(age.value);
+  const ageValue = age.value.trim();
   const phoneValue = phoneNum.value.trim();
 
   formValidator(fName, lName, ageValue, phoneValue);
-
 });
