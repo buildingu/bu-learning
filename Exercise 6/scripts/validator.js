@@ -15,6 +15,7 @@ const appendAlert = (message, type) => {
     }
 btn.addEventListener("click", function(event) {
     
+    
 
     First_Name = document.getElementById("First-Name").value;
     Last_Name = document.getElementById("Last-Name").value;
