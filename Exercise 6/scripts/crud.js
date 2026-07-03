@@ -5,20 +5,21 @@ counter = 0;
 btn = document.getElementById("Insert");
 const alertPlaceholder = document.getElementById('alert')
 const appendAlert = (message, type) => {
-        const wrapper = document.createElement('div')
+        alertPlaceholder.innerHTML = ''; // Clear previous alerts
+        const wrapper = document.createElement('div');
         wrapper.innerHTML = [
             `<div class="alert alert-${type} alert-dismissible" role="alert">`,
             `   <div>${message}</div>`,
             '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
             '</div>'
-        ].join('')  
+        ].join(''); 
 
-        alertPlaceholder.append(wrapper)
+        alertPlaceholder.append(wrapper);
     }
 
 const dataPlaceholder = document.getElementById('data-center')
 const appendData = (firstName, lastName, age, phone) => {
-    const wrapper = document.createElement('div')
+    const wrapper = document.createElement('div');
     wrapper.innerHTML = [
         `<div class="card" style="width: 18rem;">`,
         `   <ul class="list-group list-group-flush">`,
@@ -32,9 +33,9 @@ const appendData = (firstName, lastName, age, phone) => {
         `       <button type="button" class="card-link" id="delete-${counter}">Delete</button>`,
         `   </div>`,
         `</div>`
-    ].join('')
+    ].join('');
 
-    dataPlaceholder.append(wrapper)
+    dataPlaceholder.append(wrapper);
 }
 
 
@@ -53,28 +54,28 @@ btn.addEventListener("click", function(event) {
     }
 
     if (First_Name === "") {
-        appendAlert('Full Name is required.', 'danger')
+        appendAlert('Full Name is required.', 'danger');
         event.preventDefault();
     }
     else if (Last_Name === "") {
-        appendAlert ('Last Name is required.', 'danger')
+        appendAlert ('Last Name is required.', 'danger');
         event.preventDefault();
     }
     else if (Age === "") {
-        appendAlert('Age is required.', 'danger')
+        appendAlert('Age is required.', 'danger');
         event.preventDefault();
     }
     else if (Phone === "") {
-        appendAlert('Phone is required.', 'danger')
+        appendAlert('Phone is required.', 'danger');
         event.preventDefault();
     }
     else if (Phone === "") {
-        appendAlert('Phone is required.', 'danger')
+        appendAlert('Phone is required.', 'danger');
         event.preventDefault();
     }
     else {
-        appendAlert('Inserted successfully!', 'success')
-        appendData(First_Name, Last_Name, Age, Phone)
+        appendAlert('Inserted successfully!', 'success');
+        appendData(First_Name, Last_Name, Age, Phone);
         counter++;
         document.querySelector("#First-Name").value = "";
         document.querySelector("#Last-Name").value = "";
@@ -86,7 +87,7 @@ btn.addEventListener("click", function(event) {
 
 });
 
-// Edit button with event delegation
+// Edit button
 dataPlaceholder.addEventListener("click", function(event) {
     if (event.target.id.startsWith("edit-")) {
         event.preventDefault();
@@ -130,7 +131,7 @@ insertBtn.addEventListener("click", function(event) {
         document.getElementById(`age-${id}`).innerText = `Age: ${updatedAge}`;
         document.getElementById(`phone-${id}`).innerText = `Phone: ${updatedPhone}`;
 
-        appendAlert('Updated successfully!', 'success')
+        appendAlert('Updated successfully!', 'success');
         editBtn.textContent = "Edit";
         editBtn.dataset.isUpdating = "false";
         document.getElementById("Insert").textContent = "Insert";
@@ -153,7 +154,7 @@ dataPlaceholder.addEventListener("click", function(event) {
         id = event.target.id.split("-")[1];
         const card = document.getElementById(`firstName-${id}`).closest(".card");
         card.remove();
-        appendAlert('Deleted successfully!', 'success')
+        appendAlert('Deleted successfully!', 'success');
     }
 });
 

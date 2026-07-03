@@ -1,19 +1,19 @@
 const appendAlert = (message, type) => {
-    const alertPlaceholder = document.getElementById('alert')
+    const alertPlaceholder = document.getElementById('alert');
     alertPlaceholder.innerHTML = '' // Clear previous alerts
-    const wrapper = document.createElement('div')
+    const wrapper = document.createElement('div');
     wrapper.innerHTML = [
         `<div class="alert alert-${type} alert-dismissible" role="alert">`,
         `   <div>${message}</div>`,
         '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
         '</div>'
-    ].join('')
-    alertPlaceholder.append(wrapper)
+    ].join('');
+    alertPlaceholder.append(wrapper);
 }
 
 const AppendResults = (picture, title, cost) => {
-    const resultsPlaceholder = document.getElementById('results')
-    const wrapper = document.createElement('div')
+    const resultsPlaceholder = document.getElementById('results');
+    const wrapper = document.createElement('div');
     wrapper.innerHTML = [
         `<div class="col-sm-6 mb-3 mb-sm-0">`,
         `   <div class="card" style="width: 18rem;">`,
@@ -24,8 +24,8 @@ const AppendResults = (picture, title, cost) => {
         `       </div>`,
         `   </div>`,
         `</div>`
-    ].join('')
-    resultsPlaceholder.append(wrapper)
+    ].join('');
+    resultsPlaceholder.append(wrapper);
 }
 const btn = document.getElementById("Search");
 btn.addEventListener("click", async function(event) {
@@ -35,7 +35,7 @@ btn.addEventListener("click", async function(event) {
     
     
     if (Name === "") {
-        appendAlert('Game Name is required.', 'danger')
+        appendAlert('Game Name is required.', 'danger');
         event.preventDefault();
     }
     else{
@@ -48,7 +48,7 @@ btn.addEventListener("click", async function(event) {
             
             document.getElementById("results").innerHTML = "";
             if (data.length === 0) {
-                appendAlert('Game not found.', 'danger')
+                appendAlert('Game not found.', 'danger');
             }
             else {
                 for (const game of data.slice(0, 5)) { // Limit to first 5 results
@@ -61,7 +61,7 @@ btn.addEventListener("click", async function(event) {
             }
         } catch (error) {
             console.error("Error:", error);
-            appendAlert('Error searching game.', 'danger')
+            appendAlert('Error searching game.', 'danger');
         }
     }    
 });
