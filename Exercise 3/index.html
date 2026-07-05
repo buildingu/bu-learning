@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset class="header">
+        <h1>Exercise 3</h1>
+        <h2>30/6/2026</h2>
+    </fieldset>
+    <fieldset class="about">
+        <table>
+            <tr>
+                <th class="column">First Name</th>
+                <td>John</td>
+                              
+                
+            </tr>
+            <tr>
+                <th class="column">Last Name</th>
+                <td>Doe</td>             
+                
+            </tr>
+            <tr>
+                <th class="column">Favourite Film</th>
+                <td>Oppenheimer</td>
+            </tr>
+            <tr>
+                <th class="column">Image</th>
+                <td><img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg" alt="Oppenheimer Poster" width="100"></td>
+                
+            </tr>
+            <tr>
+                <th class="column">Audio Sample</th>
+                <td><audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></td>
+            </tr>
+            <tr>
+                <th class="column">Video Sample</th>
+                <td><video width="320" height="240" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video></td>
+            </tr>
+        </table> 
+    </fieldset>
+    <fieldset class="form">
+        <form>
+            <p>Full Name:</p>
+            <input type="text" placeholder="Full Name"><br>
+            <p>Email:</p>
+            <input type="email" placeholder="Email"><br>
+            <p>Password:</p>
+            <input type="password" placeholder="Password"><br>
+            <p>Available Days:</p>
+            <input type="checkbox" id="monday" name="day" value="Monday">
+            <label for="monday"> Monday</label>
+            <input type="checkbox" id="tuesday" name="day" value="Tuesday">
+            <label for="tuesday"> Tuesday</label>
+            <input type="checkbox" id="wednesday" name="day" value="Wednesday">
+            <label for="wednesday"> Wednesday</label>
+            <input type="checkbox" id="thursday" name="day" value="Thursday">
+            <label for="thursday"> Thursday</label>
+            <input type="checkbox" id="friday" name="day" value="Friday">
+            <label for="friday"> Friday</label><br>
+            <p>Working on a new Website?</p>
+            <input type="radio" id="yes" name="website" value="Yes">
+            <label for="yes"> Yes</label>
+            <input type="radio" id="no" name="website" value="No">
+            <label for="no"> No</label><br>
+            <p>Comments:</p><br>
+            <textarea name="comments" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form> 
+    </fieldset>
+</body>
+</html>
