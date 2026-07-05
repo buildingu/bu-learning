@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building-U Portfolio</title>
+    <link rel="stylesheet" href="libraries/bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #16323f;
+        background: #f8fbfa;
+      }
+      .text-primary {
+        color: #43a047 !important; 
+      }
+      .nav-link:hover {
+        color: #43a047 !important;
+      }
+      .hero-title {
+        font-size: clamp(2.3rem, 5vw, 3.5rem);
+        font-weight: 800;
+        line-height: 1.05;
+      }
+
+      .hero-panel {
+        background: rgba(255, 255, 255, 0.86);
+        border: 1px solid rgba(8, 127, 140, 0.12);
+        border-radius: 1rem;
+        box-shadow: 0 20px 45px rgba(22, 50, 63, 0.12);
+      }
+
+      .card-img-top {
+        height: 220px;
+        object-fit: contain;
+        background: rgba(67, 160, 71, 0.08);
+        padding: 1rem;
+      }
+      .btn-primary {
+        background: #43a047;
+        border: none;
+        box-shadow: 0 10px 20px rgba(67, 160, 71, 0.18);
+      }
+
+      .btn-primary:hover {
+        background: #2f8f3a;
+      }
+
+      .btn-outline-primary {
+        color: #43a047;
+        border-color: #43a047;
+      }
+
+      .btn-outline-primary:hover {
+        background-color: #43a047;
+        border-color: #43a047;
+      }
+
+      @media (max-width: 768px) {
+        #home {
+          min-height: auto;
+          padding: 4rem 0 3rem;
+        }
+
+        .hero-title {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- navbar section -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#home">
+          <img src="assets4/cropped-BUlogo.png" width="60" height="60" alt="BuildingU logo" class="img-fluid" />
+          <p>buildingU</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+
+    <section id="hero section" class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <p class="text-uppercase text-primary fw-semibold mb-2" style="letter-spacing: 0.2em;">buildingU learning portfolio</p>
+            <h1 class="hero-title display-5 fw-bold mb-3">Welcome to my buildingU portfolio website.</h1>
+            <p class="lead text-muted mb-4">This page shows the Bootstrap skills I used for this assignment, including a navbar, responsive grid layout, buttons, cards, and a contact form.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#portfolio" class="btn btn-primary btn-lg">View My Work</a>
+              <a href="#contact" class="btn btn-outline-primary btn-lg">Contact Me</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-panel p-4 rounded-4 shadow-sm">
+              <h2 class="h4 mb-3">What this portfolio includes</h2>
+              <ul class="mb-0 text-muted">
+                <li>A responsive navbar with a mobile menu</li>
+                <li>A clean hero section with call-to-action buttons</li>
+                <li>An about section using Bootstrap grid</li>
+                <li>Project cards with modals for more details</li>
+                <li>A styled contact form with validation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about me section -->
+
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-5">
+            <div class="rounded-4 overflow-hidden shadow-sm">
+              <img src="assets4/web_img.jpeg" alt="Profile photo" class="img-fluid w-100" style="height: 320px; object-fit: cover;" />
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h2 class="mb-3">About Me</h2>
+            <p class="text-muted">Hi, my name is Gabriel Rodriguez. I am a web developer learning Bootstrap and creating a portfolio page that looks good on desktop and mobile.</p>
+            <p class="text-muted">I have always been passionate about coding and web development, and learning about Bootstrap has been a great experience. This section uses the Bootstrap grid to position the content and a simple profile area.</p>
+            <div class="row mt-3">
+              <div class="col-6 mb-2"><div class="badge bg-success px-3 py-2">HTML</div></div>
+              <div class="col-6 mb-2"><div class="badge bg-success px-3 py-2">CSS</div></div>
+              <div class="col-6 mb-2"><div class="badge bg-success px-3 py-2">JavaScript</div></div>
+              <div class="col-6 mb-2"><div class="badge bg-success px-3 py-2">Bootstrap</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section -->
+
+    <section id="portfolio" class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <p class="text-uppercase text-primary fw-semibold mb-2">Portfolio</p>
+          <h2 class="h3">Featured Projects</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="assets4/html_img.jpeg" class="card-img-top" alt="Favorite Things project preview" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Favorite Things Website</h5>
+                <p class="card-text text-muted">This lesson focused on presenting favorite movies, music, and a simple form with name and email fields.</p>
+                <button class="btn btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#project1">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="assets4/trashtopaws-removebg-preview.png" class="card-img-top" alt="Nonprofit project preview" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Nonprofit Event Page</h5>
+                <p class="card-text text-muted">I created a fundraiser page with event details, a registration form, and a short instructional video.</p>
+                <button class="btn btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#project2">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="assets4/css_img.png" class="card-img-top" alt="Improved Favorite Things project preview" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Favorite Things Improved</h5>
+                <p class="card-text text-muted">This version added stronger CSS styling and a cleaner layout for both desktop and mobile screens.</p>
+                <button class="btn btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#project3">View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="text-center mb-4">Contact</h2>
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="John Doe" required />
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com" required />
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your message here..." required></textarea>
+                <div class="invalid-feedback">Please enter a message.</div>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary px-5">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="libraries/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+    <script>
+      const form = document.querySelector('.needs-validation');
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      });
+    </script>
+  </body>
+</html>
