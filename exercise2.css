@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.blue {
+    background-color: blue;
+    width: 100%;
+    height: 250px;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 90px;
+    color: white;
+}
+
+.orange {
+    background-color: orange;
+    width: 100%;
+    height: 250px;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 45px;
+    color: white;
+}
+
+.Grey {
+    background-color: rgb(62, 57, 57);
+    width: 100%;
+    height: 250px;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+
+html {
+    border: 36px solid rgb(255, 255, 255);
+}
+
+a {
+    color: rgb(0, 123, 255);
+}
+
+.Title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.logo {
+    margin-right: 1050px;
+    margin-top: -3250px;
+    border: 12px solid rgb(62, 57, 57);
+}
+
+.teamPhoto {
+    margin-right: 1050px;
+    margin-top: -3250px;
+    border: 12px solid orange;
+}
+
+.code {
+    margin-left: 1050px;
+    margin-top: -100%;
+    border: 12px solid rgb(62, 57, 57);
+}
+
+.engirl{
+    margin-right: 1050px;
+    margin-top: -100%;
+    border: 12px solid blue;
+}
+
+.engboy{
+    margin-left: 1050px;
+    margin-top: -100%;
+    border: 12px solid blue;
+}
+
+.teamPhoto2 {
+   margin-top: -100%;
+   margin-left: 1050px;
+   border: 12px solid orange;
+}
