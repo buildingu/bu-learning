@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercise 3</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="hero">
+            <h1>Exercise 3 by Timofei Kovalev</h1>
+            <h4>Date Submitted: 26/06/2026</h4>
+        </div>
+        <hr>
+        <div class="table_div">
+            <h3>Fun Facts about me:</h3>
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Favorite Movie</th>
+                    <th>Favorite Song</th>
+                    <th>Favorite Video</th>
+                </tr>
+                <tr>
+                    <td>Timofei</td>
+                    <td>Kovalev</td>
+                    <td>
+                        <a href="https://en.wikipedia.org/wiki/The_Shawshank_Redemption" target="_blank">
+                            <img src="assets/ShawshankRedemptionMoviePoster.jpg" alt="The Shawshank Redemption img"/>
+                        </a>
+                    </td>
+                    <td>
+                        <p>Click the button to play the song</p>
+                        <audio controls>
+                            <source src="assets/Linkin Park - The Emptiness Machine.mp3" type="audio/mpeg">
+                        </audio>
+                    </td>
+                    <td>
+                        <iframe width="420" height="360" src="https://dn790001.ca.archive.org/0/items/mickey-mouse-season-1-1928-1929_202307/Mickey%20Mouse%20-%20Minnie%27s%20Yoo%20Hoo.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div class="form_footer">
+            <h4>Enter the details below:</h4>
+            <form>
+                <h4>Full Name</h4>
+                <input type="text" placeholder="John Doe">
+                <h4>Email Address</h4>
+                <input type="email" placeholder="jdoe@fakemail.com">
+                <h4>Password</h4>
+                <input type="password" placeholder="•••••">
+                <h4>Available meeting days:</h4>
+                <div class="selector">
+                    <label>
+                        <input type="checkbox" name="available_days" value="monday">Monday
+                    </label>
+                    <label>
+                        <input type="checkbox" name="available_days" value="tuesday">Tuesday
+                    </label>
+                    <label>
+                        <input type="checkbox" name="available_days" value="wednesday">Wednesday
+                    </label>
+                    <label>
+                        <input type="checkbox" name="available_days" value="thursday">Thursday
+                    </label>
+                    <label>
+                        <input type="checkbox" name="available_days" value="friday">Friday
+                    </label>
+                    <label>
+                        <input type="checkbox" name="available_days" value="saturday">Saturday
+                    </label>
+                    <label>
+                        <input type="checkbox" name="available_days" value="saturday">Sunday
+                    </label>
+                </div>
+                <h4>Available Time:</h4>
+                <select class="available_time" name="available-time">
+                    <option value="Morning">Morning: (8am to 12pm)</option>
+                    <option value="Afternoon">Afternoon: (1pm to 4pm)</option>
+                    <option value="Evening">Evening: (5pm to 9pm)</option>
+                </select>
+                <h4>Are you currently working on a new website</h4>
+                <div class="radio_select">
+                    <input type="radio" checked name="working_on_website">Yes
+                    <input type="radio" name="working_on_website">No
+                </div>
+                <div class="freecomment">
+                    <h4>If yes, please enter which page(s) you are working on</h4>
+                    <textarea placeholder="Enter your comments here"></textarea>
+                </div>
+                <div class="submit_buttons">
+                    <button type="submit" name="submit">Submit</button>
+                    <button type="reset" name="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <p>Desktop version</p>
+        </footer>
+    </body>
+</html>

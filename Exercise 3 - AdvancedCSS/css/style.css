@@ -1,0 +1,118 @@
+.hero {
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-image: url('');
+    background-size: cover;
+    background-color: #0d0d0d;
+    margin: 0 auto;
+    color: white;
+}
+
+table {
+    padding: 3px;
+    border: 5px solid grey;
+    border-collapse: collapse;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 5px solid grey;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(42, 52, 65);
+}
+
+td {
+    background-color: rgb(38, 58, 66);
+    align-items: center;
+}
+
+form {
+    width: 450px;
+    margin: 50px auto;
+    background-color: #cfcfcf;
+    padding: 20px;
+    color: black;
+    border: 8px solid grey;
+}
+
+form h4 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: black;
+}
+
+.selector {
+    text-align: center;
+    padding: 5px;
+}
+
+form label {
+    font-size: 0.9rem;
+    margin: 2px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select,
+form textarea {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 8px;
+    text-align: center;
+}
+
+.radio_select {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.submit_buttons {
+    padding: 3px;
+    text-align: center;
+}
+
+form button[type="submit"], form button[type="reset"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+form button[type="submit"] {
+    background-color: #4CAF50;
+}
+
+form button[type="reset"] {
+    background-color: #d32f2f;
+}
+
+
+footer {
+    background-size: cover;
+    background-color: rgb(138, 0, 115);
+    padding: 5px;
+    width: 100%;
+}
