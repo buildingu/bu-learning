@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Api</title>
+    <link rel="stylesheet" href="../navbar.css" />
+    <link rel="stylesheet" href="api.css" />
+  </head>
+  <body onload="fetchData()">
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../Employee Entry App/employeeEntry.html">Employee Entry App</a>
+      <a href="../API App/api.html">Api App</a>
+    </nav>
+
+    <h1>Harry Potter Spells</h1>
+    <div id="spell-container"></div>
+    <button id="generate-spell-button" onclick="fetchData()">
+      Generate Random Spell
+    </button>
+
+    <script src="api.js"></script>
+  </body>
+</html>

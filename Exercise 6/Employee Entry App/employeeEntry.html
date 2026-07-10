@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Entry</title>
+    <link rel="stylesheet" href="../navbar.css" />
+    <link rel="stylesheet" href="../form.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../Form Validator App/formValidator.html">Form Validator App</a>
+      <a href="../API App/api.html">Api App</a>
+    </nav>
+    <form action="" id="js-form-container">
+      <input type="text" placeholder="First Name" id="js-fName-input" />
+      <input type="text" placeholder="Last Name" id="js-lName-input" />
+      <input type="text" placeholder="Age" id="js-age-input" />
+      <select name="sex" id="js-sex-input">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <input type="text" placeholder="Position" id="js-position-input" />
+
+      <button type="button" id="js-add-entry-button">Add Entry</button>
+    </form>
+
+    <div class="employee-container"></div>
+
+    <script src="employeeEntry.js"></script>
+  </body>
+</html>
