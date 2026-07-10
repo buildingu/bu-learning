@@ -9,12 +9,12 @@
     <body>
         <div class="hero">
             <h1>Exercise 3 by Timofei Kovalev</h1>
-            <h4>Date Submitted: 26/06/2026</h4>
+            <h4>Date Submitted: 10/07/2026</h4>
         </div>
         <hr>
         <div class="table_div">
             <h3>Fun Facts about me:</h3>
-            <table>
+            <table class="desktop_table">
                 <tr>
                     <th>First Name</th>
                     <th>Last Name</th>
@@ -33,18 +33,55 @@
                     <td>
                         <p>Click the button to play the song</p>
                         <audio controls>
-                            <source src="assets/Linkin Park - The Emptiness Machine.mp3" type="audio/mpeg">
+                            <source src="assets/rick_roll.mp3" type="audio/mpeg">
                         </audio>
                     </td>
                     <td>
-                        <iframe width="420" height="360" src="https://dn790001.ca.archive.org/0/items/mickey-mouse-season-1-1928-1929_202307/Mickey%20Mouse%20-%20Minnie%27s%20Yoo%20Hoo.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="420" height="200" src="assets/marvel_studios.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </td>
+                </tr>
+            </table>
+            <table class="mobile_table">
+                <tr>
+                    <th>
+                        <span class="first_head_mobile">First Name</span>
+                        <span>Second Name</span>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="first_det_mobile">Timofei</span>
+                        <span>Kovalev</span>
+                    </td>
+                </tr>
+                <tr><th>Favorite Movie</th></tr>
+                <tr>
+                    <td>
+                        <a href="https://en.wikipedia.org/wiki/The_Shawshank_Redemption" target="_blank">
+                            <img src="assets/ShawshankRedemptionMoviePoster.jpg" alt="The Shawshank Redemption img"/>
+                        </a>
+                    </td>
+                </tr>
+                <tr><th>Favorite Song</th></tr>
+                <tr>
+                    <td>
+                        <p>Click the button to play the song</p>
+                        <audio controls>
+                            <source src="assets/rick_roll.mp3" type="audio/mpeg">
+                        </audio>
+                    </td>
+                </tr>
+                <tr><th>Favorite Video</th></tr>
+                <tr>
+                    <td>
+                        <iframe width="420" height="200" src="assets/marvel_studios.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </td>
                 </tr>
             </table>
         </div>
         <hr>
         <div class="form_footer">
-            <h4>Enter the details below:</h4>
+            <h4>Enter your details below:</h4>
             <form>
                 <h4>Full Name</h4>
                 <input type="text" placeholder="John Doe">
@@ -92,13 +129,14 @@
                     <textarea placeholder="Enter your comments here"></textarea>
                 </div>
                 <div class="submit_buttons">
-                    <button type="submit" name="submit">Submit</button>
-                    <button type="reset" name="reset">Reset</button>
+                    <button class="submit" type="submit" name="submit">Submit</button>
+                    <button class="reset" type="reset" name="reset">Reset</button>
                 </div>
             </form>
         </div>
-        <footer>
-            <p>Desktop version</p>
+        <footer class="shared_versions">
+            <span class="desktop_version">Desktop version&reg;</span>
+            <span class="mobile_version">Mobile version&reg;</span>
         </footer>
     </body>
 </html>
