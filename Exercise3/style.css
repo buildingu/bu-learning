@@ -1,163 +1,158 @@
-/* Desktop */
-@media screen and (min-width: 768px) {
-    
+* { 
+    box-sizing: border-box; 
+}
 
 body {
+    margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    background-image: url(assets/water.jpg);
-    background-size: cover;
 }
+
+/* Desktop */
+@media (min-width: 768px) {
+    body { background: url(assets/water.jpg) center / cover fixed; }
+}
+
+main {
+    width: min(1100px, 100%);
+    margin: auto;
+    padding: 24px;
+    text-align: center;
+}
+
+h1, h3 { 
+    color: white; 
+}
+hr { margin: 20px 0; 
+    border: 1px solid white; 
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
 }
-th {
-    background-color: rgb(72, 151, 146);
-    color: white;
-}
-table, th, td {
-    border: 3px solid #d8d8d8;
+
+th, td {
     padding: 12px;
+    border: 3px solid #d8d8d8;
     text-align: center;
-    max-width: 300px;
 }
-td {
-    background-color: lightgoldenrodyellow;
+
+th { 
+    background: rgb(72, 151, 146); 
+    color: white; 
 }
+td { 
+    background: lightgoldenrodyellow; 
+}
+tbody tr:nth-child(even) td { 
+    background: #fff4c5; 
+}
+
+td img, td iframe, td audio {
+    display: block;
+    width: min(100%, 220px);
+    margin: auto;
+}
+
+td img, td iframe {
+    aspect-ratio: 1; 
+    border: 0; 
+    border-radius: 8px; 
+}
+
 .section {
-    background: url(assets/sand.jpg);
+    max-width: 750px;
     margin: 25px auto;
     padding: 24px;
-    border-radius: 22px;
     border: 3px solid lightgoldenrodyellow;
-    max-width: 750px;
+    border-radius: 22px;
+    background: url(assets/sand.jpg);
 }
-hr {
-    border: 1px solid white;
-    margin: 20px 0;
-}
-input[type="text"], input[type="email"], input[type="password"], textarea, select{
-    width: 100%;
+
+.section label, .section p { color: rgb(83, 68, 6); font-weight: bold; }
+
+.section input:not([type="radio"]):not([type="submit"]):not([type="reset"]), .section textarea, .section select {
+    display: block;
+    width: min(100%, 500px);
+    margin: 5px auto;
     padding: 12px;
-    margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 8px;
-    max-width: 500px;
-    background-color: lightyellow;
-    color: #555555;
+    background: lightyellow;
+    color: #555;
+    font: inherit;
     text-align: center;
-    font-family: "Segoe UI", Arial, sans-serif;
-}
-input[type="submit"] {
-    background-color: rgb(72, 151, 148);
-    color: white;
-    padding: 11px 22px;
-    border: none;
-    border-radius: 8px;
-}
-input[type="reset"] {
-    background-color: rgb(165, 62, 62);
-    color: white;
-    padding: 11px 22px;
-    border: none;
-    border-radius: 8px;
 }
 
-.section label, p{
-    color: rgb(83, 68, 6);
-    font-weight: bolder;
+.meeting-days {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
-input[type="radio"] {
-    width: 20px;
-    height: 20px;
-    accent-color: turquoise;
+
+input[type="radio"] { accent-color: turquoise; cursor: pointer; }
+
+.form-actions { display: flex; justify-content: center; gap: 12px; }
+
+.form-actions input {
+    padding: 11px 22px;
+    border: 0;
+    border-radius: 8px;
+    color: white;
     cursor: pointer;
-    margin-right: 5px;
 }
+
+input[type="submit"] { 
+    background: rgb(72, 151, 148); 
 }
+input[type="reset"] { 
+    background: rgb(165, 62, 62); 
+}
+
 /* Mobile */
-@media only screen and (max-width: 767px) {
-    body {
-        background-image: none;
-        background-color: #121212;
-        color: #f5f5f5;
-        font-family: "Segoe UI", Arial, sans-serif;
+@media (max-width: 767px) {
+    body { 
+        background: #121212; 
+        color: #f5f5f5; 
     }
-    
+    main { 
+        padding: 16px 10px; 
+    }
+
     .section {
-        background: #ffffff;
-        max-width: 100%;
-        padding: 18px;
         margin: 14px auto;
-        border: 2px solid #dddddd;
+        padding: 18px;
+        border: 2px solid #ddd;
         border-radius: 16px;
-        box-sizing: border-box;
+        background: white;
     }
 
-    h1, h3 {
-        color: #ffffff;
+    .section label, .section p { 
+        color: #1f1f1f; 
     }
-
-    .section label, .section p {
-        color: #1f1f1f;
-    }
-
-    input[type="text"], input[type="email"], input[type="password"], textarea, select {
-        max-width: 100%;
-        box-sizing: border-box;
-        background-color: #f7f7f7;
-        color: #111111;
-        font-size: 16px;
-        border-radius: 8px;
-    }
-
-    input[type="submit"] {
-        background-color: rgb(72, 151, 148);
-        color: #ffffff;
-    }
-
-    input[type="reset"] {
-        background-color: rgb(165, 62, 62);
-        color: #ffffff;
-    }
-    
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        table-layout: fixed;
+    .meeting-days { 
+        gap: 6px; 
         font-size: 14px; 
-        max-width: 767px;
-    }
-    
-    th {
-        background-color: #1f1f1f;
-        color: #ffffff;
     }
 
-    td {
-        background-color: #f0f0f0;
-        color: #111111;
+    table { 
+        table-layout: fixed; 
+        font-size: 14px; 
     }
-
-    th, td {
-        padding: 10px;
-        border: 2px solid #dddddd;
-        max-width: none;
-        word-wrap: break-word;
+    th, td { 
+        padding: 8px 4px; 
+        border-width: 2px; 
+        word-wrap: break-word; 
     }
-    
-    img {
-        width: 100%;
-        max-width: 140px;
-        height: auto;
-        border-radius: 8px;
+    th { 
+        background: #1f1f1f; 
     }
-
-    iframe {
-        width: 100%;
-        max-width: 180px;
-        height: 180px;
+    td { 
+        background: #f0f0f0; 
+        color: #111; 
     }
-    
+    td img, td iframe, td audio { 
+        max-width: 100%; 
+    }
 }

@@ -8,7 +8,7 @@
         <!-- Search Engine Key Words -->
         <meta name="keywords" content="HTML5"/>
         <!-- Description -->
-        <meta name="description" content="EXERCISE 1"/>
+        <meta name="description" content="EXERCISE 3"/>
         <!-- Author -->
         <meta name="author" content="Gabriel Rodriguez"/>
         <!-- Viewport -->
@@ -17,8 +17,10 @@
     </head>
     <body>
         <main>
-        <center><h1>Exercise 3 by Gabriel Rodriguez</h1>
+        <header>
+        <h1>Exercise 3 by Gabriel Rodriguez</h1>
         <h3>Date Submitted: May 9, 2026</h3>
+        </header>
         <hr>
         <h3>Fun Facts about me: </h3>
     <table>
@@ -33,16 +35,15 @@
         <tr>
             <td>Gabriel</td>
             <td>Rodriguez</td>
-            <td><img src="assets/Avatar.jpeg" width="200" height="200"/></td>
+            <td><img src="assets/Avatar.jpeg" alt="Avatar movie poster"></td>
             <td>
-                <iframe data-testid="embed-iframe" 
-                src="https://open.spotify.com/embed/track/5y2ijHECwFYWqcAHKTZgzD?utm_source=generator" >
-                </iframe>
+                <audio controls>
+                    <source src="assets/BallGame.mp3" type="audio/mpeg">
+                </audio>
             </td>
             <td>
                 <iframe 
-                width="200" 
-                height="200"
+                title="Favorite video"
                 src="https://www.youtube.com/embed/nb_fFj_0rq8"
                 allowfullscreen>
                 </iframe>
@@ -54,22 +55,24 @@
     <div class="section">
         <form>
             <label for="fullname"> Full Name:</label><br>
-            <input type="text" placeholder="John Doe"><br><br>
+            <input id="fullname" name="fullname" type="text" placeholder="John Doe"><br><br>
 
             <label for="email" >Email Address:</label><br>
-            <input type="email" placeholder="john.doe@example.com"><br><br>
+            <input id="email" name="email" type="email" placeholder="john.doe@example.com"><br><br>
 
             <label for="password" >Password:</label> <br>
-            <input type="password" placeholder="••••••••"><br><br>
+            <input id="password" name="password" type="password" placeholder="••••••••"><br><br>
                 <!-- em used for emphasis -->
                     <p><em>Available Meeting Days</em></p>
-                    <label><input type="radio"> Monday</label>
-                    <label><input type="radio"> Tuesday</label>
-                    <label><input type="radio"> Wednesday</label>
-                    <label><input type="radio"> Thursday</label>
-                    <label><input type="radio"> Friday</label>
-                    <label><input type="radio"> Saturday</label>
-                    <label><input type="radio"> Sunday</label><br><br>
+                    <div class="meeting-days">
+                    <label for="monday"><input id="monday" type="radio" name="meeting-day"> Monday</label>
+                    <label for="tuesday"><input id="tuesday" type="radio" name="meeting-day"> Tuesday</label>
+                    <label for="wednesday"><input id="wednesday" type="radio" name="meeting-day"> Wednesday</label>
+                    <label for="thursday"><input id="thursday" type="radio" name="meeting-day"> Thursday</label>
+                    <label for="friday"><input id="friday" type="radio" name="meeting-day"> Friday</label>
+                    <label for="saturday"><input id="saturday" type="radio" name="meeting-day"> Saturday</label>
+                    <label for="sunday"><input id="sunday" type="radio" name="meeting-day"> Sunday</label>
+                    </div><br>
 
                 <label for="available-time"><em>Available Time</em>:</label><br>
                     <select id="available-time" name="available-time">
@@ -77,19 +80,21 @@
                             <option value="afternoon">Afternoon (12pm to 4pm)</option>
                             <option value="evening">Evening (4pm to 8pm)</option>
                     </select><br><br>
-                <label>Currently working on a new website?</label><br>
-                <label>
-                    <input type="radio" name="answer" value="yes"> Yes
+                <label for="working-yes">Currently working on a new website?</label><br>
+                <label for="working-yes">
+                    <input id="working-yes" type="radio" name="answer" value="yes"> Yes
                 </label>
-                <label>
-                            <input type="radio" name="answer" value="no"> No
+                <label for="working-no">
+                            <input id="working-no" type="radio" name="answer" value="no"> No
                         </label><br><br>
-                    <textarea rows="4" cols="25" placeholder="Your comments here..."></textarea><br><br>
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset"><br>
+                    <label for="comments">Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Your comments here..."></textarea><br><br>
+                <div class="form-actions">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
         </form>
     </div>
-    </center>
     </main>
     </body>
 </html>
