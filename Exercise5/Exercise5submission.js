@@ -1,4 +1,4 @@
-function formValidator(fName, lName, phoneNumber, age) {
+function formValidator(fName, lName, age, phoneNumber) {
     if(fName === undefined) {
         console.log("The first name input is missing.");
         return;
@@ -34,8 +34,8 @@ function formValidator(fName, lName, phoneNumber, age) {
         return;
     }
   
-    if(typeof(age) !== "string") {
-        console.log("The age MUST be a String data type");
+    if(typeof(age) !== "number") {
+        console.log("The age MUST be a Number");
         return;
     }
   
@@ -52,6 +52,6 @@ function formValidator(fName, lName, phoneNumber, age) {
 const fName="Jomithy";
 const lName= "Jimothy";
 const phoneNumber= "+1-234-5678";
-const age= "19";
+const age= 19;
 
-formValidator(fName, lName, phoneNumber, age);
+formValidator(fName, lName, age, phoneNumber);
