@@ -16,7 +16,7 @@ export default function UseEffectChallenge() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-  fetch("https://jsonplaceholder.typicode.com/users")
+  fetch("https://jsonplaceholder.typicode.com/user")
     .then((response) => response.json())
     .then((data) => {
       setUsers(data)
@@ -37,3 +37,14 @@ export default function UseEffectChallenge() {
     </main>
   );
 }
+/*useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then(res => res.json())
+      .then(data => {
+        setUsers(data);
+      })
+      .catch(err => {
+        console.error("Failed to fetch users:, err");
+      })
+      .finally(() => setLoading(false));
+  }, []);*/

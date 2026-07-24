@@ -7,8 +7,13 @@
 import { useState, useMemo } from "react";
 
 function calculateFactorial(n) {
-  if (n <= 0) return 1;
-  return n * calculateFactorial(n - 1);
+  n = Math.round(n)
+  if (n < 0) return null;
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result *= i;
+  }
+  return result;
 }
 
 export default function UseMemoChallenge() {
@@ -34,3 +39,4 @@ export default function UseMemoChallenge() {
     </main>
   );
 }
+/*Tweak: Make sure to have the negative numbers return as null*/
