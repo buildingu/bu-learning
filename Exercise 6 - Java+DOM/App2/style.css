@@ -1,0 +1,41 @@
+div {
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 30px auto;
+    width: 85%;
+}
+
+input, button, select {
+    display: block;
+    margin: 10px auto;
+    background-color: rgb(223, 220, 248);
+    padding: 5px;
+    border: 3px solid rgb(70, 46, 94);
+    border-radius: 5px;
+    width: 85%;
+}
+
+a {
+    display: block;
+    margin-left: 30px;
+    text-decoration: none;
+    color: blue;
+}
+
+button {
+    background-color: rgb(70, 46, 94);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(50, 30, 70);
+}
+
+.save-button {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: rgb(46, 70, 94);
+}
