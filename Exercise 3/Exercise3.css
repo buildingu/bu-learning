@@ -1,0 +1,177 @@
+h6 {
+    margin-top: 15px;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+.hr1 {
+    margin-top: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../assets/background-desktop,%20e3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#table, h2, h3, h6 {
+    color: white;
+}
+
+form {
+    background-color: #cecaca;
+    padding: 15px;
+    max-width: 475px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 10px #808080;
+    color: black;
+    font-weight: bold;
+}
+
+/* Media query for desktop devices */
+@media screen and (min-width: 767px) {
+  body {
+    background-image: url("../assets/background-desktop,%20e3.jpg");
+  }
+
+  .footer {
+    position: relative;
+    margin-top: 40px;
+    bottom: 0;
+    width: 100%;
+    background-color: #8a0073;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+  }
+
+  td {
+    background-color: #263a42;
+}
+
+th {
+    background-color: #2a3441;
+}
+
+form {
+    background-color: #cecaca;
+    padding: 15px;
+    max-width: 475px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 10px #808080;
+    color: black;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6, #table {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+.submit {
+    background-color: #4caf40;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+  
+}
+
+.reset {
+    background-color: #c53939;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+.week-group {
+    font-weight: bold;
+}
+
+.available-time {
+    width: 400px;
+    height: 35px;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+}
+
+.yesno-group input, .week-group input {
+    accent-color: black;
+    cursor: pointer;
+}
+
+.Comments {
+    width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.full-name {
+    width: 250px;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+    width: 400px;
+    height: 35px;
+}
+.Email-Address {
+    width: 250px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+    width: 400px;
+    height: 35px;
+}
+.Password {
+    width: 250px;
+    box-sizing: border-box;
+    text-align: center; 
+    padding: 5px 20px 5px 20px;
+    width: 400px;
+    height: 35px;
+}
+
+#table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 7px solid grey;
+}
+
+#table td, #table th {
+    text-align: center;
+    padding: 8px;
+    border: 7px solid grey;
+}
+}
+
+.hr1, .hr2 {
+    background-color: white;
+    height: 5px;
+    border: none;
+}

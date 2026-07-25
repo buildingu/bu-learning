@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Exercise3.css">
+    <title>Exercise 3</title>
+    <h2 align="center">Exercise 3 by Stanley Li</h2>
+    <h6 align="center">Date submitted: 20/07/2023</h6>
+</head>
+<body>
+    <hr class="hr1">
+<table border="1" align="center" style="width: 85%;" id="table">
+    <h3 align="center"  class="fun-fact">Fun facts about me:</h3>
+    <!--Mobile style-->
+    <style>
+        @media screen and (max-width: 768px) {
+    #table {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        width: 100%;
+        border-collapse: collapse;
+        border: 7px solid grey;
+    }
+
+    #table thead, #table tbody, #table tr {
+        display: contents;
+    }
+
+    #table th, #table td {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    #table th:nth-child(1) { grid-column: 1; grid-row: 1; }
+    #table th:nth-child(2) { grid-column: 2; grid-row: 1; }
+
+    #table td:nth-child(6) { grid-column: 1; grid-row: 2; }
+    #table td:nth-child(7) { grid-column: 2; grid-row: 2; }
+
+    #table th:nth-child(3) { grid-column: 1 / span 2; grid-row: 3; }
+    #table td:nth-child(8) { grid-column: 1 / span 2; grid-row: 4; }
+
+    #table th:nth-child(4) { grid-column: 1 / span 2; grid-row: 5; }
+    #table td:nth-child(9) { grid-column: 1 / span 2; grid-row: 6; }
+
+    #table th:nth-child(5) { grid-column: 1 / span 2; grid-row: 7; }
+    #table td:nth-child(10) { grid-column: 1 / span 2; grid-row: 8; }
+
+#table td:nth-child(3),
+#table td:nth-child(4),
+#table td:nth-child(5){
+    grid-column: span 2 !important;
+    width: 100%;
+}
+
+body {
+    background-image: url("../assets/background-mobile,%20e3.jpg");
+  }
+
+   .footer {
+    position: relative;
+    margin-top: 40px;
+
+    bottom: 0;
+    width: 100%;
+    background-color: #1a4678;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+  }
+
+.footer-text {
+    font-size: 0px;
+}
+
+.footer-text::before {
+   content: "Mobile Version\00AE";
+   font-size: 16px;
+}
+
+    td {
+    background-color: #793e3e;
+}
+
+th {
+    background-color: #aa3c10;
+}
+
+form {
+    background-color: #cecaca;
+    padding: 15px;
+    max-width: 250px;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 10px #808080;
+    color: black;
+    font-weight: bold;
+}
+
+.yesno-group input, .week-group input {
+    accent-color: black;
+    cursor: pointer;
+}
+
+.available-time {
+    width: 250px;
+    height: 35px;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+.week-group {
+    font-weight: bold;
+}
+
+.submit {
+    background-color: #4caf40;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 10px;
+    width: 250px;
+  
+}
+
+.reset {
+    background-color: #c53939;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    width: 250px;
+}
+
+.Comments {
+    width: 250px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.full-name {
+    width: 250px;
+    max-width: 250px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+    width: 400px;
+    height: 35px;
+}
+.Email-Address {
+    width: 250px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+    height: 35px;
+}
+.Password {
+    width: 250px;
+    box-sizing: border-box;
+    text-align: center; 
+    padding: 5px 20px 5px 20px;
+    height: 35px;
+}
+
+.submit, .reset {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, #table {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+#table td, #table th {
+    text-align: center;
+    padding: 8px;
+    border: 7px solid grey;
+}
+
+.fun-fact {
+    font-size: 23px;
+}
+    }
+    </style>
+   <thead>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Favorite Movie</th>
+        <th>Favorite Song</th>
+        <th>Favorite Video</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr align="center">
+        <td>Stanley</td>
+        <td>Li</td>
+        <td>
+            <img src="../assets/Raider, e3.png" alt="Rick Roll" width="150" height="150">
+        </td>
+        <td>
+            <span>Click play button to play music:</span><br>
+            <audio controls>
+                <source src="../assets/rick_roll, e3.mp3" type="audio/mpeg">
+            </audio>
+        </td>
+        <td>
+            <video width="300" height="auto" controls>
+                <source src="../assets/marvel_studios, e3.mp4" type="video/mp4">
+            </video>
+        </td>
+    </tr>
+   </tbody>
+</table>
+<hr class="hr2">
+<h3 align="center">Enter your details below:</h3>
+<form action="Exercise3.html" method="post" align="center" autocomplete="off">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required placeholder="John Doe" class="full-name"><br><br>
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required placeholder="jdoe@fakemail.com" class="Email-Address"><br><br>
+    <label for="message">Password:</label><br>
+    <input type="password" id="password" name="password" required placeholder="*****" class="Password"><br><br>
+    <label for="Day">Available Meeting Days:</label><br>
+<div class="week-group">
+    <input type="checkbox" name="Day" value="Monday"> Monday
+    <input type="checkbox" name="Day" value="Tuesday"> Tuesday
+    <input type="checkbox" name="Day" value="Wednesday"> Wednesday
+    <input type="checkbox" name="Day" value="Thursday"> Thursday
+    <input type="checkbox" name="Day" value="Friday"> Friday
+    <input type="checkbox" name="Day" value="Saturday"> Saturday
+    <input type="checkbox" name="Day" value="Sunday"> Sunday<br><br>
+</div>
+    <label for="time">Available Times:</label><br>
+    <select class="available-time">
+        <option value="5am-12am">Morning(5am to 12pm)</option>
+        <option value="12pm-5pm">Afternoon(12pm to 5pm)</option>
+    </select><br><br>
+    <label for="Currently working on new website">Currently working on new website:</label><br>
+<div class="yesno-group">
+    <input type="checkbox" name="Currently working on new website" value="Yes">Yes
+    <input type="checkbox" name="Currently working on new website" value="No">No<br><br>
+</div>
+    <label for="if yes">If yes, please enter which page(s) you are working on</label><br>
+    <textarea id="message" name="message" rows="3" cols="50" required placeholder="Enter your comments here" class="Comments"></textarea><br><br>
+    <input type="submit" value="Submit" class="submit">
+    <input type="reset" value="Reset" class="reset">
+</form>
+<footer align="center" class="footer">
+ <span class="footer-text">Desktop Version&reg;</span>
+</footer>
+</body>
+</html>
