@@ -1,0 +1,108 @@
+@media screen and (max-width: 800px) {
+    body {
+        background-image: url("../assets/background-desktop.jpg");
+        color:white;
+    }
+    table{
+        margin: auto;
+        background-color: teal;
+        border-color:gray;
+        border-width: 2px;
+
+    }
+    form {
+        background-color: gray; 
+        padding: 10px;                            
+        border: 5px solid black;
+        color: black;           
+    }
+    input[type="submit"] {
+        background-color: green; 
+        color: white;
+        padding: 10px ;
+        border: none;
+    }
+
+    input[type="reset"] {
+        background-color: red; 
+        color: white;
+        padding: 10px;
+        border: none;
+    }
+    .desktop{
+        display:block;
+        background-color: pink;
+        text-align:center;
+    }
+    .mobile{
+        display:none
+    }
+
+}
+@media screen and (max-width: 767px) {
+    body {
+        background-image: url("../assets/background-mobile.jpg");
+        color:white;
+    }
+    table{
+        margin: auto;
+        background-color: teal;
+        border-color:gray;
+        border-width: 2px;
+
+    }
+    form {
+        background-color: gray; 
+        padding: 10px;                            
+        border: 5px solid black;
+        color: black;           
+    }
+    input[type="submit"] {
+        background-color: green; /* Green */
+        color: white;
+        padding: 10px ;
+        border: none;
+    }
+
+    input[type="reset"] {
+        background-color: red; /* Red */
+        color: white;
+        padding: 10px;
+        border: none;
+    }
+    .mobile{
+        display:block;
+        background-color: lightblue;
+        text-align:center;
+    }
+    .desktop{
+        display:none
+    }
+    tr:nth-child(odd) {
+        background-color: darkred;
+    }
+    tr:nth-child(even) {
+        background-color: red;
+    }
+
+}
+
+input:not([type="checkbox"]):not([type="radio"]) {
+    padding: 7px;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+h4{
+    text-align:center;
+}
+h5{
+    text-align:center;
+}
+p{
+    font-size: 20px;
+    
+}
+body{
+    background-color: lightyellow;
+    margin: 20px;
+}
