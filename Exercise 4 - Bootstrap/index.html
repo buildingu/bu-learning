@@ -11,25 +11,27 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="https://www.building-u.com">BuildingU</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDiv">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarDiv">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+            <div class="container">
+                <a class="navbar-brand" href="https://www.building-u.com">BuildingU</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDiv">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarDiv">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <header id="home" class="text-center text-white py-5">
@@ -48,6 +50,14 @@
                             I like to create innovative solutions and make apps that solve day-to-day problems.
                             With several projects done, I'm ready to explore frontend tools such as HTML, CSS, and Bootstrap.</p>
                         <p>One of my recent projects, <a href="https://trackolymp.tech" target="_blank">trackolymp.tech</a>, helps students track competitions and olympiads through a user-friendly calendar. The platform sends email reminders and lets users browse upcoming events to participate in.</p>
+                        <h4 class="h5 mt-4">My Skills</h4>
+                        <ul class="list-unstyled">
+                            <li>&#10003; Python, JavaScript, C++</li>
+                            <li>&#10003; HTML, CSS, Bootstrap</li>
+                            <li>&#10003; PostgreSQL</li>
+                            <li>&#10003; Git </li>
+                            <li>&#10003; API integration</li>
+                        </ul>
                     </div>
                     <div class="col-md-6">
                         <img src="assets/github_photo.jpg" class="rounded-circle img-fluid" alt="Profile">
@@ -98,15 +108,15 @@
                         <form>
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="John Doe">
+                                <input type="text" class="form-control" id="name" placeholder="John Doe" required minlength="2">
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="jdoe@fakemail.com">
+                                <input type="email" class="form-control" id="email" placeholder="jdoe@fakemail.com" required>
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="5" placeholder="Enter your message here"></textarea>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Enter your message here" required minlength="10"></textarea>
                             </div>
                             <button type="submit" class="btn btn-success">Send Message</button>
                         </form>
