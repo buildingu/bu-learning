@@ -28,7 +28,7 @@
 .Grey {
     background-color: rgb(62, 57, 57);
     width: 100%;
-    height: 250px;
+    height: 375px;
     flex-direction: row;
     text-align: center;
     padding-top: 100px;
@@ -82,4 +82,38 @@ a {
    margin-top: -100%;
    margin-left: 1050px;
    border: 12px solid orange;
+}
+
+.Advisor {
+    margin-top: 15px;
+}
+
+.description {
+    margin-top: 25px
+}
+
+.Welcome {
+    margin-top: 15px;
+}
+
+form {
+    background-color: black;
+    color: white;
+    width: 300px;
+    margin-left: 575px;
+    text-align: center;
+}
+
+.submit {
+    background-color: green;
+    margin-top: 10px;
+}
+
+.Reset {
+    background-color: red;
+    margin-top: 10px;
+}
+
+.Yes, .No {
+    margin-top: 10px;
 }
