@@ -29,7 +29,11 @@ function formValidator(firstName, lastName, age, phone) {
             errorMessage.textContent = `The ${elem.title} input is missing.`;
             return;
         }
-        if (elem.title !== "age" && typeof(elem.value) !== "string") {
+        if (elem.title === "age" && typeof(elem.value) !== "number") {
+            errorMessage.style.color = "red";
+            errorMessage.textContent = `The age should be a number.`;
+            return;
+        } else if (elem.title !== "age" && typeof(elem.value) !== "string") {
             errorMessage.style.color = "red";
             errorMessage.textContent = `The ${elem.title} should be a string.`;
             return;

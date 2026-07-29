@@ -1,0 +1,63 @@
+#apiButton {
+    display: block;
+    margin: 1.5rem auto 0;
+    padding: 10px;
+    border: 1px solid #745013;
+    border-radius: 5px;
+    background-color: #d9a358;
+    color: #fff;
+    cursor: pointer;
+}
+
+#apiButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#apiButton:hover {
+    background-color: #c28f47;
+    border-color: #5c3f0f;
+}
+
+#apiResponse {
+    text-align: center;
+    margin: 1.5rem auto;
+    color: wheat;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #745013;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #34270e, #b68848);
+}
+
+#apiResponse.error {
+    background-image: none;
+    background-color: #3a1414;
+    border-color: #7a2e2e;
+    color: #f5c6c6;
+}
+
+@media (max-width: 600px) {
+    #apiResponse {
+        width: 90%;
+        max-width: 500px;
+    }
+}
+
+#apiResponse h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+}
+
+#apiResponse a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+}
+
+#apiResponse a:hover {
+    text-decoration: underline;
+}
