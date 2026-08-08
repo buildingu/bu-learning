@@ -1,0 +1,12 @@
+h1 {
+    color: rgba(45, 135, 220, 0.5);
+}
+
+.divs{
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+}
