@@ -60,7 +60,12 @@ img {
 }
 
 /* Mobile Devices styling */
+/* Mobile Devices styling */
 @media screen and (max-width: 768px) {
+
+    body {
+        background-color: rgb(34, 230, 34); 
+    }
 
     table {
         width: 100%;
