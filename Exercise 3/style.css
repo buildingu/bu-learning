@@ -1,0 +1,174 @@
+@media screen and (min-width: 600px) {
+    body {
+        background-image: url("assets/background-desktop.jpg");
+        color: white;
+    }
+
+    table {
+        border: 5px solid white;
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+        background-color:darkslategray;
+    }
+
+    th, td {
+        border: 5px solid white;
+        padding: 8px;
+    }
+
+    img {
+        max-width: 150px;
+        width: 100%;
+        height: auto;
+    }
+
+    #field {
+        background-color: lightgrey;
+        max-width: 400px;
+        color: black;
+        font-weight:700;
+        border: 10px solid grey;
+    }
+
+    #submit {
+        background-color: #198754;
+        color: white;
+        padding: 12px;
+    }
+
+    #reset {
+        background-color: #dc3545;
+        color: black;
+        padding: 12px;
+    }
+
+    fieldset {
+        border: 5px solid white;
+    }
+
+    #endbar {
+        background-color: purple;
+        color: white;
+    }
+
+    #desktop {
+        display: block;
+    }
+
+    #mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background-image: url("assets/background-mobile.jpg");
+        color: white;
+    }
+
+    table{
+        border: 5px solid darkslategray;
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+        background-color:brown;
+    }
+
+    th, td {
+        border: 5px solid darkslategray;
+        padding: 8px;
+    }
+
+    table {
+        display: block;
+        box-sizing: border-box;
+    }
+
+    tbody {
+        display: contents;
+    }
+
+    tr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    table tr:first-child {
+        display: none;
+    }
+
+    td {
+        display: block;
+        box-sizing: border-box;
+        width: auto;
+    }
+
+    td:nth-child(3), td:nth-child(4), td:nth-child(5) {
+        grid-column: 1 / -1;
+    }
+
+    td:not(:nth-child(n+3)) {
+        border-radius: 8px;
+    }
+
+    td::before {
+        content: attr(data-label);
+        display: block;
+        font-weight: bold;
+        background-color: darkslategray;
+        color: white;
+        padding: 8px;
+        margin: -8px -8px 8px -8px;
+    }
+
+    img {
+        max-width: 150px;
+        width: 100%;
+        height: auto;
+    }
+
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    audio {
+        width: 100%;
+    }
+
+    #field {
+        background-color: lightgrey;
+        max-width: 400px;
+        color: black;
+        font-weight:700;
+        border: 10px solid grey;
+    }
+
+    #endbar {
+        background-color:blue;
+    }
+
+    #submit {
+        background-color: #198754;
+        color: white;
+        padding: 12px;
+    }
+
+    #reset {
+        background-color: #dc3545;
+        color: black;
+        padding: 12px;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+}
