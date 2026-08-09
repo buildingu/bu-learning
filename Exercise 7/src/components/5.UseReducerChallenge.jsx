@@ -45,12 +45,7 @@ export default function UseReducerChallenge() {
       <h1>useReducer Challenge</h1>
       <div>
         <h2>To-do</h2>
-        <input
-          ref={inputRef}
-          placeholder="Add a new to-do"
-          value={todoName}
-          onChange={(e) => setTodoName(e.target.value)}
-        />
+        <input placeholder="Add a new to-do" value={todoName} onChange={(e) => setTodoName(e.target.value)} />
         <button onClick={handleAddTodo}>Add</button>
 
         <ul>
