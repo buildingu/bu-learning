@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Exercise 3 by Rohan R</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width" initial-scale="1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <center>
+        <main>
+            <h1>Exercise 3 by Rohan Ravulapelli</h1>
+            <h4>Date submitted: 7/14/2026</h4>
+            <h3>Fun facts about me:</h3>
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Favorite Movie</th>
+                    <th>Favorite Song</th>
+                    <th>Favorite Video</th>
+                </tr>
+                <tr>
+                    <td data-label="First Name">Rohan</td>
+                    <td data-label="Last Name">Ravulapelli</td>
+                    <td data-label="Favorite Movie"><img src="assets/up.jpg" alt="Picture of the movie Up" href="https://en.wikipedia.org/wiki/Up_(2009_film)" width="200" height="200"/></td>
+                    <td data-label="Favorite Song"><audio controls><source src="assets/rick_roll.mp3" type="audio/mp4"><source src="assets/stitches.ogg" type="audio/ogg">Your browser does not support the audio element</audio></td>
+                    <td data-label="Favorite Video"><video width="200" height="200" controls><source src="assets/marvel_studios.mp4" type="video/mp4"/><source src="assets/cube.webm" type="video/webm"/>Your browser does not support the video element</video></td>
+                </tr>
+            </table>
+            <form>
+                <fieldset>
+                <h3>Enter your details below:</h3>
+                <div id="field">
+                <br>
+                <label>Full Name: </label><br><br>
+                <input type="text"/ placeholder="Ex: John Doe"> <br><br>
+                <label>Email:</label><br><br>
+                <input type="email"/ placeholder="Ex: johndoe@gmail.com"> <br><br>
+                <label>Password:</label><br><br>
+                <input type="password"/ placeholder="Ex: cats1234"> <br><br>
+                <label>Available Meeting Days:</label><br><br>
+                Monday <input type="checkbox"/>
+                Tuesday <input type="checkbox"/>
+                Wednesday <input type="checkbox"/>
+                Thursday <input type="checkbox"/>
+                <br>
+                Friday <input type="checkbox"/>
+                Saturday <input type="checkbox"/>
+                Sunday <input type="checkbox"/><br><br>
+                <label>Available Time:</label><br><br>
+                <select>
+                    <option>Morning (8am to 12pm)</option>
+                    <option>Afternoon (12pm to 6pm)</option>
+                    <option>Evening (6pm to 9pm)</option>
+                    <option>Night(9pm to 12am)</option>
+                </select><br><br>
+                <label>Working on a new website?</label><br><br>
+                Yes<input type="checkbox"/>
+                No<input type="checkbox"/><br><br>
+                <label>If yes, please enter which page(s) you're working on:</label><br><br>
+                <textarea cols="20" rows="5" placeholder="Enter your comments here"></textarea><br><br>
+                <input type="submit" id="submit"/>
+                <input type="reset" id="reset"/>
+                <br><br>
+                </div>
+                </fieldset>
+            </form>
+        </main>
+        <div id="endbar">
+            <p id="desktop">Desktop Version</p>
+            <p id="mobile">Mobile Version</p>
+        </div>
+        </center>
+    </body>
+</html>
