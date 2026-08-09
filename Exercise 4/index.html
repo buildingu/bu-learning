@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intro to HTML5</title>
+    <meta charset="UTF-8"/>
+    <meta name="keywords" content="HTML5"/>
+    <meta name="description" content="HTML5 Tutorial"/>
+    <meta name="author" content="Madhu"/>
+    <link rel="stylesheet" href="libraries/bootstrap-5.3.8-dist/css/bootstrap.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+        .project-image {
+            height: 180px;
+            object-fit: contain;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            color: orange;
+        }
+        .hero-section {
+            background-color: lightblue;
+            padding: 50px;
+        }
+        .project-section {
+            background-color: lightblue;
+            padding: 50px;
+        }
+        .about-section {
+            background-color: lightyellow;
+            padding: 50px;
+        }
+        body{
+            font-family: Archivo-Narrow;
+        }
+
+        @media screen and (max-width: 800px) {
+            .about-section {
+                background-color: lavender;
+            }
+
+            .project-section {
+                background-color: lightgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="Logo" width="50" height="50"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDiv" aria-controls="navbarDiv" aria-expanded="false" aria-label="Toggle Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+         <div class="collapse navbar-collapse" id="navbarDiv">
+                <ul class="navbar-nav gap-lg-2">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <section id="hero" class="py-5 hero-section">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <h1>Welcome to my BuildingU Projects Page</h1>
+                        <p class="lead">Discover my work on Github</p>
+                        <a href="https://github.com/buildingu/bu-learning/tree/m_sathishkumar" class="btn btn-primary btn-lg">View My Work</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section id="about" class="py-5 about-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>About Me</h2>
+                        <p>Hello! My name is Madhu. I am currently an intern at BuildingU, and I am passionate about building projects through programming and technology.</p>
+                        <p>In my free time, I enjoy exploring new technologies, contributing to open-source projects, and continuously learning to enhance my skills.</p>
+                        <p>Feel free to reach out to me through the contact section below. I am always open to collaboration and new opportunities!</p>
+                    </div>
+                  
+                    <div class="col">
+                        <img src="assets/profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle" style="max-width: 200px;"/>
+                    </div>
+                      <div class="col">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>Python</li>
+                            <li>Bootstrap</li>
+                            <li>Machine Learning + AI</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h2>Achievements</h2>
+                        <ul>
+                            <li>Completed multiple web development projects</li>
+                            <li>Contributed to open-source projects on GitHub</li>
+                            <li>Built applications using various programming languages</li>
+                            <li>Built a machine learning model for basketball drafting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section id="projects" class="py-5 project-section">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="row justify-content-center">
+                    <!-- Project 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="assets/html.png" class="card-img-top project-image" alt="HTML Logo">
+                            <div class="card-body">
+                                <h4>Project 1: HTML</h4>
+                                <p> This project demonstrates my HTML skills. It is a website that includes a table and form components. Click the link to see the project files.</p>
+                                <a href="../Exercise 1/index.html" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#pex1Modal">Learn More</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="assets/css.png" class="card-img-top project-image" alt="CSS Logo">
+                            <div class="card-body">
+                                <h4>Project 2: CSS</h4>
+                                <p> This project demonstrates my CSS skills. It is a website that includes a table and form components. Click the link to see the project files.</p>
+                                <a href="../Exercise 2/index.html" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#pex1Modal">Learn More</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="assets/acss.png" class="card-img-top project-image" alt="Advanced CSS Logo">
+                            <div class="card-body">
+                                <h4>Project 3: Advanced CSS</h4>
+                                <p> This project demonstrates my Advanced CSS skills. It is a rework of Project 1 with improvements. Click the link to see the project files.</p>
+                                <a href="../Exercise 3/index.html" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#pex1Modal">Learn More</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="py-5 bg-light">  
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Enter Name:</label>
+                        <input type="text" id="name" class="form-control" placeholder="Madhu">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Enter Message:</label>
+                        <textarea id="textArea" class="form-control" placeholder="Hi there!"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" class="form-control" required placeholder="madhu@gmail.com">
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                </div>
+            </section>
+    <script src="libraries/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
