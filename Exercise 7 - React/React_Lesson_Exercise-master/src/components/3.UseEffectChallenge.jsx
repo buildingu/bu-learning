@@ -13,12 +13,34 @@
 import { useEffect, useState } from "react";
 
 export default function UseEffectChallenge() {
+  const [loading, setLoading] = useState(true);
+  const [apiData, setApiData] = useState([]);
+
+  useEffect(() => {
+    setLoading(true);
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((response) => response.json())
+      .then((data) => {
+        setApiData(data);
+        setLoading(false);
+      });
+  }, []);
+
   return (
     <main>
       <h1>useEffect Challenge</h1>
-      <ul>
-        {/* User Data... */}
-      </ul>
+      {loading ? (<span>Loading...</span>) : (
+        <ul>
+          {apiData.map((user) => (
+            <li key={user.id}>
+              <h2>{user.name}</h2>
+              <p>Email: {user.email}</p>
+              <p>Phone: {user.phone}</p>
+              <p>Website: {user.website}</p>
+            </li>
+          ))}
+        </ul>
+      )}
     </main>
   );
 }

@@ -7,23 +7,42 @@
 
 import { useReducer, useRef } from "react";
 import { v4 as uuidV4 } from "uuid"; // Use the uuid for a unique identifier for each todo.
- 
+
 function todoReducer(state, action) {
-  // Create actions (add and remove) here...
+  if (action.type === "ADD-TODO") {
+    return [...state, { id: uuidV4(), text: action.payload }];
+  } else if (action.type === "REMOVE-TODO") {
+    return state.filter(todo => todo.id !== action.payload);
+  } else {
+    return state;
+  }
 }
 
 export default function UseReducerChallenge() {
   const inputRef = useRef();
-
+  const [todoList, dispatch] = useReducer(todoReducer, []);
+  const AddTodo = () => {
+    const text = inputRef.current.value;
+    if (text) {
+      dispatch({ type: "ADD-TODO", payload: text });
+      inputRef.current.value = "";
+    }
+  };
   return (
     <main>
       <h1>useReducer Challenge</h1>
       <div>
         <h2>To-do</h2>
         <input ref={inputRef} placeholder="Add a new to-do" />
-        <button>Add</button>
-
-        <ul>{/* To-do data... */}</ul>
+        <button onClick={AddTodo}>Add</button>
+        <ul>
+          {todoList.map((todo) => (
+            <li key={todo.id}>
+              <span>{todo.text}</span>
+              <button onClick={() => dispatch({type: "REMOVE-TODO", payload: todo.id })}>Remove</button>
+            </li>
+          ))}
+        </ul>
       </div>
     </main>
   );
