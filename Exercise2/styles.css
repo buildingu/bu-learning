@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px) {
-    background-color {
+    body {
         background-color: blue;
     }
 }
