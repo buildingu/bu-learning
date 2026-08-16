@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 768px) {
     body {
         background-image: url("../assets/background-desktop.jpg");
         color:white;
