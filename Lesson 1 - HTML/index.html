@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 1</title>
+</head>
+<body>
+
+    <h1 align="center">Exercise 1 by Giorgio</h1>
+    <h3 align="center">Date submitted: 29/08/2026</h3>
+
+    <hr>
+
+    <h3 align="center">Fun facts about me:</h3>
+
+    <table align="center" border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Movie</th>
+            <th>Favorite Song</th>
+            <th>Favorite Video</th>
+        </tr>
+        <tr>
+            <td>Giorgio</td>
+            <td>Ciafardoni</td>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Alita:_Battle_Angel" target="_blank">
+                    <img src="Alita_poster.png" alt="Favorite Movie Poster" width="120">
+                </a>
+            </td>
+            <td>
+                <p>Click play to hear a sample:</p>
+                <audio controls>
+                    <source src="samplemusic.mp3" type="audio/mpeg">
+                </audio>
+            </td>
+            <td>
+                <iframe width="720" height="405" src="https://www.youtube.com/embed/KuXjwB4LzSA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--got this from youtube "copy embedded"-->
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3 align="center">Enter your details below:</h3>
+
+    <form align="center">
+        <p>
+            <label for="fullname"><i>Full Name:</i></label>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe">
+        </p>
+
+        <p>
+            <label for="email"><i>Email Address:</i></label>
+            <input type="text" id="email" name="email" placeholder="jdoe@fakemail.com">
+        </p>
+
+        <p>
+            <label for="password"><i>Password:</i></label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+        </p>
+
+        <p><b>Available Meeting Days:</b></p>
+        <input type="checkbox" id="monday" name="days" value="Monday">
+        <label for="monday">Monday</label>
+
+        <input type="checkbox" id="tuesday" name="days" value="Tuesday">
+        <label for="tuesday">Tuesday</label>
+
+        <input type="checkbox" id="wednesday" name="days" value="Wednesday">
+        <label for="wednesday">Wednesday</label>
+
+        <input type="checkbox" id="thursday" name="days" value="Thursday">
+        <label for="thursday">Thursday</label>
+
+        <input type="checkbox" id="friday" name="days" value="Friday">
+        <label for="friday">Friday</label>
+
+        <input type="checkbox" id="saturday" name="days" value="Saturday">
+        <label for="saturday">Saturday</label>
+
+        <input type="checkbox" id="sunday" name="days" value="Sunday">
+        <label for="sunday">Sunday</label>
+
+        <p>
+            <label for="time"><i>Available Time:</i></label>
+            <select id="time" name="time">
+                <option value="morning">Morning (8am to 12pm)</option>
+                <option value="afternoon">Afternoon (12pm to 4pm)</option>
+                <option value="evening">Evening (4pm to 8pm)</option>
+            </select>
+        </p>
+
+        <p>
+            <i>Currently working on new website?</i>
+            <input type="radio" id="yes" name="newwebsite" value="yes" checked>
+            <label for="yes">Yes</label>
+
+            <input type="radio" id="no" name="newwebsite" value="no">
+            <label for="no">No</label>
+        </p>
+
+        <p>
+            <textarea name="comments" rows="3" cols="30" placeholder="Enter your comments here"></textarea>
+        </p>
+
+        <p>
+            <button type="button">submit</button>
+            <button type="button">reset</button>
+        </p>
+    </form>
+
+</body>
+</html>
