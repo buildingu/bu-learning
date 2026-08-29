@@ -5,6 +5,7 @@ import UseContextChallenge from "./components/4.UseContextChallenge/UseContext";
 import UseReducerChallenge from "./components/5.UseReducerChallenge";
 import UseMemoChallenge from "./components/6.UseMemoChallenge";
 import FinalChallenge from "./components/7.FinalChallenge";
+import { AuthContextProvider } from "./components/4.UseContextChallenge/AuthContext";
 
 function App() {
   const hookName = import.meta.env.VITE_REACT_CHALLENGE;
@@ -17,7 +18,11 @@ function App() {
     case "useEffect":
       return <UseEffectChallenge />;
     case "useContext":
-      return <UseContextChallenge />;
+      return (
+        <AuthContextProvider>
+          <UseContextChallenge />
+        </AuthContextProvider>
+      );
     case "useReducer":
       return <UseReducerChallenge />;
     case "useMemo":

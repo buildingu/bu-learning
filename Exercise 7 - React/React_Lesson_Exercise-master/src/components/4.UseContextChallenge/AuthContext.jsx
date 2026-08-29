@@ -2,13 +2,13 @@
  * Challenge 4: createContext
  *
  * Description:
- * You'll create a context to mimic an authentication context in this challenge. `createContext` and `useContext` will be used to manage and 
+ * You'll create a context to mimic an authentication context in this challenge. `createContext` and `useContext` will be used to manage and
  * consume user authentication data just like you'll usually do in a real-world app.
- * 
+ *
  * Overview:
  * - Create and provide the `AuthContext` to the entire app.
  * - Store the mock user in state, and create `login` and `logout` functions to update the state.
- * 
+ *
  * Steps:
  * 1. Create a mock user with credentials like `firstName`, `lastName`, and `email`, you can add however many you want, have fun!.
  * 2. In this file, create the `AuthContext`, `AuthContextProvider` and the functions within the AuthContextProvider to deal with the user.
@@ -23,23 +23,32 @@ import { createContext, useState } from "react";
 
 // Mock user obj.
 const user = {
-  // Initialize user fields mentioned...
-}
+  userId: 101,
+  firstName: "John",
+  lastName: "Doe",
+  email: "johndoe@example.com",
+  password: "password",
+};
 
-// const AuthContext =
+const AuthContext = createContext();
 
 export function AuthContextProvider({ children }) {
+  const [currUser, setCurrUser] = useState(null);
 
+  const login = () => {
+    setCurrUser(user);
+  };
 
-//   return (
-//     <AuthContext.Provider
-//       value={{
-//         ...
-//       }}
-//     >
-//       {children}
-//     </AuthContext.Provider>
-//   );
+  const logout = () => {
+    setCurrUser(null);
+    alert("You logged out.");
+  };
+
+  return (
+    <AuthContext.Provider value={{ currUser, login, logout }}>
+      {children}
+    </AuthContext.Provider>
+  );
 }
 
 export default AuthContext;

@@ -7,8 +7,23 @@
 
 import { useState, useMemo } from "react";
 
+function factorial(n) {
+  if (n < 0) return null;
+  if (n === 0) return 1;
+  let result = 1;
+  while (n > 1) {
+    result *= n;
+    n--;
+  }
+  return result;
+}
+
 export default function UseMemoChallenge() {
   const [number, setNumber] = useState(0);
+
+  const factorialResult = useMemo(() => {
+    return factorial(number);
+  }, [number]);
 
   return (
     <main>
@@ -17,11 +32,11 @@ export default function UseMemoChallenge() {
         <input
           type="number"
           value={number}
-          onChange={(e) => setNumber(/** Value from input and convert to a number... */)}
+          onChange={(e) => setNumber(Number(e.target.value))}
           placeholder="Enter a number"
         />
         <p>
-           Factorial of {number} is: {/* Factorial result... */}
+           Factorial of {number} is: {factorialResult}
         </p>
       </div>
     </main>
