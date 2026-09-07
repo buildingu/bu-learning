@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Exercise4.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="#">BuildingU</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!--Hamburger menu icon-->
+            <span class="navbar-toggler-icon"></span>
+         </button>
+        </div>
+         <!--Navbar-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Projects">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+    </nav>
+        <!--Introduction-->
+        <section class="Introduction text-center" id="home">
+            <div>
+                <h1>Welcome to Stanley's BuildingU Page</h1>
+                <h5>Take a look at my work:</h5>
+                <a class="btn btn-primary" href="#Projects">View My Work</a>
+                <div class="about-me" id="About">
+                <h2>About Me</h2>
+                <p>Stanley is currently learning Python independently, Java in the Robotics Club, front-end development
+                 through Building, and C# in his game design class, while ensuring he stays on top of all his STEM classes.</p>
+                <p>His future vision is to use the foundation he laid out to grow the clubs he’s in, to help like-minded
+                 students, build meaningful relationships, and to also learn valuable lessons and skills from it.</p>
+                </div>
+                <img src="E4 Assets/Screenshot 2026-08-21 221959.png" alt="Stanley's Image" height="250" width="250" class="profile-image">
+            </div>
+        </section>
+        <!--Projects-->
+        <section class="Projects" id="Projects">
+            <h2 class="projects-title">My Projects</h2>
+            <div class="Projects d-flex flex-wrap">
+                <!-- HTML-->
+                 <div class="Project_HTML">
+                    <img src="E4 Assets/HTML.IMG.png" class="HTML_Img" align="center">
+                    <h5>HTML Project</h5>
+                    <p class="HTML_description">My HTML project demonstrates fundamental HTML skills such as tables,
+                         forms, and inputs. Click the learn more button to see it.</p>
+                         <button type="button" class="HTML_Button btn btn-danger" data-bs-toggle="modal" data-bs-target="#htmlModal">Learn More</button>
+                </div>
+                <!--CSS--> 
+                <div class="Project_CSS">
+                    <img src="E4 Assets/CSS.IMG.png" class="CSS_Img" align="center">
+                    <h5>CSS Project</h5>
+                    <p class="CSS_description">My CSS project demonstrates fundamental CSS skills such as coloring, 
+                        font, and margin/padding. Click the learn more button to see it.</p>
+                        <button type="button" class="CSS_Button btn btn-info" data-bs-toggle="modal" data-bs-target="#cssModal">Learn More</button>
+                </div>
+                <!--JavaScript-->
+                <div class="Project_Advanced_CSS">
+                    <img src="E4 Assets/JS.IMG.png" class="JS_Img" align="center">
+                    <h5>Advanced CSS Project</h5>
+                    <p class="AdCSS_description">My advanced CSS project demonstrates advanced skills such as media query and webpage responsiveness.
+                         Click the learn more button to see it.</p>
+                        <button type="button" class="AdCSS_Button btn btn-warning" data-bs-toggle="modal" data-bs-target="#advancedCssModal">Learn More</button>
+                </div>
+            </div>
+            <!--Modals-->
+            <div class="modal fade" id="htmlModal" tabindex="-1" aria-labelledby="htmlModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="htmlModalLabel">HTML Project Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-start">
+               <a href="https://github.com/buildingu/bu-learning/tree/dc46ff6701bc07d29f8d6fc9db2d1de14d26f5f1/Exercise%201"  target="_blank" rel="noopener noreferrer">
+                    View HTML Project on GitHub
+                </a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="modal fade" id="cssModal" tabindex="-1" aria-labelledby="cssModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="cssModalLabel">CSS Project Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-start">
+               <a href="https://github.com/buildingu/bu-learning/tree/dc46ff6701bc07d29f8d6fc9db2d1de14d26f5f1/Exercise%202" target="_blank" rel="noopener noreferrer">
+                    View CSS Project on GitHub
+                </a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="modal fade" id="advancedCssModal" tabindex="-1" aria-labelledby="advancedCssModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="advancedCssModalLabel">Advanced CSS Project Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-start">
+                <a href="https://github.com/buildingu/bu-learning/tree/dc46ff6701bc07d29f8d6fc9db2d1de14d26f5f1/Exercise%203" target="_blank" rel="noopener noreferrer">
+                    View Advanced CSS Project on GitHub
+                </a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        </section>
+        <!--Contact Me-->
+        <section class="Contact_Me py-5" id="Contact">
+            <div class="contact_section container ms-md-5" style="max-width: 600px;">
+            <form class="contact_form mb-3 text-start">
+                <h2>Contact Me</h2>
+                <br>
+                <label class="form-label">Name</label>
+                <input type="text" id="name" placeholder="John Doe" class="form-control rounded mb-3 me-auto" required>
+                <label class="form-label">Email</label>
+                <input type="email" id="email" placeholder="john@example.com" class="form-control rounded mb-3" required>
+                <label class="form-label">Message</label>
+                <textarea rows="4" id="message" placeholder="Enter your comment here" class="form-control rounded mb-3" required></textarea>
+                 <button type="submit" id="form_button" class="btn btn-success">Send Messages</button>
+            </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="John">&copy;2026 Stanley</p>
+            <p id="Desktop" class="d-none d-md-inline">Desktop Version&reg;</p>
+            <p id="Mobile" class="d-inline d-md-none">Mobile Version&reg;</p>
+        </footer>
+    </div>
+
+    <script src="../bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
