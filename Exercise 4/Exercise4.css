@@ -1,0 +1,140 @@
+/*Desktop*/
+@media screen and (min-width: 768px) {
+
+.Introduction, .Contact_Me {
+    background-image: url('./E4 Assets/Screenshot 2026-08-15 204553.png');
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-me {
+    margin-top:60px;
+    margin-left: 20%;
+    max-width: 550px;
+    padding-bottom: 20px;
+}
+
+.profile-image {
+    margin-left: 35%;
+    margin-top: -20%;
+    border-radius: 50%;
+}
+
+.HTML_description, .CSS_description, .AdCSS_description {
+    text-align: center;
+}
+
+.HTML_Img, .CSS_Img, .JS_Img {
+    display: block;
+    margin: 0 auto;
+}
+
+.Project_HTML, .Project_CSS, .Project_Advanced_CSS {
+    border: 1px solid grey;
+    width: 350px;
+   margin: 20px;
+    margin-bottom: 5%;
+
+    padding: 10px;
+}
+
+.HTML_Button {
+   margin-top: 23px;
+}
+
+.projects-title {
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.Projects {
+    margin-left: 85px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.John {
+    margin-left: 65px;
+}
+
+#Desktop, #Mobile {
+    margin-right: 65px;
+}
+} /*Desktop*/
+
+
+
+
+
+/* Mobile style */
+    @media screen and (max-width: 767px) {
+            .Introduction, .Contact_Me {
+    background-image: url('./E4 Assets/110493-blue-blurred-background-vector.jpg');
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-me {
+    margin-top:60px;
+    max-width: 550px;
+    padding-bottom: 20px;
+}
+
+.profile-image {
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.HTML_description, .CSS_description, .AdCSS_description {
+    text-align: center;
+}
+
+.HTML_Img, .CSS_Img, .JS_Img {
+    display: block;
+    margin: 0 auto;
+}
+
+.Project_HTML, .Project_CSS, .Project_Advanced_CSS {
+    border: 1px solid grey;
+    width: 100%;
+   margin: 20px;
+   max-width: 350px;
+    margin-bottom: 5%;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.HTML_Button {
+   margin-top: 23px;
+}
+
+.projects-title {
+    margin-left: 45px;
+    margin-top: 50px;
+}
+
+.Projects {
+    margin-left: 25px;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.John {
+    margin-left: 65px;
+}
+
+#Desktop, #Mobile {
+    margin-right: 65px;
+}
+} /* Mobile*/

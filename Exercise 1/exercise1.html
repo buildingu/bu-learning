@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!--Heading-->
+    <title>Exercise 1</title>
+</head>
+ <body>
+    <!--Title (date of submission)-->
+    <h1 align="center">Stanley Li:Exercise 1-HTML</h1>
+    <h2 align="center">6/27/2026</h2>
+    <!--Table-->
+    <hr>
+    <h3 align="center">My Favorite Things</h3>
+<table align="center" border="1">
+    <!--subheading-->
+ <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Favorite Movie Image</th>
+    <th>Favorite Music Audio Sample</th>
+    <th>Favorite Video Sample</th>
+ </tr>   
+
+    <!--row 1-->
+ <tr>
+    <td>Stanley</td>
+    <td>Li</td>
+    <td>
+        <a href="https://www.pngwing.com/en/free-png-zhbsy" target="blank">
+            <img src="../assets/Alice, Exercise 1.png" alt="Alice in Wonderland" height="200" width="150">
+        </a>
+    </td>
+    <td>
+        <audio controls> <source src="../assets/Building U exercise 1 music.mp3" type="audio/mpeg"></audio>
+    </td>
+    <td>
+        <video width="250" height="250" controls>
+            <source src="../assets/Exercise 1 Video.mp4" type="video/mp4">
+        </video>
+    </td>
+ </tr>   
+</table>
+   <!--Form-->
+   <fieldset>
+   <h3 align="center">Information form</h3>
+   <form align="center">
+    <label>
+     Full name:
+     <input type="text" placeholder="Michael Smith">
+    </label><br>
+      <label>
+     Email Address:
+     <input type="text" placeholder="ABC123@gmail.com">
+    </label><br>
+      <label>
+     Password:
+     <input type="password" placeholder="********">
+      </label><br>
+   </form>
+   <p align="center">Available days:</p>
+   <form align="center">
+    <input type="checkbox" name="day" value="Monday"> Monday
+    <input type="checkbox"  name="day" value="Tuesday"> Tuesday
+    <input type="checkbox"  name="day" value="Wednesday"> Wednesday
+    <input type="checkbox"  name="day" value="Thursday"> Thursday
+    <input type="checkbox"  name="day" value="Friday"> Friday
+    <input type="checkbox"  name="day" value="Saturday"> Saturday
+    <input type="checkbox"  name="day" value="Sunday"> Sunday
+   </form>
+   <p align="center">Available Times:</p>
+   <form align="center">
+   <label>
+    <select>
+        <option>Morning (8:00am - 12:00pm)</option>
+        <option>Afternoon (12:00pm - 4:00pm)</option>
+        <option>Evening (4:00 pm - 8:00pm)</option>
+    </select>
+   </label><br><br>
+   <label>
+    Working on New Website?
+    <input type="radio" name="yes or no" value="yes" checked> Yes
+    <input type="radio" name="yes or no" value="no"> No
+   </label>
+    </form>
+    <p align="center">Additional Information:</p>
+    <form align="center">
+    <textarea rows="4" cols="50" placeholder="Enter any additional information here..."></textarea><br><br>
+    <button type="submit"> Submit </button>
+    <button type="reset"> Reset </button>
+    </form>
+   </fieldset>
+ </body>
+</html>    
