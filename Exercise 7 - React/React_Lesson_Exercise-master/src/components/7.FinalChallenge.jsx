@@ -79,15 +79,29 @@ export default function FinalChallenge() {
             setLastName("");
             setAge("");
             setPhone("");
+          } else {
+            setSuccess(false);
           }
         }}>
-          <input placeholder="First Name" type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)}></input>
+          <input placeholder="First Name" type="text" value={firstName} onChange={(e) => {
+            setFirstName(e.target.value);
+            setResult((prev) => ({ ...prev, firstName: "" }));
+          }}/>
           {result.firstName && <p className="error" style={{ color: "red" }}>{result.firstName}</p>}
-          <input placeholder="Last Name" type="text" value={lastName} onChange={(e) => setLastName(e.target.value)}></input>
+          <input placeholder="Last Name" type="text" value={lastName} onChange={(e) => {
+            setLastName(e.target.value);
+            setResult((prev) => ({ ...prev, lastName: "" }));
+          }}/>
           {result.lastName && <p className="error" style={{ color: "red" }}>{result.lastName}</p>}
-          <input placeholder="Age" type="number" value={age} onChange={(e) => setAge(e.target.value)}></input>
+          <input placeholder="Age" type="number" value={age} onChange={(e) => {
+            setAge(e.target.value);
+            setResult((prev) => ({ ...prev, age: "" }));
+          }}/>
           {result.age && <p className="error" style={{ color: "red" }}>{result.age}</p>}
-          <input placeholder="Phone Number" type="number" value={phone} onChange={(e) => setPhone(e.target.value)}></input>
+          <input placeholder="Phone Number" type="number" value={phone} onChange={(e) => {
+            setPhone(e.target.value);
+            setResult((prev) => ({ ...prev, phone: "" }));
+          }}/>
           {result.phone && <p className="error" style={{ color: "red" }}>{result.phone}</p>}
           <button type="submit">Submit</button>
           {success && <p className="success" style={{ color: "green" }}>Success!</p>}

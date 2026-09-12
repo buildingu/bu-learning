@@ -36,7 +36,7 @@ export default function UseMemoChallenge() {
           placeholder="Enter a number"
         />
         <p>
-           Factorial of {number} is: {factorialResult}
+          Factorial of {number} is: {factorialResult}
         </p>
       </div>
     </main>
