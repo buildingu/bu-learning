@@ -8,31 +8,40 @@
 .blue {
     background-color: blue;
     width: 100%;
-    height: 250px;
-    flex-direction: row;
+    min-height: 250px;
     text-align: center;
-    padding-top: 90px;
     color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .orange {
     background-color: orange;
     width: 100%;
-    height: 250px;
-    flex-direction: row;
+    min-height: 250px;
     text-align: center;
-    padding-top: 45px;
     color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .Grey {
     background-color: rgb(62, 57, 57);
     width: 100%;
-    height: 375px;
-    flex-direction: row;
+    min-height: 375px;
     text-align: center;
-    padding-top: 100px;
     color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 html {
@@ -49,39 +58,36 @@ a {
 }
 
 .logo {
-    margin-right: 1050px;
-    margin-top: -3250px;
     border: 12px solid rgb(62, 57, 57);
+    
 }
 
 .teamPhoto {
-    margin-right: 1050px;
-    margin-top: -3250px;
     border: 12px solid orange;
 }
 
 .code {
-    margin-left: 1050px;
-    margin-top: -100%;
     border: 12px solid rgb(62, 57, 57);
 }
 
 .engirl{
-    margin-right: 1050px;
-    margin-top: -100%;
     border: 12px solid blue;
 }
 
 .engboy{
-    margin-left: 1050px;
-    margin-top: -100%;
     border: 12px solid blue;
 }
 
 .teamPhoto2 {
-   margin-top: -100%;
-   margin-left: 1050px;
    border: 12px solid orange;
+}
+
+.engirl, .logo, .teamPhoto {
+    margin-left: 25px;
+}
+
+.code, .engboy, .teamPhoto2 {
+    margin-right: 25px;
 }
 
 .Advisor {
@@ -100,8 +106,8 @@ form {
     background-color: black;
     color: white;
     width: 300px;
-    margin-left: 575px;
     text-align: center;
+    margin-top: 25px;
 }
 
 .submit {
@@ -117,3 +123,10 @@ form {
 .Yes, .No {
     margin-top: 10px;
 }
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
