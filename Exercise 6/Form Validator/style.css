@@ -1,0 +1,18 @@
+body {
+    font-family: Archivo-Narrow;
+    background-color: antiquewhite;
+}
+
+.validator-form {
+    background-color: white;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+.validator-form input {
+    width: 250px;
+    padding: 8px;
+}
+div{
+    background-color:antiquewhite
+}

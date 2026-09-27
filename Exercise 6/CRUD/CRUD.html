@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intro to HTML5</title>
+    <meta charset="UTF-8"/>
+    <meta name="keywords" content="HTML5"/>
+    <meta name="description" content="HTML5 Tutorial"/>
+    <meta name="author" content="Madhu"/>
+    <link rel="stylesheet" href="../libraries/bootstrap-5.3.8-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+        body{
+            font-family: Archivo-Narrow;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDiv" aria-controls="navbarDiv" aria-expanded="false" aria-label="Toggle Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+         <div class="collapse navbar-collapse" id="navbarDiv">
+                <ul class="navbar-nav gap-lg-2">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../Form%20Validator/formValidator.html">Form Validator</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="CRUD.html">CRUD App</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../API App/API.html">API App</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+            <div class="d-flex justify-content-center">
+                 
+            <form id="form" class="validator-form">
+                <h2 id="formMessage">CRUD App:</h2>
+                 <input type="text" id="name" placeholder="Employee Name"><br><br>
+                <input type="number" id="age" placeholder="Employee Age"><br><br>
+                <input type="text" id="sex" placeholder="Sex">  <br><br>
+                <input type="text" id="position" placeholder="Position"> <br><br>
+                <button type="submit" id="button"class="btn btn-primary">Add Entry</button>
+            
+            <div id="output"></div>
+            </form>
+        </div>
+    <script src="../libraries/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="crud.js"></script>
+</body>
+</html>

@@ -6,7 +6,7 @@
         <meta name="keywords" content="HTML5"/>
         <meta name="description" content="HTML5 Tutorial"/>
         <meta name="author" content="Madhu"/>
-        <link rel="stylesheet" href="libraries/bootstrap-5.3.8-dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="../libraries/bootstrap-5.3.8-dist/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="style.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -18,23 +18,30 @@
              <div class="collapse navbar-collapse" id="navbarDiv">
                     <ul class="navbar-nav gap-lg-2">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="Form Validator/formValidator.html">Form Validator</a>
+                            <a class="nav-link" href="../Form%20Validator/formValidator.html">Form Validator</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="CRUD/CRUD.html">CRUD App</a>
+                            <a class="nav-link" href="../CRUD/CRUD.html">CRUD App</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="API App/API.html">API App</a>
+                            <a class="nav-link" href="API.html">API App</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-        <div class="d-flex justify-content-center">
-            Click the link in Nav to view the different apps!
-            </div>
-        <script src="libraries/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script> 
+            <div class="d-flex justify-content-center">
+                <h2 id="formMessage">Dog Facts:</h2>
+                <button id="factButton">Get Dog Fact</button>
+        </div>
+         <div id="factDisplay" class="d-flex justify-content-center">
+            Click the button to learn something about dogs!
+        </div>
+
+        <script src="../libraries/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+
     </body>
 </html>
