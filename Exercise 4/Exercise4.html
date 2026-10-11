@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 4</title>
-    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="Exercise4.css">
 </head>
 <body>
@@ -54,32 +54,44 @@
             </div>
         </section>
         <!--Projects-->
-        <section class="Projects" id="Projects">
-            <h2 class="projects-title">My Projects</h2>
-            <div class="Projects d-flex flex-wrap">
+        <section class="Projects py-5 container" id="Projects">
+            <h2 class="projects-title text-center mb-4">My Projects</h2>
+            <div class="Projects row g-2 justify-content-center mx-auto">
                 <!-- HTML-->
-                 <div class="Project_HTML">
-                    <img src="E4 Assets/HTML.IMG.png" class="HTML_Img" align="center">
+                 <div class="d-flex col-md-4 Project_HTML">
+                    <div class="card w-100 d-flex flex-column shadow-sm" style="max-width: 350px;">
+                    <img src="E4 Assets/HTML.IMG.png" class="mx-auto d-block HTML_Img p-3">
+                    <div class="card-body d-flex flex-column">
                     <h5>HTML Project</h5>
-                    <p class="HTML_description">My HTML project demonstrates fundamental HTML skills such as tables,
+                    <p class="HTML_description card-text flex-grow-1">My HTML project demonstrates fundamental HTML skills such as tables,
                          forms, and inputs. Click the learn more button to see it.</p>
                          <button type="button" class="HTML_Button btn btn-danger" data-bs-toggle="modal" data-bs-target="#htmlModal">Learn More</button>
+                    </div>
+                    </div>
                 </div>
                 <!--CSS--> 
-                <div class="Project_CSS">
-                    <img src="E4 Assets/CSS.IMG.png" class="CSS_Img" align="center">
+                <div class="d-flex col-md-4 Project_CSS">
+                    <div class="card w-100 d-flex flex-column shadow-sm" style="max-width: 350px;">
+                    <img src="E4 Assets/CSS.IMG.png" class="mx-auto d-block CSS_Img p-3">
+                    <div class="card-body d-flex flex-column">
                     <h5>CSS Project</h5>
-                    <p class="CSS_description">My CSS project demonstrates fundamental CSS skills such as coloring, 
+                    <p class="CSS_description card-text flex-grow-1">My CSS project demonstrates fundamental CSS skills such as coloring, 
                         font, and margin/padding. Click the learn more button to see it.</p>
                         <button type="button" class="CSS_Button btn btn-info" data-bs-toggle="modal" data-bs-target="#cssModal">Learn More</button>
+                    </div>
+                    </div>
                 </div>
                 <!--JavaScript-->
-                <div class="Project_Advanced_CSS">
-                    <img src="E4 Assets/JS.IMG.png" class="JS_Img" align="center">
+                <div class="d-flex col-md-4 Project_Advanced_CSS">
+                    <div class="card w-100 d-flex flex-column shadow-sm" style="max-width: 350px;">
+                    <img src="E4 Assets/JS.IMG.png" class="mx-auto d-block JS_Img p-3">
+                    <div class="card-body d-flex flex-column">
                     <h5>Advanced CSS Project</h5>
-                    <p class="AdCSS_description">My advanced CSS project demonstrates advanced skills such as media query and webpage responsiveness.
+                    <p class="AdCSS_description card-text flex-grow-1">My advanced CSS project demonstrates advanced skills such as media query and webpage responsiveness.
                          Click the learn more button to see it.</p>
                         <button type="button" class="AdCSS_Button btn btn-warning" data-bs-toggle="modal" data-bs-target="#advancedCssModal">Learn More</button>
+                    </div>
+                    </div>
                 </div>
             </div>
             <!--Modals-->
@@ -137,7 +149,7 @@
             </div>
             </div>
         </div>
-        </div>
+            </div>
         </section>
         <!--Contact Me-->
         <section class="Contact_Me py-5" id="Contact">
@@ -160,8 +172,8 @@
             <p id="Desktop" class="d-none d-md-inline">Desktop Version&reg;</p>
             <p id="Mobile" class="d-inline d-md-none">Mobile Version&reg;</p>
         </footer>
-    </div>
+    
 
-    <script src="../bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

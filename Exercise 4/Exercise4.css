@@ -21,36 +21,6 @@
     border-radius: 50%;
 }
 
-.HTML_description, .CSS_description, .AdCSS_description {
-    text-align: center;
-}
-
-.HTML_Img, .CSS_Img, .JS_Img {
-    display: block;
-    margin: 0 auto;
-}
-
-.Project_HTML, .Project_CSS, .Project_Advanced_CSS {
-    border: 1px solid grey;
-    width: 350px;
-   margin: 20px;
-    margin-bottom: 5%;
-
-    padding: 10px;
-}
-
-.HTML_Button {
-   margin-top: 23px;
-}
-
-.projects-title {
-    margin-left: 100px;
-    margin-top: 50px;
-}
-
-.Projects {
-    margin-left: 85px;
-}
 
 .footer {
     display: flex;
@@ -89,39 +59,6 @@
 .profile-image {
     margin-bottom: 20px;
     border-radius: 50%;
-}
-
-.HTML_description, .CSS_description, .AdCSS_description {
-    text-align: center;
-}
-
-.HTML_Img, .CSS_Img, .JS_Img {
-    display: block;
-    margin: 0 auto;
-}
-
-.Project_HTML, .Project_CSS, .Project_Advanced_CSS {
-    border: 1px solid grey;
-    width: 100%;
-   margin: 20px;
-   max-width: 350px;
-    margin-bottom: 5%;
-    padding: 10px;
-    margin-right: 20px;
-}
-
-.HTML_Button {
-   margin-top: 23px;
-}
-
-.projects-title {
-    margin-left: 45px;
-    margin-top: 50px;
-}
-
-.Projects {
-    margin-left: 25px;
-    justify-content: center;
 }
 
 .footer {
