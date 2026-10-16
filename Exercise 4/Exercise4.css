@@ -1,0 +1,77 @@
+/*Desktop*/
+@media screen and (min-width: 768px) {
+
+.Introduction, .Contact_Me {
+    background-image: url('./E4 Assets/Screenshot 2026-08-15 204553.png');
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-me {
+    margin-top:60px;
+    margin-left: 20%;
+    max-width: 550px;
+    padding-bottom: 20px;
+}
+
+.profile-image {
+    margin-left: 35%;
+    margin-top: -20%;
+    border-radius: 50%;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.John {
+    margin-left: 65px;
+}
+
+#Desktop, #Mobile {
+    margin-right: 65px;
+}
+} /*Desktop*/
+
+
+
+
+
+/* Mobile style */
+    @media screen and (max-width: 767px) {
+            .Introduction, .Contact_Me {
+    background-image: url('./E4 Assets/110493-blue-blurred-background-vector.jpg');
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-me {
+    margin-top:60px;
+    max-width: 550px;
+    padding-bottom: 20px;
+}
+
+.profile-image {
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.John {
+    margin-left: 65px;
+}
+
+#Desktop, #Mobile {
+    margin-right: 65px;
+}
+} /* Mobile*/

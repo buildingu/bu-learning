@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.blue {
+    background-color: blue;
+    width: 100%;
+    min-height: 250px;
+    text-align: center;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orange {
+    background-color: orange;
+    width: 100%;
+    min-height: 250px;
+    text-align: center;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Grey {
+    background-color: rgb(62, 57, 57);
+    width: 100%;
+    min-height: 375px;
+    text-align: center;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+html {
+    border: 36px solid rgb(255, 255, 255);
+}
+
+a {
+    color: rgb(0, 123, 255);
+}
+
+.Title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.logo {
+    border: 12px solid rgb(62, 57, 57);
+    
+}
+
+.teamPhoto {
+    border: 12px solid orange;
+}
+
+.code {
+    border: 12px solid rgb(62, 57, 57);
+}
+
+.engirl{
+    border: 12px solid blue;
+}
+
+.engboy{
+    border: 12px solid blue;
+}
+
+.teamPhoto2 {
+   border: 12px solid orange;
+}
+
+.engirl, .logo, .teamPhoto {
+    margin-left: 25px;
+}
+
+.code, .engboy, .teamPhoto2 {
+    margin-right: 25px;
+}
+
+.Advisor {
+    margin-top: 15px;
+}
+
+.description {
+    margin-top: 25px
+}
+
+.Welcome {
+    margin-top: 15px;
+}
+
+form {
+    background-color: black;
+    color: white;
+    width: 300px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.submit {
+    background-color: green;
+    margin-top: 10px;
+}
+
+.Reset {
+    background-color: red;
+    margin-top: 10px;
+}
+
+.Yes, .No {
+    margin-top: 10px;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
