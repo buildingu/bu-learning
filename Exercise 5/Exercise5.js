@@ -1,4 +1,4 @@
-let values = [ {
+const values = [ {
     firstName: "Garry",
     lastName: "Smith",
     age: 52,
@@ -20,22 +20,18 @@ let values = [ {
 
 
 
-function formValidator(people) {
-    let firstName = people.firstName;
-    let lastName = people.lastName;
-    let age = people.age;
-    let phoneNumber = people.phoneNumber;
-    
-    if (firstName === undefined) {
+function formValidator(firstName, lastName, age, phoneNumber) {
+
+    if (firstName === undefined || firstName === "") {
         console.log("First name input is missing");
     }
-    else if (lastName === undefined) {
+    else if (lastName === undefined || lastName === "") {
         console.log("Last name input is missing");
     }
-    else if (age === undefined) {
+    else if (age === undefined || age === "") {
         console.log("Age input is missing");
     }
-    else if (phoneNumber === undefined) {
+    else if (phoneNumber === undefined || phoneNumber === "") {
         console.log("Phone number input is missing");
     }
 
@@ -45,7 +41,7 @@ function formValidator(people) {
     else if(typeof(lastName) !== "string") {
         console.log("Last name should be a string");
     }
-    else if(typeof(age) !== "number") {
+    else if(typeof(age) !== "number" || Number.isNaN(age)) {
         console.log("Age should be a number");
     }
     else if(typeof(phoneNumber) !== "string") {
@@ -61,4 +57,4 @@ function formValidator(people) {
     }
 };
 
-formValidator(values[2]);
+formValidator(values[1].firstName, values[1].lastName, values[1].age, values[1].phoneNumber);
