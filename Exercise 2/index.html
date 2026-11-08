@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FRC Robotics Competition Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Headings -->
+        <h1>FRC Regional Robotics Qualifier</h1>
+        <h2>Hosted by The Gene Haas Foundation</h2>
+
+        <!-- Event Information Section -->
+        <div class="info-section">
+            <h3>Event Information</h3>
+            <p><strong>About:</strong> Join us for the ultimate showcase of engineering and teamwork! Watch local high school teams compete in this year's FIRST Robotics Competition challenge: REBUILT.</p>
+            <p><strong>Where:</strong> Cow Palace, 2600 Geneva Ave, Daly City, CA 94014</p>
+            <p><strong>Timings:</strong> Friday, April 10, 2026 to Sunday, April 12, 2026</p>
+            <p><strong>Who's Invited:</strong> Open to the public! Students, parents, teachers, sponsors, and all robotics enthusiasts are welcome.</p>
+            <p><strong>Contact Information:</strong> Reach out to John Doe at john.doe@example.com or call 123-456-7890.</p>
+        </div>
+
+        <!-- Table Section -->
+        <h3>3-Day Event Schedule</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Day 1: Friday (Apr 10)</td>
+                    <td>8:00 AM - 6:00 PM</td>
+                    <td>Team Load-in, Pits Open & Robot Inspection</td>
+                    <td>Pit Area / Main Arena</td>
+                </tr>
+                <tr>
+                    <td>Day 2: Saturday (Apr 11)</td>
+                    <td>8:30 AM - 5:00 PM</td>
+                    <td>Opening Ceremony & Qualification Matches</td>
+                    <td>Main Competition Field</td>
+                </tr>
+                <tr>
+                    <td>Day 3: Sunday (Apr 12)</td>
+                    <td>9:00 AM - 4:30 PM</td>
+                    <td>Playoff Matches, Alliance Selection & Awards Ceremony</td>
+                    <td>Main Competition Field</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Media Section (Images, Links, Audio, Video) -->
+        <div class="media-section">
+            <h3>Media Highlights</h3>
+            
+            <p><strong>Event Website</strong></p>
+            <!-- Image with Link -->
+            <a href="https://www.thebluealliance.com/event/2026cancmp" target="_blank">
+                <img src="images/2026-playing-field-page.jpg" alt="FRC REBUILT Competition Robot" width="300">
+            </a>
+            <p><small><em>Click the image to visit the official event page</em></small></p>
+
+            <br>
+
+            <!-- Video Section -->
+            <p><strong>Watch the Game Animation:</strong></p>
+            <video width="400" controls>
+                <source src="media/REBUILT_GAME_ANIMATION.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+
+            <br><br>
+
+            <!-- Audio Section -->
+            <p><strong>Listen to an FRC bot driving around</strong></p>
+            <audio controls>
+                <source src="media/Quixshot 7_23 Uncut.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Form Section -->
+        <h3>Volunteer & Guest Registration</h3>
+        <form>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe"><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="john.doe@example.com"><br><br>
+
+            <label for="role">Role at Event:</label><br>
+            <select id="role" name="role">
+                <option value="spectator">Spectator / Guest</option>
+                <option value="volunteer">Event Volunteer</option>
+                <option value="team_member">Competing Team Member</option>
+                <option value="mentor">Team Mentor / Coach</option>
+            </select><br><br>
+
+            <label>Which days will you attend?</label><br>
+            <input type="checkbox" id="setup" name="attendance" value="Setup Day">
+            <label for="setup">Friday (Setup & Inspection)</label><br>
+            <input type="checkbox" id="qualifiers" name="attendance" value="Qualifiers">
+            <label for="qualifiers">Saturday (Qualification Matches)</label><br>
+            <input type="checkbox" id="playoffs" name="attendance" value="Playoffs">
+            <label for="playoffs">Sunday (Playoffs & Awards)</label><br><br>
+
+            <label>Require Pit Access?</label><br>
+            <input type="radio" id="pit_yes" name="pit_access" value="Yes">
+            <label for="pit_yes">Yes (Safety glasses required)</label><br>
+            <input type="radio" id="pit_no" name="pit_access" value="No" checked>
+            <label for="pit_no">No (Stands only)</label><br><br>
+
+            <label for="comments">Questions or Dietary Restrictions (for volunteers):</label><br>
+            <textarea id="comments" name="comments" rows="4" placeholder="Enter any accessibility needs or dietary restrictions here..."></textarea><br><br>
+
+            <input type="submit" value="Register Now" onclick="return false;">
+            <input type="reset" value="Clear Form">
+        </form>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+/* Page Colors and Fonts */
+body {
+    background-color: #f4f6f9;
+    color: #333333;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Container Padding and Borders */
+.container {
+    background-color: #ffffff;
+    border: 4px solid #0066cc;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #cc0000;
+    text-align: center;
+}
+
+/* Info Box Styling */
+.info-section {
+    border: 2px dashed #666666;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #eef5fa;
+}
+
+/* Table Layout & Colors */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #0066cc;
+    color: #ffffff;
+}
+
+/* Media Box */
+.media-section {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #cccccc;
+}
+
+/* Form Layout & Padding */
+form {
+    border: 1px solid #0066cc;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+}
+
+textarea {
+    width: 100%;
+}
